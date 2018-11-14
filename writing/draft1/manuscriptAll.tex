@@ -1,0 +1,2538 @@
+   
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{a4wide}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{bm}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage{colortbl}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\usepackage[flushleft]{threeparttable}
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{changepage}  
+
+
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{tabularx}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage[labelfont=bf]{caption}
+\usepackage{titlesec}
+\usepackage{endnotes}
+\usepackage{csquotes}
+\usepackage{epstopdf}
+
+
+
+
+
+\date{\normalsize{December 2017}}
+\title{\Large \bf Climate Change Awareness and Willingness to Pay for its Mitigation: \\ Evidence from the UK}
+\author{Monika Novackova and Richard Tol}
+\affil{\small{Department of Economics, University of Sussex, Falmer, UK}}
+
+
+\parindent 0pt
+\parskip 0.5em
+\newcommand\starred[1]{\accentset{~~~~~\star}{#1}}
+
+
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+\begin{document}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+  
+  \interfootnotelinepenalty=10000
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+\maketitle
+\vfill
+
+\doublespacing
+
+\begin{abstract}
+\noindent We explore an unprecedented dataset of almost $6,000$ observations to identify main predictors of climate knowledge, climate risk perception and willingness to pay for climate change mitigation. Among nearly $70$ potential explanatory variables we detect the most important ones using multisplit lasso estimator. Importantly, we test significance of individuals' preferences about time, risk and equity. Our study is innovative as these behavioural characteristics were recorded by including experimental methods into a live sample survey. This unique way of data collection combines advantages of survey and experiments. The most important predictors of environmental attitudes are numeracy, cognitive ability, ideological world-view and inequity aversion. \\
+\end{abstract}
+
+
+\noindent \textbf{JEL classification:} Q54, Q58, D80\\
+\noindent \textbf{Keywords:} Climate change, climate knowledge, climate policy, lasso, risk perception, willingness to pay\\
+
+
+
+
+\newpage
+\sloppy
+
+
+\section{Introduction}\label{Introduction}
+
+According to scientific consensus, climate change does exist and it is human caused \citep{oreskes2004, mccarthy2001impacts, Cook2013COnsensus}. However, public opinions about climate change are far away from consensus \citep{leiserowitz2012, Pew2012}. Without taking actions to prevent or mitigate climate change and its consequences, the effects of global warming could be disastrous \citep{IPCC5WG1, IPCC5, Seneviratne2012}.
+
+
+Public attitudes towards natural hazards and risk perception are important drivers of policy decision making (\citealp{BritishColumbia, bookDisastersPrep}). Whether and how well climate change will be tackled depends on public opinion heavily. But what are the main factors influencing climate change perception and awareness among general population? Large literature examines role of personal characteristics, demographics and behavioural variables in climate change awareness and risk perception by means of survey or experimental methods. Recent survey-based studies include \citet{Leiserowitz2015}, who exploits the Gallup World Poll data and conclude that civic engagement, communication access and education are the most important predictors of climate change awareness while beliefs about causes and perception of local temperature changes are main predictors of climate risk perception. Another example of a survey-based analysis of environmental attitudes is \citet{Morrison2015}, who use ordered logit models to investigate relationship between religion and climate change attitudes and behaviour. They conclude that Buddhists, atheists and agnostics are the most engaged with climate change while Christian literalists are the least engaged. Also \citet{Carlsson2013} use survey data to estimate preferences of redistribution of burden caused by CO\textsubscript{$2$} emissions in China and in the United States. Understandingly, both Chines and Americans prefer rules of redistribution which are less costly for their country. However, these rules differ for the two countries. US respondents prefer the current emissions rule while in China, the historical emissions rule is preferred.
+
+
+As for papers based on experiments, for instance \citet{Braaten2014} analyses motivation of good feeling from giving in contrast to 'pure altruism' in climate change context. He concludes that 'warm glow' is important for motivating of environmentally friendly behaviour. Another example of a study which uses experimantal methods is \citet{GlenkColombo2013}, who conduct a choice experiment in Scotland. Based on the results, they claim that an outcome related risk is an important attribute in choice of land-based climate change mitigation project. 
+
+
+The above mentioned studies are just a small portion of recent papers focused on climate concerns and climate knowledge. The previous studies of public attitudes and knowledge about environment are usually based either on survey or on experimental methods. Surveys can be conducted over large, representative samples and experiments are powerful tools to infer parameters of utility functions, measures of risk and time preferences or social value orientation (\citealp{ifcher2011, murphy2011SVO, tanaka2010riskTime}). Each of these methods, however, suffers from serious drawbacks. Surveys often lead to hypothetical bias while experimental data tend to be affected by artificial settings and small, non-representative samples which often consist of students. We contribute by overcoming some of these shortcomings as we use a dataset which was created by surveying a large representative sample of respondents in an experimental, interactive and dynamic way. Experiments are usually computer based and their participants respond to various situations on a screen. We replicate this set-up in a live sample survey by including the experimental methods as a part of the survey \citep{SurveyUK}. The experimental set-up covers attitudes towards risk, attitudes towards equity including altruism and time preferences. We will explore effects of these attitudes on stances towards climate change and climate knowledge.
+
+We also investigate influence of other characteristics on environmental attitudes including standard demographic data such as age, sex, race, ethnicity, religion, education, sector, occupation, date of birth, siblings, questions about assets, debts and family income. We further examine role of financial literacy and numeracy and we also investigate preferences regarding government spending and income redistribution, cultural and political ideology and world-view. As there is no general consensus on what are the main determinants of climate change perception and climate literacy, we start the explanatory analysis using a least absolute shrinkage and selection operator (lasso) to select significant predictors from almost $70$ candidates. 
+
+We further contribute by showing substantially different results from those of \citet{Newell2015}, who experimentally measure individual discount rates and analyse their role in energy efficiency decisions of US households. They find a negative and significant effect. More specifically, \citet{Newell2015} conclude that willingness to pay (WTP) for annual operating energy cost savings decrease in discount rates. This disagrees with our results as we do not find any evidence of significant effects of individual discount rates on any of our dependent variables, including WTP. We argue that our estimates are more precise than those of~\citet{Newell2015} as our sample size is substantially larger.\footnote{Our estimation samples include between $5659$ and $5749$ respondents while the estimation sample of~\citet{Newell2015} has $879$ observations.} We also cover much broader spectrum of potential predictors and we use more precise estimator, in concrete multisplit lasso with resampling. 
+ 
+Our additional contribution is a partial replication of~\citet{Kahan2015}. Consistently with his results, we find that climate knowledge measured by the 'ordinary climate science intelligence' (OCSI) instrument\footnote{For a more detailed description of the OCSI instrument see Section~\ref{ClimateVars}.} does not depend on measures of personal ideology and cultural world-view as opposed to other, previously used measures of climate knowledge (\citealp{Hamilton2011, Kahan2012, Kellstedt2008}). In accordance with \cite{Kahan2015}, our results show that climate knowledge is positively correlated with numeracy. We also detect association between our measure of climate knowledge and gender. 
+
+In accordance with previous research (\citealp{KahanEtAl2012, Kahan2015, Kellstedt2008}) we find that stated climate change risk perception does not increase with numeracy and financial literacy (we use these variables as proxies for ability of analytical reasoning and capacity to make use of quantitative information although they can also be interpreted as tests of the respondents' attentiveness during the survey) as one may intuitively assume \citep{Weber2011}. As a matter of fact, we find that individuals' concerns about climate change  decline as numeracy and financial literacy increase and it is also closely related to respondents' gender and cultural and ideological world-view. This is consistent with previous literature (\citealp{Kahan2015, Kellstedt2008, WHITMARSH2011}). We particularly show that the respondents, who agree with the statement that 'Government should redistribute income from the better off to those who are less well off' (we will further refer to this statement as 'government should redistribute income', 'degree of agreement with income redistribution' or simply 'income redistribution'), which we use as a measure of cultural or ideological world-view, are more likely to take climate change more seriously and have higher WTP for its mitigation than those not agreeing with this statement. Consistently with recent literature (e.g.~\citealp{Kahan2015,KahanEtAl2012,Hamilton2011, HamiltonKeim2009}), we find evidence suggesting that the ideological polarization over climate change is stronger among people who are more proficient in numeracy and comprehension of quantitative information. 
+
+
+We detect other significant predictors of WTP for climate change mitigation by means of gas and electricity tax. These are age, inequity aversion, perception of equality of intergenerational allocation of resources and risk assessment consistency. Expectedly, the respondents who consider themselves to be more affected by climate change than by climate policy have higher WTP than those who feel to be more affected by climate policy. Consistently with previous literature, we find negative and significant effect of age \citep{Hamilton2011, Kellstedt2008, Hayes2001gender}. The impacts of inequity aversion are mixed and WTP is significantly higher for those respondents who think that their income and standards of living are about the same compared to their parents (at the same stage of their lives) and their children (at the same stage of their lives as respondent currently is). We estimate an analogous model for WTP by means of transport fuel duty as a robustness test and the results are very comparable. The estimates are robust.
+
+
+Perhaps surprisingly, we did not find the behavioural characteristics to be significant predictors of our climate perception or climate knowledge measures. The only exception is inequity aversion, which has significant effects on WTP for climate change mitigation.
+
+
+
+
+The paper proceeds as follows. In Section~\ref{Method} we discuss methods, in particular multisplit lasso and jackknife ordinary least squares (OLS). Section~\ref{Data} describes the dataset used for our analysis and how the important variables were obtained. In Section~\ref{Results} we present and discuss the results. More specifically, Section~\ref{ResKnow} is focused on climate knowledge, in Section~\ref{ResPerc} we present estimates of climate seriousness perception models and Section~\ref{ResWTP} describes models for WTP. In Section~\ref{Robust} we estimate alternative specifications for each dependent variable to verify robustness of our results. We summarise our findings in Section~\ref{Summary} and in Section~\ref{Caveats} we discuss caveats. Section~\ref{Implications} includes policy implications and concluding remarks.
+
+
+\FloatBarrier
+\section{Econometric Methodology}\label{Method}
+
+Prior empirical studies detected large number of miscellaneous predictors of climate change knowledge and concerns \citetext{e.g. \citealt*{Leiserowitz2015, Hamilton2011, McCright2010, Morrison2015}}. There is, however, a lack of consensus about which are the most important ones. Since our dataset includes almost $70$ potential predictors, we decided to start with an explanatory regression analysis using a model selection estimator.
+
+Stepwise-like procedures were found to be problematic as it was shown that large portion of selected variables is often noise and the adjusted $R^2$ is biased upwards \citep{Flack1987}. There are also other problems with these methods. For example, a forward stepwise regression selects in each step the predictor having largest absolute correlation with the response $y$, say $x_{j1}$. Then a simple linear regression of $y$ on $x_{j1}$ is performed and a residual vector from this regression is considering to be the new response variable. Then the procedure is repeated and we eventually end up with a set of selected predictors $x_{j1}, x_{j2},...,x_{jk}$ after $k$ steps. This method can, however, eliminate a good predictor in second step if it happens to be correlated with $x_{j1}$.  Furthermore, these methods frequently fail to identify the correct data generating process, even in large samples \citep{Austin2008}. A possible alternative is the best subset selection approach. Given a collection of possible predictors, the best subset approach compares all possible subsets of predictors based on some well-defined objective criterion, usually having the largest adjusted $R^2$. However, besides being excessively computationally demanding, also this method often fails to identify the true predictors \citep{Flack1987}. On the other hand, sparse estimators such as lasso \citep{tibshirani96} are usually more stable than stepwise procedures and they are commonly better in prediction accuracy \citep{statisHighDimData}. Because lasso has been shown to be very powerful for high-dimensional variable selection in general \citep{pValsLasso}, we opt for this estimator. 
+
+Using the same notation as \citet{Friedman2010}, our dependent variable is $Y \in \mathbb{R}$ and our vector of explanatory variables is $X \in \mathbb{R}^p$. We assume that the relationship between them can be approximated by a linear regression model $E(Y|X=x) = \beta_0+x^T\beta$. Lasso estimator selects the predictors by setting some of the coefficients $\beta_j$ to be equal to zero.
+
+
+We consider four distinct models for the four response variables and one additional model as a robustness test. The dependent variables are: $(i)$~Knowledge about climate change $(ii)$~Perceived seriousness of climate change $(iii)$~Perception of effects of climate change policy relatively to effects of climate change and $(iv)$~WTP for climate change mitigation, which we measure by preferred tax rates on gas and electricity. We also estimate an additional model for petrol duty as a robustness test for the WTP model. How we measure the dependent variables is described in Section~\ref{ClimateVars}. The potential predictors included in $x$, which are not the behavioral variables and which were not selected into any model by multisplit lasso are listed in Tables~\ref{PotentialPredictors} and~\ref{PotentialPredictors2} in Appendix~$3$. How we measure the behavioural variables is discussed in Section~\ref{BehaviouralVars} and their descriptive statistics are summarised in Table~\ref{Descriptive} in Appendix~$3$ with the exemption of inequity aversion as this variable is considered as categorical and its frequencies are summarised in Table~\ref{FreqiencyCat2} in Appendix~$3$. The predictors, which were selected into some model can be found in a table of estimates of the relevant models and their descriptive statistics or frequencies are summarised in Tables~\ref{Descriptive},~\ref{FreqiencyCat},~\ref{FreqiencyCat2},~and~\ref{FreqiencyBin} in Appendix~$3$.
+
+\sloppy
+The estimation function can be written as \citep{Friedman2010}:
+
+
+\begin{equation}\label{Lasso}
+\begin{array}{lcll}
+
+ \underset{(\beta_0, \beta) \in \mathbb{R}^{(p+1)}}{min} \boldsymbol{R}_{\lambda}(\beta_0, \beta)&=&
+   \underset{(\beta_0, \beta) \in \mathbb{R}^{(p+1)}}{min} \bigg[ \frac{1}{2N}\sum_{i=1}^{N}(y_i - \beta_0-x_i^{\intercal}\beta)^2 + \lambda\sum_{j=1}^{p}(|\beta_j|) \bigg], \\
+\end{array}
+\end{equation}
+
+%https://www.stata.com/support/faqs/statistics/stepwise-regression-problems/
+
+where $y_i$ is the value of one of our four dependent variables for an individual~$i$, $x_i$ includes potential predictors listed in Tables~\ref{PotentialPredictors}~to~\ref{FreqiencyBin} in Appendix~$3$, $N$ is the number of observations and $\lambda \geq 0$ is the penalty parameter. Without loss of generality, we assume that the potential predictors in~\eqref{Lasso} are standardized: ${\sum_{i=1}^{N}x_{ij} =0}$, ${\frac{1}{N}\sum_{i=1}^{N}x_{ij}^2=1}$, for $j=1,...,p$.~\footnote{Both $x_{ij}$ and $y_j$ are standardized automatically in the implementation of the algorithm  we use. However, the estimated coefficients are always returned and presented on the original scale.} 
+
+In line with common practice, we compute estimator~\eqref{Lasso} for a series of~$\lambda$ and then we choose a preferred value of~$\lambda$ using cross-validation \citep{statisHighDimData}. In particular, we use a sequence of $100$ values of~$\lambda$ and $10$\nobreakdash-fold cross validation.\footnote{For estimation of lasso~\eqref{Lasso} we use function cv.glmnet in the \textbf{\textsf{R}}~programming system \citep{RRRR} and we use default settings and values of arguments, unless otherwise stated.} We opt for the value of $\lambda$ which is recommended by \citet{Friedman2010} and it is probably the most common choice. More specifically, we use the largest value of $\lambda$  such that the mean cross-validated error (CVM) is still within one standard error of its minimum.\footnote{In case of WTP we use the value of $\lambda$ which minimises the CVM. This value is also  suggested by \citet{Friedman2010}. The only difference from the model estimated using the one standard error based~$\lambda$ is that for the latter, a dummy variable for male becomes significant and gets into the model. The effect of male is positive and this contradicts predominant conclusions in previous relevant literature \citetext{e.g. \citealt*{Hamilton2011, McCright2010, HamiltonKeim2009, Flynn1994}}.}
+
+Determining significance levels is problematic with lasso. Classical \textit{p}-values are not valid and there is no simple approximation. Therefore, we adopt a concept of \citet{pValsLasso}, who introduce an approach based on multiple random splits of data, repeated estimation and aggregated inference. In particular, \citet{pValsLasso} build on the proposal of \citet{Wasserman2009}, who suggest to split the dataset randomly into two subsets. One of the subsets is used for variable selection via lasso and the other one is for estimating OLS with the predictors selected by lasso and calculating their \textit{p}-values in a usual way. This procedure allows asymptotic error control under minimal conditions. The problem is that the results depend on a one-time arbitrary split and they are therefore irreproducible. \citet{pValsLasso} further develop the single-split method. They suggest to split the sample repeatedly, obtain a set of \textit{p}-values for each split and then aggregate them. In each split, the \textit{p}-values of the variables which are not selected are considered to be equal to one and the \textit{p}-values of the selected variables are multiplied by the number of variables selected in the current split. If a \textit{p}-value multiplied by the number of selected variables happens to be larger than one, it is considered to be equal to one. Let's assume that we have $h=1,...,H$ splits. A \textit{p}-value for predictor $j$ obtained in split $h$ adjusted as described above will be further denoted $P^{(h)}_j$. \citet{pValsLasso} suggest to aggregate the adjusted \textit{p}-values using quantiles. In particular, a suitable aggregated \textit{p}-value is defined for any predictor $j$ and for any fixed $0<\gamma<1$ as 
+
+\begin{equation}\label{pvals}
+Q_j(\gamma)=min \left \{1,q_{\gamma} (   \{ P^{(h)}_j/\gamma; h=1,...,H\}) \right \},
+\end{equation}
+
+ where and $q_{\gamma}(\tiny{\cdot})$ is the (empirical) $\gamma$-quantile function. We will further refer to this procedure as a multisplit lasso. 
+ 
+\citet{pValsLasso} show that for any predefined value of $\gamma \in(0,1)$, the \textit{p}-values defined in~\eqref{pvals} can be used for control of family-wise error rate\footnote{Probability of making at least one incorrect rejection of a true null hypothesis (type 1 error).} and also for regulation of false discovery rate.\footnote{Expected proportion of incorrect rejections of a true null hypothesis (type 1 errors). False discovery rate controlling procedures are less stringent than family-wise error rate controlling methods.} Moreover, the multisplit method improves the power of estimates. 
+
+
+For simplicity, we set $\gamma$ in~\eqref{pvals} to be equal to $0.5$ for every application of a multisplit lasso in this study. Each time we perform $H=100$ splits (we believe that this number is sufficient as \citet{pValsLasso} use $50$ sample splits per simulation) and we always use one third of the sample for the variable selection using lasso and the rest for the OLS estimation and obtaining \textit{p}-values.
+
+ 
+A large fraction of our potential predictors are categorical variables because large part of the survey data was collected by multiple choice questions. However, the multisplit lasso selects individual predictors rather than groups of variables. Therefore, it can happen that a model specified by a multisplit lasso includes a dummy variable for one category of a particular categorical variable but it does not include dummy variables for its remaining categories. An obvious way how to overcome this issue would be to add the remaining dummy variables and use an \textit{F}-test to determine the joint significance of the group. If the \textit{F}-test implies that the categories are jointly significant, they should all stay in the model and they should be left out otherwise. However, the solution is not so straightforward with a multisplit lasso as it is not obvious on which subsample we should perform the \textit{F}-test. Therefore, for each model specified by a multisplit lasso, we decided to perform a following procedure which is sometimes called jackknife resampling. We will further refer to the procedure as a jackknife OLS. We again randomly split the dataset into two subsamples. The bigger subsample has size of two thirds of the original sample and it is used for OLS estimation and calculation of \textit{p}-values of the model with predictors selected by multisplit lasso.\footnote{Sample splitting can generally result in loss of efficiency. We, however estimated all models also for the whole sample as a robustness check and the results do not differ in signs or significance levels.} In addition, if the model specified by multisplit lasso includes a binary indicator which represents a category of a nominal variable, we include also all other categories of this variable among the set of predictors. Besides individual \textit{t}-tests we perform an \textit{F}-test of joint significance of the categories of the nominal variable. Similarly as in the case of multisplit lasso, we repeat the resampling and OLS estimation $100$-times. Each time we perform \textit{t}-tests and also a joint \textit{F}-test for each group of dummy variables representing one categorical variable. The \textit{p}-values of the \textit{t}-tests are then aggregated in the same way as in case of multisplit lasso (see above). Further, we calculate mean and median of \textit{p}-values of each joint \textit{F}-test over the $100$ subsamples and according to these statistics we determine whether the dummy indicators of the particular categorical variable should be included. It turns out that every time when a dummy variable representing a category of a nominal variable is chosen by a multiple lasso, both average and median \textit{p}-values of the corresponding \textit{F}-tests are below the significance level (${\alpha=0.05}$). Hence, we include the dummy variables for categories of each nominal variable selected by lasso (see Section~\ref{Results}). % parada. vsechny f testy jsem otestovala u vsech modelu v tabulkach. 27.8. vse v poradku,takze super
+
+
+
+
+
+
+
+
+
+\FloatBarrier
+\section{Data and Survey Methodology}\label{Data}
+All data used in this study except of predicted income and population density, which we use in robustness tests,  were collected in the survey conducted by \cite{SurveyUK}. 
+
+
+
+In Section~\ref{Robust} we use an alternative measure of income as a robustness test. In particular, this estimated income is obtained from a regression model based on data from Annual Survey of Hours and Earnings (ASHE). More specifically, the predicted income is based on age, gender, occupation, sector and education.
+
+
+We use two measures of population density, in particular average density per Lower Layer Super Output Areas (LSOA) estimated by the Office for National Statistics for year $2015$ and average density for Local Authority Districts (LAD) obtained from the $2011$ Census.
+
+
+
+
+The online survey (\citealp{SurveyUK}) ran from $9$ September to $14$
+October $2015$ and $6,000$ respondents were selected to answer the questionnaire which included the climate change domain.\footnote{We had to exclude some observations from various parts of analysis as they included missing values for some important variables. However, we have at least $5500$ observations for each model.} Descriptive statistics, methodology of the survey, the survey itself and a detailed description of its administration can be found in~\citet{SurveyUK}. 
+
+The survey is reasonably geogrephically representative taking into account population density in the UK \citep{SurveyUK}.\footnote{For map with location of respondents see Figure~$1$ in \cite{SurveyUK}} As the survey was conducted online, the initial sample is representative for UK adults with internet access rather than for the entire UK population. 
+
+
+In Table~\ref{SexAge} we compare distribution of our sample over sex and age  with the distribution of the UK population. The age data are only available as a categorical variable in our survey. As we can see in Table~\ref{SexAge}, the youngest category is slightly over-sampled while the two categories of the highest age are slightly under-sampled, probably because the survey was conducted online. Otherwise the distributions are very comparable.
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Sex and age distribution} \\ of the sample and the population}}
+\label{SexAge} 
+\begin{small}
+\begin{tabular}{|l|rr|rr|} 
+\hline	
+  \multicolumn{1}{|l|}{ } & \multicolumn{2}{c}{\bf{Sample}} & \multicolumn{2}{|c|}{\bf{UK population\tnote{a}}} \\ %sample pubpolM2 used here
+    \multicolumn{1}{|l|}{\vspace{0.1cm}\textbf{Age range}}  &  \multicolumn{1}{|c}{\bf{Male}} & \multicolumn{1}{c}{\bf{Female}} & \multicolumn{1}{|c}{\bf{Male}} & \multicolumn{1}{c|}{\bf{Female}}\\ 
+\hline 
+$18-24$&$9.8\%$&$9.4\%$&$6.2\%$&$6.0\%$\\
+$25-34$&$10.0\%$&$10.3\%$&$9.0\%$&$9.1\%$\\
+$35-44$&$7.8\%$&$8.3\%$&$8.6\%$&$8.8\%$\\
+$45-54$&$8.1\%$&$9.4\%$&$9.3\%$&$9.6\%$\\
+$55-64$&$7.4\%$&$8.4\%$&$7.5\%$&$7.8\%$\\
+$65-74$&$4.1\%$&$4.8\%$&$6.2\%$&$6.7\%$\\
+$75-80$&$0.1\%$&$0.1\%$&$2.4\%$&$2.8\%$\\
+\hline
+\hline
+\end{tabular} 
+  \begin{tablenotes}
+  \begin{footnotesize}
+  \singlespacing
+     \item[a]Population data are from the Office of National Statistics, Population Estimates of UK, England and
+Wales, Scotland and Northern Ireland Mid $2014$, Table MYE2.
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+\end{small}
+  \end{threeparttable} \par}
+
+
+\hspace{1.5cm}
+
+Although the survey questionnaire was designed such that more difficult questions were at different pages, we observe that most respondents who did not finish the survey dropped out on pages with more difficult questions. Hence, the final sample is biased towards those who are not afraid of hard questions \citep{SurveyUK}.\footnote{One way how to deal with sample selection is to use sampling weights. We, however decided not use weights given the modest nature of our bias. Weighting usually increases standard errors and leads to less precise estimates and there is lack of consensus on whether or not to use weights in regression methods (\citealp{gelman2007, KottWeight, winship94}). \citet{winship94} for example recommend not to use weights if they are solely a function of independent variables.}
+
+
+In the rest of this section we focus on how we obtained the data for our climate (dependent) variables and the behavioural characteristics..
+
+
+
+
+\subsection{Climate variables}\label{ClimateVars}
+
+
+Descriptive statistics of our climate variables are summarised in Table~\ref{DepDes}.
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Dependent variables:} Descriptive statistics}}
+\label{DepDes} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrr} 
+\hline	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  &  \multicolumn{1}{c}{\bf{Mean}} & \multicolumn{1}{c}{\bf{St. dev.}} & \textbf{Min} & \textbf{Max}\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Climate change knowledge&$3.851$&$1.266$&$1$&$8$\\
+    \vspace{0.15cm}Climate change seriousness perception&$6.622$&$2.249$&$0$&$10$\\
+        \vspace{0.15cm}Climate versus policy effects perception&$5.370$&$2.315$&$0$&$10$\\
+\vspace{0.15cm}WTP - gas and electricity tax (\textsterling~per year)&$123.900$&$105.459$&$0$&$500$\\
+ \vspace{0.15cm}WTP - duty on transport fuel (pence per year)&$20.530$&$22.518$&$0$&$100$\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+  \end{threeparttable} 
+\par}
+
+\hspace{1.5cm}
+
+It was previously shown, that questions which are intended to measure climate science comprehension often measure who people are rather than what they know about climate change as the strongest predictor is often respondents' ideology and cultural and political world-view (\citealp{Hamilton2011, KahanEtAl2012, Kahan2015}). To avoid picking of effect of cultural or political world-view instead of climate knowledge, we use questions from the OCSI instrument developed by \citet{Kahan2015} as a measure of climate knowledge. \citet{Kahan2015} shows that these questions are indeed a measure of climate science comprehension rather than an indicator of who one is. The values of climate knowledge are integers from $0$ to $8$ and they stand for counts of correctly answered questions about climate change \citep{Kahan2015}. An example of one of the $8$ climate questions is: 'Climate scientists believe that if the North Pole icecap melted as a result of human-caused global warming, global sea levels would rise. Is this statement true or false?' The list of all climate questions can be found in Appendix~$1$. The relative frequencies of counts of the correctly answered questions are summarised in Table~\ref{DepFreq}.
+
+To investigate opinions about seriousness of climate change, the respondents were asked the following question: 'How serious a problem do you think climate change is at this moment?' Using an interactive slider, the respondents answered an integer value between $0$~and~$10$ where min~$=0$ and max~$=10$ (as it was noted just below the slider). In a similar way, the respondents were asked if they feel to be more affected by climate change or by climate policy. The wording of the question was: 'Which affects you and your way of life more, climate change or policies to reduce greenhouse gas emissions?' Again, the respondents provided answers on an integer scale from $0$ (climate policy) to $10$ (climate change) using a slider. Relative frequencies of climate seriousness perception and climate versus policy perception are summarised in Table~\ref{DepFreq}.
+
+
+\vspace{1cm}
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Dependent variables:} Relative frequencies (\%)}}
+\label{DepFreq} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrrrrrrrrrr} 
+\hline 
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  & \multicolumn{1}{c}{\boldsymbol{$0$}}& \multicolumn{1}{c}{\boldsymbol{$1$}}& \multicolumn{1}{c}{\boldsymbol{$2$}}& \multicolumn{1}{c}{\boldsymbol{$3$}}& \multicolumn{1}{c}{\boldsymbol{$4$}}&\multicolumn{1}{c}{\boldsymbol{$5$}}&\multicolumn{1}{c}{\boldsymbol{$6$}}&\multicolumn{1}{c}{\boldsymbol{$7$}}&\multicolumn{1}{c}{\boldsymbol{$8$}}&\multicolumn{1}{c}{\boldsymbol{$9$}}&\multicolumn{1}{c}{\boldsymbol{$10$}}&\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Climate knowledge&$0.0$&$1.7$&$11.4$&$30.4$&$25.4$&$20.9$&$8.6$&$1.6$&$0.1$&N/A&N/A\\
+\vspace{-0.3cm}Climate seriousness&\multirow{2}{*}{$3.3$}&\multirow{2}{*}{$2.8$}&\multirow{2}{*}{$5.4$}&\multirow{2}{*}{$8.1$}&\multirow{2}{*}{$8.9$}&\multirow{2}{*}{$27.2$}&\multirow{2}{*}{$14.0$}&\multirow{2}{*}{$12.8$}&\multirow{2}{*}{$8.3$}&\multirow{2}{*}{$4.1$}&\multirow{2}{*}{$5.0$}\\
+        \vspace{-0.15cm}\hspace{0.5cm}perception&\\
+\vspace{-0.3cm}Climate vs. policy&\multirow{2}{*}{$2.1$}&\multirow{2}{*}{$1.5$}&\multirow{2}{*}{$2.5$}&\multirow{2}{*}{$3.8$}&\multirow{2}{*}{$4.6$}&\multirow{2}{*}{$9.8$}&\multirow{2}{*}{$18.5$}&\multirow{2}{*}{$21.7$}&\multirow{2}{*}{$16.7$}&\multirow{2}{*}{$8.6$}&\multirow{2}{*}{$10.4$}\\
+\vspace{0.15cm}\hspace{0.5cm}perception\tnote{a}&\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+  \singlespacing
+     \item[~]\textit{Notes:} Total number of observations: $5749$
+       \begin{adjustwidth}{1cm}{} 
+     \vspace{-0.3cm} \item[a]~Higher number means greater concern about climate change, lesser concern about climate policy.
+         \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\vspace{1cm}
+
+
+
+
+
+
+
+Regarding the preferred gas and electricity tax rates, the respondents were first asked how much the current tax was. In particular, the question was as follows: 'The average household pays \textsterling$1,369$ per year for gas and electricity. Government intervention has raised the price to encourage people to use less and so reduce greenhouse house gas emissions. How much of that \textsterling$1,369$ is for climate policy?' They indicated the response on a slider with a minimum of $-50$ and a maximum of $500$. We include this variable on right hand site as a robustness test (see Table~\ref{GasInOut}). We refer to it as 'How much is tax gas and electricity'. After this, the respondents were told the correct answer and they were asked about they preferred tax rates: 'Actually, climate policy adds about \textsterling$89$ per year to the gas and electricity bill of the average household. How much do you think climate policy should add to this bill?' The respondents expressed their opinion on a slider from $0$ to $500$. The answer to this question is the dependent variable which we refer to as 'WTP - gas and electricity' and we use it as a proxy for WTP for climate change mitigation. Analogously, we inquired about the fuel duty. The only difference is that the slider for the actual fuel duty is limited from $0$ to $60$ and the one for the preferred fuel duty is from $0$ to $100$ as the actual fuel duty is $3$ pence per litre. Descriptive statistics of the respondents' estimates of actual tax rates can be found in Table~\ref{Descriptive} in Appendix~$3$ and the descriptive statistics of the preferred tax rates are in Table~\ref{DepDes}.
+
+\subsection{Behavioural variables}\label{BehaviouralVars}
+
+One of our goals is to investigate effects of behavioural variables on climate knowledge and concerns about climate change. The behavioural variables that we consider in our study are social value orientation, time preferences, risk preferences, and attitudes towards inequality.
+
+
+To estimate the social value orientation, respondents played six dictator games with the same questions as in \citet{murphy2011SVO}. The ring measure of social value orientation which we use in our models is defined as
+
+\begin{equation}\label{RingMeasure}
+\begin{array}{lcll}
+
+R&=&\arctan \frac{\sum_{i=1}^{N} P_O -50N}{\sum_{i=1}^{N} P_S -50N}, \\
+\end{array}
+\end{equation}
+
+where $P_O$ is the pay-off given to the other party, $P_S$ is the pay-off taken by the player herself and $N$ is the number of games played (in our case $6$).
+
+As one may notice in Table~\ref{PotentialPredictors} in Appendix~$3$, we also include dummy variables for four types of social value orientation (i.e. altruist, prosocial, individualist, competitive) among potential predictors in the lasso estimators. These types are defined based on ring measure~\eqref{RingMeasure}. Each dummy variable corresponds to one of four non-overlapping intervals of the values of ring measure~\eqref{RingMeasure}. None of these dummy variables was selected by lasso into any of our models, therefore we do not discuss them in more detail.
+
+As a basic measure of time preferences we use derived annual discount rates (in percentage), for investing now for one year from now and we refer to this variable as 'Discount rate year from now' in the present study. To obtain the data which would allow us to infer the discount rates, the respondents played games and answered questions informed by \citet{voors2012violent}, \citet{ifcher2011} and \citet{tanaka2010riskTime}. How the time preferences were derived is described in \cite{SurveyUK}. Besides using discount rates for investing now and getting returns in one year, we also implied other types of discount rates.  These are discount rates for $(i)$~ investing now for getting returns in five years $(ii)$~investing in one year for getting returns in two years from now and $(iii)$~ investing in one year from now for getting return in six years from now. None of them was found to be significant, thus we do not further discuss them.
+
+
+We use two parameters which describe inequity aversion (\citealp{bergson1938, bergson1954, samuelson1956}), in particular the rate of inequity aversion and the subsistence or reserve income. 
+To infer these parameters, respondents were choosing from various distributions of income between three hypothetical people. One of them was higher on average but more unequal and the other was lower on average but more equal. The respondents were asked two sets of choice questions. In one of them, the income distribution was centred on the $70^{th}$ percentile of the UK income distribution and in the other the distribution was centred on $40^{th}$ percentile of the UK income distribution. Given the respondents' answers to the two choice-sets, the rate of inequity aversion and subsistence was obtained for each respondent based on equations~\eqref{InequityEq}:
+
+
+\begin{equation}\label{InequityEq}
+\begin{array}{lcl}
+
+\sum_{i=1}^{3}\frac{(Y^H_{i,1}-\underline{Y})^{1-\gamma}}{1-\gamma} & =& \sum_{i=1}^{3}\frac{(Y^H_{i,2}-\underline{Y})^{1-\gamma}}{1-\gamma} \\
+
+\vspace{0.2cm}\\
+\sum_{i=1}^{3}\frac{(Y^L_{i,1}-\underline{Y})^{1-\gamma}}{1-\gamma} & =& \sum_{i=1}^{3}\frac{(Y^L_{i,2}-\underline{Y})^{1-\gamma}}{1-\gamma}
+\end{array}
+\end{equation}
+
+where $\gamma$ is the rate of inequity aversion, $\underline{Y}$ is the subsistence or reserve income and $Y^H_{i,j}$ is the income of a hypothetical person $i$ according to distribution chosen by respondent in a choice set $j$ which was centred on the $70^{th}$ percentile of the UK income distribution. Analogously, $Y^L_{i,j}$ is the income of a hypothetical person $i$ according to distribution chosen by respondent in a choice set $j$ which was centred on the $40^{th}$ percentile of the UK income distribution. To obtain the inequity parameters, equations~\eqref{InequityEq} were solved for $\gamma$ and $\underline{Y}$ while minimizing distance of $\underline{Y}$ to zero.
+
+In theory, the rate of inequity aversion is a continuous measure. However, we consider it as a categorical one as in our dataset it is equal to one of $16$ distinct values for each respondent.\footnote{We also estimated variants of models where the rate of inequity aversion is considered as scale for completeness but we do not present them to save space. However, the results do not differ substantially from those presented here.} These $16$ values and the corresponding frequencies can be found in Table~\ref{FreqiencyCat2} in Appendix~$3$. The subsistence parameter was not selected by lasso into any of our models thus we do not discuss it in more detail.
+
+
+To test significance of risk aversion, we use various risk aversion coefficients which were estimated for each person from four different utility functions using Bayesian inference \citep{Balcombe2015}. The utility functions are power, logarithmic, exponential and quadratic and we use the estimates of their means and medians. None of them is significant or chosen by lasso in any of our models. For the economy of space we only present models with median or mean of power function. The estimates are very similar when we use other risk aversion coefficients.
+
+
+As the behavioural variables are not significant in our study, we described their measures only briefly. For more detailed description see \citet{SurveyUK}. The descriptive statistics of these variables (except of inequity aversion) can be found in Table~\ref{Descriptive} in Appendix~$3$. As explained above, we consider the inequity aversion rate as a categorical variable and its frequencies are in Table~\ref{FreqiencyCat2} in Appendix~$3$.
+
+
+
+
+\FloatBarrier
+	\section{Results and discussion}\label{Results}
+In this section we describe our results and discuss their interpretation.
+
+In the tables which summarise the estimates of lasso below, \textit{p}-values of some of the explanatory variables are equal to one. These variables were not selected by the lasso in most of the sample splits. They are, however, included in the tables because they represent either a category of a nominal variable whose other category was selected by the lasso or a linear term of a variable whose quadratic term was selected by the lasso. 
+
+\subsection{Climate change knowledge}\label{ResKnow}
+
+Table~\ref{Know435} summarizes estimates of the predictors of climate change knowledge which we found to be important by means of multisplit lasso estimator. In particular, three predictors are chosen by lasso (see first column in Table~\ref{Know435}). Total score on financial literacy is the number of correct answers out of three finance related mathematical problems \citep{SurveyUK}.\footnote{We also consider answers to each of the three problems separately as individual potential predictors. Two of them are labelled understands inflation and understands compound interest and they are identified as important predictors in other models later.} However, when we re-estimate the model using jackknife OLS with all relevant dummy variables, all categories of total score on financial literacy are insignificant. Furthermore, the model suffers from multicollinearity as the coefficient of correlation between cognitive reflection and total score of financial literacy is equal to $0.343$ and its \textit{p}-value is smaller than $2\times10^{-8}$. For illustration, estimates of jackknife OLS with all explanatory variables listed in Table~\ref{Know435} including financial literacy are shown in Table~\ref{Know435se} in Appendix~$3$. The last column of Table~\ref{Know435se} includes variance inflation factors (VIF) which confirm the presence of multicollinearity. Because of the multicollinearity and insignificance of total score on financial literacy we do not further consider this variable as a predictor of climate knowledge. 
+
+
+The estimates of jackknife OLS without the financial literacy are summarised in the last two columns of Table~\ref{Know435}. The other two variables which were found to be important in explaining climate knowledge are gender and cognitive reflection test~\citep{Frederick2005}. We use the latter as a measure of numeracy and ability of analytical reasoning. 
+
+The cognitive reflection test is fully described in~\citet{Frederick2005} and it consists of three numerical problems. The value of our variable is the number of correct answers out of the three questions.\footnote{The possible values are integers and half-integers between zero and three including zero and three as we also recognise if respondent solves half of a problem. Hence, if a respondent answers for example one and half problems correctly, her score is~$1.5$.} The frequencies of values of this variable are summarised in Table~\ref{FreqiencyCat2} in Appendix~$3$. To account for plausible non-linear relationship between the test score and cognitive ability we treat the variable as categorical with the base category zero. As it is apparent from Table~\ref{Know435}, the respondents who solved all three problems correctly have significantly higher level of climate knowledge compared to those who did not solve any of them. According to the jackknife OLS, climate knowledge is on average higher also for respondents who answered two problems correctly. However, the effect is larger for three correctly answered problems. Expectedly, the effect of numeracy is positive. 
+ 
+{\centering
+\begin{threeparttable}
+
+% table checked 3.10.2017
+
+\singlespacing
+\caption{\textit{\textbf{Climate change knowledge:} Multisplit lasso and jackknife OLS}}
+% LassoKnow43se3.R      soubor Know435.R 
+%musim lasso predelat. predtim jsem pouzivala lambda min. ale alex ma pravdu. je treba u vsech modelu pouzivat stejne pravidlo, takze lambda se.zmena 30.9.2017
+
+%soubor Know435se.R
+% finlit2 prestane byt signifikantni, takze vlastne se nic skoro nemeni, asi do prilohy tabulku s Know435se.R
+ 
+\label{Know435} 
+\centering
+\begin{small}
+\begin{tabular}{lclrcl} 
+\hline \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{} & \multicolumn{2}{c}{\large{\textbf{Multisplit lasso}}}& \multicolumn{3}{c}{\large{\textbf{Jackknife OLS}}}  \\
+  
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Aggregated}}& \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+    \multicolumn{1}{l}{ } & \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}}& \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Gender = male&$<2\times 10^{-8}$&$^{***}$&$0.733$&$<2\times10^{-8}$&$^{***}$\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=0$~\tnote{a}&$0.038$&$^{*}$ &\multicolumn{3}{c}{\textit{Not included - base cat.}}\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=0.5$&$1.000$& &$2.071$&$1.000$&\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=1$&$1.000$& &$0.283$&$0.129$& \\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=1.5$&$1.000$& &$0.895$&$1.000$ \\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2$&$1.000$& &$0.628$&$1\times 10^{-5}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2.5$&$1.000$& &$1.098$&$1.000$&\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=3$&$0.046$&$^{*}$&$1.033$&$<2\times10^{-8}$&$^{***}$\\
+\\
+\vspace{-0.2cm}Financial literacy total score $=0.5$&$1.000$& &\multicolumn{3}{c}{\textit{Not included}}\\
+  \\
+\vspace{-0.2cm}Financial literacy total score $=1$&$1.000$&& \multicolumn{3}{c}{\textit{Not included}} \\
+  \\
+\vspace{-0.2cm}Financial literacy total score $=1.5$&$1.000$&&\multicolumn{3}{c}{\textit{Not included}}\\
+  \\
+\vspace{-0.2cm}Financial literacy total score $=2$&$1.000$& &\multicolumn{3}{c}{\textit{Not included}}\\
+  \\
+\vspace{-0.2cm}Financial literacy total score $=2.5$&$1.000$& &\multicolumn{3}{c}{\textit{Not included}}\\
+  \\
+  \vspace{-0.2cm}Financial literacy total score $=3$&$2\times10^{-5}$&$^{***}$&\multicolumn{3}{c}{\textit{Not included}}\\
+  \\
+\hline
+\vspace{-0.4cm} \\ Observations:&  \multicolumn{5}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} \hspace{0.15cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+    \begin{adjustwidth}{1cm}{} \item For the significant predictors, the signs of the coefficients of the multisplit lasso are the same as those of the jackknife OLS and also size of most of the coefficients is very comparable for these two models.
+    \item[a]The estimate is negative for cognitive reflection $=0$ while it is positive for cognitive reflection $=3$ in this model.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+We find the positive and strongly significant effect of dummy variable for males quite peculiar. Previous research shows mixed evidence about effects of gender on climate knowledge and comprehension of science in general. For example, \citet{McCright2010} finds that women demonstrate higher level of scientific knowledge of climate change. On the other hand, \citet{Hayes2001gender} shows that men exhibit significantly higher level of scientific knowledge than women, even if controlling for a number of background variables. We perform additional tests to verify whether the positive effect of gender can be a result of sample selection. The tests include proportion tests, model with interactions as additional explanatory variables and a Heckman selection model. We discuss the results in detail in Appendix~$2$.  Based on the outcomes, we conclude that the results are not driven by sample selection.
+
+
+A possible explanation why our measure of climate knowledge is significantly higher for men is that the climate knowledge test that we use in this study was developed by a man \citep{Kahan2015}, therefore it may be the case that these particular questions are naturally more comprehensible for men. The only way how to test this would be to let a woman design another set of climate knowledge questions and then conduct a survey which would include these woman-designed climate questions. This is, however, beyond the scope of this study.
+
+
+ To sum up, we find that gender and cognitive ability are significant predictors of climate knowledge.  Climate knowledge increases with higher numeracy which is consistent with \citet{Kahan2015}, who finds the climate knowledge measure to be positively correlated with ordinary science intelligence. Although various measures of climate knowledge were previously find to be correlated with social ideology or partisan identity (\citealp{Hamilton2011, Kahan2012, Kellstedt2008}), our measures of ideology, cultural world-view or their interactions were not chosen as predictors of climate knowledge by the lasso. This is also consistent with \citet{Kahan2015}.
+
+
+
+
+\subsection{Climate change risk perception}\label{ResPerc}
+
+In this section we discuss our estimates of the models which explain individuals' perception of climate change risk. We focus on two measures of climate risk perception, in particular climate change seriousness perception and climate versus policy perception. We present the results of lasso and jackknife OLS with the climate seriousness perception as dependent variable in Table~\ref{Climcare435}. Three predictors were selected, in particular gender, climate knowledge, and degree of agreement with redistribution of income by government. In this case, the effect of being male is negative. This is mostly consistent with results of previous research which typically finds women to take climate risk more seriously than men (\citealp{WHITMARSH2011, McCright2010, Kahan2007}). As we can see in Table~\ref{Climcare435}, degree of agreement with income redistribution affects climate change seriousness perception positively as the base category is 'Strongly disagree'. This is in agreement with previous literature as we consider the degree of agreement with income redistribution as an indicator of political and ideological world-view, which was found to be significantly correlated with climate concern by large number of previous studies (e.g. \citealp{Leiserowitz2013, Kahan2012, WHITMARSH2011}). 
+
+We will comment on the significant effects of climate knowledge at the end of Section~\ref{ResPerc}.
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Climate change seriousness perception:} Multisplit lasso and jackknife OLS}}
+% soubor LassoClimcare43 Climcare435.R
+
+\label{Climcare435} 
+\centering
+\begin{small}
+\begin{tabular}{lclrcl} 
+\hline \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{} & \multicolumn{2}{c}{\large{\textbf{Multisplit lasso}}}& \multicolumn{3}{c}{\large{\textbf{Jackknife OLS}}}  \\
+  
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Aggregated}}& \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+    \multicolumn{1}{l}{ } & \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}}& \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Gender = male&$0.0002$&$^{***}$&$-0.3658$&$4.45\times 10^{-6}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Climate knowledge&$1.0000$& &$0.1380$&$1.0000$&\\
+  \\
+\vspace{-0.2cm}Climate knowledge - squared&$<2.00\times 10^{-8}$&$^{***}$&$-0.0548$&$0.0209$&$^{*}$\\
+  \\
+ Redistribution of income:&\multirow{2}{*}{$1.0000$}& &\multirow{2}{*}{$0.1819$}&\multirow{2}{*}{$1.0000$}&\\%-1
+      \hspace{0.6cm}disagree\tnote{a}&& &&&\\%-1
+    \\
+  \vspace{-0.2cm}Redistribution of income: neutral\tnote{a}&$1.0000$& &$0.2789$&$0.8251$&\\%0
+    \\
+  \vspace{-0.2cm}Redistribution of income: agree\tnote{a}&$<2.00\times 10^{-8}$&$^{***}$&$0.8343$&$8.58\times 10^{-8}$&$^{***}$\\%1
+    \\
+  Redistribution of income:& \multirow{2}{*}{$<2.00\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}&\multirow{2}{*}{$1.0828$}&\multirow{2}{*}{$<2.00\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}\\
+\hspace{0.6cm}strongly agree\tnote{a}&& &&&\\%2
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{5}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+   \item[~]\textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+  \begin{adjustwidth}{1cm}{} \item For the significant predictors, the signs of the coefficients of the multisplit lasso are the same as those of the jackknife OLS and also size of most of the coefficients is very comparable for these two models.
+
+ \item[a] Degree of agreement with the following statement: 'Government should redistribute income from the better off to those who are less well off.' The base category is 'Strongly disagree'.
+     \end{adjustwidth}
+ \singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\hspace{1cm}
+
+We now discuss the estimates of the model with dependent variable which answers the question whether respondent feels to be more affected by climate policy ($0$) or by climate change ($10$). The estimates are shown in Table~\ref{Climpol435}. We can see that the selected predictors are climate knowledge, understanding of inflation and risk assessment consistency.
+
+The level of understanding of inflation is based on respondents' answer to the following numerical problem: 'Imagine that the interest rate on your savings account was 1 percent per year and
+inflation was 2 percent per year. After 1 year, would you be able to buy...' The respondents should choose one of the three following answers: $(i)$~'More than today with the money in
+this account' $(ii)$~'Exactly the same as today with the money in
+this account' $(iii)$~'Less than today with the money in
+this account'. Correct answer is 'less'. The value of the variable is equal to one if the respondent answers 'less', it is equal to $0.5$ if she answers 'the same' and it is equal to zero if she answers 'more'. The frequencies of answers are summarised in Table~\ref{FreqiencyCat2} in Appendix~$3$. Since it is quite possible that the effect of our measure of understanding of inflation is non-linear we treat the variable as categorical with the base category zero. 
+
+
+As it is apparent from Table~\ref{Climpol435}, understanding of inflation and risk assessment consistency increase the likelihood of being subjectively more affected by climate policy than by climate change. This is likely to be because the two predictors are highly correlated with financial literacy. The correlation coefficient of understanding of inflation and financial literacy is $0.694$ and the correlation coefficient of risk assessment consistency and financial literacy is $0.145$. Both correlation coefficients are highly significant with \textit{p}-value lower than $2.00\times 10^{-8}$.~~\footnote{Risk assessment consistency is a binary variable so we also run a two sample \textit{t}-test to measure correlation between risk assessment consistency and financial literacy. In particular, we applied a two sample \textit{t}-test to test if mean financial literacy is statistically equal for the respondent who answered risk questions consistently and for those with inconsistent answers to risk questions. The test statistic is highly significant with \textit{p}-value lower than $2.00\times 10^{-8}$. Hence, the mean financial literacy is different in these two groups which is in accordance with the significance of the correlation coefficient} It is intuitive, that the respondents with higher level of financial literacy are more likely to see how their wealth and way of living can be affected by climate policy through environmental tax rates. 
+
+
+
+
+
+
+It was previously shown that interactions of measures of cognitive ability and ideological and political world-view are strong predictors of attitudes towards climate change rather than cognitive ability or numeracy itself \citep{Kahan2012, KahanEtAl2012, Hamilton2011, HamiltonKeim2009}. In accordance with this (as we discuss in more detail in Section~\ref{ResWTP} below) we detect a significant impact of interactions of an indicator of political and cultural world-view and a measure of numeracy (and ability of analytical, technical reasoning) on WTP for climate change mitigation. Therefore, we also estimate variants of the models presented in this section with the interaction terms included among the predictors but we did not find them to be significant for climate risk perception. We do not present the results in our study to keep its length within reasonable limits.\footnote{It would probably be more revealing to test for significance of interactions of cognitive ability and political orientation, but unfortunately, the respondents were not asked about their political or partisan preferences directly in the survey.} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{1.5cm}
+
+
+{\centering
+\begin{threeparttable}
+\caption{\small{\textit{\textbf{Climate versus policy effects perception:} Multisplit lasso and jackknife OLS}}}
+% soubor LassoClimpol43 Climpol435.R
+\label{Climpol435} 
+\centering
+\begin{small}
+\begin{tabular}{lclccl} 
+\hline \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{} & \multicolumn{2}{c}{\large{\textbf{Multisplit lasso}}}& \multicolumn{3}{c}{\large{\textbf{Jackknife OLS}}}  \\
+  
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Aggregated}}& \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+    \multicolumn{1}{l}{ } & \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}}& \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Climate knowledge&$1.0000$& &$0.2158$&$1.0000$&\\
+  \\
+\vspace{-0.2cm}Climate knowledge - squared&$<2.00\times 10^{-8}$&$^{***}$&$-0.0607$&$0.0124$&$^{*}$\\
+  \\
+\vspace{-0.2cm}Understands inflation $=0.5$&$1.0000$& &$-0.0394$&$1.0000$& \\
+  \\
+\vspace{-0.2cm}Understands inflation $=1$&$0.0130$&$^{*}$&$-0.5759$&$6.27\times 10^{-6}$&$^{***}$\\
+    \\
+  Consistent answers to risk&\multirow{2}{*}{$1.06\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}&\multirow{2}{*}{$-0.5885$}&\multirow{2}{*}{$<2.00\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}\\
+\hspace{0.6cm}questions $(0/1)$&& &&&\\
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{5}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+\begin{tablenotes}
+  \begin{footnotesize}
+   \item \textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+  \begin{adjustwidth}{1cm}{} \item For the significant predictors, the signs of the coefficients of the multisplit lasso are the same as those of the jackknife OLS and also size of most of the coefficients is very comparable for these two models.
+     \end{adjustwidth}
+ \singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\vspace{1cm}
+
+As we can see in Tables~\ref{Climcare435} and~\ref{Climpol435}, the linear climate knowledge term is positive (and insignificant), but the squared term is negative and significant for both climate seriousness and climate change versus policy. That means, the effect of climate knowledge is positive but decreasing for low levels of knowledge, while for medium and high degree of climate knowledge the effect is negative. The negative effect of higher levels of climate knowledge may seem to be counter-intuitive, however it is less surprising in the light of previous literature. According to \citet{reynolds2010now}, people who know less about climate change tend to ascribe unrealistic consequences (for example skin cancer) to global warming. The authors argue that it is even possible for any future ecological or political disaster to be viewed as a consequence of global warming by public \citep{WhatPplKnow94}. Also the level of familiarity with causes and basic mechanisms of climate change is quite unsatisfactory. For example, members of public tend to confuse climate and weather\footnote{Actually, some researchers confuse climate and weather too \citep{Hsiang2013, DesGreenstone2007}.} and as a result they mostly agree with the statement that climate changes from year to year \citep{reynolds2010now}. It is therefore understandable that individuals who are weaker in climate knowledge are more concerned about climate change and its consequences. 
+
+
+Another possible explanation of the negative and significant climate knowledge effect can be affective orientation towards global warming \citep{Kahan2015}. It was previously shown that individuals, who believe that climate change is real and caused by humans and who correctly assert, for instance, that usage of fossil fuels is one of the causes of global warming are also likely to affirm other, perhaps false statements which are consistent with higher environmental risks \citep{reynolds2010now}. An example of such a false statement is that atmospheric emissions of sulphur contribute to global warming \citep{Kahan2015}. The OCSI questions which we use to measure climate knowledge are true/false statements and more than half of them is of a same type as the sulphur emissions statement above. That is, the correct answer does not evince concerns about climate change while the incorrect one does. This could explain why the respondents who believe that climate change is quite serious are likely to score lower on climate knowledge. If this is true, the climate concern variables are predictors of climate knowledge and not the other way around. Therefore, if this is true, climate knowledge should not be included in the specifications with estimates summarised in Tables~\ref{Climcare435} and~\ref{Climpol435}. As a robustness test, we estimate the models for climate seriousness perception and climate change versus climate policy not including the climate knowledge as an explanatory variable. In both cases, the estimates of the rest of the explanatory variables and their significance levels are almost the same as in the case with climate knowledge and they are summarised in Table~\ref{ClimCare435eClimpol435f} in Appendix~$3$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Willingness to pay for climate change mitigation}\label{ResWTP}
+This section is focused on models explaining preferred gas and electricity tax rates, which we use as a measure of WTP for climate change mitigation. The estimates of the multisplit lasso and the jackknife OLS are summarised in Table~\ref{Gas435cp}.
+
+
+One of the important selected predictors is age. The age was recorded as a categorical variable with the lowest category $24$ or younger, the second lowest category is $25-34$, the third one is $35-44$ and so on up to the highest category which is  $75$ or older. We use the lowest age group ($24$ or younger) as the base category. Coefficients of all higher categories are negative and with exemption of $35-44$ and $75$ or older they are all significant. Thus, WTP declines with age, perhaps because older people have lower likelihood of experiencing tougher consequences of climate change predicted for more distant future \citep{Hamilton2011}.\footnote{We also estimated the model with interactions of age and number of children and grandchildren as older people who have more offspring can obviously be more concern about future than those who do not have children. However, we did not find the interactions to be significant. We do not present the results in this study to save space.}
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\small{\textit{\textbf{WTP climate - gas and electricity tax:} Multisplit lasso and jackknife OLS}}}
+% soubor Gas435cp.R, LassoGas47b.R
+% soubor Gas435cp2.R, LassoGas47b.R
+
+
+%jeste to odhaduju znovu a davam tam ty kategoricky jako scale, jen abych vedela jestli muzu napsat negative/positive correlation
+\label{Gas435cp} 
+\centering
+\begin{small}
+\begin{tabular}{lclccl} 
+\hline \vspace{-0.35cm} \\
+  \multicolumn{1}{l}{} & \multicolumn{2}{c}{\large{\textbf{Multisplit lasso}}} %LassoGas47b
+  & \multicolumn{3}{c}{\large{\textbf{Jackknife OLS}}}  \\%Gas435cp
+  
+\vspace{-0.35cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Aggregated}}& \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+    \multicolumn{1}{l}{ } & \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}}& \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.35cm}Age\tnote{a} $~25-34$&$1\times10^{-6}$&$^{***}$&$-13.271$&$0.266$& \\
+        \\
+\vspace{-0.35cm}Age $35-44$&$0.006$&$^{**}$&$-29.494$&$3\times10^{-7}$&$^{***}$\\
+        \\ 
+ \vspace{-0.35cm}Age $45-54$&$1.000$& &$-34.625$&$<2\times10^{-8}$&$^{***}$\\
+        \\ 
+  \vspace{-0.35cm}Age $55-64$&$1.000$& &$-40.061$&$<2\times10^{-8}$&$^{***}$\\
+        \\       
+ \vspace{-0.35cm}Age $65-74$&$1.000$& &$-46.006$&$<2\times10^{-8}$&$^{***}$\\
+        \\ 
+ \vspace{-0.35cm}Age$~75$ or older&$1.000$& &$-26.071$&$1.000$& \\
+        \\       
+ Climate versus policy&\multirow{2}{*}{$<2\times10^{-8}$}&\multirow{2}{*}{$^{***}$}&\multirow{2}{*}{$10.408$}&\multirow{2}{*}{$<2\times10^{-8}$}&\multirow{2}{*}{$^{***}$}\\
+\vspace{-0.35cm}\hspace{0.6cm}effects perception&&&\\
+ \\  
+  
+  \vspace{-0.35cm}Inequity aversion (categorical)\tnote{a}&\multicolumn{2}{c}{\textit{negative cor.~}$^{*}$}&\multicolumn{2}{c}{\textit{negative cor.~}$^{***}$}\\
+      \\
+ Equal intergenerational&\multirow{2}{*}{$0.011$}&\multirow{2}{*}{${*}$}&\multirow{2}{*}{$20.760$}&\multirow{2}{*}{$0.002$}&\multirow{2}{*}{$^{**}$}\\
+\vspace{-0.35cm}\hspace{0.6cm}allocation of resources $(0/1)$\tnote{b}&&&\\
+ \\  
+ Understands compound&\multirow{2}{*}{$1.000$}&\multirow{2}{*}{ }&\multirow{2}{*}{$-2.942$}&\multirow{2}{*}{$1.000$}&\multirow{2}{*}{ }\\
+\vspace{-0.35cm}\hspace{0.6cm}interest $=0.5$&&&\\
+ \\   
+ Understands compound&\multirow{2}{*}{$1\times10^{-5}$}&\multirow{2}{*}{$^{***}$}&\multirow{2}{*}{$-39.381$}&\multirow{2}{*}{$3\times10^{-5}$}&\multirow{2}{*}{$^{***}$}\\
+\vspace{-0.35cm}\hspace{0.6cm}interest $=1$&&&\\
+  \\  
+\vspace{-0.35cm}Understands inflation $=0.5$&$1.000$& &$-15.892$&$0.516$& \\
+  \\
+\vspace{-0.35cm}Understands inflation $=1$&$6\times10^{-5}$&$^{***}$&$-42.711$&$<2\times10^{-8}$&$^{***}$\\
+  \\
+ Consistent answers to risk&\multirow{2}{*}{$<2\times10^{-8}$}&\multirow{2}{*}{$^{***}$}&\multirow{2}{*}{$-34.861$}&\multirow{2}{*}{$<2\times10^{-8}$}&\multirow{2}{*}{$^{***}$}\\
+ \hspace{0.6cm}  \vspace{-0.35cm} questions $(0/1)$&& &&&\\
+\\ Consistent answers within&\multirow{2}{*}{$0.045$}&\multirow{2}{*}{$^{*}$}&\multicolumn{3}{c}{\textit{Not included}}\\
+\hspace{0.6cm}investments $(0/1)$\tnote{c}&& &&&
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{5}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+  
+     \item[~]\textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+\vspace{-0.4cm}  \begin{adjustwidth}{0.65cm}{} \item \vspace{-0.1cm}The signs of the significant coefficients in the multisplit lasso are same as those of the jackknife OLS and also size of most of the coefficients is very comparable for these two models.\vspace{0.05cm}
+\item[a]Age is only available as categorical with  base category '$24$ or younger'. Inequity aversion treated as categorical (see Section~\ref{BehaviouralVars}).
+\vspace{0.05cm}
+\item[b]This variable is equal to $1$ for those respondents who believe that their income and standard of living generally is about equal as the income and standard of living of their parents (when they were about the respondent's age) and it is also equal to the income and standard of living of their children (when they will reach the respondent's age). The variable is equal to $0$ for all other respondents.
+\vspace{0.05cm}
+\item[c]We eventually excluded this variable from the further analysis. Although consistency within investment was selected by lasso,  it is only marginally significant and strongly correlated with risk assessment consistency. Furthermore, even after exclusion of this variable the model includes relatively large number of predictors and their signs and significance levels do not change.
+    \end{adjustwidth}
+     
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\newpage
+
+We can see in Table~\ref{Gas435cp} that another very strong predictor of WTP is perception of climate versus policy effects on ones way of living which we analyse as a dependent variable in Section~\ref{ResPerc}. Expectedly, those who perceive effects of climate change as more serious than effects of climate policy have higher WPT for climate change mitigation. As we will discus below, this variable is a partial mediator of impact of financial literacy.
+
+
+
+
+Another predictor of WTP is inequity aversion. As we explained in Section~\ref{BehaviouralVars}, we treat this variable as categorical. The values of our inequity aversion measure and their frequencies are summarised in Table~\ref{FreqiencyCat2} in Appendix~$3$. Although the effect of inequity aversion is largely positive and decreasing, the signs and significance levels vary across the categories without any clear pattern.
+
+
+It is further apparent from Table~\ref{Gas435cp} that WTP is higher for respondents who believe that their income and standard of living generally is about equal to the income and standard of living of their parents when they were about the respondent's age and they also believe that their income and standard of living is equal to the income and standard of living of their children when they will reach the respondent's age.
+
+
+We can also see in Table~\ref{Gas435cp} that WTP for climate change mitigation is significantly lower for individuals with higher financial literacy\footnote{Variable 'Understands inflation' is described in Section~\ref{ResPerc}. Values of variable 'Understands compound interest' are based on respondents answer to the following numerical problem: 'Suppose you had \textsterling $100$ in a savings account and the interest rate was $2$ percent per year.
+After $5$ years, how much do you think you would have in the account if you left the money to grow?' The respondents should choose the correct answers from the following three options: $(i)$~'More than \textsterling $102$' $(ii)$~'Exactly \textsterling $102$' $(iii)$~'Less than  \textsterling $102$'. Correct answer is 'more'. The value of the variable is equal to one if the respondent answers 'more', it is equal to $0.5$ if she answers 'the same' and it is equal to zero if she answers 'less'. The frequencies of answers are summarised in Table~\ref{FreqiencyCat2} in Appendix~$3$.} and for those who answered the questions about risk consistently. This is similar to model with climate versus policy perception as dependent variable (see Table~\ref{Climpol435}). It is very likely, that financial literacy and risk assessment consistency are strongly correlated with ability of analytical reasoning and comprehension of quantitative information, hence, the former can be interpreted as a measure of the latter. Because of complexity of the climate system and inherited difficulty of understanding of climate change by the public these findings may seem to be counterintuitive \citep{Weber2011}. More specifically, one may expect the climate concerns to intensify with increasing level of analytical reasoning and numeracy. Our evidence is, however, consistent with previous literature (\citealp{KahanEtAl2012, Kahan2015, Kellstedt2008}).
+
+
+\citet{TerrorClimate} and \citet{KahanEtAl2012} argue that the risks related to natural hazards caused by climate change are quite abstract and remote compared to other more salient risks such as terrorism. Hence, it is difficult to perceive the climate change risk as a relatively serious one. It was shown that attitudes towards climate change and related risks are indicators of personal world-view or political outlook rather than correlates of numeracy or science comprehension. People, who identify themselves with egalitarian, communitarian ideology tend to take climate change more seriously than those with rather hierarchical, individualistic world-view \citep{Leiserowitz2013, KahanEtAl2012, WHITMARSH2011}. It can be more important for an individual to consider the climate risk questions from cultural identity perspective than from a scientific and collective knowledge acquisition viewpoint \citep{Kahan2015}. Whether an individual is right or wrong has no meaningful impact on climate change. Decisions of a single consumer or voter can hardly make a measurable difference to the natural hazard risks caused by climate change. On the other hand, adopting a position which is not consistent with one's cultural group can have dangerous consequences \citep{Kahan2012}. \citet{KahanEtAl2012} show that the ideological polarization over climate change is higher among people with the highest degrees of numeracy and science literacy. That means, for the individuals who identify themselves with hierarchical, individualistic ideology, the climate concern is negatively correlated with numeracy and science literacy while for the individuals who believe in rather egalitarian, communitarian ideology the correlation is positive. A possible interpretation is that the members of public with higher degree of numeracy and analytical reasoning are using these abilities to protect their cultural identity and they are therefore better in interpreting the scientific facts in a way which is consistent with their cultural group's ideology. Following \citet{Hamilton2011}, we test this hypothesis by including interaction terms of degree of agreement with redistribution of income and financial literacy among the set of explanatory variables. The estimates are summarised in Table~\ref{Gas435dcp} in Appendix~$3$. The interaction is positive and significant, which means that the positive effect of agreeing with income redistribution is much stronger for those who understand inflation. Similarly, the negative effect of not agreeing with income redistribution is larger in magnitude if accompanied with higher level of understanding of inflation. This is in accordance with the theory that the ideological polarization over climate change is higher among people with higher degrees of numeracy and science literacy (\citealt{Kahan2012, KahanEtAl2012, Hamilton2011, HamiltonKeim2009}). Our results are robust, the estimates and their significance levels are almost the same as those of the model without the interaction term in Table~\ref{Gas435cp}.
+
+
+
+
+
+
+
+One may notice that level of understanding of inflation is a significant predictor of both climate versus policy effects perception and WTP for climate change mitigation. In both cases the effect is negative. The two climate variables are also strongly correlated. Hence, we will now focus on disentangling the structure of relationships among these three variables.
+
+We reveal that the measure of climate versus policy perception partially mediates effect of understanding of inflation on WTP. In Table~\ref{Climpol435} we can see that understanding of inflation is a significant (negative) predictor of climate versus policy perception and in Tables~\ref{Gas435cp} and~\ref{Gas435dcp} we can notice that climate versus policy effects perception is a significant (positive) predictor of WTP. In Table~\ref{MediationTIV} we regress WTP on understanding of inflation without the mediator in order to verify whether the basic condition of mediation is satisfied, i.e. whether we can see the significant effect of the predictor when the mediator is not present. Model~$1$ in Table~\ref{MediationTIV} is a regression of WTP solely on understanding of inflation while Model~$2$ includes also the other predictors selected by the multisplit lasso. Even without the mediator, the effect of understanding of inflation is strongly significant. Furthermore, the effect is larger in magnitude than the effect in the regressions which include the mediator (compare with the estimates in Tables~\ref{Gas435cp} and \ref{Gas435dcp}). This finding also supports the occurrence of mediation. Table~\ref{MediationTMV} summarizes estimates of WTP regressed on the mediator without the effect of understanding of inflation. Model~$1$ in Table~\ref{MediationTMV} only includes climate versus policy as explanatory variable while Model~$2$ in Table~\ref{MediationTMV} also includes the other predictors selected by the multisplit lasso. If the mediation is present, the mediator should also be a significant predictor of the dependent variable itself and we can see in Table~\ref{MediationTMV} that this is true in our case.
+
+
+As we can see in Tables~\ref{Gas435cp} and~\ref{Gas435dcp}, the effect of understanding of inflation is significant if the mediator is present, therefore the mediation is partial.
+
+
+To verify our conclusion about the presence of mediation, we perform the Sobel test for the effect of understanding of inflation being mediated through climate versus policy variable. The test statistic is strongly significant with \textit{p}-value equal to $4.21\times10^{-22}$, hence the Sobel test supports the occurrence of mediation.
+
+To sum up, people who understand inflation tend to feel to be more affected by climate policy than by climate change and consequently their WTP for climate change mitigation declines. On the other hand, individuals with lower level of understanding of inflation tend to perceive more effects from climate change than from climate policy and therefore their WTP increases.
+
+\vspace{1cm}
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{WTP - mediation through climate versus policy perception:}\\{WTP regressed on financial literacy (understands inflation) without the mediator, OLS}}}
+% soubor paper3/Rwork/mediation.R
+
+% soubor paper3/Rwork/mediation2.R
+%jeste to odhaduju znovu a davam tam ty kategoricky jako scale, jen abych vedela jestli muzu napsat negative/positive correlation
+
+\label{MediationTIV} 
+\centering
+\begin{small}
+\begin{tabular}{lrcrc} 
+\hline
+ \multicolumn{1}{l}{\multirow{2}{*}{\textbf{Dependent variable:}}}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}
+ &\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{WTP-gas and electricity tax (\textsterling~/yr.)} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{\textit{p}-value}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{\textit{p}-value}} \\
+\hline  \vspace{-0.2cm}
+  \\
+\vspace{-0.2cm}\textbf{Understands inflation} $\boldsymbol{=1}$&${-73.648}$&${<2\times10^{-8}~^{***}}$&${-47.827}$&${<2\times10^{-8}~^{***}}$\\
+\\
+\vspace{-0.2cm}Understands inflation $=0.5$&$1.912$&$0.712$&$-16.889$&$0.0007~^{***}$\\
+\\
+\vspace{-0.2cm}Age\tnote{a} $~25-34$&\multicolumn{2}{c}{\textit{Not included}}&$-11.520$&$0.003~^{**}$\\
+        \\
+\vspace{-0.2cm}Age $35-44$&\multicolumn{2}{c}{\textit{Not included}}&$-27.881$&$<2\times10^{-8}~^{***}$\\
+        \\ 
+ \vspace{-0.2cm}Age $45-54$&\multicolumn{2}{c}{\textit{Not included}}&$-33.602$&$<2\times10^{-8}~^{***}$\\
+        \\ 
+  \vspace{-0.2cm}Age $55-64$&\multicolumn{2}{c}{\textit{Not included}}&$-43.684$&$<2\times10^{-8}~^{***}$\\
+        \\       
+ \vspace{-0.2cm}Age $65-74$&\multicolumn{2}{c}{\textit{Not included}}&$-50.493$&$<2\times10^{-8}~^{***}$\\
+        \\ 
+ \vspace{-0.2cm}Age$~75$ or older&\multicolumn{2}{c}{\textit{Not included}}&$-33.163$&$0.008~^{**}$\\
+        \\       
+  \vspace{-0.2cm}Inequity aversion (categorical)\tnote{b}&\multicolumn{2}{c}{\textit{Not included}}&\multicolumn{2}{c}{\textit{negative cor.~}$^{***}$}\\\
+      \\
+ Equal intergenerational&\multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}}&\multirow{2}{*}{$19.471$}&\multirow{2}{*}{$4\times10^{-6}~^{***}$}\\
+\vspace{-0.2cm}\hspace{0.6cm}allocation of resources $(0/1)$&\\
+ \\  
+\vspace{-0.2cm}Understands compound interest $=0.5$&\multicolumn{2}{c}{\textit{Not included}}&$-5.751$&$0.431$ \\
+  \\
+\vspace{-0.2cm}Understands compound interest $=1$&\multicolumn{2}{c}{\textit{Not included}}&$-44.022$&$<2\times10^{-8}~^{***}$\\
+  \\  
+  Consistent answers to risk&\multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}}&\multirow{2}{*}{$-39.922$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}\\
+\hspace{0.6cm}questions $(0/1)$&& &
+  \\
+\hline  \vspace{-0.2cm}
+  \\
+Adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.092$}&\multicolumn{2}{c}{$0.212$}\\
+ Observations:&\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5749$}\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+   \item \textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+  \begin{adjustwidth}{1cm}{}\item[a]Age is only available as categorical with  base category '$24$ or younger'.
+\item[b]Inequity aversion treated as categorical (see Section~\ref{BehaviouralVars}).
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\vspace{1cm}
+
+
+\pagebreak
+
+
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{WTP - mediation through climate versus policy perception:}\\{WTP regressed on the mediator (climate versus policy effects perception) without variable understands inflation, OLS}}}
+% soubor  paper3/Rwork/mediation.R
+
+% soubor paper3/Rwork/mediation2.R
+%jeste to odhaduju znovu a davam tam ty kategoricky jako scale, jen abych vedela jestli muzu napsat negative/positive correlation
+\label{MediationTMV} 
+\centering
+\begin{small}
+\begin{tabular}{lrcrc} 
+\hline
+ \multicolumn{1}{l}{\multirow{2}{*}{\textbf{Dependent variable:}}}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}
+ &\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{WTP - gas and electricity tax (\textsterling~/yr.)} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{\textit{p}-value}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{\textit{p}-value}} \\
+\hline  \vspace{-0.2cm}
+ \\
+\textbf{Climate versus policy}&\multirow{2}{*}{$13.847$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}&\multirow{2}{*}{$10.936$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}\\
+\vspace{-0.2cm}\hspace{0.6cm}\textbf{effects perception}&\\
+ \\  
+\vspace{-0.2cm}Age\tnote{a} $~25-34$&\multicolumn{2}{c}{\textit{Not included}}&$-14.672$&$0.0001~^{***}$\\
+        \\
+\vspace{-0.2cm}Age $35-44$&\multicolumn{2}{c}{\textit{Not included}}&$-32.393$&$<2\times10^{-8}~^{***}$\\
+        \\ 
+ \vspace{-0.2cm}Age $45-54$&\multicolumn{2}{c}{\textit{Not included}}&$-40.588$&$<2\times10^{-8}~^{***}$\\
+        \\ 
+  \vspace{-0.2cm}Age $55-64$&\multicolumn{2}{c}{\textit{Not included}}&$-47.725$&$<2\times10^{-8}~^{***}$\\
+        \\       
+ \vspace{-0.2cm}Age $65-74$&\multicolumn{2}{c}{\textit{Not included}}&$-54.523$&$<2\times10^{-8}~^{***}$\\
+        \\ 
+ \vspace{-0.2cm}Age$~75$ or older&\multicolumn{2}{c}{\textit{Not included}}&$-32.341$&$0.008~^{**}$\\
+        \\       
+  \vspace{-0.2cm}Inequity aversion (categorical)\tnote{b}&\multicolumn{2}{c}{\textit{Not included}}&\multicolumn{2}{c}{\textit{negative cor.~}$^{***}$}\\
+      \\
+ Equal intergenerational&\multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}}&\multirow{2}{*}{$21.644$}&\multirow{2}{*}{$1\times10^{-7}~^{***}$}\\
+\vspace{-0.2cm}\hspace{0.6cm}allocation of resources $(0/1)$&\\
+ \\  
+\vspace{-0.2cm}Understands compound interest $=0.5$&\multicolumn{2}{c}{\textit{Not included}}&$0.396$&$0.956$\\
+  \\
+\vspace{-0.2cm}Understands compound interest $=1$&\multicolumn{2}{c}{\textit{Not included}}&$-40.066$&$<2\times10^{-8}~^{***}$\\
+  \\
+  Consistent answers to risk&\multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}}&\multirow{2}{*}{$-40.935$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}\\
+\hspace{0.6cm}questions $(0/1)$&& &
+     \\
+\hline  \vspace{-0.2cm}
+  \\
+Adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.092$}&\multicolumn{2}{c}{$0.244$}\\
+ Observations:&\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5749$}\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+  \item \textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+  \begin{adjustwidth}{1cm}{}\item[a]Age is only available as categorical with  base category '$24$ or younger'.
+\item[b]Inequity aversion is treated as categorical (see Section~\ref{BehaviouralVars}).
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+\newpage
+
+
+
+
+\FloatBarrier
+\section{Robustness}\label{Robust}
+
+
+One of the important objectives of this study is to examine effects of behavioural variables on climate knowledge and climate change perception. Except of inequity aversion, none of the behavioural variables was chosen by lasso into any of our models. In spite of this, for each dependent variable we estimate a jackknife OLS with all the behavioural measures included as explanatory variables (besides the predictors selected by lasso) as robustness tests and to investigate possible changes in signs and significance levels of the previously
+selected predictors.  We also add some other potentially confounding variables including population density, climate variables other than the dependent variable, degree of agreement with income redistribution, net assets and predicted income as an alternative to the income recorded in our survey~\citep{SurveyUK} since the income obtained from the survey is categorical rather than continuous. \footnote{We include these variables in the robustness tests although they were not originally chosen by lasso.}
+
+The population density serves as a proxy for rural-urban classification. We include it in the robustness tests because we believe that whether one lives in rural or urban area can have considerable impact on attitudes towards climate change.
+
+In each model we include attitude towards income redistribution as an indicator of political and ideological world-views as the ideological opinions were found to be especially important for explaining of attitudes towards climate change and measures of climate knowledge by large number of previous studies (e.g. \citet{Hamilton2011}, \citet{Kahan2012}, \citet{Kellstedt2008}).
+
+
+Controlling for income and net assets is especially important for WTP as both income and assets are very likely to be correlated with WTP. However, also other variables, such as discount rates, can be correlated with income and net assets. Therefore, we examine whether controlling for them changes our estimates. As an alternative measure of income we use a prediction obtained from a regression model estimated using the ASHE data.
+
+We noticed that the relationship between discount rate and each dependent variable exhibit similar, characteristic patterns. The values of dependent variables tend to be high for small values of discount rate, they are quite low for medium values of discount rate and they increase again for relatively high values of discount rate. Because of this parabolic shape, we include both linear and quadratic terms of discount rate as explanatory variables. The estimates of all coefficients are almost the same if the squared discount rate is omitted, but we only present the results of the models with both linear and quadratic term to keep the length of our paper within reasonable limit.
+
+The descriptive statistics of the additional explanatory variables can be found in Table~\ref{Descriptive} in Appendix~$3$.
+
+For WTP models we also perform other robustness tests. 
+
+
+
+\subsection{Climate change knowledge}\label{RobKnow}
+
+
+
+In this section we estimate the climate knowledge model specified in Section~\ref{ResKnow} including the behavioural variables and additional potential confounders as discussed at the beginning of this Section~\ref{Robust}. The estimates are summarised in Table~\ref{ClimKnowInOut}. As we can see, all additional covariates and behavioural variables with except for climate seriousness perception and climate versus policy perception are insignificant. 
+
+Climate seriousness perception and climate versus policy perception are negative and strongly significant predictors of climate knowledge (see Table~\ref{ClimKnowInOut}). This is not surprising given the fact that climate knowledge is negative and significant when included as an explanatory variable for both of these climate concern variables (see Tables~\ref{Climcare435} and~\ref{Climpol435} in Section~\ref{ResPerc}). There are two possible explanations. $(i)$ Individuals, who are less educated in climate change tend to believe to incorrect statements and mechanisms which would imply that climate change is much more serious than it actually is \citep{reynolds2010now, WhatPplKnow94}. In this case, the direction of dependency would be the other way around. $(ii)$ The negative correlation is caused by affective orientation towards global warming \citep{Kahan2015}. That is, people who believe in anthropogenic climate change and correctly assert, for example, that usage of fossil fuels is one of the causes of global warming are also likely to affirm other, perhaps false propositions which would imply higher environmental risks, for example that atmospheric emissions of sulphur contribute to global warming \citep{reynolds2010now}.
+
+The estimates of the predictors which were originally chosen by the multisplit lasso are qualitatively the same as those in Section~\ref{ResKnow} (see Table~\ref{Know435}). The estimates are robust.
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\vspace{-0.2cm}\textit{\textbf{Climate change knowledge:} Jackknife OLS - robustness}}
+% soubor Know435InOut.R  Know535InOutKm2.R 
+\label{ClimKnowInOut} 
+\centering
+\begin{small}
+\vspace{-1.35cm}
+\begin{tabular}{lcccc} 
+\hline
+  \multicolumn{1}{l}{}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}} &  \multicolumn{1}{c}{\textbf{Aggreg.}} \\
+    \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{adjusted}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{adjusted}} \\
+        \multicolumn{1}{l}{\textbf{Variable}}&\multicolumn{1}{c}{}& \multicolumn{1}{c}{\textbf{\textit{p}-value}}&\multicolumn{1}{c}{} &  \multicolumn{1}{c}{\textbf{\textit{p}-value}}\\
+ \hline \vspace{-0.3cm}
+\\
+% ResKnmow435io
+\vspace{-0.33cm}Gender = male&$0.280$&$1\times10^{-8}~^{***}$&$0.282$&$<2\times10^{-8}~^{***}$\\
+  \\
+\vspace{-0.33cm}Cognitive reflection $=0.5$&$0.863$&$1.000$&$0.934$&$1.000$\\
+  \\
+  \vspace{-0.33cm}Cognitive reflection $=1$&$0.107$&$1.000$ &$0.112$&$1.000$\\
+    \\
+  \vspace{-0.33cm}Cognitive reflection $=1.5$&$0.432$&$1.000$&$0.461$&$1.000$\\
+\\
+\vspace{-0.33cm}Cognitive reflection $=2$&$0.258$&$0.001~^{**}$&$0.255$&$0.003~^{**}$\\
+  \\
+  \vspace{-0.33cm}Cognitive reflection $=2.5$&$0.520$&$1.000$ &$0.537$&$1.000$\\
+    \\
+ Cognitive reflection $=3$&$0.450$&$1\times10^{-7}~^{***}$&$0.448$&$5\times10^{-7}~^{***}$\\
+\hline \vspace{-0.33cm}
+  \\
+\vspace{-0.33cm}Income - predicted (mill. \textsterling~/yr.)&$-0.273$&$1.000$&\multicolumn{2}{c}{\textit{Not included}}\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Income - reported (mill. \textsterling~/yr.)\tnote{a}&\multicolumn{2}{c}{\textit{Not included}}&\textit{varies}&$1.000$\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Net assets (mill. \textsterling)&$0.026$&$1.000$&$0.020$&$1.000$\\ 
+      \\
+\vspace{-0.33cm}People per mill. km\textsuperscript{2}-LSOA level&\multirow{1}{*}{$1.416$}&\multirow{1}{*}{$1.000$}&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}\\%ha is a symbol for hectares
+  \\
+\vspace{-0.33cm}People per mill. km\textsuperscript{2}-LAD level&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}&\multirow{1}{*}{$0.254$}&\multirow{1}{*}{$1.000$}\\%ha is a symbol for hectares
+  \\
+  \vspace{-0.33cm}WTP-gas and electricity tax (\textsterling~/ yr.)&$-0.0003$&$1.000$&$-0.0001$&$1.000$\\
+      \\
+  \vspace{-0.33cm}WTP-duty on transport fuel (pence/ yr.)&$0.001$&$1.000$&$0.0006$&$1.000$\\
+    \\
+    \vspace{-0.33cm}Climate seriousness perception&$-0.077$&$<2\times10^{-8}~^{***}$&$-0.076$&$<2\times10^{-8}~^{***}$\\
+  \\
+    \vspace{-0.33cm}Climate vs. policy effects perception&$-0.043$&$0.0009~^{***}$&$-0.044$&$0.001~^{**}$\\
+      \\
+\vspace{-0.33cm}Social value orientation (ring meas.)&\multirow{1}{*}{$0.0008$}&\multirow{1}{*}{$1.000$}&\multirow{1}{*}{$0.0007$}&\multirow{1}{*}{$1.000$}\\
+  \\ \vspace{-0.33cm}\multirow{1}{*}{Inequity aversion (categorical)}&\textit{varies}& \multirow{1}{*}{$1.000$}& \multirow{1}{*}{\textit{varies}}& \multirow{1}{*}{$1.000$}\\      
+    \\ \vspace{-0.33cm}Discount rate yr. from now&$-0.001$&$1.000$&$-0.001$&$1.000$\\  
+      \\
+ \vspace{-0.33cm}Discount rate yr. from now - sq.\tnote{b}&\multirow{1}{*}{$2\times10^{-6}$}&\multirow{1}{*}{$1.000$}&\multirow{1}{*}{$2\times10^{-6}$}&\multirow{1}{*}{$1.000$}\\
+  \\  \vspace{-0.33cm}Risk aversion coefficient\tnote{c}&\multicolumn{2}{c}{\textit{Not included}}&$-0.390$&$1.000$\\          
+    \\
+Redistribution of income (cat.)\tnote{d}&$-$,\textit{varies}&$1.000$&$-$,\textit{varies}&$1.000$\\
+     \hline
+     Mean adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.071$}&\multicolumn{2}{c}{$0.072$}\\
+  Observations: &\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5659$}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+ \item \textit{Notes:}\hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+ \begin{adjustwidth}{0.9cm}{}
+  \vspace{-0.3cm}
+ \item[a]~Self reported income is only available as categorical.
+\item[b]~If squared discount rate is omitted, linear discount rate remains insignificant and the estimates of the other covariates are almost the same as those presented in this table.
+\item[c]~The risk aversion coefficient is an estimated parameter of a utility function. In this model, the mean of power function is used. We also estimated varieties of this model with different risk aversion coefficients, particularly means or medians of various utility functions. These are power, log, exponential and quadratic. The risk aversion parameter is always insignificant and whether it is included or not (or which one) does not affect sign or significance level of any other parameter.
+  \item[d]~A degree of agreement with the statement: 'Government should redistribute income from the better off to those who are less well off.' Included to test for significance of political opinions.
+     \end{adjustwidth}    
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+\subsection{Climate change risk perception}\label{RobPerc}
+
+In this section we discuss robustness of the climate risk perception models. The models which were specified using lasso in Section~\ref{ResPerc} are re-estimated with behavioural variables and additional potential confounders among explanatory variables. The estimates of the climate seriousness perception models are summarised in Table~\ref{ClimCareInOut} and the estimates of the models for climate change versus policy perception can be found in Table~\ref{ClimPolInOut}.
+
+As apparent from Table~\ref{ClimCareInOut}, all the behavioural variables and the additional potential confounders are insignificant for climate seriousness, with exemption of the climate variables. The significance of the climate variables is in accordance with our expectation and it confirms that our climate measures are valid. The estimates of the predictors selected using lasso are qualitatively equivalent to the estimates in Table~\ref{Climcare435}, hence our results are robust.
+
+Table~\ref{ClimPolInOut} summarises the estimates of models with climate change versus policy as a dependent variable. Alike in the case of the climate seriousness model, all the behavioural variables, income, assets and population density are insignificant while the climate variables are significant. This is what we expected for the climate measures to be valid. However, understanding of inflation is not significant in Table~\ref{ClimPolInOut} while it is strongly significant in the model specified using lasso (see Table~\ref{Climpol435}). This is probably a result of the mediation relationship structure among climate versus policy, financial literacy and WTP discussed in Section~\ref{ResWTP}. Level of understanding of inflation is correlated with WTP. If we remove WTP for gas and electricity and WTP for transport fuel keeping all other variables in, understanding of inflation becomes significant. Estimates of this variety can be found in Table~\ref{ClimPolIOnoWTP} in Appendix~$3$. This evidence is consistence with our mediation hypothesis.
+The effects of climate knowledge and risk assessment consistency are negative and significant as in the original model summarised in Table~\ref{Climpol435}. The results are, on the whole, robust.
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\vspace{-0.35cm}\textit{\textbf{Climate change seriousness perception:} Jackknife OLS - robustness}}
+% soubor Ccare435InOutb.R  Ccare535InOutbKM2.R
+\label{ClimCareInOut} 
+\centering
+\begin{small}
+\vspace{-1.2cm}
+\begin{tabular}{lcccc} 
+\hline
+  \multicolumn{1}{l}{}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}} &  \multicolumn{1}{c}{\textbf{Aggreg.}} \\
+    \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{adjusted}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{adjusted}} \\
+        \multicolumn{1}{l}{\textbf{Variable}}&\multicolumn{1}{c}{}& \multicolumn{1}{c}{\textbf{\textit{p}-value}}&\multicolumn{1}{c}{} &  \multicolumn{1}{c}{\textbf{\textit{p}-value}}\\
+ \hline 
+\vspace{-0.23cm}
+\\
+\vspace{-0.33cm}Gender = male&$-0.302$&$0.001~^{*}$&$-0.285$&$0.001~^{**}$\\
+  \\
+\vspace{-0.33cm}Climate knowledge\tnote{a}&$-0.187$&$<2\times10^{-8}~^{***}$&$-0.182$&$<2\times10^{-8}~^{***}$\\
+  \\
+ Redistribution of income:&\multirow{2}{*}{$0.297$}&\multirow{2}{*}{$1.000$}&  \multirow{2}{*}{$0.298$}&\multirow{2}{*}{$1.000$}  \\%-1
+    \vspace{-0.33cm}   \hspace{0.6cm}disagree\tnote{b}&&&&\\%-1
+    \\
+  \vspace{-0.33cm}Redistribution of inc.: neutral\tnote{b}&$0.256$&$1.000$ &$0.263$&$1.000$\\%0
+    \\
+  \vspace{-0.35cm}Redistribution of income: agree\tnote{b}&$0.778$&$2\times10^{-7}~^{***}$&$0.806$&$8\times10^{-8}~^{***}$\\%1
+    \\
+  Redistribution of income:& \multirow{2}{*}{$0.937$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}&\multirow{2}{*}{$0.939$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}\\
+\hspace{0.6cm}strongly agree\tnote{b}&&&\\%2
+\hline\vspace{-0.33cm}
+  \\
+\vspace{-0.33cm}Income- predicted (mill. \textsterling~/yr.)&$2.760$&$1.000$&\multicolumn{2}{c}{\textit{Not included}}\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Income- reported (mill. \textsterling~/yr.)\tnote{c}&\multicolumn{2}{c}{\textit{Not included}}&\textit{varies}&$1.000$\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Net assets (million \textsterling)&$-0.163$&$1.000$&$-0.310$&$1.000$\\ 
+      \\
+\vspace{-0.33cm}People per mill. km\textsuperscript{2}-LSOA level&\multirow{1}{*}{$9.838$}&\multirow{1}{*}{$1.000$}&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}\\%ha is a symbol for hectares
+  \\
+  \vspace{-0.33cm}People per mill. km\textsuperscript{2}-LAD level&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}&\multirow{1}{*}{$-6.520$}&\multirow{1}{*}{$1.000$}\\%ha is a symbol for hectares
+  \\
+  \vspace{-0.33cm}WTP-gas and elec. tax (\textsterling~/ yr.)&$0.002$&$0.0003~^{***}$&$0.002$&$0.0005~^{***}$\\
+      \\
+  \vspace{-0.33cm}WTP-duty on transp. fuel (p./yr.)&$0.005$&$1.000$& $0.005$&$1.000$\\
+\\
+    \vspace{-0.33cm}Climate vs. policy effects perc.&$0.356$&$<2\times10^{-8}~^{***}$&$0.359$&$<2\times10^{-8}~^{***}$\\
+      \\
+Social value orientation&\multirow{2}{*}{$0.003$}&\multirow{2}{*}{$1.000$}&\multirow{2}{*}{$0.003$}&\multirow{2}{*}{$1.000$}\\
+\vspace{-0.33cm} \hspace{0.6cm}(ring measure)&& &\\%2
+  \\% ring measure> ref working paper dolton tol
+    \vspace{-0.33cm}\multirow{1}{*}{Inequity aversion (categorical)}&\textit{$+$, varies}& \multirow{1}{*}{$1.000$}& \multirow{1}{*}{\textit{$+$, varies}}& \multirow{1}{*}{$1.000$}\\      
+    \\ \vspace{-0.33cm}Discount rate yr. from now&$0.0003$&$1.000$&$4\times10^{-5}$&$1.000$\\  
+      \\
+ \vspace{-0.33cm}Discount rate yr. from now - sq.\tnote{d}&\multirow{1}{*}{$-2\times10^{-6}$}&\multirow{1}{*}{$1.000$}&\multirow{1}{*}{$-1\times10^{-6}$}&\multirow{1}{*}{$1.000$}\\
+  \\  \vspace{-0.33cm}Risk aversion coefficient\tnote{e}&\multicolumn{2}{c}{\textit{Not included}}&$0.731$&$1.000$\\          
+   \\
+     \hline
+          Mean adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.247$}&\multicolumn{2}{c}{$0.254$}\\
+  Observations: &\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5659$}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+
+ \item \textit{Notes:}\hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+ \begin{adjustwidth}{0.9cm}{}
+  \vspace{-0.3cm}
+ \item[a]~Squared term of climate knowledge is insignificant in this version, hence it is not included.
+  \item[b]~Degree of agreement with the following statement: 'Government should redistribute income from the better off to those who are less well off.' The base category is 'Strongly disagree'.
+  \item[c]~Self reported income is only available as categorical.
+  \item[d]~If squared discount rate is omitted, linear discount rate remains insignificant and the estimates of the other covariates are almost the same as those presented in this table.
+  \item[e]~The risk aversion coefficient is an estimated parameter of a utility function. In this model, the median of power function is used. We also estimated varieties of this model with different risk aversion coefficients, particularly means or medians of various utility functions. These are power, log, exponential and quadratic. The risk aversion parameter is always insignificant and whether it is included or not (or which one) does not affect sign or significance level of any other parameter.
+     \end{adjustwidth}    
+\singlespacing  
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\pagebreak
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\vspace{-0.2cm}\textit{\textbf{Climate versus policy effects perception:} Jackknife OLS - robustness}}
+% soubor Cpol435InOutb.R  Cpol535InOutbKM2.R
+\label{ClimPolInOut} 
+\centering
+\begin{small}
+\vspace{-1.2cm}
+\begin{tabular}{lcccc} 
+\hline
+  \multicolumn{1}{l}{}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}} &  \multicolumn{1}{c}{\textbf{Aggreg.}} \\
+    \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{adjusted}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{adjusted}} \\
+        \multicolumn{1}{l}{\textbf{Variable}}&\multicolumn{1}{c}{}& \multicolumn{1}{c}{\textbf{\textit{p}-value}}&\multicolumn{1}{c}{} &  \multicolumn{1}{c}{\textbf{\textit{p}-value}}\\
+ \hline 
+\vspace{-0.23cm}
+\\
+\vspace{-0.33cm}Climate knowledge\tnote{a}&$-0.127$&$8\times10^{-5}~^{***}$&$-0.128$&$0.0001~^{***}$\\
+  \\
+\vspace{-0.33cm}Understands inflation $=0.5$&$0.051$&$1.000$&$0.028$&$1.000$ \\
+  \\
+\vspace{-0.33cm}Understands inflation $=1$&$-0.219$&$1.000$&$-0.243$&$1.000$\\
+    \\
+  Consistent answers to risk&\multirow{2}{*}{$-0.310$}&\multirow{2}{*}{$0.019~^{*}$}&\multirow{2}{*}{$-0.305$}&\multirow{2}{*}{$0.038~^{*}$}\\
+\hspace{0.6cm}questions $(0/1)$&& &\\
+\hline
+  \\
+\vspace{-0.33cm}Income- predicted (mill. \textsterling~/yr.)&$2.446$&$1.000$&\multicolumn{2}{c}{\textit{Not included}}\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Income- reported (mill. \textsterling~/yr.)\tnote{b}&\multicolumn{2}{c}{\textit{Not included}}&\textit{varies}&$1.000$\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Net assets (million \textsterling)&$-0.070$&$1.000$&$0.027$&$1.000$\\ 
+      \\
+\vspace{-0.33cm}People per mill. km\textsuperscript{2}-LSOA level&\multirow{1}{*}{$-16.683$}&\multirow{1}{*}{$1.000$}&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}\\%ha is a symbol for hectares
+  \\
+\vspace{-0.33cm}People per mill. km\textsuperscript{2}-LAD level&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}&\multirow{1}{*}{$15.548$}&\multirow{1}{*}{$1.000$}\\%ha is a symbol for hectares
+  \\
+  \vspace{-0.33cm}WTP- gas and electric. tax (\textsterling~/ yr.)&$0.002$&$9\times10^{-5}~^{***}$&$0.002$&$9\times10^{-5}~^{***}$\\
+      \\
+  \vspace{-0.33cm}WTP-duty on transport fuel (p./yr.)&$0.011$&$9\times10^{-5}~^{***}$& $0.010$&$0.001~^{**}$\\
+  \\
+    \vspace{-0.33cm}Climate seriousness perception&$0.382$&$\small{<}2\times10^{-8}~^{***}$&$0.387$&$\small{<}2\times10^{-8}~^{***}$\\
+      \\
+Social value orientation&\multirow{2}{*}{$0.006$}&\multirow{2}{*}{$0.396$}&\multirow{2}{*}{$0.005$}&\multirow{2}{*}{$0.726$}\\
+\vspace{-0.33cm} \hspace{0.6cm}(ring measure)&& &\\%2
+  \\% ring measure> ref working paper dolton tol
+ \vspace{-0.33cm}\multirow{1}{*}{Inequity aversion (categorical)}&\textit{varies}& \multirow{1}{*}{$1.000$}& \multirow{1}{*}{\textit{varies}}& \multirow{1}{*}{$1.000$}\\      
+    \\ \vspace{-0.33cm}Discount rate yr. from now&$-0.001$&$1.000$&$-0.001$&$1.000$\\  
+      \\
+ \vspace{-0.33cm}Discount rate yr. from now - sq.\tnote{c}&\multirow{1}{*}{$2\times10^{-6}$}&\multirow{1}{*}{$1.000$}&\multirow{1}{*}{$2\times10^{-6}$}&\multirow{1}{*}{$1.000$}\\
+  \\  \vspace{-0.33cm}Risk aversion coefficient\tnote{d}&\multicolumn{2}{c}{\textit{Not included}}&$-0.523$&$1.000$\\          
+   \\
+  \vspace{-0.35cm}Redistribution of income (categ.)\tnote{e}&\textit{$+$,varies}&$1.000$&\textit{$+$,varies}&$1.000$\\%1
+    \\
+     \hline
+          Mean adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.254$}&\multicolumn{2}{c}{$0.257$}\\
+  Observations: &\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5659$}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+ \item \textit{Notes:}\hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+ \begin{adjustwidth}{0.9cm}{}
+  \vspace{-0.3cm}
+ \item[a]~Squared term of climate knowledge is insignificant in this version, hence it is not included.
+\item[b]~Self reported income is only available as categorical.
+\item[c]~If squared discount rate is omitted, linear discount rate remains insignificant and the estimates of the other covariates are almost the same as those presented in this table.
+\item[d]~The risk aversion coefficient is an estimated parameter of a utility function. In this model, the mean of power function is used. We also estimated varieties of this model with different risk aversion coefficients, particularly means or medians of various utility functions. These are power, log, exponential and quadratic. The risk aversion parameter is always insignificant and whether it is included or not (or which one) does not affect sign or significance level of any other parameter. 
+\item[e]~A degree of agreement with the statement: 'Government should redistribute income from the better off to those who are less well off.' Included to test for significance of political opinions.
+     \end{adjustwidth}   
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\vspace{0.2cm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Willingness to pay for climate change mitigation}\label{RobWTP}
+
+In this section we verify robustness of the models with dependent variable  WTP for climate change mitigation. Table~\ref{GasInOut} summarises estimates of two varieties of the models specified in Section~\ref{ResWTP} with additional behavioural variables, climate change variables and other potential confounders discussed at the beginning of Section~\ref{Robust}. The estimates of the predictors which were originally selected by the multisplit lasso (in the first $11$ rows of Table~\ref{GasInOut}) are qualitatively the same as those of the models in Table~\ref{Gas435cp}. The only exception is the dummy variable for scoring $0.5$ on understanding of compound interest as its estimate is negative in Table~\ref{Gas435cp} while it is positive in both models in Table~\ref{GasInOut}. However, the estimate of this dummy variable is insignificant in each of these models so the difference in signs does not imply that the estimates are not robust.
+
+Similarly as in the case of the robustness model for climate knowledge (Table~\ref{ClimKnowInOut}) and the robustness models for climate change risk perception (Tables~\ref{ClimCareInOut} and~\ref{ClimPolInOut}) the climate change variables are significant (with the exemption of climate knowledge) while the other potential confounders and behavioural variables in the second half of Table~\ref{GasInOut} are insignificant. An exemption is predicted income, which has a significant impact on WTP.\footnote{Interestingly, the categorical income recorded in the survey \citep{SurveyUK} is not significant. We suspect that it can be due to inaccuracy of the income variable recorded in the survey as relatively big number of participants are students and it is not clear if they stated their own income or income of their parents. The possible inaccuracy of the income measure is one of the reasons why we also use the alternative predicted income.} The significance of income can be explained by its diminishing marginal utility. For people with higher income, the utility of amount of money paid as climate tax is lower than for people with lower income. Therefore, preferred tax rates are higher for higher income groups. Whether or not income or the other additional explanatory variables are included does not have any significant impact on estimates of the predictors in Table~\ref{GasInOut} which were chosen by the means of the multisplit lasso in Section~\ref{ResWTP}.
+
+
+Pride may have played role in the strong significance of current tax rates estimates. As explained in Section~\ref{ClimateVars}, the respondents were informed about the correct tax rates after they gave their estimates and before they were asked about their preferences regarding the climate policies.  It is possible that respondents tended to give preferred tax rates which were close to their estimate of the current tax rates feeling that their estimate should be the preferred one.
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{\small{WTP climate - gas and electricity tax:}} Jackknife OLS - robustness}}
+% soubor Gas435InOut3.R a %Gas535InOutKm2b.R
+% % soubor Gas435InOut5.R a %Gas535InOutKm2c.R jeste to odhaduju znovu a davam tam ty kategoricky jako scale, jen abych vedela jestli muzu napsat negative/positive correlation
+
+\label{GasInOut} 
+\centering
+\begin{small}
+\vspace{-1cm}
+\begin{tabular}{lcccc} 
+\vspace{-0.8cm}
+\\
+\hline
+  \multicolumn{1}{l}{}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}% Gas435InOut3.R
+  &\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\%Gas535InOutKm2b.R
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}} &  \multicolumn{1}{c}{\textbf{Aggreg.}} \\
+ \multicolumn{1}{l}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{adj. \textit{p}-value}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{adj. \textit{p}-value}} \\
+\hline  \vspace{-0.345cm}
+\\
+\vspace{-0.345cm}Age (categorical)\tnote{a}&\multicolumn{2}{c}{\textit{negative cor.~}$^{***}$}&\multicolumn{2}{c}{\textit{negative cor.~}$^{***}$}\\
+  \\
+\vspace{-0.345cm}Climate vs. policy effects perc.&$6.654$&$<2\times10^{-8}~^{***}$&$6.534$&$<2\times10^{-8}~^{***}$\\
+  \\
+  \vspace{-0.345cm}Inequity aversion (categorical)\tnote{a}&\multicolumn{2}{c}{\textit{negative cor.~}$^{**}$}&\multicolumn{2}{c}{\textit{negative cor.~}$^{**}$}\\
+      \\
+ Equal intergenerational&\multirow{2}{*}{$18.843$}&\multirow{2}{*}{${0.004}~^{**}$}&\multirow{2}{*}{$19.646$}&\multirow{2}{*}{${0.004}~^{**}$}\\
+\vspace{-0.345cm}\hspace{0.6cm}allocation of resources $(0/1)$&\\
+ \\  
+\vspace{-0.345cm}Understands comp. interest $=0.5$&$1.276$&$1.000$&$3.870$&$1.000$ \\
+  \\
+\vspace{-0.345cm}Understands comp. interest $=1$&$-34.032$&$0.0003~^{***}$&$-32.084$&$0.001~^{***}$\\
+  \\  
+\vspace{-0.345cm}Understands inflation$=0.5$&$-12.364$&$1.000$&$-11.779$&$1.000$\\
+  \\
+\vspace{-0.345cm}Understands inflation$=1$&$-31.737$&$<2\times10^{-8}~^{***}$&$-29.101$&$<2\times10^{-8}~^{***}$\\
+    \\
+Consistent answers to risk $(0/1)$&\multirow{1}{*}{$-28.046$}&\multirow{1}{*}{$<2\times10^{-8}~^{***}$}&\multirow{1}{*}{$-27.714$}&\multirow{1}{*}{$<2\times10^{-8}~^{***}$}\\
+\hline \vspace{-0.345cm}\\
+\vspace{-0.345cm}Income- predicted (thousand \textsterling/yr.)&$0.703$&$3\times10^{-5}~^{***}$&\multicolumn{2}{c}{\textit{Not included}}\\ %income PREDICTED!!
+  \\
+\vspace{-0.345cm}Income- reported (mill. \textsterling/yr.)\tnote{a}&\multicolumn{2}{c}{\textit{Not included}}&$+$,\textit{varies}&$1.000$\\ %income PREDICTED!!
+  \\
+\vspace{-0.345cm}Net assets (million \textsterling)&$18.033$&$0.133$&$20.072$&$0.151$\\ 
+      \\
+\vspace{-0.345cm}People per mill. km\textsuperscript{2}-LSOA level&\multirow{1}{*}{$768.974$}&\multirow{1}{*}{$1.000$}&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}\\%ha is a symbol for hectares
+  \\
+\vspace{-0.345cm}People per mill. km\textsuperscript{2}-LAD level&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}&\multirow{1}{*}{$594.369$}&\multirow{1}{*}{$1.000$}%ha is a symbol for hectares
+  \\  \\
+\vspace{-0.345cm}Climate knowledge&$0.020$&$1.000$&$0.556$&$1.000$\\
+      \\
+  \vspace{-0.345cm}How much is tax gas and el.\small{(\textsterling~/yr.)}&$0.252$&$\small{<}2\times10^{-8}~^{***}$&$0.251$&$\small{<}2\times10^{-8}~^{***}$\\
+      \\
+    \vspace{-0.345cm}Climate seriousness perception&$7.158$&$\small{<2\times10^{-8}}~^{***}$&$7.282$&$\small{<}2\times10^{-8}~^{***}$\\
+      \\
+\vspace{-0.345cm}Social val. orientation (ring meas.)&\multirow{1}{*}{$0.048$}&\multirow{1}{*}{$1.000$}&\multirow{1}{*}{$0.009$}&\multirow{1}{*}{$1.000$}\\ % ring measure> ref working paper dolton tol     
+    \\ \vspace{-0.34cm}Discount rate yr. from now&$-0.078$&$1.000$&$-0.084$&$1.000$\\  
+      \\
+ \vspace{-0.345cm}Discount rate yr. from now - sq.\tnote{b}&\multirow{1}{*}{$0.0002$}&\multirow{1}{*}{$0.992$}&\multirow{1}{*}{$0.0002$}&\multirow{1}{*}{$0.908$}\\
+  \\  \vspace{-0.345cm}Risk aversion coefficient\tnote{c}&\multicolumn{2}{c}{\textit{Not included}}&$-0.261$&$1.000$\\          
+   \\
+  \vspace{-0.35cm}Redistribution of income (cat.)\tnote{d}&\textit{varies}&$1.000$&\textit{varies}&$1.000$\\
+    \\
+     \hline
+Mean adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.370$}&\multicolumn{2}{c}{$0.364$}\\
+  Observations: &\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5659$}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+ \item \textit{Notes:}\hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$;\hspace{0.4cm} 
+  \vspace{-0.4cm}\large{\textsuperscript{\textbf{a}}}~\footnotesize{Age and reported income only available}\\ \begin{adjustwidth}{0.7cm}{} \footnotesize{as  categorical. Inequity av. treated as categorical (see Sec.~\ref{Method})\hspace{0.4cm}} 
+  \large{\textsuperscript{\textbf{b}}}~\footnotesize{If squared discount rate is omitted, linear discount rate remains insignificant and the estimates of the other covariates are almost the same as those presented in this table.\hspace{0.4cm}} 
+  \large{\textsuperscript{\textbf{c}}}~\footnotesize{The risk aversion coefficient is an estimated parameter of a utility function. In this model, the mean of power function is used. We also estimated varieties of this model with different risk aversion coefficients, particularly means or medians of power, log, exponential or quadratic utility function. The risk aversion parameter is always insignificant and whether it is included or not (or which one) does not affect sign or significance level of any other parameter.\hspace{0.4cm}}\normalsize{\textsuperscript{\textbf{d}}}~\footnotesize{A degree of agreement with the statement: 'Government should redistribute income from the better off to those who are less well off.'}
+     \end{adjustwidth}     
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\pagebreak
+
+
+
+
+As another robustness test we use preferred tax rates on transport fuel as a measure of WTP. The estimates are summarised in Table~\ref{FuelInOut}. Model~$1$ in Table~\ref{FuelInOut} only includes explanatory variables which were chosen for WTP using the lasso in Section~\ref{ResWTP}. Model~$2$ in Table~\ref{FuelInOut} also includes climate variables, behavioural variables and additional potential confounders to test their significance and to examine whether or not their inclusion changes signs or significance levels of the main predictors. Comparing Model~$1$ in Table~\ref{FuelInOut} with the estimates of the models in Table~\ref{Gas435cp} (Section~\ref{ResWTP}), we can see that the signs and significance levels of the coefficients are the same in these two models. Also their magnitude is comparable considering the different scales of the two dependent variables. Regarding Model~$2$ in Table~\ref{FuelInOut}, we can see that inclusion of the additional explanatory variables does not change signs or significance levels of the main predictors (the variables in the first $11$ rows of Table~\ref{FuelInOut}). An exemption is dummy variable for scoring $0.5$ on understanding of inflation as in Model~$1$ the coefficient is negative while in Model~$2$ it is positive. However, this change is unremarkable as these coefficients of understanding of inflation are insignificant in both models. The additional explanatory variables in Model~$2$ in Table~\ref{FuelInOut} are insignificant except of the estimate of current fuel duty and climate seriousness perception. The signs of all the additional variables are the same as their signs in the model for WTP on gas and electricity in Table~\ref{GasInOut}. Interestingly, income does not have any significant impact on preferred fuel duty although its impact on gas and electricity tax is significant. Our explanation is that individuals with lower income exhibit lower WTP through gas and electricity tax, but they are less likely to own a car (thus they are less likely to be eligible for paying transport fuel duty). Thus, when asked about their preferred rates on fuel duty, they actually impose the duty on those owning a car rather than on themselves. It is understandable that preferred tax rates imposed on others are higher than preferred tax rates paid by ourselves. Hence, people with lower income may exhibit higher preferred fuel duty as they impose it on others rather than on yourself. This may offset the significant positive impact of income, which we detected in the model for gas and electricity tax. Even lower income groups are eligible for gas and electricity tax, therefore the positive influence of income is significant as it is not offset by the fact that lower income groups impose the tax on others rather than on themselves.  
+
+We can conclude that our models are reasonable robust.
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{\vspace{-0.6cm} WTP climate - duty on transport fuel:} Jackknife OLS}}
+% soubor FuelGas4cp.R a %.FuelGas4bInOut.R % soubor FuelGas5cp.R  %.FuelGas4bInOut4.R
+\label{FuelInOut} 
+\centering
+\begin{small}
+\vspace{-0.8cm}
+\begin{tabular}{lcccc} 
+\\
+\hline
+  \multicolumn{1}{l}{}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}% FuelGas4cp.R
+  &\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\%.FuelGas4bInOut.R
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}} &  \multicolumn{1}{c}{\textbf{Aggreg.}} \\
+ \multicolumn{1}{l}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{adj. \textit{p}-val.}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{adj. \textit{p}-val.}} \\
+\hline  \vspace{-0.32cm} 
+\\ 
+\vspace{-0.32cm}Age (categorical)\tnote{a}&\multicolumn{2}{c}{\textit{negative cor.~}$^{***}$}&\multicolumn{2}{c}{\textit{negative cor.~}$^{***}$}\\
+  \\
+\vspace{-0.32cm}Climate vs. policy effects perception&$2.192$&$<2\times10^{-8}~^{***}$&$1.494$&$<2\times10^{-8}~^{***}$\\
+  \\
+  \vspace{-0.32cm}Inequity aversion (categorical)\tnote{a}&\multicolumn{2}{c}{\textit{negative cor.~}$^{**}$}&\multicolumn{2}{c}{\textit{negative cor.~}$^{**}$}\\
+      \\
+ Equal intergenerational&\multirow{2}{*}{$4.461$}&\multirow{2}{*}{${0.002}~^{**}$}&\multirow{2}{*}{$4.824$}&\multirow{2}{*}{${0.0004}~^{***}$}\\
+\vspace{-0.32cm}\hspace{0.6cm}allocation of resources $(0/1)$&\\
+ \\  
+\vspace{-0.32cm}Understands compound interest$=0.5$&$1.703$&$1.000$&$1.818$&$1.000$ \\
+  \\
+\vspace{-0.32cm}Understands compound interest$=1$&$-7.363$&$0.001~^{***}$&$-7.091$&$0.0008~^{***}$\\
+  \\
+\vspace{-0.32cm}Understands inflation$=0.5$&$-0.602$&$1.000$&$0.135$&$1.000$\\
+  \\
+\vspace{-0.32cm}Understands inflation$=1$&$-7.458$&$<2\times10^{-8}~^{***}$&$-5.834$&$4\times10^{-7}~^{***}$\\
+    \\
+  Consistent answers to risk&\multirow{2}{*}{$-6.294$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}&\multirow{2}{*}{$-5.591$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}\\
+\hspace{0.6cm}questions $(0/1)$&& &\\
+\hline \vspace{-0.3cm}\\
+\vspace{-0.32cm}Income - predicted (thousands \textsterling~/yr.)&\multicolumn{2}{c}{\textit{Not included}}&$88.788$&$0.344$ \\ %income PREDICTED!!
+  \\
+\vspace{-0.32cm}Net assets (million pounds \textsterling)&\multicolumn{2}{c}{\textit{Not included}}&$3.168$&$0.936$\\ 
+      \\
+\vspace{-0.32cm}People per mill. km\textsuperscript{2} - LSOA level&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}&\multirow{1}{*}{$43.595$}&\multirow{1}{*}{$1.000$}\\%ha is a symbol for hectares
+  \\
+\vspace{-0.32cm}Climate knowledge&\multicolumn{2}{c}{\textit{Not included}}&$0.210$&$1.000$\\
+      \\
+  \vspace{-0.32cm}How much is duty transp. fuel (p./yr.)&\multicolumn{2}{c}{\textit{Not included}}&$0.311$&$<2\times10^{-8}~^{***}$\\
+      \\
+    \vspace{-0.32cm}Climate seriousness perception&\multicolumn{2}{c}{\textit{Not included}}&$1.327$&$<2\times10^{-8}~^{***}$\\
+           \\
+Social value orientation&\multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}}&\multirow{2}{*}{$0.004$}&\multirow{2}{*}{$1.000$}\\
+\vspace{-0.32cm} \hspace{0.6cm}(ring measure)&&&\\ 
+      \\
+ \vspace{-0.32cm}Discount rate year from now&\multicolumn{2}{c}{\textit{Not included}}&\multirow{1}{*}{$-0.011$}&\multirow{1}{*}{$1.000$}\\     \\     
+ \vspace{-0.32cm}Discount rate year from now - sq.\tnote{b}&\multicolumn{2}{c}{\textit{Not included}}&\multirow{1}{*}{$3\times10^{-5}$}&\multirow{1}{*}{$1.000$}\\     
+      \\
+Redistribution of income&\multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}}&\multirow{2}{*}{\textit{varies}}&\multirow{2}{*}{$1.000$}\\
+\vspace{-0.32cm} \hspace{0.6cm}(categorical)\tnote{c}&&&\\
+  \\    
+     \hline
+Mean adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.244$}&\multicolumn{2}{c}{$0.309$}\\    
+  Observations: &\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5659$}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+ \item \textit{Notes:}\hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+ \begin{adjustwidth}{0.9cm}{}
+  \vspace{-0.2cm}
+\item[a]~Age is only available as categorical. Inequity aversion is treated as categorical (see Section~\ref{BehaviouralVars}).
+\item[b]~If squared discount rate is omitted, linear discount rate remains insignificant and the estimates of the other covariates are almost the same as those presented in this table.
+\item[c]~A degree of agreement with the statement: 'Government should redistribute income from the better off to those who are less well off.' Included to test for significance of political opinions.
+     \end{adjustwidth}       
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+\pagebreak
+
+
+
+
+
+
+\section{Summary}\label{Summary}
+We exploited a unique dataset of nearly $6000$ observations which combines advantages of survey and experimental methods \citep{SurveyUK}. Among almost $70$ explanatory variables and much more interactions we identified the main predictors of climate knowledge, climate risk perception and WTP for climate change mitigation. An important part of our analysis was testing of effects of four behavioural variables, in particular social value orientation, time preferences, risk preferences and attitudes towards
+inequality on the climate change variables. The measures of these variables were implied using data from the survey conducted recently in the UK 
+\citep{SurveyUK}.
+
+Using a multisplit lasso we helped to understand the relationship structure among the climate variables and the behavioural measures. The lasso estimator has been shown to be very powerful in high-dimensional context as it yields sparse and interpretable results \citep{pValsLasso}. We used \textit{p}-values proposed by~\citet{pValsLasso} which were shown to be a good tool for control of both family-wise error and false discovery rate.
+
+With exemption of inequity aversion, we did not find any of the behavioural measures to have significant effect on the climate variables. According to our results, the rate of inequity aversion has a significant impact on WTP for climate change mitigation. The value of our inequity aversion measure is equal to one of $16$ distinct values for all respondents in our dataset (given the way of its construction and the data recorded in our survey and experiments). Therefore, we treat the inequity aversion rate as categorical. We can say that its effects on WTP are largely positive and decreasing, although the impacts vary in magnitude and significance over the categories without clear pattern. Besides rate of inequity aversion, the most important predictors of WTP are age, perception of intergenerational allocation of resources, financial literacy which we also use as a proxy for numeracy, climate versus policy effects perception which is a partial mediator of understanding of inflation.  Consistently with previous literature the impact of age and numeracy is negative \citep{Hamilton2011}. Expectedly, WTP is higher for individuals who feel to be more affected by climate change than by climate policy. 
+
+We found that climate knowledge is higher for men and for individuals with higher level of cognitive ability. 
+
+We considered two measures of climate risk perception. The first one is based on the respondents' opinion on level of climate change seriousness. The other one is referred to as climate versus policy perception and it records respondents' opinions on whether they are more affected by climate change or by climate policy. The first question is meant to be answered immediately without thinking by most people while we expected the respondents to take more time before  answering the latter one. For climate seriousness, the important predictors are gender, climate knowledge and opinion on whether or not government should redistribute income from the better off to those who are less well off, which we consider as a proxy for ideological or political world-views. The drivers of climate versus policy perception are climate knowledge, degree of understanding of inflation and risk assessment consistency. It is noticeable that with exemption of climate knowledge (which is common to both) the predictors of the first climate measure which is meant to be answered without thinking and therefore more intuitively are likely to be correlated with personality traits. On the other hand, the predictors of the latter climate risk question, which is considered to need more time and thinking before giving an answer, are likely to be correlated with cognitive ability and analytical reasoning.
+
+
+As robustness tests, we used alternative measure of WTP and for each dependent variable we re-estimated the models with additional potential confounders. Based on them we can conclude that our estimates are robust.
+
+
+% with regard to climate knowledge?? but also relevant for climate concern...
+
+%Another important question is, what actually is 'scientific consensus'? \citet{Cook2013COnsensus} and \citet{Kahan2015} argue, that an opinion or a position, which is agreed on by most articles on a given topic published in peer-reviewed scientific journals is a scientific consensus. But is scientific consensus actually the best available evidence or a theory which is closest to absolute objective truth? Is it reasonable to assume that individuals with high degree of numeracy, analytical reasoning and scientific literacy will tend to believe to the scientific consensus, if considered from purely objective point of view, independently of what stance toward the topic (in our case climate change) express their identity? Publication bias casts doubt on this assumption. Publication bias typically occurs when a result of a study affects the decision whether to publish the results or not. In particular, it can arise if there is a preference to publish statistically significant results, which is usually the case. Therefore, every average or counts of significant versus insignificant studies is likely to be biased and misleading \citep{PubBias}. \citet{Cook2013COnsensus} review abstracts of nearly $12000$ scientific articles about global climate change published in peer-reviewed journals during period $1991-2011$. \citet{Cook2013COnsensus} argue that $64.6\%$ of these abstracts express no position on anthropogenic global warming and among the rest of them, $97.1\%$ agree that global warming is caused by humans. Hence, anthropogenic global warming is a scientific consensus. However, the scientific consensus does not take into account publication bias, therefore the results can be biased.`
+
+
+
+
+\section{Limitations and further research}\label{Caveats}
+
+
+We conducted our research within some unavoidable constrains, mostly related to our dataset and time restriction. As a result, the study has some limitations. Caveats are discussed in this section. We also outline suggestions for further research in this section.
+
+The sample is not exactly representative of the UK adult population as it was conducted online. The highest age category is slightly under-sampled and the lowest two age categories are slightly over-sampled. However, as we can see in Table~\ref{SexAge}, the age and sex distribution in our sample is relatively comparable to the age and sex distribution of the UK population. Also, more respondents tended to drop out on more complicated questions. Thus, the sample of respondents who finished the survey is slightly biased towards those who are unafraid of hard questions.  
+
+
+
+As a measure of climate knowledge we adopted the OCSI instrument developed by \citet{Kahan2015} and we found it to be significantly higher for men. For further research, it would be particularly interesting to let a woman propose a set of similar questions which would constitute an alternative climate knowledge measure and to test whether we would find  a significant effect of gender on the alternative climate knowledge measure.
+
+
+
+
+The data on WTP were enquired in the survey as follows. The respondents were first asked how much they think the climate duty currently is. Then they were told the correct answer and then they were asked about their preferred tax rates. We believe that for further analysis it would be useful to ask half of the respondents about their preferred tax rates before telling them the correct answer or both before and after informing them about the actual tax rates. This could enable us to estimate effect of information.
+
+
+Unfortunately, the survey which collected our data did not include direct questions about political opinions. Hence, our next suggestion for future research is to collect data about political opinions directly and test their significance as well as significance of their interactions with measures of numeracy and cognitive ability on climate knowledge, climate risk perception and WTP for climate change mitigation. Also, if a similar survey will be conducted in future, we would like to suggest including questions about method of travel to work. This information could be particularly helpful in identifying who answered the desired duty question assuming that the rate will apply to themselves and who, on the other hand, implied the duty on others. The respondents travelling by car are probably assuming that the fuel duty will apply to themselves, while those travelling by train or bike are likely to be implying the tax on others. If these data were available, it would also be interesting to examine the gap between desired duty imposed on others and desired climate duty implied on oneself.
+
+Other possible direction of further research would be to verify whether some natural disaster happened during the period of survey and if so, how did it affect public environmental attitudes. This could be also analysed using data from different surveys. Scrutinising weather data at the time of survey and investigating their possible effects on stated environmental attitudes could be another useful approach.
+
+
+An interesting and relevant question is what actually 'scientific consensus' is. \citet{Kahan2015} and \citet{Cook2013COnsensus} argue that a scientific consensus is an opinion or a position, which is agreed on by most articles on a given topic published in peer-reviewed scientific journals during given time period. According to this definition, anthropogenic climate change is a scientific consensus. But is scientific consensus always the best available evidence? Publication bias\footnote{Publication bias typically occurs when a result of a study affects the decision whether to publish the results or not.}, which often occurs as there is usually a preference to publish statistically significant results, casts doubt on this assumption. Counts of significant versus insignificant studies are likely to be biased and misleading \citep{PubBias}. This should be taken into account when interpreting results about environmental knowledge and concerns.
+
+
+
+\section{Concluding remarks and policy implications}\label{Implications}
+
+Consistently with previous literature, we reveal that people who incline to communitarian, pro-social world-view tend to be more concerned about climate change than those who incline towards competitive, individualistic ideology (\citealp{Leiserowitz2013, Kahan2012, WHITMARSH2011}). This polarization, which increases with higher degree of numeracy and cognitive ability, hinders efforts to mitigate climate change and its consequences. Reducing the association between ideological or political opinions and attitudes towards global warming would be a good step towards alleviation of climate change. In practice, this could be achieved for example by more cautious utilization of ideological and political polarization over climate change in political campaigns. 
+
+
+We found that cognitive reflection and financial literacy are among the most important factors affecting the climate knowledge and climate perception. Therefore, we would like to empathise importance of education in these areas. Our results further suggest that the effect of age on climate concerns is negative and significant. Possible explanation is that much less was known about climate change back in times when older people were in education system. Hence, they were not exposed to the same level of information about climate change as younger generations. In addition, older people are less likely to be proficient in working with internet which is probably the most common source of information today. Therefore, we believe that more information provided through media which are easily accessible also for elderly people would help them to improve understanding of consequences of global warming for them and their offspring. We would like to encourage policy makers to facilitate support towards educating middle age and older people about climate change and towards motivating them to further educate themselves in this area.
+
+
+
+
+
+According to our results, income has significant positive effect on preferred gas and electricity tax rates. We suggest that this should be further examined and taken into account when making decisions about climate tax rates. In particular, we suggest to investigate possibility of introducing different tax rates for different income groups.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+\makeatletter 
+\renewcommand{\thesection}{\hspace*{-1.0em}}
+\newpage
+\linespread{1}
+\bibliographystyle{ChicagoM}
+\bibliography{references}
+
+\newpage
+
+
+\setcounter{table}{0} 
+\makeatletter 
+\renewcommand{\thetable}{A\@arabic \c@table} 
+\FloatBarrier
+
+
+\section{Appendix 1 Climate knowledge - OCSI instrument}
+
+Below are the questions of the Ordinary Climate-Science Intelligence (OCSI) assessment developed by \cite{Kahan2015} which we use as a measure of climate knowledge. The eight questions are true or false statements. The correct answers are in bold.
+
+\begin{enumerate}
+
+\item Climate scientists believe that if the North Pole icecap melted as a result of human-caused global warming, global sea levels would rise.  \textbf{FALSE}
+
+\item Climate scientists have concluded
+that globally averaged surface air
+temperatures were higher for the 
+first decade of the twenty-first
+century (2000-2009) than for the last decade of the twentieth
+century (1990-1999).   \textbf{TRUE}
+
+\item Climate scientists believe that
+human-caused global warming
+will result in flooding of many
+coastal regions. \textbf{TRUE}
+
+\item Climate scientists believe that
+human-caused global warming
+has increased the number and
+severity of hurricanes around the
+world in recent decades. \textbf{FALSE}
+
+
+\item Climate scientists believe that
+nuclear power generation
+contributes to global warming.  \textbf{FALSE}
+
+
+\item Climate scientists believe that
+human-caused global warming
+will increase the risk of skin cancer in human beings.  \textbf{FALSE}
+
+\item Climate scientists and economists
+predict there will be positive as
+well as negative effects from
+human-caused global warming. \textbf{TRUE}
+
+
+\item Climate scientists believe that the
+increase of atmospheric carbon
+dioxide associated with the
+burning of fossil fuels will reduce
+photosynthesis by plants.  \textbf{FALSE}
+
+\end{enumerate}
+
+
+
+\section{Appendix 2 Climate knowledge and gender}
+
+
+
+As discussed in Section~\ref{ResKnow}, we detect a strong evidence that our measure of climate knowledge is significantly higher for men than for women. We find this outcome merits further investigation. 
+
+We hypothesise that less educated men can have higher drop out rates from the survey than more educated men or less educated women. In other words, we believe that it can be more likely for men to abandon the whole survey if they find a series of questions to be too difficult to respond while women answer giving their best guess even if they are uncertain and continue with the survey. This could be caused by different opportunity costs, effect of pride or by males perceiving higher pressure to answer scientific questions correctly. If this is the case, our sample of complete cases will exhibit a selection bias as the ratio of less educated women will be bigger for the subsample of complete cases.
+
+To test for presence of the selection bias, we perform a series of following proportion tests. For each category of education (and also for the whole sample) we test whether the proportion of males in the subsamle of complete observations (used observations) is approximately equal to the proportion of males in the subsample of dropped observations. The \textit{p}-values of the corresponding Pearson's chi-square test statistics of the null hypothesis that the proportions are equal are summarised in Table~\ref{Proptests}.
+
+If the selection bias occurs, we would expect for the lower education categories the proportion of males to be significantly higher among the dropped observations than among the used observations. For the higher categories of education, on the other hand, we would expect the proportion of males to be significantly smaller among the dropped observation than among the used observations. However, this is not what we can see in Table~\ref{Proptests}. Although the proportion tests are significant for some GCSE, GCSE and professional, the differences in proportions are opposite to what we would expect. For the lower categories of education (Some GCSE and GCSE) the proportion of males is smaller among the dropped observations than among the used observations while it is the other way around for the category of professionals. Hence, based on the proportion tests, we do not see any evidence of the selection bias.\footnote{We performed analogous series of tests to compare proportions of males among the dropped observations with the proportions of males in the whole sample. Also these tests were performed separately for each category of education. The results are qualitatively equivalent to those of the tests in Table~\ref{Proptests}. The only difference is that the test became marginally insignificant for the category professional but this has no effect on the conclusion.}
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Proportion tests - no selection bias:}\\~ \\ Differences between ratio of males in the group of used observations and in the group of dropped observations. The tests were conducted separately for each category of education.}}
+
+% soubor heckmanNew/droppedDescriptive
+\label{Proptests} 
+\centering
+\begin{small}
+\begin{tabular}{l|cccl} 
+  \multicolumn{5}{l}{ } \\ \hline
+  \multicolumn{1}{l}{ } & \multicolumn{2}{|c}{\textbf{Proportion of males}} &  \multicolumn{2}{c}{\boldsymbol{${\tilde{\chi}^2}$}} \\
+   \multicolumn{1}{l}{\textbf{Education category}} &  \multicolumn{1}{|l}{\textbf{Used observations}} &  \multicolumn{1}{c}{\textbf{Dropped observations}} & \multicolumn{2}{c}{\textbf{\textit{p}-value}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Total&$0.4858$&$0.4538$&$0.0058$&$^{**}$\\
+  \\
+\vspace{-0.2cm}Craft&$0.6173$&$0.6620$&$0.4671$&\\
+  \\
+\vspace{-0.2cm}Some GCSE&$0.4957$&$0.4105$&$0.0022$&$^{**}$\\
+  \\
+\vspace{-0.2cm}GCSE&$0.4861$&$0.3792$&$0.0066$&$^{**}$\\
+  \\
+\vspace{-0.2cm}A levels&$0.4859$&$0.4671$&$0.5383$&\\
+  \\
+\vspace{-0.2cm}Diploma&$0.4609$&$0.4172$&$0.2306$&\\
+  \\
+  \vspace{-0.2cm}Bachelors&$0.4662$&$0.4294$&$0.2470$&\\
+\\
+  \vspace{-0.2cm}Professional&$0.4269$&$0.5391$&$0.0474$&$^{*}$\\
+\\
+  \vspace{-0.2cm}Masters&$0.4829$&$0.4000$&$0.1240$&\\
+  \\
+  \vspace{-0.2cm}PhD&$0.6522$&$0.5625$&$0.4889$&\\
+\\
+  \vspace{-0.2cm}No answer&$0.5435$&$0.4920$&$0.3355$&\\
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+\item[~]\textit{Notes:} \hspace{0.24cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+\newpage
+
+
+
+\vspace{1cm}
+
+
+To further eliminate occurrence of the selection bias, we include interactions of gender and the education categories for which the proportion tests are significant as explanatory variables besides the predictors selected by the lasso and we test their significance. For the sake of clearer interpretation, we also include the main effects of the education categories. The estimates of the model with the interactions are summarised in Table~\ref{Know4235f}. None of the interactions or education categories are significant and the signs and significance levels of male and gender are the same as without the interactions.\footnote{We also estimated a version of this model which includes a dummy variable for each education category. Adding these dummy variables does not chance signs or significance levels of gender, cognitive reflection or interactions between gender and education categories.}
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Climate change knowledge:} Jackknife OLS \\ With interactions of gender and education}}
+% soubor ResKnow4235f 
+\label{Know4235f} 
+\centering
+\begin{small}
+\begin{tabular}{lrcl} 
+\hline \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{} & \multicolumn{3}{c}{\large{\textbf{Jackknife OLS}}}  \\
+  
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{1}{l}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+   \multicolumn{1}{l}{ } &  \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adjusted \textit{p}-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Gender = male&$0.3379$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=0.5$&$1.1967$&$1.0000$&\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=1$&$0.1195$&$0.4384$& \\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=1.5$&$0.6160$&$1.0000$ \\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2$&$0.2664$&$0.0001$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2.5$&$0.4405$&$1.0000$&\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=3$&$0.4551$&$2.31\times 10^{-8}$&$^{***}$\\
+\\
+  \vspace{-0.2cm}Education - some GCSE&$-0.0890$&$1.0000$&\\
+\\
+  \vspace{-0.2cm}Education - GCSE&$0.0033$&$1.0000$&\\
+  \\
+  \vspace{-0.2cm}Education -  professional&$-0.0219$&$1.0000$&\\
+\\
+  \vspace{-0.2cm}Male $\times$ education - some GCSE&$-0.0494$&$1.0000$&\\
+\\
+  \vspace{-0.2cm}Male $\times$ education - GCSE&$-0.0888$&$1.0000$&\\
+\\
+  \vspace{-0.2cm}Male $\times$ education -  professional&$0.2377$&$1.0000$&\\
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{3}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+
+\vspace{1.5cm}
+
+
+
+
+As an additional verification that our results can not be attributed to a selection we estimate a Heckman correction models for climate knowledge. In particular, we estimate models which are referred to as Tobit-$2$ \citep{HeckmanR}. The exclusion restriction is count of not responded questions out of those which were prior to climate questions in the survey questionnaire.\footnote{Count of previously not responded questions is not expected to affect climate knowledge. In spite of this, we estimated a variant of multisplit lasso with the count of previously not responded questions as a potential predictor to verify whether or not it should be in the climate knowledge equation according to our estimation method. As we expected, count of previously not responded questions was not selected.} The estimates are summarized in Tables~\ref{KnowHeckman1} and~\ref{KnowHeckman2}. The model in Table~\ref{KnowHeckman1} has only one explanatory variable in the selection equation, namely count of non-responded questions. The variety in Table~\ref{KnowHeckman2} includes also gender, education categories for which the proportion test in Table~\ref{Proptests} is significant and their interactions. The outcome equations include the predictors which were selected by the multisplit lasso (see Section~\ref{ResKnow}). We can see, that the male dummy variable is still positive and strongly significant in the outcome equations even if we correct for possible selection bias (see Tables~\ref{KnowHeckman1} and~\ref{KnowHeckman2}). Parameter $\rho$ is insignificant in the models in Tables~\ref{KnowHeckman1} and~\ref{KnowHeckman2}. This means that the data are consistent with no correlation of the selection and outcome equation.
+
+
+
+
+We can further see in Tables~\ref{KnowHeckman1} and~\ref{KnowHeckman2} that achieving score $2$ or $3$ in the cognitive reflection test has positive and significant impact on climate knowledge which is consistent with the model presented in Table~\ref{Know435} in Section~\ref{ResKnow} and with the specification in Table~\ref{Know4235f}. In addition, achieving score $1$ is significant in the Heckman models and score of $0.5$ is close to significant.\footnote{Besides the Heckman selection models presented in Tables~\ref{KnowHeckman1} and~\ref{KnowHeckman2}, we also estimated a version which includes all education categories and their interactions with gender as explanatory variables in the selection equation. However, the estimation algorithm was unable to estimate the coefficients with reasonable standard errors.}
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Climate change knowledge:} Heckman selection model}}
+% soubor  N:US/paper3/Rwork/heckmanNew/TheBest2.
+% model Claudell12
+\label{KnowHeckman1} 
+\centering
+\begin{small}
+\begin{tabular}{lrcl} 
+\hline \vspace{-0.3cm} \\
+  \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.25cm}\textbf{Variable}} & \multicolumn{1}{l}{\textbf{Estimate}} &  \multicolumn{2}{c}{\textbf{\textit{p}-value}} \\
+ \hline 
+\hline
+ \vspace{-0.25cm} \\
+   \multicolumn{4}{c}{\vspace{0.1cm}\textbf{Probit selection equation:}}\\
+   \hline
+   \\
+\vspace{0.1cm}Not responded questions (count)&$-0.1972$ $(0.0083)$ &$<2.00\times 10^{-8}$&$^{***}$ \\
+ \hline
+  \vspace{-0.25cm} \\
+  \multicolumn{4}{c}{\vspace{0.1cm}\textbf{Outcome equation}}\\
+   \hline
+      \\
+      \vspace{-0.2cm}Gender = male&$0.3304$ $(0.0304)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=0.5$&$1.2188$ $(0.7202)$&$0.0906$&$^{\bullet}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=1$&$0.1472$ $(0.0387)$&$0.0001$&$^{***}$\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=1.5$&$0.6092$ $(0.8821)$&$0.4898$\\
+   \\
+\vspace{-0.2cm}Cognitive reflection $=2$&$0.3026$ $(0.0448)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2.5$&$0.5158$ $(0.4163)$&$0.2153$&\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=3$&$0.4790$ $(0.0559)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+ \hline
+  \vspace{-0.25cm} \\
+  \multicolumn{4}{c}{\vspace{0.1cm}\textbf{Error terms}}\\
+   \hline
+      \\
+      \vspace{-0.2cm}Sigma $\sigma$&$1.2469$ $(0.0107)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Rho $\rho$&$0.0611$ $(0.0659)$&$0.3540$&\\
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{3}{c}{$7244$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+   \item \textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+\item[]   \begin{adjustwidth}{1cm}{}Standard errors in brackets
+     \end{adjustwidth}
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+\vspace{1cm}
+
+
+
+{\centering \singlespacing
+\begin{threeparttable}
+\caption{\textit{\textbf{Climate change knowledge:} Heckman selection model \\ With interactions of gender and education}}
+% soubor  N:US/paper3/Rwork/heckmanNew/TheBest2.
+% model Felicia12
+\label{KnowHeckman2} 
+\centering
+\begin{small}
+\begin{tabular}{lrcl} 
+\hline \vspace{-0.3cm} \\
+  \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.25cm}\textbf{Variable}} & \multicolumn{1}{l}{\textbf{Estimate}} &  \multicolumn{2}{c}{\textbf{\textit{p}-value}} \\
+ \hline 
+\hline
+ \vspace{-0.25cm} \\
+   \multicolumn{4}{c}{\vspace{0.1cm}\textbf{Probit selection equation:\tnote{a}}}\\
+   \hline
+   \\
+ \vspace{-0.2cm}Gender = male&$-0.0163$ $(0.0954)$ &$0.8642$&\\
+  \\
+ \vspace{-0.2cm}Not responded questions (count)&$-0.1983$ $(0.0084)$ &$<2.00\times 10^{-8}$&$^{***}$ \\
+\\
+ \vspace{-0.2cm}Education - some GCSE&$-0.2250$ $(0.1213)$ &$0.0637$&$^{\bullet}$ \\
+\\
+  \vspace{-0.2cm}Education - GCSE&$0.0783$ $(0.1658)$ &$0.6369$&\\
+  \\
+  \vspace{-0.2cm}Education -  professional&$-0.2696$ $(0.2379)$ &$0.2570$&\\
+\\
+  \vspace{-0.2cm}Male $\times$ education - some GCSE&$0.2926$ $(0.1934)$ &$0.1303$&\\
+\\
+  \vspace{-0.2cm}Male $\times$ education - GCSE&$-0.3454$ $(0.2571)$ &$0.1790$&\\
+\\
+  \vspace{-0.2cm}Male $\times$ education -  professional&$0.3659$ $(0.3468)$ &$0.2914$&\\
+ \\
+   \hline  
+  \multicolumn{4}{c}{\textbf{Outcome equation}}\\
+     \hline
+      \\
+      \vspace{-0.2cm}Gender = male&$0.3307$ $(0.0304)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=0.5$&$1.2199$ $(0.7202)$&$0.0903$&$^{\bullet}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=1$&$0.1476$ $(0.0387)$&$0.0001$&$^{***}$\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=1.5$&$0.6102$ $(0.8821)$&$0.4891$\\
+   \\
+\vspace{-0.2cm}Cognitive reflection $=2$&$0.3032$ $(0.0448)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2.5$&$0.5168$ $(0.4163)$&$0.2144$&\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=3$&$0.4796$ $(0.0559)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\ \hline  
+  \multicolumn{4}{c}{\textbf{Error terms}}\\
+   \hline  
+      \\
+      \vspace{-0.2cm}Sigma $\sigma$&$1.2469$ $(0.0107)$&$<2.00\times 10^{-8}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Rho $\rho$&$0.0737$ $(0.0661)$&$0.2640$&\\
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{3}{c}{$7244$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+ \item \textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+\item[]   \begin{adjustwidth}{1cm}{}Standard errors in brackets \vspace{0.2cm}
+ \item[a]~We also estimated a variety of this model which includes dummy variables for all education categories in the selection equation. They are all insignificant and the signs and significance levels of the other variables are the same.
+     \end{adjustwidth}  
+ \singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+
+
+
+
+
+
+
+
+\section{Appendix 3 Tables}
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\textbf{Description}}   \\ 
+\hline \vspace{-0.3cm} \\ 
+\vspace{0.15cm}Religion& $11$ categories including atheist, no religion and prefer not to say\\
+\vspace{0.15cm}Race& $8$ categories including prefer not to answer\\
+\multirow{3}{*}{Length in UK}&Question: \textit{How long have you been living in the UK?}\\
+&Response = $5$ categories: All life ,more than $10$ years, $5-10$ years,\\
+\vspace{0.15cm}& $1-5$ years, less than $1$ year\\
+\vspace{0.15cm}Occupation&$14$ categories\\
+\vspace{0.15cm}Sector&$18$ categories\\
+\vspace{0.15cm}Operating system&$7$ categories\\
+\multirow{2}{*}{Social value orientation}&Response = $4$ categories: altruist, prosocial,\\
+\vspace{0.15cm}& individualist, competitive\\
+\vspace{0.15cm}Discount rate $0$ vs. $5$&Annual, $\%$, invest now for five years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $2$&Annual, $\%$, invest a year from now for two years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $6$&Annual, $\%$, invest a year from now for six years from now \\
+\vspace{0.15cm}Degree of present bias&Continuous, preferences on time \\
+\vspace{0.15cm}Degree of hyperbolicity&Continuous, preferences on time \\
+\vspace{0.15cm}Annual discount rate&Continuous, preferences on time \\
+\vspace{0.15cm}Subsistence income (reserve)&Continuous, \citet{bergson1954, bergson1938, samuelson1956}\\
+\vspace{0.15cm}Altruist&Dummy (0/1)\\
+\vspace{0.15cm}Prosocial&Dummy (0/1)\\
+\vspace{0.15cm}Individualist&Dummy (0/1)\\
+\vspace{0.15cm}Competitive&Dummy (0/1)\\
+\vspace{0.15cm}Egalitarian&Dummy (0/1)\\
+\vspace{0.15cm}Ineqaverse&Dummy (0/1)\\
+\vspace{0.15cm}Longitude&Longitude of survey response. Degrees \\
+\vspace{0.15cm}Latitude&Latitude of survey response. Degrees \\
+\vspace{0.15cm}Letter&First letter of surname, A=$1$,B=$2$,...\\
+\vspace{0.15cm}Siblings&Number of siblings\\
+\vspace{0.15cm}Older&Number of older siblings\\
+\vspace{0.15cm}Children&Number of children\\
+Grandchildren&Number of grandchildren\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors2} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Description}}   \\ 
+\hline \vspace{-0.35cm}\\ 
+\vspace{0.14cm}Handedness& $0$=right, $1$=left \\
+\vspace{0.14cm}Time&Time taken to complete survey, in minutes\\
+\vspace{0.14cm}Hour&Hour of survey, $24$ categories\\
+\vspace{0.14cm}Day of week&$7$ categories\\
+\vspace{0.14cm}Day of the month&Day of survey, $1-31$\\
+\multirow{2}{*}{Fair share}&\textit{Ordinary working people do not get their fair share of the nation's wealth.}\\
+\vspace{0.14cm}&Degree of agreement with the statement above, $5$ categories\\
+\multirow{2}{*}{Hard work}&Question: \textit{How important is hard work for getting ahead in life?}\\
+\vspace{0.14cm}&Response = $5$ categories, degree of agreement\\
+\multirow{3}{*}{Better off parents}&Question: \textit{Compared with your parents when they were about your age, }\\
+&\textit{are you better or worse in your income and standard of living generally?}\\
+\vspace{0.14cm}&Response = $5$ categories (degree of agreement)  and \textit{Don't know}\\
+\multirow{3}{*}{Better off children}&Q: \textit{Compared with you, do you think that your children, when they reach}\\
+&\textit{your age, will be better or worse in their income and standard of living}\\
+\vspace{0.14cm}& \textit{generally?}Answer =$5$ categories (degree of agreement) and \textit{Don't know}\\
+\vspace{0.14cm}Always up&Dummy (0/1), Children better off me and me better off parents\\
+\vspace{0.14cm}Always down&Dummy (0/1), Parents better off me and me better off children\\
+\vspace{0.14cm}Up then down&Dummy (0/1), Me better off parents and me better off children\\
+\vspace{0.14cm}Down then up&Dummy (0/1), Parents better off me and children better off me\\
+\vspace{0.14cm}Financial literacy&$3$ financial problems, no. of correct answers, \citet{lusardi2014}\\
+\vspace{0.14cm}Understands portfolio&Dummy (0/1), $1=$ understands\\
+\vspace{0.14cm}Incoherent dr.&Dummy (0/1), Incoherent answers between investments ($0=$ coherent)\\
+\vspace{0.14cm}Primed attitudes&$1=$ priming questions about time, risk, social were asked, $0=$ not\\
+\multirow{2}{*}{Prime climate}&$0=$ shown picture of polar bear on melting ice (negative),\\
+\vspace{0.14cm}& $1=$ shown picture of people enjoying beach (positive)\\
+\vspace{0.14cm}Prime pension&$0=$ picture of troubled old man, $1=$ picture of happy old man\\
+\vspace{0.14cm}Prime school&$0=$ picture of unruly kids, $1=$ picture of well-behaved kids\\
+\vspace{0.14cm}Prime NHS&$0=$ picture NHS in crisis, $1=$ picture love NHS\\
+\vspace{0.14cm}Female $\times$ handed &Interaction female and handedness\\
+\vspace{0.14cm}Female $\times$ children &Interaction female and number of children\\
+\vspace{0.14cm}Age $\times$ children &Interaction age and number of children\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+
+
+%seems that all frequencies and descriptives are of the file pubpolM2 (climate domain)
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Descriptive statistics:} Continuous variables}}
+\label{Descriptive} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrr} 
+\hline \vspace{-0.15cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  &  \multicolumn{1}{c}{\bf{Mean}} & \multicolumn{1}{c}{\bf{St. dev.}} & \textbf{Min} & \textbf{Max}\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Income - predicted (\textsterling~per year)&$27729$&$11719.89$&$3611$&$58326$\\
+    \vspace{0.15cm}Net assets - total assets minus total debts (\textsterling)&$152542$&$223612.90$&$-400000$&$2500000$\\
+        \vspace{0.15cm}Population (per Km\textsuperscript{2}, LSOA\tnote{a}\hspace{0.4cm}level)&$3336$&$2975.38$&$7$&$25280$\\
+          \vspace{0.15cm}Population (per Km\textsuperscript{2}, LAD\tnote{b}\hspace{0.4cm}level)&$3193$&$3164.75$&$10$&$13870$\\
+
+  \vspace{0.15cm}How much is tax gas and electricity (\textsterling/yr.)&\multirow{1}{*}{$144.90$}&\multirow{1}{*}{$111.94$}&\multirow{1}{*}{$-50$}&\multirow{1}{*}{$500$}\\
+
+  \vspace{0.15cm}How much is duty transport fuel (pence/yr.)&\multirow{1}{*}{$25.18$}&\multirow{1}{*}{$13.68$}&\multirow{1}{*}{$0$}&\multirow{1}{*}{$60$}\\ 
+    \hline 
+     \vspace{-0.35cm}    
+\\         \multicolumn{5}{c}{ \vspace{0.05cm} {Behavioural variables}} \\
+    \hline
+             \vspace{-0.25cm}    
+\\  
+\vspace{0.15cm}Social value orientation (ring measure)&$26.28$&$15.52$&$-16.26$&$83.93$\\
+ Annual discount rate,$\%$,&\multirow{2}{*}{$148.7$}&\multirow{2}{*}{$181.81$}&\multirow{2}{*}{$1$}&\multirow{2}{*}{$500$}\\
+\vspace{0.15cm} \hspace{0.4cm}invest now for a year from now\tnote{c}\\ 
+ 
+ 
+Risk aversion - estimated median&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.01$}&\multirow{2}{*}{$0.29$}&\multirow{2}{*}{$0.38$}\\
+\vspace{0.15cm} \hspace{0.4cm}of quadratic utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$1.81$}&\multirow{2}{*}{$1.08$}&\multirow{2}{*}{$0.67$}&\multirow{2}{*}{$4.33$}\\
+\vspace{0.15cm} \hspace{0.4cm}of log utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$0.42$}&\multirow{2}{*}{$0.07$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.57$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+  Risk aversion - estimated mean&\multirow{2}{*}{$0.74$}&\multirow{2}{*}{$0.26$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$1.07$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+ 
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:} Total number of observations: $8541$\vspace{-0.35cm}
+          \begin{adjustwidth}{0.7cm}{}  
+
+      \item[a] Lower Layer Super Output Area
+   \item[b] Local Authority District
+  \item[c]This variable is called \textit{Discount rate year from now} in the tables with regression estimates 
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\pagebreak
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Frequency tables:} Categorical variables}}
+\label{FreqiencyCat} 
+\centering
+\begin{small}
+\begin{tabular}{llrr} 
+\hline \vspace{-0.15cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}& \multicolumn{1}{c}{\textbf{Category}} &  \multicolumn{1}{c}{\textbf{Frequency}}  &  \multicolumn{1}{c}{\textbf{Ratio}}   \\ 
+\hline \vspace{-0.3cm} \\ 
+ \hline  \vspace{-0.15cm}\\
+  \vspace{0.15cm}Education&Craft&$338$&$0.040$\\
+  \vspace{0.15cm}&Some GCSE&$1452$&$0.170$\\
+  \vspace{0.15cm}&GCSE A*-C grades&$814$&$0.095$\\
+  \vspace{0.15cm}&A Level&$1579$&$0.185$\\
+  \vspace{0.15cm}&Diploma&\multirow{1}{*}{$979$}&\multirow{1}{*}{$0.115$}\\
+    \vspace{0.15cm}&Bachelor's degree&\multirow{1}{*}{$1523$}&\multirow{1}{*}{$0.178$}\\
+  \vspace{0.15cm}&Professional qualifications&\multirow{1}{*}{$457$}&\multirow{1}{*}{$0.054$}\\
+  \vspace{0.15cm}&Master's degree&$564$&$0.066$\\
+  \vspace{0.15cm}&PhD, DPhil&$124$&$0.015$\\
+  \vspace{0.15cm}&Prefer not to say&$434$&$0.051$\\
+    \vspace{0.15cm}&NA&$277$&$0.032$\\
+  \hline  \vspace{-0.15cm} \\
+    \vspace{0.15cm}Household income &$<11000$&$919$&$0.158$\\
+ \vspace{0.15cm}   pounds per year&$11000 - 16000$&$675$&$0.116$\\
+\vspace{0.15cm}  before tax &$16000-20000$&$539$&$0.093$\\
+ \vspace{0.15cm} self reported&$20000-26000$&$757$&$0.130$\\
+ \vspace{0.15cm}  &$26000-32000$&$610$&$0.105$\\
+ \vspace{0.15cm}  &$32000-39000$&$666$&$0.115$\\
+ \vspace{0.15cm}  &$39000-48000$&$522$&$0.090$\\
+ \vspace{0.15cm}  &$48000-60000$&$544$&$0.094$\\
+ \vspace{0.15cm}  &$60000-81000$&$324$&$0.056$\\
+ \vspace{0.15cm}  &$81000-100000$&$119$&$0.021$\\
+ \vspace{0.15cm}  &$>100000$&$128$&$0.022$\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:} Total number of observations: $8541$\vspace{-0.35cm} \begin{adjustwidth}{0.7cm}{}  
+  \item[~]\hfill (\textit{continued})
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\pagebreak
+
+{\centering
+\begin{threeparttable}
+\caption{\vspace{-0.27cm} \small{\textit{\textbf{Frequency tables:} Categorical variables}}}
+\label{FreqiencyCat2} 
+\centering
+\begin{small}
+\begin{tabular}{l|crr} 
+\hline \vspace{-0.27cm} \\	
+  \multicolumn{1}{l|}{\textbf{Variable}}& \multicolumn{1}{c}{\textbf{Category}} &  \multicolumn{1}{c}{\textbf{Frequency}}  &  \multicolumn{1}{c}{\textbf{Ratio}}   \\ 
+\hline \vspace{-0.27cm}\\
+  Inequity aversion&$0.520$&$1557$&$0.182$\\
+ \hspace{0.15cm}(rate) &$0.950$&$55$&$0.006$\\
+ \hspace{0.15cm}\citet{bergson1954, bergson1938}, &$1.000$&$652$&$0.076$\\
+ \hspace{0.15cm}\citet{samuelson1956} &$1.135$&$127$&$0.015$\\
+   &$1.160$&$364$&$0.043$\\
+    &$1.255$&$202$&$0.024$\\
+    &$1.290$&$130$&$0.015$\\ 
+    &$1.485$&$385$&$0.045$\\
+    &$1.490$&$288$&$0.034$\\
+    &$1.500$&$96$&$0.011$\\ 
+     &$1.510$&$86$&$0.010$\\ 
+    &$1.685$&$202$&$0.024$\\
+    &$1.765$&$93$&$0.011$\\
+    &$2.120$&$226$&$0.026$\\ 
+    &$3.640$&$59$&$0.007$\\
+    &$3.710$&$2551$&$0.299$\\
+    &NA&$1468$&$0.172$\\ 
+ \hline  \vspace{-0.27cm}\\
+ Degree of agreement&\multicolumn{1}{l}{Strongly disagree}&$555$&$0.065$\\ 
+ \hspace{0.15cm}with the statement:&\multicolumn{1}{l}{Disagree}&$1121$&$0.131$\\ 
+  \textit{ Government should redistribute}&\multicolumn{1}{l}{Neutral}&$1952$&$0.229$\\ 
+  \textit{ income from the better off}&\multicolumn{1}{l}{Agree}&$2256$&$0.264$\\ 
+  \textit{ to those who are less well off.}&\multicolumn{1}{l}{Strongly agree}&$1206$&$0.141$\\ 
+&\multicolumn{1}{l}{NA}&$1451$&$0.170$\\ 
+  \hline  \vspace{-0.27cm}\\
+  
+  
+Cognitive reflection test\tnote{a}&\multicolumn{1}{c}{$0.0$}&$4145$&$0.485$\\ 
+ \hspace{0.25cm}= numeracy, \citet{Frederick2005} &\multicolumn{1}{c}{$0.5$}&$3$&$0.0004$\\ 
+   \hspace{0.25cm}$3$ numerical problems&\multicolumn{1}{c}{$1.0$}&$1519$&$0.178$\\ 
+  \hspace{0.25cm}no. of correct answers&\multicolumn{1}{c}{$1.5$}&$2$&$0.0002$\\ 
+&\multicolumn{1}{c}{$2.0$}&$1017$&$0.119$\\ 
+&\multicolumn{1}{c}{$2.5$}&$9$&$0.001$\\ 
+&\multicolumn{1}{c}{$3.0$}&$614$&$0.072$\\ 
+&\multicolumn{1}{c}{NA}&$1232$&$0.144$\\ 
+
+ \hline  \vspace{-0.27cm}\\
+Understands compound interest&\multicolumn{1}{c}{$0.0$}&$291$&$0.034$\\ 
+  \hspace{0.25cm}$1$ = Understands&\multicolumn{1}{c}{$0.5$}&$718$&$0.084$\\ 
+    \hspace{0.25cm}(treated as categorical)&\multicolumn{1}{c}{$1.0$}&$5713$&$0.669$\\ 
+&\multicolumn{1}{c}{NA}&$1819$&$0.213$\\ 
+ \hline  \vspace{-0.27cm}\\
+Understands inflation&\multicolumn{1}{c}{$0.0$}&$941$&$0.110$\\ 
+  \hspace{0.25cm}$1$ = Understands&\multicolumn{1}{c}{$0.5$}&$953$&$0.112$\\ 
+    \hspace{0.25cm}(treated as categorical)&\multicolumn{1}{c}{$1.0$}&$4206$&$0.492$\\ 
+&\multicolumn{1}{c}{NA}&$2441$&$0.286$\\ 
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:}  \textbf{a} This variable is called \textit{Cognitive reflection} in the tables with regression
+          \begin{adjustwidth}{0.7cm}{}  
+  estimates and it is treated as categorical \hfill $8541$ observations
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+\pagebreak
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Frequency tables:} Binary variables}}
+\label{FreqiencyBin} 
+\centering
+\begin{small}
+\begin{tabular}{lrrr} 
+\hline \vspace{-0.15cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable} }&\multicolumn{1}{l}{ \textbf{Frequency $\boldsymbol{= 1$}}} &\multicolumn{1}{l}{  \textbf{Ratio $\boldsymbol{= 1$}}}  &\multicolumn{1}{c}{\textbf{NA's}} \\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Gender = male &$4060$&$0.475$&$0$\\
+
+Equal intergenerational allocation&\multirow{2}{*}{$793$}&\multirow{2}{*}{$0.110$}&\multirow{2}{*}{$1339$}\\
+\vspace{0.15cm} \hspace{0.5cm}of resources (agree = 1)\tnote{a}& \\
+  \vspace{0.15cm}Consistent answers to risk questions (consistent = 1)&$7153$&$0.837$&$0$\\
+   \vspace{0.15cm}Consist. answers within investment (consistent = 1)&$981$&$0.115$&$0$\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:} Total number of observations: $8541$\vspace{-0.35cm} \begin{adjustwidth}{0.7cm}{}  
+ \item[a]~This variable is equal to $1$ for those respondents who believe that their income and standard of living generally is about equal as the income and standard of living of their parents (when they were about the respondent's age) and it is also equal to the income and standard of living of their children (when they will reach the respondent's age). The variable is equal to $0$ for all other respondents.
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+\vspace{2cm}
+
+
+
+\pagebreak
+
+
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Climate knowledge:} Jackknife OLS with total score on financial literacy}}
+% table checked 3.10.2017
+
+%musim lasso predelat. predtim jsem pouzivala lambda min. ale alex ma pravdu. je treba u vsech modelu pouzivat stejne pravidlo, takze lambda se.zmena 30.9.2017
+
+%soubor Know435se.R
+% finlit2 prestane byt signifikantni, takze vlastne se nic skoro nemeni, asi do prilohy tabulku s Know435se.R
+ 
+\label{Know435se} 
+\centering
+\begin{small}
+\begin{tabular}{lclrc} 
+   \hline
+  
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}}&  \multicolumn{1}{c}{\textbf{Aggregated}}  \\
+    \multicolumn{1}{l}{ } &  \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} &  \multicolumn{1}{c}{\textbf{VIF}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Gender = male&$1.580$&$<2\times10^{-8}$&$^{***}$&$1.030$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=0.5$&$4.611$&$1.000$&&$1.002$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=1$&$0.431$&$1.000$&&$1.156$\\
+\\
+\vspace{-0.2cm}Cognitive reflection $=1.5$&$1.681$&$1.000$&&$1.002$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2$&$1.074$&$0.006$&$^{**}$&$1.212$\\
+  \\
+\vspace{-0.2cm}Cognitive reflection $=2.5$&$1.881$&$1.000$& &$1.006$\\
+  \\
+  \vspace{-0.2cm}Cognitive reflection $=3$&$1.999$&$9\times10^{-7}$&$^{***}$&$1.171$\\
+\\
+\vspace{-0.2cm}Financial literacy - total score $=0.5$&$1.173$&$1.000$& &$1.504$\\
+  \\
+\vspace{-0.2cm}Financial literacy - total score $=1$&$0.456$& $1.000$& &$3.972$\\
+  \\
+\vspace{-0.2cm}Financial literacy - total score $=1.5$&$0.527$& $1.000$&&$2.586$\\
+  \\
+\vspace{-0.2cm}Financial literacy - total score $=2$&$0.454$& $1.000$&&$5.644$\\
+  \\
+\vspace{-0.2cm}Financial literacy - total score $=2.5$&$0.802$& $1.000$&&$2.435$\\
+  \\
+  \vspace{-0.2cm}Financial literacy - total score $=3$&$1.433						$& $0.150$&&$6.925$\\
+ \\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{4}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} \hspace{0.15cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+    \begin{adjustwidth}{1cm}{} \item For the significant predictors, the signs of the coefficients of the multisplit lasso are the same as those of the jackknife OLS and also size of most of the coefficients is very comparable for these two models.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{{Climate seriousness and climate versus policy effects perception:} Jackknife OLS without climate knowledge}}
+\label{ClimCare435eClimpol435f} 
+\centering
+\begin{small}
+\vspace{-1.2cm}
+\begin{tabular}{lcccc} 
+\hline
+  \multicolumn{1}{l}{}&\multicolumn{2}{c}{\textbf{Seriousness}}&\multicolumn{2}{c}{\textbf{Climate vs. policy}}\\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}} &  \multicolumn{1}{c}{\textbf{Aggreg.}} \\
+    \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{adjusted}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{adjusted}} \\
+        \multicolumn{1}{l}{\textbf{Variable}}&\multicolumn{1}{c}{}& \multicolumn{1}{c}{\textbf{\textit{p}-value}}&\multicolumn{1}{c}{} &  \multicolumn{1}{c}{\textbf{\textit{p}-value}}\\
+ \hline 
+\vspace{-0.23cm}
+\\
+\vspace{-0.2cm}Gender = male&$-0.481$&$<2\times10^{-8}~^{***}$&\multicolumn{2}{c}{\textit{Not included}}\\
+\\
+ Redistribution of income:&\multirow{2}{*}{$0.201$}&\multirow{2}{*}{$1.000$}&  \multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}} \\%-1
+    \vspace{-0.2cm}   \hspace{0.6cm}disagree\tnote{a}&&&&\\%-1
+    \\
+  \vspace{-0.2cm}Redistribution of inc.: neutral\tnote{a}&$0.331$&$0.265$ &\multicolumn{2}{c}{\textit{Not included}}\\%0
+    \\
+  \vspace{-0.2cm}Redistribution of income: agree\tnote{a}&$0.891$&$<2\times10^{-8}~^{***}$&\multicolumn{2}{c}{\textit{Not included}}\\%1
+    \\
+  Redistribution of income:& \multirow{2}{*}{$1.172$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}& \multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}} \\
+\hspace{0.6cm}strongly agree\tnote{a}&&&\\%2
+\vspace{-0.2cm}
+ \\
+\vspace{-0.2cm}Understands inflation $=0.5$&\multicolumn{2}{c}{\textit{Not included}}&$-0.049$&$1.000$ \\
+  \\
+\vspace{-0.2cm}Understands inflation $=1$  &\multicolumn{2}{c}{\textit{Not included}}&$-0.643$& $2\times10^{-7}~^{***}$\\
+    \\
+  Consistent answers to risk& \multicolumn{2}{c}{\multirow{2}{*}{\textit{Not included}}} &\multirow{2}{*}{$-0.592$}&\multirow{2}{*}{$<2\times10^{-8}~^{***}$}\\
+\hspace{0.6cm}questions $(0/1)$&& &\\
+   \\
+     \hline
+  Observations: &\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5749$}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+
+ \item \textit{Notes:}\hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+ \begin{adjustwidth}{0.9cm}{}
+  \vspace{-0.3cm}
+  \item[a]~Degree of agreement with the following statement: 'Government should redistribute income from the better off to those who are less well off.' The base category is 'Strongly disagree'.
+
+     \end{adjustwidth}    
+\singlespacing  
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\vspace{1cm}
+
+\pagebreak
+
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\small{\textbf{\vspace{-0.25cm} WTP climate:} interaction of cultural world-view and financial literacy}}}
+% soubor  Rwork/GasSuperNew/Gas435dcq.R
+\label{Gas435dcp} 
+\centering
+\begin{small}
+\begin{tabular}{lccl} 
+\hline \vspace{-0.15cm} \\
+  \multicolumn{1}{l}{} 
+  & \multicolumn{3}{c}{\large{\textbf{\small{Jackknife OLS}}}}  \\
+\\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Dependent variable:}}& \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+  \multicolumn{1}{l}{WTP - gas and electricity tax (\textsterling~per year)} & \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} \\   
+\hline \vspace{-0.3cm} \\ 
+ \vspace{0.15cm}Age\tnote{a} $~25-34$&$-11.3886$&$1.0000$&\\
+  \vspace{0.15cm}Age $35-44$&$-27.1860$&$4\times10^{-5}$&$^{***}$\\
+ \vspace{0.15cm}Age $45-54$ &$-34.3795$&$2\times10^{-8}$&$^{***}$\\
+ \vspace{0.15cm}Age $55-64$ &$-37.5114$&$<2\times10^{-8}$&$^{***}$\\
+ \vspace{0.15cm}Age $65-74$&$-45.2613$&$<2\times10^{-8}$&$^{***}$\\
+ \vspace{0.15cm}Age $74$ or older &$-28.8122$&$1.0000$&\\     
+ \vspace{0.15cm}Climate versus policy effects perception&$10.2983$&$<2\times10^{-8}$&$^{***}$\\
+\vspace{0.15cm}Inequity aversion (categorical)\tnote{b}& \multicolumn{2}{c}{\textit{negative correlation}}&$^{**}$\\
+Equal intergenerational&\multirow{2}{*}{$21.8916$}&\multirow{2}{*}{$0.0034$}&\multirow{2}{*}{$^{*}$}\\
+ \vspace{0.15cm}\hspace{0.6cm}allocation of resources $(0/1)$\tnote{c}&\\
+ \vspace{0.15cm}Understands compound interest $=0.5$&\multirow{1}{*}{$-4.3717$}&\multirow{1}{*}{$1.0000$}&\multirow{1}{*}{ }\\
+ \vspace{0.15cm}Understands compound interest $=1$&\multirow{1}{*}{$-41.6926$}&\multirow{1}{*}{$5\times10^{-5}$}&\multirow{1}{*}{$^{***}$}\\
+  \vspace{0.15cm}Understands inflation $=0.5$&$-17.6328$&$0.1616$& \\
+ \vspace{0.15cm}Understands inflation $=1$&$-46.0609$&$<2\times10^{-8}$&$^{***}$\\
+ 
+ 
+\vspace{0.15cm}Consistent answers to risk questions $(0/1)$&\multirow{1}{*}{$-35.4773$}&\multirow{1}{*}{$<2\times10^{-8}$}&\multirow{1}{*}{$^{***}$}\\
+\vspace{0.15cm}Redistribution of income (degree of agreement)\tnote{d, e}&\multirow{1}{*}{$-9.6596$}&\multirow{1}{*}{$0.0670$}&\multirow{1}{*}{$^{\bullet}$}\\
+
+ \vspace{0.15cm}\textbf{Redistribution of income\tnote{d} \hspace{0.1cm}$\boldsymbol{\times}$\hspace{0.1cm}Understands inflation}&$13.7064$&$0.0043$&$^{**}$
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{3}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:} \vspace{-0.35cm} \begin{adjustwidth}{0.7cm}{}  \hspace{0.7cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$;\hspace{0.2cm} mean adj. \textit{R\textsuperscript2}:\hspace{0.25cm}$0.279$
+\item[a]~Age is only available as categorical. The base category is '$24$ or younger'.
+\item[b]~Inequity aversion treated as categorical (see Section~\ref{BehaviouralVars}). \item[c]~This variable is equal to $1$ for those respondents who believe that their income and standard of living generally is about equal as the income and standard of living of their parents (when they were about the respondent's age) and it is also equal to the income and standard of living of their children (when they will reach the respondent's age). The variable is equal to $0$ for all other respondents.
+\vspace{0.002cm} 
+ \item[d]~Degree of agreement with the following statement: 'Government should redistribute income from the better off to those who are less well off.' $-2=$~Strongly disagree, $2=$~Strongly agree.
+  \item[e]~For the sake of simplicity we also included the main effect.
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\small\textit{\textbf{Climate vs. policy perception:} Jackknife OLS - robustness without WTP}}
+% soubor Cpol435InOutbNoWTP.R  Cpol535InONoWTP.R
+\label{ClimPolIOnoWTP} 
+\centering
+\begin{small}
+\vspace{-1.2cm}
+\begin{tabular}{lcccc} 
+\hline
+  \multicolumn{1}{l}{}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{1}$}&\multicolumn{2}{c}{\textbf{Model} $\boldsymbol{2}$}\\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+  \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}}& \multicolumn{1}{c}{\textbf{Aggreg.}} &  \multicolumn{1}{c}{\textbf{Aggreg.}} \\
+    \multicolumn{1}{l}{} & \multicolumn{1}{c}{\textbf{coef.}}& \multicolumn{1}{c}{\textbf{adjusted}}& \multicolumn{1}{c}{\textbf{coef.}} &  \multicolumn{1}{c}{\textbf{adjusted}} \\
+        \multicolumn{1}{l}{\textbf{Variable}}&\multicolumn{1}{c}{}& \multicolumn{1}{c}{\textbf{\textit{p}-value}}&\multicolumn{1}{c}{} &  \multicolumn{1}{c}{\textbf{\textit{p}-value}}\\
+ \hline 
+\vspace{-0.23cm}
+\\
+\vspace{-0.33cm}Climate knowledge\tnote{a}&$-0.130$&$9\times10^{-5}~^{***}$&$-0.131$&$0.0002~^{***}$\\
+  \\
+\vspace{-0.33cm}Understands inflation $=0.5$&$0.043$&$1.000$&$0.021$&$1.000$ \\
+  \\
+\vspace{-0.33cm}Understands inflation $=1$&$-0.450$&$0.001~^{**}$&$-0.455$&$0.001~^{**}$\\
+    \\
+  Consistent answers to risk&\multirow{2}{*}{$-0.496$}&\multirow{2}{*}{$3\times10^{-7}~^{***}$}&\multirow{2}{*}{$-0.482$}&\multirow{2}{*}{$1\times10^{-6}~^{***}$}\\
+\hspace{0.6cm}questions $(0/1)$&& &\\
+\hline
+  \\
+\vspace{-0.33cm}Income- predicted (mill. \textsterling~/yr.)&$3.347$&$1.000$&\multicolumn{2}{c}{\textit{Not included}}\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Income- reported (mill. \textsterling~/yr.)\tnote{b}&\multicolumn{2}{c}{\textit{Not included}}&\textit{varies}&$1.000$\\ %income PREDICTED!!
+  \\
+\vspace{-0.33cm}Net assets (million \textsterling)&$-0.014$&$1.000$&$0.076$&$1.000$\\ 
+      \\
+\vspace{-0.33cm}People per mill. km\textsuperscript{2}-LSOA level&\multirow{1}{*}{$-15.303$}&\multirow{1}{*}{$1.000$}&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}\\%ha is a symbol for hectares
+  \\
+\vspace{-0.33cm}People per mill. km\textsuperscript{2}-LAD level&\multicolumn{2}{c}{\multirow{1}{*}{\textit{Not included}}}&\multirow{1}{*}{$20.682$}&\multirow{1}{*}{$1.000$}\\%ha is a symbol for hectares
+  \\
+    \vspace{-0.33cm}Climate seriousness perception&$0.427$&$\small{<}2\times10^{-8}~^{***}$&$0.432$&$\small{<}2\times10^{-8}~^{***}$\\
+      \\
+Social value orientation&\multirow{2}{*}{$0.006$}&\multirow{2}{*}{$0.250$}&\multirow{2}{*}{$0.006$}&\multirow{2}{*}{$0.555$}\\
+\vspace{-0.33cm} \hspace{0.6cm}(ring measure)&& &\\%2
+  \\% ring measure> ref working paper dolton tol
+ \vspace{-0.33cm}\multirow{1}{*}{Inequity aversion (categorical)}&\textit{varies}& \multirow{1}{*}{$1.000$}& \multirow{1}{*}{\textit{varies}}& \multirow{1}{*}{$1.000$}\\      
+    \\ \vspace{-0.33cm}Discount rate yr. from now&$-0.002$&$1.000$&$-0.001$&$1.000$\\  
+      \\
+ \vspace{-0.33cm}Discount rate yr. from now - sq.&\multirow{1}{*}{$3\times10^{-6}$}&\multirow{1}{*}{$1.000$}&\multirow{1}{*}{$3\times10^{-6}$}&\multirow{1}{*}{$1.000$}\\
+  \\  \vspace{-0.33cm}Risk aversion coefficient\tnote{c}&\multicolumn{2}{c}{\textit{Not included}}&$-0.569$&$1.000$\\          
+   \\
+  \vspace{-0.35cm}Redistribution of income (categ.)\tnote{d}&\textit{$+$,varies}&$1.000$&\textit{$+$,varies}&$1.000$\\%1
+    \\
+     \hline
+          Mean adjusted \textit{R\textsuperscript2}:&\multicolumn{2}{c}{$0.226$}&\multicolumn{2}{c}{$0.230$}\\
+  Observations: &\multicolumn{2}{c}{$5749$}&\multicolumn{2}{c}{$5659$}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+ \item \textit{Notes:}\hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+ \begin{adjustwidth}{0.9cm}{}
+  \vspace{-0.3cm}
+ \item[a]~Squared term of climate knowledge is insignificant in this version, hence it is not included.
+\item[b]~Self reported income is only available as categorical.
+\item[c]~The risk aversion coefficient is an estimated parameter of a utility function. In this model, the mean of power function is used. We also estimated varieties of this model with different risk aversion coefficients, particularly means or medians of various utility functions. These are power, log, exponential and quadratic. The risk aversion parameter is always insignificant and whether it is included or not (or which one) does not affect sign or significance level of any other parameter. 
+\item[d]~A degree of agreement with the statement: 'Government should redistribute income from the better off to those who are less well off.' Included to test for significance of political opinions.
+     \end{adjustwidth}   
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\vspace{0.2cm}
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,451 @@
+\begin{thebibliography}{58}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Austin(2008)]{Austin2008}
+Austin, P.~C.
+\newblock 2008.
+\newblock \textquote{The Large-Sample Performance of Backwards Variable
+  Elimination}.
+\newblock \emph{Journal of Applied Statistics}, 35\penalty0 (12):\penalty0
+  1355--1370.
+
+\bibitem[Balcombe and Fraser(2015)]{Balcombe2015}
+Balcombe, K. and Fraser, I.
+\newblock 2015.
+\newblock \textquote{Parametric Preference Functionals Under Risk in the Gain
+  Domain: A Bayesian Analysis}.
+\newblock \emph{J Risk Uncertain}, 50.
+
+\bibitem[Bergson(1938)]{bergson1938}
+Bergson, A.
+\newblock 1938.
+\newblock \textquote{A Reformulation of Certain Aspects of Welfare Economics}.
+\newblock \emph{The Quarterly Journal of Economics}, 52\penalty0 (2):\penalty0
+  310--334.
+
+\bibitem[Bergson(1954)]{bergson1954}
+Bergson, A.
+\newblock 1954.
+\newblock \textquote{On the Concept of Social Welfare}.
+\newblock \emph{The Quarterly Journal of Economics}, pages 233--252.
+
+\bibitem[Braaten(2014)]{Braaten2014}
+Braaten, R.~H.
+\newblock 2014.
+\newblock \textquote{Testing Deontological Warm Glow Motivation for Carbon
+  Abatements}.
+\newblock \emph{Resource and Energy Economics}, 38.
+
+\bibitem[B{\"u}hlmann and Van De~Geer(2011)]{statisHighDimData}
+B{\"u}hlmann, P. and Van De~Geer, S.
+\newblock 2011.
+\newblock \emph{Statistics for High-Dimensional Data: Methods, Theory and
+  Applications}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Carlsson et~al.(2013)Carlsson, Kataria, Krupnick, Lampi, Lofgren, Qin,
+  and Sterner]{Carlsson2013}
+Carlsson, F., Kataria, M., Krupnick, A., Lampi, E., Lofgren, A., Qin, P., and
+  Sterner, T.
+\newblock 2013.
+\newblock \textquote{A fair share: Burden-sharing preferences in the United
+  States and China}.
+\newblock \emph{Resource and Energy Economics}, 35.
+
+\bibitem[Church et~al.(2014)Church, Clark, Cazenave, Gregory, Jevrejeva,
+  Levermann, Merrifield, G.~A.~Milne, Nunn, Payne, Pfeffer, Stammer, and
+  Unnikrishnan]{IPCC5WG1}
+Church, J.~A., Clark, P.~U., Cazenave, A., Gregory, J.~M., Jevrejeva, S.,
+  Levermann, A., Merrifield, M.~A., G.~A.~Milne, R.~N., Nunn, P.~D., Payne,
+  A.~J., Pfeffer, W.~T., Stammer, D., and Unnikrishnan, A.~S.
+\newblock 2014.
+\newblock \emph{\emph{\enquote{Sea Level Change.} In:} Climate Change 2013:
+  Impacts, Adaptation and Vulnerability, Part A: The Physical Science Basis.
+  Contribution of Working Group 1 to the Fifth Assessment Report of the
+  Intergovernmental Panel on Climate Change}.
+\newblock Cambridge University Press.
+
+\bibitem[Cook et~al.(2013)Cook, Nuccitelli, Green, Richardson, Winkler,
+  Painting, Way, Jacobs, and Skuce]{Cook2013COnsensus}
+Cook, J., Nuccitelli, D., Green, S.~A., Richardson, M., Winkler, B., Painting,
+  R., Way, R., Jacobs, P., and Skuce, A.
+\newblock 2013.
+\newblock \textquote{Quantifying the Consensus on Anthropogenic Global Warming
+  in the Scientific Literature}.
+\newblock \emph{Environmental Research Letters}, 8\penalty0 (2):\penalty0
+  024024.
+
+\bibitem[Deschênes and Greenstone(2007)]{DesGreenstone2007}
+Deschênes, O. and Greenstone, M.
+\newblock 2007.
+\newblock \textquote{The Economic Impacts of Climate Change: Evidence from
+  Agricultural Output and Random Fluctuations in Weather}.
+\newblock \emph{American Economic Review}, 97\penalty0 (1):\penalty0 354--385.
+
+\bibitem[Dolton and Tol(2016)]{SurveyUK}
+Dolton, P. and Tol, R.
+\newblock A survey of the UK population on public policy.
+\newblock Working paper series, Department of Economics, University of Sussex,
+  2016.
+\newblock URL \url{http://EconPapers.repec.org/RePEc:sus:susewp:08416}.
+
+\bibitem[Flack and Chang(1987)]{Flack1987}
+Flack, V.~F. and Chang, P.~C.
+\newblock 1987.
+\newblock \textquote{Frequency of Selecting Noise Variables in Subset
+  Regression Analysis: A Simulation Study}.
+\newblock \emph{The American Statistician}, 41\penalty0 (1):\penalty0 84--86.
+
+\bibitem[Flynn et~al.(1994)Flynn, Slovic, and Mertz]{Flynn1994}
+Flynn, J., Slovic, P., and Mertz, C.~K.
+\newblock 1994.
+\newblock \textquote{Gender, Race, and Perception of Environmental Health
+  Risks}.
+\newblock \emph{Risk Analysis}, 14\penalty0 (6):\penalty0 1101--1108.
+
+\bibitem[Frederick(2005)]{Frederick2005}
+Frederick, S.
+\newblock 2005.
+\newblock \textquote{Cognitive Reflection and Decision Making}.
+\newblock \emph{The Journal of Economic Perspectives}, 19\penalty0
+  (4):\penalty0 25--42.
+
+\bibitem[Friedman et~al.(2010)Friedman, Hastie, and Tibshirani]{Friedman2010}
+Friedman, J., Hastie, T., and Tibshirani, R.
+\newblock 2010.
+\newblock \textquote{Regularization Paths for Generalized Linear Models via
+  Coordinate Descent}.
+\newblock \emph{Journal of Statistical Software, Articles}, 33\penalty0
+  (1):\penalty0 1--22.
+
+\bibitem[Gelman(2007)]{gelman2007}
+Gelman, A.
+\newblock 2007.
+\newblock \textquote{Struggles with Survey Weighting and Regression Modeling}.
+\newblock \emph{Statistical Science}, 22\penalty0 (2):\penalty0 153--164.
+
+\bibitem[Glenk and Colombo(2013)]{GlenkColombo2013}
+Glenk, K. and Colombo, S.
+\newblock 2013.
+\newblock \textquote{Modelling Outcome-Related Risk in Choice Experiments}.
+\newblock \emph{Australian Journal of Agricultural and Resource Economics}, 57.
+
+\bibitem[Hamilton(2011)]{Hamilton2011}
+Hamilton, L.~C.
+\newblock 2011.
+\newblock \textquote{Education, Politics and Opinions About Climate Change
+  Evidence for Interaction Effects}.
+\newblock \emph{Climatic Change}, 104\penalty0 (2):\penalty0 231--242.
+
+\bibitem[Hamilton and Keim(2009)]{HamiltonKeim2009}
+Hamilton, L.~C. and Keim, B.~D.
+\newblock 2009.
+\newblock \textquote{Regional variation in perceptions about climate change}.
+\newblock \emph{International Journal of Climatology}, 29\penalty0
+  (15):\penalty0 2348--2352.
+
+\bibitem[Hayes(2001)]{Hayes2001gender}
+Hayes, B.~C.
+\newblock 2001.
+\newblock \textquote{Gender, Scientific Knowledge, and Attitudes toward the
+  Environment: A Cross-National Analysis}.
+\newblock \emph{Political Research Quarterly}, 54\penalty0 (3):\penalty0
+  657--671.
+
+\bibitem[Hinkel et~al.(2014)Hinkel, Wong, Losada, Gattuso, Khattabi, and
+  McInnes]{IPCC5}
+Hinkel, J., Wong, P.~P., Losada, I.~J., Gattuso, J.~P., Khattabi, A., and
+  McInnes, K.~L.
+\newblock 2014.
+\newblock \emph{\emph{\enquote{Coastal Systems and Low-Lying Areas.} In:}
+  Climate Change 2014: Impacts, Adaptation and Vulnerability, Part A: Global
+  and Sectoral Aspects. Contribution of Working Group 2 to the Fifth Assessment
+  Report of the Intergovernmental Panel on Climate Change}.
+\newblock Cambridge University Press.
+
+\bibitem[Hsiang et~al.(2013)Hsiang, Burke, and Miguel]{Hsiang2013}
+Hsiang, S.~M., Burke, M., and Miguel, E.
+\newblock 2013.
+\newblock \textquote{Quantifying the Influence of Climate on Human Conflict}.
+\newblock \emph{Science}, 341\penalty0 (6151).
+
+\bibitem[Ifcher and Zarghamee(2011)]{ifcher2011}
+Ifcher, J. and Zarghamee, H.
+\newblock 2011.
+\newblock \textquote{Happiness and Time Preference: The Effect of Positive
+  Affect in a Random-Assignment Exper}.
+\newblock \emph{The American Economic Review}, 101\penalty0 (7):\penalty0
+  3109--3129.
+
+\bibitem[Kahan(2012)]{Kahan2012}
+Kahan, D.~M.
+\newblock 2012.
+\newblock \textquote{Why We Are Poles Apart on Climate Change}.
+\newblock \emph{Nature}, 488:\penalty0 255.
+
+\bibitem[Kahan(2015)]{Kahan2015}
+Kahan, D.~M.
+\newblock 2015.
+\newblock \textquote{Climate-Science Communication and the Measurement
+  Problem}.
+\newblock \emph{Political Psychology}, 36:\penalty0 1--43.
+
+\bibitem[Kahan et~al.(2007)Kahan, Braman, Gastil, Slovic, and Mertz]{Kahan2007}
+Kahan, D.~M., Braman, D., Gastil, J., Slovic, P., and Mertz, C.~K.
+\newblock 2007.
+\newblock \textquote{Culture and Identity-Protective Cognition: Explaining the
+  White-Male Effect in Risk Perception}.
+\newblock \emph{Journal of Empirical Legal Studies}, 4\penalty0 (3):\penalty0
+  465--505.
+
+\bibitem[Kahan et~al.(2012)Kahan, Peters, Wittlin, Slovic, Ouellette, Braman,
+  and Mandel]{KahanEtAl2012}
+Kahan, D.~M., Peters, E., Wittlin, M., Slovic, P., Ouellette, L.~L., Braman,
+  D., and Mandel, G.
+\newblock 2012.
+\newblock \textquote{The Polarizing Impact of Science Literacy and Numeracy on
+  Perceived Climate Change Risks}.
+\newblock \emph{Nature Climate Change}, 2:\penalty0 732--735.
+
+\bibitem[Kellstedt et~al.(2008)Kellstedt, Zahran, and Vedlitz]{Kellstedt2008}
+Kellstedt, P.~M., Zahran, S., and Vedlitz, A.
+\newblock 2008.
+\newblock \textquote{Personal Efficacy, the Information Environment, and
+  Attitudes toward Global Warming and Climate Change in the {U}nited {S}tates}.
+\newblock \emph{Risk Analysis}, 28:\penalty0 113--126.
+
+\bibitem[Kott(2007)]{KottWeight}
+Kott, P.~S.
+\newblock 2007.
+\newblock \textquote{Clarifying Some Issues in the Regression Analysis of
+  Survey Data}.
+\newblock \emph{Survey Research Methods}, 1\penalty0 (1):\penalty0 11--18.
+
+\bibitem[Lee et~al.(2015)Lee, Markowitz, Howe, Ko, and
+  Leiserowitz]{Leiserowitz2015}
+Lee, T.~M., Markowitz, E.~M., Howe, P.~D., Ko, C.-Y., and Leiserowitz, A.~A.
+\newblock 2015.
+\newblock \textquote{Predictors of Public Climate Change Awareness and Risk
+  Perception Around the World}.
+\newblock \emph{Nature Climate Change}, 5.
+
+\bibitem[Leiserowitz et~al.(2012)Leiserowitz, Maibach, Feinberg, and
+  Howe]{leiserowitz2012}
+Leiserowitz, A., Maibach, E.and Roser-Renouf, C., Feinberg, G., and Howe, P.
+\newblock 2012.
+\newblock \textquote{Climate change in the American mind: American's global
+  warming beliefs and attitudes in September, 2012}.
+\newblock \emph{Yale University and George Mason University}.
+
+\bibitem[Leiserowitz et~al.(2013)Leiserowitz, Maibach, Roser-Renouf, Smith, and
+  Dawson]{Leiserowitz2013}
+Leiserowitz, A.~A., Maibach, E.~W., Roser-Renouf, C., Smith, N., and Dawson, E.
+\newblock 2013.
+\newblock \textquote{Climategate, Public Opinion, and the Loss of Trust}.
+\newblock \emph{American Behavioral Scientist}, 57\penalty0 (6):\penalty0
+  818--837.
+
+\bibitem[Lusardi and Mitchell(2014)]{lusardi2014}
+Lusardi, A. and Mitchell, O.~S.
+\newblock 2014.
+\newblock \textquote{The Economic Importance of Financial Literacy: Theory and
+  Evidence}.
+\newblock \emph{Journal of Economic Literature}, 52\penalty0 (1):\penalty0
+  5--44.
+
+\bibitem[McCarthy et~al.(2001)McCarthy, Canziani, Leary, Dokken, and
+  White]{mccarthy2001impacts}
+McCarthy, J.~J., Canziani, O., Leary, N.~A., Dokken, D.~J., and White, K.
+\newblock 2001.
+\newblock \textquote{Impacts, Adaptation and vulnerability}.
+\newblock \emph{Third Assessment Report of the Intergovernmental panel on
+  climate change, working Group}, 2.
+
+\bibitem[McCright(2010)]{McCright2010}
+McCright, A.~M.
+\newblock 2010.
+\newblock \textquote{The Effects of Gender on Climate Change Knowledge and
+  Concern in the American Public}.
+\newblock \emph{Population and Environment}, 32\penalty0 (1):\penalty0 66--87.
+
+\bibitem[Meinshausen et~al.(2009)Meinshausen, Meier, and Bühlmann]{pValsLasso}
+Meinshausen, N., Meier, L., and Bühlmann, P.
+\newblock 2009.
+\newblock \textquote{p-Values for High-Dimensional Regression}.
+\newblock \emph{Journal of the American Statistical Association}, 104\penalty0
+  (488):\penalty0 1671--1681.
+
+\bibitem[Morrison et~al.(2015)Morrison, Duncan, and Parton]{Morrison2015}
+Morrison, M., Duncan, R., and Parton, K.
+\newblock 2015.
+\newblock \textquote{Religion Does Matter for Climate Change Attitudes and
+  Behavior}.
+\newblock \emph{Plos ONE}.
+
+\bibitem[Murphy et~al.(2011)Murphy, Ackermann, and Handgraaf]{murphy2011SVO}
+Murphy, R.~O., Ackermann, K.~A., and Handgraaf, M.~J.
+\newblock 2011.
+\newblock \textquote{Measuring Social Value Orientation}.
+\newblock \emph{Judgment and Decision Making}, 6\penalty0 (8):\penalty0
+  771--781.
+
+\bibitem[Newell and Shkamaki(2015)]{Newell2015}
+Newell, R.~G. and Shkamaki, J.
+\newblock 2015.
+\newblock \textquote{Individual Time Preferences and Energy Efficiency}.
+\newblock \emph{The American Economic Review}, 105:\penalty0 196--200.
+
+\bibitem[Oreskes(2004)]{oreskes2004}
+Oreskes, N.
+\newblock 2004.
+\newblock \textquote{The scientific consensus on climate change}.
+\newblock \emph{Science}, 306\penalty0 (5702):\penalty0 1686--1686.
+
+\bibitem[Pew(2012)]{Pew2012}
+Pew.
+\newblock More Say There is Solid Evidence of Global Warming.
+\newblock Technical report, Washington, DC: Pew Research Center for the People
+  {\&} the Press, 2012.
+\newblock URL
+  \url{http://www.people-press.org/files/legacy-pdf/10-15-12%20Global%20Warming%20Release.pdf}.
+
+\bibitem[{R Core Team}(2017)]{RRRR}
+{R Core Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2017.
+\newblock URL \url{https://www.R-project.org/}.
+
+\bibitem[Read et~al.(1994)Read, Bostrom, Morgan, Fischhoff, and
+  Smuts]{WhatPplKnow94}
+Read, D., Bostrom, A., Morgan, M.~G., Fischhoff, B., and Smuts, T.
+\newblock 1994.
+\newblock \textquote{What Do People Know About Global Climate Change? 2. Survey
+  Studies of Educated Laypeople}.
+\newblock \emph{Risk Analysis}, 14\penalty0 (6):\penalty0 971--982.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1539-6924.1994.tb00066.x}.
+
+\bibitem[Reynolds et~al.(2010)Reynolds, Bostrom, Read, and
+  Morgan]{reynolds2010now}
+Reynolds, T.~W., Bostrom, A., Read, D., and Morgan, M.~G.
+\newblock 2010.
+\newblock \textquote{Now What Do People Know about Global Climate Change?
+  Survey Studies of Educated Laypeople}.
+\newblock \emph{Risk analysis}, 30\penalty0 (10):\penalty0 1520--1538.
+
+\bibitem[Samuelson(1956)]{samuelson1956}
+Samuelson, P.~A.
+\newblock 1956.
+\newblock \textquote{Social Indifference Curves}.
+\newblock \emph{The Quarterly Journal of Economics}, 70\penalty0 (1):\penalty0
+  1--22.
+
+\bibitem[Seneviratne et~al.(2012)Seneviratne, Nicholls, Easterling, Goodess,
+  Kanae, Kossin, Luo, J.~Marengo, Rahimi, Reichstein, Sorteberg, Vera, and
+  Zhang]{Seneviratne2012}
+Seneviratne, S., Nicholls, N., Easterling, D., Goodess, C., Kanae, S., Kossin,
+  J., Luo, Y., J.~Marengo, K.~M., Rahimi, M., Reichstein, M., Sorteberg, A.,
+  Vera, C., and Zhang, X.
+\newblock 2012.
+\newblock \emph{\emph{\enquote{Changes in Climate Extremes and Their Impacts on
+  the Natural Physical Environment.} In:} Managing the Risks of Extreme Events
+  and Disasters to Advance Climate Change Adaptation [Field, C.B., V. Barros,
+  T.F. Stocker, D. Qin, D.J. Dokken, K.L. Ebi, M.D. Mastrandrea, K.J. Mach,
+  G.-K. Plattner, S.K. Allen, M. Tignor, and P.M. Midgley (eds.)]. A Special
+  Report of Working Groups I and II of the Intergovernmental Panel on Climate
+  Change (IPCC)}.
+\newblock Cambridge University Press.
+
+\bibitem[Slaymaker(1999)]{BritishColumbia}
+Slaymaker, O.
+\newblock 1999.
+\newblock \textquote{Natural Hazards in {B}ritish {C}olumbia: an
+  Interdisciplinary and Inter-Institutional Challenge.}
+\newblock \emph{International Journal of Earth Sciences}, 88:\penalty0
+  317--324.
+
+\bibitem[Stanley(2005)]{PubBias}
+Stanley, T.~D.
+\newblock 2005.
+\newblock \textquote{Beyond Publication Bias}.
+\newblock \emph{Journal of Economic Surveys}, 19:\penalty0 309--345.
+
+\bibitem[Sunstein(2007)]{TerrorClimate}
+Sunstein, C.~R.
+\newblock 2007.
+\newblock \textquote{On the Divergent {A}merican Reactions to Terrorism and
+  Climate Change}.
+\newblock \emph{Columbia L. Rev.}, 107:\penalty0 503--557.
+
+\bibitem[Tanaka et~al.(2010)Tanaka, Camerer, and Nguyen]{tanaka2010riskTime}
+Tanaka, T., Camerer, C.~F., and Nguyen, Q.
+\newblock 2010.
+\newblock \textquote{Risk and Time Preferences: Linking Experimental and
+  Household Survey Data from Vietnam}.
+\newblock \emph{The American Economic Review}, 100\penalty0 (1):\penalty0
+  557--571.
+
+\bibitem[Tibshirani(1996)]{tibshirani96}
+Tibshirani, R.
+\newblock 1996.
+\newblock \textquote{Regression Shrinkage and Selection via the Lasso}.
+\newblock \emph{Journal of the Royal Statistical Society (Series B)},
+  58:\penalty0 267--288.
+
+\bibitem[Tierney et~al.(2001)Tierney, Lindell, and Perry]{bookDisastersPrep}
+Tierney, K.~J., Lindell, M.~K., and Perry, R.~W.
+\newblock 2001.
+\newblock \emph{Facing the Unexpected: Disaster Preparedness and Response in
+  the United States}.
+\newblock Washington, DC: Joseph Henry Press.
+
+\bibitem[Toomet and Henningsen(2008)]{HeckmanR}
+Toomet, O. and Henningsen, A.
+\newblock 2008.
+\newblock \textquote{Sample Selection Models in R: Package sampleSelection}.
+\newblock \emph{Journal of Statistical Software, Articles}, 27\penalty0
+  (7):\penalty0 1--23.
+\newblock ISSN 1548-7660.
+
+\bibitem[Voors et~al.(2012)Voors, Nillesen, Verwimp, Bulte, Lensink, and
+  Van~Soest]{voors2012violent}
+Voors, M.~J., Nillesen, E.~E., Verwimp, P., Bulte, E.~H., Lensink, R., and
+  Van~Soest, D.~P.
+\newblock 2012.
+\newblock \textquote{Violent conflict and behavior: a field experiment in
+  Burundi}.
+\newblock \emph{The American Economic Review}, 102\penalty0 (2):\penalty0
+  941--964.
+
+\bibitem[Wasserman and Roeder(2009)]{Wasserman2009}
+Wasserman, L. and Roeder, K.
+\newblock 2009.
+\newblock \textquote{High-Dimensional Variable Selection}.
+\newblock \emph{The Annals of Statistics}, 37\penalty0 (5A):\penalty0
+  2178--2201.
+
+\bibitem[Weber and Stern(2011)]{Weber2011}
+Weber, E.~U. and Stern, P.~C.
+\newblock 2011.
+\newblock \textquote{Public Understanding of Climate Change in the {U}nited
+  {S}tates}.
+\newblock \emph{American Psychologist}, 66:\penalty0 315--328.
+
+\bibitem[Whitmarsh(2011)]{WHITMARSH2011}
+Whitmarsh, L.
+\newblock 2011.
+\newblock \textquote{Scepticism and uncertainty about climate change:
+  Dimensions, determinants and change over time}.
+\newblock \emph{Global Environmental Change}, 21\penalty0 (2):\penalty0 690 --
+  700.
+
+\bibitem[Winship and Radbill(1994)]{winship94}
+Winship, C. and Radbill, L.
+\newblock 1994.
+\newblock \textquote{Sampling Weights and Regression Analysis}.
+\newblock \emph{Sociological Methods \& Research}, pages 230--257.
+
+\end{thebibliography}

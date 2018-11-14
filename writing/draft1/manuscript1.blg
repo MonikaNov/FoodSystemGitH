@@ -1,0 +1,17 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: manuscript1.aux
+The style file: ChicagoM.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 90 of file references.bib
+ :    
+ :    pages = {161--187},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Name 1 in "Weber, Elke U., and Paul C. Stern" has a comma at the end for entry Weber2011
+while executing---line 1370 of file ChicagoM.bst
+Name 1 in "Weber, Elke U., and Paul C. Stern" has a comma at the end for entry Weber2011
+while executing---line 1370 of file ChicagoM.bst
+Name 1 in "Weber, Elke U., and Paul C. Stern" has a comma at the end for entry Weber2011
+while executing---line 1452 of file ChicagoM.bst
+Name 1 in "Weber, Elke U., and Paul C. Stern" has a comma at the end for entry Weber2011
+while executing---line 1452 of file ChicagoM.bst
+(There were 5 error messages)

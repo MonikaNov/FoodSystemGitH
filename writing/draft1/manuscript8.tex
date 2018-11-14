@@ -1,0 +1,830 @@
+   
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{a4wide}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{bm}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage{colortbl}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\usepackage[flushleft]{threeparttable}
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{changepage}  
+
+
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{tabularx}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage[labelfont=bf]{caption}
+\usepackage{titlesec}
+\usepackage{endnotes}
+\usepackage{csquotes}
+\usepackage{epstopdf}
+
+
+
+\date{\normalsize{October 2018}}
+\title{\Large \bf Relationship of Weather and Maize Yields in Kenya}
+\author{Monika Novackova, Pedram Rowhani, Martin Todd, Annemie Maertens}
+\affil{\small{Department of Geography, University of Sussex, Falmer, UK}}
+
+
+\parindent 0pt
+\parskip 0.5em
+\newcommand\starred[1]{\accentset{~~~~~\star}{#1}}
+
+
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+\begin{document}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+  
+  \interfootnotelinepenalty=10000
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+\maketitle
+\vfill
+
+\doublespacing
+
+\begin{abstract}
+\noindent We explore an unprecedented dataset of almost $6,000$ observations to identify main predictors of climate knowledge, climate risk perception and willingness to pay for climate change mitigation. Among nearly $70$ potential explanatory variables we detect the most important ones using multisplit lasso estimator. Importantly, we test significance of individuals' preferences about time, risk and equity. Our study is innovative as these behavioural characteristics were recorded by including experimental methods into a live sample survey. This unique way of data collection combines advantages of survey and experiments. The most important predictors of environmental attitudes are numeracy, cognitive ability, ideological world-view and inequity aversion. \\
+\end{abstract}
+
+
+\noindent \textbf{JEL classification:} Q54, Q58, D80\\
+\noindent \textbf{Keywords:} Climate change, climate knowledge, climate policy, lasso, risk perception, willingness to pay\\
+
+
+
+
+\newpage
+\sloppy
+
+
+\section{Introduction}\label{Introduction}
+
+
+\large Findings:
+\begin{itemize}
+\item OND last year dry spell, max rain very important for Maize, but cumulative precipitation for the same period not so important
+
+\item Mar-Sept last year temperature very important for maize yields
+\item SD temperature last year positive and significant
+\item dry spell 20 MAM last year important (but not dry spell MAM10)
+\item interesting. Precipitation 2 months MAM last year very significant and positive
+\item mean temp last year negative and significant, hill shaped 
+\end{itemize}
+
+\underline{New findings:}
+
+\begin{itemize}
+\item The yields seem to be more responsive to weather on west than on east
+\end{itemize}
+\normalsize
+\FloatBarrier
+
+The purpose of this paper is to contribute to better understanding of effects of drought on food security in Kenya and to improve early warning systems. \textcolor{red}{shifting from reactive to proactive approach} As a measure of food security we use agricultural maize yields and as measures of drought we use variables created by aggregating daily temperature and precipitation data.
+
+
+ Strong downwards trend in precipitation has been observed in the tropics from $10^\circ$N to $10^\circ$S, especially after $1977$ \citep{IPCCtrenberth}. During the period $1900-2005$, the climate has become wetter in many parts of the world (eastern parts of America, northern Europe, northern and central Asia) but it has became much drier in Mediterranean, Sahel, southern Africa and parts of Southern Asia. Furthermore, increased frequency of heavy rain events has been observed also in the areas with decline in total rainfall \citep{IPCCtrenberth}. \cite{Trenberth2014} argue that as a consequence of global warming, dry areas have strong tendency to get drier while wet areas are getting wetter. 
+ 
+ 
+A number of previous studies were focused on estimation of relationship of agricultural yield and measures of precipitation and temperature in Kenya or in other countries in Sub-Saharan Africa. Common measures of precipitation and temperature are monthly averages (or monthly totals in case of precipitation) and their variances or standard deviations (\citealt{AbrahaSavage2006, LobellEtAl2008, ThorntonEtAl2009}). \cite{Adejuwon2004} focused on the Sub-Saharan West Africa and he used total rainfall for: \textit{(i)} The first month of the period from sowing to harvesting (June) \textit{(ii)}: The first two months of the period from sowing to harvesting (June and July) and \textit{(iii)}: The first three months of the period from sowing to harvesting (June, July and August). Based on his results, June and July are the most important for crop yield. Other studies are based on seasonal totals or means..(..)  Some authors have utilized simulated daily extremes, averages or daily measures of variance  (\citealt{Chipanshi2003,AbrahaSavage2006,SchulzeEtA1993}). Another measure which has been used to model relationship with maize yields in the past literature is the number of wet and dry day counts per a defined period, usually a month or season (\citealt{AbrahaSavage2006}) The definition of wet and dry days vary across the studies.
+
+
+ describes simulate potential maize yields using generated weather data and generated weather a
+\textcolor{red}{Erin Lentz, can we cite her paper???}
+
+
+Blignaut: annual averages
+Chipanschi: daily maximum and minimum temperatures
+Giannoukopoulos: number of hw days and so...
+Laux et al.: daily Tmax >30C
+Lobell et al. 2008: Monthly temp and prec.
+Lobell and Burke 2010: Temp. growing season average, precip:growing season total
+
+(\citealt{AbrahaSavage2006,Adejuwon2004,BenMohamed2002,BLIGNAUT2009,
+Chipanshi2003,Giannakopoulos2009,LauxEtAl,Leemans1993,LobellEtAl2008,
+LobellBurke2010,sagoe2006,SchulzeEtA1993,ThorntonEtAl2009,TingemEtAl2008,
+TingemEtAl2009,WalkerSchulze2008})
+
+\textcolor{blue}{\textbf{Add more studies. Then separate somehow into groups of different topics..}}
+
+
+\section{Methodology}\label{Method}
+
+ 
+Prior we started  our research, we had to answer the following questions: How do we measure food security? And how do we measure drought? To answer the first questions, the measure which has been used as a proxy for food security in the literature are as follows:
+ 
+\vspace{2cm}
+
+The other important questions which need to be answered before starting our research are: How is drought defined? What are the ways of measuring drought? and How shall we measure drought for the purpose of our study? According to the international meteorological community, drought can be defined in several ways. In particular, drought is a \textit{'prolonged absence or marked deficiency of precipitation'}, a \textit{'deficiency of precipitation that results in water shortage for some activity or for some group'} or a \textit{'period of abnormally dry weather sufficiently prolonged for the lack of precipitation to cause a serious hydrological imbalance'} (\citealp{Heim2002, IPCCtrenberth}).
+ \cite{AMS1997} has defined three types of droughts: \textit{(i)}~'Agricultural drought' which is defined in terms of moister deficits in upper layer of soil up to about one meter depth~\textit{(ii)} 'meteorological drought' which refers to prolonged deficit of precipitation and~\textit{(iii)} 'hydrological drought' which relates to low streamflow, lake and levels of groundwater. The  \cite{AMS1997} policy statement was later replaced by another statement \citep{AMS2013} which besides the three types of drought above, covers also the 'socioeconomic drought' which associates the supply and demand of some economic good with elements of meteorological, agricultural and hydrological drought (\citealt{Heim2002, IPCCtrenberth}).
+ 
+Numerous definitions of drought and their role have been reviewed and discussed by \cite{wilhite1985} and \cite{wilhite2000}. They have distinguished two main categories of definitions of drought: \textit{(i)} conceptual and \textit{(ii)} operational. Conceptual definitions are dictionary types, usually defining boundaries of the concept of drought\footnote{An example of conceptual definition of drought is an 'extended period - a season, a year, or several years of deficient rainfall relative to the statistical multi-year mean for a region' \cite{schneider1996}.}. Operational definitions are essential for an effective early warning system. An example of operational definition of agricultural drought can be obtaining the rate of soil water depletion based on precipitation and evapotranspiration rates and expressing these relationships in terms of drought effects on plant behaviour \citep{wilhite2000}.
+
+In order to compare severity of drought across different time periods or geographical locations a numerical measure turns out to be necessary. However, as a result of a large disagreement about a definition of drought, there is no single universal drought index. Instead of that a number of measures of drought has been developed (\citealp{Heim2002, wilhite1985, wilhite2000}).
+
+
+For an extensive overview of various drought indices see \cite{Heim2002}, \cite{monacelli2005}, \cite{svoboda2016} or \cite{zargar2011}. \cite{keyantash2002} quantify, evaluate and compare number of drought indices for meteorological, hydrological and agricultural forms of drought. Based on several criteria they conclude that rainfall deciles and SPI perform the best for meteorological drought.
+
+In the recent period, remote sensing data have been collected and used increasingly to monitor levels of greenness and closely related vegetation conditions. Based on these data, the vegetation condition index (VCI) has been developed for quantifying drought strength and severity \citep{KlischAtz2016}.
+
+A description of other drought indices and measures can be found in Appendix~$1$.
+
+\textcolor{red}{We initially analysed SPEI and VCI indices and we tried to use them as input variables for our analysis. However, there were some serious problems with these measures.....}
+
+Therefore we opted for a different approach to gauging drought severity. In particular, we decided to utilize daily precipitation data \textcolor{red}{from...CHIRPS?? with resolution... and daily temperature data from..at resolution....}. The frequency  of the maize yield data is yearly while we have daily weather data available. Hence, the weather data need to be aggregated in order to obtain a dataset conformable with the yield data. There are many possibilities how to aggregate daily weather data. Based on the literature research in Section~\ref{Introduction} and complexity of deriving the measures, we short-listed following aggregates of the weather data:
+
+
+ we decided to create a set of the following weather aggregates:
+
+We then searched for the best subset of predictors of yield among the variables listed... 
+
+
+
+
+\sloppy
+The estimation function can be written as \citep{Friedman2010}:
+
+
+\begin{equation}\label{Lasso}
+\begin{array}{lcll}
+
+ \underset{(\beta_0, \beta) \in \mathbb{R}^{(p+1)}}{min} \boldsymbol{R}_{\lambda}(\beta_0, \beta)&=&
+   \underset{(\beta_0, \beta) \in \mathbb{R}^{(p+1)}}{min} \bigg[ \frac{1}{2N}\sum_{i=1}^{N}(y_i - \beta_0-x_i^{\intercal}\beta)^2 + \lambda\sum_{j=1}^{p}(|\beta_j|) \bigg], \\
+\end{array}
+\end{equation}
+
+
+
+In line with common practice, we compute estimator~\eqref{Lasso} for a series of~$\lambda$ and then we choose a preferred value of~$\lambda$ using cross-validation \citep{statisHighDimData}.
+
+
+
+\begin{equation}\label{pvals}
+Q_j(\gamma)=min \left \{1,q_{\gamma} (   \{ P^{(h)}_j/\gamma; h=1,...,H\}) \right \},
+\end{equation}
+
+ where and $q_{\gamma}(\tiny{\cdot})$ is the (empirical) $\gamma$-quantile function. We will further refer to this procedure as a multisplit lasso. 
+ 
+
+
+
+
+
+
+\FloatBarrier
+\section{Data}\label{Data}
+All data used in this study except of predicted income and population density, which we use in robustness tests,  were collected in the survey conducted by \cite{SurveyUK}. 
+
+
+
+In Section~\ref{Robust} we use an alternative measure of income as a robustness test. In particular, this estimated income is obtained from a regression model based on data from Annual Survey of Hours and Earnings (ASHE). More specifically, the predicted income is based on age, gender, occupation, sector and education.
+
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Sex and age distribution} \\ of the sample and the population}}
+\label{SexAge} 
+\begin{small}
+\begin{tabular}{|l|rr|rr|} 
+\hline	
+  \multicolumn{1}{|l|}{ } & \multicolumn{2}{c}{\bf{Sample}} & \multicolumn{2}{|c|}{\bf{UK population\tnote{a}}} \\ %sample pubpolM2 used here
+    \multicolumn{1}{|l|}{\vspace{0.1cm}\textbf{Age range}}  &  \multicolumn{1}{|c}{\bf{Male}} & \multicolumn{1}{c}{\bf{Female}} & \multicolumn{1}{|c}{\bf{Male}} & \multicolumn{1}{c|}{\bf{Female}}\\ 
+\hline 
+$18-24$&$9.8\%$&$9.4\%$&$6.2\%$&$6.0\%$\\
+$25-34$&$10.0\%$&$10.3\%$&$9.0\%$&$9.1\%$\\
+$35-44$&$7.8\%$&$8.3\%$&$8.6\%$&$8.8\%$\\
+$45-54$&$8.1\%$&$9.4\%$&$9.3\%$&$9.6\%$\\
+$55-64$&$7.4\%$&$8.4\%$&$7.5\%$&$7.8\%$\\
+$65-74$&$4.1\%$&$4.8\%$&$6.2\%$&$6.7\%$\\
+$75-80$&$0.1\%$&$0.1\%$&$2.4\%$&$2.8\%$\\
+\hline
+\hline
+\end{tabular} 
+  \begin{tablenotes}
+  \begin{footnotesize}
+  \singlespacing
+     \item[a]Population data are from the Office of National Statistics, Population Estimates of UK, England and
+Wales, Scotland and Northern Ireland Mid $2014$, Table MYE2.
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+\end{small}
+  \end{threeparttable} \par}
+
+
+\hspace{1.5cm}
+
+
+
+
+\subsection{Climate variables}\label{ClimateVars}
+
+
+Descriptive statistics of our climate variables are summarised in Table~\ref{DepDes}.
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Dependent variables:} Descriptive statistics}}
+\label{DepDes} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrr} 
+\hline	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  &  \multicolumn{1}{c}{\bf{Mean}} & \multicolumn{1}{c}{\bf{St. dev.}} & \textbf{Min} & \textbf{Max}\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Climate change knowledge&$3.851$&$1.266$&$1$&$8$\\
+    \vspace{0.15cm}Climate change seriousness perception&$6.622$&$2.249$&$0$&$10$\\
+        \vspace{0.15cm}Climate versus policy effects perception&$5.370$&$2.315$&$0$&$10$\\
+\vspace{0.15cm}WTP - gas and electricity tax (\textsterling~per year)&$123.900$&$105.459$&$0$&$500$\\
+ \vspace{0.15cm}WTP - duty on transport fuel (pence per year)&$20.530$&$22.518$&$0$&$100$\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+  \end{threeparttable} 
+\par}
+
+\hspace{1.5cm}
+
+
+
+To investigate opinions about seriousness of climate change, the respondents were asked the following question: 'How serious a problem do you think climate change is at this moment?' Using an interactive slider, the respondents answered an integer value between $0$~and~$10$ where min~$=0$ and max~$=10$ (as it was noted just below the slider). In a similar way, the respondents were asked if they feel to be more affected by climate change or by climate policy. The wording of the question was: 'Which affects you and your way of life more, climate change or policies to reduce greenhouse gas emissions?' Again, the respondents provided answers on an integer scale from $0$ (climate policy) to $10$ (climate change) using a slider. Relative frequencies of climate seriousness perception and climate versus policy perception are summarised in Table~\ref{DepFreq}.
+
+
+\vspace{1cm}
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Dependent variables:} Relative frequencies (\%)}}
+\label{DepFreq} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrrrrrrrrrr} 
+\hline 
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  & \multicolumn{1}{c}{\boldsymbol{$0$}}& \multicolumn{1}{c}{\boldsymbol{$1$}}& \multicolumn{1}{c}{\boldsymbol{$2$}}& \multicolumn{1}{c}{\boldsymbol{$3$}}& \multicolumn{1}{c}{\boldsymbol{$4$}}&\multicolumn{1}{c}{\boldsymbol{$5$}}&\multicolumn{1}{c}{\boldsymbol{$6$}}&\multicolumn{1}{c}{\boldsymbol{$7$}}&\multicolumn{1}{c}{\boldsymbol{$8$}}&\multicolumn{1}{c}{\boldsymbol{$9$}}&\multicolumn{1}{c}{\boldsymbol{$10$}}&\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Climate knowledge&$0.0$&$1.7$&$11.4$&$30.4$&$25.4$&$20.9$&$8.6$&$1.6$&$0.1$&N/A&N/A\\
+\vspace{-0.3cm}Climate seriousness&\multirow{2}{*}{$3.3$}&\multirow{2}{*}{$2.8$}&\multirow{2}{*}{$5.4$}&\multirow{2}{*}{$8.1$}&\multirow{2}{*}{$8.9$}&\multirow{2}{*}{$27.2$}&\multirow{2}{*}{$14.0$}&\multirow{2}{*}{$12.8$}&\multirow{2}{*}{$8.3$}&\multirow{2}{*}{$4.1$}&\multirow{2}{*}{$5.0$}\\
+        \vspace{-0.15cm}\hspace{0.5cm}perception&\\
+\vspace{-0.3cm}Climate vs. policy&\multirow{2}{*}{$2.1$}&\multirow{2}{*}{$1.5$}&\multirow{2}{*}{$2.5$}&\multirow{2}{*}{$3.8$}&\multirow{2}{*}{$4.6$}&\multirow{2}{*}{$9.8$}&\multirow{2}{*}{$18.5$}&\multirow{2}{*}{$21.7$}&\multirow{2}{*}{$16.7$}&\multirow{2}{*}{$8.6$}&\multirow{2}{*}{$10.4$}\\
+\vspace{0.15cm}\hspace{0.5cm}perception\tnote{a}&\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+  \singlespacing
+     \item[~]\textit{Notes:} Total number of observations: $5749$
+       \begin{adjustwidth}{1cm}{} 
+     \vspace{-0.3cm} \item[a]~Higher number means greater concern about climate change, lesser concern about climate policy.
+         \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\vspace{1cm}
+
+
+
+
+
+
+
+\subsection{Behavioural variables}\label{BehaviouralVars}
+
+
+To estimate the social value orientation, respondents played six dictator games with the same questions as in \citet{murphy2011SVO}. The ring measure of social value orientation which we use in our models is defined as
+
+\begin{equation}\label{RingMeasure}
+\begin{array}{lcll}
+
+R&=&\arctan \frac{\sum_{i=1}^{N} P_O -50N}{\sum_{i=1}^{N} P_S -50N}, \\
+\end{array}
+\end{equation}
+
+
+
+
+\FloatBarrier
+	\section{Results and discussion}\label{Results}
+In this section we describe our results and discuss their interpretation.
+
+In the tables which summarise the estimates of lasso below, \textit{p}-values of some of the explanatory variables are equal to one. These variables were not selected by the lasso in most of the sample splits. They are, however, included in the tables because they represent either a category of a nominal variable whose other category was selected by the lasso or a linear term of a variable whose quadratic term was selected by the lasso. 
+
+
+
+
+{\centering
+\begin{threeparttable}
+
+
+\singlespacing
+\caption{\textit{\textbf{Linear mixed effects models:} Maize yield and weather}}
+% Peggy45 & Peggy453   can be found in foodSystems/Rcodes/Lags/..
+  % Yield in tonnes per hectare
+\label{Peggy45} 
+\centering
+\begin{small}
+\begin{tabular}{lrccc} 
+\hline \vspace{-0.2cm} \\
+  
+  
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}  &\multicolumn{2}{c}{\textbf{Scaled}}& \multicolumn{2}{c}{{\textbf{Unscaled\tnote{a}}}} \\
+  
+    \multicolumn{1}{l}{\vspace{0.1cm}}  &\textit{Estimate}&\textit{p-value}&\multicolumn{1}{c}{\textit{Estimate}}& \multicolumn{1}{c}{\textit{p-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$-0.059$&$0.646$&$1.379$&$1\times10^{-7}$$^{***}$\\
+  \\
+\vspace{-0.2cm}Prec. cum. MAM+OND lag 1, east&$0.054$&$0.041^{*}$&$3\times10^{-4}$&$0.177$\\
+  \\
+  \vspace{-0.2cm}Prec. cum. MAM lag 1, west&$0.025$&$0.477$&$3\times10^{-4}$&$0.197$\\
+  \\
+  \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, east&$-0.045$&$0.244$&$-0.029$&$0.001^{**}$\\
+  \\
+    \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, west&$-0.130$&$0.0001^{***}$&$-0.027$&$0.001^{**}$\\
+  \\
+  
+      \vspace{-0.2cm}Prec. max OND, east&$0.133$&$0.013^{*}$&$0.004$&$0.085^{\bullet}$\\
+  \\
+        \vspace{-0.2cm}Prec. max OND, west&$0.144$&$0.004^{**}$&$0.011$&$9\times10^{-6}$$^{***}$\\
+  \\
+    \vspace{-0.2cm}Temp. sd. Oc.-Mar. lag 1, east&$0.049$&$0.199$&$0.075$&$0.369$\\
+  \\
+      Temp. sd. Oc.-Mar. lag 1, west&$0.225$& $4\times10^{-12}$ $^{***}$&$0.494$&$7\times10^{-12}$ $^{***}$\\
+    \vspace{-0.1cm} \\ 
+  \hline
+  
+\vspace{-0.1cm}\\\multicolumn{1}{l}{\textbf{Random effects:}}  & \\ 
+\\\hline \vspace{-0.1cm} \\
+
+\vspace{0.2cm}Intercept\\
+\vspace{0.2cm}Prec. cum. MAM+OND lag 1\\
+\vspace{0.2cm}Prec. max OND\\
+\vspace{0.2cm}Temp. avg. Mar.-Sep. lag 1
+  \\
+  \hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} \hspace{0.15cm}$584$ observations; \hspace{0.45cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+    \begin{adjustwidth}{1cm}{} 
+    \item[a] The variety with unscaled variables fails to converge.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+
+
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather}}
+% Peggy45ln can be found in foodSystems/Rcodes/Lags/..
+ % Yield in tonnes per hectare
+\label{Peggy45ln} 
+\centering
+\begin{small}
+\begin{tabular}{lrl} 
+\hline \vspace{-0.2cm} \\
+  
+\vspace{-0.2cm} \\
+
+  
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}  &\multicolumn{1}{c}{\textit{Estimate}} &\multicolumn{1}{c}{\textit{p-value}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$0.158$&$0.086^{\bullet}$\\
+  \\
+\vspace{-0.2cm}Prec. cum. MAM+OND lag 1, east&$0.066$&$0.008^{**}$\\
+  \\
+  \vspace{-0.2cm}Prec. cum. MAM lag 1, west&$-0.006$&$0.861$\\
+  \\
+  \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, east&$-0.036$&$0.292$\\
+  \\
+    \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, west&$-0.081$&$0.008^{**}$\\
+  \\
+  
+      \vspace{-0.2cm}Prec. max OND, east&$0.081$&$0.056^{\bullet}$\\
+  \\
+        \vspace{-0.2cm}Prec. max OND, west&$0.108$&$0.009^{**}$\\
+  \\
+    \vspace{-0.2cm}Temp. sd. Oc.-Mar. lag 1, east&$0.101$&$0.003^{**}$\\
+  \\
+      \vspace{-0.2cm}Temp. sd. Oc.-Mar. lag 1, west&$0.142$&$6\times10^{-7}$ $^{***}$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+  \\
+  \vspace{-0.2cm}Prec. cum. MAM+OND lag 1\\
+  \\
+  \vspace{-0.2cm}Prec. max OND\\
+  \\
+    \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1\\
+  \vspace{-0.1cm} \\ 
+  \hline
+  
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} \hspace{0.05cm}$584$ observations
+        \begin{adjustwidth}{1cm}{} 
+    \item \hspace{0.45cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+
+
+
+
+\subsection{Climate change risk perception}\label{ResPerc}
+
+In this section we discuss our estimates of the models which explain individuals' perception of climate change risk. We focus on two measures of climate risk perception, in particular climate change seriousness perception and climate versus policy perception. We present the results of lasso and jackknife OLS with the climate seriousness perception as dependent variable in Table~\ref{Climcare435}. Three predictors were selected, in particular gender, climate knowledge, and degree of agreement with redistribution of income by government. In this case, the effect of being male is negative. This is mostly consistent with results of previous research which typically finds women to take climate risk more seriously than men (\citealp{WHITMARSH2011, McCright2010, Kahan2007}). As we can see in Table~\ref{Climcare435}, degree of agreement with income redistribution affects climate change seriousness perception positively as the base category is 'Strongly disagree'. This is in agreement with previous literature as we consider the degree of agreement with income redistribution as an indicator of political and ideological world-view, which was found to be significantly correlated with climate concern by large number of previous studies (e.g. \citealp{Leiserowitz2013, Kahan2012, WHITMARSH2011}). 
+
+We will comment on the significant effects of climate knowledge at the end of Section~\ref{ResPerc}.
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Climate change seriousness perception:} Multisplit lasso and jackknife OLS}}
+% soubor LassoClimcare43 Climcare435.R
+
+\label{Climcare435} 
+\centering
+\begin{small}
+\begin{tabular}{lclrcl} 
+\hline \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{} & \multicolumn{2}{c}{\large{\textbf{Multisplit lasso}}}& \multicolumn{3}{c}{\large{\textbf{Jackknife OLS}}}  \\
+  
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Aggregated}}& \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+    \multicolumn{1}{l}{ } & \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}}& \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Gender = male&$0.0002$&$^{***}$&$-0.3658$&$4.45\times 10^{-6}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Climate knowledge&$1.0000$& &$0.1380$&$1.0000$&\\
+  \\
+\vspace{-0.2cm}Climate knowledge - squared&$<2.00\times 10^{-8}$&$^{***}$&$-0.0548$&$0.0209$&$^{*}$\\
+  \\
+ Redistribution of income:&\multirow{2}{*}{$1.0000$}& &\multirow{2}{*}{$0.1819$}&\multirow{2}{*}{$1.0000$}&\\%-1
+      \hspace{0.6cm}disagree\tnote{a}&& &&&\\%-1
+    \\
+  \vspace{-0.2cm}Redistribution of income: neutral\tnote{a}&$1.0000$& &$0.2789$&$0.8251$&\\%0
+    \\
+  \vspace{-0.2cm}Redistribution of income: agree\tnote{a}&$<2.00\times 10^{-8}$&$^{***}$&$0.8343$&$8.58\times 10^{-8}$&$^{***}$\\%1
+    \\
+  Redistribution of income:& \multirow{2}{*}{$<2.00\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}&\multirow{2}{*}{$1.0828$}&\multirow{2}{*}{$<2.00\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}\\
+\hspace{0.6cm}strongly agree\tnote{a}&& &&&\\%2
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{5}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+   \item[~]\textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+  \begin{adjustwidth}{1cm}{} \item For the significant predictors, the signs of the coefficients of the multisplit lasso are the same as those of the jackknife OLS and also size of most of the coefficients is very comparable for these two models.
+
+ \item[a] Degree of agreement with the following statement: 'Government should redistribute income from the better off to those who are less well off.' The base category is 'Strongly disagree'.
+     \end{adjustwidth}
+ \singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\hspace{1cm}
+
+
+
+
+
+
+
+
+
+
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+\makeatletter 
+\renewcommand{\thesection}{\hspace*{-1.0em}}
+\newpage
+\linespread{1}
+\bibliographystyle{ChicagoM}
+%\bibliographystyle{apa}
+\bibliography{referencesFS}
+
+\newpage
+
+
+\setcounter{table}{0} 
+\makeatletter 
+\renewcommand{\thetable}{A\@arabic \c@table} 
+\FloatBarrier
+
+
+\section{Appendix 1 Drought indices and measures}
+
+Examples of early measures of drought are \cite{wilhite1985}, \cite{munger1916}, \cite{blumenstock1942} or \cite{mcquigg1954}. \cite{munger1916} suggested to use length of period without $24$-h precipitation of $1.27$ mm. \cite{wilhite1985} is based on a measure of precipitation over a given time period. \cite{blumenstock1942} proposed to measure severity of drought as a length of drought in days where the end of a drought is defined by occurrence of $2.54$ mm of precipitation in $48$ hours. \cite{mcquigg1954} developed the Antecedent Precipitation Index (API) which is based on amount and timing of precipitation and it was used for forecasting of floods. Hence, the API is a reverse drought index.
+
+The study of \cite{palmer1965} was a significant milestone in the history of quantification of drought severity. \cite{palmer1965} developed the Palmer Drought Severity Index (PDSI) using a complex water balance model. The PDSI is based on a hydrological accounting system, which incorporate antecedent precipitation, moisture supply and moisture demand (\citealp{Heim2002,palmer1965}). As the PDSI suffers from several weaknesses (for details see e.g. \citealt{Heim2002}), other indices were developed in the following decades. These include the standardized precipitation index (SPI) developed by \cite{SPI} and the standardized precipitation evapotranspiration index (SPEI) developed by \cite{SPEI}. The SPI specifies observed precipitation as a standardised departure from a chosen probability distribution which models the precipitation data. Values of SPI can be viewed as a multiple of standard deviations by which the observed amount of rainfall deviates from the long-term mean \citep{SPIonline}.\footnote{Can be created for various periods of 1-36 months, usually using monthly data.} The SPEI is similar to SPI, but unlike SPI, the SPEI includes the role of evapotranspiration (which captures increased temperature). It is based on water balance, therefore it can be compared to the self-calibrated PDSI \citep{SPEI}. 
+
+
+\section{Appendix 3 Tables}
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\textbf{Description}}   \\ 
+\hline \vspace{-0.3cm} \\ 
+\vspace{0.15cm}Religion& $11$ categories including atheist, no religion and prefer not to say\\
+\vspace{0.15cm}Race& $8$ categories including prefer not to answer\\
+\multirow{3}{*}{Length in UK}&Question: \textit{How long have you been living in the UK?}\\
+&Response = $5$ categories: All life ,more than $10$ years, $5-10$ years,\\
+\vspace{0.15cm}& $1-5$ years, less than $1$ year\\
+\vspace{0.15cm}Occupation&$14$ categories\\
+\vspace{0.15cm}Sector&$18$ categories\\
+\vspace{0.15cm}Operating system&$7$ categories\\
+\multirow{2}{*}{Social value orientation}&Response = $4$ categories: altruist, prosocial,\\
+\vspace{0.15cm}& individualist, competitive\\
+\vspace{0.15cm}Discount rate $0$ vs. $5$&Annual, $\%$, invest now for five years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $2$&Annual, $\%$, invest a year from now for two years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $6$&Annual, $\%$, invest a year from now for six years from now \\
+\vspace{0.15cm}Degree of present bias&Continuous, preferences on time \\
+\vspace{0.15cm}Degree of hyperbolicity&Continuous, preferences on time \\
+\vspace{0.15cm}Annual discount rate&Continuous, preferences on time \\
+\vspace{0.15cm}Subsistence income (reserve)&Continuous, \citet{bergson1954, bergson1938, samuelson1956}\\
+\vspace{0.15cm}Altruist&Dummy (0/1)\\
+\vspace{0.15cm}Prosocial&Dummy (0/1)\\
+\vspace{0.15cm}Individualist&Dummy (0/1)\\
+\vspace{0.15cm}Competitive&Dummy (0/1)\\
+\vspace{0.15cm}Egalitarian&Dummy (0/1)\\
+\vspace{0.15cm}Ineqaverse&Dummy (0/1)\\
+\vspace{0.15cm}Longitude&Longitude of survey response. Degrees \\
+\vspace{0.15cm}Latitude&Latitude of survey response. Degrees \\
+\vspace{0.15cm}Letter&First letter of surname, A=$1$,B=$2$,...\\
+\vspace{0.15cm}Siblings&Number of siblings\\
+\vspace{0.15cm}Older&Number of older siblings\\
+\vspace{0.15cm}Children&Number of children\\
+Grandchildren&Number of grandchildren\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors2} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Description}}   \\ 
+\hline \vspace{-0.35cm}\\ 
+\vspace{0.14cm}Handedness& $0$=right, $1$=left \\
+\vspace{0.14cm}Time&Time taken to complete survey, in minutes\\
+\vspace{0.14cm}Hour&Hour of survey, $24$ categories\\
+\vspace{0.14cm}Day of week&$7$ categories\\
+\vspace{0.14cm}Day of the month&Day of survey, $1-31$\\
+\multirow{2}{*}{Fair share}&\textit{Ordinary working people do not get their fair share of the nation's wealth.}\\
+\vspace{0.14cm}&Degree of agreement with the statement above, $5$ categories\\
+\multirow{2}{*}{Hard work}&Question: \textit{How important is hard work for getting ahead in life?}\\
+\vspace{0.14cm}&Response = $5$ categories, degree of agreement\\
+\multirow{3}{*}{Better off parents}&Question: \textit{Compared with your parents when they were about your age, }\\
+&\textit{are you better or worse in your income and standard of living generally?}\\
+\vspace{0.14cm}&Response = $5$ categories (degree of agreement)  and \textit{Don't know}\\
+\multirow{3}{*}{Better off children}&Q: \textit{Compared with you, do you think that your children, when they reach}\\
+&\textit{your age, will be better or worse in their income and standard of living}\\
+\vspace{0.14cm}& \textit{generally?}Answer =$5$ categories (degree of agreement) and \textit{Don't know}\\
+\vspace{0.14cm}Always up&Dummy (0/1), Children better off me and me better off parents\\
+\vspace{0.14cm}Always down&Dummy (0/1), Parents better off me and me better off children\\
+\vspace{0.14cm}Up then down&Dummy (0/1), Me better off parents and me better off children\\
+\vspace{0.14cm}Down then up&Dummy (0/1), Parents better off me and children better off me\\
+\vspace{0.14cm}Financial literacy&$3$ financial problems, no. of correct answers, \citet{lusardi2014}\\
+\vspace{0.14cm}Understands portfolio&Dummy (0/1), $1=$ understands\\
+\vspace{0.14cm}Incoherent dr.&Dummy (0/1), Incoherent answers between investments ($0=$ coherent)\\
+\vspace{0.14cm}Primed attitudes&$1=$ priming questions about time, risk, social were asked, $0=$ not\\
+\multirow{2}{*}{Prime climate}&$0=$ shown picture of polar bear on melting ice (negative),\\
+\vspace{0.14cm}& $1=$ shown picture of people enjoying beach (positive)\\
+\vspace{0.14cm}Prime pension&$0=$ picture of troubled old man, $1=$ picture of happy old man\\
+\vspace{0.14cm}Prime school&$0=$ picture of unruly kids, $1=$ picture of well-behaved kids\\
+\vspace{0.14cm}Prime NHS&$0=$ picture NHS in crisis, $1=$ picture love NHS\\
+\vspace{0.14cm}Female $\times$ handed &Interaction female and handedness\\
+\vspace{0.14cm}Female $\times$ children &Interaction female and number of children\\
+\vspace{0.14cm}Age $\times$ children &Interaction age and number of children\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+
+
+%seems that all frequencies and descriptives are of the file pubpolM2 (climate domain)
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Descriptive statistics:} Continuous variables}}
+\label{Descriptive} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrr} 
+\hline \vspace{-0.15cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  &  \multicolumn{1}{c}{\bf{Mean}} & \multicolumn{1}{c}{\bf{St. dev.}} & \textbf{Min} & \textbf{Max}\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Income - predicted (\textsterling~per year)&$27729$&$11719.89$&$3611$&$58326$\\
+    \vspace{0.15cm}Net assets - total assets minus total debts (\textsterling)&$152542$&$223612.90$&$-400000$&$2500000$\\
+        \vspace{0.15cm}Population (per Km\textsuperscript{2}, LSOA\tnote{a}\hspace{0.4cm}level)&$3336$&$2975.38$&$7$&$25280$\\
+          \vspace{0.15cm}Population (per Km\textsuperscript{2}, LAD\tnote{b}\hspace{0.4cm}level)&$3193$&$3164.75$&$10$&$13870$\\
+
+  \vspace{0.15cm}How much is tax gas and electricity (\textsterling/yr.)&\multirow{1}{*}{$144.90$}&\multirow{1}{*}{$111.94$}&\multirow{1}{*}{$-50$}&\multirow{1}{*}{$500$}\\
+
+  \vspace{0.15cm}How much is duty transport fuel (pence/yr.)&\multirow{1}{*}{$25.18$}&\multirow{1}{*}{$13.68$}&\multirow{1}{*}{$0$}&\multirow{1}{*}{$60$}\\ 
+    \hline 
+     \vspace{-0.35cm}    
+\\         \multicolumn{5}{c}{ \vspace{0.05cm} {Behavioural variables}} \\
+    \hline
+             \vspace{-0.25cm}    
+\\  
+\vspace{0.15cm}Social value orientation (ring measure)&$26.28$&$15.52$&$-16.26$&$83.93$\\
+ Annual discount rate,$\%$,&\multirow{2}{*}{$148.7$}&\multirow{2}{*}{$181.81$}&\multirow{2}{*}{$1$}&\multirow{2}{*}{$500$}\\
+\vspace{0.15cm} \hspace{0.4cm}invest now for a year from now\tnote{c}\\ 
+ 
+ 
+Risk aversion - estimated median&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.01$}&\multirow{2}{*}{$0.29$}&\multirow{2}{*}{$0.38$}\\
+\vspace{0.15cm} \hspace{0.4cm}of quadratic utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$1.81$}&\multirow{2}{*}{$1.08$}&\multirow{2}{*}{$0.67$}&\multirow{2}{*}{$4.33$}\\
+\vspace{0.15cm} \hspace{0.4cm}of log utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$0.42$}&\multirow{2}{*}{$0.07$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.57$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+  Risk aversion - estimated mean&\multirow{2}{*}{$0.74$}&\multirow{2}{*}{$0.26$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$1.07$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+ 
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:} Total number of observations: $8541$\vspace{-0.35cm}
+          \begin{adjustwidth}{0.7cm}{}  
+
+      \item[a] Lower Layer Super Output Area
+   \item[b] Local Authority District
+  \item[c]This variable is called \textit{Discount rate year from now} in the tables with regression estimates 
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\pagebreak
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

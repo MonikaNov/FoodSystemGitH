@@ -1,0 +1,721 @@
+   
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{a4wide}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{bm}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage{colortbl}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\usepackage[flushleft]{threeparttable}
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{changepage}  
+
+
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{tabularx}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage[labelfont=bf]{caption}
+\usepackage{titlesec}
+\usepackage{endnotes}
+\usepackage{csquotes}
+\usepackage{epstopdf}
+
+
+
+
+
+\date{\normalsize{October 2018}}
+\title{\Large \bf Relationship of Weather and Maize Yields in Kenya}
+\author{Monika Novackova, Pedram Rowhani, Martin Todd, Annemie Maertens}
+\affil{\small{Department of Geography, University of Sussex, Falmer, UK}}
+
+
+\parindent 0pt
+\parskip 0.5em
+\newcommand\starred[1]{\accentset{~~~~~\star}{#1}}
+
+
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+\begin{document}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+  
+  \interfootnotelinepenalty=10000
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+\maketitle
+\vfill
+
+\doublespacing
+
+\begin{abstract}
+\noindent We explore an unprecedented dataset of almost $6,000$ observations to identify main predictors of climate knowledge, climate risk perception and willingness to pay for climate change mitigation. Among nearly $70$ potential explanatory variables we detect the most important ones using multisplit lasso estimator. Importantly, we test significance of individuals' preferences about time, risk and equity. Our study is innovative as these behavioural characteristics were recorded by including experimental methods into a live sample survey. This unique way of data collection combines advantages of survey and experiments. The most important predictors of environmental attitudes are numeracy, cognitive ability, ideological world-view and inequity aversion. \\
+\end{abstract}
+
+
+\noindent \textbf{JEL classification:} Q54, Q58, D80\\
+\noindent \textbf{Keywords:} Climate change, climate knowledge, climate policy, lasso, risk perception, willingness to pay\\
+
+
+
+
+\newpage
+\sloppy
+
+
+\section{Introduction}\label{Introduction}
+
+
+\large Findings:
+\begin{itemize}
+\item OND last year dry spell, max rain very important for Maize, but cumulative precipitation for the same period not so important
+
+\item Mar-Sept last year temperature very important for maize yields
+\item SD temperature last year positive and significant
+\item dry spell 20 MAM last year important (but not dry spell MAM10)
+\item interesting. Precipitation 2 months MAM last year very significant and positive
+\item mean temp last year negative and significant, hill shaped 
+\end{itemize}
+
+\underline{New findings:}
+
+\begin{itemize}
+\item The yields seem to be more responsive to weather on west than on east
+\end{itemize}
+\normalsize
+\FloatBarrier
+\section{Methodology}\label{Method}
+
+Prior empirical studies detected large number of miscellaneous predictors of climate change knowledge and concerns \citetext{e.g. \citealt*{Leiserowitz2015, Hamilton2011, McCright2010, Morrison2015}}. There is, however, a lack of consensus about which are the most important ones. Since our dataset includes almost $70$ potential predictors, we decided to start with an explanatory regression analysis using a model selection estimator.
+
+Stepwise-like procedures were found to be problematic as it was shown that large portion of selected variables is often noise and the adjusted $R^2$ is biased upwards \citep{Flack1987}. There are also other problems with these methods. For example, a forward stepwise regression selects in each step the predictor having largest absolute correlation with the response $y$, say $x_{j1}$. Then a simple linear regression of $y$ on $x_{j1}$ is performed and a residual vector from this regression is considering to be the new response variable. Then the procedure is repeated and we eventually end up with a set of selected predictors $x_{j1}, x_{j2},...,x_{jk}$ after $k$ steps. This method can, however, eliminate a good predictor in second step if it happens to be correlated with $x_{j1}$.  Furthermore, these methods frequently fail to identify the correct data generating process, even in large samples \citep{Austin2008}. A possible alternative is the best subset selection approach. Given a collection of possible predictors, the best subset approach compares all possible subsets of predictors based on some well-defined objective criterion, usually having the largest adjusted $R^2$. However, besides being excessively computationally demanding, also this method often fails to identify the true predictors \citep{Flack1987}. On the other hand, sparse estimators such as lasso \citep{tibshirani96} are usually more stable than stepwise procedures and they are commonly better in prediction accuracy \citep{statisHighDimData}. Because lasso has been shown to be very powerful for high-dimensional variable selection in general \citep{pValsLasso}, we opt for this estimator. 
+
+Using the same notation as \citet{Friedman2010}, our dependent variable is $Y \in \mathbb{R}$ and our vector of explanatory variables is $X \in \mathbb{R}^p$. We assume that the relationship between them can be approximated by a linear regression model $E(Y|X=x) = \beta_0+x^T\beta$. Lasso estimator selects the predictors by setting some of the coefficients $\beta_j$ to be equal to zero.
+
+
+We consider four distinct models for the four response variables and one additional model as a robustness test. The dependent variables are: $(i)$~Knowledge about climate change $(ii)$~Perceived seriousness of climate change $(iii)$~Perception of effects of climate change policy relatively to effects of climate change and $(iv)$~WTP for climate change mitigation, which we measure by preferred tax rates on gas and electricity. We also estimate an additional model for petrol duty as a robustness test for the WTP model. How we measure the dependent variables is described in Section~\ref{ClimateVars}. The potential predictors included in $x$, which are not the behavioral variables and which were not selected into any model by multisplit lasso are listed in Tables~\ref{PotentialPredictors} and~\ref{PotentialPredictors2} in Appendix~$3$. How we measure the behavioural variables is discussed in Section~\ref{BehaviouralVars} and their descriptive statistics are summarised in Table~\ref{Descriptive} in Appendix~$3$ with the exemption of inequity aversion as this variable is considered as categorical and its frequencies are summarised in Table~\ref{FreqiencyCat2} in Appendix~$3$. The predictors, which were selected into some model can be found in a table of estimates of the relevant models and their descriptive statistics or frequencies are summarised in Tables~\ref{Descriptive},~\ref{FreqiencyCat},~\ref{FreqiencyCat2},~and~\ref{FreqiencyBin} in Appendix~$3$.
+
+\sloppy
+The estimation function can be written as \citep{Friedman2010}:
+
+
+\begin{equation}\label{Lasso}
+\begin{array}{lcll}
+
+ \underset{(\beta_0, \beta) \in \mathbb{R}^{(p+1)}}{min} \boldsymbol{R}_{\lambda}(\beta_0, \beta)&=&
+   \underset{(\beta_0, \beta) \in \mathbb{R}^{(p+1)}}{min} \bigg[ \frac{1}{2N}\sum_{i=1}^{N}(y_i - \beta_0-x_i^{\intercal}\beta)^2 + \lambda\sum_{j=1}^{p}(|\beta_j|) \bigg], \\
+\end{array}
+\end{equation}
+
+%https://www.stata.com/support/faqs/statistics/stepwise-regression-problems/
+
+where $y_i$ is the value of one of our four dependent variables for an individual~$i$, $x_i$ includes potential predictors listed in Tables~\ref{PotentialPredictors}~to~\ref{FreqiencyBin} in Appendix~$3$, $N$ is the number of observations and $\lambda \geq 0$ is the penalty parameter. Without loss of generality, we assume that the potential predictors in~\eqref{Lasso} are standardized: ${\sum_{i=1}^{N}x_{ij} =0}$, ${\frac{1}{N}\sum_{i=1}^{N}x_{ij}^2=1}$, for $j=1,...,p$.~\footnote{Both $x_{ij}$ and $y_j$ are standardized automatically in the implementation of the algorithm  we use. However, the estimated coefficients are always returned and presented on the original scale.} 
+
+In line with common practice, we compute estimator~\eqref{Lasso} for a series of~$\lambda$ and then we choose a preferred value of~$\lambda$ using cross-validation \citep{statisHighDimData}. In particular, we use a sequence of $100$ values of~$\lambda$ and $10$\nobreakdash-fold cross validation.\footnote{For estimation of lasso~\eqref{Lasso} we use function cv.glmnet in the \textbf{\textsf{R}}~programming system \citep{RRRR} and we use default settings and values of arguments, unless otherwise stated.} We opt for the value of $\lambda$ which is recommended by \citet{Friedman2010} and it is probably the most common choice. More specifically, we use the largest value of $\lambda$  such that the mean cross-validated error (CVM) is still within one standard error of its minimum.\footnote{In case of WTP we use the value of $\lambda$ which minimises the CVM. This value is also  suggested by \citet{Friedman2010}. The only difference from the model estimated using the one standard error based~$\lambda$ is that for the latter, a dummy variable for male becomes significant and gets into the model. The effect of male is positive and this contradicts predominant conclusions in previous relevant literature \citetext{e.g. \citealt*{Hamilton2011, McCright2010, HamiltonKeim2009, Flynn1994}}.}
+
+Determining significance levels is problematic with lasso. Classical \textit{p}-values are not valid and there is no simple approximation. Therefore, we adopt a concept of \citet{pValsLasso}, who introduce an approach based on multiple random splits of data, repeated estimation and aggregated inference. In particular, \citet{pValsLasso} build on the proposal of \citet{Wasserman2009}, who suggest to split the dataset randomly into two subsets. One of the subsets is used for variable selection via lasso and the other one is for estimating OLS with the predictors selected by lasso and calculating their \textit{p}-values in a usual way. This procedure allows asymptotic error control under minimal conditions. The problem is that the results depend on a one-time arbitrary split and they are therefore irreproducible. \citet{pValsLasso} further develop the single-split method. They suggest to split the sample repeatedly, obtain a set of \textit{p}-values for each split and then aggregate them. In each split, the \textit{p}-values of the variables which are not selected are considered to be equal to one and the \textit{p}-values of the selected variables are multiplied by the number of variables selected in the current split. If a \textit{p}-value multiplied by the number of selected variables happens to be larger than one, it is considered to be equal to one. Let's assume that we have $h=1,...,H$ splits. A \textit{p}-value for predictor $j$ obtained in split $h$ adjusted as described above will be further denoted $P^{(h)}_j$. \citet{pValsLasso} suggest to aggregate the adjusted \textit{p}-values using quantiles. In particular, a suitable aggregated \textit{p}-value is defined for any predictor $j$ and for any fixed $0<\gamma<1$ as 
+
+\begin{equation}\label{pvals}
+Q_j(\gamma)=min \left \{1,q_{\gamma} (   \{ P^{(h)}_j/\gamma; h=1,...,H\}) \right \},
+\end{equation}
+
+ where and $q_{\gamma}(\tiny{\cdot})$ is the (empirical) $\gamma$-quantile function. We will further refer to this procedure as a multisplit lasso. 
+ 
+\citet{pValsLasso} show that for any predefined value of $\gamma \in(0,1)$, the \textit{p}-values defined in~\eqref{pvals} can be used for control of family-wise error rate\footnote{Probability of making at least one incorrect rejection of a true null hypothesis (type 1 error).} and also for regulation of false discovery rate.\footnote{Expected proportion of incorrect rejections of a true null hypothesis (type 1 errors). False discovery rate controlling procedures are less stringent than family-wise error rate controlling methods.} Moreover, the multisplit method improves the power of estimates. 
+
+
+
+
+
+
+
+\FloatBarrier
+\section{Data}\label{Data}
+All data used in this study except of predicted income and population density, which we use in robustness tests,  were collected in the survey conducted by \cite{SurveyUK}. 
+
+
+
+In Section~\ref{Robust} we use an alternative measure of income as a robustness test. In particular, this estimated income is obtained from a regression model based on data from Annual Survey of Hours and Earnings (ASHE). More specifically, the predicted income is based on age, gender, occupation, sector and education.
+
+
+We use two measures of population density, in particular average density per Lower Layer Super Output Areas (LSOA) estimated by the Office for National Statistics for year $2015$ and average density for Local Authority Districts (LAD) obtained from the $2011$ Census.
+
+
+
+
+The online survey (\citealp{SurveyUK}) ran from $9$ September to $14$
+October $2015$ and $6,000$ respondents were selected to answer the questionnaire which included the climate change domain.\footnote{We had to exclude some observations from various parts of analysis as they included missing values for some important variables. However, we have at least $5500$ observations for each model.} Descriptive statistics, methodology of the survey, the survey itself and a detailed description of its administration can be found in~\citet{SurveyUK}. 
+
+The survey is reasonably geogrephically representative taking into account population density in the UK \citep{SurveyUK}.\footnote{For map with location of respondents see Figure~$1$ in \cite{SurveyUK}} As the survey was conducted online, the initial sample is representative for UK adults with internet access rather than for the entire UK population. 
+
+
+In Table~\ref{SexAge} we compare distribution of our sample over sex and age  with the distribution of the UK population. The age data are only available as a categorical variable in our survey. As we can see in Table~\ref{SexAge}, the youngest category is slightly over-sampled while the two categories of the highest age are slightly under-sampled, probably because the survey was conducted online. Otherwise the distributions are very comparable.
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Sex and age distribution} \\ of the sample and the population}}
+\label{SexAge} 
+\begin{small}
+\begin{tabular}{|l|rr|rr|} 
+\hline	
+  \multicolumn{1}{|l|}{ } & \multicolumn{2}{c}{\bf{Sample}} & \multicolumn{2}{|c|}{\bf{UK population\tnote{a}}} \\ %sample pubpolM2 used here
+    \multicolumn{1}{|l|}{\vspace{0.1cm}\textbf{Age range}}  &  \multicolumn{1}{|c}{\bf{Male}} & \multicolumn{1}{c}{\bf{Female}} & \multicolumn{1}{|c}{\bf{Male}} & \multicolumn{1}{c|}{\bf{Female}}\\ 
+\hline 
+$18-24$&$9.8\%$&$9.4\%$&$6.2\%$&$6.0\%$\\
+$25-34$&$10.0\%$&$10.3\%$&$9.0\%$&$9.1\%$\\
+$35-44$&$7.8\%$&$8.3\%$&$8.6\%$&$8.8\%$\\
+$45-54$&$8.1\%$&$9.4\%$&$9.3\%$&$9.6\%$\\
+$55-64$&$7.4\%$&$8.4\%$&$7.5\%$&$7.8\%$\\
+$65-74$&$4.1\%$&$4.8\%$&$6.2\%$&$6.7\%$\\
+$75-80$&$0.1\%$&$0.1\%$&$2.4\%$&$2.8\%$\\
+\hline
+\hline
+\end{tabular} 
+  \begin{tablenotes}
+  \begin{footnotesize}
+  \singlespacing
+     \item[a]Population data are from the Office of National Statistics, Population Estimates of UK, England and
+Wales, Scotland and Northern Ireland Mid $2014$, Table MYE2.
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+\end{small}
+  \end{threeparttable} \par}
+
+
+\hspace{1.5cm}
+
+Although the survey questionnaire was designed such that more difficult questions were at different pages, we observe that most respondents who did not finish the survey dropped out on pages with more difficult questions. Hence, the final sample is biased towards those who are not afraid of hard questions \citep{SurveyUK}.\footnote{One way how to deal with sample selection is to use sampling weights. We, however decided not use weights given the modest nature of our bias. Weighting usually increases standard errors and leads to less precise estimates and there is lack of consensus on whether or not to use weights in regression methods (\citealp{gelman2007, KottWeight, winship94}). \citet{winship94} for example recommend not to use weights if they are solely a function of independent variables.}
+
+
+In the rest of this section we focus on how we obtained the data for our climate (dependent) variables and the behavioural characteristics..
+
+
+
+
+\subsection{Climate variables}\label{ClimateVars}
+
+
+Descriptive statistics of our climate variables are summarised in Table~\ref{DepDes}.
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Dependent variables:} Descriptive statistics}}
+\label{DepDes} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrr} 
+\hline	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  &  \multicolumn{1}{c}{\bf{Mean}} & \multicolumn{1}{c}{\bf{St. dev.}} & \textbf{Min} & \textbf{Max}\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Climate change knowledge&$3.851$&$1.266$&$1$&$8$\\
+    \vspace{0.15cm}Climate change seriousness perception&$6.622$&$2.249$&$0$&$10$\\
+        \vspace{0.15cm}Climate versus policy effects perception&$5.370$&$2.315$&$0$&$10$\\
+\vspace{0.15cm}WTP - gas and electricity tax (\textsterling~per year)&$123.900$&$105.459$&$0$&$500$\\
+ \vspace{0.15cm}WTP - duty on transport fuel (pence per year)&$20.530$&$22.518$&$0$&$100$\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+  \end{threeparttable} 
+\par}
+
+\hspace{1.5cm}
+
+It was previously shown, that questions which are intended to measure climate science comprehension often measure who people are rather than what they know about climate change as the strongest predictor is often respondents' ideology and cultural and political world-view (\citealp{Hamilton2011, KahanEtAl2012, Kahan2015}). To avoid picking of effect of cultural or political world-view instead of climate knowledge, we use questions from the OCSI instrument developed by \citet{Kahan2015} as a measure of climate knowledge. \citet{Kahan2015} shows that these questions are indeed a measure of climate science comprehension rather than an indicator of who one is. The values of climate knowledge are integers from $0$ to $8$ and they stand for counts of correctly answered questions about climate change \citep{Kahan2015}. An example of one of the $8$ climate questions is: 'Climate scientists believe that if the North Pole icecap melted as a result of human-caused global warming, global sea levels would rise. Is this statement true or false?' The list of all climate questions can be found in Appendix~$1$. The relative frequencies of counts of the correctly answered questions are summarised in Table~\ref{DepFreq}.
+
+To investigate opinions about seriousness of climate change, the respondents were asked the following question: 'How serious a problem do you think climate change is at this moment?' Using an interactive slider, the respondents answered an integer value between $0$~and~$10$ where min~$=0$ and max~$=10$ (as it was noted just below the slider). In a similar way, the respondents were asked if they feel to be more affected by climate change or by climate policy. The wording of the question was: 'Which affects you and your way of life more, climate change or policies to reduce greenhouse gas emissions?' Again, the respondents provided answers on an integer scale from $0$ (climate policy) to $10$ (climate change) using a slider. Relative frequencies of climate seriousness perception and climate versus policy perception are summarised in Table~\ref{DepFreq}.
+
+
+\vspace{1cm}
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Dependent variables:} Relative frequencies (\%)}}
+\label{DepFreq} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrrrrrrrrrr} 
+\hline 
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  & \multicolumn{1}{c}{\boldsymbol{$0$}}& \multicolumn{1}{c}{\boldsymbol{$1$}}& \multicolumn{1}{c}{\boldsymbol{$2$}}& \multicolumn{1}{c}{\boldsymbol{$3$}}& \multicolumn{1}{c}{\boldsymbol{$4$}}&\multicolumn{1}{c}{\boldsymbol{$5$}}&\multicolumn{1}{c}{\boldsymbol{$6$}}&\multicolumn{1}{c}{\boldsymbol{$7$}}&\multicolumn{1}{c}{\boldsymbol{$8$}}&\multicolumn{1}{c}{\boldsymbol{$9$}}&\multicolumn{1}{c}{\boldsymbol{$10$}}&\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Climate knowledge&$0.0$&$1.7$&$11.4$&$30.4$&$25.4$&$20.9$&$8.6$&$1.6$&$0.1$&N/A&N/A\\
+\vspace{-0.3cm}Climate seriousness&\multirow{2}{*}{$3.3$}&\multirow{2}{*}{$2.8$}&\multirow{2}{*}{$5.4$}&\multirow{2}{*}{$8.1$}&\multirow{2}{*}{$8.9$}&\multirow{2}{*}{$27.2$}&\multirow{2}{*}{$14.0$}&\multirow{2}{*}{$12.8$}&\multirow{2}{*}{$8.3$}&\multirow{2}{*}{$4.1$}&\multirow{2}{*}{$5.0$}\\
+        \vspace{-0.15cm}\hspace{0.5cm}perception&\\
+\vspace{-0.3cm}Climate vs. policy&\multirow{2}{*}{$2.1$}&\multirow{2}{*}{$1.5$}&\multirow{2}{*}{$2.5$}&\multirow{2}{*}{$3.8$}&\multirow{2}{*}{$4.6$}&\multirow{2}{*}{$9.8$}&\multirow{2}{*}{$18.5$}&\multirow{2}{*}{$21.7$}&\multirow{2}{*}{$16.7$}&\multirow{2}{*}{$8.6$}&\multirow{2}{*}{$10.4$}\\
+\vspace{0.15cm}\hspace{0.5cm}perception\tnote{a}&\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+  \singlespacing
+     \item[~]\textit{Notes:} Total number of observations: $5749$
+       \begin{adjustwidth}{1cm}{} 
+     \vspace{-0.3cm} \item[a]~Higher number means greater concern about climate change, lesser concern about climate policy.
+         \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\vspace{1cm}
+
+
+
+
+
+
+
+Regarding the preferred gas and electricity tax rates, the respondents were first asked how much the current tax was. In particular, the question was as follows: 'The average household pays \textsterling$1,369$ per year for gas and electricity. Government intervention has raised the price to encourage people to use less and so reduce greenhouse house gas emissions. How much of that \textsterling$1,369$ is for climate policy?' They indicated the response on a slider with a minimum of $-50$ and a maximum of $500$. We include this variable on right hand site as a robustness test (see Table~\ref{GasInOut}). We refer to it as 'How much is tax gas and electricity'. After this, the respondents were told the correct answer and they were asked about they preferred tax rates: 'Actually, climate policy adds about \textsterling$89$ per year to the gas and electricity bill of the average household. How much do you think climate policy should add to this bill?' The respondents expressed their opinion on a slider from $0$ to $500$. The answer to this question is the dependent variable which we refer to as 'WTP - gas and electricity' and we use it as a proxy for WTP for climate change mitigation. Analogously, we inquired about the fuel duty. The only difference is that the slider for the actual fuel duty is limited from $0$ to $60$ and the one for the preferred fuel duty is from $0$ to $100$ as the actual fuel duty is $3$ pence per litre. Descriptive statistics of the respondents' estimates of actual tax rates can be found in Table~\ref{Descriptive} in Appendix~$3$ and the descriptive statistics of the preferred tax rates are in Table~\ref{DepDes}.
+
+\subsection{Behavioural variables}\label{BehaviouralVars}
+
+
+To estimate the social value orientation, respondents played six dictator games with the same questions as in \citet{murphy2011SVO}. The ring measure of social value orientation which we use in our models is defined as
+
+\begin{equation}\label{RingMeasure}
+\begin{array}{lcll}
+
+R&=&\arctan \frac{\sum_{i=1}^{N} P_O -50N}{\sum_{i=1}^{N} P_S -50N}, \\
+\end{array}
+\end{equation}
+
+
+
+
+\FloatBarrier
+	\section{Results and discussion}\label{Results}
+In this section we describe our results and discuss their interpretation.
+
+In the tables which summarise the estimates of lasso below, \textit{p}-values of some of the explanatory variables are equal to one. These variables were not selected by the lasso in most of the sample splits. They are, however, included in the tables because they represent either a category of a nominal variable whose other category was selected by the lasso or a linear term of a variable whose quadratic term was selected by the lasso. 
+
+\subsection{Climate change knowledge}\label{ResKnow}
+
+
+
+{\centering
+\begin{threeparttable}
+
+
+\singlespacing
+\caption{\textit{\textbf{Relationship of weather and maize yield:} Mixed models}}
+% Peggy45,    can be found in foodSystems/Rcodes/Lags/..
+ 
+\label{Peggy45} 
+\centering
+\begin{small}
+\begin{tabular}{lclrlcl} 
+\hline \vspace{-0.2cm} \\
+  &\multicolumn{6}{c}{\textit{Estimated coefficients and p-values}}  \\
+  
+\vspace{-0.2cm} \\
+
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects}}  &\multicolumn{2}{c}{{\textbf{Linear - unscaled}}}& \multicolumn{2}{c}{{\textbf{Linear-scaled}}}& \multicolumn{2}{c}{{\textbf{Log-linear}}}  \\
+  
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$-0.059$& $0.646$&\\
+  \\
+\vspace{-0.2cm}Prec. cum. MAM + OND lag 1, east&$0.054$& $0.041^{*}$&\\
+  \\
+  \vspace{-0.2cm}Prec. cum. MAM lag 1, west&$0.025$& $0.477$&\\
+  \\
+  \vspace{-0.2cm}Temp. avg. Mar. - Sep. lag 1, east&$-0.045$& $0.244$&\\
+  \\
+    \vspace{-0.2cm}Temp. avg. Mar. - Sep. lag 1, west&$-0.045$& $0.244$&\\
+  \\
+  
+      \vspace{-0.2cm}Prec. max OND, east&$0.0.133$& $0.013^{*}$&\\
+  \\
+        \vspace{-0.2cm}Prec. max OND, west&$0.144$& $0.004^{**}$&\\
+  \\
+    \vspace{-0.2cm}Temp. sd. Oct. - Mar. lag 1, east&$0.049$& $0.199$&\\
+  \\
+      \vspace{-0.2cm}Temp. sd. Oct. - Mar. lag 1, west&$0.225$& $4\times10^{-12}$ $^{***}$\\
+      
+  \\
+\hline
+\vspace{-0.4cm} \\ Observations:&  \multicolumn{5}{c}{$584$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} \hspace{0.15cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+    \begin{adjustwidth}{1cm}{} \item a comment
+    \item[a]another comment
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+We find the positive and strongly significant effect of dummy variable for males quite peculiar. Previous research shows mixed evidence about effects of gender on climate knowledge and comprehension of science in general. For example, \citet{McCright2010} finds that women demonstrate higher level of scientific knowledge of climate change. On the other hand, \citet{Hayes2001gender} shows that men exhibit significantly higher level of scientific knowledge than women, even if controlling for a number of background variables. We perform additional tests to verify whether the positive effect of gender can be a result of sample selection. The tests include proportion tests, model with interactions as additional explanatory variables and a Heckman selection model. We discuss the results in detail in Appendix~$2$.  Based on the outcomes, we conclude that the results are not driven by sample selection.
+
+
+A possible explanation why our measure of climate knowledge is significantly higher for men is that the climate knowledge test that we use in this study was developed by a man \citep{Kahan2015}, therefore it may be the case that these particular questions are naturally more comprehensible for men. The only way how to test this would be to let a woman design another set of climate knowledge questions and then conduct a survey which would include these woman-designed climate questions. This is, however, beyond the scope of this study.
+
+
+ To sum up, we find that gender and cognitive ability are significant predictors of climate knowledge.  Climate knowledge increases with higher numeracy which is consistent with \citet{Kahan2015}, who finds the climate knowledge measure to be positively correlated with ordinary science intelligence. Although various measures of climate knowledge were previously find to be correlated with social ideology or partisan identity (\citealp{Hamilton2011, Kahan2012, Kellstedt2008}), our measures of ideology, cultural world-view or their interactions were not chosen as predictors of climate knowledge by the lasso. This is also consistent with \citet{Kahan2015}.
+
+
+
+
+\subsection{Climate change risk perception}\label{ResPerc}
+
+In this section we discuss our estimates of the models which explain individuals' perception of climate change risk. We focus on two measures of climate risk perception, in particular climate change seriousness perception and climate versus policy perception. We present the results of lasso and jackknife OLS with the climate seriousness perception as dependent variable in Table~\ref{Climcare435}. Three predictors were selected, in particular gender, climate knowledge, and degree of agreement with redistribution of income by government. In this case, the effect of being male is negative. This is mostly consistent with results of previous research which typically finds women to take climate risk more seriously than men (\citealp{WHITMARSH2011, McCright2010, Kahan2007}). As we can see in Table~\ref{Climcare435}, degree of agreement with income redistribution affects climate change seriousness perception positively as the base category is 'Strongly disagree'. This is in agreement with previous literature as we consider the degree of agreement with income redistribution as an indicator of political and ideological world-view, which was found to be significantly correlated with climate concern by large number of previous studies (e.g. \citealp{Leiserowitz2013, Kahan2012, WHITMARSH2011}). 
+
+We will comment on the significant effects of climate knowledge at the end of Section~\ref{ResPerc}.
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Climate change seriousness perception:} Multisplit lasso and jackknife OLS}}
+% soubor LassoClimcare43 Climcare435.R
+
+\label{Climcare435} 
+\centering
+\begin{small}
+\begin{tabular}{lclrcl} 
+\hline \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{} & \multicolumn{2}{c}{\large{\textbf{Multisplit lasso}}}& \multicolumn{3}{c}{\large{\textbf{Jackknife OLS}}}  \\
+  
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}} & \multicolumn{2}{c}{\textbf{Aggregated}}& \multicolumn{1}{c}{\textbf{Aggregated}} &  \multicolumn{2}{c}{\textbf{Aggregated}} \\
+    \multicolumn{1}{l}{ } & \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}}& \multicolumn{1}{c}{\textbf{coefficient}} &  \multicolumn{2}{c}{\textbf{adj. \textit{p}-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Gender = male&$0.0002$&$^{***}$&$-0.3658$&$4.45\times 10^{-6}$&$^{***}$\\
+  \\
+\vspace{-0.2cm}Climate knowledge&$1.0000$& &$0.1380$&$1.0000$&\\
+  \\
+\vspace{-0.2cm}Climate knowledge - squared&$<2.00\times 10^{-8}$&$^{***}$&$-0.0548$&$0.0209$&$^{*}$\\
+  \\
+ Redistribution of income:&\multirow{2}{*}{$1.0000$}& &\multirow{2}{*}{$0.1819$}&\multirow{2}{*}{$1.0000$}&\\%-1
+      \hspace{0.6cm}disagree\tnote{a}&& &&&\\%-1
+    \\
+  \vspace{-0.2cm}Redistribution of income: neutral\tnote{a}&$1.0000$& &$0.2789$&$0.8251$&\\%0
+    \\
+  \vspace{-0.2cm}Redistribution of income: agree\tnote{a}&$<2.00\times 10^{-8}$&$^{***}$&$0.8343$&$8.58\times 10^{-8}$&$^{***}$\\%1
+    \\
+  Redistribution of income:& \multirow{2}{*}{$<2.00\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}&\multirow{2}{*}{$1.0828$}&\multirow{2}{*}{$<2.00\times 10^{-8}$}&\multirow{2}{*}{$^{***}$}\\
+\hspace{0.6cm}strongly agree\tnote{a}&& &&&\\%2
+\\
+\hline
+\vspace{-0.4cm} \\ Observations:&    \multicolumn{5}{c}{$5749$} \\  \vspace{-0.4cm}
+\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+   \item[~]\textit{Notes:} \hspace{0.2cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+  \begin{adjustwidth}{1cm}{} \item For the significant predictors, the signs of the coefficients of the multisplit lasso are the same as those of the jackknife OLS and also size of most of the coefficients is very comparable for these two models.
+
+ \item[a] Degree of agreement with the following statement: 'Government should redistribute income from the better off to those who are less well off.' The base category is 'Strongly disagree'.
+     \end{adjustwidth}
+ \singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\hspace{1cm}
+
+
+
+
+
+
+
+
+
+
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+\makeatletter 
+\renewcommand{\thesection}{\hspace*{-1.0em}}
+\newpage
+\linespread{1}
+\bibliographystyle{ChicagoM}
+\bibliography{references}
+
+\newpage
+
+
+\setcounter{table}{0} 
+\makeatletter 
+\renewcommand{\thetable}{A\@arabic \c@table} 
+\FloatBarrier
+
+
+
+\section{Appendix 3 Tables}
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\textbf{Description}}   \\ 
+\hline \vspace{-0.3cm} \\ 
+\vspace{0.15cm}Religion& $11$ categories including atheist, no religion and prefer not to say\\
+\vspace{0.15cm}Race& $8$ categories including prefer not to answer\\
+\multirow{3}{*}{Length in UK}&Question: \textit{How long have you been living in the UK?}\\
+&Response = $5$ categories: All life ,more than $10$ years, $5-10$ years,\\
+\vspace{0.15cm}& $1-5$ years, less than $1$ year\\
+\vspace{0.15cm}Occupation&$14$ categories\\
+\vspace{0.15cm}Sector&$18$ categories\\
+\vspace{0.15cm}Operating system&$7$ categories\\
+\multirow{2}{*}{Social value orientation}&Response = $4$ categories: altruist, prosocial,\\
+\vspace{0.15cm}& individualist, competitive\\
+\vspace{0.15cm}Discount rate $0$ vs. $5$&Annual, $\%$, invest now for five years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $2$&Annual, $\%$, invest a year from now for two years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $6$&Annual, $\%$, invest a year from now for six years from now \\
+\vspace{0.15cm}Degree of present bias&Continuous, preferences on time \\
+\vspace{0.15cm}Degree of hyperbolicity&Continuous, preferences on time \\
+\vspace{0.15cm}Annual discount rate&Continuous, preferences on time \\
+\vspace{0.15cm}Subsistence income (reserve)&Continuous, \citet{bergson1954, bergson1938, samuelson1956}\\
+\vspace{0.15cm}Altruist&Dummy (0/1)\\
+\vspace{0.15cm}Prosocial&Dummy (0/1)\\
+\vspace{0.15cm}Individualist&Dummy (0/1)\\
+\vspace{0.15cm}Competitive&Dummy (0/1)\\
+\vspace{0.15cm}Egalitarian&Dummy (0/1)\\
+\vspace{0.15cm}Ineqaverse&Dummy (0/1)\\
+\vspace{0.15cm}Longitude&Longitude of survey response. Degrees \\
+\vspace{0.15cm}Latitude&Latitude of survey response. Degrees \\
+\vspace{0.15cm}Letter&First letter of surname, A=$1$,B=$2$,...\\
+\vspace{0.15cm}Siblings&Number of siblings\\
+\vspace{0.15cm}Older&Number of older siblings\\
+\vspace{0.15cm}Children&Number of children\\
+Grandchildren&Number of grandchildren\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors2} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Description}}   \\ 
+\hline \vspace{-0.35cm}\\ 
+\vspace{0.14cm}Handedness& $0$=right, $1$=left \\
+\vspace{0.14cm}Time&Time taken to complete survey, in minutes\\
+\vspace{0.14cm}Hour&Hour of survey, $24$ categories\\
+\vspace{0.14cm}Day of week&$7$ categories\\
+\vspace{0.14cm}Day of the month&Day of survey, $1-31$\\
+\multirow{2}{*}{Fair share}&\textit{Ordinary working people do not get their fair share of the nation's wealth.}\\
+\vspace{0.14cm}&Degree of agreement with the statement above, $5$ categories\\
+\multirow{2}{*}{Hard work}&Question: \textit{How important is hard work for getting ahead in life?}\\
+\vspace{0.14cm}&Response = $5$ categories, degree of agreement\\
+\multirow{3}{*}{Better off parents}&Question: \textit{Compared with your parents when they were about your age, }\\
+&\textit{are you better or worse in your income and standard of living generally?}\\
+\vspace{0.14cm}&Response = $5$ categories (degree of agreement)  and \textit{Don't know}\\
+\multirow{3}{*}{Better off children}&Q: \textit{Compared with you, do you think that your children, when they reach}\\
+&\textit{your age, will be better or worse in their income and standard of living}\\
+\vspace{0.14cm}& \textit{generally?}Answer =$5$ categories (degree of agreement) and \textit{Don't know}\\
+\vspace{0.14cm}Always up&Dummy (0/1), Children better off me and me better off parents\\
+\vspace{0.14cm}Always down&Dummy (0/1), Parents better off me and me better off children\\
+\vspace{0.14cm}Up then down&Dummy (0/1), Me better off parents and me better off children\\
+\vspace{0.14cm}Down then up&Dummy (0/1), Parents better off me and children better off me\\
+\vspace{0.14cm}Financial literacy&$3$ financial problems, no. of correct answers, \citet{lusardi2014}\\
+\vspace{0.14cm}Understands portfolio&Dummy (0/1), $1=$ understands\\
+\vspace{0.14cm}Incoherent dr.&Dummy (0/1), Incoherent answers between investments ($0=$ coherent)\\
+\vspace{0.14cm}Primed attitudes&$1=$ priming questions about time, risk, social were asked, $0=$ not\\
+\multirow{2}{*}{Prime climate}&$0=$ shown picture of polar bear on melting ice (negative),\\
+\vspace{0.14cm}& $1=$ shown picture of people enjoying beach (positive)\\
+\vspace{0.14cm}Prime pension&$0=$ picture of troubled old man, $1=$ picture of happy old man\\
+\vspace{0.14cm}Prime school&$0=$ picture of unruly kids, $1=$ picture of well-behaved kids\\
+\vspace{0.14cm}Prime NHS&$0=$ picture NHS in crisis, $1=$ picture love NHS\\
+\vspace{0.14cm}Female $\times$ handed &Interaction female and handedness\\
+\vspace{0.14cm}Female $\times$ children &Interaction female and number of children\\
+\vspace{0.14cm}Age $\times$ children &Interaction age and number of children\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+
+
+%seems that all frequencies and descriptives are of the file pubpolM2 (climate domain)
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Descriptive statistics:} Continuous variables}}
+\label{Descriptive} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrr} 
+\hline \vspace{-0.15cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  &  \multicolumn{1}{c}{\bf{Mean}} & \multicolumn{1}{c}{\bf{St. dev.}} & \textbf{Min} & \textbf{Max}\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Income - predicted (\textsterling~per year)&$27729$&$11719.89$&$3611$&$58326$\\
+    \vspace{0.15cm}Net assets - total assets minus total debts (\textsterling)&$152542$&$223612.90$&$-400000$&$2500000$\\
+        \vspace{0.15cm}Population (per Km\textsuperscript{2}, LSOA\tnote{a}\hspace{0.4cm}level)&$3336$&$2975.38$&$7$&$25280$\\
+          \vspace{0.15cm}Population (per Km\textsuperscript{2}, LAD\tnote{b}\hspace{0.4cm}level)&$3193$&$3164.75$&$10$&$13870$\\
+
+  \vspace{0.15cm}How much is tax gas and electricity (\textsterling/yr.)&\multirow{1}{*}{$144.90$}&\multirow{1}{*}{$111.94$}&\multirow{1}{*}{$-50$}&\multirow{1}{*}{$500$}\\
+
+  \vspace{0.15cm}How much is duty transport fuel (pence/yr.)&\multirow{1}{*}{$25.18$}&\multirow{1}{*}{$13.68$}&\multirow{1}{*}{$0$}&\multirow{1}{*}{$60$}\\ 
+    \hline 
+     \vspace{-0.35cm}    
+\\         \multicolumn{5}{c}{ \vspace{0.05cm} {Behavioural variables}} \\
+    \hline
+             \vspace{-0.25cm}    
+\\  
+\vspace{0.15cm}Social value orientation (ring measure)&$26.28$&$15.52$&$-16.26$&$83.93$\\
+ Annual discount rate,$\%$,&\multirow{2}{*}{$148.7$}&\multirow{2}{*}{$181.81$}&\multirow{2}{*}{$1$}&\multirow{2}{*}{$500$}\\
+\vspace{0.15cm} \hspace{0.4cm}invest now for a year from now\tnote{c}\\ 
+ 
+ 
+Risk aversion - estimated median&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.01$}&\multirow{2}{*}{$0.29$}&\multirow{2}{*}{$0.38$}\\
+\vspace{0.15cm} \hspace{0.4cm}of quadratic utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$1.81$}&\multirow{2}{*}{$1.08$}&\multirow{2}{*}{$0.67$}&\multirow{2}{*}{$4.33$}\\
+\vspace{0.15cm} \hspace{0.4cm}of log utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$0.42$}&\multirow{2}{*}{$0.07$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.57$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+  Risk aversion - estimated mean&\multirow{2}{*}{$0.74$}&\multirow{2}{*}{$0.26$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$1.07$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+ 
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:} Total number of observations: $8541$\vspace{-0.35cm}
+          \begin{adjustwidth}{0.7cm}{}  
+
+      \item[a] Lower Layer Super Output Area
+   \item[b] Local Authority District
+  \item[c]This variable is called \textit{Discount rate year from now} in the tables with regression estimates 
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\pagebreak
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,19 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: manuscript14.aux
+The style file: ChicagoM.bst
+Database file #1: referencesFS.bib
+Repeated entry---line 470 of file referencesFS.bib
+ :    @techreport{AMS1997
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "bergson1954"
+Warning--I didn't find a database entry for "bergson1938"
+Warning--I didn't find a database entry for "samuelson1956"
+Warning--I didn't find a database entry for "lusardi2014"
+Warning--empty institution in AMS1997
+Warning--empty institution in AMS2013
+Warning--empty journal in LobellBurke2010
+Warning--can't use both volume and number fields in SPI
+Warning--empty institution in monacelli2005
+Warning--empty journal in svoboda2016
+Warning--empty journal in wilhite2000
+(There was 1 error message)

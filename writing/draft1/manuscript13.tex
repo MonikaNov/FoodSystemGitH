@@ -1,0 +1,645 @@
+   
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{a4wide}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{bm}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage{colortbl}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\usepackage[flushleft]{threeparttable}
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{changepage}  
+\usepackage{mathrsfs}
+
+
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{tabularx}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage[labelfont=bf]{caption}
+\usepackage{titlesec}
+\usepackage{endnotes}
+\usepackage{csquotes}
+\usepackage{epstopdf}
+\usepackage{euscript}
+
+
+
+\date{\normalsize{October 2018}}
+\title{\Large \bf Relationship of Weather and Maize Yields in Kenya}
+\author{Monika Novackova, Pedram Rowhani, Martin Todd, Annemie Maertens}
+\affil{\small{Department of Geography, University of Sussex, Falmer, UK}}
+
+
+\parindent 0pt
+\parskip 0.5em
+\newcommand\starred[1]{\accentset{~~~~~\star}{#1}}
+
+
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+\begin{document}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+  
+  \interfootnotelinepenalty=10000
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+\maketitle
+\vfill
+
+\doublespacing
+
+\begin{abstract}
+\noindent This paper contributes to better understanding of effects of drought on food security in Kenya which should lead to improving of early warning systems and food security. 
+\\
+\end{abstract}
+
+
+
+\noindent \textbf{Keywords:} Climate change, climate knowledge, climate policy, lasso, risk perception, willingness to pay\\
+
+
+
+
+\newpage
+\sloppy
+
+
+\section{Introduction  and literature research}\label{Introduction}
+
+
+\large Findings:
+\begin{itemize}
+\item OND last year dry spell, max rain very important for Maize, but cumulative precipitation for the same period not so important
+
+\item Mar-Sept last year temperature very important for maize yields
+\item SD temperature last year positive and significant
+\item dry spell 20 MAM last year important (but not dry spell MAM10)
+\item interesting. Precipitation 2 months MAM last year very significant and positive
+\item mean temp last year negative and significant, hill shaped 
+\end{itemize}
+
+\underline{New findings:}
+
+\begin{itemize}
+\item The yields seem to be more responsive to weather on west than on east
+\end{itemize}
+\normalsize
+\FloatBarrier
+\pagebreak
+
+Effects of drought and extreme heat waves on agriculture, which are mostly negative, have been well documented (\citealp{Deschenes2007Ric,Lesk2016,Mehrabi2017, schwalm2017}). \textcolor{blue}{I can go into details about these studies if not long enough}. Agricultural drought and soil moister are important factors for plant health but also for land-atmospheric feedback and temperature variability \citep{nicolai2017}. As a consequence of climate change, the situation about droughts is likely to get worse since dry areas have strong tendency to get drier while wet areas are getting wetter \citep{Trenberth2014, Chen2015, Kabubo2015}. Strong downwards trend in precipitation has been observed in the tropics from $10^\circ$N to $10^\circ$S, especially after $1977$ \citep{IPCCtrenberth}. During the period $1900-2005$, the climate has become wetter in many parts of the world (eastern parts of America, northern Europe, northern and central Asia) but it has became much drier in Mediterranean, Sahel, southern Africa and parts of Southern Asia. Furthermore, increased frequency of heavy rain events has been observed also in the areas with decline in total rainfall \citep{IPCCtrenberth}. 
+
+
+Frequent occurrence of severe drought has been a major problem in Kenya as well as in other Sub-Saharan countries \citep{Nicholson2017}. Besides compromising food security, drought usually leads to severe damage in water supply, electricity and the environment. In 2010-2011, the most devastating drought in decades resulted in food crisis in many East African countries including Kenya \citep{Chen2015}. Widespread catastrophic droughts occurred also in 1984-1985, 2005 and 2008 \citep{Hastenrath2007, Hastenrath2010, Hastenrath2011, Chen2015}.
+
+Large literature has focused on relationship of agricultural production and climate.
+
+ 
+\textcolor{red}{Then maybe something about agriculture in Kenya. for example:}
+ \\
+ \cite{Kabubo2015} \textcolor{green}{have a look at this study. Looks like very much similar to what I want to estimate. Kenya, panel, fixed and random effects...}\\
+ \cite{WorldBank2015} \\
+  \cite{Lesk2016}: Global, but estimate of national cereal production losses from extreme weather disasters
+ \\
+ 
+
+Previous studies focused on responses to drought related disasters or emergency situations include \cite{Sandstorm2017}, who question whether drought is actually a major cause of food insecurity in Ethiopia, Kenya and Somalia. They analyse causes of the food crisis identified in the humanitarian appeal documents. Majority of these documents consider food availability and food production as a major cause of food crisis. \cite{Sandstorm2017} argue that there is a tendency to explain failure of more complex food systems as 'droughts' and insufficient attention is paid to non-climatic drivers such as food prices or conflicts.  \cite{Sandstorm2017} also find that a large share of humanitarian response budget is focused on emergency food aid in comparison to the share focused on interventions to build resilience. They suggest to increase the budget share focused on agricultural and livestock production to build resilience. 
+
+
+Shifting from reactive to proactive approach in disaster risk reduction has been promoted in recent literature (\citealp{Mechler2005,IPCC2012ch1,Nicholson2017}). Forecast based financing has been recommended as it can avoid significant disaster losses \citep{Nicholson2017}. It has been shown that investment into disaster risk reduction had usually been outweighed by avoided losses \citep{Mechler2005}. Risk assessment is essential for disaster risk reduction \citep{IPCC2012ch1}. Therefore, the main purpose of this paper is to develop a model for assessing the risk of drought based on weather data.
+
+  
+As a measure of food security we use agricultural maize yields and as measures of drought we use variables created by aggregating daily temperature and precipitation data.
+ 
+ 
+
+ 
+A number of previous studies have focused on analysis of relationship of agricultural yield and measures of precipitation and temperature in Kenya or in other countries in Sub-Saharan Africa. Commonly used measures of precipitation and temperature include monthly averages (or monthly totals in case of precipitation) and their variances or standard deviations (\citealt{AbrahaSavage2006, LobellEtAl2008, ThorntonEtAl2009}). \cite{Adejuwon2004} analysed relationship of crop yields and three measures of precipitation. The measures of precipitation include: \textit{(i)} Total rainfall during the first month of the period from sowing to harvesting (June) \textit{(ii)} Total rainfall during the first two months of the period from sowing to harvesting (June and July) and \textit{(iii)} Total rainfall during the first three months of the period from sowing to harvesting (June, July and August). Based on his results, weather during June and July is the most important for crop yield in Sub-Saharan West Africa. Other studies utilised seasonal totals or means (\citealt{sagoe2006,LobellBurke2010} \textcolor{red}{and others,find!!}) or annual totals or means \citep{BLIGNAUT2009}.  Some authors have utilized simulated daily extremes, averages or daily measures of variance  (\citealt{SchulzeEtA1993,Chipanshi2003,AbrahaSavage2006}) or yearly extremes \citep{sagoe2006}. Another measures which have been proposed for modelling the variability of maize yield are numbers of wet and dry days per a defined period, usually a month or a season (\citealt{BenMohamed2002,AbrahaSavage2006,sagoe2006,Giannakopoulos2009}) or length of rainy season (\citealt{Leemans1993,BenMohamed2002}). The definition of wet and dry days and rainy season vary across the literature. For example, \cite{BenMohamed2002} has assumed that rainy season begins when the amount of rainfall in three consecutive days reach at least 25mm and no dry spell of more than seven days occurs in the following thirty days. According to this study, the end of the rainy season is defined as that rainy day after which rain recorded during 20 days is less than 5mm. \cite{BenMohamed2002} has also found sea surface temperature anomalies at various locations and amount of rainfall in July, August and September to be significant for millet crops in Niger. The author has also considered the maximum air temperature in the hottest month (April) and the minimum air temperature in the coldest month (January) as possible predictors of crops in Niger, but he did not find them significant.
+
+An important group of studies that analyse relationship of yield and climate in Sub-Saharan Africa has utilised degree days (\citealt{SchulzeEtA1993,TingemEtAl2008,WalkerSchulze2008,TingemEtAl2009}) or number of days with temperature above certain level or within defined range (\citealt{Giannakopoulos2009,LauxEtAl}).
+
+(\citealt{ThorntonEtAl2009}) \textcolor{red}{also uses diurnal daily}
+
+\textcolor{red}{Erin Lentz, can we cite her paper???}
+
+
+Blignaut: annual averages
+Chipanschi: daily maximum and minimum temperatures
+Giannoukopoulos: number of hw days and so...
+Laux et al.: daily Tmax >30C
+Lobell et al. 2008: Monthly temp and prec.
+Lobell and Burke 2010: Temp. growing season average, precip:growing season total
+
+(\citealt{AbrahaSavage2006,Adejuwon2004,BenMohamed2002,BLIGNAUT2009,
+Chipanshi2003,Giannakopoulos2009,LauxEtAl,Leemans1993,LobellEtAl2008,
+LobellBurke2010,sagoe2006,SchulzeEtA1993,ThorntonEtAl2009,TingemEtAl2008,
+TingemEtAl2009,WalkerSchulze2008})
+
+\textcolor{blue}{\textbf{Add more studies. Then separate somehow into groups of different topics..}}
+\textcolor{green}{It is worth mentioning at this place that large literature has investigated impacts of climate change on agriculture..worldwide or in Kenya??Mendelsohn, Dinar, Dalfelt 2000 and 2009 and Seo, Mendelsohn, Dinar, Hassan, Kurukulasuriya 2008
+}
+
+\section{Methodology}\label{Method}
+
+\subsection{Measures of yield and climate}
+
+ 
+Prior we started  our research, we had to answer the following questions: How do we measure food security? And how do we measure drought? To answer the first questions, the measure which has been used as a proxy for food security in the literature are as follows:\\
+
+\textcolor{red}{We were also considering to use food prices or export and import prices/retail prices, however, there were some problems...maybe some references to those who also considered food prices??}
+\vspace{2cm}
+
+The other important questions which need to be answered before starting our research are: How is drought defined? What are the ways of measuring drought? and How shall we measure drought for the purpose of our study? According to the international meteorological community, drought can be defined in several ways. In particular, drought is a \textit{'prolonged absence or marked deficiency of precipitation'}, a \textit{'deficiency of precipitation that results in water shortage for some activity or for some group'} or a \textit{'period of abnormally dry weather sufficiently prolonged for the lack of precipitation to cause a serious hydrological imbalance'} (\citealp{Heim2002, IPCCtrenberth}).
+ \cite{AMS1997} has defined three types of droughts: \textit{(i)}~'Agricultural drought' which is defined in terms of moister deficits in upper layer of soil up to about one meter depth~\textit{(ii)} 'meteorological drought' which refers to prolonged deficit of precipitation and~\textit{(iii)} 'hydrological drought' which relates to low streamflow, lake and levels of groundwater. The  \cite{AMS1997} policy statement was later replaced by another statement \citep{AMS2013} which besides the three types of drought above, covers also the 'socioeconomic drought' which associates the supply and demand of some economic good with elements of meteorological, agricultural and hydrological drought (\citealt{Heim2002, IPCCtrenberth}).
+ 
+Numerous definitions of drought and their role have been reviewed and discussed by \cite{wilhite1985} and \cite{wilhite2000}. They have distinguished two main categories of definitions of drought: \textit{(i)} conceptual and \textit{(ii)} operational. Conceptual definitions are dictionary types, usually defining boundaries of the concept of drought\footnote{An example of conceptual definition of drought is an 'extended period - a season, a year, or several years of deficient rainfall relative to the statistical multi-year mean for a region' \cite{schneider1996}.}. Operational definitions are essential for an effective early warning system. An example of operational definition of agricultural drought can be obtaining the rate of soil water depletion based on precipitation and evapotranspiration rates and expressing these relationships in terms of drought effects on plant behaviour \citep{wilhite2000}.
+
+In order to compare severity of drought across different time periods or geographical locations a numerical measure turns out to be necessary. However, as a result of a large disagreement about a definition of drought, there is no single universal drought index. Instead of that a number of measures of drought has been developed (\citealp{ wilhite1985, wilhite2000, Heim2002}).
+
+
+For an extensive overview of various drought indices see \cite{Heim2002}, \cite{monacelli2005}, \cite{zargar2011} or \cite{svoboda2016}. \cite{keyantash2002} quantify, evaluate and compare number of drought indices for meteorological, hydrological and agricultural forms of drought. Based on several criteria they conclude that rainfall deciles and SPI perform the best for meteorological drought.
+
+In the recent period, remote sensing data have been collected and used increasingly to monitor levels of greenness and closely related vegetation conditions \citep{nicolai2017}. Based on these data, various measures such as the vegetation condition index (VCI) have been developed and used for quantifying drought strength and severity \citep{KlischAtz2016}.
+
+A description of other drought indices and measures can be found in Appendix~$1$.
+
+\textcolor{red}{We initially analysed SPEI and VCI indices and we tried to use them as input variables for our analysis. However, there were some serious problems with these measures.....}
+
+Therefore we opted for a different approach to gauging drought severity. In particular, we decided to utilize daily precipitation data \textcolor{red}{from...CHIRPS?? with resolution... and daily temperature data from..at resolution....}. The frequency  of the maize yield data is yearly while we have daily weather data available. Hence, the weather data need to be aggregated in order to obtain a dataset conformable with the yield data. There are many possibilities how to aggregate daily weather data. Based on the literature research in Section~\ref{Introduction} and complexity of deriving the measures, we short-listed the following aggregates of the weather data:
+
+
+\textcolor{blue}{maybe also describe the two rainy seasons and why we created the monthly variables? or maybe this in intro?}
+\begin{itemize}
+
+\item \textbf{Precipitation:}
+
+\begin{itemize}
+\item Seasonal cumulative rainfall
+\item Seasonal standard deviation \textcolor{red}{actually it is monthly at the moment. I am not sure how I would aggregate this over season??}
+\item Seasonal coefficient of variation \textcolor{red}{actually it is monthly at the moment. I am not sure how I would aggregate this over season??}
+\item Maximum length of dry spell in number of days
+\item 
+\end{itemize}
+\end{itemize}
+\subsection{Data}
+
+\subsection{Linear mixed models}
+\sloppy
+Kenya consists of $47$ counties with semi-autonomous county governments  \citep{Barasa2017}. As a result of the high degree of county-level autonomy, the policies and regulations are likely to differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (or linear mixed models) commonly used to analyse longitudinal data \citep{bates2000mixed}. These types of models include both fixed affects and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \citep{bates2010lme4}. On the other hand, random effect are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation (\citealp{KERYch9,KERYch12}).
+
+Formally, a linear mixed model can be described by the distribution of two vectors of random variables: the response $\mathscr{Y}$ and the vector of random effects $\mathscr{B}$. The distribution of $\mathscr{B}$ is multivariate normal and the conditional distribution of $\mathscr{Y}$ given $\mathscr{B}=\mathbf{b}$ is multivariate normal of a form (\citealp{bates2010lme4, KERYch9}):
+
+
+
+
+\begin{equation}\label{MixedGeneral}
+\begin{array}{lcl}
+
+(\mathscr{Y}|\mathscr{B}=\mathbf{b})& \sim & \mathit{N}(\mathbf{X}\mathbf{\beta}+\mathbf{Z}\mathbf{b},\sigma^2\mathbf{I}),
+
+\end{array}
+\end{equation}
+
+where $\mathbf{X}$ is an $n \times p$ model matrix of fixed effects, $\mathbf{\beta}$ is a $p$-dimensional fixed-effects parameter, $\mathbf{Z}$ is an $n \times q$ model matrix for the $q$-dimensional vector of random-effects variable $\mathscr{B}$ evaluated at $\mathbf{b}$ and $\sigma$ a scale factor. The distribution of $\mathscr{B}$ can be written as: 
+
+\begin{equation}\label{ranefDist}
+\mathscr{B} \sim \mathit{N}(0,\mathbf{\Sigma}),
+\end{equation}
+
+where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix
+
+\FloatBarrier
+	\section{Results and discussion}\label{Results}
+
+
+
+{\centering
+\begin{threeparttable}
+
+
+\singlespacing
+\caption{\textit{\textbf{Linear mixed effects models:} Maize yield and weather}}
+% Peggy45 & Peggy453   can be found in foodSystems/Rcodes/Lags/..
+  % Yield in tonnes per hectare
+\label{Peggy45} 
+\centering
+\begin{small}
+\begin{tabular}{lrccc} 
+\hline \vspace{-0.2cm} \\
+  
+  
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}  &\multicolumn{2}{c}{\textbf{Scaled}}& \multicolumn{2}{c}{{\textbf{Unscaled\tnote{a}}}} \\
+  
+    \multicolumn{1}{l}{\vspace{0.1cm}}  &\textit{Estimate}&\textit{p-value}&\multicolumn{1}{c}{\textit{Estimate}}& \multicolumn{1}{c}{\textit{p-value}} \\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$-0.059$&$0.646$&$1.379$&$1\times10^{-7}$$^{***}$\\
+  \\
+\vspace{-0.2cm}Prec. cum. MAM+OND lag 1, east&$0.054$&$0.041^{*}$&$3\times10^{-4}$&$0.177$\\
+  \\
+  \vspace{-0.2cm}Prec. cum. MAM lag 1, west&$0.025$&$0.477$&$3\times10^{-4}$&$0.197$\\
+  \\
+  \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, east&$-0.045$&$0.244$&$-0.029$&$0.001^{**}$\\
+  \\
+    \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, west&$-0.130$&$0.0001^{***}$&$-0.027$&$0.001^{**}$\\
+  \\
+  
+      \vspace{-0.2cm}Prec. max OND, east&$0.133$&$0.013^{*}$&$0.004$&$0.085^{\bullet}$\\
+  \\
+        \vspace{-0.2cm}Prec. max OND, west&$0.144$&$0.004^{**}$&$0.011$&$9\times10^{-6}$$^{***}$\\
+  \\
+    \vspace{-0.2cm}Temp. sd. Oc.-Mar. lag 1, east&$0.049$&$0.199$&$0.075$&$0.369$\\
+  \\
+      Temp. sd. Oc.-Mar. lag 1, west&$0.225$& $4\times10^{-12}$ $^{***}$&$0.494$&$7\times10^{-12}$ $^{***}$\\
+    \vspace{-0.1cm} \\ 
+  \hline
+  
+\vspace{-0.1cm}\\\multicolumn{1}{l}{\textbf{Random effects:}}  & \\ 
+\\\hline \vspace{-0.1cm} \\
+
+\vspace{0.2cm}Intercept\\
+\vspace{0.2cm}Prec. cum. MAM+OND lag 1\\
+\vspace{0.2cm}Prec. max OND\\
+\vspace{0.2cm}Temp. avg. Mar.-Sep. lag 1
+  \\
+  \hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} \hspace{0.15cm}$584$ observations; \hspace{0.45cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+    \begin{adjustwidth}{1cm}{} 
+    \item[a] The variety with unscaled variables fails to converge.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+
+
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather}}
+% Peggy45ln can be found in foodSystems/Rcodes/Lags/..
+ % Yield in tonnes per hectare
+\label{Peggy45ln} 
+\centering
+\begin{small}
+\begin{tabular}{lrl} 
+\hline \vspace{-0.2cm} \\
+  
+\vspace{-0.2cm} \\
+
+  
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}  &\multicolumn{1}{c}{\textit{Estimate}} &\multicolumn{1}{c}{\textit{p-value}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$0.158$&$0.086^{\bullet}$\\
+  \\
+\vspace{-0.2cm}Prec. cum. MAM+OND lag 1, east&$0.066$&$0.008^{**}$\\
+  \\
+  \vspace{-0.2cm}Prec. cum. MAM lag 1, west&$-0.006$&$0.861$\\
+  \\
+  \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, east&$-0.036$&$0.292$\\
+  \\
+    \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1, west&$-0.081$&$0.008^{**}$\\
+  \\
+  
+      \vspace{-0.2cm}Prec. max OND, east&$0.081$&$0.056^{\bullet}$\\
+  \\
+        \vspace{-0.2cm}Prec. max OND, west&$0.108$&$0.009^{**}$\\
+  \\
+    \vspace{-0.2cm}Temp. sd. Oc.-Mar. lag 1, east&$0.101$&$0.003^{**}$\\
+  \\
+      \vspace{-0.2cm}Temp. sd. Oc.-Mar. lag 1, west&$0.142$&$6\times10^{-7}$ $^{***}$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+  \\
+  \vspace{-0.2cm}Prec. cum. MAM+OND lag 1\\
+  \\
+  \vspace{-0.2cm}Prec. max OND\\
+  \\
+    \vspace{-0.2cm}Temp. avg. Mar.-Sep. lag 1\\
+  \vspace{-0.1cm} \\ 
+  \hline
+  
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} \hspace{0.05cm}$584$ observations
+        \begin{adjustwidth}{1cm}{} 
+    \item \hspace{0.45cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+
+
+
+
+
+
+
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+\makeatletter 
+\renewcommand{\thesection}{\hspace*{-1.0em}}
+\newpage
+\linespread{1}
+\bibliographystyle{ChicagoM}
+%\bibliographystyle{apa}
+\bibliography{referencesFS}
+
+\newpage
+
+
+\setcounter{table}{0} 
+\makeatletter 
+\renewcommand{\thetable}{A\@arabic \c@table} 
+\FloatBarrier
+
+
+\section{Appendix 1 Drought indices and measures}
+
+Examples of early measures of drought are \cite{wilhite1985}, \cite{munger1916}, \cite{blumenstock1942} or \cite{mcquigg1954}. \cite{munger1916} suggested to use length of period without $24$-h precipitation of $1.27$ mm. \cite{wilhite1985} is based on a measure of precipitation over a given time period. \cite{blumenstock1942} proposed to measure severity of drought as a length of drought in days where the end of a drought is defined by occurrence of $2.54$ mm of precipitation in $48$ hours. \cite{mcquigg1954} developed the Antecedent Precipitation Index (API) which is based on amount and timing of precipitation and it was used for forecasting of floods. Hence, the API is a reverse drought index.
+
+The study of \cite{palmer1965} was a significant milestone in the history of quantification of drought severity. \cite{palmer1965} developed the Palmer Drought Severity Index (PDSI) using a complex water balance model. The PDSI is based on a hydrological accounting system, which incorporate antecedent precipitation, moisture supply and moisture demand (\citealp{Heim2002,palmer1965}). As the PDSI suffers from several weaknesses (for details see e.g. \citealt{Heim2002}), other indices were developed in the following decades. These include the standardized precipitation index (SPI) developed by \cite{SPI} and the standardized precipitation evapotranspiration index (SPEI) developed by \cite{SPEI}. The SPI specifies observed precipitation as a standardised departure from a chosen probability distribution which models the precipitation data. Values of SPI can be viewed as a multiple of standard deviations by which the observed amount of rainfall deviates from the long-term mean \citep{SPIonline}.\footnote{Can be created for various periods of 1-36 months, usually using monthly data.} The SPEI is similar to SPI, but unlike SPI, the SPEI includes the role of evapotranspiration (which captures increased temperature). It is based on water balance, therefore it can be compared to the self-calibrated PDSI \citep{SPEI}. 
+
+
+\section{Appendix 3 Tables}
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\textbf{Description}}   \\ 
+\hline \vspace{-0.3cm} \\ 
+\vspace{0.15cm}Religion& $11$ categories including atheist, no religion and prefer not to say\\
+\vspace{0.15cm}Race& $8$ categories including prefer not to answer\\
+\multirow{3}{*}{Length in UK}&Question: \textit{How long have you been living in the UK?}\\
+&Response = $5$ categories: All life ,more than $10$ years, $5-10$ years,\\
+\vspace{0.15cm}& $1-5$ years, less than $1$ year\\
+\vspace{0.15cm}Occupation&$14$ categories\\
+\vspace{0.15cm}Sector&$18$ categories\\
+\vspace{0.15cm}Operating system&$7$ categories\\
+\multirow{2}{*}{Social value orientation}&Response = $4$ categories: altruist, prosocial,\\
+\vspace{0.15cm}& individualist, competitive\\
+\vspace{0.15cm}Discount rate $0$ vs. $5$&Annual, $\%$, invest now for five years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $2$&Annual, $\%$, invest a year from now for two years from now \\
+\vspace{0.15cm}Discount rate $1$ vs. $6$&Annual, $\%$, invest a year from now for six years from now \\
+\vspace{0.15cm}Degree of present bias&Continuous, preferences on time \\
+\vspace{0.15cm}Degree of hyperbolicity&Continuous, preferences on time \\
+\vspace{0.15cm}Annual discount rate&Continuous, preferences on time \\
+\vspace{0.15cm}Subsistence income (reserve)&Continuous, \citet{bergson1954, bergson1938, samuelson1956}\\
+\vspace{0.15cm}Altruist&Dummy (0/1)\\
+\vspace{0.15cm}Prosocial&Dummy (0/1)\\
+\vspace{0.15cm}Individualist&Dummy (0/1)\\
+\vspace{0.15cm}Competitive&Dummy (0/1)\\
+\vspace{0.15cm}Egalitarian&Dummy (0/1)\\
+\vspace{0.15cm}Ineqaverse&Dummy (0/1)\\
+\vspace{0.15cm}Longitude&Longitude of survey response. Degrees \\
+\vspace{0.15cm}Latitude&Latitude of survey response. Degrees \\
+\vspace{0.15cm}Letter&First letter of surname, A=$1$,B=$2$,...\\
+\vspace{0.15cm}Siblings&Number of siblings\\
+\vspace{0.15cm}Older&Number of older siblings\\
+\vspace{0.15cm}Children&Number of children\\
+Grandchildren&Number of grandchildren\\
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\vspace{-0.3cm}List of considered (but not selected) predictors in multisplit lasso}}
+\label{PotentialPredictors2} 
+\centering
+\begin{small}
+\begin{tabular}{ll} 
+\hline \vspace{-0.25cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable}}&   \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Description}}   \\ 
+\hline \vspace{-0.35cm}\\ 
+\vspace{0.14cm}Handedness& $0$=right, $1$=left \\
+\vspace{0.14cm}Time&Time taken to complete survey, in minutes\\
+\vspace{0.14cm}Hour&Hour of survey, $24$ categories\\
+\vspace{0.14cm}Day of week&$7$ categories\\
+\vspace{0.14cm}Day of the month&Day of survey, $1-31$\\
+\multirow{2}{*}{Fair share}&\textit{Ordinary working people do not get their fair share of the nation's wealth.}\\
+\vspace{0.14cm}&Degree of agreement with the statement above, $5$ categories\\
+\multirow{2}{*}{Hard work}&Question: \textit{How important is hard work for getting ahead in life?}\\
+\vspace{0.14cm}&Response = $5$ categories, degree of agreement\\
+\multirow{3}{*}{Better off parents}&Question: \textit{Compared with your parents when they were about your age, }\\
+&\textit{are you better or worse in your income and standard of living generally?}\\
+\vspace{0.14cm}&Response = $5$ categories (degree of agreement)  and \textit{Don't know}\\
+\multirow{3}{*}{Better off children}&Q: \textit{Compared with you, do you think that your children, when they reach}\\
+&\textit{your age, will be better or worse in their income and standard of living}\\
+\vspace{0.14cm}& \textit{generally?}Answer =$5$ categories (degree of agreement) and \textit{Don't know}\\
+\vspace{0.14cm}Always up&Dummy (0/1), Children better off me and me better off parents\\
+\vspace{0.14cm}Always down&Dummy (0/1), Parents better off me and me better off children\\
+\vspace{0.14cm}Up then down&Dummy (0/1), Me better off parents and me better off children\\
+\vspace{0.14cm}Down then up&Dummy (0/1), Parents better off me and children better off me\\
+\vspace{0.14cm}Financial literacy&$3$ financial problems, no. of correct answers, \citet{lusardi2014}\\
+\vspace{0.14cm}Understands portfolio&Dummy (0/1), $1=$ understands\\
+\vspace{0.14cm}Incoherent dr.&Dummy (0/1), Incoherent answers between investments ($0=$ coherent)\\
+\vspace{0.14cm}Primed attitudes&$1=$ priming questions about time, risk, social were asked, $0=$ not\\
+\multirow{2}{*}{Prime climate}&$0=$ shown picture of polar bear on melting ice (negative),\\
+\vspace{0.14cm}& $1=$ shown picture of people enjoying beach (positive)\\
+\vspace{0.14cm}Prime pension&$0=$ picture of troubled old man, $1=$ picture of happy old man\\
+\vspace{0.14cm}Prime school&$0=$ picture of unruly kids, $1=$ picture of well-behaved kids\\
+\vspace{0.14cm}Prime NHS&$0=$ picture NHS in crisis, $1=$ picture love NHS\\
+\vspace{0.14cm}Female $\times$ handed &Interaction female and handedness\\
+\vspace{0.14cm}Female $\times$ children &Interaction female and number of children\\
+\vspace{0.14cm}Age $\times$ children &Interaction age and number of children\\
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Note:} \vspace{-0.35cm} Variables in this table were not selected by multisplit lasso into any model.
+      \\    \item[~]\hfill (\textit{continued})
+\singlespacing
+  \end{footnotesize}
+   \end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+
+
+
+
+
+
+%seems that all frequencies and descriptives are of the file pubpolM2 (climate domain)
+
+
+{\centering
+\begin{threeparttable}
+\caption{\textit{\textbf{Descriptive statistics:} Continuous variables}}
+\label{Descriptive} 
+\centering
+\begin{small}
+\begin{tabular}{lrrrr} 
+\hline \vspace{-0.15cm} \\	
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Variable:}}  &  \multicolumn{1}{c}{\bf{Mean}} & \multicolumn{1}{c}{\bf{St. dev.}} & \textbf{Min} & \textbf{Max}\\ 
+\hline \vspace{-0.3cm} \\ 
+  \vspace{0.15cm}Income - predicted (\textsterling~per year)&$27729$&$11719.89$&$3611$&$58326$\\
+    \vspace{0.15cm}Net assets - total assets minus total debts (\textsterling)&$152542$&$223612.90$&$-400000$&$2500000$\\
+        \vspace{0.15cm}Population (per Km\textsuperscript{2}, LSOA\tnote{a}\hspace{0.4cm}level)&$3336$&$2975.38$&$7$&$25280$\\
+          \vspace{0.15cm}Population (per Km\textsuperscript{2}, LAD\tnote{b}\hspace{0.4cm}level)&$3193$&$3164.75$&$10$&$13870$\\
+
+  \vspace{0.15cm}How much is tax gas and electricity (\textsterling/yr.)&\multirow{1}{*}{$144.90$}&\multirow{1}{*}{$111.94$}&\multirow{1}{*}{$-50$}&\multirow{1}{*}{$500$}\\
+
+  \vspace{0.15cm}How much is duty transport fuel (pence/yr.)&\multirow{1}{*}{$25.18$}&\multirow{1}{*}{$13.68$}&\multirow{1}{*}{$0$}&\multirow{1}{*}{$60$}\\ 
+    \hline 
+     \vspace{-0.35cm}    
+\\         \multicolumn{5}{c}{ \vspace{0.05cm} {Behavioural variables}} \\
+    \hline
+             \vspace{-0.25cm}    
+\\  
+\vspace{0.15cm}Social value orientation (ring measure)&$26.28$&$15.52$&$-16.26$&$83.93$\\
+ Annual discount rate,$\%$,&\multirow{2}{*}{$148.7$}&\multirow{2}{*}{$181.81$}&\multirow{2}{*}{$1$}&\multirow{2}{*}{$500$}\\
+\vspace{0.15cm} \hspace{0.4cm}invest now for a year from now\tnote{c}\\ 
+ 
+ 
+Risk aversion - estimated median&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.01$}&\multirow{2}{*}{$0.29$}&\multirow{2}{*}{$0.38$}\\
+\vspace{0.15cm} \hspace{0.4cm}of quadratic utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$1.81$}&\multirow{2}{*}{$1.08$}&\multirow{2}{*}{$0.67$}&\multirow{2}{*}{$4.33$}\\
+\vspace{0.15cm} \hspace{0.4cm}of log utility function\\ 
+ Risk aversion - estimated median&\multirow{2}{*}{$0.42$}&\multirow{2}{*}{$0.07$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$0.57$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+  Risk aversion - estimated mean&\multirow{2}{*}{$0.74$}&\multirow{2}{*}{$0.26$}&\multirow{2}{*}{$0.33$}&\multirow{2}{*}{$1.07$}\\
+\vspace{0.15cm} \hspace{0.4cm}of power utility function\\ 
+ 
+\hline
+\hline
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+     \item[~]\textit{Notes:} Total number of observations: $8541$\vspace{-0.35cm}
+          \begin{adjustwidth}{0.7cm}{}  
+
+      \item[a] Lower Layer Super Output Area
+   \item[b] Local Authority District
+  \item[c]This variable is called \textit{Discount rate year from now} in the tables with regression estimates 
+    \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\pagebreak
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

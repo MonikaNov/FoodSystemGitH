@@ -1,0 +1,506 @@
+\begin{thebibliography}{67}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abraha and Savage(2006)]{AbrahaSavage2006}
+Abraha, M. and Savage, M.
+\newblock 2006.
+\newblock \textquote{Potential impacts of climate change on the grain yield of
+  maize for the midlands of KwaZulu-Natal, South Africa}.
+\newblock \emph{Agriculture, Ecosystems and Environment}, pages 150--160.
+
+\bibitem[Adejuwon(2004)]{Adejuwon2004}
+Adejuwon, J.~O.
+\newblock Assessing the Suitability of the EPIC Crop Model for Use in the Study
+  of Impacts of Climate Variability and Climate Change in West Africa.
+\newblock Technical Report AIACC Working Paper No. 5, project Assessments of
+  Impacts and Adaptations to Climate Change (AIACC) in Multiple Regions and
+  Sectors, 2004.
+
+\bibitem[{American Meteorological Society}(1997)]{AMS1997}
+{American Meteorological Society}.
+\newblock Meteorological drought Policy statement.
+\newblock Technical report, 1997.
+
+\bibitem[{American Meteorological Society}(2013)]{AMS2013}
+{American Meteorological Society}.
+\newblock Drought - An Information Statement of the American Meteorological
+  Society.
+\newblock Technical report, 2013.
+
+\bibitem[Barasa et~al.(2017)Barasa, Manyara, Molyneux, and Tsofa]{Barasa2017}
+Barasa, E., Manyara, A., Molyneux, S., and Tsofa, B.
+\newblock 2017.
+\newblock \textquote{Recentralization within decentralization: County hospital
+  autonomy under devolution in Kenya}.
+\newblock \emph{PLOS ONE}, pages 114--124.
+
+\bibitem[Bates(2010)]{bates2010lme4}
+Bates, D.~M.
+\newblock 2010.
+\newblock lme4: Mixed-effects modeling with R.
+
+\bibitem[Bates et~al.(2000)Bates, Pinheiro, Pinheiro, and
+  Bates]{bates2000mixed}
+Bates, J., Pinheiro, J., Pinheiro, J., and Bates, D.
+\newblock 2000.
+\newblock \emph{Mixed-Effects Models in S and S-PLUS}.
+\newblock Statistics and Computing. Springer New York.
+\newblock ISBN 9780387989570.
+
+\bibitem[Bello and Maman(2015)]{RicardianBello}
+Bello, G. H.~M. and Maman, M. N.~M.
+\newblock 2015.
+\newblock \textquote{A Ricardian Analysis of the Impact of Temperature and
+  Rainfall Variability on Ag-riculture in Dosso and Maradi Regions of Niger
+  Republic}.
+\newblock \emph{Agricultural Sciences}, 6:\penalty0 724--733.
+
+\bibitem[Ben~Mohamed et~al.(2002)Ben~Mohamed, van Duivenbooden, and
+  Abdoussallam]{BenMohamed2002}
+Ben~Mohamed, A., van Duivenbooden, N., and Abdoussallam, S.
+\newblock 2002.
+\newblock \textquote{Impact of Climate Change on Agricultural Production in the
+  Sahel -- Part 1. Methodological Approach and Case Study for Millet in Niger}.
+\newblock \emph{Climatic Change}, 54\penalty0 (3):\penalty0 327--348.
+
+\bibitem[Blignaut et~al.(2009)Blignaut, Ueckermann, and Aronson]{BLIGNAUT2009}
+Blignaut, J., Ueckermann, L., and Aronson, J.
+\newblock 2009.
+\newblock \textquote{{Agriculture production's sensitivity to changes in
+  climate in South Africa}}.
+\newblock \emph{{South African Journal of Science}}, 105:\penalty0 61 -- 68.
+\newblock ISSN 0038-2353.
+\newblock URL
+  \url{http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S0038-23532009000100022&nrm=iso}.
+
+\bibitem[Blumenstock(1942)]{blumenstock1942}
+Blumenstock, G.
+\newblock 1942.
+\newblock \emph{Drought in the United States analyzed by means of the theory of
+  probability}.
+\newblock US Department of Agriculture.
+
+\bibitem[Challinor et~al.(2014)Challinor, J.Watson, Lobell, Howden, Smith, and
+  Chhetri]{Challinor2014}
+Challinor, A.~J., J.Watson, Lobell, D.~B., Howden, S.~M., Smith, D.~R., and
+  Chhetri, N.
+\newblock 2014.
+\newblock \textquote{A meta-analysis of crop yield under climate change and
+  adaptation}.
+\newblock \emph{Nature Climate Change}, 4:\penalty0 287--291.
+
+\bibitem[Chen and Georgakakos(2015)]{Chen2015}
+Chen, C.-J. and Georgakakos, A.~P.
+\newblock 2015.
+\newblock \textquote{Seasonal prediction of East African rainfall}.
+\newblock \emph{International Journal of Climatology}, 35:\penalty0 2698--2723.
+
+\bibitem[Chipanshi et~al.(2003)Chipanshi, Chanda, and Totolo]{Chipanshi2003}
+Chipanshi, A.~C., Chanda, R., and Totolo, O.
+\newblock 2003.
+\newblock \textquote{Vulnerability Assessment of the Maize and Sorghum Crops to
+  Climate Change in Botswana}.
+\newblock \emph{Climatic Change}, 61\penalty0 (3):\penalty0 339--360.
+
+\bibitem[D'Alessandro et~al.(2015)D'Alessandro, Caballero, Lichte, and
+  Simpkin]{WorldBank2015}
+D'Alessandro, S.~P., Caballero, J., Lichte, J., and Simpkin, S.
+\newblock Kenya - Agricultural Sector Risk Assessment.
+\newblock Technical Report Group report number 97887, World Bank, 2015.
+
+\bibitem[Deschenes and Greenstone(2007)]{Deschenes2007Ric}
+Deschenes, O. and Greenstone, M.
+\newblock 2007.
+\newblock \textquote{The Economic Impacts of Climate Change: Evidence from
+  Agricultural Output and Random Fluctuations in Weather}.
+\newblock \emph{The American Economic Review}, 97\penalty0 (1):\penalty0
+  354--385.
+
+\bibitem[Giannakopoulos et~al.(2009)Giannakopoulos, Sager, Bindi, Moriondo,
+  Kostopoulou, and Goodess]{Giannakopoulos2009}
+Giannakopoulos, C., Sager, P., Bindi, M., Moriondo, M., Kostopoulou, E., and
+  Goodess, C.
+\newblock 2009.
+\newblock \textquote{Climatic changes and associated impacts in the
+  Mediterranean resulting from a 2 °C global warming}.
+\newblock \emph{Global and Planetary Change}, 68.
+
+\bibitem[Gitu and Nzuma(2003)]{Compendium}
+Gitu, K.~W. and Nzuma, J.~M.
+\newblock Data Compendium for Kenya's Agricultural Sector.
+\newblock Technical report, Kenya Institute of Public Policy Research and
+  Analysis, 2003.
+\newblock Special Report.
+
+\bibitem[Hastenrath et~al.(2007)Hastenrath, Polzin, and Mutai]{Hastenrath2007}
+Hastenrath, S., Polzin, D., and Mutai, C.
+\newblock 2007.
+\newblock \textquote{Diagnosing the 2005 Drought in Equatorial East Africa}.
+\newblock \emph{Journal of Climate}, 20:\penalty0 4628--4637.
+
+\bibitem[Hastenrath et~al.(2010)Hastenrath, Polzin, and Mutai]{Hastenrath2010}
+Hastenrath, S., Polzin, and Mutai, C.
+\newblock 2010.
+\newblock \textquote{Notes and correspondence: diagnosting the droughts and
+  floods in Equatorial East Africa during boreal autumn 2005-08}.
+\newblock \emph{Journal of Climate}.
+
+\bibitem[Hastenrath et~al.(2011)Hastenrath, Polzin, and Mutai]{Hastenrath2011}
+Hastenrath, S., Polzin, D., and Mutai, C.
+\newblock 2011.
+\newblock \textquote{Circulation Mechanisms of Kenya Rainfall Anomalies}.
+\newblock \emph{Journal of Climate}, 24:\penalty0 404--412.
+
+\bibitem[Heim(2002)]{Heim2002}
+Heim, R.~R.
+\newblock 2002.
+\newblock \textquote{A Review of Twentieth-Century Drought Indices Used in the
+  United States}.
+\newblock \emph{Bulletin of the American Meteorological Society}, 83\penalty0
+  (8):\penalty0 1149--1165.
+
+\bibitem[{John Keyantash and National Center for Atmospheric Research Staff
+  (Eds.)}(2016)]{SPIonline}
+{John Keyantash and National Center for Atmospheric Research Staff (Eds.)}.
+\newblock 2016.
+\newblock The Climate Data Guide: Standardized Precipitation Index ({SPI}).
+\newblock Retrieved from
+  \url{https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-index-spi}.
+  Last modified 02 Mar 2016.
+
+\bibitem[Kabubo-Mariara and Kabara(2015)]{Kabubo2015}
+Kabubo-Mariara, J. and Kabara, M.
+\newblock Climate Change and Food Security in Kenya.
+\newblock Technical Report 15-05, Environment for Development {(EfD)}
+  Initiative, 2015.
+\newblock Discussion Paper Series.
+
+\bibitem[Kabubo-Mariara and Karanja(2007)]{kabubo2007}
+Kabubo-Mariara, J. and Karanja, F.~K.
+\newblock 2007.
+\newblock \textquote{The economic impact of climate change on Kenyan crop
+  agriculture: A Ricardian approach}.
+\newblock \emph{Global and planetary change}, 57\penalty0 (3):\penalty0
+  319--330.
+
+\bibitem[Kery(2010{\natexlab{a}})]{KERYch12}
+Kery, M.
+\newblock Chapter 12 - Linear Mixed-Effects Model.
+\newblock In Kéry, M., editor, \emph{Introduction to WinBUGS for Ecologists},
+  pages 151 -- 166. Academic Press, Boston, 2010{\natexlab{a}}.
+\newblock ISBN 978-0-12-378605-0.
+\newblock \doi{https://doi.org/10.1016/B978-0-12-378605-0.00012-0}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/B9780123786050000120}.
+
+\bibitem[Kery(2010{\natexlab{b}})]{KERYch9}
+Kery, M.
+\newblock Chapter 9 - Normal One-Way ANOVA.
+\newblock In Kéry, M., editor, \emph{Introduction to WinBUGS for Ecologists},
+  pages 115 -- 127. Academic Press, Boston, 2010{\natexlab{b}}.
+
+\bibitem[Keyantash and Dracup(2002)]{keyantash2002}
+Keyantash, J. and Dracup, J.~A.
+\newblock 2002.
+\newblock \textquote{The quantification of drought: an evaluation of drought
+  indices}.
+\newblock \emph{Bulletin of the American Meteorological Society}, 83\penalty0
+  (8):\penalty0 1167--1180.
+
+\bibitem[Klisch and Atzberger(2016)]{KlischAtz2016}
+Klisch, A. and Atzberger, C.
+\newblock 2016.
+\newblock \textquote{Operational Drought Monitoring in Kenya Using MODIS NDVI
+  Time Series}.
+\newblock \emph{Remote Sensing}.
+
+\bibitem[Knox et~al.(2012)Knox, Hess, Daccache, and Wheeler]{Knox2012}
+Knox, J., Hess, T., Daccache, A., and Wheeler, T.
+\newblock 2012.
+\newblock \textquote{Climate change impacts on crop productivity in Africa and
+  South Asia}.
+\newblock \emph{Environmental Research Letters}, 7.
+
+\bibitem[Kurukulasuriya et~al.(2008)Kurukulasuriya, Mendelsohn,
+  et~al.]{KMendelsohn2008}
+Kurukulasuriya, P., Mendelsohn, R., et~al.
+\newblock 2008.
+\newblock \textquote{A Ricardian analysis of the impact of climate change on
+  African cropland}.
+\newblock \emph{African Journal of Agricultural and Resource Economics},
+  2\penalty0 (1):\penalty0 1--23.
+
+\bibitem[Laux et~al.(2010)Laux, Jäckel, Tingem, and Kunstmann]{LauxEtAl}
+Laux, P., Jäckel, G., Tingem, R.~M., and Kunstmann, H.
+\newblock 2010.
+\newblock \textquote{Impact of climate change on agricultural productivity
+  under rainfed conditions in Cameroon—A method to improve attainable crop
+  yields by planting date adaptations}.
+\newblock \emph{Agricultural and Forest Meteorology}, pages 1258--1271.
+
+\bibitem[Lavell et~al.(2012)Lavell, Oppenheimer, Diop, Hess, Lempert, Li,
+  Muir-Wood, and Myeong]{IPCC2012ch1}
+Lavell, A., Oppenheimer, M., Diop, C., Hess, J., Lempert, R., Li, J.,
+  Muir-Wood, R., and Myeong, S.
+\newblock 2012.
+\newblock \emph{Climate change: new dimensions in disaster risk, exposure,
+  vulnerability, and resilience. In: Managing the Risks of Extreme Events and
+  Disasters to Advance Climate Change Adaptation [Field, C.B., V. Barros, T.F.
+  Stocker, D. Qin, D.J. Dokken, K.L. Ebi, M.D. Mastrandrea, K.J. Mach, G.-K.
+  Plattner, S.K. Allen, M. Tignor, and P.M. Midgley (eds.)]. A Special Report
+  of Working Groups I and II of the Intergovernmental Panel on Climate Change}.
+\newblock Cambridge University Press.
+
+\bibitem[Leemans and Solomon(1993)]{Leemans1993}
+Leemans, R. and Solomon, A.
+\newblock 1993.
+\newblock \textquote{Modeling the potential change in yield and distribution of
+  the Earth's crops under a warmed climate}.
+\newblock \emph{Climate Research}, 3.
+
+\bibitem[Lesk et~al.(2016)Lesk, Rowhani, and Ramankutty]{Lesk2016}
+Lesk, C., Rowhani, P., and Ramankutty, N.
+\newblock 2016.
+\newblock \textquote{Forecast-based financing: an approach for catalyzing
+  humanitarian action based on extreme weather and climate forecasts}.
+\newblock \emph{Nature}, 529.
+
+\bibitem[Lobell and Burke(2010)]{LobellBurke2010}
+Lobell, D.~B. and Burke, M.~B.
+\newblock 2010.
+\newblock \textquote{On the use of statistical models to predict crop yield
+  responses to climate change}.
+\newblock 150:\penalty0 1443--1452.
+
+\bibitem[Lobell et~al.(2008)Lobell, Burke, Tebaldi, Mastrandrea, Falcon, and
+  L~Naylor]{LobellEtAl2008}
+Lobell, D.~B., Burke, M., Tebaldi, C., Mastrandrea, M., Falcon, W., and
+  L~Naylor, R.
+\newblock 2008.
+\newblock \textquote{Prioritizing Climate Change Adaptation Needs for Food
+  Security in 2030}.
+\newblock \emph{Science}, 319:\penalty0 607--10.
+
+\bibitem[McKee et~al.(1993)McKee, Doesken, Kleist, et~al.]{SPI}
+McKee, T.~B., Doesken, N.~J., Kleist, J., et~al.
+\newblock The relationship of drought frequency and duration to time scales.
+\newblock In \emph{Proceedings of the 8th Conference on Applied Climatology},
+  volume~17, pages 179--183. American Meteorological Society Boston, MA, 1993.
+
+\bibitem[McQuigg(1954)]{mcquigg1954}
+McQuigg, J.
+\newblock 1954.
+\newblock \textquote{A simple index of drought conditions}.
+\newblock \emph{Weatherwise}, 7\penalty0 (3):\penalty0 64--67.
+
+\bibitem[Mechler(2005)]{Mechler2005}
+Mechler, R.
+\newblock Cost-benefit Analysis of Natural Disaster Risk Management in
+  Developing Countries.
+\newblock Technical report, Deutsche Gesellschaft fur Technische Zusammenarbeit
+  ({GTZ}) GmbH, 2005.
+\newblock comissioned by the Federal Ministry for Economic Cooperation and
+  Development.
+
+\bibitem[Mehrabi and Ramankutty(2017)]{Mehrabi2017}
+Mehrabi, Z. and Ramankutty, N.
+\newblock 2017.
+\newblock \textquote{The cost of heat waves and droughts for global crop
+  production}.
+\newblock \emph{bioRxiv}.
+
+\bibitem[Mendelsohn(2008)]{Mendelsohn2008}
+Mendelsohn, R.
+\newblock 2008.
+\newblock \textquote{The Impact of Climate Change on Agriculture in Developing
+  Countries}.
+\newblock \emph{Journal of Natural Resources Policy Research}, 1\penalty0
+  (1):\penalty0 5--19.
+
+\bibitem[Mendelsohn et~al.(2000)Mendelsohn, Dinar, and
+  Dalfelt]{MendelsohnDinar2000}
+Mendelsohn, R., Dinar, A., and Dalfelt, A.
+\newblock Climate Change Impacts on African Agriculture.
+\newblock Technical report, Preliminary analysis prepared for the World Bank,
+  2000.
+
+\bibitem[Monacelli et~al.(2005)Monacelli, Galluccio, and
+  Abbafati]{monacelli2005}
+Monacelli, G., Galluccio, M., and Abbafati, M.
+\newblock Drought assessment and forecasting.
+\newblock Technical report, 2005.
+
+\bibitem[Munger(1916)]{munger1916}
+Munger, T.~T.
+\newblock 1916.
+\newblock \textquote{GRAPHIC METHOD OF REPRESENTING AND COMPARING DROUGHT
+  INTENSITIES}.
+\newblock \emph{Monthly Weather Review}, 44\penalty0 (11):\penalty0 642--643.
+
+\bibitem[Nicholson(2017)]{Nicholson2017}
+Nicholson, S.~E.
+\newblock 2017.
+\newblock \textquote{Climate and climatic variability of rainfall over eastern
+  Africa}.
+\newblock \emph{Reviews of Geophysics}, 15.
+
+\bibitem[Nicolai-Shaw et~al.(2017)Nicolai-Shaw, Zscheischler, Hirschi,
+  Gudmundsson, and Seneviratne]{nicolai2017}
+Nicolai-Shaw, N., Zscheischler, J., Hirschi, M., Gudmundsson, L., and
+  Seneviratne, S.~I.
+\newblock 2017.
+\newblock \textquote{A drought event composite analysis using satellite
+  remote-sensing based soil moisture}.
+\newblock \emph{Remote Sensing of Environment}.
+
+\bibitem[Ochieng et~al.(2016)Ochieng, Kirimi, and Mathenge]{Ochieng2016}
+Ochieng, J., Kirimi, L., and Mathenge, M.
+\newblock 2016.
+\newblock \textquote{Effects of climate variability and change on agricultural
+  production: The case of small scale farmers in Kenya}.
+\newblock \emph{NJAS - Wageningen Journal of Life Sciences}, 77\penalty0
+  (Supplement C):\penalty0 71 -- 78.
+\newblock Social science perspectives on the bio-economy.
+
+\bibitem[Palmer(1965)]{palmer1965}
+Palmer, W.~C.
+\newblock 1965.
+\newblock \emph{Meteorological drought}, volume~30.
+\newblock US Department of Commerce, Weather Bureau Washington, DC.
+
+\bibitem[Rowhani et~al.(2011)Rowhani, Lobell, Lindermanc, and
+  Ramankutty]{Rowhani2011}
+Rowhani, P., Lobell, D.~B., Lindermanc, M., and Ramankutty, N.
+\newblock 2011.
+\newblock \textquote{Climate variability and crop production in Tanzania}.
+\newblock \emph{Agricultural and Forest Meteorology}, 151:\penalty0 449--460.
+
+\bibitem[Sagoe(2006)]{sagoe2006}
+Sagoe, R.
+\newblock 2006.
+\newblock \textquote{Climate change and root crop production in Ghana}.
+\newblock \emph{A report prepared for Environmental Protection Agency (EPA),
+  Accra-Ghana February}.
+
+\bibitem[Sandstrom and Juhola(2017)]{Sandstorm2017}
+Sandstrom, S. and Juhola, S.
+\newblock 2017.
+\newblock \textquote{Continue to blame it on the rain? Conceptualization of
+  drought and failure of food systems in the Greater Horn of Africa}.
+\newblock \emph{Environmental Hazards}, 16\penalty0 (1):\penalty0 71--91.
+
+\bibitem[Schneider and Hare(1996)]{schneider1996}
+Schneider, S.~H. and Hare, F.~K.
+\newblock 1996.
+\newblock \emph{Encyclopedia of climate and weather}, volume 678.
+\newblock Oxford University Press New York.
+
+\bibitem[Schulze et~al.(1993)Schulze, Kiker, and Kunz]{SchulzeEtA1993}
+Schulze, R.~E., Kiker, G.~A., and Kunz, R.~P.
+\newblock 1993.
+\newblock \textquote{Global Climate Change and Agricultural Productivity in
+  Southern Africa}.
+\newblock \emph{Global Environmental Change}, pages 330--349.
+
+\bibitem[Schwalm et~al.(2017)Schwalm, Anderegg, Michalak, Fisher, Biondi, Koch,
+  Litvak, Shaw, Wolf, Huntzinger, Schaefer, Cook, Wei, Fang, Hayes, Huang,
+  Jain, and Tian]{schwalm2017}
+Schwalm, C., Anderegg, W., Michalak, A.~M., Fisher, J.~B., Biondi, F., Koch,
+  G., Litvak, M., Shaw, J., Wolf, A., Huntzinger, D., Schaefer, K., Cook, R.,
+  Wei, Y., Fang, Y., Hayes, D., Huang, M., Jain, A., and Tian, H.
+\newblock 2017.
+\newblock \textquote{Global Patterns of Drought Recovery}.
+\newblock \emph{Nature}, 548.
+
+\bibitem[Seo et~al.(2008)Seo, Mendelsohn, Dinar, Hassan, and
+  Kurukulasuriya]{SeoMendelsohn}
+Seo, S.~N., Mendelsohn, R., Dinar, A., Hassan, R., and Kurukulasuriya, P.
+\newblock A Ricardian Analysis of the Distribution of Climate Change Impacts on
+  Agriculture across Agro-Ecological Zones in Africa.
+\newblock Technical Report 4599, World Bank, 2008.
+\newblock Policy Research Working Paper.
+
+\bibitem[Svoboda et~al.(2016)Svoboda, Fuchs, et~al.]{svoboda2016}
+Svoboda, M., Fuchs, B., et~al.
+\newblock 2016.
+\newblock \textquote{Handbook of Drought Indicators and Indices}.
+
+\bibitem[Thornton et~al.(2009)Thornton, Jones, Alagarswamy, and
+  Andresen]{ThorntonEtAl2009}
+Thornton, P.~K., Jones, P.~G., Alagarswamy, G., and Andresen, J.
+\newblock 2009.
+\newblock \textquote{Spatial variation of crop yield response to climate change
+  in East Africa}.
+\newblock \emph{Global Environmental Change}, 19.
+
+\bibitem[Tingem et~al.(2008)Tingem, Rivington, Bellocchi, Azam-Ali, and
+  Colls]{TingemEtAl2008}
+Tingem, M., Rivington, M., Bellocchi, G., Azam-Ali, S., and Colls, J.
+\newblock 2008.
+\newblock \textquote{Effects of climate change on crop production in Cameroon}.
+\newblock \emph{Climate Research}, 36:\penalty0 65--77.
+
+\bibitem[Tingem et~al.(2009)Tingem, Rivington, and Bellocchi]{TingemEtAl2009}
+Tingem, M., Rivington, M., and Bellocchi, G.
+\newblock 2009.
+\newblock \textquote{Adaptation assessments for crop production in response to
+  climate change in Cameroon}.
+\newblock \emph{Agronomy for Sustainable Development}, 29:\penalty0 247--256.
+
+\bibitem[Trenberth et~al.(2007)Trenberth, Jones, et~al.]{IPCCtrenberth}
+Trenberth, K.~E., Jones, P.~D., et~al.
+\newblock 2007.
+\newblock \emph{IPCC, 2007: Summary for Policymakers. In: Climate Change 2007:
+  The Physical Science Basis. Contribution of Working Group I to the Fourth
+  Assessment Report of the Intergovernmental Panel on Climate Change [Solomon,
+  S. and D. Qin, M. Manning and Z. Chen and M. Marquis and K.B. Averyt and
+  M.Tignor and H.L. Miller (eds.)].}
+\newblock Cambridge University Press.
+
+\bibitem[Trenberth et~al.(2014)Trenberth, Dai, {V}an~der Schrier, Jones,
+  Barichivich, Briffa, and Sheffield]{Trenberth2014}
+Trenberth, K.~E., Dai, A., {V}an~der Schrier, G., Jones, P.~D., Barichivich,
+  J., Briffa, K.~R., and Sheffield, J.
+\newblock 2014.
+\newblock \textquote{Global warming and changes in drought}.
+\newblock \emph{Natural Climate Change}.
+
+\bibitem[Vicente-Serrano et~al.(2010)Vicente-Serrano, Beguería, and
+  López-Moreno]{SPEI}
+Vicente-Serrano, S.~M., Beguería, S., and López-Moreno, J.~I.
+\newblock 2010.
+\newblock \textquote{A Multiscalar Drought Index Sensitive to Global Warming:
+  The Standardized Precipitation Evapotranspiration Index}.
+\newblock \emph{Journal of Climate}, 23\penalty0 (7):\penalty0 1696--1718.
+
+\bibitem[Walker and Schulze(2008)]{WalkerSchulze2008}
+Walker, N. and Schulze, R.
+\newblock 2008.
+\newblock \textquote{Climate change impacts on agro-ecosystem sustainability
+  across three climate regions in the maize belt of South Africa}.
+\newblock \emph{Agriculture, Ecosystems and Environment}, 124:\penalty0
+  114--124.
+
+\bibitem[Wilhite(2000)]{wilhite2000}
+Wilhite, D.~A.
+\newblock 2000.
+\newblock \textquote{Drought as a natural hazard: concepts and definitions}.
+
+\bibitem[Wilhite and Glantz(1985)]{wilhite1985}
+Wilhite, D.~A. and Glantz, M.~H.
+\newblock 1985.
+\newblock \textquote{Understanding: the drought phenomenon: the role of
+  definitions}.
+\newblock \emph{Water international}, 10\penalty0 (3):\penalty0 111--120.
+
+\bibitem[Zargar et~al.(2011)Zargar, Sadiq, Naser, and Khan]{zargar2011}
+Zargar, A., Sadiq, R., Naser, B., and Khan, F.~I.
+\newblock 2011.
+\newblock \textquote{A review of drought indices}.
+\newblock \emph{Environmental Reviews}, 19\penalty0 (NA):\penalty0 333--349.
+
+\end{thebibliography}

@@ -1,0 +1,459 @@
+   
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{a4wide}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{bm}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage{colortbl}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\usepackage[flushleft]{threeparttable}
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{changepage}  
+\usepackage{mathrsfs}
+\usepackage{gensymb}
+
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{tabularx}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage[labelfont=bf]{caption}
+\usepackage{titlesec}
+\usepackage{endnotes}
+\usepackage{csquotes}
+\usepackage{epstopdf}
+\usepackage{euscript}
+\usepackage{textcomp}
+
+
+\date{\normalsize{October 2018}}
+\title{\Large \bf Relationship of Weather and Maize Yields in Kenya}
+\author{Monika Novackova, Pedram Rowhani, Martin Todd, Annemie Maertens}
+\affil{\small{Department of Geography, University of Sussex, Falmer, UK}}
+
+
+\parindent 0pt
+\parskip 0.5em
+\newcommand\starred[1]{\accentset{~~~~~\star}{#1}}
+
+
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+\begin{document}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+  
+  \interfootnotelinepenalty=10000
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+\maketitle
+\vfill
+
+\doublespacing
+
+\begin{abstract}
+\noindent \textcolor{red}{..the full abstract to be written..} This paper contributes to better understanding of effects of drought on food security in Kenya which should lead to improving of early warning systems and food security. Our dataset consists of yearly panel of $47$ counties of Kenya describing the period of 1981-2017.
+\\
+...Applying the linear mixed effects models, we found that...
+\end{abstract}
+
+
+
+\noindent \textbf{Keywords:}  Drought, Early warning systems, Food security, Food systems, Kenya, Mixed effects models\\
+
+
+
+
+\newpage
+\sloppy
+
+
+\section{Introduction and literature review}\label{Introduction}
+
+
+Consequences of droughts and extreme heat waves on agriculture have been well documented (\citealp{Deschenes2007Ric,RicardianBello,Lesk2016,Mehrabi2017, schwalm2017}). Agricultural drought and soil moister are important factors influencing plant health but they are also essential for land-atmospheric feedback and for temperature variability \citep{nicolai2017}.
+
+Frequent occurrence of severe droughts have been a major problem in Kenya and in other Sub-Saharan countries \citep{Compendium, WorldBank2015, Nicholson2017}. The agricultural sector is the main contributor to the economy of Kenya, hence the effects of drought are especially damaging in this country \citep{MendelsohnDinar2000}. Besides compromising food security, drought usually leads to severe damage in water supply, electricity and the environment. In 2010-2011, the most devastating drought in decades resulted in food crisis in many East African countries including Kenya \citep{Chen2015}. Widespread catastrophic droughts occurred also in 1984-1985, 2005 and 2008 \citep{Hastenrath2007, Hastenrath2010, Hastenrath2011, Chen2015}.  As a consequence of climate change, the situation is likely to get worse. Dry areas have strong tendency to get drier while wet areas are getting wetter \citep{Trenberth2014, Chen2015, Kabubo2015}. Strong downwards trend in precipitation has already been observed in the tropics from $10^\circ$N to $10^\circ$S, especially after $1977$ \citep{IPCCtrenberth}. During the period $1900-2005$, the climate has become wetter in many parts of the world (eastern parts of America, northern Europe, northern and central Asia) but it has became much drier in Mediterranean, Sahel, southern Africa and parts of Southern Asia. Furthermore, increased frequency of heavy rain events has been observed in the areas with decline in total rainfall \citep{IPCCtrenberth}. 
+
+Droughts and climate variability do not only affect agriculture but they have widespread consequences on food security in general. \cite{Ubilava2018} has found a connection between commodity prices and phases of the ENSO cycle. \cite{robinson2010} have used a Computable General Equilibrium (CGE) model for Ethiopia and they have shown that production shocks and resulting price increases have negative effects on farmers' income in drought-prone areas while moderate price increases can be beneficial for farmers in less drought-prone areas. \cite{OxfamIDS} have focused on sub-Saharan Africa, central America, North Africa and other low-income countries selected by Oxfam and he has concluded that climate change will result in decline in food productivity while food prices will increase. \cite{BROWN2015} have investigated food prices in $554$ local commodity markets in Africa, South Asia and Latin America and they concluded that almost 20\% of local market food prices had been affected by weather disturbances.
+
+A large literature has focused on relationship of agricultural production and climate in Sub-Saharan Africa. Increase in temperature has typically been found to affect crop revenue negatively while increase in precipitation has mostly been associated with positive effects in the literature.  \cite{RicardianBello} and  \cite{Ochieng2016} have found these results by the means of Ricardian analysis. \cite{Ochieng2016} have focused on Kenya while \cite{RicardianBello} addressed the situation in Niger. 
+
+Other studies have investigated the relationship of climate and yields in the context of climate change. \cite{MendelsohnDinar2000} have developed a simulation model to evaluate impacts of climate change on African agriculture. According to their study, agricultural GDP and climate change exhibit a hill-shaped relationship. Hence, global warming should be beneficial in high latitudes but harmful in low latitudes. The estimated loss of the Africa as a continent ranges from \$25 billion to \$194 billion per year with $2$ \textdegree C warming \citep{MendelsohnDinar2000}. \cite{kabubo2007} have shown that in Kenya, higher summer temperatures are harmful while higher winter temperatures are beneficial. Furthermore, fall and summer precipitation is positively correlated with net revenue \citep{kabubo2007}. \cite{KMendelsohn2008} and \cite{SeoMendelsohn} have investigated the distribution of climate change impacts on agriculture in Africa. They argued that mild scenario would result in income gains for African farmers while more severe scenario is likely to be harmful. \cite{Rowhani2011} have analysed relationship between climate variability and crop production in Tanzania. The authors have shown that by 2050 the climate change will result in significant decrease in crop production and big part of this loss can be attributed to change in intra-seasonal variability of weather. \cite{Kabubo2015} have estimated effects of climate change on food security in Kenya. They have found that temperature and maize yield exhibit a U-shaped relationship while the relationship of rainfall and maize is hill-shaped. Thus, sufficient precipitation is crucial, but excessive rainfall is harmful for maize yields.
+\cite{Mendelsohn2008} has reviewed several studies on effects of climate change on agriculture in developing countries. According to the literature review, the tropical and sub-tropical countries are much more sensitive to climate change than temperate agriculture \citep{Mendelsohn2008}. \cite{Knox2012} conducted a meta-study of papers focused on effects of climate change impacts on crop productivity in Africa and South Asia. The authors concluded that the projected mean change in yield is -$8\%$ by the 2050s in both regions. According to a meta-study conducted by \cite{Challinor2014}, losses in global production of wheat, maize and rice are expected with $2$ \textdegree C global warming. However, with adaptation the simulated yields are on average $7-12\%$ higher than without adaptation \citep{Challinor2014}.
+
+
+A number of important studies have focused on responses to drought related disasters or emergency situations. \cite{Sandstorm2017} have questioned whether drought is actually a major cause of food insecurity in Ethiopia, Kenya and Somalia. They have analysed causes of the food crisis identified by the humanitarian appeal documents. Majority of these documents have found food availability and food production to be the major causes of food crisis. \cite{Sandstorm2017} argue that there is a tendency to explain failure of more complex food systems as 'droughts' and insufficient attention is paid to non-climatic drivers such as food prices or conflicts. According to \cite{Sandstorm2017}, a large share of humanitarian response budget has been focused on emergency food aid in comparison to the share focused on interventions to build resilience. The authors have suggested to increase the budget share focused on agricultural and livestock production to build resilience. Also other authors have promoted shifting from reactive to proactive approach in disaster risk management (\citealp{Mechler2005,IPCC2012ch1,Nicholson2017}).  \cite{Nicholson2017} has recommended forecast based financing as it can avoid significant disaster losses. \cite{Mechler2005} has shown that investments into disaster risk reduction had usually been outweighed by avoided losses. Also \cite{IPCC2012ch1} have argued that risk assessment is essential for disaster risk management.
+
+In the light of these arguments, the goal of the present study is to develop a model which will utilize weather data to assess risk of drought and food security. In addition, we want to find out which particular features of climate or weather are the most important factors affecting the yields and food security. Are the average weather conditions the most important or is it the weather variability or length and number of dry spells during the growing season what matters the most? Answering these and other similar questions should help to improve food security and shift the focus from reactive to proactive approach in drought disaster risk management. We focus on Kenya utilizing an yearly panel dataset of $47$ counties over the period of $1981-2017$. % mozna hodit tuhle vetu na zacatek 2.1. Measures of food security and drough
+
+
+The main contribution of this study is utilization of the most detailed publicly available weather datasets while accounting for the real life crop calendar and different cropping seasons across the country as practised by Kenyan farmers. Furthermore, we believe that this is the first study which has described application of linear mixed effects models to estimate effects of precipitation and temperature on crop yields in Kenya. Hence, this is the first time that effects of drought and weather on food security have been estimated taking into account the real crop calendar, spatially-heterogeneous nature of Kenya and allowing for the effects of weather to vary across the country.
+% Kabubo-Mariara and Karanja (2015) similar study> but they use the more econometric approach (fixed effects models and random effects models as referred to by econometricians
+\section{Methodology}\label{Method}
+
+\subsection{Measures of food security and drought}
+
+Before beginning our research, we had to answer two essential % fundamental??
+questions: `How should we measure food security?' and `How should we measure drought?' Taking into account the aim of this study, previous literature (see Section~\ref{Introduction}) and data availability, we were considering three main approaches to measuring food security. In particular, we considered health and utility indicators, food prices and agricultural crop yields as measures of food security. Although some health and utility indicators including the Mid Upper Arm Circumference (MUAC) of children under five, the Coping Strategies Index (see \citealp{CSI}) or the NDMA early warning phases are available in the NDMA Early Warning Bulletins, these data are only available since July $2013$. The other problem is that the scale of indicators does not seem to be consistent over the counties and time. Furthermore, the values of indicators are often missing and for some months the reports are not present at all.
+
+Using food prices as a measure of food security turned out be problematic as well. 
+One problem is data availability as the food prices are usually available for market towns but not as county averages. Furthermore, the market data which are available in the publications of \cite{KNBS} (KNBS) only cover several years. Another problem is that prices are usually strongly spatially autocorrelated and this could cause the regression estimates to be inconsistent and inefficient unless the model accounts for the spatial autocorrelation structure. Modelling the structure of spatial autocorrelation would require developing and estimation of complicated structural equations and also additional data, which may not be available. Therefore we opted for agricultural crop yields as a measure of food security and we decided to estimate a single reduced form equation with crop yields as the dependent variable. In particular, we focus on maize yields as this crop is the principal staple food in Kenya and it is grown at 90\% of farms in Kenya \citep{FAO}.
+
+
+The other important question to answer before starting our analysis was: `How is drought defined and which definition and measure of drought would be the best for the purpose of this study?' Various definitions of drought and their role have been reviewed by \cite{wilhite1985} and \cite{wilhite2000}. For an extensive overview of drought indices see \cite{Heim2002}, \cite{monacelli2005}, \cite{zargar2011} or \cite{svoboda2016}. \cite{keyantash2002} have quantified, evaluated and compared number of drought indices used for measuring of severity of meteorological, hydrological and agricultural types of drought. For more details about types, measures and indices of drought see Appendix~$1$.
+
+
+In the recent period, remote sensing data have been used increasingly to monitor levels of greenness and closely related vegetation conditions \citep{nicolai2017}. Based on these data, various measures (for example the vegetation condition index) have been developed and used for quantifying drought strength and severity \citep{KlischAtz2016}. 
+
+We have considered the Standardised Precipitation Evapotranspiration Index  (SPEI) and the vegetation condition index (VCI) as measures of drought in our analysis. However, we did not find the county level SPEI to be as good predictor of food security as other precipitation and temperature measures and computing the SPEI for the entire high resolution weather dataset would be inadequately demanding. We did not use the VCI either as we were not confident enough about the reliability of the available data.\footnote{The values of the VCI which we obtained from the NDMA were not the same as those available by the \cite{BOKU} (BOKU). Furthermore, the VCI values did not exactly correspond to the early warning phases as defined by the \cite{NDMA} (NDMA).} 
+
+Thus, after conducting a rigorous literature research on measures of drought previously used in the relevant context, we decided to utilize various aggregates of daily precipitation and temeprature. The frequency of the maize yield data is yearly while the weather data are daily. Hence, the weather data needed to be aggregated in order to obtain a dataset conformable with the yield data. There are many possible ways of aggregation. Commonly used measures include monthly averages (or monthly totals in case of precipitation) and their variances or standard deviations (\citealt{AbrahaSavage2006, LobellEtAl2008, ThorntonEtAl2009}). For example, \cite{Adejuwon2004} has analysed relationship of crop yields and three measures of precipitation in Sub-Saharan West Africa. These include: \textit{(i)} Total rainfall during the first month of the period from sowing to harvesting (June) \textit{(ii)} Total rainfall during the first two months of the period from sowing to harvesting (June and July) and \textit{(iii)} Total rainfall during the first three months of the period from sowing to harvesting (June, July and August). Based on his results, weather during June and July is the most important for crop yield in Sub-Saharan West Africa \citep{Adejuwon2004}. Other studies have utilised seasonal totals or means (\citealt{sagoe2006,LobellBurke2010}) or annual totals or means \citep{BLIGNAUT2009}. \cite{BenMohamed2002} have found sea surface temperature anomalies at various locations and amount of rainfall in July, August and September to be significant for millet crops in Niger. The authors have also considered the maximum air temperature in the hottest month (April) and the minimum air temperature in the coldest month (January) as possible predictors of crops in Niger, but they did not find them significant. Some studies are based on simulated daily extremes, averages, daily measures of variance  (\citealt{SchulzeEtA1993,Chipanshi2003,AbrahaSavage2006}) or yearly extremes \citep{sagoe2006}. Other measures used to explain variability of maize yield include counts of wet and dry days per a defined period, usually a month or a season (\citealt{BenMohamed2002,AbrahaSavage2006,sagoe2006,Giannakopoulos2009}) or length of rainy season (\citealt{Leemans1993,BenMohamed2002}). Definitions of wet and dry days and rainy season vary. For example, \cite{BenMohamed2002} have assumed that rainy season begins when the amount of rainfall in three consecutive days reaches at least 25~mm and no dry spell of more than seven days occurs in the following thirty days. According to this study, the end of the rainy season is defined as that rainy day after which rain recorded during 20 days is less than 5 mm.
+
+An important group of studies that have analysed relationship of yield and climate in Sub-Saharan Africa has utilised degree days (\citealt{SchulzeEtA1993,TingemEtAl2008,WalkerSchulze2008,TingemEtAl2009}) or number of days with temperature above certain level or within defined range (\citealt{Giannakopoulos2009,LauxEtAl}).
+
+
+\textcolor{red}{Erin Lentz, can we cite her paper?She has not responded to my email}
+
+\textcolor{blue}{maybe following into data section??}
+
+Based on the literature research above and complexity of deriving the measures, we short-listed the following aggregates of the weather data:
+
+
+
+\begin{itemize}
+
+\item \textbf{Precipitation:}
+
+\begin{itemize}
+\item Seasonal cumulative rainfall
+\item Seasonal standard deviation 
+\item Seasonal coefficient of variation 
+\item Maximum length of dry spell in number of days
+\item ...\textcolor{blue}{the list to be finished}
+\item...
+\end{itemize}
+\item Temperature
+\begin{itemize}
+\item
+\item\textcolor{blue}{the list to be finished}..
+\item
+\end{itemize}
+\end{itemize}
+\subsection{Data}
+\textcolor{blue}{source of data, resolution and plots/barplots of yield, precip and temp when final data available.}\\
+\textcolor{red}{maybe a table of descriptive statistics or ref to the tale to appendix}
+\textcolor{blue}{also how the weather data were aggregated spatially over counties}
+\subsection{Linear mixed models}
+\sloppy
+Kenya consists of $47$ counties with semi-autonomous county governments  \citep{Barasa2017}. As a result of the high degree of county-level autonomy, the policies and regulations often differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (mixed models) commonly used to analyse longitudinal data \citep{bates2000mixed}. Mixed models are suitable for analysis of panel data as they account for the panel structure of the dataset. These types of models include both fixed effects parameters and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \citep{bates2010lme4}. On the other hand, random effect are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation (\citealp{KERYch9, KERYch12}).
+
+Formally, a linear mixed model can be described by the distribution of two vectors of random variables: the response $\mathscr{Y}$ and the vector of random effects $\mathscr{B}$. The distribution of $\mathscr{B}$ is multivariate normal and the conditional distribution of $\mathscr{Y}$ given $\mathscr{B}=\mathbf{b}$ is multivariate normal of a form (\citealp{bates2010lme4, KERYch9}):
+
+
+
+
+\begin{equation}\label{MixedGeneral}
+\begin{array}{lcl}
+
+(\mathscr{Y}|\mathscr{B}=\mathbf{b})& \sim & \mathit{N}(\mathbf{X}\mathbf{\beta}+\mathbf{Z}\mathbf{b},\sigma^2\mathbf{I}),
+
+\end{array}
+\end{equation}
+
+where $\mathbf{X}$ is an $n \times p$ model matrix of fixed effects, $\mathbf{\beta}$ is a $p$-dimensional fixed-effects parameter, $\mathbf{Z}$ is an $n \times q$ model matrix for the $q$-dimensional vector of random-effects variable $\mathscr{B}$ evaluated at $\mathbf{b}$ and $\sigma$ a scale factor. The distribution of $\mathscr{B}$ can be written as: 
+
+\begin{equation}\label{ranefDist}
+\mathscr{B} \sim \mathit{N}(0,\mathbf{\Sigma}),
+\end{equation}
+
+where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix
+
+\FloatBarrier
+	\section{Results and discussion}\label{Results}
+
+
+
+\large Findings:
+\begin{itemize}
+\item OND last year dry spell, max rain very important for Maize, but cumulative precipitation for the same period not so important
+
+\item Mar-Sept last year temperature very important for maize yields
+\item SD temperature last year positive and significant
+\item dry spell 20 MAM last year important (but not dry spell MAM10)
+\item interesting. Precipitation 2 months MAM last year very significant and positive
+\item mean temp last year negative and significant, hill shaped 
+\end{itemize}
+
+\underline{New findings:}
+
+\begin{itemize}
+\item The yields seem to be more responsive to weather on west than on east
+\end{itemize}
+\normalsize
+\FloatBarrier
+\pagebreak
+
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather, ARMA(0,0) errors}}
+% AmBEST00, AmBEST, AmBEST99
+\label{Models1} 
+\centering
+\begin{small}
+\begin{tabular}{lccc} 
+\hline \vspace{-0.2cm} \\
+  
+\vspace{-0.2cm} \\
+  
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}  &\multicolumn{1}{c}{\textit{Model 1}} &\multicolumn{1}{c}{\textit{Model 2}} &\multicolumn{1}{c}{\textit{Model 3}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$0.298$ $(0.066)^{***}$&$0.256$ $(0.061)^{***}$&$0.243$ $(0.076)^{**}$\\
+  \\
+\vspace{-0.2cm}Precipitation total&$0.289$ $(0.045)^{***}$&$0.131$ $(0.046)^{**}$&$0.137$ $(0.125)^{}$\\
+  \\
+  \vspace{-0.2cm}Precipitation total sq.&$-0.071$ $(0.028)^{*}$&$-0.075$ $(0.026)^{**}$&$-0.073$ $(0.039)^{\bullet}$\\
+  \\
+  \vspace{-0.2cm}Temperature - average&$-0.202$ $(0.062)^{**}$&$-0.188$ $(0.058)^{**}$&$-0.464$ $(0.144)^{**}$\\
+  \\
+    \vspace{-0.2cm}Precip. $\times$ temperature&---&$-0.135$ $(0.037)^{***}$&$-0.108$ $(0.051)^{*}$\\
+  \\
+      \vspace{-0.2cm}Prec. c. of variation&---&$-0.198$ $(0.035)^{***}$&$-0.181$ $(0.075)^{*}$\\
+  \\
+        \vspace{-0.2cm}Temp. std. dev.&---&$0.064$ $(0.021)^{**}$&$0.058$ $(0.027)^{*}$\\
+  \\
+          \vspace{-0.2cm}Precip. first 2 months of season&---&---&$-0.003$ $(0.040)^{}$\\
+  \\
+         \vspace{-0.2cm}Dry spell - max length&---&---&$-0.050$ $(0.031)^{}$\\
+  \\
+        \vspace{-0.2cm}Dry spells $>9$ days&---&---&$0.018$ $(0.032)^{}$\\
+  \\
+          \vspace{-0.2cm}Max precipitation&---&---&$-0.008$ $(0.064)^{}$\\
+  \\
+          \vspace{-0.2cm}Degree days ($10-30$\degree C)&---&---&$-0.016$ $(0.092)^{}$\\
+  \\
+          \vspace{-0.2cm}Heat wave days ($>35$\degree C)&---&---&$0.032$ $(0.039)^{}$\\
+  \\
+          \vspace{-0.2cm}Max temperature&---&---&$0.278$ $(0.136)^{*}$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+  \vspace{-0.1cm} \\ 
+  \hline
+    \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{AIC:}}&$2114.98$&$2144.88$&$2118.15$\\
+
+\hline
+\vspace{-0.2cm}
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets, \hspace{0.05cm}$1256$ observations
+        \begin{adjustwidth}{1cm}{} 
+    \item \hspace{0.45cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+
+
+
+
+{\centering
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather, ARMA(2,1) errors}}
+%AmArE2100, AmArE21
+\label{ARMA21} 
+\centering
+\begin{small}
+\begin{tabular}{lccc} 
+\hline \vspace{-0.2cm} \\
+  
+\vspace{-0.2cm} \\
+  
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}  &\multicolumn{1}{c}{\textit{Model 1}} &\multicolumn{1}{c}{\textit{Model 2}} &\multicolumn{1}{c}{\textit{Model 3}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$0.299$ $(0.064)^{***}$&$0.240$ $(0.064)^{***}$&$0.270$ $(0.074)^{***}$\\
+  \\
+\vspace{-0.2cm}Precipitation total&$0.273$ $(0.042)^{***}$&$0.159$ $(0.051)^{**}$&$0.219$ $(0.117)^{\bullet}$\\
+  \\
+  \vspace{-0.2cm}Precipitation total sq.&$-0.066$ $(0.026)^{*}$&$-0.079$ $(0.028)^{**}$&$-0.094$ $(0.037)^{*}$\\
+  \\
+  \vspace{-0.2cm}Temperature - average&$-0.177$ $(0.061)^{**}$&$-0.191$ $(0.062)^{**}$&$-0.380$ $(0.133)^{**}$\\
+  \\
+    \vspace{-0.2cm}Precip. $\times$ temperature&---&$-0.135$ $(0.037)^{**}$&$-0.101$ $(0.049)^{*}$\\
+  \\
+      \vspace{-0.2cm}Prec. c. of variation&---&$-0.139$ $(0.040)^{***}$&$-0.091$ $(0.070)^{}$\\
+  \\
+        \vspace{-0.2cm}Temp. std. dev.&---&$0.038$ $(0.024)^{}$&$0.038$ $(0.026)^{}$\\
+  \\
+          \vspace{-0.2cm}Precip. first 2 months of season&---&---&$-0.009$ $(0.037)^{}$\\
+  \\
+         \vspace{-0.2cm}Dry spell - max length&---&---&$-0.045$ $(0.030)^{}$\\
+  \\
+        \vspace{-0.2cm}Dry spells $>9$ days&---&---&$0.008$ $(0.031)^{}$\\
+  \\
+          \vspace{-0.2cm}Max precipitation&---&---&$-0.035$ $(0.060)^{}$\\
+  \\
+          \vspace{-0.2cm}Degree days ($10-30$\degree C)&---&---&$-0.015$ $(0.088)^{}$\\
+  \\
+          \vspace{-0.2cm}Heat wave days ($>35$\degree C)&---&---&$0.040$ $(0.037)^{}$\\
+  \\
+          \vspace{-0.2cm}Max temperature&---&---&$0.207$ $(0.123)^{\bullet}$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+  \vspace{-0.1cm} \\ 
+  \hline
+  \vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{AIC:}}&$2064.54$&$2064.99$&$2099.90$\\
+
+\hline
+\vspace{-0.2cm}
+\end{tabular} 
+\end{small}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets, \hspace{0.05cm}$1256$ observations
+        \begin{adjustwidth}{1cm}{} 
+    \item \hspace{0.45cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+\pagebreak
+
+
+
+
+
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+%TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+\makeatletter 
+\renewcommand{\thesection}{\hspace*{-1.0em}}
+\newpage
+\linespread{1}
+\bibliographystyle{ChicagoM}
+%\bibliographystyle{apa}
+\bibliography{referencesFS}
+
+\newpage
+
+
+\setcounter{table}{0} 
+\makeatletter 
+\renewcommand{\thetable}{A\@arabic \c@table} 
+\FloatBarrier
+
+
+\section{Appendix 1 Drought: definitions, measures and indices}
+According to the international meteorological community, drought can be defined in several ways. In particular, drought is a \textit{'prolonged absence or marked deficiency of precipitation'}, a \textit{'deficiency of precipitation that results in water shortage for some activity or for some group'} or a \textit{'period of abnormally dry weather sufficiently prolonged for the lack of precipitation to cause a serious hydrological imbalance'} (\citealp{Heim2002, IPCCtrenberth}).
+ \cite{AMS1997} has defined three types of droughts: \textit{(i)}~'Agricultural drought' which is defined in terms of moister deficits in upper layer of soil up to about one meter depth~\textit{(ii)} 'meteorological drought' which refers to prolonged deficit of precipitation and~\textit{(iii)} 'hydrological drought' which relates to low streamflow, lake and levels of groundwater. The  \cite{AMS1997} policy statement was later replaced by another statement \citep{AMS2013} which besides the three types of drought above, covers also the 'socioeconomic drought' which associates the supply and demand of some economic good with elements of meteorological, agricultural and hydrological drought (\citealt{Heim2002, IPCCtrenberth}).
+ 
+\cite{wilhite1985} and \cite{wilhite2000} have distinguished two main categories of definitions of drought: \textit{(i)} conceptual and \textit{(ii)} operational. Conceptual definitions are dictionary types, usually defining boundaries of the concept of drought\footnote{An example of conceptual definition of drought is an 'extended period - a season, a year, or several years of deficient rainfall relative to the statistical multi-year mean for a region' \cite{schneider1996}.}. Operational definitions are essential for an effective early warning system. An example of operational definition of agricultural drought can be obtaining the rate of soil water depletion based on precipitation and evapotranspiration rates and expressing these relationships in terms of drought effects on plant behaviour \citep{wilhite2000}.
+
+In order to compare severity of drought across different time periods or geographical locations a numerical measure turns out to be necessary. However, as a result of a large disagreement about a definition of drought, there is no single universal drought index. Instead of that a number of measures of drought has been developed (\citealp{ wilhite1985, wilhite2000, Heim2002}).
+
+ 
+ 
+Examples of early measures of drought are \cite{wilhite1985}, \cite{munger1916}, \cite{blumenstock1942} or \cite{mcquigg1954}. \cite{munger1916} suggested to use length of period without $24$-h precipitation of $1.27$ mm. \cite{wilhite1985} is based on a measure of precipitation over a given time period. \cite{blumenstock1942} proposed to measure severity of drought as a length of drought in days where the end of a drought is defined by occurrence of $2.54$ mm of precipitation in $48$ hours. \cite{mcquigg1954} developed the Antecedent Precipitation Index (API) which is based on amount and timing of precipitation and it was used for forecasting of floods. Hence, the API is a reverse drought index.
+
+The study of \cite{palmer1965} was a significant milestone in the history of quantification of drought severity. \cite{palmer1965} developed the Palmer Drought Severity Index (PDSI) using a complex water balance model. The PDSI is based on a hydrological accounting system, which incorporate antecedent precipitation, moisture supply and moisture demand (\citealp{Heim2002,palmer1965}). As the PDSI suffers from several weaknesses (for details see e.g. \citealt{Heim2002}), other indices were developed in the following decades. These include the standardized precipitation index (SPI) developed by \cite{SPI} and the standardized precipitation evapotranspiration index (SPEI) developed by \cite{SPEI}. The SPI specifies observed precipitation as a standardised departure from a chosen probability distribution which models the precipitation data. Values of SPI can be viewed as a multiple of standard deviations by which the observed amount of rainfall deviates from the long-term mean \citep{SPIonline}.\footnote{Can be created for various periods of 1-36 months, usually using monthly data.} The SPEI is similar to SPI, but unlike SPI, the SPEI includes the role of evapotranspiration (which captures increased temperature). It is based on water balance, therefore it can be compared to the self-calibrated PDSI \citep{SPEI}. 
+
+
+\section{Appendix 3 Tables}
+
+
+
+
+
+
+
+\end{document}
