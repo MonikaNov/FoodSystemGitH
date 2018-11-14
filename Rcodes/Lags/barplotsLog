@@ -1,0 +1,49 @@
+rm(list=ls())
+
+WDuni<-c("/its/home/mn301/foodSystems/dataFS") # uni
+WDuni<-"\\\\its-home.uscs.susx.ac.uk/home/mn301/foodSystems/dataFS"
+WDhome<-c("/home/trennion/foodSystems/dataFS") # doma
+
+# setwd(WDuni)
+# setwd(WDhome)
+
+library('dplyr')
+library('tseries')
+library(plm)
+library(lme4)
+library(lattice)
+library(car)
+library(lmerTest)
+library(optimx)
+
+load("Main/data.RData")
+save.image("\\\\smbhome.uscs.susx.ac.uk\\mn301\\foodSystems\\Rcodes\\Lags\\WhatIfPeggy45\\Peggy45ln")
+
+
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+koefs<-as.numeric(summary(Peggy45ln)$coeff[,1])  ; koefs
+exp(koefs[1])
+
+
+logAllminE; logAllmaxE    # unrestricted           #East
+log2minE; log2maxE        # restricted
+
+logAllminW; logAllmaxW   # unrestricted           # West
+log2minW; log2maxW       # restricted
+
+
+Fitted_values_avg<-c(exp(koefs[1]),NA)
+
+Worst_Case_Scenario<-c(logAllminE$value,log2minE$value)
+Best_Case_Scenario<-c(log2maxE$value,logAllmaxE$value)
+barrs<-cbind(Worst_Case_Scenario,Fitted_values_avg,Best_Case_Scenario)
+barplot(barrs,beside=TRUE,border=c(NA,TRUE,TRUE),col=c( c("grey40","grey99"),
+c("black","black"),c("grey99","grey40") ),main="Eastern and Northern counties",
+ylab="Yield, tonnes per hectare", 
+  names.arg =c("Worst case scenario","Current data","Best case scenario"))
+
+
+legend(0.8,1.5,legend = c("All variables considered",
+"Max prec. OND and sd. of temperature Oct.- Mar. not considered"),
+fill=c("grey40","grey99"),bg="beige",box.col="white",  cex=0.9)

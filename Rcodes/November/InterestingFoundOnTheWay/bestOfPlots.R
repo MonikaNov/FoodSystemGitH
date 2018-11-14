@@ -1,0 +1,15 @@
+rm(list=ls())
+
+WDuni<-c("/its/home/mn301/foodSystems/dataFS") # uni
+WDhome<-c("/home/trennion/foodSystems/dataFS") # doma
+
+library(dplyr); library(tseries); library(plm); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
+setwd(WDuni)
+load("Main/Da.RData")
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+par(mfrow=c(2,1))
+hist(DaTS$SeasPr[DaTS$ASAL==1],40)
+hist(DaTS$SeasPr[DaTS$ASAL==0],40)
+
+par(mfrow=c(1,1))

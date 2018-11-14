@@ -1,0 +1,32 @@
+rm(list=ls())
+
+WDuni<-c("/its/home/mn301/foodSystems/dataFS") # uni
+WDuni<-"\\\\its-home.uscs.susx.ac.uk/home/mn301/foodSystems/dataFS"
+WDhome<-c("/home/trennion/foodSystems/dataFS") # doma
+
+# setwd(WDuni)
+# setwd(WDhome)
+
+library('dplyr')
+library('tseries')
+library(plm)
+library(lme4)
+library(lattice)
+library(car)
+library(lmerTest)
+library(optimx)
+
+load("Main/data.RData")
+load("\\\\smbhome.uscs.susx.ac.uk\\mn301\\foodSystems\\Rcodes\\Lags\\WhatIfPeggy45\\Peggy45WI")
+
+
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#   ..  .  . .  .  ..   ..  . .  . .. . . . .  . . . . . . . . . ...  .  . .  .  ..   ..  . .  . .. . . . .  . . . . . . . . . ...  .  . .  .  ..   ..  . .  . .. . . . .  . . . . . . . . . ...  .  . .  .  ..   ..  . .  . .. . . . .  . . . . . . . . . .
+# compare the models above again:
+koefs<-as.numeric(summary(Peggy45)$coeff[,1])
+
+oAllminW; oAllmaxW   # unrestricted           # West
+o2minW; o2maxW       # restricted
+
+oAllminE; oAllmaxE    # unrestricted           #East
+o2minE; o2maxE        # restricted

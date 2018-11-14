@@ -1,0 +1,26 @@
+CountyID,County,Arid,SemiArid
+6,Nyeri,0,1
+8,Kwale,0,1
+9,Lamu,0,1
+11,Taita Taveta,0,1
+12,Tana River,1,0
+13,Isiolo,1,0
+14,Kitui,0,1
+16,Makueni,0,1
+17,Mwingi,0,1
+19,Garissa,1,0
+20,Ijara,0,0
+21,Mandera,1,0
+22,Wajir,1,0
+33,Baringo,0,1
+36,Kajiado  ,0,1
+40,Laikipia,0,1
+43,Narok,0,1
+44,Samburu,1,0
+47,Turkana,1,0
+49,West Pokot,0,1
+61,Marsabit,1,0
+62,Meru-North,0,1
+63,Embu,0,1
+64,Kilifi,0,1
+65,Tharaka-Nithi,0,1
