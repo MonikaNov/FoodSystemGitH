@@ -53,3 +53,12 @@ nobs(KEN11a_ASAL); anova(KEN11a_ASAL)
 exp(summary(KEN11a_ASAL)$tTable[,1])
 exp(summary(KEN11a_ASAL)$tTable[,2])
 anova(KEN11a_ASAL, type='marginal')
+
+
+KEN11a_nonASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                 +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+                 data=ScaledTS[ScaledTS$ASAL==0,],na.action=na.exclude); summary(KEN11a_nonASAL)
+nobs(KEN11a_nonASAL); anova(KEN11a_nonASAL)
+exp(summary(KEN11a_nonASAL)$tTable[,1])
+exp(summary(KEN11a_nonASAL)$tTable[,2])
+anova(KEN11a_nonASAL, type='marginal')
