@@ -24,14 +24,14 @@ KEN11a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
               +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
               data=ScaledTS,na.action=na.exclude); summary(KEN11a)
 nobs(KEN11a); anova(KEN11a)
-summary(KEN11a)$tTable[,1]
-summary(KEN11a)$tTable[,2]
-
+exp(summary(KEN11a)$tTable[,1])
+exp(summary(KEN11a)$tTable[,2])
+anova(KEN11a, type='marginal')
 
                     KENDAL11a<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                                     +AvgTemp + SDTemp  +(1|ID1),data=ScaledTS) 
                     summary(KENDAL11a)
-                    anova(KENDAL11a,type="I")
+                    anova(KENDAL11a);     anova(KENDAL11a,type="I")
                           # Just playing:
                                 KAL11a<-lm(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4+AvgTemp+SDTemp,data=ScaledTS)
                                 anova(KAL11a)
@@ -41,3 +41,15 @@ summary(KEN11a)$tTable[,2]
 KEN11b<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
             +AvgTemp + I(sign(AvgTemp)*(AvgTemp^2))+SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
             data=ScaledTS,na.action=na.exclude); summary(KEN11b)  # ok, square not significant
+
+#----------------------------------------------------------------------------------------------------------------------------------------------
+
+# and subsamples
+
+KEN11a_ASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            data=ScaledTS[ScaledTS$ASAL==1,],na.action=na.exclude); summary(KEN11a_ASAL)
+nobs(KEN11a_ASAL); anova(KEN11a_ASAL)
+exp(summary(KEN11a_ASAL)$tTable[,1])
+exp(summary(KEN11a_ASAL)$tTable[,2])
+anova(KEN11a_ASAL, type='marginal')
