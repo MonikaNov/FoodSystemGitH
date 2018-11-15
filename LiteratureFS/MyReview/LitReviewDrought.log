@@ -1,0 +1,687 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  25 SEP 2018 19:24
+entering extended mode
+**./LitReviewDrought.tex
+(LitReviewDrought.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
+(E:\latex\texmfs\install\tex\latex\base\article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(E:\latex\texmfs\install\tex\latex\base\size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(E:\latex\texmfs\install\tex\generic\babel\babel.sty
+Package: babel 2017/05/19 3.10 The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(E:\latex\texmfs\install\tex\latex\arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(E:\latex\texmfs\install\tex\latex\babel-english\english.ldf
+Language: english 2017/01/24 v3.3q English support from the babel system
+
+(E:\latex\texmfs\install\tex\generic\babel\babel.def
+File: babel.def 2017/05/19 3.10 Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@american = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(E:\latex\texmfs\install\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(E:\latex\texmfs\install\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(E:\latex\texmfs\install\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(E:\latex\texmfs\install\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(E:\latex\texmfs\install\tex\latex\amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(E:\latex\texmfs\install\tex\latex\a4wide\a4wide.sty
+Package: a4wide 1994/08/30
+
+(E:\latex\texmfs\install\tex\latex\ntgclass\a4.sty
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+(E:\latex\texmfs\install\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(E:\latex\texmfs\install\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(E:\latex\texmfs\install\tex\latex\graphics\graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(E:\latex\texmfs\install\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(E:\latex\texmfs\install\tex\latex\graphics\graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(E:\latex\texmfs\install\tex\latex\graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(E:\latex\texmfs\install\tex\latex\graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(E:\latex\texmfs\install\tex\latex\graphics-def\pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(E:\latex\texmfs\install\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(E:\latex\texmfs\install\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(E:\latex\texmfs\install\tex\latex\graphics\color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(E:\latex\texmfs\install\tex\latex\graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(E:\latex\texmfs\install\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(E:\latex\texmfs\install\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen115
+\captionmargin@=\dimen116
+\captionwidth=\dimen117
+\caption@tempdima=\dimen118
+\caption@indent=\dimen119
+\caption@parindent=\dimen120
+\caption@hangindent=\dimen121
+)
+\c@ContinuedFloat=\count101
+)
+(E:\latex\texmfs\install\tex\latex\tools\array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen122
+\extrarowheight=\dimen123
+\NC@list=\toks20
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(E:\latex\texmfs\install\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(E:\latex\texmfs\install\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(E:\latex\texmfs\install\tex\latex\tools\calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count102
+\calc@Bcount=\count103
+\calc@Adimen=\dimen124
+\calc@Bdimen=\dimen125
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count104
+\calc@Cskip=\skip50
+)
+(E:\latex\texmfs\install\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+(E:\latex\texmfs\install\tex\generic\oberdiek\atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+(E:\latex\texmfs\install\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)))
+\AM@pagewidth=\dimen126
+\AM@pageheight=\dimen127
+
+(E:\latex\texmfs\install\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box28
+\AM@global@opts=\toks21
+\AM@toc@title=\toks22
+\c@AM@survey=\count105
+\AM@templatesizebox=\box29
+)
+(E:\latex\texmfs\install\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks23
+\float@box=\box30
+\@float@everytoks=\toks24
+\@floatcapt=\box31
+)
+(E:\latex\texmfs\install\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count107
+)
+(E:\latex\texmfs\install\tex\latex\multirow\multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip53
+\multirow@cntb=\count108
+\multirow@dima=\skip54
+\bigstrutjot=\dimen128
+)
+(E:\latex\texmfs\install\tex\latex\tools\multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count109
+\mult@box=\box32
+\multicol@leftmargin=\dimen129
+\c@unbalance=\count110
+\c@collectmore=\count111
+\doublecol@number=\count112
+\multicoltolerance=\count113
+\multicolpretolerance=\count114
+\full@width=\dimen130
+\page@free=\dimen131
+\premulticols=\dimen132
+\postmulticols=\dimen133
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box33
+\last@line=\box34
+\maxbalancingoverflow=\dimen134
+\mult@rightbox=\box35
+\mult@grightbox=\box36
+\mult@gfirstbox=\box37
+\mult@firstbox=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\c@columnbadness=\count115
+\c@finalcolumnbadness=\count116
+\last@try=\dimen135
+\multicolovershoot=\dimen136
+\multicolundershoot=\dimen137
+\mult@nat@firstbox=\box56
+\colbreak@box=\box57
+\mc@col@check@num=\count117
+)
+(E:\latex\texmfs\install\tex\latex\amsmath\amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c AMS extra commands
+LaTeX Info: Redefining \nobreakspace on input line 54.
+)
+(E:\latex\texmfs\install\tex\latex\tools\bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(E:\latex\texmfs\install\tex\latex\bezos\accents.sty
+Package: accents 2006/05/12 v1.3 Math Accent Tools
+\cc@skew=\dimen138
+\cc@wd=\dimen139
+\cc@code=\count118
+\cc@group=\count119
+\cc@skewchar=\count120
+)
+(E:\latex\texmfs\install\tex\latex\chngcntr\chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+(E:\latex\texmfs\install\tex\latex\tools\dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+)
+(E:\latex\texmfs\install\tex\latex\hyphenat\hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language2
+LaTeX Info: Redefining \_ on input line 43.
+)
+(E:\latex\texmfs\install\tex\latex\preprint\authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip57
+\@affilsep=\skip58
+\c@Maxaffil=\count121
+\c@authors=\count122
+\c@affil=\count123
+)
+(E:\latex\texmfs\install\tex\latex\datetime\datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+(E:\latex\texmfs\install\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count124
+)
+(E:\latex\texmfs\install\tex\latex\fmtcount\fmtcount.sty
+Package: fmtcount 2017/09/16 v3.04
+
+(E:\latex\texmfs\install\tex\latex\xkeyval\xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(E:\latex\texmfs\install\tex\generic\xkeyval\xkeyval.tex
+(E:\latex\texmfs\install\tex\generic\xkeyval\xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count125
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(E:\latex\texmfs\install\tex\latex\fmtcount\fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(E:\latex\texmfs\install\tex\latex\fmtcount\fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count126
+))
+(E:\latex\texmfs\install\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\c@padzeroesN=\count127
+\fc@tmpcatcode=\count128
+
+(E:\latex\texmfs\install\tex\latex\fmtcount\fc-english.def
+File: fc-english.def 2016/01/12
+)
+\@DT@modctr=\count129
+\@ordinalctr=\count130
+\@orgargctr=\count131
+\@strctr=\count132
+\@tmpstrctr=\count133
+\@DT@loopN=\count134
+\@DT@X=\count135
+)
+(E:\latex\texmfs\install\tex\latex\datetime\datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count136
+\@month=\count137
+\@year=\count138
+\c@HOUR=\count139
+\c@HOURXII=\count140
+\c@MINUTE=\count141
+\c@TOHOUR=\count142
+\c@TOMINUTE=\count143
+\c@SECOND=\count144
+\currenthour=\count145
+\currentminute=\count146
+\currentsecond=\count147
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count148
+\dayofyear=\count149
+\dayofweek=\count150
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks27
+\dt@b=\toks28
+)
+(E:\latex\texmfs\install\tex\latex\colortbl\colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip59
+)
+(E:\latex\texmfs\install\tex\latex\mdwtools\footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box58
+\fn@width=\dimen140
+)
+(E:\latex\texmfs\install\tex\latex\threeparttable\threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box59
+)
+(E:\latex\texmfs\install\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(E:\latex\texmfs\install\tex\latex\placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(E:\latex\texmfs\install\tex\latex\tools\longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count151
+\LTcapwidth=\dimen141
+\LT@head=\box60
+\LT@firsthead=\box61
+\LT@foot=\box62
+\LT@lastfoot=\box63
+\LT@cols=\count152
+\LT@rows=\count153
+\c@LT@tables=\count154
+\c@LT@chunks=\count155
+\LT@p@ftn=\toks30
+)
+(E:\latex\texmfs\install\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen142
+\lightrulewidth=\dimen143
+\cmidrulewidth=\dimen144
+\belowrulesep=\dimen145
+\belowbottomsep=\dimen146
+\aboverulesep=\dimen147
+\abovetopsep=\dimen148
+\cmidrulesep=\dimen149
+\cmidrulekern=\dimen150
+\defaultaddspace=\dimen151
+\@cmidla=\count156
+\@cmidlb=\count157
+\@aboverulesep=\dimen152
+\@belowrulesep=\dimen153
+\@thisruleclass=\count158
+\@lastruleclass=\count159
+\@thisrulewidth=\dimen154
+)
+(E:\latex\texmfs\install\tex\latex\setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(E:\latex\texmfs\install\tex\latex\changepage\changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count160
+\cp@tempcnt=\count161
+)
+(E:\latex\texmfs\install\tex\latex\tools\tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count162
+\TX@ftn=\toks31
+)
+(E:\latex\texmfs\install\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box64
+\beforetitleunit=\skip64
+\aftertitleunit=\skip65
+\ttl@plus=\dimen160
+\ttl@minus=\dimen161
+\ttl@toksa=\toks32
+\titlewidth=\dimen162
+\titlewidthlast=\dimen163
+\titlewidthfirst=\dimen164
+)
+(E:\latex\texmfs\install\tex\latex\endnotes\endnotes.sty
+\c@endnote=\count163
+\endnotesep=\dimen165
+\@enotes=\write3
+)
+(E:\latex\texmfs\install\tex\latex\csquotes\csquotes.sty
+Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
+\csq@reset=\count164
+\csq@gtype=\count165
+\csq@glevel=\count166
+\csq@qlevel=\count167
+\csq@maxlvl=\count168
+\csq@tshold=\count169
+\csq@ltx@everypar=\toks33
+
+(E:\latex\texmfs\install\tex\latex\csquotes\csquotes.def
+File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(E:\latex\texmfs\install\tex\latex\csquotes\csquotes.cfg
+File: csquotes.cfg 
+))
+(E:\latex\texmfs\install\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(E:\latex\texmfs\install\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(E:\latex\texmfs\install\tex\latex\oberdiek\grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(E:\latex\texmfs\install\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(E:\latex\texmfs\install\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(E:\latex\texmfs\install\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(E:\latex\texmfs\install\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(E:\latex\texmfs\install\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(E:\latex\texmfs\install\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+\c@magicrownumbers=\count170
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+
+(LitReviewDrought.aux)
+\openout1 = `LitReviewDrought.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+ (E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count171
+\scratchdimen=\dimen166
+\scratchbox=\box65
+\nofMPsegments=\count172
+\nofMParguments=\count173
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count174
+\MPscratchDim=\dimen167
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
+\everyMPtoPDFconversion=\toks35
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+ (E:\latex\texmfs\install\tex\latex\caption\ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box66
+
+(E:\latex\texmfs\install\tex\latex\oberdiek\pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(E:\latex\texmfs\install\tex\latex\graphics\lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+
+(E:\latex\texmfs\install\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 90.
+
+(E:\latex\texmfs\install\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{E:/latex/texmfs/data/pdftex/config/pdftex.map}] [2] [3] [4] [5] (LitReviewDrou
+ght.bbl [6]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [7]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+
+Underfull \hbox (badness 2573) in paragraph at lines 107--113
+\OT1/cmr/m/n/12 The cli-mate data guide: Stan-dard-ized pre-cip-i-ta-tion in-de
+x (SPI).  Re-trieved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--113
+\OT1/cmr/m/n/12 from $\OT1/cmtt/m/n/12 https : / / climatedataguide . ucar . ed
+u / climate -[] data / standardized -[]
+ []
+
+[8] [9]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ­ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ³ in font cmr12!
+
+Underfull \hbox (badness 1253) in paragraph at lines 289--294
+\OT1/cmr/m/n/12 multi-region model.  \OT1/cmr/m/it/12 Ox-fam Pol-icy and Prac-t
+ice: Agri-cul-ture, Food and Land\OT1/cmr/m/n/12 ,
+ []
+
+) [10] (LitReviewDrought.aux) ) 
+Here is how much of TeX's memory you used:
+ 8365 strings out of 495222
+ 120395 string characters out of 3182071
+ 224876 words of memory out of 3000000
+ 11416 multiletter control sequences out of 15000+200000
+ 16632 words of font info for 62 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 42i,8n,61p,1670b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/latex/texmfs/install/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/la
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/latex/texmfs/in
+stall/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/latex/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/l
+atex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on LitReviewDrought.pdf (10 pages, 151360 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

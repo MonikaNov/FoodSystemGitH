@@ -1,0 +1,172 @@
+    
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{a4wide}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{bm}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage{colortbl}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\usepackage[flushleft]{threeparttable}
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{changepage}  
+
+
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsxtra}
+\usepackage{amsbsy}
+\usepackage{accents}
+\usepackage{chngcntr}
+\usepackage{tabularx}
+\usepackage{dcolumn}
+\usepackage[none]{hyphenat}
+\usepackage[affil-it]{authblk}
+\usepackage{datetime}
+\usepackage[labelfont=bf]{caption}
+\usepackage{titlesec}
+\usepackage{endnotes}
+\usepackage{csquotes}
+\usepackage{epstopdf}
+
+
+
+
+
+\date{\normalsize{September 2017}}
+\title{\Large \bf Climate Change Awareness and Willingness to Pay for its Mitigation: \\ Evidence from the UK}
+\author{Monika Novackova and Richard Tol}
+\affil{\small{Department of Economics, University of Sussex, Falmer, UK}}
+
+
+\parindent 0pt
+\parskip 0.5em
+\newcommand\starred[1]{\accentset{~~~~~\star}{#1}}
+
+
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+\begin{document}
+\sloppy
+\section*{Definition of drought}
+According to the international meteorological community, drought can be defined in several ways. In particular, drought is a \textit{'prolonged absence or marked deficiency of precipitation'}, a \textit{'deficiency of precipitation that results in water shortage for some activity or for some group'} or a \textit{'period of abnormally dry weather sufficiently prolonged for the lack of precipitation to cause a serious hydrological imbalance'} (\citealp{Heim2002, IPCCtrenberth}).
+ \cite{AMS1997} has defined three types of droughts: \textit{(i)}~'Agricultural drought' which is defined in terms of moister deficits in upper layer of soil up to about one meter depth~\textit{(ii)} 'meteorological drought' which refers to prolonged deficit of precipitation and~\textit{(iii)} 'hydrological drought' which relates to low streamflow, lake and levels of groundwater . The  \cite{AMS1997} policy statement was later replaced by another statement \citep{AMS2013} which besides the three types of drought above, covers also the 'socioeconomic drought' which associates the supply and demand of some economic good with elements of meteorological, agricultural and hydrological drought (\citealt{Heim2002, IPCCtrenberth}).
+ 
+Numerous definitions of drought and their role are reviewed and discussed by \cite{wilhite1985} and \cite{wilhite2000}. They distinguish two main categories of definitions of drought: \textit{(i)} conceptual and \textit{(ii)} operational. Conceptual definitions are dictionary types, usually defining boundaries of the concept of drought\footnote{An example of conceptual definition of drought is an 'extended period - a season, a year, or several years of deficient rainfall relative to the statistical multi-year mean for a region' \cite{schneider1996}.}. Operational definitions are essential for an effective early warning system. An example of operational definition of agricultural drought can be obtaining the rate of soil water depletion based on precipitation and evapotranspiration rates and expressing these relationships in terms of drought effects on plant behaviour \citep{wilhite2000}.
+
+\subsubsection*{Drought indices}
+\textcolor{blue}{hello pridat referenci  sombreok et al 1982 viz \cite{kabubo2007}}
+A numerical measure is needed to compare severity of drought across different time periods or geographical locations. However, as a result of a large disagreement about a definition of drought, there is no single universal drought index. Instead of that a number of measures of drought has been developed (\citealp{Heim2002, wilhite1985, wilhite2000}). 
+
+Examples of early measures of drought are \cite{wilhite1985}, \cite{munger1916}, \cite{blumenstock1942} or \cite{mcquigg1954}. \cite{munger1916} suggested to use length of period without $24$-h precipitation of $1.27$ mm. \cite{wilhite1985} is based on a measure of precipitation over a given time period. \cite{blumenstock1942} proposed to measure severity of drought as a length of drought in days where the end of a drought is defined by occurrence of $2.54$ mm of precipitation in $48$ hours. \cite{mcquigg1954} developed the Antecedent Precipitation Index (API) which is based on amount and timing of precipitation and it was used for forecasting of floods. Hence, the API is a reverse drought index.
+
+The study of \cite{palmer1965} was a significant milestone in the history of quantification of drought severity. \cite{palmer1965} developed the Palmer Drought Severity Index (PDSI) using a complex water balance model. The PDSI is based on a hydrological accounting system, which incorporate antecedent precipitation, moisture supply and moisture demand (\citealp{Heim2002,palmer1965}). As the PDSI suffers from several weaknesses (for details see e.g. \citealt{Heim2002}), other indices were developed in the following decades. These include the standardized precipitation index (SPI) developed by \cite{SPI} and the standardized precipitation evapotranspiration index (SPEI) developed by \cite{SPEI}. The SPI specifies observed precipitation as a standardised departure from a chosen probability distribution which models the precipitation data. Values of SPI can be viewed as a multiple of standard deviations by which the observed amount of rainfall deviates from the long-term mean \citep{SPIonline}.\footnote{Can be created for various periods of 1-36 months, usually using monthly data.} The SPEI is similar to SPI, but unlike SPI, the SPEI includes the role of evapotranspiration (which captures increased temperature). It is based on water balance, therefore it can be compared to the self-calibrated PDSI \citep{SPEI}. 
+
+
+For an extensive overview of various drought indices see \cite{Heim2002}, \cite{monacelli2005}, \cite{svoboda2016} or \cite{zargar2011}. \cite{keyantash2002} quantify, evaluate and compare number of drought indices for meteorological, hydrological and agricultural forms of drought. Based on several criteria they conclude that rainfall deciles and SPI perform the best for meteorological drought.
+%\cite{keyantash2002} further provides evaluation of the indecies...
+
+Drought can be measured in absolute terms (e.g. lake levels or amount of soil moisture) or in relative measures, which is for example the  PDSI \citep{Trenberth2014}. Because drought is defined based on one tail of probability distribution function of a drought measure, small decrease in mean can appear as a substantial increase in frequency of droughts. This has caused confusions and therefore usage of percentiles of soil moisture or streamflow is recommended as a better measure than mean \citep{Trenberth2014}.
+
+
+
+
+
+\cite{Trenberth2014} discuss various formulations of the PDSI (\citealt{Sheffield2012, Dai2011}).  \cite{Sheffield2012} argue that the way  how PDSI is formulated can have substantial effect on estimation of changes in severity of droughts over time. According to other studies, differences in formulation of the PDSI do not play big role and it is more important to formulate the index such that the required data are available and reliable (\citealp{Trenberth2014,vanderSchrier2011,Wang2012}). \cite{Trenberth2014} attribute the differences between the results of \cite{Sheffield2012} and \cite{Trenberth2014} to disparities among various rainfall datasets and to different baseline periods they use rather than to different formulations of the PDSI.   
+
+
+
+%\textcolor{green}{Precist HEIM A Review of Twentieth Century Drought Indices Used in the United States 2002}
+\subsubsection*{Extreme events, disaster and hazards}
+\cite{IPCC2012ch1} define extreme events as 'the occurrence of a value of a weather or climate variable above (or below) a threshold value near the upper (or lower) ends of the range of observed values of the variable'. Some authors define extreme events only in terms of meteorological phenomena (\citealp{easterling2000, Jentsch2007}), others include also consequential physiological impacts or other effects on humans and ecosystems (\citealp{IPCC2012ch1, young2002}).
+
+
+According to \cite{IPCC2012ch1}, disasters are defined as a 'severe alternations in the normal functioning of community or a society due to hazardous physical events interacting with vulnerable social conditions, leading to widespread adverse human, material, economic or environmental effects that require immediate emergency response to satisfy critical human needs and that may acquire external support for recovery.' The hazardous physical events may be of natural, socio-natural, or purely anthropogenic origin (\citealp{IPCC2012ch1, wisner2004risk}).
+
+Hazard can be defined as 'the potential occurrence of a natural or human induced
+physical event that may cause loss of life, injury, or other
+health impacts, as well as damage and loss to property, infrastructure,
+livelihoods, service provision, and environmental resources' \citet{IPCC2012ch1}.
+ \section*{Effects of Drought on Economy}
+ 
+ \cite{Pedram2016} estimate national production losses per disaster worldwide during ${1964-2007}$ using superposed epoch analysis. Besides drought, they focus on extreme heat, cold and flood events. They conclude that on average $10.1\%$ reduction of cereal production can be linked to droughts and $9.1\%$ reduction is attributable to extreme heat. They did not find any significant effect of extreme cold and floods on production. \cite{Mehrabi2017} estimate cumulative crop production losses resulting from heat and drought disasters over the same time period (${1964-2007}$). Their estimates are almost half of those of \cite{Pedram2016}. The biggest losses are in Botswana, Paraguay, Nigeria, Angola and USA.
+
+ \cite{Sandstorm2017} question whether drought is actually a major cause of food insecurity in Ethiopia, Kenya and Somalia. They analyse causes of the food crisis identified in the humanitarian appeal documents. Majority of these documents consider food availability and food production as a major cause of food crisis. \cite{Sandstorm2017} argue that there is a tendency to explain failure of more complex food systems as 'droughts' and insufficient attention is paid to non-climatic drivers such as food prices or conflicts.  \cite{Sandstorm2017} also find that a large share of humanitarian response budget is focused on emergency food aid in comparison to the share focused on interventions to build resilience. They suggest to increase the budget share focused on agricultural and livestock production to build resilience. 
+ 
+ \textcolor{red}{TO READ 12.12.2017:}
+\begin{itemize}
+  \item   \textcolor{red}{  \cite{bailey2012} maybe}
+  \item   \textcolor{red}{\cite{AMS1997} maybe}
+ \end{itemize}
+ 
+\subsubsection*{CGE}
+
+\cite{robinson2010} use a Social Accounting Matrix (SAM) based CGE model to simulate impacts of food production and price shocks on household consumption in Ethiopia. They model a drought (or a disease) as a $20\%$ reduction in crop productivity and a $20\%$ decrease in livestock capital in lowland plains and drought-prone highlands in Ethiopia and they conclude that this would cause a real income loss on order of $2.3\%$ of Ethiopia's GDP. They also consider two alternative scenarios, i.e. variations in food aid and change in international prices.
+
+\cite{OxfamIDS} uses the GLOBE Computable General Equilibrium model of the global economy to estimate food prices for various $2030$ scenarios. According to his results, climate change will lead to substantial increase in both domestic and world market crop prices in comparison to baseline scenario in the absence of climate change. However, the increase in prices can be substantially mitigated if appropriate adaptation measures will be taken in sub-Saharan Africa \citep{OxfamIDS}.
+ \section*{Economic Effects of Climate and Weather}
+ 
+Shifts in staple food demand curve don't tend to be very large. Hence, when staple food become scarce, its price is usually subject to a massive increase (\citealp{Brown2015, brown2014book}). For low income groups, this often leads to a reduction in calorie intake, malnutrition and increased risk of related health problems (\citealp{Golden2011, Handa2006}). Local food prices are therefore a good indicator of food scarcity and insecurity (\citealp{baffes2017, Brown2015}). \cite{Brown2015} investigate effects of weather disturbances and international price changes on local food prices which they use as a measure of food scarcity. They use a Kalman Filter approach (see \cite{KoopmanSJ} for more details) and they focus on regions which contain large segments of low income population including locations in Africa, South Asia and Latin America. They conclude that almost $20\%$ of local market prices are affected by domestic weather disturbances, $9\%$ of them are affected by international price change and $4\%$ are affected by both of them. Based on whether or not international food price and weather shocks are significant in explaining local food prices, \cite{brown2014book} groups food markets in selected developing countries into four categories as follows: significantly affected by both international food prices and weather, significantly affected by weather but not by international food prices, significantly affected by international food prices but not by weather and not significantly affected by either of them. \cite{brown2014book} then discus common characteristics of markets in each of these groups.
+
+\cite{Ochieng2016} estimate effects of climate variability and change on agricultural production\footnote{Mesured as value of yields per acre in farm household} using panel data in Kenya. According to their results, the effects are significant yet different for different crops. Temperature has positive effect on tea and negative effect on production of maize and crop. Furthermore, rainfall affects production of tea negatively. On the other hand, \cite{Vrieling2011} finds positive correlation between precipitation and agricultural productivity.
+
+
+
+
+
+%\textcolor{blue}{look at many references in \cite{Brown2015} and \cite{Ochieng2016} !!!maybe also look if good references in \cite{OxfamIDS}??}
+
+
+
+ \cite{nicolai2017} quantify relation between soil moisture drought and temperature, precipitation, evapotranspiration and vegetation during growing season. Using superposed epoch analysis, they find strong link between soil moisture drought and temperature, precipitation and evapotranspiration. Vegetation indices show a delayed response. \cite{schwalm2017} analyse length of post-draught recovery time in terms of gross primary productivity. According to their results the recovery times are strongly associated with climate and carbon cycle dynamics and the recovery is the longest in the tropics and high northern latitudes. They also conclude that drought impacts have increased over the 20th century. Both \cite{nicolai2017} and \cite{schwalm2017} analyse effects of drought globally.
+ 
+
+\subsubsection*{Ricardian and production function approach}
+
+A large literature has focused on application of the Ricardian approach in the context of climate change (including changes in precipitation) and its effects on crop revenues in Africa (\citealp{RicardianBello,kabubo2007, KMendelsohn2008, SeoMendelsohn}). According to \cite{SeoMendelsohn} and \cite{KMendelsohn2008}, if the warming will be mild and wet, crop net revenue should increase. In case of more severe and dry scenario, the crop revenue is likely to decrease (\citealp{KMendelsohn2008, SeoMendelsohn}).  \cite{RicardianBello} conclude that increase in temperature will affect net crop revenue negatively while increase in precipitation is likely to increase the revenue. According to \citet{kabubo2007}, global warming will be harmful for crop production.
+
+\cite{Deschenes2007Ric} use a production function approach (as an alternative to the Ricardian approach) to estimate economic impact of climate change, including impact of change in precipitation on agricultural profit in the United States. \cite{Deschenes2007Ric} conclude that effect of global warming on agriculture should be positive in the US. In particular, agricultural yields should increase by $1.3$ billion US dollars or $4\%$. However, the estimated $95\%$ confidence interval is from $-0.5$ to $3.1$ billion US dollars, hence, the estimated effect is not very large.
+
+
+\section*{Trends}
+
+ Strong downwards trend in precipitation has been observed in the tropics from $10^\circ$N to $10^\circ$S, especially after $1977$ \citep{IPCCtrenberth}. During the period $1900-2005$, the climate has become wetter in many parts of the world (eastern parts of America, northern Europe, northern and central Asia) but it has became much drier in Mediterranean, Sahel, southern Africa and parts of Southern Asia. Furthermore, increased frequency of heavy rain events has been observed also in the areas with decline in total rainfall \citep{IPCCtrenberth}. \cite{Trenberth2014} argue that as a consequence of global warming, dry areas have strong tendency to get drier while wet areas are getting wetter. 
+ \pagebreak
+\bibliographystyle{apa}
+\bibliography{referencesFS}
+\end{document}
