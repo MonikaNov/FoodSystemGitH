@@ -1,9 +1,29 @@
 rm(list=ls())
-setwd("foodSystems/dataFS") 
-setwd("dataFS") # home
 library(dplyr); library(tseries); library(plm); library(nlme); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
+load("dataFS/Main/DaTS.RData")
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# arma(11) and ar(2) the best. AIC a bit better for 11>> claiming KenARe11 the best !!!
 
-load("Main/DaTS.RData")
+KenARe11<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+              +AvgTemp + SDTemp  + HWDays, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+              data=ScaledTS,na.action=na.exclude); summary(KenARe11)
+acf(summary(KenARe11)$resid); pacf(summary(KenARe11)$resid)
+anova(KenARe11)
+exp(summary(KenARe11)$coef[[1]])
+#----------------------------------------------------------------
+# subsets of ASAL and non ASAL
+
+KenARe114<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+              +AvgTemp + SDTemp  + HWDays, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+              data=ScaledTS[ScaledTS$ASAL==1,],na.action=na.exclude); summary(KenARe11)
+exp(summary(KenARe114)$coef[[1]])
+
+
+
+KenARe115<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+               +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+               data=ScaledTS[ScaledTS$ASAL==0,],na.action=na.exclude); summary(KenARe11)
+exp(summary(KenARe115)$coef[[1]])
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 # arma(11) and ar(2) the best. AIC a bit better for 11>> claiming KenARe11 the best !!!
