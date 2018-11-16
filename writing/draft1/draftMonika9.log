@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  16 NOV 2018 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  16 NOV 2018 13:47
 entering extended mode
-**./draftMonika8.tex
-(draftMonika8.tex
+**./draftMonika9.tex
+(draftMonika9.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (E:\latex\texmfs\install\tex\latex\base\article.cls
@@ -660,8 +660,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (draftMonika8.aux)
-\openout1 = `draftMonika8.aux'.
+ (draftMonika9.aux)
+\openout1 = `draftMonika9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
@@ -754,16 +754,11 @@ re have been well
  []
 
 [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
-[13]
-Overfull \hbox (50.19128pt too wide) in paragraph at lines 336--410
-[]  [] 
- []
-
-[14] [15] (draftMonika8.bbl [16] [17]
+[13] (draftMonika9.bbl [14] [15]
 Underfull \hbox (badness 2293) in paragraph at lines 132--139
 []\OT1/cmr/m/n/12 FAO.  THE STATE OF PLANT GE-NETIC RE-SOURCES FOR FOOD AND
  []
@@ -782,24 +777,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--191
 u / climate -[] data / standardized -[]
  []
 
-[18]
+[16]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [19]
+ [17]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¤ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [20] [21]
+ [18] [19]
 Overfull \hbox (64.30247pt too wide) in paragraph at lines 372--375
 \OT1/cmr/m/n/12 (accessed Oc-to-ber, 2018). http://www.ndma.go.ke/index.php/res
 ource-center/early-warning-reports. 
  []
 
-[22] [23]
+[20] [21]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
 
@@ -812,35 +807,33 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
-[24]) [25] [26] [27] [28] (draftMonika8.aux) ) 
+[22]) [23] [24] [25] [26] (draftMonika9.aux) ) 
 Here is how much of TeX's memory you used:
- 9073 strings out of 495222
- 131344 string characters out of 3182071
- 237232 words of memory out of 3000000
- 12086 multiletter control sequences out of 15000+200000
- 28690 words of font info for 105 fonts, out of 3000000 for 9000
+ 9060 strings out of 495222
+ 131167 string characters out of 3182071
+ 233214 words of memory out of 3000000
+ 12074 multiletter control sequences out of 15000+200000
+ 26324 words of font info for 96 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,14n,78p,2760b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
  <E:\latex\texmfs/data\fonts\pk\l
-jfour\jknappen\ec\dpi600\tcrm1095.pk> <E:\latex\texmfs/data\fonts\pk\ljfour\jkn
-appen\ec\dpi600\tcrm1440.pk> <E:\latex\texmfs/data\fonts\pk\ljfour\jknappen\ec\
-dpi600\tcrm1200.pk><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx
-10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/l
-atex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texm
-fs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts
-/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.p
-fb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb><E:/latex
-/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draftMonika8.pdf (28 pages, 258937 bytes).
+jfour\jknappen\ec\dpi600\tcrm1200.pk><E:/latex/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.p
+fb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/latex
+/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/latex/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><E:/latex/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmr7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/late
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/latex/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+tt12.pfb><E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on draftMonika9.pdf (26 pages, 250808 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
