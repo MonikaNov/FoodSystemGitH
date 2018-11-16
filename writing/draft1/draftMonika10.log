@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  16 NOV 2018 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  16 NOV 2018 19:27
 entering extended mode
 **./draftMonika10.tex
 (draftMonika10.tex
@@ -1145,157 +1145,151 @@ Package natbib Warning: Citation `KERYch9' on page 10 undefined on input line 2
 06.
 
 [10] [11]
-Underfull \hbox (badness 3623) in paragraph at lines 254--255
+Underfull \hbox (badness 3623) in paragraph at lines 265--266
 []\OT1/cmr/m/n/12 There is a strong move-ment to shift the fo-cus from fore-cas
 t-ing merely
  []
 
-
-Underfull \hbox (badness 1484) in paragraph at lines 257--258
-[]\OT1/cmr/m/n/12 We can stress the im-por-tance of fo-cus-ing the fore-cast on
- the cli-mate
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
-
-[13]
-No file draftMonika10.bbl.
-
-Package natbib Warning: Citation `Heim2002' on page 14 undefined on input line 
-382.
-
-
-Package natbib Warning: Citation `IPCCtrenberth' on page 14 undefined on input 
-line 382.
-
-
-Package natbib Warning: Citation `AMS1997' on page 14 undefined on input line 3
-83.
-
-
-Package natbib Warning: Citation `AMS1997' on page 14 undefined on input line 3
-83.
-
-
-Package natbib Warning: Citation `AMS2013' on page 14 undefined on input line 3
-83.
-
-
-Package natbib Warning: Citation `Heim2002' on page 14 undefined on input line 
-383.
-
-
-Package natbib Warning: Citation `IPCCtrenberth' on page 14 undefined on input 
-line 383.
-
-
-Package natbib Warning: Citation `wilhite1985' on page 14 undefined on input li
-ne 385.
-
-
-Package natbib Warning: Citation `wilhite2000' on page 14 undefined on input li
-ne 385.
-
-
-Package natbib Warning: Citation `schneider1996' on page 14 undefined on input 
-line 385.
-
-
-Package natbib Warning: Citation `wilhite2000' on page 14 undefined on input li
-ne 385.
-
-
-Package natbib Warning: Citation `wilhite1985' on page 14 undefined on input li
-ne 387.
-
-
-Package natbib Warning: Citation `wilhite2000' on page 14 undefined on input li
-ne 387.
-
-
-Package natbib Warning: Citation `Heim2002' on page 14 undefined on input line 
-387.
-
-
-Package natbib Warning: Citation `wilhite1985' on page 14 undefined on input li
-ne 391.
-
-
-Package natbib Warning: Citation `munger1916' on page 14 undefined on input lin
-e 391.
-
-
-Package natbib Warning: Citation `blumenstock1942' on page 14 undefined on inpu
-t line 391.
-
-
-Package natbib Warning: Citation `mcquigg1954' on page 14 undefined on input li
-ne 391.
-
-
-Package natbib Warning: Citation `munger1916' on page 14 undefined on input lin
-e 391.
-
-
-Package natbib Warning: Citation `wilhite1985' on page 14 undefined on input li
-ne 391.
-
-
-Package natbib Warning: Citation `blumenstock1942' on page 14 undefined on inpu
-t line 391.
-
-
-Package natbib Warning: Citation `mcquigg1954' on page 14 undefined on input li
-ne 391.
 
 [14]
-
-Package natbib Warning: Citation `palmer1965' on page 15 undefined on input lin
-e 393.
-
-
-Package natbib Warning: Citation `palmer1965' on page 15 undefined on input lin
-e 393.
-
+No file draftMonika10.bbl.
 
 Package natbib Warning: Citation `Heim2002' on page 15 undefined on input line 
 393.
 
 
-Package natbib Warning: Citation `palmer1965' on page 15 undefined on input lin
-e 393.
+Package natbib Warning: Citation `IPCCtrenberth' on page 15 undefined on input 
+line 393.
+
+
+Package natbib Warning: Citation `AMS1997' on page 15 undefined on input line 3
+94.
+
+
+Package natbib Warning: Citation `AMS1997' on page 15 undefined on input line 3
+94.
+
+
+Package natbib Warning: Citation `AMS2013' on page 15 undefined on input line 3
+94.
 
 
 Package natbib Warning: Citation `Heim2002' on page 15 undefined on input line 
-393.
+394.
 
 
-Package natbib Warning: Citation `SPI' on page 15 undefined on input line 393.
+Package natbib Warning: Citation `IPCCtrenberth' on page 15 undefined on input 
+line 394.
 
 
-Package natbib Warning: Citation `SPEI' on page 15 undefined on input line 393.
+Package natbib Warning: Citation `wilhite1985' on page 15 undefined on input li
+ne 396.
+
+
+Package natbib Warning: Citation `wilhite2000' on page 15 undefined on input li
+ne 396.
+
+
+Package natbib Warning: Citation `schneider1996' on page 15 undefined on input 
+line 396.
+
+
+Package natbib Warning: Citation `wilhite2000' on page 15 undefined on input li
+ne 396.
+
+
+Package natbib Warning: Citation `wilhite1985' on page 15 undefined on input li
+ne 398.
+
+
+Package natbib Warning: Citation `wilhite2000' on page 15 undefined on input li
+ne 398.
+
+
+Package natbib Warning: Citation `Heim2002' on page 15 undefined on input line 
+398.
+
+
+Package natbib Warning: Citation `wilhite1985' on page 15 undefined on input li
+ne 402.
+
+
+Package natbib Warning: Citation `munger1916' on page 15 undefined on input lin
+e 402.
+
+
+Package natbib Warning: Citation `blumenstock1942' on page 15 undefined on inpu
+t line 402.
+
+
+Package natbib Warning: Citation `mcquigg1954' on page 15 undefined on input li
+ne 402.
+
+
+Package natbib Warning: Citation `munger1916' on page 15 undefined on input lin
+e 402.
+
+
+Package natbib Warning: Citation `wilhite1985' on page 15 undefined on input li
+ne 402.
+
+
+Package natbib Warning: Citation `blumenstock1942' on page 15 undefined on inpu
+t line 402.
+
+
+Package natbib Warning: Citation `mcquigg1954' on page 15 undefined on input li
+ne 402.
+
+[15]
+
+Package natbib Warning: Citation `palmer1965' on page 16 undefined on input lin
+e 404.
+
+
+Package natbib Warning: Citation `palmer1965' on page 16 undefined on input lin
+e 404.
+
+
+Package natbib Warning: Citation `Heim2002' on page 16 undefined on input line 
+404.
+
+
+Package natbib Warning: Citation `palmer1965' on page 16 undefined on input lin
+e 404.
+
+
+Package natbib Warning: Citation `Heim2002' on page 16 undefined on input line 
+404.
+
+
+Package natbib Warning: Citation `SPI' on page 16 undefined on input line 404.
+
+
+Package natbib Warning: Citation `SPEI' on page 16 undefined on input line 404.
 
 
 
-Package natbib Warning: Citation `SPIonline' on page 15 undefined on input line
- 393.
+Package natbib Warning: Citation `SPIonline' on page 16 undefined on input line
+ 404.
 
 
-Package natbib Warning: Citation `SPEI' on page 15 undefined on input line 393.
+Package natbib Warning: Citation `SPEI' on page 16 undefined on input line 404.
 
 
 
 Package natbib Warning: There were undefined citations.
 
-[15] (draftMonika10.aux) ) 
+[16] (draftMonika10.aux) ) 
 Here is how much of TeX's memory you used:
- 8904 strings out of 495222
- 127765 string characters out of 3182071
+ 8905 strings out of 495222
+ 127789 string characters out of 3182071
  228939 words of memory out of 3000000
- 11921 multiletter control sequences out of 15000+200000
+ 11922 multiletter control sequences out of 15000+200000
  26155 words of font info for 95 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,14n,78p,2761b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1314,9 +1308,9 @@ blic/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pf
 b><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/
 texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draftMonika10.pdf (15 pages, 221936 bytes).
+Output written on draftMonika10.pdf (16 pages, 223621 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
