@@ -222,8 +222,14 @@ where $\mathbf{X}$ is an $n \times p$ model matrix of fixed effects, $\mathbf{\b
 \mathscr{B} \sim \mathit{N}(0,\mathbf{\Sigma}),
 \end{equation}
 
-where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix
+where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix.
 
+\color{blue}
+\begin{itemize}
+\item Add description of residual and other diagnostic tests (AIC, VIF, autocorrelation)
+\item Describe the procedure that I have done to find the preferred way of modelling the  error correlation structure (ARMA errors).
+\end{itemize}
+\color{black}
 \FloatBarrier
 	\section{\textcolor{black}{Results and discussion}}\label{Results}
 
@@ -231,32 +237,38 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \color{blue}
 \begin{itemize}
 
-\item Tables of estimates:
+\item Tables of estimates of two models:
 
 \begin{enumerate}
-\item Base model which only includes seasonal precipitation and average seasonal temperature
-\item The preferred specification which includes the significant weather aggregates (see the preliminary results in Table \ref{KenARe11}) 
+\item The base model which only includes seasonal precipitation and average seasonal temperature
+\item The preferred specification which includes the significant weather variables (see the preliminary results in Table \ref{KenARe11}) 
 
 \begin{itemize}
-\item For all counties and also separately for Arid or semi-araid (ASAL) and non-ASAL
+\item For all counties 
+\item For Arid and semi-araid (ASAL) counties
+\item For non-ASAL counties
 \end{itemize}
 
 \end{enumerate}
 \item Verbal description and interpretation of the results
-\item Estimates of future impacts 
+\item Estimates of future impacts and comparison of forecast accuracy of the base and preferred model
 
 \begin{itemize}
-\item Comparison of estimates accuracy of the predictions from the base model and the preferred specification
 
-		\begin{itemize}
-		\item choose two points in time (past). Imagine we are in the earlier of the two time points and we want to make a prediction of yields in the future point. Compare the predictions of the base model and the predictions of the preferred specification. Here, we assume that we know the forecast of the weather measures- variables which are used in the models. We can use the real weather data instead of the forecast. This will demonstrate why is it important to not only forecast totals/means but also other characteristics (measures) of weather/climate
-		\item Graphical comparison, possibly using barplots
+\item The idea is to choose two points in time from within our period of data and imagine that we are in the earlier of the two time points. Now we want to make a prediction of yields for the later point in time. We will make two predictions: one using the base model and the other based on the preferred specification and we will compare their prediction accuracy. Here, we assume that we have a forecast of the weather measures (the explanatory variables of our models). We can use real weather data instead of the forecast. This will demonstrate why it is important to not only forecast totals/means but also other characteristics (measures) of weather/climate.
+		\item Accompany with a graph(s), possibly barplot(s)
 		
-		\end{itemize}
+
 
 \end{itemize}
+\item \textcolor{red}{Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.}
 
+		\begin{itemize}
+			\item \textcolor{red}{As Annemie has advised me, for a more precise approximation of $R^2$ we could estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures (not including the variability explained by the random intercepts).}
 	\end{itemize}
+		\end{itemize}
+		
+		
 \section{\textcolor{black}{Conclusion}}\label{Conclusion}
 
 	\begin{itemize}
@@ -274,6 +286,7 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 	\item\textcolor{red}{ Yield data: Is the collection method consistent over time and space?}
 	\item Livestock
 	\item Cropping calendar is likely to differ across the country 
+	\item \textcolor{red}{Some more??}
 	
 	\end{itemize}
 \end{itemize}
