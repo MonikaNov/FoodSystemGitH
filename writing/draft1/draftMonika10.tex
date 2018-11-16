@@ -165,7 +165,6 @@ An important group of studies that have analysed relationship of yield and clima
 
 \textcolor{red}{Erin Lentz, can we cite her paper?She has not responded to my email}
 
-\textcolor{blue}{maybe following into data section??}
 
 Based on the literature research above and complexity of deriving the measures, we short-listed the following aggregates of the weather data:
 
@@ -176,18 +175,24 @@ Based on the literature research above and complexity of deriving the measures, 
 \item \textbf{Precipitation:}
 
 \begin{itemize}
-\item Seasonal cumulative rainfall
-\item Seasonal standard deviation 
-\item Seasonal coefficient of variation 
+\item Cumulative precipitation and its square
+\item Cumulative precipitation during the first two months of season
+\item \textcolor{red}{I will also test cumulative precipitation  during the first month of each season - Guigma has promised to compute this variable}
+
+
+\item Coefficient of variation 
 \item Maximum length of dry spell in number of days
-\item ...\textcolor{blue}{the list to be finished}
-\item...
+\item Number of dry spell lasting for at least four days
+\item Number of dry spell lasting for at least ten days
+\item Number of dry spell lasting for at least twenty days
+\item Maximum daily precipitation
+\item \textcolor{red}{Additional indicators of floods - Guigma has promised to compute them over this weekend} 
 \end{itemize}
 \item Temperature
 \begin{itemize}
-\item
-\item\textcolor{blue}{the list to be finished}..
-\item
+\item Average temperature and its square
+\item Degree days
+\item Heatwave days
 \end{itemize}
 \end{itemize}
 \subsection{Data}
@@ -197,8 +202,10 @@ Based on the literature research above and complexity of deriving the measures, 
 \item \textcolor{blue} {Plot(s)/barplots of yield, precip and temp when final data available}
 \item \textcolor{blue}{Maybe a table of descriptive statistics or ref to the tale to appendix}
 \item \textcolor{blue}{Description how the weather data were aggregated spatially over counties}
-\item \textcolor{red}{Description how the weather data were aggregated temporally - seasons}
+
 \end{itemize}
+
+\textcolor{blue}{\textbf{Description of how the weather data were aggregated temporally - seasons} (this maybe before the list of aggregates??)}
 \subsection{Linear mixed models}
 \sloppy
 Kenya consists of $47$ counties with semi-autonomous county governments  \citep{Barasa2017}. As a result of the high degree of county-level autonomy, the policies and regulations often differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (mixed models) commonly used to analyse longitudinal data \citep{bates2000mixed}. Mixed models are suitable for analysis of panel data as they account for the panel structure of the dataset. These types of models include both fixed effects parameters and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \citep{bates2010lme4}. On the other hand, random effect are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation (\citealp{KERYch9, KERYch12}).
@@ -226,8 +233,8 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 
 \color{blue}
 \begin{itemize}
-\item Add description of residual and other diagnostic tests (AIC, VIF, autocorrelation)
-\item Describe the procedure that I have done to find the preferred way of modelling the  error correlation structure (ARMA errors).
+\item Add a description of residual and other diagnostic tests (AIC, VIF, autocorrelation)
+\item Describe the procedure that I have done to find the preferred way of modelling the  error correlation structure (ARMA errors)
 \end{itemize}
 \color{black}
 \FloatBarrier
