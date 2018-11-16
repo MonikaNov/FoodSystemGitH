@@ -1,0 +1,8 @@
+\select@language {english}
+\beamer@sectionintoc {1}{Defining drought}{4}{0}{1}
+\beamer@sectionintoc {2}{Drought indices}{7}{0}{2}
+\beamer@sectionintoc {3}{Effects of Drought on Economy}{11}{0}{3}
+\beamer@sectionintoc {4}{Methods}{14}{0}{4}
+\beamer@sectionintoc {5}{Results-Knowledge}{16}{0}{5}
+\beamer@sectionintoc {6}{Results-WTP}{16}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{20}{0}{7}

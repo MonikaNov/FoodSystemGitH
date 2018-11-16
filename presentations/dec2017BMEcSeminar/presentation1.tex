@@ -1,0 +1,1511 @@
+%\documentclass[notes]{beamer}       % print frame + notes
+%\documentclass[notes=only]{beamer}   % only notes
+\documentclass{beamer}              % only frames
+  \usepackage[english]{babel}
+\usepackage[round]{natbib}
+%\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\usepackage{lmodern}
+\usepackage{marvosym} % \MVRIGHTarrow
+
+\usepackage{amsmath}  
+\usepackage{multirow,graphicx,array}
+\usepackage{multicol}
+\usepackage{hhline}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{threeparttable,booktabs}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage{caption}
+\usepackage{fixltx2e}
+\usepackage{rotating}
+\usepackage{amssymb}
+
+
+
+\usetheme{Singapore}
+\useoutertheme{miniframes}
+\AtBeginSection[]{\subsection{}}
+
+
+\newcommand{\RowColor}{\rowcolor{gray} \cellcolor{white}}
+\newcommand{\RowColorY}{\rowcolor{yellow} \cellcolor{white}}
+
+
+
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
+
+
+
+\title{Drought and its Impacts on Economy in East Africa}  
+\author{Monika Novackova} 
+\date{December 2017} 
+\institute{University of Sussex}
+
+\setbeamercolor{block title}{bg=purple!30,fg=black}
+
+
+
+
+
+\begin{document}
+
+
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{DarkGreen}{rgb}{0.1803922,0.545098,0.3411765}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{PaleGreen}{rgb}{ 0.5960784,0.9843137, 0.5960784}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{bored}{rgb}{0.8, 0.0, 0.0}
+\definecolor{babypink}{rgb}{0.96, 0.76, 0.76}
+
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+
+
+
+\begin{frame}
+\titlepage
+\end{frame} `
+
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame} 
+
+
+
+\normalsize
+
+
+
+
+\section{Defining drought}
+
+
+
+\begin{frame}\label{Definition of Drought}
+\frametitle{Definition of Drought} 
+ \begin{itemize}
+
+
+\item Prolonged absence or marked deficiency of precipitation  
+\item Deficiency of precipitation that results in water shortage for some activity
+or for some group
+\item Period of abnormally dry weather sufficiently prolonged for the lack of precipitation to cause a serious hydrological imbalance 
+\end{itemize} 
+
+(\citealp{heim2002,IPCCtrenberth})
+\end{frame}
+
+\note{Heim = a review of the 20tieth century indices, Trenberth = IPCC report, summary for policy makers \\
+\vspace{0.3cm}f  \\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}
+
+}
+
+\begin{frame}\label{Definition of Drought}
+\frametitle{Categories of Definition of Drought} 
+ \begin{itemize}
+
+
+\item \textbf{Conceptual definitions:} dictionary types, usually defining boundaries of the concept of drought \\ 
+e.g. \textit{An extended period - a season, a year, or several years of deficient rainfall relative to the statistical multi-year mean for a region \citep{schneider1996}}
+\item \textbf{Operational definitions:} Foundation for an effective early warning system \\ e.g. SPI, PDSI
+
+\end{itemize} 
+
+(\citealp{wilhite1985,wilhite2000})
+\end{frame}
+
+\note{An example of operational definition of agricultural drought can be obtaining the rate of soil water depletion based on precipitation and evapotranspiration rates and expressing these relationships in terms of drought effects on plant behaviour \citep{wilhite2000} besides PDSI SPI\\
+\vspace{0.3cm}f  \\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}
+
+}
+
+
+\begin{frame}
+\frametitle{Types of Drought}
+\textit{operational drought} \\
+  \begin{enumerate}
+      \item \textbf{Agricultural drought:} moister deficits in upper layer of
+soil up to about one meter depth
+      \item \textbf{Meteorological drought:} which refers to prolonged
+deficit of precipitation
+      \item \textbf{Hydrological drought:} relates to low stream flow, lake and levels of groundwater
+      \item \textbf{Socioeconomic drought:} associates the supply and demand of some economic good with elements of meteorological, agricultural and hydrological drought
+  \end{enumerate}
+  (\citealp{heim2002,IPCCtrenberth,AMS2013})
+\end{frame}
+
+
+
+\note{first three types in AMS 1997, then later the fourth added? \\
+\vspace{0.3cm}first three types physical, the last monetary..(KEYANTASH and dracup 2000, evaluation of drough indecies) \\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}
+
+}
+
+
+
+\section{Drought indices}
+
+\begin{frame}\label{Indices1}
+\frametitle{Drought Indices} 
+\begin{block}{Early measures of drought}
+\begin{itemize}
+\item Length of period without $24$-h precipitation of $1.27$mm \citep{munger1916}
+
+\item Length of drought in days, end of drought defined as $2.54$mm of precipitation in $48$ hours \citep{blumenstock1942}
+\item Measure of precipitation over a given time period \citep{wilhite1985}
+\item Antecedent Precipitation Index (API) based on amount and timing of precipitation, inverse drought index - for flood forecasting \citep{mcquigg1954}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+\note{these are some examples of early drought indices\\
+\vspace{0.3cm} A numerical measure is needed to compare severity of drought across different time periods
+or geographical locations. However, as a result of a large disagreement about a definition of drought, there is no single universal drought index. Instead of that a number of measures of drought has been developed\\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}
+
+}
+
+\begin{frame}\label{Indices2}
+\frametitle{Drought Indices} 
+
+\begin{itemize}
+\item \textbf{Palmer Drought Severity Index} (PDSI, \citealp{palmer1965})
+
+\begin{itemize}
+
+\item Significant milestone in history of drought severity quantification
+\item Based on a hydrological accounting system
+\item Incorporate antecedent precipitation, moisture supply and moisture demand
+\end{itemize}
+\item \textbf{Standardized Precipitation Index} (SPI, \citealp{SPI})
+\begin{itemize}
+\item Can be interpreted as the number of standard deviations by which the observed value differs from the long-term mean
+\item Standardised departure of observed precipitation from a chosen probability distribution function which models the precipitation data \citep{SPIonline}
+
+\end{itemize}
+
+\end{itemize}
+
+
+\end{frame}
+
+
+\note{On short timescales, the SPI is closely related to soil moisture, while at longer timescales, the SPI can be related to groundwater and reservoir storage.\\
+\vspace{0.3cm}SPI: usuallygamma or a Pearson Type III distribution \\
+\vspace{0.3cm} can be used across regions with very different climates\\
+\vspace{0.3cm}SPEI no assumptions about underlining system
+\\
+\vspace{0.3cm} requires more data than SPI
+\\
+\vspace{0.3cm} SPEI sensitive to method that calculate potential evapotranspiration
+
+\\
+\vspace{0.3cm}
+Evapotranspiration (ET) is the sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. Evaporation accounts for the movement of water to the air from sources such as the soil, canopy interception, and waterbodies. 
+}
+
+
+\begin{frame}\label{Indices3}
+\frametitle{Drought Indices} 
+
+ \begin{itemize}
+ \item \textbf{Standardized Precipitation Evapotranspiration Index} (SPEI, \citealp{SPEI})
+\begin{itemize}
+\item Extention of SPI
+\item Accounts for potential evapotranspiration (hence captures impacts of increased temperature on water demand)
+\end{itemize}
+\item Number of other drought indicators and indices exist
+\begin{itemize}
+\item E.g.: Percent of Normal Precipitation, Drought Area Index (DAI), Soil Moisture Anomaly (SMA), Standardized Water-level Index (SWI), Normalized Difference Vegetation Index (NDVI)
+\end{itemize}
+\item  \citealp{monacelli2005, svoboda2016, zargar2011}: Overview of number of drought indices
+
+\item Quantification and evaluation of drought indices for each of the three physical types of drought \citep{keyantash2002}
+\end{itemize} 
+
+
+\end{frame}
+
+\note{ the examples of indices are from the following categories:meteorology, soil moisture, hydrology, remote sensing \citep{svoboda2016}
+\vspace{0.3cm}f  \\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}}
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{Data}\label{data} 
+
+mozna taky trochu popsat data?? nebo az u napadu, co budu delat??
+
+\end{frame}
+
+
+
+\section{Effects of Drought on Economy}
+
+
+
+\begin{frame}
+
+\frametitle{Effects of drought on economy}\label{Effects} 
+\begin{block}{\textbf{Generalized Computable Equilibrium (CGE)} Models }
+
+\begin{itemize}
+\item \underline{\textbf{\cite{OxfamIDS}}}
+\begin{itemize}
+\item Exploring range of scenarios for food price increase in 2030
+\begin{itemize}
+\item 1. Baseline 2. Climate change 3. Climate change with adaptation 4. Adaptation only in sub-Saharan Africa
+\end{itemize}
+\item Global coverage, set of individual country models, linked through international trade
+\item Effects of climate change (incl. drought) modelled as changes in factor productivity (usually negative)
+
+\end{itemize}
+\item \underline{\textbf{\cite{robinson2010}}}
+\begin{itemize}
+\item Ethiopia
+\item Social Accounting Matrix (SAM)
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\note{Computable general equilibrium (CGE) models are a class of economic models that use actual economic data to estimate how an economy might react to changes in policy, technology or other external factors.\\
+\vspace{0.3cm}A CGE model consists of equations describing model variables and a database (usually very detailed) consistent with these model equations\\
+\vspace{0.3cm}a\\
+\vspace{0.3cm}a
+\\
+\vspace{0.3cm}a
+\\
+\vspace{0.3cm}a
+
+\\
+\vspace{0.3cm}
+Evapotranspiration (ET) is the sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. Evaporation accounts for the movement of water to the air from sources such as the soil, canopy interception, and waterbodies. 
+}
+
+
+
+
+\begin{frame}{\small Recent Relavant Literature}\label{Previous research}
+\Wider[2em]{
+\vspace{0.2cm}
+\linespread{0.9}
+\begin{itemize}
+\small
+
+\item \textbf{\cite{robinson2010}}: CGE
+\begin{itemize}
+\item Ethiopia. Udelat tabulku, v jednom sloupci co je fixed, v jednom co determined by model
+\item ktere promenne se tam dosadi a ktere vylezou
+\end{itemize}
+\item \textbf{\cite{OxfamIDS}} CGE global
+\begin{itemize}
+\item probably also describe this CGE, how does it work, inputs, outputs
+maybe it is like not that production is exogenous and price endo. but interdependent. and we have production shock as input $\rightarrow$ it gives price shock as output $\rightarrow$ it has again effect on production volumes
+\end{itemize}
+
+
+\item \textbf{\cite{Carlsson2013}}
+\begin{itemize}
+\item Analyse preferences of distributing the burden of reducing CO\textsubscript{2}
+\item Higher educated people have higher WTP for distribution that is less costly for their country
+\end{itemize}
+
+
+
+
+
+
+\end{itemize}}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}\label{Data3}
+\frametitle{\small Data} 
+
+\vspace{-0.3cm}
+      \begin{columns}
+        \column{.15\linewidth}
+        n=$4592$
+              \column{.85\linewidth}
+\begin{table}
+\footnotesize
+\label{Demographics} 
+\begin{tabular}{llllllll} 
+\hline
+\rowcolor{PaleGreen} \textbf{Age} & 20 & 30 & 40 & 50 & 60 & 70 & 80 \\
+ \hline
+ \textbf{Frequency}  &$805$ & $1113$ & $812$ & $791$ & $657$ & $361$ & $53$\\
+ \hline
+\end{tabular}
+\end{table}
+ \end{columns}
+
+      \begin{columns}
+        \column{.335\linewidth}
+\begin{table}
+\footnotesize
+\label{Sex} 
+\vspace{-0.7cm}
+\begin{tabular}{lll} 
+\hline
+\rowcolor{PaleGreen} \textbf{Gender} & \textbf{Freq.}  \\
+ \hline
+ Male & $2250$ \\
+ Female& $2310$ \\
+ \hline
+\end{tabular}
+\end{table}
+
+
+
+         \column{.65\linewidth}
+         \vspace{-1.1cm}
+         \begin{figure}
+         \caption*{\footnotesize{\vspace{-0.05cm} Education}}
+           \vspace{-0.2cm}
+ % \includegraphics[width = 0.9\textwidth]{Education.png} 
+    \end{figure}
+      \end{columns}
+ 
+
+
+
+ \begin{figure}
+ \vspace{-1.2cm}
+
+ \caption*{\footnotesize{\vspace{-0.2cm}  \hspace{-2cm} Occupation}}
+  \hspace{-2.3cm}
+  \vspace{-0.55cm}  
+%\includegraphics[width = 0.6\textwidth]{Occupation.png}  
+\end{figure}
+ 
+\end{frame}
+
+
+
+
+
+
+\section{Methods}
+
+
+
+
+\linespread{1}
+
+
+\note{2 hlavni skupiny prediktoru: demographics a tak, a popisne...
+ \\
+\vspace{1cm}Nemela jsem moc hypotezu a literatura rika ruzne veci, v kazdem clanku neco jineho. takze selection methods...}
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{Methods}\label{MethodsLasso} 
+\textbf{Lasso} = Least Absolute Shrinkage and Selection Operator
+\begin{itemize}
+\item In literature preferred to stepwise procedures (Tibshirani, 1996; Efron et. al, 2003; Yuan and Lin, 2004; Shah, 2012) 
+\begin{equation}\label{Lasso}
+\begin{array}{lcll}
+
+\widehat{\beta}(\lambda)&=& \underset{\beta}{arg~min} \bigg( \sum_{i=1}^{n}(Y_i - \boldsymbol{X} \beta)_i \bigg)^2 + \lambda \sum_{j=1}^p|\beta_j|, \\
+\end{array}
+\end{equation}
+
+\begin{itemize}
+\item $i$ ... index of observations
+\item $j$ ... index of explanatory variables
+\item $\lambda \geq 0$...penalty parameter
+\end{itemize}
+
+\item The estimator does variable selection in the sense that $\widehat{\beta_j}(\lambda) = 0 $ for some $j$'s
+\item Cross-validation of a series of models with different values of $\lambda$
+\item I choose the largest value of $\lambda$ such that the mean square error is within 1 standard error of the minimum MSE
+\end{itemize}
+\end{frame}
+
+
+
+\note{\tiny
+Why lasso prefered to stepwise??
+
+why stepwise bad:
+Efron at all: Stepwise can eliminate a good valid predictor in the second step if it happens to be correlted with the first selected predictor \\
+
+
+http://www.stata.com/support/faqs/statistics/stepwise-regression-problems/\\
+
+ It yields R-squared values that are badly biased to be high.\\
+The F and chi-squared tests quoted next to each variable on the printout do not have the claimed distribution.\\
+The method yields confidence intervals for effects and predicted values that are falsely narrow; see Altman and Andersen (1989).\\
+It yields p-values that do not have the proper meaning, and the proper correction for them is a difficult problem.\\
+It gives biased regression coefficients that need shrinkage (the coefficients for remaining variables are too large; see Tibshirani [1996]).\\
+It has severe problems in the presence of collinearity.\\
+It is based on methods (e.g., F tests for nested models) that were intended to be used to test prespecified hypotheses. \\
+
+“The degree of correlation between the predictor variables affected the frequency with which authentic predictor variables found their way into the final model.” \\
+ p is the number of parameters	 \\
+\hspace{1cm} the selection depends on lambda
+\hspace{1cm} R cross validates various models for series of different lamdas.
+\hspace{1cm} }
+
+
+
+\begin{frame}
+
+\frametitle{Cumulative logits model}\label{Results-Logit2} 
+
+ $Y$ is a categorical response with $M$ categories $(m=1...M)$
+
+\begin{equation}\label{PCumLog}
+\begin{array}{lclcl}
+logit  \big[P( Y \leq m| x) \big] &=& \alpha_m + \boldsymbol{\beta'x}, ~~m=1,...,M-1
+\end{array}
+\end{equation}
+
+\begin{align*}\label{Stickin}
+\begin{array}{lcl}
+\text{Substitute estimates into:} \hspace{1cm}\hat{P}(Y\leq m) &=& \frac{exp(\hat{\alpha_m}+ \hat{\beta} x)}{1+exp(\hat{\alpha_m}+ \hat{\beta} x)}
+\end{array}
+\end{align*}
+
+\vspace{0.5cm}
+\begin{itemize}
+\item \textbf{Proportional odds assumption}
+\begin{itemize}
+\item Likelihood ratio test for comparison with multinomial logit insignificant $\boldsymbol{\Rightarrow}$ assumption satisfied
+
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\note{Also waldtest, jako ekvivalent pro celkovy f-test byl signifikantni>> overall fit je moc ok}
+
+
+
+
+
+
+
+
+
+
+
+\section{Results-Knowledge}\label{Results-Knowledge}
+
+
+
+
+
+
+
+
+
+\section{Results-WTP}
+
+
+
+
+\begin{frame}[plain]
+\Wider[3.5em]{\vspace{-0.5cm}
+\frametitle{\small Results: Willingness to pay}\label{ResultsWTP1} 
+\begin{table}
+%  bodie38  bodie70 Dunquan98  Dunquan80
+\label{WTP1} 
+\begin{footnotesize}
+ 
+\begin{tabular}{m{0.2cm}m{0.05cm}|l|cc|ccc|} 
+\hline
+\rowcolor{PaleGreen} \multicolumn{3}{c|}{\textbf{OLS after selection by lasso}} &  \multicolumn{2}{c|}{\textbf{Tax gas}} &\multicolumn{2}{c}{\textbf{Tax fuel}} \\
+\rowcolor{PaleGreen} \multicolumn{3}{c|}{Robust std. errors HC\textsubscript{0}, n=4178}& \textbf{(\RN{1})}&\textbf{(\RN{2})} & \textbf{(\RN{1})}&\textbf{(\RN{2}) } \\
+\hline
+ & &Female& + & +& -&+ \\ 
+& & Age& -  *** & -  ***& -  ***& -  ***  \\ 
+& & Debts& +  *** &+  ***&  +  ***&  +  *** \\ 
+\RowColor \cellcolor{white} \multirow{-5}{*}{\hspace{-0.5cm} \vspace{-0.5cm} \rotatebox[origin=c]{55}{\textbf{\scriptsize{Demographics}}}}  &\cellcolor{white} & \cellcolor{white}Occupation & \multicolumn{2}{c}{\cellcolor{white} vary} &  \multicolumn{2}{|c}{ \textcolor{red}{Not included}    } \\
+\hline
+& & Understands interest & -  *** &-  ***  &-  ** &-  **\\ 
+& & Understands inflation & -  *** &-  ***  &-  ***&-  ***\\ 
+
+
+ \RowColor \cellcolor{white} \multirow{-3}{*}{\hspace{-0.3cm}\rotatebox[origin=c]{60}{\textbf{\scriptsize{Numeracy}}}} & \cellcolor{white} & \cellcolor{white}Cognitive reflection test&\multicolumn{2}{c}{\textcolor{red}{Not included}} &  \cellcolor{white} -   **&  \cellcolor{white} -   **\\ 
+
+\hline
+
+&  &Not getting fair share& \multirow{2}{*}{- ***}& \multirow{2}{*}{- ***} &\multirow{2}{*}{- **} & \multirow{2}{*}{- **}\\ 
+& & \hspace{0.3cm} of nation's wealth& & \\ 
+& & Hard work is important& -  ***& -  ***& -  ***& -  ***\\ 
+\vspace{-0.2cm}& & Parents + kids have same&\multirow{2}{*}{+ ***}&  \multirow{2}{*}{+ ***} &  \multirow{2}{*}{+ ***}&  \multirow{2}{*}{+ ***} \\ 
+\multirow{-5}{*}{\rotatebox[origin=c]{90}{\textbf{\textbf{Attitudes,}}}} & \hspace{-0.5cm} \multirow{-5}{*}{\rotatebox[origin=c]{90}{\textbf{\textbf{beliefs}}}} & \hspace{0.1cm} living standards as me& & \\ 
+
+
+
+\hline
+
+\RowColor \cellcolor{white} &\cellcolor{white} &\cellcolor{white}Clim. change risk perception&  \cellcolor{white}+ *** &\multicolumn{1}{c}{\textcolor{red}{Not incl.}}&  \cellcolor{white}+ *** &\textcolor{red}{Not incl.}\\
+
+ 
+\RowColor \cellcolor{white} &\cellcolor{white}&\cellcolor{white}Clim. change vs policies risk&  \cellcolor{white}+ *** & \cellcolor{white}+ *** &  \cellcolor{white}+ *** &  \cellcolor{white}+ ***\\ 
+
+\RowColor \cellcolor{white}    & \cellcolor{white}    &  \cellcolor{white}How much is gas/fuel tax & \cellcolor{white} + *** &\multicolumn{1}{c}{\textcolor{red}{Not incl.}}& \cellcolor{white} + *** &\multicolumn{1}{c}{\textcolor{red}{Not incl.}}\\ 
+
+
+ \multirow{-4}{*}{\rotatebox[origin=c]{90}{\textbf{Climate}}}     &  \hspace{-0.5cm} \multirow{-4}{*}{\rotatebox[origin=c]{90}{\textbf{change}}}    &  Female $\times$ Clim. policies & - ** & - * &  - & -\\ 
+
+
+
+
+
+\hline
+\RowColor \cellcolor{white} & \cellcolor{white} & \cellcolor{white}Inequity aversion index& \cellcolor{white} \scriptsize + {\tiny then} -  ***& \multicolumn{1}{c}{\textcolor{red}{Not incl.}} &\cellcolor{white} \scriptsize + {\tiny then} -  ***& \multicolumn{1}{c}{\textcolor{red}{Not incl.}} \\ 
+\RowColor \cellcolor{white}&\cellcolor{white}&\cellcolor{white}Discount rate yr. 0 vs.1 &\cellcolor{white} + * &\multicolumn{1}{c}{\textcolor{red}{Not incl.}} &\cellcolor{white} + $\bullet$ &\multicolumn{1}{c}{\textcolor{red}{Not incl.}}\\
+&  & Consistent discount rate & + *** &+ ***&+ ***&+ *** \\
+\RowColor \cellcolor{white} \multirow{-4}{*}{\rotatebox[origin=c]{90}{\textbf{\scriptsize{Behavioral}}}}& \cellcolor{white} &\cellcolor{white}Egalitarian & \multicolumn{2}{c}{\textcolor{red}{Not included}} & \cellcolor{white}- ***& \cellcolor{white}-*** \\
+\hline
+\end{tabular} 
+\end{footnotesize}
+\end{table} }
+%checked 31.3.2017
+\end{frame}
+
+
+
+\note{Consistent answers within investments==0 consdr \\
+climpol a climcare popsat otazky, mozna udelat o nich slide
+\\
+
+occupation: homemaker unemployed negative, otherwise insignificant \\
+
+ to je taky duvod, proc si myslim, ze numeracy a literacy...ze to muze byt v politickych nazorech?? ze levicaci nemaji technicke vzdelani???}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+% bodie53, Dunquan68lm
+\frametitle{Results: Willingness to pay - robustness}\label{ResultsLassoGas} 
+
+\begin{itemize}
+\item OLS after selection by lasso
+\item With additional control variables
+\end{itemize}
+
+\begin{table}
+\label{LassoBigSample} 
+\begin{small}
+\begin{tabular}{l|cc|cc} 
+\hline
+\rowcolor{PaleGreen} Dependent variable: &  \multicolumn{2}{c|}{\textbf{Tax gas}} &\multicolumn{2}{c}{\textbf{Tax fuel}} \\
+\hline
+Demographics & \multicolumn{2}{c|}{Robust}& \multicolumn{2}{c}{Robust} \\ 
+Numeracy & \multicolumn{2}{c|}{Robust}& \multicolumn{2}{c}{Robust}  \\ 
+Attitudes, beliefs & \multicolumn{2}{c|}{Robust}& \multicolumn{2}{c}{Robust}  \\ 
+Climate change & \multicolumn{2}{c|}{Robust}& \multicolumn{2}{c}{Robust}  \\ 
+Behavioral & \multicolumn{2}{c|}{Robust}& \multicolumn{2}{c}{Robust}  \\ 
+\hline
+
+  Income & -& & - &**\\
+    Climate knowledge &- & $\bullet$ & +\\
+Social value orientation & + & &+&*\\
+
+ Risk aversion Kehneman-Tversky & - & & + & \\
+  Government should redistribute income & + &$\bullet$ &+& $\bullet$\\
+\hline
+ \multicolumn{1}{l|}{Robust standard errors HC\textsubscript{0}}&  \multicolumn{2}{l|}{n=$4178$}&  \multicolumn{2}{l}{n=$4184$}\\
+\end{tabular} 
+\end{small}
+\end{table} 
+
+\end{frame}
+
+
+
+\note{ redistribute jsem dala jako politickou. Mozna ukazat bar??
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+
+ 
+         \textbf{Average preferred tax rate for \colorbox{babypink}{gas}} grouped by:
+\begin{itemize}       
+    \item    \textbf{\small Understands compound interest}
+
+ 
+     \begin{figure}
+      \begin{columns}
+        \column{.4\linewidth}
+     
+  \caption*{ \hspace{0.6cm} \textcolor{blue}{$\blacksquare$} Male\\ \hspace{0.6cm} \textcolor{red}{$\blacksquare$} Female
+  \\ \vspace{0.2cm} \hspace{0.6cm} $1$ = Understands}
+        \column{.6\linewidth}
+
+ %   \vspace{-0.2cm}   \hspace{0.6cm}   \includegraphics[width = 0.8\textwidth]{GasInterest.png}  %565*238
+ \vspace{-0.3cm}   \caption*{\footnotesize \hspace{0.6cm}$0$ \hspace{1cm}$0.5$ \hspace{1cm}$1$ }
+      \end{columns}
+    \end{figure}
+    
+\vspace{-0.3cm}
+    \item    \textbf{\small Hard work is important}
+\end{itemize}
+
+\vspace{-0.2cm}
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth }
+        \vspace{-1.5cm}
+  \caption*{ \hspace{0.8cm} \textcolor{blue}{$\blacksquare$} Male\\ \hspace{0.8cm} \textcolor{red}{$\blacksquare$} Female
+  \\ \vspace{0.2cm} \hspace{0.8cm} $1$ = Not important at all  \\ \hspace{0.8cm} $5$ = Essential}
+  \vspace{-1.5cm}        
+        \column{.5\linewidth}
+        
+  % \includegraphics[width = 0.85\textwidth]{GasHardwork.png}  %565*238
+ \vspace{-0.3cm}   \caption*{\footnotesize  $1$ \hspace{0.5cm}$2$ \hspace{0.5cm}$3$ \hspace{0.5cm}$4$ \hspace{0.5cm}$5$  }
+      \end{columns}
+    \end{figure}
+
+
+
+\end{frame}
+
+
+
+
+
+\note{hello}
+
+
+
+
+
+
+\begin{frame}
+
+
+    \textbf{Average preferred tax rate for \colorbox{babypink}{fuel}} grouped by:
+    \begin{itemize}       
+    \item \textbf{\small Cognitive Reflection Test}
+
+
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth}
+  \caption*{ \hspace{0.4cm} \textcolor{blue}{$\blacksquare$} Male\\ \hspace{0.7cm} \textcolor{red}{$\blacksquare$} Female}
+        \column{.5\linewidth}
+   
+  %    \vspace{-0.5cm}  \includegraphics[width = 1\textwidth]{FuelNumeracy.png}  %565*238
+ \vspace{-0.3cm}   \caption*{\footnotesize \hspace{-4.5cm} Number of correct answers:\hspace{1.1cm} $0$\hspace{0.3cm}$0.5$ \hspace{0.2cm}$1$ \hspace{0.2cm}$1.5$ \hspace{0.2cm}$2$ \hspace{0.2cm}$2.5$\hspace{0.2cm}$3$ }
+      \end{columns}
+    \end{figure}
+    
+
+\vspace{-0.15cm} 
+ \item \textbf{\small Ordinary working people do no get their fair share of the nation's wealth}
+\end{itemize}
+\vspace{-0.5cm}
+  \begin{figure}
+      \begin{columns}
+      
+        \column{.5\linewidth}
+  \caption*{ \hspace{0.8cm} \textcolor{blue}{$\blacksquare$} Male\\ \hspace{0.8cm} \textcolor{red}{$\blacksquare$} Female
+  \\ \vspace{0.2cm} \hspace{0.8cm} $-2$ = Strongly disagree  \\ \hspace{1.1cm} $2$ = Strongly agree}
+\vspace{-1cm}        
+        \column{.5\linewidth}
+   \vspace{-0.2cm}     \hspace{-0.8cm} 
+  % \includegraphics[width = 0.9\textwidth]{FuelFairshare.png} \\ %565*238
+  \caption*{\footnotesize \hspace{-1.6cm}$-2$ \hspace{0.5cm}$-1$ \hspace{0.5cm}$0$ \hspace{0.5cm}$1$ \hspace{0.5cm}$2$  }
+      \end{columns}
+    \end{figure}
+
+
+
+
+\end{frame}
+
+
+
+\note{hello}
+
+
+
+
+
+\section{Conclusion}
+
+\normalsize
+\begin{frame}
+\linespread{1.2}
+\Wider[3.5em]{
+\frametitle{Conclusion}
+\begin{itemize}
+\item The key factors associated with \textbf{climate knowledge}:
+\begin{itemize}
+\item Female: negative effect
+\item Financial literacy: positive effect
+\item Score on the Cognitive Reflection Test: positive effect 
+\end{itemize} 
+
+\item The key factors associated with \textbf{WTP for climate change mitigation}:
+
+\begin{itemize}
+
+\item Age: negative effect
+\item Numeracy, financial literacy: negative effect
+\item Attitudes and beliefs about redistribution of income and wealth
+\item Climate change risk perception: positive effect (robustness check)
+\end{itemize}
+
+\end{itemize}}
+\linespread{1}
+\end{frame}
+
+\note{ Interesting for climate knowledge: behavioral variabless not significant, not even opinions. education ordinal.pops out for the smaller sample Lasso \\
+Interesting for climate knowledge: some evidencem that also climcare in 100 years, but not good for proportional odds thing\\
+Discount rate mildly significant, SVO little bit significant for fuel\\
+WTP: HOW MUCH FEMALE WANT TO PAY DOES NOT DEPEND ON CLIMPOL SO MUCH}
+
+
+\section*{~~}
+
+\begin{frame}
+\centering
+\huge{Thank you for attention}
+\end{frame}
+
+
+
+\note{hello}
+
+
+\begin{frame}\label{ClimpolClimcare}
+\Wider[0.9em]{
+\frametitle{Climate change and policies risk perception}
+\linespread{1.2}
+\textbf{Climate care} \\
+\vspace{0.3cm}
+How serious a problem do you think climate change is at this moment?
+\\
+
+\vspace{0.3cm}
+{\footnotesize
+
+\begin{tabular}{lrrrrrrrrrrr} 
+\hline
+\rowcolor{PaleGreen}Response&$0$&$1$&$2$&$3$&$4$&$5$&$6$&$7$&$8$&$9$&$10$\\
+ \hline
+ \cellcolor{PaleGreen}Frequency&$77$&$68$&$112$&$171$&$199$&$430$&$858$&$1025$&$786$&$395$&$471$\\
+\hline
+\end{tabular}}
+
+}
+\Wider[1.8em]{
+\vspace{0.6cm}
+\textbf{Climate policy} \\
+\vspace{0.3cm}
+Which affects you and your way of life more, climate change (10) or policies (0) to reduce
+greenhouse gas emissions?
+\\
+
+\vspace{0.3cm}
+{\footnotesize
+
+\begin{tabular}{lrrrrrrrrrrr} 
+\hline
+\rowcolor{PaleGreen}Response&$0$&$1$&$2$&$3$&$4$&$5$&$6$&$7$&$8$&$9$&$10$\\
+ \hline
+ \cellcolor{PaleGreen}Frequency&$130$&$127$&$256$&$374$&$415$&$1174$&$670$&$621$&$397$&$205$&$223$\\
+\hline
+\end{tabular}}
+}
+
+
+\vspace{0.6cm}
+n=$4592$
+
+
+\end{frame}
+\note{The same for seriousness in 10 and 100 years and policy for children and grandchildren}
+
+
+
+
+
+
+\begin{frame}\label{Data3}
+\frametitle{Data} 
+n=$4592$
+
+ \begin{figure}
+ \caption*{Occupation}
+%\includegraphics[width = 1\textwidth]{Occupation.png}  
+\end{figure}
+ 
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\note{ hello}
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}\label{Questions}
+
+\frametitle{Survey questions and coding}
+\linespread{1.2}
+\textbf{Financial literacy} \\
+\hspace{1cm} Number of correct answers out of three financial questions
+\\
+\vspace{0.3cm}
+\begin{tabular}{lllllll} 
+\hline
+\multicolumn{1}{c}{0} & \multicolumn{1}{c}{0.5} & \multicolumn{1}{c}{1}  & \multicolumn{1}{c}{1.5} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{2.5} & \multicolumn{1}{c}{3}\\
+\hline
+\end{tabular}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}\label{Questions}
+
+\frametitle{Survey questions and coding}
+\linespread{1.2}
+\textbf{Understands interest} \\
+\hspace{1cm}1 = Understands compound interest
+\\
+\vspace{0.3cm}
+\begin{tabular}{llll} 
+\hline
+\multicolumn{1}{c}{-1} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{0.5} & \multicolumn{1}{c}{1} \\
+\hline
+\end{tabular}
+
+\vspace{1.3cm}
+
+\textbf{Understands inflation} \\
+\hspace{1cm}1 = Understands inflation
+\\
+\vspace{0.3cm}
+\begin{tabular}{cccc} 
+\hline
+\multicolumn{1}{c}{-1} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{0.5} & \multicolumn{1}{c}{1} \\
+\hline
+\end{tabular}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}\label{Questions}
+
+\frametitle{Survey questions and coding}
+\linespread{1.2}
+\textbf{Cognitive Reflection Test} \\
+\begin{itemize}
+ \item In survey called numeracy
+ \item Frederick (2005)
+ \item Number of correct answers - max is 3
+\end{itemize}
+
+\vspace{0.3cm}
+\begin{tabular}{lllllll} 
+\hline
+\multicolumn{1}{c}{0} & \multicolumn{1}{c}{0.5} & \multicolumn{1}{c}{1}  & \multicolumn{1}{c}{1.5} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{2.5} & \multicolumn{1}{c}{3}\\
+\hline
+\end{tabular}
+
+\vspace{1.3cm}
+
+
+\end{frame}
+
+
+\note{The Cognitive reflection test measures the ability or disposition to reflect on a question and resist reporting the first response that comes to mind}
+
+
+
+
+
+
+\begin{frame}\label{Questions}
+
+\frametitle{Survey questions and coding}
+\linespread{1.2}
+\textbf{Not getting fair share of nation's wealth} \\
+\hspace{1cm}Ordinary working people do not get their fair share of the nation's wealth
+\\
+\vspace{0.3cm}
+\begin{tabular}{lllll} 
+\hline
+Strongly disagree & Disagree & Neutral & Agree & Strongly agree \\
+\multicolumn{1}{c}{-2} & \multicolumn{1}{c}{-1} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} \\
+\hline
+\end{tabular}
+
+\vspace{1.3cm}
+\textbf{Hard work is important} \\
+\hspace{1cm}How important is hard work for getting ahead in life?
+\\
+\vspace{0.3cm}
+\begin{tabular}{lllll} 
+
+\hline
+ Not important & Not very  & Fairly  & Very  & Essential \\
+~~~at all & important & important & important & Essential \\
+\multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} & \multicolumn{1}{c}{3} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{5} \\
+\hline
+\end{tabular}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}\label{Questions}
+
+\frametitle{Survey questions and coding}
+\linespread{1.2}
+\textbf{Government should redistribute income} \\
+\hspace{1cm}Government should redistribute income from the better off to those who are less well off
+\\
+\vspace{0.3cm}
+\begin{tabular}{lllll} 
+\hline
+Strongly disagree & Disagree & Neutral & Agree & Strongly agree \\
+\multicolumn{1}{c}{-2} & \multicolumn{1}{c}{-1} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} \\
+\hline
+\end{tabular}
+
+
+
+
+\end{frame}
+
+
+
+
+\begin{frame}\label{Questions}
+\Wider[1.5em]{\small
+\frametitle{Survey questions and coding}
+\linespread{1}
+\textbf{Better of parents} \\
+\hspace{1cm}Compared with your parents when they were about your age, are you better or worse in
+your income and standard of living generally? 
+\\
+\vspace{0.45cm}
+\begin{tabular}{lllll} 
+\hline
+\small Much worse off & \small Worse off &\small About equal &\small Better off &\small Much better off \\
+\multicolumn{1}{c}{-2} & \multicolumn{1}{c}{-1} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} \\
+\hline
+\end{tabular}
+
+\vspace{0.45cm}
+\textbf{Better of kids} \\
+\hspace{1cm}Compared with you, do you think that your children, when they reach your age, will be
+better or worse in their income and standard of living generally?
+\\
+\vspace{0.45cm}
+\begin{tabular}{lllll} 
+\hline
+\small Much worse off & \small Worse off &\small About equal &\small Better off &\small Much better off \\
+\multicolumn{1}{c}{-2} & \multicolumn{1}{c}{-1} & \multicolumn{1}{c}{0} & \multicolumn{1}{c}{1} & \multicolumn{1}{c}{2} \\
+\hline
+\end{tabular}
+
+\vspace{0.45cm}
+\textbf{My parents and kids have about same living standards as me} \\
+\hspace{1cm}1= Both questions above answered\textit{\textbf{ about equal }}(0) \\
+\hspace{1cm}0= Otherwise
+}
+\end{frame}
+
+
+\begin{frame}
+
+\frametitle{Methods}\label{MethodsLogit} 
+\textbf{The Logistic Regression Model:}
+\begin{itemize}
+\item Binary response variable $Y$, explanatory variable $X$
+\item $\pi(x)~~~ =~~~ P(Y=1|X=x) ~~~=~~~ 1-P(Y=0|X=x)$
+
+
+\begin{equation}\label{LRegression}
+\begin{array}{lcl}
+
+\pi(x) &=& \frac{exp(\alpha+ \beta x)}{1+exp(\alpha+ \beta x)}
+\end{array}
+\end{equation}
+
+\item \textbf{Logit} = Log odds
+
+\begin{equation}\label{Logit}
+\begin{array}{lclcl}
+
+logit \big[ \pi(x) \big] &=& log \frac{ \pi(x)}{1- \pi(x)} & \\
+\\
+\end{array}
+\end{equation}
+
+
+After substituting \eqref{LRegression} into \eqref{Logit} and working out:
+
+\begin{equation}\label{Logit2}
+\begin{array}{lclcl}
+
+
+logit \big[ \pi(x) \big] &=& log \frac{ \pi(x)}{1- \pi(x)}  &=& \alpha + \beta x \\
+\end{array}
+\end{equation}
+
+\item Substituting $\hat{\alpha} + \hat{\beta} x$ into \eqref{LRegression} we get probability that $y$ is equal to $1$ for particular $x$
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\note{ hello}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{Methods}\label{MethodsCumLog1} 
+\textbf{Cumulative Logit Models}
+\begin{itemize}
+\item Logits of cumulative response probabilities
+\item Logistic regression generalized for ordinal response variable
+\item $Y$ is a categorical response with $M$ categories $(m=1..M)$
+
+\begin{equation}\label{PCumLog}
+\begin{array}{lclcl}
+P( Y \leq m| x) &=& \pi_1(x)+...+ \pi_m(x), ~~m=1,...,M
+\end{array}
+\end{equation}
+
+\item The \textbf{cumulative logits} are defined as:
+\begin{equation}\label{PCumLog}
+\begin{array}{lclcl}
+logit  \big[P( Y \leq m| x) \big] &=& log\frac{ P( Y \leq m| x)}{1- P( Y \leq m| x)}         \\
+\\
+ &=& log \frac{\pi_1(x)+...+ \pi_m(x)}{\pi_{m+1}(x)+...+ \pi_M(x)}, ~~m=1,...,M-1
+
+
+\end{array}
+\end{equation}
+
+
+\end{itemize}
+
+
+\end{frame}
+
+
+
+
+\note{For nominal dependent variables, better model is MULTICATEGORY LOGIT model \\
+each cumulative logit uses all J response categories
+\\ amodel for logit[P<=j)[ alone is an ordinary logit model for a binary response where categories 1to j form one outcome and categories j+1 to J form the second.
+\\
+models can use all J-1 models in a single parsimonious model
+
+}
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{Methods}\label{MethodsCumLog2} 
+\textbf{Proportional Odds Model}
+A model, that simultaneously uses all cumulative logits is:
+\begin{equation}\label{PCumLog}
+\begin{array}{lclcl}
+logit  \big[P( Y \leq m| x) \big] &=& \alpha_m + \boldsymbol{\beta'x}, ~~m=1,...,M-1
+\end{array}
+\end{equation}
+\hspace{-0.5cm}
+\begin{itemize}
+\item Each cumulative logit has its own intercept $\alpha_m$ increasing in $m$ 
+\item The same effect $\boldsymbol{\beta}$ for each logit
+\item The odds of response $\leq m$ at $\boldsymbol{x} = \boldsymbol{x_1}$ are $exp[\boldsymbol{\beta}'(\boldsymbol{x_1}-\boldsymbol{x_2})]$ times the odds at $\boldsymbol{x} = \boldsymbol{x_2}$
+\\
+\begin{itemize}
+\item[$\boldsymbol{\hookrightarrow}$] Thus, log of odds ratio of cumulative probabilities is proportional to distance between $\boldsymbol{x_1}$ and $\boldsymbol{x_2}$ $\Rightarrow$ \textcolor{DarkGreen}{\textbf{PROPORTIONAL ODDS MODEL}}
+\end{itemize}
+\item Must satisfy the \textcolor{DarkGreen}{\textbf{proportional odds assumption}}
+\begin{itemize}
+\item Can be tested e.g. by likelihood ratio test against unconstrained multinomial logit
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\note{Model (5) proportional odds model constrains the J-1 response curves to have the same shape. Thus it is not the same as fitting separate logit model for each J
+\\
+test of proportional odds assumption: multinoial logit has much more parameters, separate beta forJ1 categories and alpha as well
+}
+
+
+
+
+
+
+\begin{frame}
+\Wider[1em]{
+\frametitle{\small Results: Climate knowledge - Cumulative logits model}\label{Results-Logit} 
+\begin{table}\label{Results-LogitT1} %Avon233
+\small
+\begin{tabular}{l|cl|cl|cl} 
+\hline
+\rowcolor{blue} \multicolumn{7}{c}{\textbf{\textcolor{white}{Marginal effects, n=4592}}}  \\
+\hline
+\multicolumn{7}{c}{\vspace{-0.2cm}} \\
+
+\hline
+\rowcolor{LightCyan} \multicolumn{1}{l|}{\textbf{Correct answers:}} &\multicolumn{2}{c|}{$\boldsymbol{0}$} &\multicolumn{2}{c|}{$\boldsymbol{2}$}&\multicolumn{2}{c}{$\boldsymbol{4}$}\\
+
+\hline
+Female& ${4\times10^{-4}}$& *& $0.034$ &*** &$-0.013$&***\\
+
+
+Financial literacy&$-1\times10^{-4}$&$\bullet$ & $-0.014$ &*** &$0.005$& ***\\
+
+
+Cognitive reflection 1&$-3\times10^{-5}$ & &$-0.003$& &$0.001$& \\
+Cognitive reflection 2&$-2\times10^{-4}$ &$\bullet$ &$-0.020$&** &$0.006$& ***\\
+Cognitive reflection 3&${-4\times10^{-4}}$&* &$-0.043$ &*** &$0.005$&$\bullet$  \\
+
+Climate care&$1\times10^{-4}$&$\bullet$  &$0.012$ &*** &$-0.005$&*** \\
+Climate policy&$5\times10^{-5}$&* &$0.005$ & ***&$-0.002$& ***\\
+
+\hline
+\end{tabular}
+%
+\end{table}}
+
+\vspace{-0.3cm}
+\begin{table}\label{Results-LogitT1} %Avon233
+
+\small
+\begin{tabular}{l|cl|cl} 
+\hline
+\rowcolor{LightCyan} \multicolumn{1}{l|}{\textbf{Correct answers:}}&\multicolumn{2}{c|}{$\boldsymbol{6}$} &\multicolumn{2}{c}{$\boldsymbol{8}$}\\
+\hline
+Female&$-0.024$&***&$-3\times10^{-4}$&$\bullet$\\
+Financial literacy&$0.010$&***&$1\times10^{-4}$&$\bullet$\\
+Cognitive reflection 1&$0.002$& &$2\times10^{-5}$&\\
+Cognitive reflection 2&$0.016$&**&$2\times10^{-4}$&\\
+Cognitive reflection 3&$0.044$&***&$-5\times10^{-4}$&$\bullet$\\
+Climate care&$-0.009$&***&$-1\times10^{-4}$&*\\
+Climate policy&$-0.003$&***&$-4\times10^{-5}$&$\bullet$\\
+\hline
+\end{tabular}
+%
+\end{table}
+
+
+
+
+\end{frame}
+
+       \linespread{1}
+\note{  HODNE ZAJIMAVE. REDISTRIBUTE.. Dan Cone, ktery napsal clanek na ty climate knowledge questions, mu vychazelo, ze politicke nazory signifikantni. Me taky ale opacne. u redistribut, kdyz pridam, tak ti co souhlasi maji zapornu koeficient!!!!!je to myslim proto, ze lide, kteri jsou levicaci spis budoumit vzdelani humanitni, sociologicke nez technicke. to je taky duvod, proc si myslim, ze numeracy a literacy...ze to muze byt v politickych nazorech?? ze levicaci nemaji technicke vzdelani???}
+
+
+
+
+
+
+
+
+
+
+%\begin{frame}\label{Questions}
+
+%\textcolor{red}{Social Value orientation explain}
+
+%\textcolor{green}{Climcare a Climpol urcite}
+
+%\textcolor{red}{results of stepwise as a backup at least?}
+
+%\vspace{0.45cm}
+
+%\end{frame}
+
+
+
+\normalsize
+
+
+
+
+
+
+\begin{frame}{Previous research}\label{Previous research}
+\begin{itemize}
+\item Worldwide: \textbf{Education} is the strongest predictor of climate change awareness
+
+\item  \cite{Leiserowitz2015}
+
+
+\begin{itemize}
+\item{Data from 119 countries - global assessment}
+
+\item{Predictors of climate change awareness:}
+\begin{itemize}
+\item Civic engagement
+\item Communication access
+\item Education
+\item Geographic location
+\item Household income
+\end{itemize}
+
+\item{Predictors of climate change risk perception:}
+\begin{itemize}
+\item Believes about \textbf{anthropogenic cause} of climate change
+\item Perception of \textbf{local temperature changes}
+\item Attitudes towards government efforts for environmental preservation 
+\item Local water and air quality
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\note{Gallup World Poll}
+
+
+
+
+
+\begin{frame}\label{Previous research2}
+\begin{itemize}
+\small
+ 
+ \item \cite{Braaten2014}
+\begin{itemize}
+ \item Warm glow is important for motivating environmentally friendly behavior
+ \item Motivation of good feeling from giving as contrast to 'pure altruism'
+ \item Substantial share of contributions to carbon abatement not dependent on any direct climate effect
+ \end{itemize} 
+
+ 
+  \item \cite{Carlsson2013}
+\begin{itemize}
+\item Preferences of distributing the burden of reducing CO\textsubscript{2}
+\item Discrete choice experiment in USA and Chine
+\item WTP varies with socioeconomic characteristics and attitudes
+\item Educated people higher WTP for rules less costly for their country
+\item Less costly rules for respondents' country preferred
+ \end{itemize}
+
+  \end{itemize} 
+  \end{frame}
+
+
+
+
+
+\begin{frame}\label{Previous research3}
+\begin{itemize}
+\small
+ \item \cite{GlenkColombo2013}
+\begin{itemize}
+ \item Focus on risk aversion and willingness to pay for emission reduction 
+ \item If uncertainty over outcomes exists, it is important to consider people’s risk preferences.
+  \item Choice experiment in Scotland 
+   \item Comparison of different specifications arising different assumptions about the way respondent process information on outcome-related risk
+   \item Significant differences between different specifications can arise in terms of model fit and WTP estimates
+   \item Outcome related risk matters to respondents
+ \end{itemize}
+  \end{itemize}
+  \end{frame}
+ 
+ 
+ 
+\begin{frame}\label{Previous research4}
+\begin{itemize}
+\small
+
+
+  \item \cite{Kahan2015}
+\begin{itemize}
+ \item Use the same 8 climate knowledge questions mostly to point out problem that what is designed to measure knowledge often measures something else, like cultural identification
+ \item Strong correlation between risk perception from global warming and political outlook (right = small risk)
+  \item Correlation between beief in human cause of global warming and political outlook (left vs right)
+ \end{itemize}
+
+  
+ \item \cite{Morrison2015}
+\begin{itemize}
+ \item Relationship between religion and climate change attitudes and behavior
+ \item Differences across religious groups found in terms of:
+\begin{itemize} 
+ \item human induced climate change
+ \item the level of consensus among scientists 
+  \item their own efficacy 
+  \item the need for policy responses
+  \end{itemize}
+
+ \end{itemize} 
+  \item Ordered logits model
+   \item Buddhists, atheists, and agnostics the most engaged with climate issues, Christian literalists the least engaged
+ 
+ 
+
+  \end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\small
+\frametitle{References}
+\bibliographystyle{apa}
+
+\bibliography{referencesFS}
+\end{frame}
+
+\end{document}
+

@@ -1,0 +1,755 @@
+%\documentclass[notes]{beamer}       % print frame + notes
+%\documentclass[notes=only]{beamer}   % only notes
+\documentclass{beamer}              % only frames
+  \usepackage[english]{babel}
+\usepackage[round]{natbib}
+%\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\usepackage{lmodern}
+\usepackage{marvosym} % \MVRIGHTarrow
+
+\usepackage{amsmath}  
+\usepackage{multirow,graphicx,array}
+\usepackage{multicol}
+\usepackage{hhline}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{threeparttable,booktabs}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage{caption}
+\usepackage{fixltx2e}
+\usepackage{rotating}
+\usepackage{amssymb}
+
+
+
+\usetheme{Singapore}
+\useoutertheme{miniframes}
+\AtBeginSection[]{\subsection{}}
+
+
+\newcommand{\RowColor}{\rowcolor{gray} \cellcolor{white}}
+\newcommand{\RowColorY}{\rowcolor{yellow} \cellcolor{white}}
+
+
+
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
+
+
+
+\title{Drought and its Effects on Economy}  
+\author{Monika Novackova} 
+\date{December 2017} 
+\institute{University of Sussex}
+
+\setbeamercolor{block title}{bg=purple!30,fg=black}
+
+
+
+
+
+\begin{document}
+
+
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{DarkGreen}{rgb}{0.1803922,0.545098,0.3411765}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{PaleGreen}{rgb}{ 0.5960784,0.9843137, 0.5960784}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{bored}{rgb}{0.8, 0.0, 0.0}
+\definecolor{babypink}{rgb}{0.96, 0.76, 0.76}
+
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+
+
+
+\maketitle
+
+
+\normalsize
+
+\begin{frame}\label{My Interest}
+ 
+\large{My research interest:} \\
+\vspace{0.7cm}
+
+\large{\hspace{1cm}\textbf{Effects of droughts on economy in Kenya}}
+\end{frame}
+\note{A}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame} 
+
+\note{A}
+
+
+\section{Definition of Drought}
+
+
+
+\begin{frame}\label{Definition of Drought}
+\frametitle{Definition of Drought} 
+ \begin{itemize}
+
+
+\item Prolonged absence or marked deficiency of precipitation  
+\item Deficiency of precipitation that results in water shortage for some activity
+or for some group
+\item Period of abnormally dry weather sufficiently prolonged for the lack of precipitation to cause a serious hydrological imbalance 
+\end{itemize} 
+
+(\citealp{heim2002,IPCCtrenberth})
+\end{frame}
+
+\note{Heim = a review of the 20tieth century indices, Trenberth = IPCC report, summary for policy makers \\
+
+
+}
+
+\begin{frame}\label{Definition of Drought}
+\frametitle{Categories of Definition of Drought} 
+ \begin{itemize}
+
+
+\item \textbf{Conceptual definitions:} dictionary types, usually defining boundaries of the concept of drought \\ 
+e.g. \textit{An extended period - a season, a year, or several years of deficient rainfall relative to the statistical multi-year mean for a region \citep{schneider1996}}
+\item \textbf{Operational definitions:} Foundation for an effective early warning system \\ e.g. SPI, PDSI
+
+\end{itemize} 
+
+(\citealp{wilhite1985,wilhite2000})
+\end{frame}
+
+\note{An example of operational definition of agricultural drought can be obtaining the rate of soil water depletion based on precipitation and evapotranspiration rates and expressing these relationships in terms of drought effects on plant behaviour \citep{wilhite2000} besides PDSI SPI\\
+\vspace{0.3cm}f  \\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}
+
+}
+
+
+\begin{frame}
+\frametitle{Types of Drought}
+\textit{operational drought} \\
+  \begin{enumerate}
+      \item \textbf{Agricultural drought:} moister deficits in upper layer of
+soil up to about one meter depth
+      \item \textbf{Meteorological drought:} which refers to prolonged
+deficit of precipitation
+      \item \textbf{Hydrological drought:} relates to low stream flow, lake and levels of groundwater
+      \item \textbf{Socioeconomic drought:} associates the supply and demand of some economic good with elements of meteorological, agricultural and hydrological drought
+  \end{enumerate}
+  (\citealp{heim2002,IPCCtrenberth,AMS2013})
+\end{frame}
+
+
+
+\note{first three types in AMS 1997, then later the fourth added? \\
+\vspace{0.3cm}first three types physical, the last monetary..(KEYANTASH and dracup 2000, evaluation of drough indecies) \\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}
+
+}
+
+
+
+\section{Drought Indices}
+
+\begin{frame}\label{Indices1}
+\frametitle{Drought Indices} 
+\begin{block}{Early measures of drought}
+\begin{itemize}
+\item Length of period without $24$-h precipitation of $1.27$mm \citep{munger1916}
+
+\item Length of drought in days, end of drought defined as $2.54$mm of precipitation in $48$ hours \citep{blumenstock1942}
+\item Measure of precipitation over a given time period \citep{wilhite1985}
+\item Antecedent Precipitation Index (API) based on amount and timing of precipitation, inverse drought index - for flood forecasting \citep{mcquigg1954}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+\note{these are some examples of early drought indices\\
+\vspace{0.3cm} A numerical measure is needed to compare severity of drought across different time periods
+or geographical locations. However, as a result of a large disagreement about a definition of drought, there is no single universal drought index. Instead of that a number of measures of drought has been developed\\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}
+
+}
+
+\begin{frame}\label{Indices2}
+\frametitle{Drought Indices} 
+
+\begin{itemize}
+\item \textbf{Palmer Drought Severity Index} (PDSI, \citealp{palmer1965})
+
+\begin{itemize}
+
+\item Significant milestone in history of drought severity quantification
+\item Based on a hydrological accounting system
+\item Incorporate antecedent precipitation, moisture supply and moisture demand
+\end{itemize}
+\item \textbf{Standardized Precipitation Index} (SPI, \citealp{SPI})
+\begin{itemize}
+\item Can be interpreted as the number of standard deviations by which the observed value differs from the long-term mean
+\item Standardised departure of observed precipitation from a chosen probability distribution function which models the precipitation data \citep{SPIonline}
+
+\end{itemize}
+
+\end{itemize}
+
+
+\end{frame}
+
+
+\note{On short timescales, the SPI is closely related to soil moisture, while at longer timescales, the SPI can be related to groundwater and reservoir storage.\\
+\vspace{0.3cm}SPI: usuallygamma or a Pearson Type III distribution \\
+\vspace{0.3cm} can be used across regions with very different climates\\
+\vspace{0.3cm}SPEI no assumptions about underlining system
+\\
+\vspace{0.3cm} requires more data than SPI
+\\
+\vspace{0.3cm} SPEI sensitive to method that calculate potential evapotranspiration
+\vspace{0.3cm}
+Evapotranspiration (ET) is the sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. Evaporation accounts for the movement of water to the air from sources such as the soil, canopy interception, and waterbodies. 
+}
+
+
+\begin{frame}\label{Indices3}
+\frametitle{Drought Indices} 
+
+ \begin{itemize}
+ \item \textbf{Standardized Precipitation Evapotranspiration Index} (SPEI, \citealp{SPEI})
+\begin{itemize}
+\item Extention of SPI
+\item Accounts for potential evapotranspiration (hence captures impacts of increased temperature on water demand)
+\end{itemize}
+\item Number of other drought indicators and indices exist
+\begin{itemize}
+\item E.g.: Percent of Normal Precipitation, Drought Area Index (DAI), Soil Moisture Anomaly (SMA), Standardized Water-level Index (SWI), Normalized Difference Vegetation Index (NDVI)
+\end{itemize}
+\item  \textit{For a detailed overview of drought indices see e.g.:} \cite{monacelli2005}, \cite{svoboda2016} or \cite{zargar2011}
+
+\item \cite{keyantash2002}: The quantification of drought: an evaluation of drought indices
+\end{itemize} 
+
+
+\end{frame}
+
+\note{ the examples of indices are from the following categories:meteorology, soil moisture, hydrology, remote sensing \citep{svoboda2016}
+\vspace{0.3cm}f  \\
+\vspace{0.3cm} f\\
+\vspace{0.3cm}}
+
+
+
+\section{Effects of Droughts}
+
+
+
+\begin{frame}
+
+\frametitle{Effects of droughts on economy}\label{Effects} 
+\begin{block}{\textbf{Computable General Equilibrium (CGE)} Models }
+\begin{itemize}
+
+\item Consists of equations describing model variables and a database (input-output tables, SAM matrix)
+\item Assuming optimizing behaviour (cost minimizing producers, optimal households demands)
+
+
+\item \underline{\textbf{\cite{OxfamIDS}}}
+\begin{itemize}
+\item Exploring range of scenarios for food price increase in 2030
+\begin{itemize}
+\item 1. Baseline 2. Climate change 3. Climate change with adaptation 4. Adaptation only in sub-Saharan Africa
+\end{itemize}
+\item Global coverage, set of individual country models, linked through international trade
+\item Climate change (incl. drought) modelled as changes in factor productivity (usually negative)
+
+\end{itemize}
+
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+\note{A}
+
+
+
+
+\begin{frame}
+
+\frametitle{Effects of droughts on economy}\label{Effects} 
+\begin{block}{\textbf{Computable General Equilibrium (CGE)}}
+\begin{itemize}
+
+\item[~] \underline{\textbf{\cite{OxfamIDS}}}
+\begin{itemize}
+\item Solves the within-country models and between-country trade
+relationships simultaneously
+\item 19 region, 12 sector/commodity group, 8 commodity groups
+\end{itemize}
+\begin{table}
+\begin{footnotesize}
+\begin{tabular}{lll} 
+\hline
+\rowcolor{PaleGreen}  & \textbf{Determined by model}  \\
+\rowcolor{PaleGreen} \textbf{Fixed (inputs)} & \textbf{(outputs)}  \\
+ \hline
+Agricultural productivity growth	& Production volumes of \\
+&  \hspace{0.5cm}food commodities \\
+Commodity shares in hh. expenditure &Production vol. per capita \\
+Shares of import in demand (commodities) & World market  \\
+GDP growth rates&\hspace{0.5cm} food prices (change)\\
+Population growth& Domestic food price (change)\\
+& Volumes of global trade\\
+Shares of food in hh. expenditure  & Aggregate index of
+\\
+ & \hspace{0.5cm}consumption p.capita
+\\
+ \hline
+\end{tabular}
+\end{footnotesize}
+\end{table}
+
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\note{
+\vspace{0.3cm}A CGE model consists of equations describing model variables and a database (usually very detailed) consistent with these model equations\\
+\vspace{0.3cm}
+\vspace{0.3cm}
+}
+
+
+
+\begin{frame}
+
+\frametitle{Effects of droughts on economy}\label{Effects} 
+\begin{block}{\textbf{Computable General Equilibrium (CGE)}}
+
+\begin{itemize}
+\item \underline{\textbf{\cite{robinson2010}}}
+\begin{itemize}
+\item Ethiopia, Social Accounting Matrix (SAM)
+
+\item Model drought as a $20\%$ reduction in crop productivity and $20$ reduction of livestock capital
+\item Effects of shocks in production on cereal prices and food consumption
+\item Includes a scenario with large-scaled inflow of wheat financed by rest of the world
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\note{
+\vspace{0.3cm}the second study: robinson and willenbockel: effects of the 20 percent reductions caused by drought cause 2.3 percent decrease in Ethipia GDP. Also models price transition between international and domestic prices..
+\\
+\vspace{0.3cm}robinson: also model food aid (decrease prices of food>>good for all net food purchasers
+\\qe
+\vspace{0.3cm}a\\}
+
+
+
+\begin{frame}
+
+\frametitle{Effects of droughts on economy}\label{Effects} 
+\begin{block}{\textbf{Computable General Equilibrium (CGE)}}
+
+\begin{itemize}
+
+\item \underline{\textbf{\cite{robinson2010}}}
+\begin{itemize}
+\item 5 agro-ecological zones,46 production activities (incl. 35 zone specific agricultural production sectors), 22 commodity groups,  15 primary factors of production
+\end{itemize}
+
+
+\begin{table}
+\begin{footnotesize}
+\begin{tabular}{lll} 
+
+
+\hline
+\rowcolor{PaleGreen} \textbf{Fixed (inputs)} & \textbf{Determined by model (outputs)}  \\
+ \hline
+Capital stock& Domestic price of each commodity \\
+Land (by region) & Land allocated across crops \\
+Supply of labor per skill type& Real wages\\
+Foreign capital inflow	& Real exchange rate\\
+Trade balance	& \\
+ \hline
+\end{tabular}
+\end{footnotesize}
+\end{table}
+
+\begin{footnotesize}
+
+\item The simulation use a 'balanced' macro closure in which aggregate investment, government demand, and consumption are fixed shares of total absorption
+\item Intermediate inputs into production are determined as fixed shares
+of the quantity of output
+
+\end{footnotesize}
+\end{itemize}
+\end{block}
+\end{frame}
+\note{
+
+\vspace{0.3cm}
+\vspace{0.3cm}a
+\\
+\vspace{0.3cm}a
+\\
+\vspace{0.3cm}a
+}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{Effects of droughts on economy}\label{Effects} 
+
+\begin{itemize}
+
+\item \textbf{\cite{Pedram2016}}
+
+\begin{itemize}
+\item National production losses per disaster (droughts, floods and extreme temperatures)
+\item Worldwide, superposed epoch analysis
+\item On average $10.1\%$ reduction of cereal production can be linked to drought
+\end{itemize}
+\item \textbf{\cite{Mehrabi2017}}
+\begin{itemize}
+\item Cumulative production losses linked to extreme heat and drought events
+\item Per years (53), countries (131), commodities (6)
+\end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+\note{Lesk: 9.1 percent reduction is attributable to extreme heat.
+They did not find any significant effect of extreme cold and 
+oods on production.
+\vspace{0.3cm} mehrabi: estimate counter factual production in disaster years
+\vspace{0.3cm}mehrabi:units are a bit like a panel - years x commodity x country x disaster (disaster years and not disaster years
+\\mehrabi: difference in production of disaster years and non-disaster year average. Cumulative impact: sum per countries and disasters. Loss relatively to (divided by) production + loss of production
+\vspace{0.3cm}mehrabi: the most severe losses angola, botswana, USA, Australie, Paraguay, Angola\\
+\vspace{0.3cm}a
+\vspace{0.3cm}
+}
+
+
+
+
+\section{Effects of Climate}
+
+\begin{frame}
+
+\frametitle{Effects of climate and weather on economy}\label{EffectsCLimate} 
+
+
+\begin{itemize}
+
+\item Effects on food prices
+
+\begin{itemize}
+
+\item \textbf{\cite{Brown2015}}
+\begin{itemize}
+\item  Climate measured by NDVI vegetation index 
+\item  Effects of NDVI and world food prices on local food prices
+\item $20\%$ prices affected by weather, $9\%$ by international prices
+\end{itemize}
+
+\end{itemize}
+
+
+\item Effects on production (production function approach)
+\begin{itemize}
+\item \textbf{\cite{Ochieng2016}}
+\begin{itemize}
+\item Effect of climate variability and change on crop revenue
+\item Augmented production function, Kenya
+\item  Household FE
+\end{itemize}
+\item \textbf{\cite{Deschenes2007Ric}:} US county level, positive effect of global warming
+\end{itemize}
+\item Effects on land prices or yields/acre (Ricardian analysis)
+\begin{itemize}
+\item  \textbf{\citet{kabubo2007}:} Kenya, warming harmful
+
+\item  \cite{SeoMendelsohn} and \cite{KMendelsohn2008}: mild and wet warming - positive, dry more severe warming - negative
+
+
+\end{itemize}
+
+\end{itemize}
+\end{frame}
+\note{brown, Khsingar - KALMAN FILTER
+
+\vspace{0.3cm}brown, Khsingar: developing world (Africa, South Asia, Latin America)	\\
+\vspace{0.3cm}Seo et. al: Africa- 16 agro-ecological zones\\
+\vspace{0.3cm}a\\
+\vspace{0.3cm}}
+% tady mozna pridat nejake ricardian studie a rozdelit to na dva slidy
+
+
+
+\section{My Suggestion}
+
+
+\begin{frame}
+
+\frametitle{My suggestion - panel estimation}\label{MySuggestion1} 
+
+My interest: \textbf{Effects of drought on economy in Kenya}
+\begin{itemize}
+
+\item \textbf{Response variable}
+
+\begin{itemize}
+\item Volumes of production (crop specific, total)
+\item Profit per acre \normalsize{\citep{Deschenes2007Ric}}
+
+\begin{itemize}
+\item \footnotesize{(Value of agricultural products - prod. expanses)/acres (crops, pasture, grazing)}\\ 
+\end{itemize}
+\end{itemize}
+\item \textbf{Units of analysis}
+\begin{itemize}
+\item Counties in Kenya $\times$ year
+\
+\end{itemize}
+
+
+\item \textbf{Explanatory variable of interest}
+
+\begin{itemize}
+\item Dummy variable (0/1) drought occurred in a particular county and year or not
+\item Several varieties - various specifications of drought:
+
+\end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+\note{also I can try some t-tests, f-test for various grouping - WHAT WOULD BE THE BEST DEFFINITION OF DROUGHT year x county\\
+\vspace{0.3cm}a\\
+\vspace{0.3cm}}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{My suggestion - panel estimation}\label{MySuggestion2} 
+
+My interest: \textbf{Effects of drought on economy in Kenya}
+\begin{itemize}
+
+
+\item \textbf{Explanatory variable of interest}
+
+\begin{itemize}
+\item Dummy variable (0/1) drought occurred in a particular county and year or not
+\item Several varieties - various specifications of drought:
+
+\begin{itemize}
+\item Drought index monthly - NDVI, SPI, SPEI 
+\item Drought index below a specific value ($-1$, $-2$ or $-3$)
+ \begin{description}[abc]  % for indentation of length of abc
+ \item[$\bullet$] At least for one month during a specific year
+ \item[$\bullet$] At least for one month during growing season in a specific year
+ \item[$\bullet$] At least for one month during long rains in a specific year
+  \item[$\bullet$] At least for two (three) consecutive months during a growing season in a specific year
+ \item[$\bullet$] At least for one month during two (three) consecutive growing seasons
+ \end{description}
+
+
+\end{itemize}
+
+
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+\note{also I can try some t-tests, f-test for various grouping - WHAT WOULD BE THE BEST DEFFINITION OF DROUGHT year x county\\
+\vspace{0.3cm}a\\
+\vspace{0.3cm}}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{My suggestion - panel estimation}\label{MySuggestion3} 
+
+My interest: \textbf{Effects of drought on economy in Kenya}
+\begin{itemize}
+
+
+\item \textbf{Explanatory variable of interest}
+
+\begin{itemize}
+\item Dummy variable (0/1) drought occurred in a particular county and year or not
+
+\end{itemize}
+
+
+\item \textbf{Units of analysis:} Counties in Kenya $\times$ year
+
+\item \textbf{Control variables ? - subject to availability}
+
+\begin{itemize}
+\item GDP, soil quality data, population,average land area, average value assets,  climate, degree days?
+\end{itemize}
+
+\item \textbf{Estimation methods}
+
+\begin{itemize}
+\item Fixed effects, SURE, Kalman filter, Box-Jenkins
+\end{itemize}
+
+
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\note{also I can try some t-tests, f-test for various grouping - WHAT WOULD BE THE BEST DEFFINITION OF DROUGHT year x county\\
+\vspace{0.3cm}a\\
+\vspace{0.3cm}}
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{My idea - panel estimation}\label{MySuggestion4} 
+
+
+\begin{align*}
+\begin{array}{lcl}
+ Y_{i,t} &=& \alpha_i +\gamma_t + \delta D'_{i,t} +  \boldsymbol{\beta X_{i,t}}+ \epsilon_{i,t}
+\end{array}
+\end{align*}
+
+\begin{table}
+\begin{small}
+\begin{tabular}{lll}
+
+$Y_{i,t}$ &$=$& Response variable (food production/price), county $i$ in year $t$\\
+$\alpha_i$ &$=$& Fixed effects, county $i$\\
+{\color{darkblue}$\delta$ }&{\color{darkblue}$=$}&{\color{darkblue}{Effect of drought on economy}}\\
+$D_{i,t}$ &$=$& Indicator variable\\
+& &  $D=1$ if drought in county $i$ in year $t$, $D=0$ otherwise\\
+$\boldsymbol{\beta}$ &$=$& Vector of effects of other covariates\\
+$X_{i,t}$ &$=$& Matrix of values of other covariates in county $i$ in year $t$\\
+$\epsilon_{i,t}$ &$=$& Error term \\
+{\color{DarkGreen}$\gamma_t$} & {\color{DarkGreen}$=$}& {\color{DarkGreen}Year specific indicator?}
+\end{tabular}
+\end{small}
+\end{table}
+
+\end{frame}
+
+
+\note{Also waldtest, jako ekvivalent pro celkovy f-test byl signifikantni>> overall fit je moc o}
+
+
+
+\note{hello}
+
+
+\section*{}
+
+\frame[allowframebreaks]{ 
+\centering
+\huge{Thank you for attention}
+}
+
+\note{hello}
+
+\frame[allowframebreaks]{ 
+\small
+\frametitle{References}
+\bibliographystyle{apa}
+\bibliography{referencesFS}
+}
+
+\end{document}
+

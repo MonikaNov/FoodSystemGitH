@@ -1,0 +1,407 @@
+%\documentclass[notes]{beamer}       % print frame + notes
+%\documentclass[notes=only]{beamer}   % only notes
+\documentclass{beamer}              % only frames
+  \usepackage[english]{babel}
+\usepackage[round]{natbib}
+%\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\usepackage{lmodern}
+\usepackage{marvosym} % \MVRIGHTarrow
+
+\usepackage{amsmath}  
+\usepackage{multirow,graphicx,array}
+\usepackage{multicol}
+\usepackage{hhline}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{threeparttable,booktabs}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage{caption}
+\usepackage{fixltx2e}
+\usepackage{rotating}
+
+
+
+
+\usetheme{Singapore}
+\useoutertheme{miniframes}
+\AtBeginSection[]{\subsection{}}
+
+
+\newcommand{\RowColor}{\rowcolor{gray} \cellcolor{white}}
+\newcommand{\RowColorY}{\rowcolor{yellow} \cellcolor{white}}
+
+
+
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
+
+
+
+\title{Climate Change Awareness and Willingness to Pay for its Mitigation: \\ Evidence from the UK}  
+\author{Monika Novackova} 
+\date{April 2017} 
+\institute{University of Sussex}
+
+\setbeamercolor{block title}{bg=purple!30,fg=black}
+
+
+
+
+
+\begin{document}
+
+
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{DarkGreen}{rgb}{0.1803922,0.545098,0.3411765}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{PaleGreen}{rgb}{ 0.5960784,0.9843137, 0.5960784}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{bored}{rgb}{0.8, 0.0, 0.0}
+\definecolor{babypink}{rgb}{0.96, 0.76, 0.76}
+
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+
+ 
+       \hspace{-0.8cm}  \textbf{NDMA Early Warning Phase\\ \hspace{-0.8cm} Classification}
+        
+\vspace{-0.9cm}
+     \begin{figure}
+      \begin{columns}
+        \column{.4\linewidth}
+       
+  \caption*{
+  
+  \textcolor{DarkGreen}{\textbf{\underline{\small{Example: Kitui county}}}}\\
+   
+ \vspace{0.25cm}\hspace{-0.25cm} \textbf{\textit{\textcolor{blue}{Normal $\rightarrow$ Alert $\rightarrow$  Alarm}}} \\
+   \vspace{0.4cm}  
+ \hspace{-0.25cm}  $\bullet$ \small{Bulletins for ASAL counties} \\
+   \hspace{-0.25cm}  $\bullet$ \small{Online since 2013} \\
+     \vspace{0.1cm}  
+  \hspace{0.15cm}    \footnotesize{$\bullet$ But in pdf format} \\ 
+    \vspace{0.1cm}  
+\hspace{-0.25cm}   \small{$\bullet$ For county and month}
+ 
+ }
+        \column{.6\linewidth}
+
+    \vspace{-0.16cm}   \hspace{-0.1cm}   \includegraphics[width = 0.9\textwidth]{PhaseNotick.png}  %565*238
+ \vspace{-0.3cm}  
+      \end{columns}
+    \end{figure}
+   
+
+\vspace{-1.3cm}
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth }
+
+  \vspace{-1.8cm}        
+        \column{.5\linewidth}
+         
+  \hspace{-2.6cm}  \includegraphics[width = 1.2\textwidth]{PrecNA.png}  %565*238
+      \end{columns}
+    \end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+
+ 
+       \hspace{-0.8cm}  \textbf{NDMA Early Warning Phase\\ \hspace{-0.8cm} Classification}
+        
+\vspace{-0.9cm}
+     \begin{figure}
+      \begin{columns}
+        \column{.4\linewidth}
+       
+  \caption*{
+  
+  \textcolor{DarkGreen}{\textbf{\underline{\small{Example: Kitui county}}}}\\
+   
+ \vspace{0.25cm}\hspace{-0.25cm} \textbf{\textit{\textcolor{blue}{Normal $\rightarrow$ Alert $\rightarrow$  Alarm}}} \\
+   \vspace{0.4cm}  
+ \hspace{-0.25cm}  $\bullet$ \small{Bulletins for ASAL counties} \\
+   \hspace{-0.25cm}  $\bullet$ \small{Online since 2013} \\
+     \vspace{0.1cm}  
+  \hspace{0.15cm}    \footnotesize{$\bullet$ But in pdf format} \\ 
+    \vspace{0.1cm}  
+\hspace{-0.25cm}   \small{$\bullet$ For county and month}
+ 
+ }
+        \column{.6\linewidth}
+
+    \vspace{-0.16cm}   \hspace{-0.1cm}   \includegraphics[width = 0.9\textwidth]{PhaseNA.png}  %565*238
+ \vspace{-0.3cm}  
+      \end{columns}
+    \end{figure}
+   
+
+\vspace{-1.3cm}
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth }
+
+  \vspace{-1.8cm}        
+        \column{.5\linewidth}
+         
+  \hspace{-2.6cm}  \includegraphics[width = 1.2\textwidth]{PrecNA.png}  %565*238
+      \end{columns}
+    \end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+
+ 
+       \hspace{-0.8cm}  \textbf{NDMA Early Warning Phase\\ \hspace{-0.8cm} Classification}
+        
+\vspace{-0.9cm}
+     \begin{figure}
+      \begin{columns}
+        \column{.4\linewidth}
+       
+  \caption*{
+  
+  \textcolor{DarkGreen}{\textbf{\underline{\small{Example: Kitui county}}}}\\
+   
+ \vspace{0.25cm}\hspace{-0.25cm} \textbf{\textit{\textcolor{blue}{Normal $\rightarrow$ Alert $\rightarrow$  Alarm}}} \\
+   \vspace{0.4cm}  
+ \hspace{-0.25cm}  $\bullet$ \small{Bulletins for ASAL counties} \\
+   \hspace{-0.25cm}  $\bullet$ \small{Online since 2013} \\
+     \vspace{0.1cm}  
+  \hspace{0.15cm}    \footnotesize{$\bullet$ But in pdf format} \\ 
+    \vspace{0.1cm}  
+\hspace{-0.25cm}   \small{$\bullet$ For county and month}
+ 
+ }
+        \column{.6\linewidth}
+
+    \vspace{-0.16cm}   \hspace{-0.1cm}   \includegraphics[width = 0.9\textwidth]{PhaseNAp.png}  %565*238
+ \vspace{-0.3cm}  
+      \end{columns}
+    \end{figure}
+   
+
+\vspace{-1.3cm}
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth }
+
+  \vspace{-1.8cm}        
+        \column{.5\linewidth}
+         
+  \hspace{-2.6cm}  \includegraphics[width = 1.2\textwidth]{PrecNA.png}  %565*238
+      \end{columns}
+    \end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+
+ 
+       \hspace{-0.8cm}  \textbf{NDMA Early Warning Phase\\ \hspace{-0.8cm} Classification}
+        
+\vspace{-0.9cm}
+     \begin{figure}
+      \begin{columns}
+        \column{.4\linewidth}
+       
+  \caption*{
+  
+  \textcolor{DarkGreen}{\textbf{\underline{\small{Example: Kitui county}}}}\\
+   
+ \vspace{0.25cm}\hspace{-0.25cm} \textbf{\textit{\textcolor{blue}{Normal $\rightarrow$ Alert $\rightarrow$  Alarm}}} \\
+   \vspace{0.4cm}  
+ \hspace{-0.25cm}  $\bullet$ \small{Bulletins for ASAL counties} \\
+   \hspace{-0.25cm}  $\bullet$ \small{Online since 2013} \\
+     \vspace{0.1cm}  
+  \hspace{0.15cm}    \footnotesize{$\bullet$ But in pdf format} \\ 
+    \vspace{0.1cm}  
+\hspace{-0.25cm}   \small{$\bullet$ For county and month}
+ 
+ }
+        \column{.6\linewidth}
+
+    \vspace{-0.16cm}   \hspace{-0.1cm}   \includegraphics[width = 0.9\textwidth]{PhaseNA.png}  %565*238
+ \vspace{-0.3cm}  
+      \end{columns}
+    \end{figure}
+   
+
+\vspace{-1.3cm}
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth }
+
+  \vspace{-1.8cm}        
+        \column{.5\linewidth}
+         
+  \hspace{-2.6cm}  \includegraphics[width = 1.2\textwidth]{PrecNAp.png}  %565*238
+      \end{columns}
+    \end{figure}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+
+
+ 
+       \hspace{-0.8cm}  \textbf{NDMA Early Warning Phase\\ \hspace{-0.8cm} Classification}
+        
+\vspace{-0.9cm}
+     \begin{figure}
+      \begin{columns}
+        \column{.4\linewidth}
+       
+  \caption*{
+  
+  \textcolor{DarkGreen}{\textbf{\underline{\small{Example: Kitui county}}}}\\
+   
+ \vspace{0.25cm}\hspace{-0.25cm} \textbf{\textit{\textcolor{blue}{Normal $\rightarrow$ Alert $\rightarrow$  Alarm}}} \\
+   \vspace{0.4cm}  
+ \hspace{-0.25cm}  $\bullet$ \small{Bulletins for ASAL counties} \\
+   \hspace{-0.25cm}  $\bullet$ \small{Online since 2013} \\
+     \vspace{0.1cm}  
+  \hspace{0.15cm}    \footnotesize{$\bullet$ But in pdf format} \\ 
+    \vspace{0.1cm}  
+\hspace{-0.25cm}   \small{$\bullet$ For county and month}
+ 
+ }
+        \column{.6\linewidth}
+
+    \vspace{-0.16cm}   \hspace{-0.1cm}   \includegraphics[width = 0.9\textwidth]{PhaseNAp.png}  %565*238
+ \vspace{-0.3cm}  
+      \end{columns}
+    \end{figure}
+   
+
+\vspace{-1.3cm}
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth }
+
+  \vspace{-1.8cm}        
+        \column{.5\linewidth}
+         
+  \hspace{-2.6cm}  \includegraphics[width = 1.2\textwidth]{PrecNAp.png}  %565*238
+      \end{columns}
+    \end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+
+ 
+       \hspace{-0.8cm}  \textbf{NDMA Early Warning Phase\\ \hspace{-0.8cm} Classification}
+        
+\vspace{-0.9cm}
+     \begin{figure}
+      \begin{columns}
+        \column{.4\linewidth}
+       
+  \caption*{
+  
+  \textcolor{DarkGreen}{\textbf{\underline{\small{Example: Kitui county}}}}\\
+   
+ \vspace{0.25cm}\hspace{-0.25cm} \textbf{\textit{\textcolor{blue}{Normal $\rightarrow$ Alert $\rightarrow$  Alarm}}} \\
+   \vspace{0.4cm}  
+ \hspace{-0.25cm}  $\bullet$ \small{Bulletins for ASAL counties} \\
+   \hspace{-0.25cm}  $\bullet$ \small{Online since 2013} \\
+     \vspace{0.1cm}  
+  \hspace{0.15cm}    \footnotesize{$\bullet$ But in pdf format} \\ 
+    \vspace{0.1cm}  
+\hspace{-0.25cm}   \small{$\bullet$ For county and month}
+ 
+ }
+        \column{.6\linewidth}
+
+    \vspace{-0.16cm}   \hspace{-0.1cm}   \includegraphics[width = 0.9\textwidth]{Phase.png}  %565*238
+ \vspace{-0.3cm}  
+      \end{columns}
+    \end{figure}
+   
+
+\vspace{-1.3cm}
+    \begin{figure}
+      \begin{columns}
+        \column{.5\linewidth }
+
+  \vspace{-1.8cm}        
+        \column{.5\linewidth}
+         
+  \hspace{-2.6cm}  \includegraphics[width = 1.2\textwidth]{Prec.png}  %565*238
+      \end{columns}
+    \end{figure}
+
+\end{frame}
+
+
+\end{document}
+
