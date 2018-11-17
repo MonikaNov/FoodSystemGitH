@@ -1,9 +1,7 @@
 rm(list=ls())
-setwd("foodSystems/dataFS") 
-setwd("dataFS") # home
 library(dplyr); library(tseries); library(plm); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
 
-load("Main/DaTS.RData")
+load("dataFS/Main/DaTS.RData")
 
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
@@ -26,8 +24,9 @@ sqrt(abs(resid(.)))
 qqmath(Kendalln3,id=0.05)
 
 plot(resid(Kendalln3,type="pearson"))
-which(resid(Kendalln3,type="pearson")<(-6))# yep, the same as in the previous case...
+which(resid(Kendalln3,type="pearson")<(-6))
+which(resid(Kendalln3,type="pearson")<(-2))
+# yep, the same as in the previous case...
 which(resid(AmBEST,type="pearson")<(-6))
-
 # test of AR(1) and MA(1) errors
 pbltest(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4+AvgTemp + SDTemp  + HWDays,data=ScaledTS,alternative='onesided')#ok, significant

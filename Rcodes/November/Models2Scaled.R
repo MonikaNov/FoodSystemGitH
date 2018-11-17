@@ -1,10 +1,10 @@
 rm(list=ls())
-setwd("foodSystems/dataFS") 
-# load("../Rcodes/octoberNew/Models1.RData")
+
+# load("Rcodes/octoberNew/Models1.RData")
 
 library(dplyr); library(tseries); library(plm); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
 
-load("Main/DaTS.RData")
+load("dataFS/Main/DaTS.RData")
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 Emmit0<-lm(Yield~SeasPr+AvgTemp,data=ScaledTS);  summary(Emmit0) 

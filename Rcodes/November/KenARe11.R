@@ -62,3 +62,25 @@ nobs(KEN11a_nonASAL); anova(KEN11a_nonASAL)
 exp(summary(KEN11a_nonASAL)$tTable[,1])
 exp(summary(KEN11a_nonASAL)$tTable[,2])
 anova(KEN11a_nonASAL, type='marginal')
+
+
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# now I have to remove residual outliers
+
+Kendalln3<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                +AvgTemp + SDTemp  + HWDays+(1|ID1),data=ScaledTS) 
+
+which(resid(Kendalln3,type="pearson")<(-6))
+which(resid(Kendalln3,type="pearson")<(-2))
+which(resid(KEN11a,type="pearson")<(-3))
+rem<-which(resid(KEN11a,type="pearson")<(-3))
+ScaledTS$Year[rem]
+
+[!(rownames(isdataScTS) %in% rem),]
+
+KEN16a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            data=ScaledTS[-rem,],na.action=na.exclude); summary(KEN16a)
+exp(summary(KEN16a)$tTable[,1])

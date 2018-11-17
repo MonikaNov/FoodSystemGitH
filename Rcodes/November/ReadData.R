@@ -1,5 +1,4 @@
 rm(list=ls())
-setwd("foodSystems/dataFS") 
 
 library('dplyr')
 library('purrr')
@@ -7,14 +6,14 @@ library("reshape")
 
 #ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
-weath<-read.csv("climateNov/Seasonally.csv",na.strings="-999",dec=".")
+weath<-read.csv("dataFS/climateNov/Seasonally.csv",na.strings="-999",dec=".")
 summary(weath)
 testRe<-lm(AvgTemp_MarMay~.,data=weath)
 summary(testRe)
 nobs(testRe)  # grood, all loaded
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # dry spell 4 in a separate file
-weath<-merge(weath,read.csv("climateNov/Dry_spell4_seasonsM.csv",na.strings="-999",dec=".") )
+weath<-merge(weath,read.csv("dataFS/climateNov/Dry_spell4_seasonsM.csv",na.strings="-999",dec=".") )
 weath<-weath[with(weath,order(code,year)),]
 testRe<-lm(AvgTemp_MarMay~.,data=weath)
 summary(testRe)
@@ -22,7 +21,7 @@ nobs(testRe)
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # monthly also in separate file
 
-weath<-merge(weath,read.csv("climateNov/MonthlyM.csv",na.strings="-999",dec=".") )
+weath<-merge(weath,read.csv("dataFS/climateNov/MonthlyM.csv",na.strings="-999",dec=".") )
 weath<-weath[with(weath,order(code,year)),]
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -40,10 +39,10 @@ setdiff(weather$code,weath$code)
 # ok, seems good. now I will have to match it with yield
 
 # but first merge with county codes
-IDdict<-read.csv("Main/IDdict.csv")
+IDdict<-read.csv("dataFS/Main/IDdict.csv")
 weath<-merge(weath,IDdict, all.x=TRUE)
 
-load("Main/CrMaize15.RData") 
+load("dataFS/Main/CrMaize15.RData") 
 rm(CrMaize34)
 CrMaize34<-subset(CrMaize15,Year %in% (1981:2014),select=c("Admin1","county","Admin2","Year","Area","Yield","MT","ID","west1"))
 names(CrMaize34)[grep("ID",names(CrMaize34))]<-"ID1"
