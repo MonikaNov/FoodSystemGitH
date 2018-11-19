@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  19 NOV 2018 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  19 NOV 2018 15:52
 entering extended mode
 **./draftMonika11.tex
 (draftMonika11.tex
@@ -754,14 +754,14 @@ re have been well
  []
 
 [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
-Underfull \hbox (badness 3623) in paragraph at lines 300--301
-[]\OT1/cmr/m/n/12 There is a strong move-ment to shift the fo-cus from fore-cas
-t-ing merely
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
  []
 
 [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
-
+Underfull \hbox (badness 3623) in paragraph at lines 383--384
+[]\OT1/cmr/m/n/12 There is a strong move-ment to shift the fo-cus from fore-cas
+t-ing merely
  []
 
 [16] (draftMonika11.bbl [17] [18]
@@ -817,11 +817,11 @@ Missing character: There is no ³ in font cmr12!
 Here is how much of TeX's memory you used:
  9062 strings out of 495222
  131215 string characters out of 3182071
- 233278 words of memory out of 3000000
+ 234278 words of memory out of 3000000
  12076 multiletter control sequences out of 15000+200000
  26324 words of font info for 96 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,14n,78p,2761b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,14n,78p,2752b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
  <E:\latex\texmfs/data\fonts\pk\
 ljfour\jknappen\ec\dpi600\tcrm1200.pk><E:/latex/texmfs/install/fonts/type1/publ
 ic/amsfonts/cm/cmbsy10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts
@@ -838,7 +838,7 @@ type1/public/amsfonts/cm/cmsy8.pfb><E:/latex/texmfs/install/fonts/type1/public/
 amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/
 cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
 E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draftMonika11.pdf (29 pages, 264966 bytes).
+Output written on draftMonika11.pdf (29 pages, 264949 bytes).
 PDF statistics:
  171 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

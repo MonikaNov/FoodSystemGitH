@@ -158,12 +158,12 @@ In the recent period, remote sensing data have been used increasingly to monitor
 
 We have considered the Standardised Precipitation Evapotranspiration Index  (SPEI) and the vegetation condition index (VCI) as measures of drought in our analysis. We did not find the county level SPEI to be as good predictor of food security as other precipitation and temperature measures and computing the SPEI for the entire high resolution weather dataset would be inadequately demanding. We did not use the VCI either as we were not confident enough about the reliability of the available data.\footnote{The values of the VCI which we obtained from the NDMA were not the same as those available by the \cite{BOKU} (BOKU). Furthermore, the VCI values did not exactly correspond to the early warning phases although they should according to the \cite{NDMA} (NDMA).} 
 
-Thus, after conducting a rigorous literature research on measures of drought previously used in the relevant context, we decided to utilize various aggregates of daily precipitation and temeprature. The frequency of the maize yield data is yearly while the weather data are daily. Hence, the weather data needed to be aggregated in order to obtain a dataset conformable with the yield data. There are many possible ways of aggregation. Commonly used measures include monthly averages (or monthly totals in case of precipitation) and their variances or standard deviations (\citealt{AbrahaSavage2006, LobellEtAl2008, ThorntonEtAl2009}). For example, \cite{Adejuwon2004} has analysed relationship of crop yields and three measures of precipitation in Sub-Saharan West Africa. These include: \textit{(i)} Total rainfall during the first month of the period from sowing to harvesting (June) \textit{(ii)} Total rainfall during the first two months of the period from sowing to harvesting (June and July) and \textit{(iii)} Total rainfall during the first three months of the period from sowing to harvesting (June, July and August). Based on his results, weather during June and July is the most important for crop yield in Sub-Saharan West Africa \citep{Adejuwon2004}. Other studies have utilised seasonal totals or means (\citealt{sagoe2006,LobellBurke2010}) or annual totals or means \citep{BLIGNAUT2009}. \cite{BenMohamed2002} have found sea surface temperature anomalies at various locations and amount of rainfall in July, August and September to be significant for millet crops in Niger. The authors have also considered the maximum air temperature in the hottest month (April) and the minimum air temperature in the coldest month (January) as possible predictors of crops in Niger, but they did not find them significant. Some studies are based on simulated daily extremes, averages, daily measures of variance  (\citealt{SchulzeEtA1993,Chipanshi2003,AbrahaSavage2006}) or yearly extremes \citep{sagoe2006}. Other measures used to explain variability of maize yield include counts of wet and dry days per a defined period, usually a month or a season (\citealt{BenMohamed2002,AbrahaSavage2006,sagoe2006,Giannakopoulos2009}) or length of rainy season (\citealt{Leemans1993,BenMohamed2002}). Definitions of wet and dry days and rainy season vary. For example, \cite{BenMohamed2002} have assumed that rainy season begins when the amount of rainfall in three consecutive days reaches at least 25~mm and no dry spell of more than seven days occurs in the following thirty days. According to this study, the end of the rainy season is defined as that rainy day after which rain recorded during 20 days is less than 5 mm.
+After conducting a rigorous literature research on measures of drought previously used in the relevant context, we decided to utilize various aggregates of daily precipitation and temeprature. The frequency of the maize yield data is yearly while the weather data are daily. Hence, the weather data had to be aggregated in order to obtain a dataset conformable with the yield data. There are many possible ways of aggregation. Commonly used measures include monthly averages (or monthly totals in case of precipitation) and their variances or standard deviations (\citealt{AbrahaSavage2006, LobellEtAl2008, ThorntonEtAl2009}). For example, \cite{Adejuwon2004} has analysed relationship of crop yields and three measures of precipitation in Sub-Saharan West Africa. These include: \textit{(i)} Total rainfall during the first month of the period from sowing to harvesting (June) \textit{(ii)} Total rainfall during the first two months of the period from sowing to harvesting (June and July) and \textit{(iii)} Total rainfall during the first three months of the period from sowing to harvesting (June, July and August). Based on his results, weather during June and July is the most important for crop yield in Sub-Saharan West Africa \citep{Adejuwon2004}. Other studies have utilised seasonal totals or means (\citealt{sagoe2006,LobellBurke2010}) or annual totals or means \citep{BLIGNAUT2009}. \cite{BenMohamed2002} have found sea surface temperature anomalies at various locations and amount of rainfall in July, August and September to be significant for millet crops in Niger. The authors have also considered the maximum air temperature in the hottest month (April) and the minimum air temperature in the coldest month (January) as possible predictors of crops in Niger, but they did not find them significant. Some studies are based on simulated daily extremes, averages, daily measures of variance  (\citealt{SchulzeEtA1993,Chipanshi2003,AbrahaSavage2006}) or yearly extremes \citep{sagoe2006}. Other measures used to explain variability of maize yield include counts of wet and dry days per a defined period, usually a month or a season (\citealt{BenMohamed2002,AbrahaSavage2006,sagoe2006,Giannakopoulos2009}) or length of rainy season (\citealt{Leemans1993,BenMohamed2002}). Definitions of wet and dry days and rainy season vary. For example, \cite{BenMohamed2002} have assumed that rainy season begins when the amount of rainfall in three consecutive days reaches at least 25~mm and no dry spell of more than seven days occurs in the following thirty days. According to this study, the end of the rainy season is defined as that rainy day after which rain recorded during 20 days is less than 5 mm.
 
-An important group of studies that have analysed relationship of yield and climate in Sub-Saharan Africa has utilised degree days (\citealt{SchulzeEtA1993,TingemEtAl2008,WalkerSchulze2008,TingemEtAl2009}) or number of days with temperature above certain level or within defined range (\citealt{Giannakopoulos2009,LauxEtAl}).
+An important group of studies focused on relationship of yield and climate in Sub-Saharan Africa has been focused on degree days (\citealt{SchulzeEtA1993,TingemEtAl2008,WalkerSchulze2008,TingemEtAl2009}) or on the number of days with temperature above certain level or within a defined range (\citealt{Giannakopoulos2009,LauxEtAl}).
 
 
-\textcolor{red}{Erin Lentz, can we cite her paper?She has not responded to my email}
+%\textcolor{red}{Erin Lentz, can we cite her paper?She has not responded to my email}
 
 
 Based on the literature research above and complexity of deriving the measures, we short-listed the following aggregates of the weather data:
@@ -177,14 +177,14 @@ Based on the literature research above and complexity of deriving the measures, 
 \begin{itemize}
 \item Cumulative precipitation and its square
 \item Cumulative precipitation during the first two months of season
-\item \textcolor{blue}{I will test cumulative precipitation  during the first month of each season - Guigma has has just provided the aggregated variables}
+\item \textcolor{blue}{Additionally, I will test significance of the cumulative precipitation  during the first month of each season - Guigma has just provided the aggregated variables}
 
 
 \item Coefficient of variation
 \item Maximum length of dry spell in number of days
-\item Number of dry spell lasting for at least four days
-\item Number of dry spell lasting for at least ten days
-\item Number of dry spell lasting for at least twenty days
+\item Number of dry spells lasting for at least four days
+\item Number of dry spells lasting for at least ten days
+\item Number of dry spells lasting for at least twenty days
 \item Maximum daily precipitation
 \color{blue}
 \item Additional indicators of floods:
@@ -206,21 +206,11 @@ Based on the literature research above and complexity of deriving the measures, 
 \item Number of heatwave days $>35\degree$C
 \end{itemize}
 \end{itemize}
+\textcolor{blue}{\textbf{Description of how the weather data were aggregated temporally - seasons}}
 
-\subsection{Data}
-\begin{itemize}
-\item \textcolor{blue}{Source of data}
-\item \textcolor{blue} {Verbal description of the data, resolution, period, frequency}
-\item \textcolor{blue} {Plot(s)/barplots of yield, precip and temp when final data available}
-\item \textcolor{blue}{Maybe a table of descriptive statistics or ref to the tale to appendix}
-\item \textcolor{blue}{Description how the weather data were aggregated spatially over counties}
-
-\end{itemize}
-
-\textcolor{blue}{\textbf{Description of how the weather data were aggregated temporally - seasons} (this maybe before the list of aggregates??)}
 \subsection{Linear mixed models}
 \sloppy
-Kenya consists of $47$ counties with semi-autonomous county governments  \citep{Barasa2017}. As a result of the high degree of county-level autonomy, the policies and regulations often differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (mixed models) commonly used to analyse longitudinal data \citep{bates2000mixed}. Mixed models are suitable for analysis of panel data as they account for the panel structure of the dataset. These types of models include both fixed effects parameters and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \citep{bates2010lme4}. On the other hand, random effect are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation (\citealp{KERYch9, KERYch12}).
+Kenya consists of $47$ counties with semi-autonomous county governments  \citep{Barasa2017}. As a result of the high degree of county-level autonomy, the policies and regulations often differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (also known as mixed models) commonly used to analyse longitudinal data \citep{bates2000mixed}. Mixed models are suitable for analysis of panel data as they account for the panel structure of the dataset. These types of models include both fixed effects parameters and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \citep{bates2010lme4}. On the other hand, random effects are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation (\citealp{KERYch9, KERYch12}).
 
 Formally, a linear mixed model can be described by the distribution of two vectors of random variables: the response $\mathscr{Y}$ and the vector of random effects $\mathscr{B}$. The distribution of $\mathscr{B}$ is multivariate normal and the conditional distribution of $\mathscr{Y}$ given $\mathscr{B}=\mathbf{b}$ is multivariate normal of a form (\citealp{bates2010lme4, KERYch9}):
 
@@ -246,10 +236,21 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \color{blue}
 \begin{itemize}
 \item Add a description of residual and other diagnostic tests (AIC, VIF, autocorrelation)
-\item Describe the procedure that I have done to find the preferred way of modelling the  error correlation structure (ARMA errors)
+\item Describe the procedure that I have done to find the preferred way of modelling the  correlation structure in errors (ARMA errors)
 \end{itemize}
 \color{black}
 \FloatBarrier
+
+\subsection{Data}
+\begin{itemize}
+\item \textcolor{blue}{Source of data}
+\item \textcolor{blue} {Verbal description of the data, resolution, period, frequency}
+\item \textcolor{blue} {Plot(s)/barplots of yield, precip. and temp.}
+\item \textcolor{blue}{Maybe a table of descriptive statistics or ref. to a table in the Appendix}
+\item \textcolor{blue}{Description how the weather data were aggregated spatially over counties}
+\end{itemize}
+
+
 	\section{\textcolor{black}{Results and discussion}}\label{Results}
 
 
@@ -278,48 +279,20 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 		\item Accompany with a graph(s), possibly barplot(s)
 \end{itemize}
 
-\item Estimate a variant of the model which separates the effects of the seasons for ASAL counties (OND and MAM separately)
+\item Estimate a variant of the model which separates the effects of the seasons for ASAL counties (OND and MAM separately). If interesting show a table and discuss
 
-\item Show a variant of the model without the outliers. This could be a table here, a table in the Appendix or a table in a footnote. 
+\item Show a variant of the model without the outliers. This could be presented either by a table in this section, a table in the Appendix or a table in a footnote. 
 
 \item If time, I can also estimate similar models for different important crops in Kenya (e.g. wheat, rice, sorghum or millet)
 
-\item \textcolor{red}{Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.}
+\item Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.
 
 		\begin{itemize}
 			\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
 	\end{itemize}
 		\end{itemize}
-		
-		
-\section{\textcolor{black}{Conclusion}}\label{Conclusion}
 
-	\begin{itemize}
-	\item Besides seasonal totals (averages), there are many weather/climate characteristics (measures) which are important for yield
-	\item  Current weather and climate forecasts (in the context of disaster management) are mostly focused on totals in precipitation (and average temperature?) 
-	\item There is a strong movement to shift the focus from forecasting merely weather/climate to forecast of weather/climate and its impacts
-	
-	\begin{itemize}
-	\item[$\boldsymbol{\rightarrow}$] \textbf{We can stress the importance of focusing the forecast on the climate characteristics (or measures) which we find significant in our models}
-\end{itemize}
-
-	\item \textcolor{red}{Caveats}
-	
-	\begin{itemize}
-	\item\textcolor{red}{ Yield data: Is the collection method consistent over time and space?}
-	\item Livestock
-	\item Cropping calendar is likely to differ across the country 
-	\item \textcolor{red}{Some more??}
-	
-	\end{itemize}
-\end{itemize}
 \color{black}
-
-\FloatBarrier
-\pagebreak
-
-
-
 
 {
 \begin{threeparttable}
@@ -399,6 +372,34 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 
 \pagebreak
 
+
+		
+		\color{blue}
+\section{\textcolor{black}{Conclusion}}\label{Conclusion}
+
+	\begin{itemize}
+	\item There are many weather/climate characteristics (measures) which are important for yield, not only seasonal totals (averages)
+	\item  Current weather and climate forecasts (in the context of disaster management) are mostly focused on totals in precipitation (and average temperature?) 
+	\item There is a strong movement to shift the focus from forecasting merely weather/climate to forecast of weather/climate and its impacts
+	
+	\begin{itemize}
+	\item[$\boldsymbol{\rightarrow}$] \textbf{We can stress the importance of focusing the forecast on the climate characteristics (or measures) which we find significant in our models}
+\end{itemize}
+
+	\item \textcolor{red}{Caveats}
+	
+	\begin{itemize}
+	\item\textcolor{red}{ Yield data: Is the collection method consistent over time and space?}
+	\item Livestock
+	\item Cropping calendar is likely to differ across the country 
+	\item \textcolor{red}{Some more??}
+	
+	\end{itemize}
+\end{itemize}
+\color{black}
+
+\FloatBarrier
+\pagebreak
 
 
 
