@@ -274,16 +274,20 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 
 \begin{itemize}
 
-\item The idea is to choose two points in time from within our period of data and imagine that we are in the earlier of the two time points. Now we want to make a prediction of yields for the later point in time. We will make two predictions: one using the base model and the other based on the preferred specification and we will compare their prediction accuracy. Here, we assume that we have a forecast of the weather measures (the explanatory variables of our models). We can use real weather data instead of the forecast. This will demonstrate why it is important to not only forecast totals/means but also other characteristics (measures) of weather/climate.
+\item The idea is to choose two points in time from within our period of data and imagine that we are in the earlier of the two time points. Now we want to make a prediction of yields for the later point in time. We will make two predictions: one using the base model and the other based on the preferred specification and we will compare their prediction accuracy. Here, we assume that predictions of the weather measures are available (the explanatory variables of our models). We can use real weather data instead of the forecast. This will demonstrate why it is important to not only forecast totals/means but also other characteristics (measures) of weather/climate.
 		\item Accompany with a graph(s), possibly barplot(s)
-		
-
-
 \end{itemize}
+
+\item Estimate a variant of the model which separates the effects of the seasons for ASAL counties (OND and MAM separately)
+
+\item Show a variant of the model without the outliers. This could be a table here, a table in the Appendix or a table in a footnote. 
+
+\item If time, I can also estimate similar models for different important crops in Kenya (e.g. wheat, rice, sorghum or millet)
+
 \item \textcolor{red}{Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.}
 
 		\begin{itemize}
-			\item \textcolor{red}{As Annemie has advised me, for a more precise approximation of $R^2$ we could estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures (not including the variability explained by the random intercepts).}
+			\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
 	\end{itemize}
 		\end{itemize}
 		
