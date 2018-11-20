@@ -1,0 +1,2 @@
+floods<-read.csv("../FoodSystemGitH/dataFS/climNov2/FLood.csv",na.strings="-999",dec=".")
+summary(floods)
