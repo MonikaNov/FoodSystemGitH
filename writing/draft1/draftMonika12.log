@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  21 NOV 2018 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  21 NOV 2018 16:11
 entering extended mode
 **./draftMonika12.tex
 (draftMonika12.tex
@@ -753,13 +753,8 @@ Underfull \hbox (badness 1033) in paragraph at lines 124--125
 re have been well
  []
 
-[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
-[13] [14]
-Underfull \hbox (badness 3623) in paragraph at lines 384--385
+[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+Underfull \hbox (badness 3623) in paragraph at lines 374--375
 []\OT1/cmr/m/n/12 There is a strong move-ment to shift the fo-cus from fore-cas
 t-ing merely
  []
@@ -815,32 +810,34 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
 [24]) [25] [26] [27] [28] (draftMonika12.aux) ) 
 Here is how much of TeX's memory you used:
- 9062 strings out of 495222
- 131215 string characters out of 3182071
+ 9063 strings out of 495222
+ 131231 string characters out of 3182071
  234278 words of memory out of 3000000
- 12076 multiletter control sequences out of 15000+200000
- 26324 words of font info for 96 fonts, out of 3000000 for 9000
+ 12077 multiletter control sequences out of 15000+200000
+ 26683 words of font info for 97 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,14n,78p,2752b,505s stack positions out of 5000i,500n,10000p,200000b,50000s
  <E:\latex\texmfs/data\fonts\pk\
 ljfour\jknappen\ec\dpi600\tcrm1200.pk><E:/latex/texmfs/install/fonts/type1/publ
 ic/amsfonts/cm/cmbsy10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/lat
-ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/in
-stall/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/
-type1/public/amsfonts/cm/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/c
-mr7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/la
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb><E:/latex/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
-E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draftMonika12.pdf (28 pages, 264668 bytes).
+fb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/ins
+tall/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmmib10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E
+:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/latex/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb><E:/latex/texmfs/install/
+fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on draftMonika12.pdf (28 pages, 280990 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

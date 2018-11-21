@@ -283,31 +283,22 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \begin{tabular}{llrlllr} 
 \hline \vspace{-0.2cm} \\
 \vspace{-0.2cm} \\
-  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{All counties}} &\multicolumn{2}{c}{\textit{ASAL}} &\multicolumn{2}{c}{\textit{non-ASAL}}\\
-    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&$exp(\beta)$&F-value\tnote{a}%> anova(KEN11a, type='marginal')
-    &$exp(\beta)$&F-value\tnote{a}&$exp(\beta)$&F-value\tnote{a}\\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
+    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&\boldsymbol{$exp(\beta)$}&\textbf{F-value\tnote{a}}%> anova(KEN11a, type='marginal')
+    &\boldsymbol{$exp(\beta)$}&\textbf{F-value\tnote{a}}&\boldsymbol{$exp(\beta)$}&\textbf{F-value\tnote{a}}\\
  \hline 
 \hline
 \\
 \vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
-  \\
-\vspace{-0.2cm}Prec. total&$1.081^{*}$&$5.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
+  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$5.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
   \\
   \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$4.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
-    \\
-      \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$3.277$&$0.969$ &$0.246$&$0.909^{}$&$2.231$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$3.277$&$0.969$ &$0.246$&$0.909^{}$&$2.231$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$4.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$0.163$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$4.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$0.096$\\
+  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$1.580$\\
+  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$3.125$&$1.039$&$0.558$&$1.059$ ${*}$&$5.640$\\
   \\
-
-         \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$4.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$0.163$\\
-  \\
-        \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$4.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$0.096$\\
-  \\
-          \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$1.580$\\
-  \\
-  
-          \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$3.125$&$1.039$&$0.558$&$1.059$ ${*}$&$5.640$\\
-  \\
-
   \hline
 \vspace{-0.2cm} \\
   \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
@@ -319,7 +310,7 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
  \\ 
  \hline
 \vspace{-0.2cm} \\
-\textit{Number of observations:}  &$1300$&$698$&$602$ \\
+\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
 \vspace{-0.2cm}
 \\  
   
@@ -332,9 +323,8 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \end{footnotesize}
  \begin{tablenotes}
   \begin{footnotesize}
-    \item \textit{Notes:} Standard errors in brackets, \hspace{0.05cm}$1256$ observations
+    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
         \begin{adjustwidth}{1cm}{} 
-    \item \hspace{0.45cm}$^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$\\
     \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
      \end{adjustwidth}
 \singlespacing
