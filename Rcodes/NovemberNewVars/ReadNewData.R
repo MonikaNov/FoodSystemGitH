@@ -71,10 +71,21 @@ DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
 #ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 #        ok, I still need to get lags of OND seasons...
 
-lagI<-grep("Sep|Oct|Nov|Dec|OND",names(DaTS))
+test1<-DaTS
+lagI<-c(137:142,145)
 lagged<-data.frame(sapply(lagI ,function(x)  lag(DaTS[,x],1)  ))
 names(lagged)<-paste0( names(DaTS[,lagI]),"_L1")
 DaTS<-cbind.data.frame(DaTS,lagged)
 DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
 i<-grep("_L1",names(DaTS))
 DaTS[DaTS$Year==1981,i]<-NA
+
+# checking:
+all.equal(test1,DaTS[1:145],check.attributes=FALSE)
+ra<-sample(1:(nrow(DaTS)-10),1)
+ra; DaTS[ra:(ra+10),c(1:4,lagI,146:152)] # checked 22.11.2018
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# now I have to sort out the seasons: ASAL MAM and OND_L1, non-ASAL MAMJJA
+
+DaTS$cum90[DaTS$ASAL==TRUE]<-( (DaTS$AvgTemp_MarMay[DaTS$ASAL==TRUE]+DaTS$AvgTemp_OctDec_L1[DaTS$ASAL==TRUE]) /2)
