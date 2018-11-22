@@ -74,11 +74,20 @@ DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
 test1<-DaTS
 lagI<-c(137:142,145)
 lagged<-data.frame(sapply(lagI ,function(x)  lag(DaTS[,x],1)  ))
-names(lagged)<-paste0( names(DaTS[,lagI]),"_L1")
+names(lagged)<-paste0( names(DaTS[,lagI]),"_L1") # and again. Malformed factor
+
 DaTS<-cbind.data.frame(DaTS,lagged)
-DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
 i<-grep("_L1",names(DaTS))
 DaTS[DaTS$Year==1981,i]<-NA
+
+test99<-DaTS;                  i<-as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))
+DaTS[as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))]<-lapply(DaTS[as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))],as.character)
+DaTS[i]<-lapply(DaTS[i],as.factor)
+# and test:
+all.equal(test99[-i], DaTS[-i]  )
+
+DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
+
 
 # checking:
 all.equal(test1,DaTS[1:145],check.attributes=FALSE)
@@ -88,4 +97,16 @@ ra; DaTS[ra:(ra+10),c(1:4,lagI,146:152)] # checked 22.11.2018
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # now I have to sort out the seasons: ASAL MAM and OND_L1, non-ASAL MAMJJA
 
-DaTS$cum90[DaTS$ASAL==TRUE]<-( (DaTS$AvgTemp_MarMay[DaTS$ASAL==TRUE]+DaTS$AvgTemp_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$cum90[DaTS$ASAL==TRUE]<-( (DaTS$cum_90_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_90_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$cum95[DaTS$ASAL==TRUE]<-( (DaTS$cum_95_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_95_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$cum99[DaTS$ASAL==TRUE]<-( (DaTS$cum_99_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_99_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$days90[DaTS$ASAL==TRUE]<-( (DaTS$days_90_MarMay[DaTS$ASAL==TRUE]+DaTS$days_90_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$days95[DaTS$ASAL==TRUE]<-( (DaTS$days_95_MarMay[DaTS$ASAL==TRUE]+DaTS$days_95_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$days99[DaTS$ASAL==TRUE]<-( (DaTS$days_99_MarMay[DaTS$ASAL==TRUE]+DaTS$days_99_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+
+DaTS$cum90[DaTS$ASAL==FALSE]<-DaTS$cum_90_MarAug[DaTS$ASAL==FALSE]
+DaTS$cum95[DaTS$ASAL==FALSE]<-DaTS$cum_95_MarAug[DaTS$ASAL==FALSE]
+DaTS$cum99[DaTS$ASAL==FALSE]<-DaTS$cum_99_MarAug[DaTS$ASAL==FALSE]
+DaTS$days90[DaTS$ASAL==FALSE]<-DaTS$days_90_MarAug[DaTS$ASAL==FALSE]
+DaTS$days95[DaTS$ASAL==FALSE]<-DaTS$days_95_MarAug[DaTS$ASAL==FALSE]
+DaTS$days99[DaTS$ASAL==FALSE]<-DaTS$days_99_MarAug[DaTS$ASAL==FALSE]
