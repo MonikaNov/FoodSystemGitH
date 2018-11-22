@@ -93,16 +93,16 @@ DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
 all.equal(test1,DaTS[1:145],check.attributes=FALSE)
 ra<-sample(1:(nrow(DaTS)-10),1)
 ra; DaTS[ra:(ra+10),c(1:4,lagI,146:152)] # checked 22.11.2018
-
+test1<-DaTS
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # now I have to sort out the seasons: ASAL MAM and OND_L1, non-ASAL MAMJJA
 
-DaTS$cum90[DaTS$ASAL==TRUE]<-( (DaTS$cum_90_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_90_OctDec_L1[DaTS$ASAL==TRUE]) /2)
-DaTS$cum95[DaTS$ASAL==TRUE]<-( (DaTS$cum_95_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_95_OctDec_L1[DaTS$ASAL==TRUE]) /2)
-DaTS$cum99[DaTS$ASAL==TRUE]<-( (DaTS$cum_99_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_99_OctDec_L1[DaTS$ASAL==TRUE]) /2)
-DaTS$days90[DaTS$ASAL==TRUE]<-( (DaTS$days_90_MarMay[DaTS$ASAL==TRUE]+DaTS$days_90_OctDec_L1[DaTS$ASAL==TRUE]) /2)
-DaTS$days95[DaTS$ASAL==TRUE]<-( (DaTS$days_95_MarMay[DaTS$ASAL==TRUE]+DaTS$days_95_OctDec_L1[DaTS$ASAL==TRUE]) /2)
-DaTS$days99[DaTS$ASAL==TRUE]<-( (DaTS$days_99_MarMay[DaTS$ASAL==TRUE]+DaTS$days_99_OctDec_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$cum90[DaTS$ASAL==TRUE]<-(DaTS$cum_90_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_90_OctDec_L1[DaTS$ASAL==TRUE])
+DaTS$cum95[DaTS$ASAL==TRUE]<-(DaTS$cum_95_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_95_OctDec_L1[DaTS$ASAL==TRUE])
+DaTS$cum99[DaTS$ASAL==TRUE]<-(DaTS$cum_99_MarMay[DaTS$ASAL==TRUE]+DaTS$cum_99_OctDec_L1[DaTS$ASAL==TRUE])
+DaTS$days90[DaTS$ASAL==TRUE]<-(DaTS$days_90_MarMay[DaTS$ASAL==TRUE]+DaTS$days_90_OctDec_L1[DaTS$ASAL==TRUE])
+DaTS$days95[DaTS$ASAL==TRUE]<-(DaTS$days_95_MarMay[DaTS$ASAL==TRUE]+DaTS$days_95_OctDec_L1[DaTS$ASAL==TRUE])
+DaTS$days99[DaTS$ASAL==TRUE]<-(DaTS$days_99_MarMay[DaTS$ASAL==TRUE]+DaTS$days_99_OctDec_L1[DaTS$ASAL==TRUE])
 
 DaTS$cum90[DaTS$ASAL==FALSE]<-DaTS$cum_90_MarAug[DaTS$ASAL==FALSE]
 DaTS$cum95[DaTS$ASAL==FALSE]<-DaTS$cum_95_MarAug[DaTS$ASAL==FALSE]
@@ -110,3 +110,38 @@ DaTS$cum99[DaTS$ASAL==FALSE]<-DaTS$cum_99_MarAug[DaTS$ASAL==FALSE]
 DaTS$days90[DaTS$ASAL==FALSE]<-DaTS$days_90_MarAug[DaTS$ASAL==FALSE]
 DaTS$days95[DaTS$ASAL==FALSE]<-DaTS$days_95_MarAug[DaTS$ASAL==FALSE]
 DaTS$days99[DaTS$ASAL==FALSE]<-DaTS$days_99_MarAug[DaTS$ASAL==FALSE]
+
+DaTS$PrecFirstM[DaTS$ASAL==TRUE]<-( (DaTS$cum_Mar[DaTS$ASAL==TRUE]+DaTS$cum_Oct_L1[DaTS$ASAL==TRUE]) /2)
+DaTS$PrecFirstM[DaTS$ASAL==FALSE]<-DaTS$cum_Mar[DaTS$ASAL==FALSE]
+
+summary(DaTS)
+all.equal(test1,DaTS[1:152])  # goood
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# a bit more checking: now I will just have a look if the newly created transformed variables look somehow similar to those from Guigma and how they should look like
+
+sum(DaTS$days99[!DaTS$Year==1981]>DaTS$days90[!DaTS$Year==1981])
+sum(DaTS$days99[!DaTS$Year==1981]>DaTS$days95[!DaTS$Year==1981])
+sum(DaTS$days95[!DaTS$Year==1981]>DaTS$days90[!DaTS$Year==1981])
+
+sum(DaTS$cum99[!DaTS$Year==1981]>DaTS$cum90[!DaTS$Year==1981])
+sum(DaTS$cum99[!DaTS$Year==1981]>DaTS$cum95[!DaTS$Year==1981])
+sum(DaTS$cum95[!DaTS$Year==1981]>DaTS$cum90[!DaTS$Year==1981])
+
+plot(DaTS$cum95,DaTS$cum_95_MarAug)
+plot(DaTS$cum95,DaTS$cum_95_MarMay)
+plot(DaTS$cum95,DaTS$cum_95_OctDec)
+plot(DaTS$cum95,DaTS$cum_95_OctDec_L1)
+
+plot(DaTS$days95,DaTS$days_95_MarAug)
+plot(DaTS$days95,DaTS$days_95_MarMay)
+plot(DaTS$days95,DaTS$days_95_OctDec)
+plot(DaTS$days95,DaTS$days_95_OctDec_L1)  
+# ok, all seems to be good. I may have to do some more 1 by 1 testing through...AND THEN SCALE IT !!!!
+DaTS$ID1<-as.numeric(as.character(DaTS$ID1))
+
+DaTS<-DaTS[with(DaTS,order(ID1,Year)),]
+testD<-testD[with(testD,order(ID1,Year)),]
+
+DaTS$ID1<-as.factor(DaTS$ID1)
+all.equal(DaTS[4:124],testD[4:124],check.attributes=FALSE)
+
