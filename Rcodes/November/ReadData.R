@@ -74,7 +74,7 @@ rm(list=setdiff(ls(), c("Da")))
 #ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 #        ok, I still need to get lags of OND seasons...
 
-DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
+DaTS<-pdata.frame(Da,index=c("ID1","Year"))
 lagI<-grep("Sep|Oct|Nov|Dec|OND",names(DaTS))
 lagged<-data.frame(sapply(lagI ,function(x)  lag(DaTS[,x],1)  ))
 names(lagged)<-paste0( names(DaTS[,lagI]),"_L1")

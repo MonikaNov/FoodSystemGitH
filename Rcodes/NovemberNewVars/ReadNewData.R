@@ -59,3 +59,11 @@ DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
 
 #ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 #        ok, I still need to get lags of OND seasons...
+
+lagI<-grep("Sep|Oct|Nov|Dec|OND",names(DaTS))
+lagged<-data.frame(sapply(lagI ,function(x)  lag(DaTS[,x],1)  ))
+names(lagged)<-paste0( names(DaTS[,lagI]),"_L1")
+DaTS<-cbind.data.frame(DaTS,lagged)
+DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
+i<-grep("_L1",names(DaTS))
+DaTS[DaTS$Year==1981,i]<-NA
