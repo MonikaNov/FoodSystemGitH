@@ -144,4 +144,11 @@ testD<-testD[with(testD,order(ID1,Year)),]
 
 DaTS$ID1<-as.factor(DaTS$ID1)
 all.equal(DaTS[4:124],testD[4:124],check.attributes=FALSE)
+all.equal(DaTS[4:124],testD[4:124],check.attributes=TRUE)
 
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# now some more checks..before the scaling and more checks.
+ran<-sample(1:(nrow(DaTS)-5),1  );ran
+DaTS[ran:(ran+5),] 
+
+# OK, CHECKED FOR NOW.. 
