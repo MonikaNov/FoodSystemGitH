@@ -196,3 +196,13 @@ all.equal(ScaledTS$Yield0,DaTS$Yield)
 plot(ScaledTS$Yield0,DaTS$Yield)
 
 # seems very well here..
+
+
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+remove(list=setdiff(ls(),c("DaTS","ScaledTS")))
+# save.image("dataFS/Main/DaTS.RData")
+# save.image("Rcodes/November/DaTS.RData")   # emh..slightlish wrongish folder..
+# save.image("Rcodes/NovemberNewVars/DaTS.RData")

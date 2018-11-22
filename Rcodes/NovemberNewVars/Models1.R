@@ -1,0 +1,57 @@
+rm(list=ls())
+library(dplyr); library(tseries); library(plm); library(nlme); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
+load("dataFS/Main/DaTS.RData")
+
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# these models are the best ones for now:
+
+KEN11a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            data=ScaledTS,na.action=na.exclude); summary(KEN11a)
+# and subsamples
+      KEN11a_ASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                       +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+                       data=ScaledTS[ScaledTS$ASAL==1,],na.action=na.exclude); summary(KEN11a_ASAL)
+      
+      KEN11a_nonASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                          +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+                          data=ScaledTS[ScaledTS$ASAL==0,],na.action=na.exclude); summary(KEN11a_nonASAL)
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      
+# so I can try to add the new variables:
+      
+Logan1<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+              +AvgTemp + SDTemp+cum95, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+              data=ScaledTS,na.action=na.exclude); summary(Logan1)
+anova(KEN11a,Logan1)
+
+Logan1<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp+cum99, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            data=ScaledTS,na.action=na.exclude); summary(Logan1)
+
+vif(Logan1)
+
+
+
+
+Logan12<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp+cum95, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            data=ScaledTS,na.action=na.exclude); summary(Logan1)
+
+vif(Logan12)
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# and adding into RE
+
+Logan5<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp, random= ~1+cum95 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            data=ScaledTS,na.action=na.exclude); summary(Logan5)
+
+anova(KEN11a,Logan5)
+
+Logan52<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp+cum95, random= ~1+cum95 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            data=ScaledTS,na.action=na.exclude); summary(Logan5)
+
+anova(Logan12,Logan52)
+
+ranova(Logan5)
