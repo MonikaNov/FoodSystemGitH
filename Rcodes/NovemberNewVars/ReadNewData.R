@@ -35,44 +35,27 @@ names(monthlyRa)[1]<-"Year"
 floods2<-floods; floods<-floods2[-c(3,4)]; floods$Year<-as.factor(floods$Year)
 monthlyRa2<-monthlyRa; monthlyRa<-monthlyRa2[-c(3,4)]; monthlyRa$Year<-as.factor(monthlyRa$Year)
 
-test1<-DaTS
+
 
 DaTS$code<-as.factor(DaTS$code)
-DaTS<-merge(DaTS,floods, all.x=TRUE)
-DaTS<-merge(DaTS,monthlyRa, all.x=TRUE)
-
-which(sapply(DaTS,function(x) is.factor(x)==TRUE))
-test99<-DaTS
-DaTS[[1]]<-as.character(DaTS[[1]])
-DaTS[[1]]<-factor(DaTS[[1]])
-
-
-i<-as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))
-
+test1<-DaTS
+DaTS<-merge(DaTS,floods, all.x=TRUE); DaTS<-merge(DaTS,monthlyRa, all.x=TRUE)
+DaTS<-DaTS[with(DaTS,order(ID1,Year) ),]
+# to fix malformed factors, I need to first convert factors to characters and then back to factors:
+test99<-DaTS;                  i<-as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))
 DaTS[as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))]<-lapply(DaTS[as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))],as.character)
 DaTS[i]<-lapply(DaTS[i],as.factor)
+# and test:
 all.equal(test99[-i], DaTS[-i]  )
+all_equal(test1,DaTS[1:124]);          all.equal(test1[-(2:3)],DaTS[c(1,4:124)],check.attributes=FALSE)
 
-
-summary(DaTS)
-head(test99[i]) head(DaTS[i])
+summary(DaTS); sum(complete.cases(DaTS))
 
 all.equal(test99[i],DaTS[i],check.attributes=FALSE)
 
 
-
-
-
-
-
-
-
-
-
-
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# checking: 
+# other checking: 
 sum(DaTS$cum_95_MarMay<DaTS$cum_99_MarMay)
 sum(DaTS$cum_95_MarMay>=DaTS$cum_99_MarMay)
 sum(DaTS$cum_90_MarMay>=DaTS$cum_95_MarMay)
@@ -80,7 +63,7 @@ sum(DaTS$cum_90_MarMay>=DaTS$cum_95_MarMay)
 
 #------------      test in a model...............
 
-testRe<-lm(Yield~.,data=DaTS[c(1:43,76,79,82,85:145)])
+testRe<-lm(Yield~.,data=DaTS[c(1,3,5:76,81:145)])
 summary(testRe)
 nobs(testRe)
 DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
