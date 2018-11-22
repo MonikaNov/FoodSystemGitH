@@ -37,12 +37,40 @@ monthlyRa2<-monthlyRa; monthlyRa<-monthlyRa2[-c(3,4)]; monthlyRa$Year<-as.factor
 
 test1<-DaTS
 
+DaTS$code<-as.factor(DaTS$code)
 DaTS<-merge(DaTS,floods, all.x=TRUE)
 DaTS<-merge(DaTS,monthlyRa, all.x=TRUE)
 
-testRe<-lm(Yield~.,data=Da[c(1:43,49,79,82)])
-summary(testRe)
-nobs(testRe)
+which(sapply(DaTS,function(x) is.factor(x)==TRUE))
+test99<-DaTS
+DaTS[[1]]<-as.character(DaTS[[1]])
+DaTS[[1]]<-factor(DaTS[[1]])
+
+
+i<-as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))
+
+DaTS[as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))]<-lapply(DaTS[as.numeric(which(sapply(DaTS,function(x) is.factor(x)==TRUE)))],as.character)
+DaTS[i]<-lapply(DaTS[i],as.factor)
+all.equal(test99[-i], DaTS[-i]  )
+
+
+summary(DaTS)
+head(test99[i]) head(DaTS[i])
+
+all.equal(test99[i],DaTS[i],check.attributes=FALSE)
+
+
+
+
+
+
+
+
+
+
+
+
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # checking: 
 sum(DaTS$cum_95_MarMay<DaTS$cum_99_MarMay)
