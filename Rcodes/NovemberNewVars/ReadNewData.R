@@ -152,3 +152,47 @@ ran<-sample(1:(nrow(DaTS)-5),1  );ran
 DaTS[ran:(ran+5),] 
 
 # OK, CHECKED FOR NOW.. 
+
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# now I need scale them..
+rm(ScaledTS)
+ScaledTS<-DaTS
+ScaledTS[,c(5:76,81:83,85:159)]<-scale(DaTS[,c(5:76,81:83,85:159)])
+ScaledTS$Yield0<-DaTS$Yield
+
+# ~~~~~  ~~  ~~ ~~ ~~ ~~ ~   and check if scaling correctly:  ~~~~~  ~~  ~~ ~~ ~~ ~~ ~
+
+all.equal( names(DaTS)[c(5:76,81:83,85:159)], names(ScaledTS)[c(5:76,81:83,85:159)])
+all.equal(ScaledTS[4:124],testSc[4:124],check.attributes=FALSE)
+all.equal(ScaledTS[4:124],testSc[4:124],check.attributes=TRUE)
+
+
+mapply(cor.test,ScaledTS[,c(5:76,81:83,85:152)],DaTS[,c(5:76,81:83,85:152)] )
+cor.test(ScaledTS$Spell,DaTS$Spell) ; plot(ScaledTS$Spell,DaTS$Spell) 
+cor.test(ScaledTS$DrySpell4_Sep_L1,DaTS$DrySpell4_Sep_L1) ; plot(ScaledTS$DrySpell4_Sep_L1,DaTS$DrySpell4_Sep_L1)
+cor.test(ScaledTS$HeatWDays_Sep,DaTS$HeatWDays_Sep); plot(ScaledTS$HeatWDays_Sep,DaTS$HeatWDays_Sep)
+cor.test(ScaledTS$PrecFirstM,DaTS$Prec2m);plot(ScaledTS$PrecFirstM,DaTS$Prec2m)
+cor.test(ScaledTS$days95,DaTS$days95);plot(ScaledTS$days95,DaTS$days95)
+cor.test(ScaledTS$days99,DaTS$days95);plot(ScaledTS$days99,DaTS$days95)
+
+summary(ScaledTS)
+lapply(ScaledTS[,c(5:76,81:83,85:152)],function(x) mean(x,na.rm=TRUE))
+summary(sapply(ScaledTS[,c(5:76,81:83,85:152)],function(x) mean(x,na.rm=TRUE)))
+plot(sapply(ScaledTS[,c(5:76,81:83,85:152)],function(x) mean(x,na.rm=TRUE)))
+
+
+sum(complete.cases(ScaledTS)); sum(complete.cases(ScaledTS))
+sum(complete.cases(ScaledTS))
+sum(!complete.cases(ScaledTS))
+
+sum(  !complete.cases(ScaledTS) &is.na(ScaledTS$Yield)==FALSE )
+which(  !complete.cases(ScaledTS) &is.na(ScaledTS$Yield)==FALSE ) # PERFECT
+
+sum(  !complete.cases(ScaledTS) &is.na(ScaledTS$Yield)==TRUE )
+
+all.equal(ScaledTS[,-c(5:76,81:83,85:160)],DaTS[,-c(5:76,81:83,85:159)] ) # GROOT
+all.equal(ScaledTS$Yield0,DaTS$Yield)
+plot(ScaledTS$Yield0,DaTS$Yield)
+
+# seems very well here..
