@@ -1,5 +1,5 @@
 rm(list=ls())
-setwd("foodSystems/dataFS") 
+setwd("~/FoodSystemGitH/dataFS") 
 setwd("dataFS") # home
 library(dplyr); library(tseries); library(plm); library(nlme); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
 

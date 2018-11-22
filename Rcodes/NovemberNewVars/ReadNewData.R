@@ -2,7 +2,8 @@ rm(list=ls())
 
 library('dplyr')
 library('purrr')
-load("dataFS/Main/DaTS.RData")
+load("dataFS/Main/DaTS.RData");testSc<-ScaledTS; testD<-DaTS
+library(dplyr); library(tseries); library(plm); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
 
 #ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
@@ -36,43 +37,25 @@ monthlyRa2<-monthlyRa; monthlyRa<-monthlyRa2[-c(3,4)]; monthlyRa$Year<-as.factor
 
 test1<-DaTS
 
-floods<-pdata.frame(index=c())
 DaTS<-merge(DaTS,floods, all.x=TRUE)
 DaTS<-merge(DaTS,monthlyRa, all.x=TRUE)
-
-
-# but first merge with county codes
-IDdict<-read.csv("dataFS/Main/IDdict.csv")
-weath<-merge(weath,IDdict, all.x=TRUE)
-
-load("dataFS/Main/CrMaize15.RData") 
-rm(CrMaize34)
-CrMaize34<-subset(CrMaize15,Year %in% (1981:2014),select=c("Admin1","county","Admin2","Year","Area","Yield","MT","ID","west1"))
-names(CrMaize34)[grep("ID",names(CrMaize34))]<-"ID1"
-names(weath)[grep("year",names(weath))]<-"Year"
-
-Da<-merge(weath,CrMaize34,all.x=TRUE)
-Da<-Da[with(Da,order(ID1,Year)),]
-weath<-weath[with(weath,order(ID1,Year)),]  
-
-#........   .... .   .......    ..........           .  . . . . .
-
-# and checking
-
-all.equal(Da[4:77],weath[3:76],check.attributes=FALSE)   #  so far so good......
-
-Da<-subset(Da,Year %in% 1981:2014)
-
-x<-sample(1:(1702-5),1)
-x
-Da[(1210):(1225),c(1:4,79,81:83)]
-#------------      test in a model...............
 
 testRe<-lm(Yield~.,data=Da[c(1:43,49,79,82)])
 summary(testRe)
 nobs(testRe)
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# checking: 
+sum(DaTS$cum_95_MarMay<DaTS$cum_99_MarMay)
+sum(DaTS$cum_95_MarMay>=DaTS$cum_99_MarMay)
+sum(DaTS$cum_90_MarMay>=DaTS$cum_95_MarMay)
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-rm(list=setdiff(ls(), c("Da")))
+#------------      test in a model...............
+
+testRe<-lm(Yield~.,data=DaTS[c(1:43,76,79,82,85:145)])
+summary(testRe)
+nobs(testRe)
+DaTS<-pdata.frame(DaTS,index=c("ID1","Year"))
 
 #ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 #        ok, I still need to get lags of OND seasons...
