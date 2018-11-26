@@ -55,3 +55,36 @@ Logan52<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
 anova(Logan12,Logan52)
 
 ranova(Logan5)
+
+# to apply ranova method, I will have to refit it with lmer
+LoganB0<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4 +AvgTemp + SDTemp+(1| ID1),
+             data=ScaledTS,na.action=na.exclude); summary(LoganB0)
+
+ranova(LoganB0)
+
+LoganB<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4 +AvgTemp + SDTemp+cum95+(1| ID1),
+             data=ScaledTS,na.action=na.exclude); summary(LoganB)
+
+ranova(LoganB)
+anova(LoganB0,LoganB)
+
+LoganB1<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4 +AvgTemp + SDTemp+(cum95| ID1),
+             data=ScaledTS,na.action=na.exclude); summary(LoganB1)
+
+ranova(LoganB1)
+
+
+LoganB2<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4 +AvgTemp + SDTemp+(0+cum95 | ID1),
+             data=ScaledTS,na.action=na.exclude); summary(LoganB2)
+ 
+ranova(LoganB2,reduce.terms=FALSE)
+anova(LoganB1,LoganB2)
+
+
+LoganB3<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4 +AvgTemp + SDTemp+(1 | ID1),
+              data=ScaledTS,na.action=na.exclude); summary(LoganB3)
+
+ranova(LoganB3,reduce.terms=FALSE)
+
+anova(LoganB1,LoganB3)
+anova(LoganB2,LoganB)
