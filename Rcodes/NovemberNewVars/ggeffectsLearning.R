@@ -58,7 +58,7 @@ exp(summary(KEN11a)$tTable[,1])
 kene1<-ggpredict(KEN11a);
 kene2<-ggpredict(KEN11a,terms=c("AvgTemp")); kene2
 kene2b<-ggpredict(KEN11a,terms=c("AvgTemp [all]")); kene2b
-kene2<-ggpredict(KEN11a,terms=c("AvgTemp","ID1")); kene2
+kene2<-ggpredict(KEN11a,terms=c("SeasPr","ID1")); kene2
 kene3<-ggeffect(KEN11a,terms=c("AvgTemp")); kene3            
       kene3b<-ggeffect(KEN11a,terms=c("AvgTemp [log]")); kene3b  
-plot(kene2)+ylab("Yield")
+plot(kene2)+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")
