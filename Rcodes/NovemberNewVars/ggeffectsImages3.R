@@ -38,9 +38,9 @@ nonASALTemp<- ggpredict(KEN11a_nonASAL,terms=c("AvgTemp [n=20]"),condition=c(Sea
 nonASALTemp[,c(2,4,5)]<-nonASALTemp[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTable[,1])[["(Intercept)"]]
 
 #----------------------------------------------------------------------------------------
-plot1<-plot(AllPrec)+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, all counties")
+plot1<-plot(AllPrec)+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, all counties")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))
 plot2<-plot(AllTemp)+ylab("Yield")+xlab("Average temperature in multiples of SD")+ggtitle("Predicted values, all counties")
-plot3<-plot(ASALPrec)+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, ASAL counties")
+plot3<-plot(ASALPrec)+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, ASAL counties")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))
 plot4<-plot(ASALTemp)+ylab("Yield")+xlab("Average temperature in multiples of SD")+ggtitle("Predicted values, ASAL counties")
 plot5<-plot(nonASALPrec)+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, non-ASAL counties")
 plot6<-plot(nonASALTemp)+ylab("Yield")+xlab("Average temperature in multiples of SD")+ggtitle("Predicted values, non-ASAL counties")
@@ -50,3 +50,5 @@ require(gridExtra)
 pdf("presentations/ggeffects/marginalEffects.pdf")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
+
+plot1+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))
