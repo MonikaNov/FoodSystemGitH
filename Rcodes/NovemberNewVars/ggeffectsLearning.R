@@ -48,8 +48,12 @@ efe<-ggeffect(KenTe,terms=c("AvgTemp","ID1"));efe
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+# back to the real model
 
 KEN11a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
             +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            
+kene1<-ggpredict(KEN11a);
+kene2<-ggpredict(KEN11a,terms=c("AvgTemp")); kene2
+kene3<-ggeffect(KEN11a,terms=c("AvgTemp")); kene3            
             data=ScaledTS,na.action=na.exclude); summary(KEN11a)
