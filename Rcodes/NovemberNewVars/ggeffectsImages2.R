@@ -4,9 +4,9 @@ load("dataFS/Main/DaTS.RData")
 
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 # these models are the best ones for now:
-
+ScaledTS$foo=0.25942373
 KEN11a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
-            +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+            +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1) ,
             data=ScaledTS,na.action=na.exclude); summary(KEN11a)
 # and subsamples
 KEN11a_ASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
@@ -18,8 +18,12 @@ KEN11a_nonASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                     data=ScaledTS[ScaledTS$ASAL==0,],na.action=na.exclude); summary(KEN11a_nonASAL)
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 par(mfrow=c(3,2))
+ff=function(x) x/1.296
+ggpredict(KEN11a,terms=c("SeasPr [n=10]"));exp(summary(KEN11a)$tTable[,1])
+ggpredict(KEN11a,terms=c("SeasPr") )/1.2961829
+ggpredict(KEN11a,terms=c("SeasPr"),typical=function(x) mean(x,na.rm=TRUE)/1.2961829)
 
-plot(ggpredict(KEN11a,terms=c("SeasPr")))+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")
+plot(ggpredict(KEN11a,terms=c("SeasPr [n=10]")))+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")
 plot(ggpredict(KEN11a,terms=c("AvgTemp")))+ylab("Yield")+xlab("Average temperature in multiples of SD")
 
 
@@ -32,7 +36,7 @@ plot(ggpredict(KEN11a_nonASAL,terms=c("AvgTemp [all]")))+ylab("Yield")+xlab("Ave
 require(gridExtra)
 
 
-plot1<-plot(ggpredict(KEN11a,terms=c("SeasPr") ))+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, all counties")
+plot1<-plot(ggpredict(KEN11a,terms=c("SeasPr") )/1.2961829)+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, all counties")
 plot2<-plot(ggpredict(KEN11a,terms=c("AvgTemp")))+ylab("Yield")+xlab("Average temperature in multiples of SD")+ggtitle("Predicted values, all counties")
 plot3<-plot(ggpredict(KEN11a_ASAL,terms=c("SeasPr")))+ylab("Yield")+xlab("Seasonal precipitation in multiples of SD")+ggtitle("Predicted values, ASAL counties")
 plot4<-plot(ggpredict(KEN11a_ASAL,terms=c("AvgTemp")))+ylab("Yield")+xlab("Average temperature in multiples of SD")+ggtitle("Predicted values, ASAL counties")
