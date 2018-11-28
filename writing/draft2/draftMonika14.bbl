@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -35,6 +35,10 @@ Bates, J., Pinheiro, J., Pinheiro, J., and Bates, D.
 \newblock \emph{Mixed-Effects Models in S and S-PLUS}.
 \newblock Statistics and Computing. Springer New York.
 \newblock ISBN 9780387989570.
+
+\bibitem[Berkeley{\ }Earth()]{Berkeley}
+Berkeley{\ }Earth.
+\newblock {\newline}(accessed October, 2018) http://berkeleyearth.org/data/.
 
 \bibitem[Blumenstock(1942)]{blumenstock1942}
 Blumenstock, G.
@@ -116,6 +120,12 @@ Trenberth, K.~E., Jones, P.~D., et~al.
   S. and D. Qin, M. Manning and Z. Chen and M. Marquis and K.B. Averyt and
   M.Tignor and H.L. Miller (eds.)].}
 \newblock Cambridge University Press.
+
+\bibitem[University{\ }of{\ }Natural{\ }Resources{\ }and{\ }Life{\ }Sciences{\
+  }Vienna()]{BOKU}
+University{\ }of{\ }Natural{\ }Resources{\ }and{\ }Life{\ }Sciences{\ }Vienna.
+\newblock {\newline}(accessed October, 2018).
+  http://ivfl-info.boku.ac.at/index.php/homepage?view=featured.
 
 \bibitem[Vicente-Serrano et~al.(2010)Vicente-Serrano, Beguería, and
   López-Moreno]{SPEI}

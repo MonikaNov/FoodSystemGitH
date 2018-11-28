@@ -177,35 +177,30 @@ In the light of these arguments, the goal of the present study is to develop a m
 
 \section{Methodology}\label{Method}
 \color{blue}
-\begin{itemize}
- \item[] \textbf{Paragraph 1}
+
 \begin{itemize}
 \item \textit{case study looking at Kenya...}
 \end{itemize}
 
 \subsection{Data}\label{Data}
 \begin{itemize}
-\item Source of the climate data (Boku and Berkeley)
+\item Source of the climate data \cite{BOKU} (BOKU) and \cite{Berkeley}
 \item Source of the yield data (Kenya MoA)
 \end{itemize}
 
+\color{black}
+\subsection{Statistical approach}
 
- \item[] \textbf{Paragraph 3}
+
+
+% No need to write too many details (or a section) about measures of food security
+% No need to describe all the weather measures/characteristics that we have calculated and/or tried to use and didn't work
 \begin{itemize}
-\item Statistical approach
-\end{itemize}
-
-\color{red}
-\item No need to write too many details (or a section) about measures of food security
-\item No need to describe all the weather measures/characteristics that we have calculated and/or tried to use and didn't work
 \color{blue}
-\item \textit{Just say something like 'We used commonly used measures of weather/drought'}
-\item \textit{Only list the significant weather measures/variables}
+\item \textit{We used commonly used measures of weather/drought (Only mention the significant weather measures/variables)}
 \end{itemize}
 \color{black}
 
-
-\subsection{Linear mixed models}
 \sloppy
 Kenya consists of $47$ counties with semi-autonomous county governments  \citep{Barasa2017}. As a result of the high degree of county-level autonomy, the policies and regulations often differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (also known as mixed models) commonly used to analyse longitudinal data \citep{bates2000mixed}. Mixed models are suitable for analysis of panel data as they account for the panel structure of the dataset. These types of models include both fixed effects parameters and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \citep{bates2010lme4}. On the other hand, random effects are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation (\citealp{KERYch9, KERYch12}).
 
@@ -248,18 +243,14 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \color{blue}
 \begin{itemize}
 
-\item Tables of estimates of two models:
-
-\begin{enumerate}
-\item The base model which only includes seasonal precipitation and average seasonal temperature
-\item The preferred specification which includes the significant weather variables (see the preliminary results in Table \ref{KenARe11}) 
+\item Tables of estimates of the preferred specification which includes the significant weather variables (see the preliminary results in Table \ref{KenARe11}) 
 
 \begin{itemize}
 \item For all counties 
 \item For Arid and semi-araid (ASAL) counties
 \item For non-ASAL counties
 \end{itemize}
-\end{enumerate}
+
 
 \color{black}
 
