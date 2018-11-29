@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: draft1.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: draft2.aux
 The style file: dcu.bst
 Database file #1: referencesFS.bib
 Unbalanced braces---line 788 of file referencesFS.bib
@@ -10,10 +10,7 @@ I was expecting a `,' or a `}'---line 994 of file referencesFS.bib
  : url = "http://www.fao.org/docrep/013/i1500e/Kenya.pdf",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-reverse.pass is an unknown function---line 1307 of file dcu.bst
- : reverse {reverse.pass
- :                      }
 Warning--empty title in Barasa2017
 Warning--empty title in Berkeley
 Warning--empty title in BOKU
-(There were 3 error messages)
+(There were 2 error messages)

@@ -1,11 +1,11 @@
-% BibTeX standard bibliography style `dcu' (one of the harvard family)
+% BibTeX standard bibliography style `jphysicsB' (one of the harvard family)
 	% version 0.99a for BibTeX versions 0.99a or later, LaTeX version 2.09.
 	% Copyright (C) 1991, all rights reserved.
 	% Copying of this file is authorized only if either
 	% (1) you make absolutely no changes to your copy, including name, or
 	% (2) if you do make changes, you name it something other than
 	% btxbst.doc, plain.bst, unsrt.bst, alpha.bst, abbrv.bst, agsm.bst,
-        % dcu.bst or kluwer.bst.
+        % dcu.bst, kluwer.bst or jphysicsB.bst.
 	% This restriction helps ensure that all standard styles are identical.
 	% The file harvard.tex has the documentation for this style.
 
@@ -42,7 +42,7 @@ ENTRY
     volume
     year
   }
-  { field.used etal.allowed etal.required }
+  { field.used etal.allowed etal.required} %%%XXX change
   { extra.label sort.label list.year }
 
 INTEGERS { output.state before.all mid.sentence after.sentence after.block }
@@ -59,7 +59,7 @@ STRINGS { s t f }
 FUNCTION {output.nonnull}
 { 's :=
   output.state mid.sentence =
-    { ", " * write$ }
+    { " " * write$ }
     { output.state after.block =
 	{ add.period$ write$
 	  newline$
@@ -197,17 +197,17 @@ FUNCTION {format.names}
 FUNCTION {format.authors}
 { author empty$
     { "" }
-    { "{vv~}{ll}{, jj}{, f.}" author format.names }
+    { "{vv~}{ll}{, jj}{ f{~}}" author format.names }
   if$
 }
 
 FUNCTION {format.editors}
 { editor empty$
     { "" }
-    { "{vv~}{ll}{, jj}{, f.}" editor format.names
+    { "{vv~}{ll}{, jj}{ f{~}}" editor format.names
       editor num.names$ #1 >
-	{ " (eds)" * }
-	{ " (ed.)" * }
+	{ ", eds" * }
+	{ ", ed." * }
       if$
     }
   if$
@@ -216,10 +216,10 @@ FUNCTION {format.editors}
 FUNCTION {format.editors.reverse}
 { editor empty$
     { "" }
-    { "{f.~}{vv~}{ll}{, jj}" editor format.names
+    { "{f~}{vv~}{ll}{, jj}" editor format.names
       editor num.names$ #1 >
-	{ " (eds)" * }
-	{ " (ed.)" * }
+	{ ", eds" * }
+	{ ", ed." * }
       if$
     }
   if$
@@ -300,7 +300,7 @@ FUNCTION {format.number.series}
 	  number tie.or.space.connect
 	  series empty$
 	    { "there's a number but no series in " cite$ * warning$ }
-	    { " in " * series emphasize * }
+	    { " {\em in} " * series quote * }
 	  if$
 	}
       if$
@@ -368,7 +368,7 @@ FUNCTION {format.vol.num.pages}
     'skip$
     { duplicate$ empty$
 	{ pop$ format.pages }
-	{ ":~" * pages n.dashify * }
+	{ ",~" * pages n.dashify * }
       if$
     }
   if$
@@ -394,8 +394,8 @@ FUNCTION {format.in.ed.booktitle}
 { booktitle empty$
     { "" }
     { editor empty$
-	{ booktitle emphasize }
-	{ "{\em in} " format.editors.reverse * ", " * booktitle emphasize * }
+	{ "{\em in} " booktitle quote * }
+	{ "{\em in} " format.editors.reverse * ", " * booktitle quote * }
       if$
     }
   if$
@@ -438,12 +438,12 @@ FUNCTION {format.article.crossref}
 	  warning$
 	  ""
 	}
-	{ "in {\em " journal * "\/}" * " \cite{" * crossref * "}" *
-        }
+	{ "in {\em " journal * "\/} \cite{" * crossref * "}" *}
       if$
     }
-    { " {\em in} \citeasnoun{" crossref * "}" * }
+    { "{\em in} \citeasnoun{" crossref * "}" * }
   if$
+ 
 }
 
 FUNCTION {format.book.crossref}
@@ -464,7 +464,7 @@ FUNCTION {format.book.crossref}
 	      crossref * warning$
 	      "" *
 	    }
-	    { "{\em " * series * "\/}" * " \cite{" * crossref * "}" *}
+	    { "{\em " * series * "\/} \cite{" * crossref * "}" *}
 	  if$
 	}
 	{ " \citeasnoun{" * crossref * "}" * }
@@ -478,8 +478,7 @@ FUNCTION {format.incoll.inproc.crossref}
 { editor empty$
   editor field.or.null author field.or.null =
   or
-    {
-      key empty$
+    { key empty$
 	{ booktitle empty$
 	    { "need editor, key, or booktitle for " cite$ * " to crossref " *
 	      crossref * warning$
@@ -488,12 +487,12 @@ FUNCTION {format.incoll.inproc.crossref}
 	    { "in {\em " booktitle * "\/}" * " \cite{" * crossref * "}" *}
 	  if$
 	}
-	{ " {\em in} \citeasnoun{" crossref * "}" * }
+	{ "{\em in} \citeasnoun{" crossref * "}" * }
       if$
     }
-    {  " {\em in} \citeasnoun{" crossref * "}" * }
+    { "{\em in} \citeasnoun{" crossref * "}" * }
   if$
- 
+  
 }
 
 INTEGERS { len }
@@ -632,8 +631,9 @@ FUNCTION {make.full.label}
   if$
 }
 
-FUNCTION {make.abbr.label}
-{ etal.allowed
+FUNCTION {make.abbr.label} %%%XXX change
+{
+  etal.allowed
     { author.field field.used =
         { author format.lab.names.abbr }
         { editor.field field.used =
@@ -644,7 +644,7 @@ FUNCTION {make.abbr.label}
                     { format.btitle }
                     { key.field field.used =
                         { key #3 text.prefix$ }
-                        { "Internal error :001 on " cite$ * " label" * warning$}
+                        {"Internal error :001 on " cite$ * " label" * warning$ }
                       if$
                     }
                   if$
@@ -661,19 +661,8 @@ FUNCTION {make.abbr.label}
 
 FUNCTION {output.bibitem}
 { newline$
-  etal.allowed        %%%XXX change
-  etal.required
-  and
-    {
-      "\harvarditem[" write$
-      make.abbr.label write$
-      "]{" write$
-    }
-    {
-      "\harvarditem{" write$
-    }
-  if$
-  make.full.label write$
+  "\harvarditem{" write$
+  make.abbr.label write$
   "}{" write$
   list.year write$
   "}{" write$
@@ -684,7 +673,6 @@ FUNCTION {output.bibitem}
   before.all 'output.state :=
 }
 
-
 FUNCTION {list.label.output}
 { make.list.label " " * write$
 }
@@ -692,13 +680,8 @@ FUNCTION {list.label.output}
 FUNCTION {article}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   author "author" item.check
-  title.field field.used =
-    { skip$ }
-    { format.title "title" output.check }
-  if$
   crossref missing$
     { journal emphasize "journal" duplicate$ item.check
       " " * format.vol.num.pages * output
@@ -716,8 +699,7 @@ FUNCTION {article}
 FUNCTION {book}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   author empty$
     { editor "author and editor" item.check }
     { crossref missing$
@@ -750,11 +732,10 @@ FUNCTION {book}
 FUNCTION {booklet}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   title.field field.used =
     { skip$ }
-    { format.title "title" output.check }
+    { format.title quote "title" output.check }
   if$
   howpublished output
   address output
@@ -767,8 +748,7 @@ FUNCTION {booklet}
 FUNCTION {inbook}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   author empty$
     { editor "author and editor" item.check }
     { crossref missing$
@@ -776,10 +756,6 @@ FUNCTION {inbook}
 	'skip$
       if$
     }
-  if$
-  title.field field.used =
-    { skip$ }
-    { format.btitle "title" output.check }
   if$
   crossref missing$
     { format.bvolume output
@@ -802,12 +778,7 @@ FUNCTION {inbook}
 FUNCTION {incollection}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
-  title.field field.used =
-    { skip$ }
-    { format.title "title" output.check }
-  if$
+  " " list.year * output.nonnull
   author "author" item.check
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
@@ -830,12 +801,7 @@ FUNCTION {incollection}
 FUNCTION {inproceedings}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
-  title.field field.used =
-    { skip$ }
-    { format.title "title" output.check }
-  if$
+  " " list.year * output.nonnull
   author "author" item.check
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
@@ -847,8 +813,8 @@ FUNCTION {inproceedings}
 	}
 	{ organization output
 	  publisher output
-	  address output.nonnull
-	}
+          address output.nonnull
+ 	}
       if$
     }
     { format.incoll.inproc.crossref output.nonnull
@@ -866,8 +832,7 @@ FUNCTION {conference} { inproceedings }
 FUNCTION {manual}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   title.field field.used =
     { skip$ }
     { format.btitle "title" output.check }
@@ -875,8 +840,7 @@ FUNCTION {manual}
   format.edition output
   author empty$
     { organization empty$
-	{ address output
-	}
+	{ address output }
 	'skip$
       if$
     }
@@ -893,12 +857,11 @@ FUNCTION {manual}
 FUNCTION {mastersthesis}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   author "author" item.check
   title.field field.used =
     { skip$ }
-    { format.title emphasize "title" output.check }
+    { format.title "title" output.check }
   if$
   "Master's thesis" format.thesis.type output.nonnull
   school "school" output.check
@@ -912,11 +875,10 @@ FUNCTION {mastersthesis}
 FUNCTION {misc}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   title.field field.used =
     { skip$ }
-    { format.title output }
+    { format.title quote output }
   if$
   howpublished output
   new.block
@@ -929,12 +891,11 @@ FUNCTION {misc}
 FUNCTION {phdthesis}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   author "author" item.check
   title.field field.used =
     { skip$ }
-    { format.btitle "title" output.check }
+    { title "title" output.check }
   if$
   "PhD thesis" format.thesis.type output.nonnull
   school "school" output.check
@@ -948,12 +909,7 @@ FUNCTION {phdthesis}
 FUNCTION {proceedings}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
-  title.field field.used =
-    { skip$ }
-    { format.btitle "title" output.check }
-  if$
+  " " list.year * output.nonnull
   format.bvolume output
   format.number.series output
   address empty$
@@ -981,14 +937,13 @@ FUNCTION {proceedings}
 FUNCTION {techreport}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   author "author" item.check
   title.field field.used =
     { skip$ }
     { format.title "title" output.check }
   if$
-  format.tr.number emphasize output.nonnull
+  format.tr.number output.nonnull
   institution "institution" output.check
   address output
   new.block
@@ -1000,8 +955,7 @@ FUNCTION {techreport}
 FUNCTION {unpublished}
 { output.bibitem
   list.label.output
-  " \harvardyearleft " list.year * "\harvardyearright " * output.nonnull
-  new.block
+  " " list.year * output.nonnull
   author "author" item.check
   title.field field.used =
     { skip$ }
@@ -1162,7 +1116,7 @@ FUNCTION {sort.format.title}
   #1 global.max$ substring$
 }
 
-FUNCTION {calc.label}
+FUNCTION {calc.label} %%%XXX change
 { make.abbr.label
   title.field field.used =
     { sort.format.title }
@@ -1238,9 +1192,9 @@ ITERATE {first.presort}
 
 SORT
 
-STRINGS { last.sort.label next.extra last.full.label }
+STRINGS { last.sort.label next.extra last.full.label}
 
-INTEGERS { last.extra.num last.etal.allowed }
+INTEGERS { last.extra.num last.etal.allowed}
 
 FUNCTION {initialize.confusion}
 { #0 int.to.chr$ 'last.sort.label :=
@@ -1298,6 +1252,10 @@ FUNCTION {reverse.pass}
 { next.extra "b" =
     { "a" 'extra.label := }
     'skip$
+  if$
+  year empty$
+    { "n.d." extra.label emphasize * 'list.year := }
+    { year extra.label emphasize * 'list.year := }
   if$
   extra.label 'next.extra :=
 }

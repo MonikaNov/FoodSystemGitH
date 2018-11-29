@@ -48,14 +48,17 @@ plot6<-plot(nonASALTemp)+ylab("Yield")+xlab("Average temperature in multiples of
 
 require(gridExtra)
 pdf("presentations/ggeffects/marginalEffects.pdf")
+pdf("writing/draft3/marginalEffects.pdf")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
 
 
 require(gridExtra)
-cairo_ps("presentations/ggeffects/marginalEffects.eps")
+cairo_ps("writing/draft2/marginalEffects.eps")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
+
+
 
 
 plot1+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))

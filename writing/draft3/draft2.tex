@@ -62,11 +62,15 @@
 \usepackage[hyphens]{url}
 \usepackage[english]{babel}
 \usepackage{harvard}
+\usepackage[flushleft]{threeparttable}
+\usepackage{changepage}
+
 
 \begin{document}
 
 \pdfminorversion=4
 \submitto{\ERL}
+\makesavenoteenv{tabular}
 
 \title[ The Effects of Weather on Maize Yields: New Evidence from Kenya]{The Effects of Weather on Maize Yields: New Evidence from Kenya}
 
@@ -81,9 +85,8 @@
 
 \doublespacing
 \begin{abstract}
-\textcolor{red}{..the full abstract to be written..} This paper contributes to better understanding of effects of drought on food security in Kenya which should lead to improving of early warning systems and food security. Our dataset consists of an yearly panel of $47$ counties of Kenya describing the period of 1981-2017.
-\\
-...Applying the linear mixed effects models, we found that...
+...Applying the linear mixed effects models, we found that...\\
+\textcolor{red}{.. to be written later..}
 \end{abstract}
 
 %
@@ -141,10 +144,7 @@
 
 \item[] \textbf{Paragraph 5}
 	\begin{itemize}
-		\item Aim of the paper:
-		\color{red}
-		\\ In the light of these arguments, the goal of the present study is to develop a model which will utilize weather data to assess risk of drought and food security. In addition, we want to find out which particular features of climate or weather are the most important factors affecting the yields and food security. Are the average weather conditions the most important or is it the weather variability or length and number of dry spells during the growing season what matters the most? Answering these and other similar questions should help to improve food security and shift the focus from reactive to proactive approach in drought disaster risk management. We focus on Kenya utilizing an yearly panel of $47$ counties over the period of $1981-2017$.
-		\color{black}
+		\item Aim of the paper
 		\end{itemize}
 	 
 	\end{itemize}
@@ -156,11 +156,13 @@
 \section{Methods}\label{Methods}
 \color{blue}
 
-\begin{itemize}
-\item \textit{A case study looking at Kenya...}
-\end{itemize}
+...a case study looking at Kenya...
+\color{black}
 
+Our dataset consists of an yearly panel of $47$ counties of Kenya describing the period of 1981-2017.
+ 
 \subsection{Data}\label{Data}
+\color{blue}
 \begin{itemize}
 \item Source of the climate data: \cite{BOKU} (BOKU) and \cite{Berkeley}
 \item Source of the yield data (Kenya MoA)
@@ -210,6 +212,105 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \end{itemize}
 \color{black}
 
+
+
+
+
+\section{Results}\label{Results}
+
+\color{blue}
+\begin{itemize}
+
+\item Tables of estimates of the preferred specification which includes the significant weather variables (see the preliminary results in Table \ref{KenARe11}) 
+
+\begin{itemize}
+\item For all counties 
+\item For Arid and semi-araid (ASAL) counties
+\item For non-ASAL counties
+\end{itemize}
+
+\color{black}
+
+{
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11a  KEN11a_ASAL    KEN11a_nonASAL														
+\label{KenARe11} 
+\begin{footnotesize}
+\begin{tabular}{llrlllr} 
+\hline \vspace{-0.2cm} \\
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
+    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}% anova(KEN11a, type='marginal')
+    &{$exp(\beta)$}&\textbf{F-value\tnote{a}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
+  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$5.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
+  \\
+  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$4.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$3.277$&$0.969$ &$0.246$&$0.909^{}$&$2.231$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$4.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$0.163$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$4.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$0.096$\\
+  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$1.580$\\
+  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$3.125$&$1.039$&$0.558$&$1.059$ ${*}$&$5.640$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+ \\ 
+ \hline
+\vspace{-0.2cm} \\
+\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
+\vspace{-0.2cm}
+\\  
+  
+  \hline
+  \vspace{-0.2cm} \\
+
+\hline
+\vspace{-0.2cm}
+\end{tabular} 
+\end{footnotesize}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+        \begin{adjustwidth}{1cm}{} 
+    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+  \begin{figure}
+   \includegraphics{marginalEffects.pdf}
+\caption{Marginal effects of seasonal rainfall and temperature}\label{bar}
+\end{figure}
+
+\color{blue}
+
+\item Verbal description and interpretation of the results. Discussing goodness of fit using various criteria such as AIC or alternatives to $R^2$.
+%\item Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.
+
+	%	\begin{itemize}%
+		%	\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
+	%\end{itemize}
+	
+\item If we get the yield data for the period from $2015$ onwards: Out of sample predictions and comparison with the real data
+\end{itemize}
+
+
+\color{black}
 
 \clearpage
 

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  29 NOV 2018 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  29 NOV 2018 19:18
 entering extended mode
-**./draft1.tex
-(draft1.tex
+**./draft2.tex
+(draft2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (iopart.cls
@@ -313,36 +313,45 @@ File: babel.def 2017/05/19 3.10 Babel common definitions
 )) (harvard.sty
 Package: harvard 
 )
-(draft1.aux)
-\openout1 = `draft1.aux'.
+(E:\latex\texmfs\install\tex\latex\threeparttable\threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box57
+)
+(E:\latex\texmfs\install\tex\latex\changepage\changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count106
+\cp@tempcnt=\count107
+) (draft2.aux)
+\openout1 = `draft2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
- (E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+
+(E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count108
 \scratchdimen=\dimen130
-\scratchbox=\box57
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\scratchbox=\box58
+\nofMPsegments=\count109
+\nofMParguments=\count110
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count109
+\MPscratchCnt=\count111
 \MPscratchDim=\dimen131
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks24
 )
-\AtBeginShipoutBox=\box58
+\AtBeginShipoutBox=\box59
  (E:\latex\texmfs\install\tex\latex\oberdiek\pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
@@ -354,53 +363,66 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 (E:\latex\texmfs\install\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 (E:\latex\texmfs\install\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (E:\latex\texmfs\install\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 84.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 116.
 
 (E:\latex\texmfs\install\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 1147) in paragraph at lines 113--114
+Underfull \hbox (badness 1147) in paragraph at lines 116--117
 []\OT1/cmr/m/n/12 Extreme weather causes disasters $\OMS/cmsy/m/n/12 !$ \OT1/cm
 r/m/n/12 early warning systems have been
  []
 
 [1
 
-{E:/latex/texmfs/data/pdftex/config/pdftex.map}] [2] [3] [4] (draft1.bbl)
-[5
+{E:/latex/texmfs/data/pdftex/config/pdftex.map}] [2] [3]
+<marginalEffects.pdf, id=22, 505.89pt x 505.89pt>
+File: marginalEffects.pdf Graphic file (type pdf)
+ <use marginalEffects.pdf>
+Package pdftex.def Info: marginalEffects.pdf used on input line 296.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-] (draft1.aux) ) 
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 296--297
+[][] 
+ []
+
+[4] [5 <./marginalEffects.pdf>] (draft2.bbl) [6
+
+] (draft2.aux) ) 
 Here is how much of TeX's memory you used:
- 4562 strings out of 495222
- 59847 string characters out of 3182071
- 139366 words of memory out of 3000000
- 7730 multiletter control sequences out of 15000+200000
- 15023 words of font info for 59 fonts, out of 3000000 for 9000
+ 4685 strings out of 495222
+ 61724 string characters out of 3182071
+ 146269 words of memory out of 3000000
+ 7841 multiletter control sequences out of 15000+200000
+ 16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,9n,35p,1264b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,35p,1264b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/late
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/ins
-tall/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/latex/texmfs/install/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><E:/latex/texmfs/install/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/l
-atex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/texmfs/
-install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/texmfs/install/font
-s/type1/public/rsfs/rsfs10.pfb>
-Output written on draft1.pdf (5 pages, 155206 bytes).
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/install/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E
+:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pf
+b><E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on draft2.pdf (6 pages, 209037 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
