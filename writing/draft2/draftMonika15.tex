@@ -26,13 +26,11 @@
 \usepackage[none]{hyphenat}
 \usepackage[affil-it]{authblk}
 \usepackage{datetime}
-\usepackage{colortbl}
 \usepackage{footnote}
 \makesavenoteenv{tabular}
 \usepackage[flushleft]{threeparttable}
 \usepackage[hyphens]{url}
 \usepackage{placeins}
-\usepackage{dcolumn}
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{setspace}
@@ -40,24 +38,7 @@
 \usepackage{mathrsfs}
 \usepackage{gensymb}
 
-\usepackage{amsfonts}
-\usepackage{graphicx}
-\usepackage{caption}
-\usepackage{array}
-\usepackage{pdfpages}
-\usepackage{float}
-\usepackage[round]{natbib}
-\usepackage{multirow}
-\usepackage{multicol}
-\usepackage{amsxtra}
-\usepackage{amsbsy}
-\usepackage{accents}
-\usepackage{chngcntr}
 \usepackage{tabularx}
-\usepackage{dcolumn}
-\usepackage[none]{hyphenat}
-\usepackage[affil-it]{authblk}
-\usepackage{datetime}
 \usepackage[labelfont=bf]{caption}
 \usepackage{titlesec}
 \usepackage{endnotes}
@@ -77,17 +58,12 @@
 \newcommand\starred[1]{\accentset{~~~~~\star}{#1}}
 
 
-\newcounter{magicrownumbers}
-\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
-
 \begin{document}
 
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
   
   \interfootnotelinepenalty=10000
- \newcolumntype{d}{D{.}{.}{-1}}
- \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
 
 \makeatletter
 \def\hlinewd#1{%
@@ -164,26 +140,26 @@
 
  \item[] \textbf{Paragraph 5}
 \begin{itemize}
-\item Aim of the paper
-\end{itemize}
- 
-\end{itemize}
+\item Aim of the paper:
+
 \color{red}
 
 
 In the light of these arguments, the goal of the present study is to develop a model which will utilize weather data to assess risk of drought and food security. In addition, we want to find out which particular features of climate or weather are the most important factors affecting the yields and food security. Are the average weather conditions the most important or is it the weather variability or length and number of dry spells during the growing season what matters the most? Answering these and other similar questions should help to improve food security and shift the focus from reactive to proactive approach in drought disaster risk management. We focus on Kenya utilizing an yearly panel of $47$ counties over the period of $1981-2017$. % mozna hodit tuhle vetu na zacatek 2.1. Measures of food security and drough
 \color{black}
-
-\section{Methodology}\label{Method}
+\end{itemize}
+ 
+\end{itemize}
+\section{Methods}\label{Methods}
 \color{blue}
 
 \begin{itemize}
-\item \textit{case study looking at Kenya...}
+\item \textit{A case study looking at Kenya...}
 \end{itemize}
 
 \subsection{Data}\label{Data}
 \begin{itemize}
-\item Source of the climate data \cite{BOKU} (BOKU) and \cite{Berkeley}
+\item Source of the climate data: \cite{BOKU} (BOKU) and \cite{Berkeley}
 \item Source of the yield data (Kenya MoA)
 \end{itemize}
 

@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    INSTITUTE OF PHYSICS PUBLISHING                                   %
+%                                                                      %
+%   `Preparing an article for publication in an Institute of Physics   %
+%    Publishing journal using LaTeX'                                   %
+%                                                                      %
+%    LaTeX source code `ioplau2e.tex' used to generate `author         %
+%    guidelines', the documentation explaining and demonstrating use   %
+%    of the Institute of Physics Publishing LaTeX preprint files       %
+%    `iopart.cls, iopart12.clo and iopart10.clo'.                      %
+%                                                                      %
+%    `ioplau2e.tex' itself uses LaTeX with `iopart.cls'                %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% First we have a character check
+%
+% ! exclamation mark    " double quote  
+% # hash                ` opening quote (grave)
+% & ampersand           ' closing quote (acute)
+% $ dollar              % percent       
+% ( open parenthesis    ) close paren.  
+% - hyphen              = equals sign
+% | vertical bar        ~ tilde         
+% @ at sign             _ underscore
+% { open curly brace    } close curly   
+% [ open square         ] close square bracket
+% + plus sign           ; semi-colon    
+% * asterisk            : colon
+% < open angle bracket  > close angle   
+% , comma               . full stop
+% ? question mark       / forward slash 
+% \ backslash           ^ circumflex
+%
+% ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+% abcdefghijklmnopqrstuvwxyz 
+% 1234567890
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[12pt]{iopart}
+\newcommand{\gguide}{{\it Preparing graphics for IOP Publishing journals}}
+
+%Uncomment next line if AMS fonts required
+%\usepackage{iopams}  
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsbsy}
+\usepackage[none]{hyphenat}
+\usepackage{footnote}
+\usepackage{tabularx}
+\usepackage{epstopdf}
+\usepackage{setspace} % for double spacing, maybe remove later
+\usepackage{mathrsfs} 
+\usepackage[hyphens]{url}
+\usepackage{placeins}
+\usepackage[english]{babel}
+
+\begin{document}
+
+\pdfminorversion=4
+\submitto{\ERL}
+
+\title[ The Effects of Weather on Maize Yields: New Evidence from Kenya]{The Effects of Weather on Maize Yields: New Evidence from Kenya}
+
+\author{Monika Novackova, Pedram Rowhani, Martin Todd and Dominic Kniveton}
+
+\address{Department of Geography, University of Sussex, Falmer, UK}
+\ead{monika.novac@gmail.com}
+\vspace{10pt}
+\begin{indented}
+\item[]November 2018
+\end{indented}
+
+\doublespacing
+\begin{abstract}
+\textcolor{red}{..the full abstract to be written..} This paper contributes to better understanding of effects of drought on food security in Kenya which should lead to improving of early warning systems and food security. Our dataset consists of an yearly panel of $47$ counties of Kenya describing the period of 1981-2017.
+\\
+...Applying the linear mixed effects models, we found that...
+\end{abstract}
+
+%
+% Uncomment for keywords
+%\vspace{2pc}
+%\noindent{\it Keywords}: XXXXXX, YYYYYYYY, ZZZZZZZZZ
+%
+% Uncomment for Submitted to journal title message
+%\submitto{\JPA}
+%
+% Uncomment if a separate title page is required
+%\maketitle
+% 
+% For two-column output uncomment the next line and choose [10pt] rather than [12pt] in the \documentclass declaration
+%\ioptwocol
+%
+
+\section{Introduction}\label{Introduction}
+
+
+\begin{itemize}
+\color{blue}
+\item[] \textbf{Paragraph 1}
+
+\begin{itemize}
+
+\item Extreme weather causes disasters $\rightarrow$	 early warning systems have been developed
+\end{itemize}
+\item[] \textbf{Paragraph 2}
+\begin{itemize}
+\item What weather forecasts (measures) have been used in EWS? \textit{ref. litrature}
+\begin{itemize}
+\item Mostly seasonal precip. totals and temperature averages
+\end{itemize}
+\end{itemize}
+
+\item[] \textbf{Paragraph 3} 
+\begin{itemize}
+
+\item Identify difference between hazard and disaster
+
+\begin{itemize}
+\item Not every hazard turns into disaster
+\item For a hazard to become a disaster it needs to have \textbf{impact}
+\item Here, we identify the key metrics which have impact on yield
+\end{itemize}
+
+\end{itemize}
+
+\item[] \textbf{Paragraph 4}
+\begin{itemize}
+\item Crop yield versus climate forecasting
+\end{itemize}
+
+
+\item[] \textbf{Paragraph 5}
+	\begin{itemize}
+		\item Aim of the paper:
+		\color{red}
+		\\ In the light of these arguments, the goal of the present study is to develop a model which will utilize weather data to assess risk of drought and food security. In addition, we want to find out which particular features of climate or weather are the most important factors affecting the yields and food security. Are the average weather conditions the most important or is it the weather variability or length and number of dry spells during the growing season what matters the most? Answering these and other similar questions should help to improve food security and shift the focus from reactive to proactive approach in drought disaster risk management. We focus on Kenya utilizing an yearly panel of $47$ counties over the period of $1981-2017$.
+		\color{black}
+		\end{itemize}
+	 
+	\end{itemize}
+
+
+
+
+
+\section{Methods}\label{Methods}
+\color{blue}
+
+\begin{itemize}
+\item \textit{A case study looking at Kenya...}
+\end{itemize}
+
+\subsection{Data}\label{Data}
+\begin{itemize}
+\item Source of the climate data: \cite{BOKU} (BOKU) and \cite{Berkeley}
+\item Source of the yield data (Kenya MoA)
+\end{itemize}
+
+\color{black}
+\subsection{Statistical approach}
+
+% No need to write too many details (or a section) about measures of food security
+% No need to describe all the weather measures/characteristics that we have calculated and/or tried to use and didn't work
+\begin{itemize}
+\color{blue}
+\item \textit{We used commonly used measures of weather/drought (Only mention the significant weather measures/variables)}
+\item Describe the temporal aggregation of the weather variables, seasons
+\end{itemize}
+\color{black}
+
+\sloppy
+Kenya consists of $47$ counties with semi-autonomous county governments  \cite{Barasa2017}. As a result of the high degree of county-level autonomy, the policies and regulations often differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (also known as mixed models) commonly used to analyse longitudinal data \cite{bates2000mixed}. Mixed models are suitable for analysis of panel data as they account for the panel structure of the dataset. These types of models include both fixed effects parameters and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \cite{bates2010lme4}. On the other hand, random effects are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation %(\citealp{KERYch9, KERYch12}).
+
+Formally, a linear mixed model can be described by the distribution of two vectors of random variables: the response $\mathscr{Y}$ and the vector of random effects $\mathscr{B}$. The distribution of $\mathscr{B}$ is multivariate normal and the conditional distribution of $\mathscr{Y}$ given $\mathscr{B}=\mathbf{b}$ is multivariate normal of a form %(\citealp{bates2010lme4, KERYch9}):
+
+
+
+
+\begin{equation}\label{MixedGeneral}
+\begin{array}{lcl}
+
+(\mathscr{Y}|\mathscr{B}=\mathbf{b})& \sim & \mathit{N}(\mathbf{X}\mathbf{\beta}+\mathbf{Z}\mathbf{b},\sigma^2\mathbf{I}),
+
+\end{array}
+\end{equation}
+
+where $\mathbf{X}$ is an $n \times p$ model matrix of fixed effects, $\mathbf{\beta}$ is a $p$-dimensional fixed-effects parameter, $\mathbf{Z}$ is an $n \times q$ model matrix for the $q$-dimensional vector of random-effects variable $\mathscr{B}$ evaluated at $\mathbf{b}$ and $\sigma$ a scale factor. The distribution of $\mathscr{B}$ can be written as: 
+
+\begin{equation}\label{ranefDist}
+\mathscr{B} \sim \mathit{N}(0,\mathbf{\Sigma}),
+\end{equation}
+
+where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix.
+
+\color{blue}
+\begin{itemize}
+\item Add a description of residual and other diagnostic tests (AIC, VIF, autocorrelation)
+\item Describe the procedure that I have applied to find the preferred combination of fixed effects and random effects
+\item Describe the procedure that I have applied to find the preferred way of modelling the  correlation structure in errors (ARMA errors)
+\end{itemize}
+\color{black}
+\FloatBarrier
+
+
+
+
+\section{The title and abstract page} 
+If you use \verb"iopart.cls", the code for setting the title page information is slightly different from
+the normal default in \LaTeX.  If you are using a different class file, you do not need to mimic the appearance of
+an \verb"iopart.cls" title page, but please ensure that all of the necessary information is present.
+
+\clearpage
+
+\appendix
+
+
+\section{List of macros for formatting text, figures and tables}
+
+
+\begin{table}
+\caption{Macros defined within {\tt iopart.cls}
+for use with figures and tables.}
+\begin{indented}
+\item[]\begin{tabular}{@{}l*{15}{l}}
+\br
+Macro name&Purpose\\
+\mr
+\verb"\Figures"&Heading for list of figure captions\\
+\verb"\Figure{#1}"&Figure caption\\
+\verb"\Tables"&Heading for tables and table captions\\
+\verb"\Table{#1}"&Table caption\\
+\verb"\fulltable{#1}"&Table caption for full width table\\
+\verb"\endTable"&End of table created with \verb"\Table"\\
+\verb"\endfulltab"&End of table created with \verb"\fulltable"\\
+\verb"\endtab"&End of table\\
+\verb"\br"&Bold rule for tables\\
+\verb"\mr"&Medium rule for tables\\
+\verb"\ns"&Small negative space for use in table\\
+\verb"\centre{#1}{#2}"&Centre heading over columns\\
+\verb"\crule{#1}"&Centre rule over columns\\
+\verb"\lineup"&Set macros for alignment in columns\\
+\verb"\m"&Space equal to width of minus sign\\
+\verb"\-"&Left overhanging minus sign\\
+\verb"\0"&Space equal to width of a digit\\
+\br
+\end{tabular}
+\end{indented}
+\end{table}
+
+\clearpage
+
+
+
+\end{document}
+

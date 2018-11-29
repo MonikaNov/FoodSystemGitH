@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  29 NOV 2018 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  29 NOV 2018 15:39
 entering extended mode
 **./draftMonika15.tex
 (draftMonika15.tex
@@ -421,11 +421,6 @@ LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks27
 \dt@b=\toks28
 )
-(E:\latex\texmfs\install\tex\latex\colortbl\colortbl.sty
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks29
-\minrowclearance=\skip59
-)
 (E:\latex\texmfs\install\tex\latex\mdwtools\footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box58
@@ -444,10 +439,10 @@ Package: placeins 2005/04/18  v 2.2
 )
 (E:\latex\texmfs\install\tex\latex\tools\longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip60
-\LTright=\skip61
-\LTpre=\skip62
-\LTpost=\skip63
+\LTleft=\skip59
+\LTright=\skip60
+\LTpre=\skip61
+\LTpost=\skip62
 \LTchunksize=\count151
 \LTcapwidth=\dimen141
 \LT@head=\box60
@@ -458,7 +453,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count153
 \c@LT@tables=\count154
 \c@LT@chunks=\count155
-\LT@p@ftn=\toks30
+\LT@p@ftn=\toks29
 )
 (E:\latex\texmfs\install\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -503,16 +498,16 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@target=\dimen158
 \TX@delta=\dimen159
 \TX@cols=\count162
-\TX@ftn=\toks31
+\TX@ftn=\toks30
 )
 (E:\latex\texmfs\install\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box64
-\beforetitleunit=\skip64
-\aftertitleunit=\skip65
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
 \ttl@plus=\dimen160
 \ttl@minus=\dimen161
-\ttl@toksa=\toks32
+\ttl@toksa=\toks31
 \titlewidth=\dimen162
 \titlewidthlast=\dimen163
 \titlewidthfirst=\dimen164
@@ -530,7 +525,7 @@ Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@qlevel=\count167
 \csq@maxlvl=\count168
 \csq@tshold=\count169
-\csq@ltx@everypar=\toks33
+\csq@ltx@everypar=\toks32
 
 (E:\latex\texmfs\install\tex\latex\csquotes\csquotes.def
 File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
@@ -673,7 +668,6 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
-\c@magicrownumbers=\count170
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -682,38 +676,38 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (draftMonika15.aux)
 \openout1 = `draftMonika15.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
  (E:\latex\texmfs\install\tex\latex\base\ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    ... okay on input line 61.
 
 (E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count171
+\scratchcounter=\count170
 \scratchdimen=\dimen166
 \scratchbox=\box65
-\nofMPsegments=\count172
-\nofMParguments=\count173
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count174
+\nofMPsegments=\count171
+\nofMParguments=\count172
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count173
 \MPscratchDim=\dimen167
-\MPnumerator=\count175
-\makeMPintoPDFobject=\count176
-\everyMPtoPDFconversion=\toks35
+\MPnumerator=\count174
+\makeMPintoPDFobject=\count175
+\everyMPtoPDFconversion=\toks34
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -735,31 +729,31 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 83.
-Package gensymb Info: Math companion symbols declared on input line 83.
-LaTeX Info: Redefining \degree on input line 83.
-LaTeX Info: Redefining \celsius on input line 83.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 61.
+Package gensymb Info: Math companion symbols declared on input line 61.
+LaTeX Info: Redefining \degree on input line 61.
+LaTeX Info: Redefining \celsius on input line 61.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 83.
-LaTeX Info: Redefining \ohm on input line 83.
-Package gensymb Info: Using \textohm for \ohm on input line 83.
-Package gensymb Info: Using \textmu for \micro on input line 83.
-LaTeX Font Info:    Try loading font information for U+msa on input line 111.
+erthousand on input line 61.
+LaTeX Info: Redefining \ohm on input line 61.
+Package gensymb Info: Using \textohm for \ohm on input line 61.
+Package gensymb Info: Using \textmu for \micro on input line 61.
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
 
 (E:\latex\texmfs\install\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 111.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 (E:\latex\texmfs\install\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 111.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 87.
 
 (E:\latex\texmfs\install\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
@@ -769,15 +763,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 <marginalEffects.pdf, id=36, 505.89pt x 505.89pt>
 File: marginalEffects.pdf Graphic file (type pdf)
  <use marginalEffects.pdf>
-Package pdftex.def Info: marginalEffects.pdf used on input line 325.
+Package pdftex.def Info: marginalEffects.pdf used on input line 301.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (45.16751pt too wide) in paragraph at lines 325--326
+Overfull \hbox (45.16751pt too wide) in paragraph at lines 301--302
 [][] 
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 358--359
+Underfull \hbox (badness 3623) in paragraph at lines 334--335
 []\OT1/cmr/m/n/12 There is a strong move-ment to shift the fo-cus from fore-cas
 t-ing merely
  []
@@ -809,37 +803,33 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
-[11]) [12] [13] [14] [15] (draftMonika15.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[11]) [12] [13] [14] [15] (draftMonika15.aux) ) 
 Here is how much of TeX's memory you used:
- 9329 strings out of 495222
- 132865 string characters out of 3182071
- 241286 words of memory out of 3000000
- 12336 multiletter control sequences out of 15000+200000
+ 9279 strings out of 495222
+ 132213 string characters out of 3182071
+ 240005 words of memory out of 3000000
+ 12289 multiletter control sequences out of 15000+200000
  26683 words of font info for 97 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,14n,78p,1369b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
- <E:\latex\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><E:/lat
-ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><E:/latex/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/latex/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb><E:/latex/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmbxti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/latex/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb><E:/latex/texmfs/inst
-all/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/latex/texmfs/install/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><E:/latex/texmfs/install/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/late
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/inst
-all/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/ty
-pe1/public/amsfonts/cm/cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb><E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.p
-fb>
-Output written on draftMonika15.pdf (15 pages, 246822 bytes).
+ 42i,13n,78p,1369b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <E:\latex\texmfs/data\fonts\pk\
+ljfour\jknappen\ec\dpi600\tcrm1200.pk><E:/latex/texmfs/install/fonts/type1/publ
+ic/amsfonts/cm/cmbsy10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/ins
+tall/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmmib10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E
+:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/latex/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb><E:/latex/te
+xmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on draftMonika15.pdf (15 pages, 246741 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
