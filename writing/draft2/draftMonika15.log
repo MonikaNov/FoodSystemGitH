@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  29 NOV 2018 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  29 NOV 2018 13:33
 entering extended mode
-**./draftMonika14.tex
-(draftMonika14.tex
+**./draftMonika15.tex
+(draftMonika15.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (E:\latex\texmfs\install\tex\latex\base\article.cls
@@ -679,8 +679,8 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-(draftMonika14.aux)
-\openout1 = `draftMonika14.aux'.
+(draftMonika15.aux)
+\openout1 = `draftMonika15.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
@@ -766,34 +766,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 [1
 
 {E:/latex/texmfs/data/pdftex/config/pdftex.map}] [2] [3] [4] [5] [6]
-Package epstopdf Info: Source file: <marginalEffects.eps>
-(epstopdf)                    date: 2018-11-29 12:44:54
-(epstopdf)                    size: 116425 bytes
-(epstopdf)             Output file: <./marginalEffects-eps-converted-to.pdf>
-(epstopdf)             Command: <epstopdf --outfile=./marginalEffects-eps-conve
-rted-to.pdf marginalEffects.eps>
-(epstopdf)             \includegraphics on input line 325.
-runsystem(epstopdf --outfile=./marginalEffects-eps-converted-to.pdf marginalEff
-ects.eps)...executed (allowed).
+<marginalEffects.pdf, id=36, 505.89pt x 505.89pt>
+File: marginalEffects.pdf Graphic file (type pdf)
+ <use marginalEffects.pdf>
+Package pdftex.def Info: marginalEffects.pdf used on input line 325.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Package epstopdf Info: Result file: <./marginalEffects-eps-converted-to.pdf>.
-
-
-! Package pdftex.def Error: File `./marginalEffects-eps-converted-to.pdf' not f
-ound.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325 ...aphics[width=16.7cm]{marginalEffects.eps}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (14.4397pt too wide) in paragraph at lines 325--326
+Overfull \hbox (45.16751pt too wide) in paragraph at lines 325--326
 [][] 
  []
 
@@ -803,7 +782,7 @@ Underfull \hbox (badness 3623) in paragraph at lines 358--359
 t-ing merely
  []
 
-[7] [8] [9] (draftMonika14.bbl
+[7] [8 <./marginalEffects.pdf>] [9] (draftMonika15.bbl
 Underfull \hbox (badness 1412) in paragraph at lines 60--66
 \OT1/cmr/m/n/12 The Cli-mate Data Guide: Stan-dard-ized Pre-cip-i-ta-tion In-de
 x (SPI).  Re-trieved
@@ -830,35 +809,39 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
-[11]) [12] [13] [14] [15] (draftMonika14.aux) ) 
+[11]) [12] [13] [14] [15] (draftMonika15.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9326 strings out of 495222
- 132770 string characters out of 3182071
+ 9329 strings out of 495222
+ 132865 string characters out of 3182071
  241286 words of memory out of 3000000
- 12332 multiletter control sequences out of 15000+200000
+ 12336 multiletter control sequences out of 15000+200000
  26683 words of font info for 97 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,14n,78p,1369b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
- <E:\latex\texmfs/data\fonts\pk\
-ljfour\jknappen\ec\dpi600\tcrm1200.pk><E:/latex/texmfs/install/fonts/type1/publ
-ic/amsfonts/cm/cmbsy10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/ins
-tall/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/t
-ype1/public/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmmib10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E
-:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/latex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb><E:/latex/te
-xmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draftMonika14.pdf (15 pages, 239242 bytes).
+ <E:\latex\texmfs/data\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><E:/lat
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><E:/latex/texmfs/i
+nstall/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/latex/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb><E:/latex/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmbxti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/latex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb><E:/latex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/latex/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><E:/latex/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmr7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/late
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb><E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.p
+fb>
+Output written on draftMonika15.pdf (15 pages, 246822 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

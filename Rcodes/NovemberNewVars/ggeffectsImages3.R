@@ -22,7 +22,7 @@ exp(summary(KEN11a)$tTable[,1])
 AllPrec<- ggpredict(KEN11a,terms=c("SeasPr [n=20]"))
 AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
 
-AllTemp<- ggpredict(KEN11a,terms=c("AvgTemp [n=20]"),condition)
+AllTemp<- ggpredict(KEN11a,terms=c("AvgTemp [n=20]"))
 AllTemp[,c(2,4,5)]<-AllTemp[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
 
 ASALPrec<- ggpredict(KEN11a_ASAL,terms=c("SeasPr [n=20]"),condition=c(AvgTemp=0,CVPrec = 0, Spell = 0,Spell4=0,SDTemp =0))
@@ -50,5 +50,12 @@ require(gridExtra)
 pdf("presentations/ggeffects/marginalEffects.pdf")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
+
+
+require(gridExtra)
+cairo_ps("presentations/ggeffects/marginalEffects.eps")
+grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
+dev.off()
+
 
 plot1+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))

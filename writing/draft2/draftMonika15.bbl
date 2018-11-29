@@ -1,0 +1,150 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{American Meteorological Society}(1997)]{AMS1997}
+{American Meteorological Society}.
+\newblock Meteorological drought Policy statement.
+\newblock Technical report, 1997.
+
+\bibitem[{American Meteorological Society}(2013)]{AMS2013}
+{American Meteorological Society}.
+\newblock Drought - An Information Statement of the American Meteorological
+  Society.
+\newblock Technical report, 2013.
+
+\bibitem[Barasa et~al.(2017)Barasa, Manyara, Molyneux, and Tsofa]{Barasa2017}
+Barasa, E., Manyara, A., Molyneux, S., and Tsofa, B.
+\newblock 2017.
+\newblock \textquote{Recentralization within decentralization: County hospital
+  autonomy under devolution in Kenya}.
+\newblock \emph{PLOS ONE}, pages 114--124.
+
+\bibitem[Bates(2010)]{bates2010lme4}
+Bates, D.~M.
+\newblock 2010.
+\newblock lme4: Mixed-effects modeling with R.
+
+\bibitem[Bates et~al.(2000)Bates, Pinheiro, Pinheiro, and
+  Bates]{bates2000mixed}
+Bates, J., Pinheiro, J., Pinheiro, J., and Bates, D.
+\newblock 2000.
+\newblock \emph{Mixed-Effects Models in S and S-PLUS}.
+\newblock Statistics and Computing. Springer New York.
+\newblock ISBN 9780387989570.
+
+\bibitem[Berkeley{\ }Earth()]{Berkeley}
+Berkeley{\ }Earth.
+\newblock {\newline}(accessed October, 2018) http://berkeleyearth.org/data/.
+
+\bibitem[Blumenstock(1942)]{blumenstock1942}
+Blumenstock, G.
+\newblock 1942.
+\newblock \emph{Drought in the United States analyzed by means of the theory of
+  probability}.
+\newblock US Department of Agriculture.
+
+\bibitem[Heim(2002)]{Heim2002}
+Heim, R.~R.
+\newblock 2002.
+\newblock \textquote{A Review of Twentieth-Century Drought Indices Used in the
+  United States}.
+\newblock \emph{Bulletin of the American Meteorological Society}, 83\penalty0
+  (8):\penalty0 1149--1165.
+
+\bibitem[{John Keyantash and National Center for Atmospheric Research Staff
+  (Eds.)}(2016)]{SPIonline}
+{John Keyantash and National Center for Atmospheric Research Staff (Eds.)}.
+\newblock 2016.
+\newblock The Climate Data Guide: Standardized Precipitation Index ({SPI}).
+\newblock Retrieved from
+  \url{https://climatedataguide.ucar.edu/climate-data/standardized-precipitation-index-spi}.
+  Last modified 02 Mar 2016.
+
+\bibitem[Kery(2010{\natexlab{a}})]{KERYch12}
+Kery, M.
+\newblock Chapter 12 - Linear Mixed-Effects Model.
+\newblock In Kéry, M., editor, \emph{Introduction to WinBUGS for Ecologists},
+  pages 151 -- 166. Academic Press, Boston, 2010{\natexlab{a}}.
+\newblock ISBN 978-0-12-378605-0.
+\newblock \doi{https://doi.org/10.1016/B978-0-12-378605-0.00012-0}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/B9780123786050000120}.
+
+\bibitem[Kery(2010{\natexlab{b}})]{KERYch9}
+Kery, M.
+\newblock Chapter 9 - Normal One-Way ANOVA.
+\newblock In Kéry, M., editor, \emph{Introduction to WinBUGS for Ecologists},
+  pages 115 -- 127. Academic Press, Boston, 2010{\natexlab{b}}.
+
+\bibitem[McKee et~al.(1993)McKee, Doesken, Kleist, et~al.]{SPI}
+McKee, T.~B., Doesken, N.~J., Kleist, J., et~al.
+\newblock The relationship of drought frequency and duration to time scales.
+\newblock In \emph{Proceedings of the 8th Conference on Applied Climatology},
+  volume~17, pages 179--183. American Meteorological Society Boston, MA, 1993.
+
+\bibitem[McQuigg(1954)]{mcquigg1954}
+McQuigg, J.
+\newblock 1954.
+\newblock \textquote{A simple index of drought conditions}.
+\newblock \emph{Weatherwise}, 7\penalty0 (3):\penalty0 64--67.
+
+\bibitem[Munger(1916)]{munger1916}
+Munger, T.~T.
+\newblock 1916.
+\newblock \textquote{GRAPHIC METHOD OF REPRESENTING AND COMPARING DROUGHT
+  INTENSITIES}.
+\newblock \emph{Monthly Weather Review}, 44\penalty0 (11):\penalty0 642--643.
+
+\bibitem[Palmer(1965)]{palmer1965}
+Palmer, W.~C.
+\newblock 1965.
+\newblock \emph{Meteorological drought}, volume~30.
+\newblock US Department of Commerce, Weather Bureau Washington, DC.
+
+\bibitem[Schneider and Hare(1996)]{schneider1996}
+Schneider, S.~H. and Hare, F.~K.
+\newblock 1996.
+\newblock \emph{Encyclopedia of climate and weather}, volume 678.
+\newblock Oxford University Press New York.
+
+\bibitem[Trenberth et~al.(2007)Trenberth, Jones, et~al.]{IPCCtrenberth}
+Trenberth, K.~E., Jones, P.~D., et~al.
+\newblock 2007.
+\newblock \emph{IPCC, 2007: Summary for Policymakers. In: Climate Change 2007:
+  The Physical Science Basis. Contribution of Working Group I to the Fourth
+  Assessment Report of the Intergovernmental Panel on Climate Change [Solomon,
+  S. and D. Qin, M. Manning and Z. Chen and M. Marquis and K.B. Averyt and
+  M.Tignor and H.L. Miller (eds.)].}
+\newblock Cambridge University Press.
+
+\bibitem[University{\ }of{\ }Natural{\ }Resources{\ }and{\ }Life{\ }Sciences{\
+  }Vienna()]{BOKU}
+University{\ }of{\ }Natural{\ }Resources{\ }and{\ }Life{\ }Sciences{\ }Vienna.
+\newblock {\newline}(accessed October, 2018).
+  http://ivfl-info.boku.ac.at/index.php/homepage?view=featured.
+
+\bibitem[Vicente-Serrano et~al.(2010)Vicente-Serrano, Beguería, and
+  López-Moreno]{SPEI}
+Vicente-Serrano, S.~M., Beguería, S., and López-Moreno, J.~I.
+\newblock 2010.
+\newblock \textquote{A Multiscalar Drought Index Sensitive to Global Warming:
+  The Standardized Precipitation Evapotranspiration Index}.
+\newblock \emph{Journal of Climate}, 23\penalty0 (7):\penalty0 1696--1718.
+
+\bibitem[Wilhite(2000)]{wilhite2000}
+Wilhite, D.~A.
+\newblock 2000.
+\newblock \textquote{Drought as a natural hazard: concepts and definitions}.
+
+\bibitem[Wilhite and Glantz(1985)]{wilhite1985}
+Wilhite, D.~A. and Glantz, M.~H.
+\newblock 1985.
+\newblock \textquote{Understanding: the drought phenomenon: the role of
+  definitions}.
+\newblock \emph{Water international}, 10\penalty0 (3):\penalty0 111--120.
+
+\end{thebibliography}
