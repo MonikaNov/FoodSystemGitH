@@ -1,0 +1,1694 @@
+Admin1,county,Source,SourceDoc,Admin0,Year,Crop,Area,Yield,MT,ID,west1
+Central,Kiambu,MOA,AgroMOA,,1972,Maize,18718,2.24,41966,1,1
+Central,Kiambu,MOA,AgroMOA,,1974,Maize,26977,1.85,49999,1,1
+Central,Kiambu,MOA,AgroMOA,,1975,Maize,21884,1.8,39391,1,1
+Central,Kiambu,MOA,AgroMOA,,1976,Maize,18227,1.05,19205,1,1
+Central,Kiambu,MOA,AgroMOA,,1977,Maize,17028,1.8,30650,1,1
+Central,Kiambu,MOA,AgroMOA,,1978,Maize,16896,1.8,30410,1,1
+Central,Kiambu,MOA,AgroMOA,,1979,Maize,18700,2.17,40500,1,1
+Central,Kiambu,MOA,AgroMOA,,1980,Maize,19000,3.32,63000,1,1
+Central,Kiambu,MOA,AgroMOA,,1981,Maize,21000,2.8,58800,1,1
+Central,Kiambu,MOA,AgroMOA,,1982,Maize,21000,2.7,56700,1,1
+Central,Kiambu,MOA,AgroMOA,,1983,Maize,37000,1.62,59940,1,1
+Central,Kiambu,MOA,AgroMOA,,1984,Maize,19813,2.3,45579,1,1
+Central,Kiambu,MOA,AgroMOA,,1985,Maize,30584,2.5,76460,1,1
+Central,Kiambu,MOA,AgroMOA,,1986,Maize,26457,2.5,66130,1,1
+Central,Kiambu,MOA,AgroMOA,,1987,Maize,25207,1.04,26257,1,1
+Central,Kiambu,MOA,AgroMOA,,1988,Maize,15709,1.7,26705,1,1
+Central,Kiambu,MOA,AgroMOA,,1989,Maize,25702,1.16,29784,1,1
+Central,Kiambu,MOA,AgroMOA,,1990,Maize,26100,1.2,31320,1,1
+Central,Kiambu,MOA,AgroMOA,,1991,Maize,34860,1.2,41790.15,1,1
+Central,Kiambu,MOA,AgroMOA,,1992,Maize,27005,1.28,34638.75,1,1
+Central,Kiambu,MOA,AgroMOA,,1993,Maize,26286,0.7,18370.62,1,1
+Central,Kiambu,MOA,AgroMOA,,1994,Maize,27404,1.8,49327,1,1
+Central,Kiambu,MOA,AgroMOA,,1995,Maize,23600,1.38,32580,1,1
+Central,Kiambu,MOA,AgroMOA,,1996,Maize,14764,1.39,20463,1,1
+Central,Kiambu,MOALP,AgroMOALP,,1997,Maize,17213,1.53,26335.89,1,1
+Central,Kiambu,MOALP,AgroMOALP,,1998,Maize,17706,0.73,12915,1,1
+Central,Kiambu,MOALP,AgroMOALP,,1999,Maize,14664,0.81,11843.28,1,1
+Central,Kiambu,MOALP,AgroMOALP,,2000,Maize,14740,0.78,11438.1,1,1
+Central,Kiambu,MOALP,AgroMOALP,,2001,Maize,16500,0.78,12789,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2002,Maize,18750,1.36,25408,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2003,Maize,21200,1.35,28620,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2004,Maize,14664,0.81,11844,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2005,Maize,22140,1.34,29599,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2006,Maize,23391,1.27,29660,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2007,Maize,26293.3,0.67,17616.51,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2008,Maize,30603,0.78,23976.9,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2009,Maize,41984,0.48,20000.16,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2010,Maize,39523,0.76,30193.29,1,1
+Central,Kiambu,MoALF,Spreadsheet,,2011,Maize,45789,0.94,43041.66,1,1
+Central,Kiambu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,44821,1.26,56474.46,1,1
+Central,Kiambu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,43210,1.02,43944.57,1,1
+Central,Kiambu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,24450,0.61,14963.4,1,1
+Central,Kirinyaga,MOA,AgroMOA,,1970,Maize,29096,0.55,16003,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1971,Maize,25860,0.55,14223,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1972,Maize,26720,2.31,61668,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1973,Maize,29638,2.25,66685,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1974,Maize,21554,2.27,48982,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1975,Maize,20187,2.09,42136,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1976,Maize,9694,3.92,38020,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1977,Maize,17620,2.38,41900,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1978,Maize,18800,2.59,48600,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1979,Maize,27055,2.02,54775,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1980,Maize,32087,1.08,34654,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1981,Maize,26633,2.28,60769,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1982,Maize,32855,1.57,51746,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1983,Maize,28929,1.8,52073,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1984,Maize,32046,1.01,32278,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1985,Maize,27425,1.33,36475,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1986,Maize,33479,1.48,49388,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1987,Maize,24832,1.35,33523,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1988,Maize,31284,1.8,56310,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1989,Maize,29820,1.53,45624,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1990,Maize,25980,1.66,43170,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1992,Maize,21651,1.35,29228.85,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1994,Maize,23896,1.75,41764.32,2,1
+Central,Kirinyaga,MOA,AgroMOA,,1995,Maize,25596,1.38,35244.99,2,1
+Central,Kirinyaga,MOALP,AgroMOALP,,1997,Maize,25690,1.35,34681.5,2,1
+Central,Kirinyaga,MOALP,AgroMOALP,,1998,Maize,24090,1.08,26057.16,2,1
+Central,Kirinyaga,MOALP,AgroMOALP,,1999,Maize,25355,0.77,19463.4,2,1
+Central,Kirinyaga,MOALP,AgroMOALP,,2000,Maize,23500,0.41,9630,2,1
+Central,Kirinyaga,MOALP,AgroMOALP,,2001,Maize,27000,0.72,19440,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2002,Maize,26700,0.98,26193,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2003,Maize,27100,0.91,24552,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2004,Maize,25355,0.77,19465,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2005,Maize,25000,0.8,19892,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2006,Maize,24224,1.3,31503,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2007,Maize,18932,2.28,43075,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2008,Maize,23545,0.35,8217.21,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2009,Maize,31935,1.72,54778.77,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2010,Maize,17530,1.21,21289.5,2,1
+Central,Kirinyaga,MoALF,Spreadsheet,,2011,Maize,16730,1.13,18848.25,2,1
+Central,Kirinyaga,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,31935,1.71,54608.85,2,1
+Central,Kirinyaga,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,40103,1.41,56665.54,2,1
+Central,Kirinyaga,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,32992,1.32,43648.42,2,1
+Central,Muranga'a,MOA,AgroMOA,,1971,Maize,30431,1.4,42471,4,1
+Central,Muranga'a,MOA,AgroMOA,,1972,Maize,50954,1.64,83310,4,1
+Central,Muranga'a,MOA,AgroMOA,,1974,Maize,38622,1.51,58324,4,1
+Central,Muranga'a,MOA,AgroMOA,,1975,Maize,30702,2.48,76264,4,1
+Central,Muranga'a,MOA,AgroMOA,,1976,Maize,28968,2.7,78300,4,1
+Central,Muranga'a,MOA,AgroMOA,,1977,Maize,33544,2.25,75492,4,1
+Central,Muranga'a,MOA,AgroMOA,,1978,Maize,30038,2.25,67600,4,1
+Central,Muranga'a,MOA,AgroMOA,,1979,Maize,23690,1.65,39024,4,1
+Central,Muranga'a,MOA,AgroMOA,,1980,Maize,25890,1.51,39193,4,1
+Central,Muranga'a,MOA,AgroMOA,,1981,Maize,35000,1.22,42804,4,1
+Central,Muranga'a,MOA,AgroMOA,,1982,Maize,38000,1.08,41040,4,1
+Central,Muranga'a,MOA,AgroMOA,,1983,Maize,43504,0.9,39154,4,1
+Central,Muranga'a,MOA,AgroMOA,,1984,Maize,38022,1.11,42143,4,1
+Central,Muranga'a,MOA,AgroMOA,,1985,Maize,47210,1.3,61373,4,1
+Central,Muranga'a,MOA,AgroMOA,,1986,Maize,47841,1.53,73197,4,1
+Central,Muranga'a,MOA,AgroMOA,,1987,Maize,45860,0.99,45400,4,1
+Central,Muranga'a,MOA,AgroMOA,,1988,Maize,46300,1.53,70783,4,1
+Central,Muranga'a,MOA,AgroMOA,,1989,Maize,46400,1.7,78880,4,1
+Central,Muranga'a,MOA,AgroMOA,,1990,Maize,44800,1.6,71680,4,1
+Central,Muranga'a,MOA,AgroMOA,,1991,Maize,45696,1.7,77605.29,4,1
+Central,Muranga'a,MOA,AgroMOA,,1992,Maize,37933,1.43,54294.84,4,1
+Central,Murang'a,MoALF,Spreadsheet,,1993,Maize,41901,0.81,33940,4,1
+Central,Murang'a,MoALF,Spreadsheet,,1994,Maize,47890,1.5,71835,4,1
+Central,Muranga'a,MOA,AgroMOA,,1995,Maize,27505,1.32,36185.4,4,1
+Central,Murang'a,MoALF,Spreadsheet,,1996,Maize,33000,0.74,24354,4,1
+Central,Muranga'a,MOALP,AgroMOALP,,1997,Maize,22450,1.53,34416,4,1
+Central,Muranga'a,MOALP,AgroMOALP,,1998,Maize,19000,0.85,16056,4,1
+Central,Muranga'a,MOALP,AgroMOALP,,1999,Maize,14800,0.45,6732,4,1
+Central,Muranga'a,MOALP,AgroMOALP,,2000,Maize,16130,0.35,5610.6,4,1
+Central,Muranga'a,MOALP,AgroMOALP,,2001,Maize,17390,0.73,12609,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2002,Maize,27551,1.32,36410,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2003,Maize,34548,0.68,23517,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2004,Maize,32054,0.48,15235,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2005,Maize,25066,0.92,23056,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2006,Maize,35100,0.87,30486,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2007,Maize,35680,0.88,31230.9,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2008,Maize,34425,0.24,8251.02,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2009,Maize,50444,0.21,10593.24,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2010,Maize,58717,0.85,50151.87,4,1
+Central,Murang'a,MoALF,Spreadsheet,,2011,Maize,50900,1.16,58803.57,4,1
+Central,Murang'a,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,56654,1.26,71384.04,4,1
+Central,Murang'a,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,61416,1.29,79042.39,4,1
+Central,Murang'a,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,61543,1.18,72559.2,4,1
+Central,Nyandarua,MOA,AgroMOA,,1970,Maize,8700,0.37,3197,5,1
+Central,Nyandarua,MOA,AgroMOA,,1971,Maize,6656,0.49,3241,5,1
+Central,Nyandarua,MOA,AgroMOA,,1972,Maize,9549,1.11,10580,5,1
+Central,Nyandarua,MOA,AgroMOA,,1973,Maize,7911,2.27,17996,5,1
+Central,Nyandarua,MOA,AgroMOA,,1974,Maize,8632,1.27,10953,5,1
+Central,Nyandarua,MOA,AgroMOA,,1975,Maize,5865,2.29,13420,5,1
+Central,Nyandarua,MOA,AgroMOA,,1976,Maize,18626,3.14,58567,5,1
+Central,Nyandarua,MOA,AgroMOA,,1977,Maize,16137,3.15,50882,5,1
+Central,Nyandarua,MOA,AgroMOA,,1978,Maize,11000,2.25,24750,5,1
+Central,Nyandarua,MOA,AgroMOA,,1979,Maize,12570,0.72,9050,5,1
+Central,Nyandarua,MOA,AgroMOA,,1980,Maize,12553,0.72,9038,5,1
+Central,Nyandarua,MOA,AgroMOA,,1981,Maize,13992,3.15,44075,5,1
+Central,Nyandarua,MOA,AgroMOA,,1982,Maize,12703,1.08,13703,5,1
+Central,Nyandarua,MOA,AgroMOA,,1983,Maize,15596,1.8,28072,5,1
+Central,Nyandarua,MOA,AgroMOA,,1984,Maize,18817,0.9,16935,5,1
+Central,Nyandarua,MOA,AgroMOA,,1985,Maize,19816,1.3,25808,5,1
+Central,Nyandarua,MOA,AgroMOA,,1986,Maize,20350,2.52,51282,5,1
+Central,Nyandarua,MOA,AgroMOA,,1987,Maize,17800,0.65,11570,5,1
+Central,Nyandarua,MOA,AgroMOA,,1988,Maize,18640,3.5,65240,5,1
+Central,Nyandarua,MOA,AgroMOA,,1989,Maize,19520,2.7,52704,5,1
+Central,Nyandarua,MOA,AgroMOA,,1990,Maize,20010,1.6,32010,5,1
+Central,Nyandarua,MOA,AgroMOA,,1991,Maize,19700,1.8,35460,5,1
+Central,Nyandarua,MOA,AgroMOA,,1992,Maize,21500,1.98,42570,5,1
+Central,Nyandarua,MOA,AgroMOA,,1993,Maize,22224,0.9,20001.6,5,1
+Central,Nyandarua,MOA,AgroMOA,,1995,Maize,18144,1.7,30843.99,5,1
+Central,Nyandarua,MOALP,AgroMOALP,,1997,Maize,17194,1.35,23211.9,5,1
+Central,Nyandarua,MOALP,AgroMOALP,,1998,Maize,14420,1.6,23068.8,5,1
+Central,Nyandarua,MOALP,AgroMOALP,,1999,Maize,14000,0.9,12600,5,1
+Central,Nyandarua,MOALP,AgroMOALP,,2000,Maize,14360,0.72,10339.2,5,1
+Central,Nyandarua,MOALP,AgroMOALP,,2001,Maize,15490,1.77,27414,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2002,Maize,14950,1.44,21530,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2003,Maize,14550,1.8,26190,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2004,Maize,14000,0.9,12601,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2005,Maize,15590,1.84,28713,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2006,Maize,14300,1.35,19307,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2007,Maize,20900,1.33,27822.6,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2008,Maize,14031,0.64,8965.81,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2009,Maize,10055,1.66,16707.6,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2010,Maize,10005,2.18,21775.05,5,1
+Central,Nyandarua,MoALF,Spreadsheet,,2011,Maize,10855,3.06,33250.5,5,1
+Central,Nyandarua,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,19588,2.16,42310.08,5,1
+Central,Nyandarua,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,10490,2.3,24168.96,5,1
+Central,Nyandarua,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,10366,1.94,20151.5,5,1
+Central,Nyeri,MOA,AgroMOA,,1970,Maize,13403,2.7,36188,6,1
+Central,Nyeri,MOA,AgroMOA,,1971,Maize,16929,2.7,45708,6,1
+Central,Nyeri,MOA,AgroMOA,,1972,Maize,21961,2.52,55295,6,1
+Central,Nyeri,MOA,AgroMOA,,1973,Maize,24884,2.7,67187,6,1
+Central,Nyeri,MOA,AgroMOA,,1974,Maize,22680,2.35,53199,6,1
+Central,Nyeri,MOA,AgroMOA,,1975,Maize,19511,2.88,56180,6,1
+Central,Nyeri,MOA,AgroMOA,,1976,Maize,14933,2.64,39350,6,1
+Central,Nyeri,MOA,AgroMOA,,1977,Maize,15329,2.25,34490,6,1
+Central,Nyeri,MOA,AgroMOA,,1978,Maize,17580,2.02,35480,6,1
+Central,Nyeri,MOA,AgroMOA,,1979,Maize,15934,1.72,27442,6,1
+Central,Nyeri,MOA,AgroMOA,,1980,Maize,13202,2.5,33000,6,1
+Central,Nyeri,MOA,AgroMOA,,1981,Maize,15518,1.69,26296,6,1
+Central,Nyeri,MOA,AgroMOA,,1982,Maize,23895,1.8,43011,6,1
+Central,Nyeri,MOA,AgroMOA,,1983,Maize,25556,1.69,43295,6,1
+Central,Nyeri,MOA,AgroMOA,,1984,Maize,20180,1.14,23056,6,1
+Central,Nyeri,MOA,AgroMOA,,1985,Maize,21332,1.35,28798,6,1
+Central,Nyeri,MOA,AgroMOA,,1986,Maize,23973,1.47,35135,6,1
+Central,Nyeri,MOA,AgroMOA,,1987,Maize,22742,0.94,21380,6,1
+Central,Nyeri,MOA,AgroMOA,,1988,Maize,21483,1.61,34655,6,1
+Central,Nyeri,MOA,AgroMOA,,1989,Maize,19565,1.4,27397,6,1
+Central,Nyeri,MOA,AgroMOA,,1990,Maize,22100,1.5,33150,6,1
+Central,Nyeri,MOA,AgroMOA,,1992,Maize,21200,1.32,27882,6,1
+Central,Nyeri,MOA,AgroMOA,,1995,Maize,21690,1.3,28104.21,6,1
+Central,Nyeri,MOALP,AgroMOALP,,1997,Maize,21500,1.26,27090,6,1
+Central,Nyeri,MOALP,AgroMOALP,,1998,Maize,21950,0.65,14309.1,6,1
+Central,Nyeri,MOALP,AgroMOALP,,1999,Maize,22750,0.38,8635.5,6,1
+Central,Nyeri,MOALP,AgroMOALP,,2000,Maize,23800,0.47,11151,6,1
+Central,Nyeri,MOALP,AgroMOALP,,2001,Maize,23700,0.59,13896,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2002,Maize,22300,1.08,24086,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2003,Maize,24475,1.08,26370,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2004,Maize,22750,0.38,8636,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2005,Maize,26076,0.65,16873,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2006,Maize,27947,0.97,27003,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2007,Maize,38075,1.73,65875,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2008,Maize,18835,1.43,26993.7,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2009,Maize,20124,1.18,23734.8,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2010,Maize,32272,0.9,28991.88,6,1
+Central,Nyeri,MoALF,Spreadsheet,,2011,Maize,35433,0.88,31140.14,6,1
+Central,Nyeri,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,33593,1.26,42327.18,6,1
+Central,Nyeri,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,61416,1.29,79042.39,6,1
+Central,Nyeri,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,61543,1.18,72559.2,6,1
+Coast,Kwale,MOA,AgroMOA,,1971,Maize,3566,0.45,1605,8,0
+Coast,Kwale,MOA,AgroMOA,,1972,Maize,5000,0.54,2700,8,0
+Coast,Kwale,MOA,AgroMOA,,1976,Maize,6995,1.5,10500,8,0
+Coast,Kwale,MOA,AgroMOA,,1977,Maize,13575,1.5,20370,8,0
+Coast,Kwale,MOA,AgroMOA,,1978,Maize,7871,1.5,11805,8,0
+Coast,Kwale,MOA,AgroMOA,,1979,Maize,1977,0.72,1423,8,0
+Coast,Kwale,MOA,AgroMOA,,1980,Maize,7842,1.09,8562,8,0
+Coast,Kwale,MOA,AgroMOA,,1981,Maize,11575,1.81,20934,8,0
+Coast,Kwale,MOA,AgroMOA,,1982,Maize,11557,0.72,8321,8,0
+Coast,Kwale,MOA,AgroMOA,,1983,Maize,13656,0.72,9832,8,0
+Coast,Kwale,MOA,AgroMOA,,1984,Maize,28198,0.87,24558,8,0
+Coast,Kwale,MOA,AgroMOA,,1985,Maize,20600,1.8,37080,8,0
+Coast,Kwale,MOA,AgroMOA,,1986,Maize,19263,1.55,29858,8,0
+Coast,Kwale,MOA,AgroMOA,,1987,Maize,18610,0.6,11167,8,0
+Coast,Kwale,MOA,AgroMOA,,1988,Maize,11233,1.5,16850,8,0
+Coast,Kwale,MOA,AgroMOA,,1989,Maize,22254,1.99,44395,8,0
+Coast,Kwale,MOA,AgroMOA,,1990,Maize,16800,2.67,44869,8,0
+Coast,Kwale,MOA,AgroMOA,,1992,Maize,12848,1.34,17233.83,8,0
+Coast,Kwale,MOA,AgroMOA,,1993,Maize,8584,0.88,7529.94,8,0
+Coast,Kwale,MOA,AgroMOA,,1994,Maize,11323,0.77,8748,8,0
+Coast,Kwale,MOALP,AgroMOALP,,1997,Maize,14800,1.12,16579.44,8,0
+Coast,Kwale,MOALP,AgroMOALP,,1998,Maize,6648,1.48,9850.05,8,0
+Coast,Kwale,MOALP,AgroMOALP,,1999,Maize,10062,0.99,9961.29,8,0
+Coast,Kwale,MOALP,AgroMOALP,,2000,Maize,14639,1.1,16075.71,8,0
+Coast,Kwale,MOALP,AgroMOALP,,2001,Maize,10763,0.99,10655.82,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2002,Maize,11260,0.81,9121.51,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2003,Maize,10839.4,0.72,7760.8,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2004,Maize,10062,0.99,9962.29,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2005,Maize,14146.9,0.52,7365.62,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2006,Maize,13203,0.74,9791.54,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2007,Maize,8233,0.6,4939.8,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2008,Maize,11296.86,1.49,16856.05,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2009,Maize,31315,1.43,44912.79,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2010,Maize,42443,1.12,47638.44,8,0
+Coast,Kwale,MoALF,Spreadsheet,,2011,Maize,52242,1.05,54732.83,8,0
+Coast,Kwale,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,39490,0.45,17770.5,8,0
+Coast,Kwale,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,39910,0.44,17600.31,8,0
+Coast,Kwale,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,34644,1.22,42092.46,8,0
+Coast,Lamu,MOA,AgroMOA,,1972,Maize,1469,0.45,661,9,0
+Coast,Lamu,MOA,AgroMOA,,1973,Maize,936,0.45,421,9,0
+Coast,Lamu,MOA,AgroMOA,,1976,Maize,2201,1.5,3300,9,0
+Coast,Lamu,MOA,AgroMOA,,1977,Maize,2514,1.18,2956,9,0
+Coast,Lamu,MOA,AgroMOA,,1978,Maize,1798,1.5,2700,9,0
+Coast,Lamu,MOA,AgroMOA,,1979,Maize,2053,1.63,3350,9,0
+Coast,Lamu,MOA,AgroMOA,,1980,Maize,1591,1.68,2665,9,0
+Coast,Lamu,MOA,AgroMOA,,1981,Maize,1790,1.8,3218,9,0
+Coast,Lamu,MOA,AgroMOA,,1982,Maize,2960,1.09,3228,9,0
+Coast,Lamu,MOA,AgroMOA,,1983,Maize,1412,1.41,1987,9,0
+Coast,Lamu,MOA,AgroMOA,,1984,Maize,1520,1.2,1824,9,0
+Coast,Lamu,MOA,AgroMOA,,1985,Maize,1687,1.2,2024,9,0
+Coast,Lamu,MOA,AgroMOA,,1986,Maize,1819,1.48,2686,9,0
+Coast,Lamu,MOA,AgroMOA,,1987,Maize,1450,1.1,1595,9,0
+Coast,Lamu,MOA,AgroMOA,,1988,Maize,1620,1.25,2025,9,0
+Coast,Lamu,MOA,AgroMOA,,1989,Maize,1641,1.17,1924,9,0
+Coast,Lamu,MOA,AgroMOA,,1990,Maize,1547,1.03,1598,9,0
+Coast,Lamu,MOA,AgroMOA,,1992,Maize,2157,1.17,2513.07,9,0
+Coast,Lamu,MOALP,AgroMOALP,,1996,Maize,3192,0.61,1953,9,0
+Coast,Lamu,MOALP,AgroMOALP,,1997,Maize,3484,1,3469.77,9,0
+Coast,Lamu,MOALP,AgroMOALP,,1998,Maize,2480,1.17,2911.5,9,0
+Coast,Lamu,MOALP,AgroMOALP,,1999,Maize,4604,0.99,4558.77,9,0
+Coast,Lamu,MOALP,AgroMOALP,,2000,Maize,6367,0.99,6304.05,9,0
+Coast,Lamu,MOALP,AgroMOALP,,2001,Maize,5297,0.99,5244.03,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2002,Maize,5133,0.81,4158.51,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2003,Maize,5161,0.58,3006.48,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2004,Maize,4604,0.99,4559.23,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2005,Maize,6901,1.25,8648.33,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2006,Maize,9425,1.08,10180.02,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2007,Maize,7140,1.28,9139.2,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2008,Maize,6646.2,1.55,10301.61,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2009,Maize,16039,1.53,24539.67,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2010,Maize,12659,1.93,24431.87,9,0
+Coast,Lamu,MoALF,Spreadsheet,,2011,Maize,21161.8,0.8,16945,9,0
+Coast,Lamu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,20127,1.08,21737.16,9,0
+Coast,Lamu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,21324,1.75,37231.7,9,0
+Coast,Lamu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,35261,1.12,39351.28,9,0
+Coast,Mombasa,MOA,AgroMOA,,1976,Maize,930,0.9,837,10,0
+Coast,Mombasa,MOA,AgroMOA,,1977,Maize,900,0.9,810,10,0
+Coast,Mombasa,MOA,AgroMOA,,1978,Maize,620,0.9,558,10,0
+Coast,Mombasa,MOA,AgroMOA,,1979,Maize,500,0.9,450,10,0
+Coast,Mombasa,MOA,AgroMOA,,1980,Maize,540,0.9,486,10,0
+Coast,Mombasa,MOA,AgroMOA,,1981,Maize,1020,0.9,918,10,0
+Coast,Mombasa,MOA,AgroMOA,,1982,Maize,1000,0.7,700,10,0
+Coast,Mombasa,MOA,AgroMOA,,1983,Maize,1020,0.8,816,10,0
+Coast,Mombasa,MOA,AgroMOA,,1984,Maize,1480,1.3,1924,10,0
+Coast,Mombasa,MOA,AgroMOA,,1985,Maize,800,1.1,880,10,0
+Coast,Mombasa,MOA,AgroMOA,,1986,Maize,700,1,700,10,0
+Coast,Mombasa,MOA,AgroMOA,,1987,Maize,630,0.94,592,10,0
+Coast,Mombasa,MOA,AgroMOA,,1988,Maize,847,1.18,999,10,0
+Coast,Mombasa,MOA,AgroMOA,,1989,Maize,661,1.22,808,10,0
+Coast,Mombasa,MOA,AgroMOA,,1990,Maize,700,1.07,749,10,0
+Coast,Mombasa,MOA,AgroMOA,,1992,Maize,700,0.98,682.92,10,0
+Coast,Mombasa,MOA,AgroMOA,,1993,Maize,703,0.57,397.89,10,0
+Coast,Mombasa,MOALP,AgroMOALP,,1997,Maize,459,1.19,545.94,10,0
+Coast,Mombasa,MOALP,AgroMOALP,,1998,Maize,183,1.68,308.34,10,0
+Coast,Mombasa,MOALP,AgroMOALP,,1999,Maize,171,0.99,168.48,10,0
+Coast,Mombasa,MOALP,AgroMOALP,,2000,Maize,592,0.99,586.71,10,0
+Coast,Mombasa,MOALP,AgroMOALP,,2001,Maize,729,0.99,721.71,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2002,Maize,516,0.81,418,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2003,Maize,690,0.65,446.04,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2004,Maize,171,0.99,168.5,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2005,Maize,759,0.57,429.7,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2006,Maize,861,0.48,412.33,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2007,Maize,281,1,281,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2008,Maize,552.4,1.54,853.31,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2009,Maize,1335.5,0.29,382.59,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2010,Maize,1188.9,0.45,532.8,10,0
+Coast,Mombasa,MoALF,Spreadsheet,,2011,Maize,1203.3,0.88,1063.31,10,0
+Coast,Mombasa,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,1003,0.54,541.62,10,0
+Coast,Mombasa,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,1001,0.45,450.45,10,0
+Coast,Mombasa,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,653,0.51,334.99,10,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1976,Maize,6955,0.66,4579,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1977,Maize,5952,2,11900,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1978,Maize,4834,2,9660,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1979,Maize,3117,1.44,4499,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1980,Maize,4170,1.35,5626,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1981,Maize,6509,1.34,8716,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1982,Maize,8080,1.1,8888,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1983,Maize,3870,1.8,6966,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1984,Maize,3511,2.24,7876,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1985,Maize,7198,1.8,12956,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1986,Maize,7715,1.63,12556,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1987,Maize,5187,1.4,7271,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1988,Maize,6089,3.34,20308,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1989,Maize,4545,2.26,10282,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1990,Maize,4109,1.85,7586,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1991,Maize,10200,0.9,9180,11,0
+Coast,Taita-Taveta,MOA,AgroMOA,,1992,Maize,8203,1.32,10843.02,11,0
+Coast,Taita-Taveta,MOALP,AgroMOALP,,1997,Maize,6488,1.2,7764.57,11,0
+Coast,Taita-Taveta,MOALP,AgroMOALP,,1998,Maize,3694,1.56,5779.35,11,0
+Coast,Taita-Taveta,MOALP,AgroMOALP,,1999,Maize,6376,0.94,5988.78,11,0
+Coast,Taita-Taveta,MOALP,AgroMOALP,,2000,Maize,8592,0.62,5357.88,11,0
+Coast,Taita-Taveta,MOALP,AgroMOALP,,2001,Maize,7635,0.99,7558.65,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2002,Maize,7253,0.81,5875.52,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2003,Maize,8718,0.4,3487.4,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2004,Maize,13482,0.63,8494.51,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2005,Maize,17464,0.22,3797.57,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2006,Maize,21445,0.72,15441.94,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2007,Maize,17464,1.42,24798.88,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2008,Maize,15714.6,0.93,14682.48,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2009,Maize,11934,0.53,6287.49,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2010,Maize,17076,1,17109.63,11,0
+Coast,Taita-Taveta,MoALF,Spreadsheet,,2011,Maize,16837.5,0.95,15990.93,11,0
+Coast,Taita-Taveta,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,13986,0.45,6293.7,11,0
+Coast,Taita-Taveta,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,15592,1.26,19645.92,11,0
+Coast,Taita-Taveta,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,15592,1.17,18242.64,11,0
+Coast,Tana River,MOA,AgroMOA,,1978,Maize,1804,0.05,96,12,0
+Coast,Tana River,MOA,AgroMOA,,1979,Maize,976,0.68,666,12,0
+Coast,Tana River,MOA,AgroMOA,,1980,Maize,845,1.51,1274,12,0
+Coast,Tana River,MOA,AgroMOA,,1981,Maize,1352,1.73,2341,12,0
+Coast,Tana River,MOA,AgroMOA,,1982,Maize,2649,1.39,3688,12,0
+Coast,Tana River,MOA,AgroMOA,,1983,Maize,1410,2.2,3102,12,0
+Coast,Tana River,MOA,AgroMOA,,1984,Maize,5400,1.11,6000,12,0
+Coast,Tana River,MOA,AgroMOA,,1985,Maize,2840,1.76,5000,12,0
+Coast,Tana River,MOA,AgroMOA,,1986,Maize,3912,1.04,4049,12,0
+Coast,Tana River,MOA,AgroMOA,,1987,Maize,3016,1.03,3100,12,0
+Coast,Tana River,MOA,AgroMOA,,1988,Maize,3209,1.4,4493,12,0
+Coast,Tana River,MOA,AgroMOA,,1989,Maize,4072,1.05,4261,12,0
+Coast,Tana River,MOA,AgroMOA,,1990,Maize,2620,0.73,1925,12,0
+Coast,Tana River,MOA,AgroMOA,,1992,Maize,2650,1.19,3158.91,12,0
+Coast,Tana River,MOALP,AgroMOALP,,1996,Maize,660,0.6,396,12,0
+Coast,Tana River,MOALP,AgroMOALP,,1997,Maize,1076,1.4,1504.89,12,0
+Coast,Tana River,MOALP,AgroMOALP,,1998,Maize,762,1.36,1035.99,12,0
+Coast,Tana River,MOALP,AgroMOALP,,1999,Maize,578,0.99,572.22,12,0
+Coast,Tana River,MOALP,AgroMOALP,,2000,Maize,862,0.99,853.38,12,0
+Coast,Tana River,MOALP,AgroMOALP,,2001,Maize,840,0.99,831.6,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2002,Maize,807,0.81,653.74,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2003,Maize,1518,1.4,2125.21,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2004,Maize,1328,0.61,806,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2005,Maize,1624,0.7,1141.58,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2006,Maize,1372,0.72,988.3,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2007,Maize,976,0.7,683.2,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2008,Maize,1363.6,1.74,2378.62,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2009,Maize,8164,1.48,12083,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2010,Maize,7086,1.38,9755,12,0
+Coast,Tana River,MoALF,Spreadsheet,,2011,Maize,8222,1.48,12201.21,12,0
+Coast,Tana River,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,6269,0.99,6206.31,12,0
+Coast,Tana River,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,8290,1.28,10594.62,12,0
+Coast,Tana River,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,9582,1.32,12676.99,12,0
+Eastern,Isiolo,MOA,AgroMOA,,1975,Maize,957,1.19,1142,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1976,Maize,1142,0.71,816,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1977,Maize,758,1.07,810,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1978,Maize,641,1,641,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1979,Maize,359,1.21,433,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1980,Maize,300,1.2,360,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1981,Maize,739,1.32,972,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1982,Maize,815,0.86,704,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1983,Maize,653,0.99,647,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1984,Maize,413,1.43,590,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1985,Maize,689,1.25,861,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1986,Maize,749,0.9,674,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1987,Maize,525,1,525,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1988,Maize,313,3.83,1200,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1989,Maize,650,1.2,780,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1990,Maize,431,1.33,572,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,1991,Maize,202,1.91,385.82,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1992,Maize,720,1.6,1150.02,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,1993,Maize,485,0.72,347,13,0
+Eastern,Isiolo,MOALP,AgroMOALP,,1994,Maize,730,0.54,394,13,0
+Eastern,Isiolo,MOA,AgroMOA,,1995,Maize,1655,0.62,1032.84,13,0
+Eastern,Isiolo,MOALP,AgroMOALP,,1996,Maize,1460,0.05,66,13,0
+Eastern,Isiolo,MOALP,AgroMOALP,,1997,Maize,1850,0.68,1255.5,13,0
+Eastern,Isiolo,MOALP,AgroMOALP,,1998,Maize,1650,0.27,438.3,13,0
+Eastern,Isiolo,MOALP,AgroMOALP,,1999,Maize,1100,0.14,154.8,13,0
+Eastern,Isiolo,MOALP,AgroMOALP,,2000,Maize,1181,0.16,192.78,13,0
+Eastern,Isiolo,MOALP,AgroMOALP,,2001,Maize,1751,0.91,1599.93,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2002,Maize,1148,0.75,857.97,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2003,Maize,2226,1.34,2992,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2004,Maize,1100,0.14,154.82,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2005,Maize,956,0.25,235.91,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2006,Maize,700,0.68,477.05,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2007,Maize,700,0.8,560,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2008,Maize,1136.4,0.66,750.02,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2009,Maize,577,0.42,240.77,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2010,Maize,555,0.36,200.93,13,0
+Eastern,Isiolo,MoALF,Spreadsheet,,2011,Maize,824,0.35,288.09,13,0
+Eastern,Isiolo,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,987,1.02,1003.78,13,0
+Eastern,Isiolo,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,1015,0.03,274,13,0
+Eastern,Isiolo,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,1385,0.49,673.11,13,0
+Eastern,Kitui,MOA,AgroMOA,,1970,Maize,17725,0.48,8479,14,0
+Eastern,Kitui,MOA,AgroMOA,,1971,Maize,19019,0.48,9097,14,0
+Eastern,Kitui,MOA,AgroMOA,,1972,Maize,48383,0.48,23142,14,0
+Eastern,Kitui,MOA,AgroMOA,,1973,Maize,51915,0.48,24830,14,0
+Eastern,Kitui,MOA,AgroMOA,,1974,Maize,60600,0.48,28985,14,0
+Eastern,Kitui,MOA,AgroMOA,,1975,Maize,25000,0.23,5625,14,0
+Eastern,Kitui,MOA,AgroMOA,,1976,Maize,24000,0.42,10000,14,0
+Eastern,Kitui,MOA,AgroMOA,,1977,Maize,25000,0.16,3960,14,0
+Eastern,Kitui,MOA,AgroMOA,,1978,Maize,30000,0.35,10500,14,0
+Eastern,Kitui,MOA,AgroMOA,,1979,Maize,40000,0.47,18600,14,0
+Eastern,Kitui,MOA,AgroMOA,,1980,Maize,41000,0.24,10000,14,0
+Eastern,Kitui,MOA,AgroMOA,,1981,Maize,65900,0.9,59310,14,0
+Eastern,Kitui,MOA,AgroMOA,,1982,Maize,64060,0.9,57623,14,0
+Eastern,Kitui,MOA,AgroMOA,,1983,Maize,45163,0.72,32517,14,0
+Eastern,Kitui,MOA,AgroMOA,,1984,Maize,45690,0.58,26728,14,0
+Eastern,Kitui,MOA,AgroMOA,,1985,Maize,53670,0.31,16665,14,0
+Eastern,Kitui,MOA,AgroMOA,,1986,Maize,60530,0.83,49975,14,0
+Eastern,Kitui,MOA,AgroMOA,,1987,Maize,59036,0.02,1056,14,0
+Eastern,Kitui,MOA,AgroMOA,,1988,Maize,54991,1.8,98827,14,0
+Eastern,Kitui,MOA,AgroMOA,,1989,Maize,55958,1.27,70827,14,0
+Eastern,Kitui,MOA,AgroMOA,,1990,Maize,51151,1.13,57677,14,0
+Eastern,Kitui,MOA,AgroMOA,,1991,Maize,50990,0.55,28291.5,14,0
+Eastern,Kitui,MOA,AgroMOA,,1992,Maize,64900,0.75,48955.05,14,0
+Eastern,Kitui,MOA,AgroMOA,,1993,Maize,62000,0.79,48833.1,14,0
+Eastern,Kitui,MOA,AgroMOA,,1994,Maize,56000,1.08,60480,14,0
+Eastern,Kitui,MOA,AgroMOA,,1995,Maize,69000,0.33,22860,14,0
+Eastern,Kitui,MOALP,AgroMOALP,,1997,Maize,61700,0.36,22212,14,0
+Eastern,Kitui,MOALP,AgroMOALP,,1998,Maize,54000,0.16,8640,14,0
+Eastern,Kitui,MOALP,AgroMOALP,,1999,Maize,58000,0.37,21600,14,0
+Eastern,Kitui,MOALP,AgroMOALP,,2000,Maize,62000,0.33,20160,14,0
+Eastern,Kitui,MOALP,AgroMOALP,,2001,Maize,64600,0.05,3168.72,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2002,Maize,74620.03,0.76,56995.14,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2003,Maize,77939,0.43,33632.11,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2004,Maize,79602.16,0.35,28158.78,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2005,Maize,43720.52,0.19,8462.65,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2006,Maize,89713.19,0.27,24519.44,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2007,Maize,40583.2,1.35,54891,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2008,Maize,39361.37,0.73,28736.6,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2009,Maize,95863.38,0.97,92841.48,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2010,Maize,65485.4,0.52,33856.2,14,0
+Eastern,Kitui,MoALF,Spreadsheet,,2011,Maize,67033.9,0.42,28089.9,14,0
+Eastern,Kitui,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,77210,0.74,56980.98,14,0
+Eastern,Kitui,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,93600,0.41,38750.4,14,0
+Eastern,Kitui,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,84763,0.37,31277.55,14,0
+Eastern,Machakos,MOA,AgroMOA,,1970,Maize,137491,0.85,117209,15,0
+Eastern,Machakos,MOA,AgroMOA,,1971,Maize,146000,0.27,39199,15,0
+Eastern,Machakos,MOA,AgroMOA,,1972,Maize,129574,0.85,110420,15,0
+Eastern,Machakos,MOA,AgroMOA,,1973,Maize,111597,1.06,118242,15,0
+Eastern,Machakos,MOA,AgroMOA,,1974,Maize,114511,1.05,120719,15,0
+Eastern,Machakos,MOA,AgroMOA,,1975,Maize,110017,0.44,48712,15,0
+Eastern,Machakos,MOA,AgroMOA,,1976,Maize,137115,0.94,128557,15,0
+Eastern,Machakos,MOA,AgroMOA,,1977,Maize,156119,0.81,126923,15,0
+Eastern,Machakos,MOA,AgroMOA,,1978,Maize,128440,1.39,179020,15,0
+Eastern,Machakos,MOA,AgroMOA,,1979,Maize,158000,0.9,142200,15,0
+Eastern,Machakos,MOA,AgroMOA,,1980,Maize,150000,0.51,76650,15,0
+Eastern,Machakos,MOA,AgroMOA,,1981,Maize,137552,1,137355,15,0
+Eastern,Machakos,MOA,AgroMOA,,1982,Maize,154443,1.17,180698,15,0
+Eastern,Machakos,MOA,AgroMOA,,1983,Maize,135491,0.9,121942,15,0
+Eastern,Machakos,MOA,AgroMOA,,1984,Maize,106000,0.36,38380,15,0
+Eastern,Machakos,MOA,AgroMOA,,1985,Maize,230000,0.76,174000,15,0
+Eastern,Machakos,MOA,AgroMOA,,1986,Maize,178853,1,178783,15,0
+Eastern,Machakos,MOA,AgroMOA,,1987,Maize,178000,1.02,182010,15,0
+Eastern,Machakos,MOA,AgroMOA,,1988,Maize,172000,1.85,319000,15,0
+Eastern,Machakos,MOA,AgroMOA,,1989,Maize,172000,1.33,228143,15,0
+Eastern,Machakos,MOA,AgroMOA,,1990,Maize,256962,0.99,254034,15,0
+Eastern,Machakos,MOA,AgroMOA,,1992,Maize,121476,0.97,117972.99,15,0
+Eastern,Machakos,MOA,AgroMOA,,1993,Maize,123000,0.9,110589.3,15,0
+Eastern,Machakos,MOALP,AgroMOALP,,1994,Maize,148981,0.25,37245,15,0
+Eastern,Machakos,MOA,AgroMOA,,1995,Maize,145857,0.58,84350.7,15,0
+Eastern,Machakos,MOALP,AgroMOALP,,1997,Maize,163746,0.5,81088.56,15,0
+Eastern,Machakos,MOALP,AgroMOALP,,1998,Maize,153000,0.18,27000,15,0
+Eastern,Machakos,MOALP,AgroMOALP,,1999,Maize,160500,0.26,42336,15,0
+Eastern,Machakos,MOALP,AgroMOALP,,2000,Maize,143100,0.45,64800,15,0
+Eastern,Machakos,MOALP,AgroMOALP,,2001,Maize,163880,0.48,78033.6,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2002,Maize,149700,0.77,115632.04,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2003,Maize,145000,0.41,59850,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2004,Maize,160500,0.26,42340.23,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2005,Maize,108300,0.25,27002.7,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2006,Maize,186190,0.63,118152.12,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2007,Maize,186190,0.71,131267,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2008,Maize,157236,0.48,75722.41,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2009,Maize,114202,0.95,108582.07,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2010,Maize,120139,0.8,96208.2,15,0
+Eastern,Machakos,MoALF,Spreadsheet,,2011,Maize,171060,0.64,109000.98,15,0
+Eastern,Machakos,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,149338,0.66,98115.07,15,0
+Eastern,Machakos,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,133408,0.75,99655.78,15,0
+Eastern,Machakos,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,139090,0.49,67597.74,15,0
+Eastern,Makueni,MOA,AgroMOA,,1992,Maize,89446,0.67,59990.04,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,1993,Maize,72905,1.1,80196,16,0
+Eastern,Makueni,MOA,AgroMOA,,1994,Maize,102000,1.01,103140,16,0
+Eastern,Makueni,MOA,AgroMOA,,1995,Maize,102700,0.35,36396,16,0
+Eastern,Makueni,MOALP,AgroMOALP,,1997,Maize,68100,0.61,41359.5,16,0
+Eastern,Makueni,MOALP,AgroMOALP,,1998,Maize,71520,0.26,18270,16,0
+Eastern,Makueni,MOALP,AgroMOALP,,1999,Maize,1.00E+05,0.4,39600,16,0
+Eastern,Makueni,MOALP,AgroMOALP,,2000,Maize,85000,0.64,54450,16,0
+Eastern,Makueni,MOALP,AgroMOALP,,2001,Maize,93800,0.55,51300,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2002,Maize,91500,0.52,47655,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2003,Maize,88000,0.28,24462,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2004,Maize,1.00E+05,0.4,39603.96,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2005,Maize,87000,0.13,11251.13,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2006,Maize,85487,0.31,26552.03,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2007,Maize,85487,0.62,52618.5,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2008,Maize,89194.8,0.41,36569.87,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2009,Maize,81354,0.8,65081.89,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2010,Maize,86360,0.55,47538.9,16,0
+Eastern,Makueni,MoALF,Spreadsheet,,2011,Maize,113395,0.46,52030.8,16,0
+Eastern,Makueni,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,102825,0.71,73108.58,16,0
+Eastern,Makueni,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,183338,0.46,84152.14,16,0
+Eastern,Makueni,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,181089,0.44,79860.25,16,0
+Nairobi,Nairobi,MoALF,Spreadsheet,,1987,Maize,1200,1.62,1944.19,18,1
+Nairobi,Nairobi,MoALF,Spreadsheet,,1988,Maize,2369.5,1.35,3198.83,18,1
+Nairobi,Nairobi,MoALF,Spreadsheet,,1989,Maize,1050,1.44,1510,18,1
+Nairobi,Nairobi,MoALF,Spreadsheet,,1990,Maize,1600,1.36,2176,18,1
+Nairobi,Nairobi,MoALF,Spreadsheet,,1991,Maize,1560,1.2,1872,18,1
+Nairobi,Nairobi,MoALF,Spreadsheet,,1992,Maize,2860,1.5,4290,18,1
+Nairobi,Nairobi,MOALP,AgroMOALP,,1998,Maize,2585,1.57,4068.9,18,1
+Nairobi,Nairobi,MOALP,AgroMOALP,,1999,Maize,3430,1.98,6785.1,18,1
+Nairobi,Nairobi,MOALP,AgroMOALP,,2000,Maize,2500,0.38,945,18,1
+Nairobi,Nairobi,MOALP,AgroMOALP,,2001,Maize,2660,0.9,2394,18,1
+Nairobi,Nairobi,"Ministry of Agriculture, Livestock and Fisheries",ERA2007,,2006,Maize,2137,0.82,1757.7,18,1
+Nairobi,Nairobi,MoALF,Spreadsheet,,2007,Maize,1365,1.53,2093.9,18,1
+Nairobi,Nairobi,"Ministry of Agriculture, Livestock and Fisheries",ERA2009,,2008,Maize,1682,0.78,1309.77,18,1
+Nairobi,Nairobi,"Ministry of Agriculture, Livestock and Fisheries",ERA2010,,2009,Maize,1053,0.55,577.8,18,1
+Nairobi,Nairobi,"Ministry of Agriculture, Livestock and Fisheries",ERA2011,,2010,Maize,723,1.71,1237,18,1
+Nairobi,Nairobi,MoALF,Spreadsheet,,2011,Maize,858.5,0.79,676.89,18,1
+Nairobi,Nairobi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,1018,1.35,1374.3,18,1
+Nairobi,Nairobi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,1017,1.31,1336.34,18,1
+Nairobi,Nairobi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,913,1.35,1232.55,18,1
+North Eastern,Garissa,MoALF,Spreadsheet,,1982,Maize,62.42,0.9,56.18,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,1983,Maize,97.5,0.9,87.75,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,1984,Maize,200,1.8,360,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,1985,Maize,225.5,1.08,243.6,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,1986,Maize,371.4,0.9,334.65,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,1987,Maize,93,0.3,27.45,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,1988,Maize,300,0.8,240.05,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,1989,Maize,65,0.69,45,19,0
+North Eastern,Garissa,MOA,AgroMOA,,1991,Maize,210,1.07,224.82,19,0
+North Eastern,Garissa,MOA,AgroMOA,,1992,Maize,180,1.8,324.72,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,1994,Maize,100,2,200,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,1995,Maize,120,1.63,195,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,1996,Maize,100,1,100,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,1997,Maize,390,1.74,676.98,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,1998,Maize,660,1.61,1060,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,1999,Maize,380,1.21,460,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,2000,Maize,380,0.6,229.86,19,0
+North Eastern,Garissa,MOALP,AgroMOALP,,2001,Maize,180,0.51,92.52,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2002,Maize,180,0.58,105,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2003,Maize,788,0.89,704,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2004,Maize,280,0.74,208,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2005,Maize,525,0.72,376.24,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2006,Maize,670,0.27,180.92,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2007,Maize,990,0.43,422.16,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2008,Maize,1050.6,0.36,378.26,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2009,Maize,375,0.24,90.72,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2010,Maize,612,0.21,131.4,19,0
+North Eastern,Garissa,MoALF,Spreadsheet,,2011,Maize,518,0.41,212.85,19,0
+North Eastern,Garissa,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,433,0.96,416.98,19,0
+North Eastern,Garissa,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,205,0.98,201.11,19,0
+North Eastern,Garissa,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,245,0.82,200.66,19,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1982,Maize,950,0.9,855,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1983,Maize,425.3,0.44,189.25,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1984,Maize,645,1.52,978.5,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1985,Maize,1113,0.45,506,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1986,Maize,1216,0.44,538.07,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1987,Maize,1216,0.56,684.07,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1988,Maize,1874,0.23,431,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1989,Maize,1874,0.21,393,21,0
+North Eastern,Mandera,MOA,AgroMOA,,1992,Maize,824,1.27,1048.95,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,1993,Maize,320,0.33,107,21,0
+North Eastern,Mandera,MOALP,AgroMOALP,,1994,Maize,247,0.48,118,21,0
+North Eastern,Mandera,MOALP,AgroMOALP,,1995,Maize,144,0.66,94.32,21,0
+North Eastern,Mandera,MOALP,AgroMOALP,,1996,Maize,442,0.66,293,21,0
+North Eastern,Mandera,MOALP,AgroMOALP,,1998,Maize,1215,0.76,924.93,21,0
+North Eastern,Mandera,MOALP,AgroMOALP,,1999,Maize,815,0.61,499.86,21,0
+North Eastern,Mandera,MOALP,AgroMOALP,,2000,Maize,1400,0.45,629.91,21,0
+North Eastern,Mandera,MOALP,AgroMOALP,,2001,Maize,3000,0.72,2160,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2002,Maize,3101,0.99,3069.9,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2003,Maize,2670,1.12,3002,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2004,Maize,430,1.24,533,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2005,Maize,1350,0.27,369.04,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2006,Maize,1500,0.2,299.73,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2007,Maize,1695,1.17,1984.41,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2008,Maize,1529,0.81,1237.64,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2010,Maize,2499,0.17,434.7,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2011,Maize,1811,0.22,399.6,21,0
+North Eastern,Mandera,MoALF,Spreadsheet,,2012,Maize,203,0.66,134.55,21,0
+North Eastern,Mandera,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,1987,0.67,1323.34,21,0
+North Eastern,Mandera,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,2682,0.6,1617.25,21,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1982,Maize,685,0.9,616.5,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1983,Maize,648,0.72,465.5,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1984,Maize,325,0.9,292.5,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1985,Maize,835,0.65,539,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1986,Maize,883.8,0.37,322.77,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1987,Maize,828.5,0.27,224.48,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1988,Maize,806,0.28,227.18,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,1989,Maize,1238,0.09,108.01,22,0
+North Eastern,Wajir,MOA,AgroMOA,,1991,Maize,482,1.03,494.55,22,0
+North Eastern,Wajir,MOA,AgroMOA,,1992,Maize,316,0.76,241.02,22,0
+North Eastern,Wajir,MOA,AgroMOA,,1993,Maize,550,0.6,329.67,22,0
+North Eastern,Wajir,MOALP,AgroMOALP,,1995,Maize,345,0.71,245,22,0
+North Eastern,Wajir,MOALP,AgroMOALP,,1996,Maize,945,0.1,94,22,0
+North Eastern,Wajir,MOALP,AgroMOALP,,1997,Maize,1300,0.63,819,22,0
+North Eastern,Wajir,MOALP,AgroMOALP,,1998,Maize,1277,0.6,765.99,22,0
+North Eastern,Wajir,MOALP,AgroMOALP,,1999,Maize,900,0.56,499.86,22,0
+North Eastern,Wajir,MOALP,AgroMOALP,,2001,Maize,1720,0.39,669.6,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2002,Maize,1775,0.8,1420,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2003,Maize,2050,0.91,1875,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2004,Maize,1200,0.13,150,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2005,Maize,3100,0.03,108.01,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2006,Maize,3960,0.1,393.34,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2007,Maize,2158,0.13,289.17,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2008,Maize,2277.6,0.48,1083.99,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2010,Maize,1340,0.19,261,22,0
+North Eastern,Wajir,MoALF,Spreadsheet,,2011,Maize,801,0.25,197.1,22,0
+North Eastern,Wajir,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,268,0.76,202.61,22,0
+North Eastern,Wajir,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,550,0.72,396,22,0
+North Eastern,Wajir,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,660,0.18,118.8,22,0
+Nyanza,Homa Bay,MOA,AgroMOA,,1992,Maize,39929,2.25,89840.25,24,1
+Nyanza,Homa Bay,MOALP,AgroMOALP,,1994,Maize,24500,2.19,53622,24,1
+Nyanza,Homa Bay,MOALP,AgroMOALP,,1995,Maize,19130,1.62,30999,24,1
+Nyanza,Homa Bay,MOALP,AgroMOALP,,1997,Maize,14387,1.09,15646.68,24,1
+Nyanza,Homa Bay,MOALP,AgroMOALP,,1998,Maize,13219,1.36,17953.92,24,1
+Nyanza,Homa Bay,MOALP,AgroMOALP,,1999,Maize,18595,1.62,30123.9,24,1
+Nyanza,Homa Bay,MOALP,AgroMOALP,,2000,Maize,24651,1.47,36154.44,24,1
+Nyanza,Homa Bay,MOALP,AgroMOALP,,2001,Maize,22087,1.53,33793.11,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2002,Maize,38550,1.2,46309.63,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2003,Maize,39071,0.79,30682.2,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2004,Maize,42068,0.33,13882.44,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2005,Maize,43435,0.38,16505.3,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2006,Maize,36110,1.32,47500,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2007,Maize,47345,1.66,78423.5,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2008,Maize,41605.8,0.69,28869.38,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2009,Maize,43614,1.34,58363.2,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2010,Maize,49853,1.43,71131.68,24,1
+Nyanza,Homa Bay,MoALF,Spreadsheet,,2011,Maize,49170,1.4,68697,24,1
+Nyanza,Homa Bay,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,67420,1.56,104972.94,24,1
+Nyanza,Homa Bay,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,74359,1.59,118453.89,24,1
+Nyanza,Homa Bay,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,79667,1.68,134079.56,24,1
+Nyanza,Kisumu,MOA,AgroMOA,,1970,Maize,11644,2.88,33534,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1971,Maize,18212,2.88,52450,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1972,Maize,15809,2.88,45530,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1973,Maize,7907,2.87,22722,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1974,Maize,9103,2.88,26217,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1975,Maize,14668,2.76,40509,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1976,Maize,11522,1.75,20184,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1977,Maize,8334,2.44,20335,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1978,Maize,10358,2.28,23591,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1979,Maize,8495,1.62,13762,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1980,Maize,11580,1.65,19138,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1981,Maize,13400,1.62,21708,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1982,Maize,13000,2.25,29250,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1983,Maize,9796,2.7,26449,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1984,Maize,13772,1.62,22310,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1985,Maize,14254,1.62,23091,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1986,Maize,16393,1.8,29506,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1987,Maize,17441,1.75,30600,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1988,Maize,15901,1.98,31484,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1990,Maize,15138,3.13,47368,25,1
+Nyanza,Kisumu,MOA,AgroMOA,,1992,Maize,16924,1.22,20639.52,25,1
+Nyanza,Kisumu,MOALP,AgroMOALP,,1997,Maize,14540,1.67,24302.25,25,1
+Nyanza,Kisumu,MOALP,AgroMOALP,,1998,Maize,13450,2.31,31040.64,25,1
+Nyanza,Kisumu,MOALP,AgroMOALP,,1999,Maize,7410,2.54,18837,25,1
+Nyanza,Kisumu,MOALP,AgroMOALP,,2000,Maize,8117,1.1,8933.94,25,1
+Nyanza,Kisumu,MOALP,AgroMOALP,,2001,Maize,10419,1.35,14034.87,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2002,Maize,20841,1.34,27920.07,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2003,Maize,18519,1.86,34466,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2004,Maize,17356,1.42,24661,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2005,Maize,17367,1.86,32338,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2006,Maize,18750,1.92,35996.85,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2007,Maize,22450,1.88,42314,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2008,Maize,18888.4,0.58,10955.27,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2009,Maize,26013,1.45,37736.28,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2010,Maize,27624,1.28,35435.16,25,1
+Nyanza,Kisumu,MoALF,Spreadsheet,,2011,Maize,26790,1.45,38767.5,25,1
+Nyanza,Kisumu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,33395,1.49,49591.58,25,1
+Nyanza,Kisumu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,32069,2.06,66094.21,25,1
+Nyanza,Kisumu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,27150,2.16,58644,25,1
+Nyanza,Migori,MoALF,Spreadsheet,,1991,Maize,31765,3,95198,27,1
+Nyanza,Migori,MOA,AgroMOA,,1992,Maize,29746,2.46,73153.35,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,1993,Maize,28739,1.89,54369,27,1
+Nyanza,Migori,MOALP,AgroMOALP,,1995,Maize,25293,0.0027,68,27,1
+Nyanza,Migori,MOALP,AgroMOALP,,1997,Maize,23827,2.16,51466.32,27,1
+Nyanza,Migori,MOALP,AgroMOALP,,1998,Maize,22586,2.12,47956.05,27,1
+Nyanza,Migori,MOALP,AgroMOALP,,1999,Maize,30994,2.17,67261.5,27,1
+Nyanza,Migori,MOALP,AgroMOALP,,2000,Maize,31530,2.25,70942.5,27,1
+Nyanza,Migori,MOALP,AgroMOALP,,2001,Maize,31700,2.25,71325,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2002,Maize,42910,2.12,90774.08,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2003,Maize,41155,2.07,85209,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2004,Maize,46000,0.64,29440,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2005,Maize,45860,0.68,31184.8,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2006,Maize,45280,2.04,92421,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2007,Maize,31860,2.34,74552.4,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2008,Maize,42031,0.73,30682.63,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2009,Maize,65550,1.45,94747.5,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2010,Maize,65838,1.44,94889.52,27,1
+Nyanza,Migori,MoALF,Spreadsheet,,2011,Maize,73047,1.8,131473.35,27,1
+Nyanza,Migori,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,78580,2.05,161246.16,27,1
+Nyanza,Migori,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,54974,0.83,45518.47,27,1
+Nyanza,Migori,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,67485,1.33,89890.02,27,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,1991,Maize,29740,2.7,80314,28,1
+Nyanza,Nyamira,MOA,AgroMOA,,1992,Maize,31738,3.15,99974.7,28,1
+Nyanza,Nyamira,MOALP,AgroMOALP,,1995,Maize,21700,3.93,85185,28,1
+Nyanza,Nyamira,MOALP,AgroMOALP,,1997,Maize,27300,2.45,66987,28,1
+Nyanza,Nyamira,MOALP,AgroMOALP,,1998,Maize,26723,2.42,64604.97,28,1
+Nyanza,Nyamira,MOALP,AgroMOALP,,1999,Maize,21272,3.72,79070.85,28,1
+Nyanza,Nyamira,MOALP,AgroMOALP,,2000,Maize,29699,2.52,74841.48,28,1
+Nyanza,Nyamira,MOALP,AgroMOALP,,2001,Maize,31094,2.58,80183.34,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2002,Maize,32424,2.6,84286.23,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2003,Maize,22285,3.32,74072,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2004,Maize,32450,2.35,76237,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2005,Maize,56365,2.05,115592,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2006,Maize,51185,1.86,95247.97,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2007,Maize,48030,2.05,98363,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2008,Maize,42063,0.64,26895.79,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2009,Maize,56572,1.71,96715.8,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2010,Maize,71310,2.52,179739,28,1
+Nyanza,Nyamira,MoALF,Spreadsheet,,2011,Maize,63825,2.2,140537.25,28,1
+Nyanza,Nyamira,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,54820,2.02,110517.12,28,1
+Nyanza,Nyamira,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,53270,1.26,67120.2,28,1
+Nyanza,Nyamira,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,35549,1.24,44151.86,28,1
+Nyanza,Siaya,MOA,AgroMOA,,1970,Maize,26113,1.77,46096,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1971,Maize,43347,1.77,76519,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1972,Maize,29631,1.77,52306,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1973,Maize,23886,1.77,42165,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1974,Maize,25876,1.7,43989,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1975,Maize,15828,1.77,27941,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1976,Maize,19196,1.64,31444,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1977,Maize,27521,2.51,68985,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1978,Maize,31486,1.03,32314,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1979,Maize,23111,1.39,32203,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1980,Maize,64281,1.74,111570,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1981,Maize,45089,1.4,63160,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1982,Maize,42112,1.8,75802,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1983,Maize,42222,1.94,82100,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1984,Maize,36124,1.8,65023,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1985,Maize,36834,1.81,66528,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1986,Maize,44574,1.8,80235,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1987,Maize,43574,1.35,58823,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1988,Maize,49079,1.35,66257,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1990,Maize,35000,1.54,54057,31,1
+Nyanza,Siaya,MOA,AgroMOA,,1992,Maize,35117,1.42,49972.14,31,1
+Nyanza,Siaya,MOALP,AgroMOALP,,1997,Maize,37329,1.08,40453.2,31,1
+Nyanza,Siaya,MOALP,AgroMOALP,,1998,Maize,33024,0.7,23205.42,31,1
+Nyanza,Siaya,MOALP,AgroMOALP,,1999,Maize,30329,1.35,40953.15,31,1
+Nyanza,Siaya,MOALP,AgroMOALP,,2000,Maize,34134,1.35,46080.9,31,1
+Nyanza,Siaya,MOALP,AgroMOALP,,2001,Maize,34548,1.25,43112.52,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2002,Maize,68799,1.24,85421.69,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2003,Maize,61044,1.46,89393,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2004,Maize,57896,0.89,51446,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2005,Maize,59544,1.02,60863.34,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2006,Maize,71530,1.15,82530.15,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2007,Maize,67870,1.72,117049,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2008,Maize,63576.8,0.46,29094.5,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2009,Maize,64200,1.18,75555,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2010,Maize,82065,1.07,88190.55,31,1
+Nyanza,Siaya,MoALF,Spreadsheet,,2011,Maize,75413,1.6,120784.05,31,1
+Nyanza,Siaya,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,76385,1.58,120993.84,31,1
+Nyanza,Siaya,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,72110,1.73,124606.08,31,1
+Nyanza,Siaya,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,78132,1.7,132902.53,31,1
+Rift Valley,Baringo,MOA,AgroMOA,,1973,Maize,4364,1.66,7238,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1974,Maize,5380,2.25,12101,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1975,Maize,8350,2.7,22545,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1976,Maize,6320,2.24,14130,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1977,Maize,7310,2.25,16448,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1978,Maize,6847,2.07,14173,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1979,Maize,6369,2.25,14328,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1980,Maize,9900,0.68,6683,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1981,Maize,9926,2.36,23400,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1982,Maize,10016,2.92,29203,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1983,Maize,10000,3.97,39690,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1984,Maize,4500,3.15,14175,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1985,Maize,11406,2.77,31586,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1986,Maize,13907,2.25,31291,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1987,Maize,17134,1.44,24705,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1988,Maize,16500,3.15,51975,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1989,Maize,15295,2.91,44500,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1990,Maize,13443,1.8,24197,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1991,Maize,12572,1.8,22629.6,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1992,Maize,15024,1.98,29747,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,1993,Maize,36719,0.84,30793,33,1
+Rift Valley,Baringo,MOA,AgroMOA,,1995,Maize,17673,2.16,38173.68,33,1
+Rift Valley,Baringo,MOALP,AgroMOALP,,2000,Maize,2550,0.46,1170,33,1
+Rift Valley,Baringo,MOALP,AgroMOALP,,2001,Maize,10400,2.16,22446,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2002,Maize,19650,1.41,27614,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2003,Maize,18151.67,1.45,26385.08,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2004,Maize,23996,1.33,31926,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2005,Maize,13795,3.98,54904.1,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2006,Maize,20550,2.25,46242,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2007,Maize,28340,2.7,76518,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2008,Maize,20966.53,2.25,47193.62,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2009,Maize,27231,1.21,33066.99,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2010,Maize,27645,2.36,65247.17,33,1
+Rift Valley,Baringo,MoALF,Spreadsheet,,2011,Maize,31720,1.76,55784.7,33,1
+Rift Valley,Baringo,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,39753,1.86,74059.84,33,1
+Rift Valley,Baringo,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,29117,1.97,57389.61,33,1
+Rift Valley,Baringo,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,34960,1,34925.04,33,1
+Rift Valley,Bomet,MOALP,AgroMOALP,,1992,Maize,30000,2.7,81000,34,1
+Rift Valley,Bomet,MOA,AgroMOA,,1995,Maize,33200,2.7,89640,34,1
+Rift Valley,Bomet,MOALP,AgroMOALP,,1997,Maize,37185,1.5,55777.5,34,1
+Rift Valley,Bomet,MOALP,AgroMOALP,,1998,Maize,34600,2.52,87192,34,1
+Rift Valley,Bomet,MOALP,AgroMOALP,,1999,Maize,29100,1.81,52740,34,1
+Rift Valley,Bomet,MOALP,AgroMOALP,,2000,Maize,28800,1.62,46647,34,1
+Rift Valley,Bomet,MOALP,AgroMOALP,,2001,Maize,32000,1.58,50634,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2002,Maize,29000,1.8,52205,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2003,Maize,26788.72,1.86,49881.69,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2004,Maize,28759,1.82,52319,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2005,Maize,30141,2.25,67822,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2006,Maize,27457,2.98,81908,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2007,Maize,26310,2.7,71058.6,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2008,Maize,27891.14,2.32,64597.86,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2009,Maize,41672,2.16,90094.05,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2010,Maize,38625,2.65,102543.75,34,1
+Rift Valley,Bomet,MoALF,Spreadsheet,,2011,Maize,40670,2.65,107750.7,34,1
+Rift Valley,Bomet,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,32697,2.24,73273.98,34,1
+Rift Valley,Bomet,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,30620,2.36,72201.96,34,1
+Rift Valley,Bomet,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,30940,1.72,53185.86,34,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1971,Maize,2890,3.15,9088,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1972,Maize,2912,3.15,9173,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1973,Maize,5400,1.8,9720,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1974,Maize,7400,0.54,3996,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1975,Maize,10100,1.41,14256,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1976,Maize,10600,1.62,17172,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1977,Maize,9900,2.09,20655,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1978,Maize,7140,2.45,17501,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1979,Maize,9500,1.65,15692,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1980,Maize,7800,1.75,13680,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1981,Maize,8542,0.9,7688,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1982,Maize,3589,2.79,10013,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1983,Maize,13652,0.83,11340,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1984,Maize,3299,1.35,4454,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1985,Maize,17848,1.82,32396,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1986,Maize,18919,1.8,34054,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1987,Maize,31660,0.92,29241,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1988,Maize,4134,1.8,7441,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1989,Maize,28960,2.21,63857,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1990,Maize,29324,1.8,52783,36,1
+Rift Valley,Kajiado,MOA,AgroMOA,,1992,Maize,4026,2.43,9783.18,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,1993,Maize,29785,1.35,40209.75,36,1
+Rift Valley,Kajiado,MOALP,AgroMOALP,,1997,Maize,44800,0.04,1945.8,36,1
+Rift Valley,Kajiado,MOALP,AgroMOALP,,1998,Maize,28480,0.41,11790,36,1
+Rift Valley,Kajiado,MOALP,AgroMOALP,,1999,Maize,33500,0.31,10440,36,1
+Rift Valley,Kajiado,MOALP,AgroMOALP,,2000,Maize,30050,2.05,61722,36,1
+Rift Valley,Kajiado,MOALP,AgroMOALP,,2001,Maize,32200,0.72,23148,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2002,Maize,36300,1.49,53978,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2003,Maize,33532.09,1.54,51575.78,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2004,Maize,36700,1.34,49280.47,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2005,Maize,36300,1.3,47087.31,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2006,Maize,35920,0.73,26103,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2007,Maize,35900,1.86,66825,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2008,Maize,35670.42,1.35,48174.31,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2009,Maize,7357,0.83,6073.38,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2010,Maize,14590,1.19,17432.55,36,1
+Rift Valley,Kajiado,MoALF,Spreadsheet,,2011,Maize,23245,1.54,35797.3,36,1
+Rift Valley,Kajiado,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,30145,1.07,32170.44,36,1
+Rift Valley,Kajiado,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,34721,1.85,64372.73,36,1
+Rift Valley,Kajiado,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,31020,2.4,74541.06,36,1
+Rift Valley,Kericho,MOA,AgroMOA,,1970,Maize,43715,2.42,105923,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1971,Maize,22000,4.05,89100,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1972,Maize,32000,4.05,129600,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1973,Maize,28960,3.33,96466,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1974,Maize,35550,2.96,105359,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1975,Maize,35045,3.6,126191,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1976,Maize,36875,3.6,132750,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1977,Maize,42490,3.15,133844,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1978,Maize,42838,2.87,123044,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1979,Maize,45572,3.55,161928,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1980,Maize,57932,3.15,182477,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1981,Maize,70232,3.15,221231,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1982,Maize,72000,2.61,187920,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1983,Maize,72000,3.7,266400,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1984,Maize,72000,2.52,181530,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1985,Maize,74000,2.7,199800,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1986,Maize,74000,3.15,233100,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1987,Maize,74200,3.33,247086,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1988,Maize,80194,3.6,288698,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1989,Maize,85434,3.6,307562,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1990,Maize,76558,2.7,206707,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1991,Maize,78500,3.28,257580,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1992,Maize,67288,3.6,242236.8,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1993,Maize,40550,1.98,80289,38,1
+Rift Valley,Kericho,MOALP,AgroMOALP,,1994,Maize,41800,3.6,150480,38,1
+Rift Valley,Kericho,MOA,AgroMOA,,1995,Maize,41000,3.15,129150,38,1
+Rift Valley,Kericho,MOALP,AgroMOALP,,1996,Maize,39500,3.24,127980,38,1
+Rift Valley,Kericho,MOALP,AgroMOALP,,1997,Maize,39700,2.61,103617,38,1
+Rift Valley,Kericho,MOALP,AgroMOALP,,1998,Maize,40000,3.42,136800,38,1
+Rift Valley,Kericho,MOALP,AgroMOALP,,1999,Maize,30500,3.05,93015,38,1
+Rift Valley,Kericho,MOALP,AgroMOALP,,2000,Maize,31500,2.64,83250,38,1
+Rift Valley,Kericho,MOALP,AgroMOALP,,2001,Maize,33000,2.92,96273,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2002,Maize,50900,2.4,121962,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2003,Maize,47018.82,2.48,116534.25,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2004,Maize,53600,2.73,146593,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2005,Maize,54190,2.97,161055,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2006,Maize,41685,3.52,146731.2,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2007,Maize,63895,3.52,224838,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2008,Maize,52077.76,3.22,167501.25,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2009,Maize,48223,2.12,102205.8,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2010,Maize,50600,2.6,131450.4,38,1
+Rift Valley,Kericho,MoALF,Spreadsheet,,2011,Maize,48035,2.44,116992.8,38,1
+Rift Valley,Kericho,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,41971,3.05,128053.52,38,1
+Rift Valley,Kericho,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,41170,2.52,103748.4,38,1
+Rift Valley,Kericho,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,41041,2.18,89387.3,38,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1973,Maize,6350,1.08,6858,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1974,Maize,7325,2.15,15777,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1975,Maize,7800,3.24,25272,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1976,Maize,7800,2.25,17550,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1977,Maize,9100,2.25,20475,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1978,Maize,9800,2.88,28224,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1979,Maize,7060,2.25,15903,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1980,Maize,6000,0.75,4500,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1981,Maize,8300,2.25,18675,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1982,Maize,9820,2.52,24746,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1983,Maize,12500,2.76,34560,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1984,Maize,12638,0.5,6302,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1985,Maize,15490,2.7,41823,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1986,Maize,18000,2.7,48600,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1987,Maize,16574,1.53,25358,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1988,Maize,16574,2.25,37292,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1989,Maize,18000,1.8,32400,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1990,Maize,18106,1.9,34401,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1991,Maize,17500,1.62,28350,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1992,Maize,20855,1.35,28154.25,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1993,Maize,19819,1.17,23188.23,40,1
+Rift Valley,Laikipia,MOA,AgroMOA,,1995,Maize,20500,1.8,36900,40,1
+Rift Valley,Laikipia,MOALP,AgroMOALP,,1997,Maize,20250,1.53,30978,40,1
+Rift Valley,Laikipia,MOALP,AgroMOALP,,1998,Maize,19900,1.9,37800,40,1
+Rift Valley,Laikipia,MOALP,AgroMOALP,,1999,Maize,20000,1.17,23400,40,1
+Rift Valley,Laikipia,MOALP,AgroMOALP,,2000,Maize,18800,1.26,23760,40,1
+Rift Valley,Laikipia,MOALP,AgroMOALP,,2001,Maize,22700,2.04,46224,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2002,Maize,21400,1.12,23879,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2003,Maize,19768.23,1.15,22816.3,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2004,Maize,21650,1.42,30702,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2005,Maize,28000,1.66,46535,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2006,Maize,33903,1.33,45209,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2007,Maize,36300,1.8,65340,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2008,Maize,27924.25,1.51,42120.46,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2009,Maize,8365,0.83,6969.96,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2010,Maize,41154,2.54,104590.98,40,1
+Rift Valley,Laikipia,MoALF,Spreadsheet,,2011,Maize,36635,1.91,70067.43,40,1
+Rift Valley,Laikipia,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,36163,3.37,121724.66,40,1
+Rift Valley,Laikipia,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,5665,0.89,5047.52,40,1
+Rift Valley,Laikipia,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,6175,1.06,6557.85,40,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1973,Maize,12540,0.81,10167,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1974,Maize,14155,3.15,44593,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1975,Maize,16360,3.51,57434,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1977,Maize,17590,2.25,39578,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1978,Maize,19068,3.15,60064,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1979,Maize,19500,2.25,43875,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1980,Maize,19850,1.27,25200,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1981,Maize,22008,2.52,55460,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1982,Maize,21814,2.7,58898,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1983,Maize,21118,2.81,59400,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1984,Maize,23005,0.62,14300,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1985,Maize,18557,2.7,50104,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1986,Maize,22250,2.7,60075,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1987,Maize,24600,1.57,38610,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1988,Maize,21200,2.7,57240,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1989,Maize,26700,3.15,84105,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1990,Maize,20700,1.8,37260,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1991,Maize,21200,2.25,47700,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1992,Maize,21332,3.6,76795.2,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1993,Maize,24500,1.53,37485,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,1994,Maize,27948,2.36,66044,41,1
+Rift Valley,Elgeyo Marakwet,MOA,AgroMOA,,1995,Maize,10352,2.16,22360.32,41,1
+Rift Valley,Elgeyo Marakwet,MOALP,AgroMOALP,,1996,Maize,8600,2.16,18576,41,1
+Rift Valley,Elgeyo Marakwet,MOALP,AgroMOALP,,1997,Maize,7910,1.26,9954,41,1
+Rift Valley,Elgeyo Marakwet,MOALP,AgroMOALP,,1998,Maize,12500,2.48,30937.5,41,1
+Rift Valley,Elgeyo Marakwet,MOALP,AgroMOALP,,1999,Maize,13000,2.64,34290,41,1
+Rift Valley,Elgeyo Marakwet,MOALP,AgroMOALP,,2000,Maize,14500,2.17,31410,41,1
+Rift Valley,Elgeyo Marakwet,MOALP,AgroMOALP,,2001,Maize,15800,3.19,50427,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2002,Maize,29300,2.12,62124,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2003,Maize,27065.84,2.19,59359.26,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2004,Maize,33330,1.94,64765,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2005,Maize,33579,3.01,101153,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2006,Maize,35835,3.11,111363,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2007,Maize,34250,3.45,118145.7,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2008,Maize,32811.97,2.77,90957.19,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2009,Maize,35766,1.6,57179.07,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2010,Maize,30120,2.93,88238.7,41,1
+Rift Valley,Elgeyo Marakwet,MoALF,Spreadsheet,,2011,Maize,158411,0.55,86432.49,41,1
+Rift Valley,Elgeyo Marakwet,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,31533,3.02,95072,41,1
+Rift Valley,Elgeyo Marakwet,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,32015,3.27,104593.01,41,1
+Rift Valley,Elgeyo Marakwet,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,27620,3.87,106889.4,41,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1970,Maize,13655,4.05,55302,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1971,Maize,5050,3.6,18180,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1972,Maize,6240,2.7,16848,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1973,Maize,4650,4.04,18800,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1974,Maize,40000,2.43,97200,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1975,Maize,40000,3.15,126000,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1976,Maize,45500,1.48,67500,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1977,Maize,42000,2.25,94500,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1978,Maize,32808,2.43,79723,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1979,Maize,26700,1.8,48060,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1980,Maize,37095,0.6,22268,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1981,Maize,37485,2.7,101209,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1982,Maize,45805,1.45,66510,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1983,Maize,44480,3.56,158445,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1985,Maize,61500,2.7,166050,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1986,Maize,61900,2.7,167130,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1987,Maize,64350,1.62,104247,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1988,Maize,66618,2.7,179869,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1989,Maize,61244,2.52,154395,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1990,Maize,60475,2.25,136068,42,1
+Rift Valley,Nakuru,MOA,AgroMOA,,1992,Maize,53371,2.61,129644.64,42,1
+Rift Valley,Nakuru,MOALP,AgroMOALP,,1994,Maize,63460,2.25,142785,42,1
+Rift Valley,Nakuru,MOALP,AgroMOALP,,1997,Maize,65540,1.54,101160,42,1
+Rift Valley,Nakuru,MOALP,AgroMOALP,,1998,Maize,59100,2.34,138393,42,1
+Rift Valley,Nakuru,MOALP,AgroMOALP,,1999,Maize,65000,1.04,67437,42,1
+Rift Valley,Nakuru,MOALP,AgroMOALP,,2000,Maize,63000,0.37,23607,42,1
+Rift Valley,Nakuru,MOALP,AgroMOALP,,2001,Maize,65300,2.48,162162,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2002,Maize,60320.81,1.58,95059,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2003,Maize,55721.28,1.63,90828.53,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2004,Maize,60170,1.75,105288,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2005,Maize,68025,2.57,174502,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2006,Maize,66451,2.23,148180,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2007,Maize,69881,2.43,169767.63,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2008,Maize,64049.66,2.15,137713.23,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2009,Maize,71038.6,0.96,68171.94,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2010,Maize,78925,3.15,248274.27,42,1
+Rift Valley,Nakuru,MoALF,Spreadsheet,,2011,Maize,90740,2.9,263425.05,42,1
+Rift Valley,Nakuru,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,89649,3.38,302565.38,42,1
+Rift Valley,Nakuru,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,90690,2.58,234252.27,42,1
+Rift Valley,Nakuru,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,86504,1.85,160378.42,42,1
+Rift Valley,Narok,MOA,AgroMOA,,1970,Maize,3719,1.21,4500,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1971,Maize,3296,2.5,8240,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1972,Maize,3216,4.05,13025,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1973,Maize,4340,0.7,3044,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1974,Maize,5080,2.7,13716,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1975,Maize,7800,2.98,23255,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1976,Maize,4500,2.52,11340,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1977,Maize,6780,2.34,15865,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1978,Maize,8980,2.25,20205,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1979,Maize,9755,2.25,21939,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1980,Maize,13000,1.38,18000,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1981,Maize,18396,3.15,57947,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1982,Maize,16025,2.25,36056,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1983,Maize,12769,3.22,41067,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1984,Maize,10986,1.23,13500,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1985,Maize,15699,1.62,25432,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1986,Maize,24676,2.25,55521,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1987,Maize,25949,1.1,28541,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1988,Maize,35500,2.7,95850,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1989,Maize,32300,3.6,116280,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1990,Maize,36330,2.25,81743,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1991,Maize,32000,3.15,100800,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1992,Maize,26500,0.34,90630,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1993,Maize,34000,1.62,55080,43,1
+Rift Valley,Narok,MOA,AgroMOA,,1995,Maize,22045,2.52,55553.4,43,1
+Rift Valley,Narok,MOALP,AgroMOALP,,1997,Maize,22850,1.22,27765,43,1
+Rift Valley,Narok,MOALP,AgroMOALP,,1998,Maize,22200,2.98,66150,43,1
+Rift Valley,Narok,MOALP,AgroMOALP,,1999,Maize,30000,0.59,17829,43,1
+Rift Valley,Narok,MOALP,AgroMOALP,,2000,Maize,29300,0.54,15750,43,1
+Rift Valley,Narok,MOALP,AgroMOALP,,2001,Maize,29500,1.8,53028,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2002,Maize,55555.6,1.74,96751,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2003,Maize,51319.42,1.8,92445.23,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2004,Maize,84720,2.25,190639,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2005,Maize,85310,1.86,158920,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2006,Maize,88040,1.89,166588,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2007,Maize,75520,3.15,238248,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2008,Maize,76981.88,2.2,169368.05,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2009,Maize,91856,2.31,212485.5,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2010,Maize,114290,3.69,421841.7,43,1
+Rift Valley,Narok,MoALF,Spreadsheet,,2011,Maize,86775,2.47,214150.05,43,1
+Rift Valley,Narok,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,109940,1.7,187007.94,43,1
+Rift Valley,Narok,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,113550,2.81,318848.4,43,1
+Rift Valley,Narok,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,112079,2.42,271343.26,43,1
+Rift Valley,Samburu,MOA,AgroMOA,,1970,Maize,1650,1.01,1672,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1971,Maize,1822,1.01,1832,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1972,Maize,790,0.05,36,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1973,Maize,675,2.25,1519,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1974,Maize,680,2.23,1519,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1975,Maize,485,2.25,1091,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1976,Maize,300,1.8,540,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1977,Maize,645,1.8,1161,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1978,Maize,650,2.07,1346,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1979,Maize,750,1.8,1350,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1981,Maize,1200,2.51,3011,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1982,Maize,600,1.08,648,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1983,Maize,1288,1.08,1391,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1985,Maize,1100,1.35,1485,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1986,Maize,1986,1.8,3575,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1987,Maize,1085,2.3,2493,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1988,Maize,1200,2.7,3240,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1989,Maize,1300,2.16,2808,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1990,Maize,1060,1.5,1590,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1991,Maize,660,1.8,1188,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1992,Maize,1500,1.8,2700,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1993,Maize,1810,0.9,1629,44,1
+Rift Valley,Samburu,MOA,AgroMOA,,1995,Maize,2010,1.8,3618,44,1
+Rift Valley,Samburu,MOALP,AgroMOALP,,1997,Maize,2000,0.88,1764,44,1
+Rift Valley,Samburu,MOALP,AgroMOALP,,1998,Maize,1000,1.8,1800,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,1999,Maize,900,1.8,1620,44,1
+Rift Valley,Samburu,MOALP,AgroMOALP,,2000,Maize,1500,0.9,1350,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2001,Maize,1500,0.9,1350,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2002,Maize,2400,1.3,3114,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2003,Maize,2217,1.34,2975.42,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2004,Maize,2370,0.45,1067,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2005,Maize,2360,1.58,3726,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2006,Maize,1369,0.9,1232,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2007,Maize,2200,2.7,5940,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2008,Maize,2103.2,1.42,2988.08,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2009,Maize,493,0.82,404.55,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2010,Maize,961,2.49,2390.22,44,1
+Rift Valley,Samburu,MoALF,Spreadsheet,,2011,Maize,500,2.34,1170,44,1
+Rift Valley,Samburu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,1227,0.84,1027,44,1
+Rift Valley,Samburu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,1265,1.31,1650.83,44,1
+Rift Valley,Samburu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,1973,1.04,2059.81,44,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1970,Maize,24000,3.7,88800,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1971,Maize,30685,3.83,117375,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1972,Maize,34350,3.67,126000,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1973,Maize,33000,3.24,106920,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1974,Maize,30000,3.24,97200,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1975,Maize,40000,3.47,138600,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1976,Maize,50000,3.24,162000,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1977,Maize,60000,3.15,189000,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1978,Maize,39000,3.24,126360,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1979,Maize,35000,2.7,94500,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1980,Maize,60132,2.7,162356,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1981,Maize,52316,3.42,178920,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1982,Maize,51526,3.24,166944,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1983,Maize,48441,3,145323,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1984,Maize,49502,2.7,133659,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1985,Maize,55479,3.15,174759,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1986,Maize,51529,3.52,181383,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1987,Maize,52314,2.9,151710,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1988,Maize,68080,3.6,245088,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1989,Maize,68350,4.05,276818,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1990,Maize,59741,2.97,177431,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1991,Maize,69500,3.6,250200,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1992,Maize,58190,3.67,213840,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1993,Maize,65676,2.52,165503.52,46,1
+Rift Valley,Trans Nzoia,MOA,AgroMOA,,1995,Maize,63600,3.6,228960,46,1
+Rift Valley,Trans Nzoia,MOALP,AgroMOALP,,1997,Maize,63400,2.51,159282,46,1
+Rift Valley,Trans Nzoia,MOALP,AgroMOALP,,1998,Maize,64600,3.6,232560,46,1
+Rift Valley,Trans Nzoia,MOALP,AgroMOALP,,1999,Maize,62300,2.88,179424,46,1
+Rift Valley,Trans Nzoia,MOALP,AgroMOALP,,2000,Maize,63800,2.7,172260,46,1
+Rift Valley,Trans Nzoia,MOALP,AgroMOALP,,2001,Maize,78500,3.06,240408,46,1
+Rift Valley,Trans Nzoia,MoALF,Spreadsheet,,2002,Maize,89300,2.34,208902,46,1
+Rift Valley,Trans Nzoia,MoALF,Spreadsheet,,2003,Maize,82490.78,2.42,199605.1,46,1
+Rift Valley,Trans Nzoia,MoALF,Spreadsheet,,2004,Maize,95657,2.79,266915,46,1
+Rift Valley,Trans Nzoia,MoALF,Spreadsheet,,2005,Maize,94700,4.05,383573,46,1
+Rift Valley,Trans Nzoia,MoALF,Spreadsheet,,2008,Maize,93949.56,3.62,339883.42,46,1
+Rift Valley,Trans Nzoia,MoALF,Spreadsheet,,2009,Maize,101490,2.55,258357.6,46,1
+Rift Valley,Turkana,MOA,AgroMOA,,1971,Maize,85,0.09,8,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1974,Maize,100,1.2,120,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1975,Maize,300,1.62,486,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1976,Maize,110,1.39,153,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1977,Maize,120,1.35,162,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1978,Maize,90,1.53,138,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1979,Maize,139,1.8,250,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1980,Maize,120,1.8,216,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1982,Maize,650,0.9,585,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1983,Maize,650,0.9,585,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1985,Maize,200,0.45,90,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1986,Maize,200,0.72,144,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1987,Maize,613,0.9,552,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1992,Maize,189,1.53,289.17,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1993,Maize,450,0.54,243,47,1
+Rift Valley,Turkana,MOA,AgroMOA,,1995,Maize,300,1.35,405,47,1
+Rift Valley,Turkana,MOALP,AgroMOALP,,1997,Maize,480,0.47,225,47,1
+Rift Valley,Turkana,MOALP,AgroMOALP,,1998,Maize,300,0.84,252,47,1
+Rift Valley,Turkana,MOALP,AgroMOALP,,1999,Maize,800,1.73,1386,47,1
+Rift Valley,Turkana,MOALP,AgroMOALP,,2000,Maize,600,1.17,702,47,1
+Rift Valley,Turkana,MOALP,AgroMOALP,,2001,Maize,900,1.14,1026,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2002,Maize,300,1.17,351,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2003,Maize,277.12,1.21,335.38,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2004,Maize,1203,0.92,1110,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2005,Maize,2827,1.43,4044,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2006,Maize,2590,1.25,3227,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2007,Maize,2200,1.74,3825,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2008,Maize,1819.42,1.38,2508.28,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2009,Maize,1234,0.9,1107,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2010,Maize,1020,1.76,1791.45,47,1
+Rift Valley,Turkana,MoALF,Spreadsheet,,2011,Maize,1880,1.24,2330.1,47,1
+Rift Valley,Turkana,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,2252,1.59,3587.44,47,1
+Rift Valley,Turkana,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,1626,1.9,3087.77,47,1
+Rift Valley,Turkana,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,1310,1.67,2192.94,47,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1970,Maize,25275,3,75825,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1971,Maize,27950,3.37,94331,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1972,Maize,35470,2.7,95769,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1973,Maize,30040,1.8,54068,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1974,Maize,25600,3.25,83241,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1975,Maize,29220,3.42,99952,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1976,Maize,41770,2.25,93987,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1977,Maize,42820,2.25,96345,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1978,Maize,34450,2.7,93015,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1979,Maize,36916,2.7,99673,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,1980,Maize,36860,2.25,82935,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1981,Maize,43816,3.15,138015,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1982,Maize,46648,2.88,134347,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1983,Maize,47144,3.86,181913,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1984,Maize,39600,0.9,35640,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1985,Maize,62800,2.7,169560,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1986,Maize,61030,3.15,192240,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1987,Maize,59870,3.33,199367,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1988,Maize,59830,3.6,215388,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1989,Maize,61238,4.05,248014,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1990,Maize,59886,2.97,177861,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1991,Maize,55000,2.25,123750,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1993,Maize,55640,1.53,84853.8,48,1
+Rift Valley,Uasin Gishu,MOA,AgroMOA,,1995,Maize,54600,3.15,171990,48,1
+Rift Valley,Uasin Gishu,MOALP,AgroMOALP,,1997,Maize,52500,1.94,101812.5,48,1
+Rift Valley,Uasin Gishu,MOALP,AgroMOALP,,1998,Maize,53700,3.42,183654,48,1
+Rift Valley,Uasin Gishu,MOALP,AgroMOALP,,1999,Maize,61300,2.7,165510,48,1
+Rift Valley,Uasin Gishu,MOALP,AgroMOALP,,2000,Maize,58000,2.7,156510,48,1
+Rift Valley,Uasin Gishu,MOALP,AgroMOALP,,2001,Maize,61800,2.88,177984,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,2002,Maize,49000,2.52,123492,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,2003,Maize,45263.7,2.61,117996.16,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,2004,Maize,63585,2.97,188866,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,2005,Maize,65758,3.87,254509,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,2006,Maize,66000,4.05,267327,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,2008,Maize,65262.54,3.72,242875.03,48,1
+Rift Valley,Uasin Gishu,MoALF,Spreadsheet,,2009,Maize,85002,2.76,234415.8,48,1
+Rift Valley,Uasin Gishu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,91310,2.83,258042.06,48,1
+Rift Valley,Uasin Gishu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,96654,3.93,380140.18,48,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1973,Maize,7270,0.5,3620,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1974,Maize,6460,2.25,14535,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1975,Maize,4340,3.99,17330,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1976,Maize,9380,2.25,21105,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1977,Maize,15070,2.25,33899,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1978,Maize,7876,2.25,17721,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1979,Maize,6139,3.23,19828,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,1980,Maize,9450,1.52,14400,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1981,Maize,10100,3.33,33633,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1982,Maize,12800,3.15,40320,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1983,Maize,13200,3.89,51300,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,1984,Maize,13000,2.25,29250,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1985,Maize,14712,2.25,33102,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1986,Maize,12650,2.25,28463,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1987,Maize,12450,2.25,28013,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1988,Maize,21160,3.42,72367,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1989,Maize,18698,3.6,67302,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1990,Maize,13788,2.3,31712,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1991,Maize,15000,3.15,47250,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1992,Maize,17104,3.6,61574.4,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1993,Maize,19480,1.35,26298,49,1
+Rift Valley,West Pokot,MOA,AgroMOA,,1995,Maize,21400,2.52,53928,49,1
+Rift Valley,West Pokot,MOALP,AgroMOALP,,1997,Maize,24000,1.44,34596,49,1
+Rift Valley,West Pokot,MOALP,AgroMOALP,,1998,Maize,23000,2.7,62100,49,1
+Rift Valley,West Pokot,MOALP,AgroMOALP,,1999,Maize,11200,1.62,18144,49,1
+Rift Valley,West Pokot,MOALP,AgroMOALP,,2000,Maize,21300,0.85,18180,49,1
+Rift Valley,West Pokot,MOALP,AgroMOALP,,2001,Maize,22500,1.63,36657,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2002,Maize,18600,1.15,21368,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2003,Maize,17181.73,1.19,20417.05,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2004,Maize,22800,1.26,28731,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2005,Maize,23785,1.71,40676,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2006,Maize,24108,1.43,34450,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2007,Maize,24150,2.31,55836,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2008,Maize,22404.95,1.61,36022.01,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2009,Maize,18057,1.31,23686.65,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2010,Maize,22120,2.32,51394.05,49,1
+Rift Valley,West Pokot,MoALF,Spreadsheet,,2011,Maize,20450,2.16,44127,49,1
+Rift Valley,West Pokot,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,33035,3.42,112979.7,49,1
+Rift Valley,West Pokot,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,19380,2.88,55814.4,49,1
+Rift Valley,West Pokot,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,19748,2.39,47276.71,49,1
+Western,Bungoma,MOA,AgroMOA,,1970,Maize,39702,2.54,100711,52,1
+Western,Bungoma,MOA,AgroMOA,,1971,Maize,43771,2.54,111035,52,1
+Western,Bungoma,MOA,AgroMOA,,1972,Maize,41300,2.54,104765,52,1
+Western,Bungoma,MOA,AgroMOA,,1973,Maize,46347,3.5,162000,52,1
+Western,Bungoma,MOA,AgroMOA,,1974,Maize,43456,2.69,117000,52,1
+Western,Bungoma,MOA,AgroMOA,,1975,Maize,49637,2.72,134829,52,1
+Western,Bungoma,MOA,AgroMOA,,1976,Maize,45902,3.14,144000,52,1
+Western,Bungoma,MOA,AgroMOA,,1977,Maize,44880,3.31,148500,52,1
+Western,Bungoma,MOA,AgroMOA,,1978,Maize,39900,2.78,111000,52,1
+Western,Bungoma,MOA,AgroMOA,,1979,Maize,41491,2.25,93355,52,1
+Western,Bungoma,MOA,AgroMOA,,1980,Maize,50000,2.25,112500,52,1
+Western,Bungoma,MOA,AgroMOA,,1981,Maize,61000,2.25,137345,52,1
+Western,Bungoma,MOA,AgroMOA,,1982,Maize,66528,2.7,179628,52,1
+Western,Bungoma,MOA,AgroMOA,,1983,Maize,66000,2.1,138546,52,1
+Western,Bungoma,MOA,AgroMOA,,1984,Maize,78000,1.84,143640,52,1
+Western,Bungoma,MOA,AgroMOA,,1985,Maize,84690,2.94,248663,52,1
+Western,Bungoma,MOA,AgroMOA,,1986,Maize,93000,2.81,261100,52,1
+Western,Bungoma,MOA,AgroMOA,,1987,Maize,98766,2.54,250538,52,1
+Western,Bungoma,MOA,AgroMOA,,1988,Maize,83570,2.25,188030,52,1
+Western,Bungoma,MOA,AgroMOA,,1989,Maize,72210,2.25,162470,52,1
+Western,Bungoma,MOA,AgroMOA,,1990,Maize,78248,2.3,179950,52,1
+Western,Bungoma,MOA,AgroMOA,,1991,Maize,60500,2.79,168795,52,1
+Western,Bungoma,MOA,AgroMOA,,1992,Maize,71500,2.5,178749.99,52,1
+Western,Bungoma,MOA,AgroMOA,,1993,Maize,42220,1.8,75996,52,1
+Western,Bungoma,MOALP,AgroMOALP,,1994,Maize,56490,2.7,152523,52,1
+Western,Bungoma,MOA,AgroMOA,,1995,Maize,56490,2.5,141225.03,52,1
+Western,Bungoma,MoALF,Spreadsheet,,1996,Maize,68672,2.62,179933,52,1
+Western,Bungoma,MOALP,AgroMOALP,,1997,Maize,56731,2.7,153173.7,52,1
+Western,Bungoma,MOALP,AgroMOALP,,1998,Maize,55403,2.64,146170.53,52,1
+Western,Bungoma,MOALP,AgroMOALP,,1999,Maize,57855,2.79,161415.45,52,1
+Western,Bungoma,MOALP,AgroMOALP,,2000,Maize,57950,2.66,154413,52,1
+Western,Bungoma,MOALP,AgroMOALP,,2001,Maize,59000,2.61,153990,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2002,Maize,72770,2.46,178673.09,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2003,Maize,69381.93,3.01,208846.46,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2004,Maize,72257,2.7,195135.64,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2005,Maize,82356,2.98,245188.12,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2006,Maize,82742,3.19,264076.15,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2007,Maize,76545,2.79,213560.55,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2008,Maize,76656.39,2.95,226136.34,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2009,Maize,93915,1.99,186493.5,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2010,Maize,96861,2.66,257184,52,1
+Western,Bungoma,MoALF,Spreadsheet,,2011,Maize,95373,2.71,258893.46,52,1
+Western,Bungoma,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,96209,2.93,282277.21,52,1
+Western,Bungoma,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,92705,2.57,238622.67,52,1
+Western,Bungoma,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,98074,2.93,287749.12,52,1
+Western,Busia,MOA,AgroMOA,,1970,Maize,18133,1.74,31486,53,1
+Western,Busia,MOA,AgroMOA,,1971,Maize,16142,2.25,36319,53,1
+Western,Busia,MOA,AgroMOA,,1972,Maize,34140,1.74,59281,53,1
+Western,Busia,MOA,AgroMOA,,1973,Maize,13881,1.74,24103,53,1
+Western,Busia,MOA,AgroMOA,,1974,Maize,12795,1.74,22217,53,1
+Western,Busia,MOA,AgroMOA,,1975,Maize,7960,1.74,13822,53,1
+Western,Busia,MOA,AgroMOA,,1976,Maize,10076,1.74,17496,53,1
+Western,Busia,MOA,AgroMOA,,1977,Maize,15308,1.74,26580,53,1
+Western,Busia,MOA,AgroMOA,,1978,Maize,13308,1.74,23108,53,1
+Western,Busia,MOA,AgroMOA,,1979,Maize,17905,1.74,31090,53,1
+Western,Busia,MOA,AgroMOA,,1980,Maize,30000,1.74,52092,53,1
+Western,Busia,MOA,AgroMOA,,1981,Maize,25331,2.08,52796,53,1
+Western,Busia,MOA,AgroMOA,,1982,Maize,29600,1.74,51398,53,1
+Western,Busia,MOA,AgroMOA,,1983,Maize,28000,1.39,38880,53,1
+Western,Busia,MOA,AgroMOA,,1984,Maize,31000,1.57,48717,53,1
+Western,Busia,MOA,AgroMOA,,1985,Maize,33000,1.62,53550,53,1
+Western,Busia,MOA,AgroMOA,,1986,Maize,33000,1.8,59400,53,1
+Western,Busia,MOA,AgroMOA,,1987,Maize,35063,1.74,60884,53,1
+Western,Busia,MOA,AgroMOA,,1988,Maize,24900,1.08,26890,53,1
+Western,Busia,MOA,AgroMOA,,1989,Maize,27300,1.08,29485,53,1
+Western,Busia,MOA,AgroMOA,,1990,Maize,25630,1.15,29475,53,1
+Western,Busia,MOA,AgroMOA,,1992,Maize,14489,1.66,24044.04,53,1
+Western,Busia,MOA,AgroMOA,,1993,Maize,10200,1.03,10535.58,53,1
+Western,Busia,MOALP,AgroMOALP,,1994,Maize,15520,0.16,2500,53,1
+Western,Busia,MOA,AgroMOA,,1995,Maize,16280,1.67,27202.05,53,1
+Western,Busia,MOALP,AgroMOALP,,1997,Maize,12521,1.62,20284.02,53,1
+Western,Busia,MOALP,AgroMOALP,,1998,Maize,13931,1.32,18333.27,53,1
+Western,Busia,MOALP,AgroMOALP,,1999,Maize,14160,1.4,19824.03,53,1
+Western,Busia,MOALP,AgroMOALP,,2000,Maize,18226,1.17,21324.42,53,1
+Western,Busia,MOALP,AgroMOALP,,2001,Maize,18800,1.17,21996,53,1
+Western,Busia,MoALF,Spreadsheet,,2002,Maize,27588,1.35,37265.17,53,1
+Western,Busia,MoALF,Spreadsheet,,2003,Maize,26303.54,1.66,43558.31,53,1
+Western,Busia,MoALF,Spreadsheet,,2004,Maize,17323,1.32,22815.66,53,1
+Western,Busia,MoALF,Spreadsheet,,2005,Maize,24352,1.96,47848.78,53,1
+Western,Busia,MoALF,Spreadsheet,,2006,Maize,39570,1.31,51865.44,53,1
+Western,Busia,MoALF,Spreadsheet,,2007,Maize,36362,1.24,45088.88,53,1
+Western,Busia,MoALF,Spreadsheet,,2008,Maize,28782.11,0.43,12376.31,53,1
+Western,Busia,MoALF,Spreadsheet,,2009,Maize,25229,1.26,31707.36,53,1
+Western,Busia,MoALF,Spreadsheet,,2010,Maize,47300,1.18,55897.56,53,1
+Western,Busia,MoALF,Spreadsheet,,2011,Maize,38865,1.21,47205,53,1
+Western,Busia,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,41990,1.31,55174.86,53,1
+Western,Busia,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,45898,1.51,69397.78,53,1
+Western,Busia,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,50400,1.58,79833.6,53,1
+Western,Kakamega,MOA,AgroMOA,,1970,Maize,83457,2.09,174793,55,1
+Western,Kakamega,MOA,AgroMOA,,1971,Maize,74460,2.38,177459,55,1
+Western,Kakamega,MOA,AgroMOA,,1972,Maize,63000,2.7,170100,55,1
+Western,Kakamega,MOA,AgroMOA,,1973,Maize,79662,2.88,229427,55,1
+Western,Kakamega,MOA,AgroMOA,,1974,Maize,71591,2.09,149940,55,1
+Western,Kakamega,MOA,AgroMOA,,1975,Maize,54065,2.34,126512,55,1
+Western,Kakamega,MOA,AgroMOA,,1976,Maize,75548,2.09,158221,55,1
+Western,Kakamega,MOA,AgroMOA,,1977,Maize,103223,2.09,216191,55,1
+Western,Kakamega,MOA,AgroMOA,,1978,Maize,77085,2.25,173441,55,1
+Western,Kakamega,MOA,AgroMOA,,1979,Maize,88941,2.25,200117,55,1
+Western,Kakamega,MOA,AgroMOA,,1980,Maize,106420,2.09,222886,55,1
+Western,Kakamega,MOA,AgroMOA,,1981,Maize,112237,2.42,271137,55,1
+Western,Kakamega,MOA,AgroMOA,,1982,Maize,110420,2.09,231264,55,1
+Western,Kakamega,MOA,AgroMOA,,1983,Maize,84225,2.09,176401,55,1
+Western,Kakamega,MOA,AgroMOA,,1984,Maize,102000,2.09,213629,55,1
+Western,Kakamega,MOA,AgroMOA,,1985,Maize,109286,2.1,229501,55,1
+Western,Kakamega,MOA,AgroMOA,,1986,Maize,117045,2.1,245795,55,1
+Western,Kakamega,MOA,AgroMOA,,1987,Maize,125355,2.1,263264,55,1
+Western,Kakamega,MOA,AgroMOA,,1988,Maize,122000,1.71,208620,55,1
+Western,Kakamega,MOA,AgroMOA,,1989,Maize,134800,2.3,310040,55,1
+Western,Kakamega,MOA,AgroMOA,,1990,Maize,135000,2.3,310500,55,1
+Western,Kakamega,MOA,AgroMOA,,1992,Maize,73334,2.94,215352.63,55,1
+Western,Kakamega,MOA,AgroMOA,,1993,Maize,74246,2.25,167049.81,55,1
+Western,Kakamega,MOALP,AgroMOALP,,1994,Maize,69343,2.6,180000,55,1
+Western,Kakamega,MOA,AgroMOA,,1995,Maize,68915,2.95,203314.41,55,1
+Western,Kakamega,MOALP,AgroMOALP,,1997,Maize,30198,2.16,65227.68,55,1
+Western,Kakamega,MOALP,AgroMOALP,,1998,Maize,31108,2.67,83193.84,55,1
+Western,Kakamega,MOALP,AgroMOALP,,1999,Maize,29450,2,58900.05,55,1
+Western,Kakamega,MOALP,AgroMOALP,,2000,Maize,30020,1.8,54036,55,1
+Western,Kakamega,MOALP,AgroMOALP,,2001,Maize,29500,2.07,61065,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2002,Maize,66445,2.22,147493.61,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2003,Maize,63351.41,2.72,172401.55,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2004,Maize,69000,3,207240.77,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2005,Maize,68884,2.54,174909.99,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2006,Maize,70747,2.63,185822.68,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2007,Maize,50084,3.98,199261,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2008,Maize,64413.28,0.85,54686.88,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2009,Maize,82317,1.95,160347.15,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2010,Maize,70185,2.21,155339.55,55,1
+Western,Kakamega,MoALF,Spreadsheet,,2011,Maize,66672,1.94,129396.78,55,1
+Western,Kakamega,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,76285,2.38,181253.16,55,1
+Western,Kakamega,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,73463,2.48,181820.93,55,1
+Western,Kakamega,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,70993,2.7,191681.1,55,1
+Western,Vihiga,MoALF,Spreadsheet,,1991,Maize,24350,1.41,34370,59,1
+Western,Vihiga,MOA,AgroMOA,,1992,Maize,22840,0.45,10189.8,59,1
+Western,Vihiga,MOA,AgroMOA,,1993,Maize,14530,1.49,21664.98,59,1
+Western,Vihiga,MOA,AgroMOA,,1994,Maize,18720,0.56,10531.53,59,1
+Western,Vihiga,MOA,AgroMOA,,1995,Maize,20597,1.51,31073.13,59,1
+Western,Vihiga,MOALP,AgroMOALP,,1997,Maize,14900,1.8,26820,59,1
+Western,Vihiga,MOALP,AgroMOALP,,1998,Maize,22700,1.58,35793,59,1
+Western,Vihiga,MOALP,AgroMOALP,,1999,Maize,23100,1.71,39412.8,59,1
+Western,Vihiga,MOALP,AgroMOALP,,2000,Maize,22200,1.53,33966,59,1
+Western,Vihiga,MOALP,AgroMOALP,,2001,Maize,23300,1.62,37746,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2002,Maize,22700,1.5,34052.21,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2003,Maize,21643.12,1.84,39802.76,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2004,Maize,23100,1.71,39416.74,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2005,Maize,20820,1.8,37443.74,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2006,Maize,22100,1.22,26993.7,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2007,Maize,13900,1.6,22240,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2008,Maize,20312.62,0.36,7312.54,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2009,Maize,25242,1.14,28721.52,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2010,Maize,18034,1.64,29612.88,59,1
+Western,Vihiga,MoALF,Spreadsheet,,2011,Maize,22764,1.58,35869.95,59,1
+Western,Vihiga,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,18010,1.65,29662.47,59,1
+Western,Vihiga,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,24195,1.59,38542.64,59,1
+Western,Vihiga,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,23772,1.64,38938.54,59,1
+Nyanza,Kisii,MOA,AgroMOA,,1970,Maize,11114,0.14,1554,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1971,Maize,41358,0.06,2629,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1972,Maize,28832,0.17,4882,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1973,Maize,53200,1.5,79800,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1974,Maize,23156,2.96,68582,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1975,Maize,25635,3.3,84667,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1976,Maize,31163,3.15,98160,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1977,Maize,32142,2.59,83396,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1978,Maize,27903,2.73,76260,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1979,Maize,40529,2.57,104194,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1980,Maize,55651,2.7,150257,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1981,Maize,54050,3.23,174765,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1982,Maize,64820,2.96,192114,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1983,Maize,42155,3.6,151758,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1984,Maize,57720,2.84,163800,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1985,Maize,50300,3.6,181080,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1986,Maize,53340,3.6,192024,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1987,Maize,52607,3.6,189385,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1988,Maize,53858,3.51,189042,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1990,Maize,34359,4.03,138362,60,1
+Nyanza,Kisii,MOA,AgroMOA,,1992,Maize,35145,3.14,110191.5,60,1
+Nyanza,Kisii,MOALP,AgroMOALP,,1995,Maize,36200,3.42,123804,60,1
+Nyanza,Kisii,MOALP,AgroMOALP,,1997,Maize,14545,3.15,45816.75,60,1
+Nyanza,Kisii,MOALP,AgroMOALP,,1998,Maize,13600,2.94,40050,60,1
+Nyanza,Kisii,MOALP,AgroMOALP,,1999,Maize,13900,3.75,52137,60,1
+Nyanza,Kisii,MOALP,AgroMOALP,,2000,Maize,14250,3.16,44982,60,1
+Nyanza,Kisii,MOALP,AgroMOALP,,2001,Maize,15400,3.42,52668,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2002,Maize,48730,1.49,72464.45,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2003,Maize,49555,3.09,153355,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2004,Maize,49250,3.02,148645,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2005,Maize,48035,2.37,113879,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2006,Maize,50200,2.25,112961.3,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2007,Maize,48750,3.18,155025,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2008,Maize,49158,0.85,41784.3,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2009,Maize,54380,2.07,112597.65,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2010,Maize,55820,2.2,122737.5,60,1
+Nyanza,Kisii,MoALF,Spreadsheet,,2011,Maize,56790,2.19,124124.4,60,1
+Nyanza,Kisii,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,59635,2.54,151353.63,60,1
+Nyanza,Kisii,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,63710,2.21,141053.94,60,1
+Nyanza,Kisii,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,62210,2.07,128774.7,60,1
+Eastern,Marsabit,MOA,AgroMOA,,1973,Maize,2956,0.09,274,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1975,Maize,2658,0.1,269,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1976,Maize,2660,0.33,866,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1977,Maize,11320,0.23,2609,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1980,Maize,850,1.91,1620,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1981,Maize,5235,0.75,3912,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1982,Maize,4130,0.85,3515,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1983,Maize,2800,0.9,2520,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1984,Maize,5468,1,5468,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1985,Maize,6722,1.35,9075,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1986,Maize,7284,1.35,9833,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1987,Maize,6695,1.35,9038,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1988,Maize,6880,1.23,8450,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1989,Maize,8400,0.86,7236,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1990,Maize,11733,1.2,14084,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1992,Maize,4250,0.75,3177,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1994,Maize,6380,1.19,7596,61,0
+Eastern,Marsabit,MOA,AgroMOA,,1995,Maize,3000,0.18,540,61,0
+Eastern,Marsabit,MOALP,AgroMOALP,,1997,Maize,2800,0.6,1692,61,0
+Eastern,Marsabit,MOALP,AgroMOALP,,1998,Maize,1850,0.52,958.5,61,0
+Eastern,Marsabit,MOALP,AgroMOALP,,1999,Maize,4700,0.43,2034,61,0
+Eastern,Marsabit,MOALP,AgroMOALP,,2001,Maize,5000,0.94,4680,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2002,Maize,5000,1.05,5264.97,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2003,Maize,6800,0.71,4860,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2004,Maize,7560,0.39,2937.89,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2005,Maize,10100,0.79,7980.2,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2006,Maize,7920,0.26,2083.12,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2007,Maize,5928,0.26,1541.28,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2008,Maize,7661.6,0.87,6700.24,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2009,Maize,827,0.15,120.48,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2010,Maize,252,0.29,74.07,61,0
+Eastern,Marsabit,MoALF,Spreadsheet,,2011,Maize,539,0.13,69.03,61,0
+Eastern,Marsabit,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,274,0.8,219.47,61,0
+Eastern,Marsabit,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,990,1.02,1006.83,61,0
+Eastern,Marsabit,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,1571,1.03,1611.85,61,0
+Eastern,Meru,MOA,AgroMOA,,1970,Maize,23681,3,71091,62,0
+Eastern,Meru,MOA,AgroMOA,,1971,Maize,22030,3,66087,62,0
+Eastern,Meru,MOA,AgroMOA,,1972,Maize,26386,3,79155,62,0
+Eastern,Meru,MOA,AgroMOA,,1973,Maize,33150,3,99417,62,0
+Eastern,Meru,MOA,AgroMOA,,1974,Maize,33362,2,66800,62,0
+Eastern,Meru,MOA,AgroMOA,,1975,Maize,42001,1.64,68727,62,0
+Eastern,Meru,MOA,AgroMOA,,1976,Maize,35950,1.05,37600,62,0
+Eastern,Meru,MOA,AgroMOA,,1977,Maize,36730,1,36730,62,0
+Eastern,Meru,MOA,AgroMOA,,1978,Maize,44457,1.28,56823,62,0
+Eastern,Meru,MOA,AgroMOA,,1979,Maize,76300,0.88,67296,62,0
+Eastern,Meru,MOA,AgroMOA,,1980,Maize,82100,0.45,36945,62,0
+Eastern,Meru,MOA,AgroMOA,,1981,Maize,90000,1.8,162000,62,0
+Eastern,Meru,MOA,AgroMOA,,1982,Maize,99000,1.8,178200,62,0
+Eastern,Meru,MOA,AgroMOA,,1983,Maize,1.00E+05,0.94,93500,62,0
+Eastern,Meru,MOA,AgroMOA,,1984,Maize,47928,0.99,47310,62,0
+Eastern,Meru,MOA,AgroMOA,,1985,Maize,78379,1.04,81433,62,0
+Eastern,Meru,MOA,AgroMOA,,1986,Maize,66563,0.36,23748,62,0
+Eastern,Meru,MOA,AgroMOA,,1987,Maize,57943,1.75,101411,62,0
+Eastern,Meru,MOA,AgroMOA,,1988,Maize,53815,3.01,162000,62,0
+Eastern,Meru,MOA,AgroMOA,,1989,Maize,53585,1.81,97100,62,0
+Eastern,Meru,MOA,AgroMOA,,1990,Maize,68705,1.59,108914,62,0
+Eastern,Meru,MOA,AgroMOA,,1991,Maize,76068,1.1,83780.1,62,0
+Eastern,Meru,MOA,AgroMOA,,1992,Maize,65500,1.63,107055,62,0
+Eastern,Meru,MOA,AgroMOA,,1994,Maize,49300,1.82,89550,62,0
+Eastern,Meru,MOA,AgroMOA,,1995,Maize,34300,1.83,62773.2,62,0
+Eastern,Meru,MoALF,Spreadsheet,,1997,Maize,120900,0.97,117061.69,62,0
+Eastern,Meru,MoALF,Spreadsheet,,1998,Maize,126357,0.56,70466.7,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2000,Maize,105405,0.76,79803.78,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2001,Maize,116565,0.97,113337.08,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2002,Maize,110732,1.15,126899.01,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2003,Maize,112485,1.31,147716,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2004,Maize,111515,0.69,77501.35,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2005,Maize,118285,0.82,97435.82,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2006,Maize,83827,0.89,74304.05,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2007,Maize,81727,0.43,35142.61,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2008,Maize,101567.8,0.48,48752.54,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2009,Maize,110333,1.95,214982.23,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2010,Maize,102272,1.29,132088.5,62,0
+Eastern,Meru,MoALF,Spreadsheet,,2011,Maize,125192,1.49,186179.49,62,0
+Eastern,Meru,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,96244,1.51,145520.93,62,0
+Eastern,Meru,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,95594,0.99,94638.06,62,0
+Eastern,Meru,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,110489,1.04,114356.12,62,0
+Eastern,Embu,MOA,AgroMOA,,1970,Maize,15168,0.85,12882,63,0
+Eastern,Embu,MOA,AgroMOA,,1971,Maize,11541,1.22,14028,63,0
+Eastern,Embu,MOA,AgroMOA,,1972,Maize,14782,1.73,25543,63,0
+Eastern,Embu,MOA,AgroMOA,,1973,Maize,13492,1.57,21120,63,0
+Eastern,Embu,MOA,AgroMOA,,1974,Maize,17896,3.09,55271,63,0
+Eastern,Embu,MOA,AgroMOA,,1975,Maize,16204,1.69,27373,63,0
+Eastern,Embu,MOA,AgroMOA,,1976,Maize,18067,0.81,14554,63,0
+Eastern,Embu,MOA,AgroMOA,,1977,Maize,12390,1.46,18030,63,0
+Eastern,Embu,MOA,AgroMOA,,1978,Maize,11406,1.8,20530,63,0
+Eastern,Embu,MOA,AgroMOA,,1979,Maize,15738,1.31,20657,63,0
+Eastern,Embu,MOA,AgroMOA,,1980,Maize,20000,0.54,10829,63,0
+Eastern,Embu,MOA,AgroMOA,,1981,Maize,36585,1.35,49389,63,0
+Eastern,Embu,MOA,AgroMOA,,1982,Maize,54752,1.21,66196,63,0
+Eastern,Embu,MOA,AgroMOA,,1983,Maize,39500,0.3,11850,63,0
+Eastern,Embu,MOA,AgroMOA,,1984,Maize,56000,0.48,27100,63,0
+Eastern,Embu,MOA,AgroMOA,,1985,Maize,43000,0.79,33792,63,0
+Eastern,Embu,MOA,AgroMOA,,1986,Maize,42000,0.72,30240,63,0
+Eastern,Embu,MOA,AgroMOA,,1987,Maize,46156,1.14,52815,63,0
+Eastern,Embu,MOA,AgroMOA,,1988,Maize,46300,1.63,75400,63,0
+Eastern,Embu,MOA,AgroMOA,,1989,Maize,50600,1.5,75900,63,0
+Eastern,Embu,MOA,AgroMOA,,1990,Maize,41507,1.98,82050,63,0
+Eastern,Embu,MOA,AgroMOA,,1992,Maize,51435,0.24,12369.15,63,0
+Eastern,Embu,MOA,AgroMOA,,1994,Maize,55000,1.22,67140,63,0
+Eastern,Embu,MOA,AgroMOA,,1995,Maize,53600,1.13,60444,63,0
+Eastern,Embu,MOALP,AgroMOALP,,1997,Maize,19200,1.07,20592,63,0
+Eastern,Embu,MOALP,AgroMOALP,,1998,Maize,18000,0.54,9720,63,0
+Eastern,Embu,MOALP,AgroMOALP,,1999,Maize,15500,0.73,11250,63,0
+Eastern,Embu,MOALP,AgroMOALP,,2000,Maize,5400,0.55,2988,63,0
+Eastern,Embu,MOALP,AgroMOALP,,2001,Maize,18375,1.72,31668.75,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2002,Maize,39200,1.34,52594.06,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2003,Maize,38980,1.23,48002.11,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2004,Maize,29650,0.66,19446.44,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2005,Maize,50500,0.7,35103.51,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2006,Maize,46072,1.07,49493.25,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2007,Maize,46072,1.19,54987,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2008,Maize,42254.8,0.33,13944.08,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2009,Maize,52209,1.11,57778.56,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2010,Maize,41678,0.92,38224.26,63,0
+Eastern,Embu,MoALF,Spreadsheet,,2011,Maize,45086,0.75,33842.97,63,0
+Eastern,Embu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,45215,1.05,47611.4,63,0
+Eastern,Embu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,26820,1.33,35724.24,63,0
+Eastern,Embu,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,26720,1.02,27174.24,63,0
+Coast,Kilifi,MOA,AgroMOA,,1976,Maize,32579,0.45,14661,64,0
+Coast,Kilifi,MOA,AgroMOA,,1977,Maize,39303,0.46,18052,64,0
+Coast,Kilifi,MOA,AgroMOA,,1978,Maize,25000,0.2,5027,64,0
+Coast,Kilifi,MOA,AgroMOA,,1979,Maize,20194,0.72,14540,64,0
+Coast,Kilifi,MOA,AgroMOA,,1980,Maize,26716,0.93,24729,64,0
+Coast,Kilifi,MOA,AgroMOA,,1981,Maize,39303,1.86,73014,64,0
+Coast,Kilifi,MOA,AgroMOA,,1982,Maize,26450,0.3,8050,64,0
+Coast,Kilifi,MOA,AgroMOA,,1983,Maize,26046,0.65,16830,64,0
+Coast,Kilifi,MOA,AgroMOA,,1984,Maize,37241,0.71,26605,64,0
+Coast,Kilifi,MOA,AgroMOA,,1985,Maize,36500,1,36500,64,0
+Coast,Kilifi,MOA,AgroMOA,,1986,Maize,40000,1.2,48000,64,0
+Coast,Kilifi,MOA,AgroMOA,,1987,Maize,37900,1.5,56850,64,0
+Coast,Kilifi,MOA,AgroMOA,,1988,Maize,49801,1.5,74702,64,0
+Coast,Kilifi,MOA,AgroMOA,,1989,Maize,38400,1.5,57600,64,0
+Coast,Kilifi,MOA,AgroMOA,,1990,Maize,45800,1.36,62411,64,0
+Coast,Kilifi,MOA,AgroMOA,,1992,Maize,31022,1.03,31821.93,64,0
+Coast,Kilifi,MOA,AgroMOA,,1993,Maize,49989,1,49969.62,64,0
+Coast,Kilifi,MOALP,AgroMOALP,,1997,Maize,21990,0.06,1213.92,64,0
+Coast,Kilifi,MOALP,AgroMOALP,,1998,Maize,7894,1.17,9216.18,64,0
+Coast,Kilifi,MOALP,AgroMOALP,,1999,Maize,20011,0.99,19810.89,64,0
+Coast,Kilifi,MOALP,AgroMOALP,,2000,Maize,18438,0.99,18253.62,64,0
+Coast,Kilifi,MOALP,AgroMOALP,,2001,Maize,19215,0.99,19022.85,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2002,Maize,27453,0.81,22239.15,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2003,Maize,38231,0.73,27950,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2004,Maize,31872,0.99,31556.44,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2005,Maize,49216,0.58,28436.27,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2006,Maize,42169,0.79,33457.16,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2007,Maize,37836,0.6,22625.93,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2008,Maize,39864.8,1.74,69543.17,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2009,Maize,49554,0.66,32800.59,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2010,Maize,56500,1.33,74874.78,64,0
+Coast,Kilifi,MoALF,Spreadsheet,,2011,Maize,79832,0.49,39509.52,64,0
+Coast,Kilifi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,70672,0.33,23533.78,64,0
+Coast,Kilifi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,64700,0.6,39014.1,64,0
+Coast,Kilifi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,65300,0.58,37612.8,64,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,1991,Maize,20500,0.72,14792,65,0
+Eastern,Tharaka Nithi,MOA,AgroMOA,,1992,Maize,12555,1.51,18976.95,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,1993,Maize,20500,0.45,9225,65,0
+Eastern,Tharaka Nithi,MOA,AgroMOA,,1994,Maize,25400,1.67,42435,65,0
+Eastern,Tharaka Nithi,MOA,AgroMOA,,1995,Maize,23680,1.38,32630.4,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,1997,Maize,35334,1.08,38164.45,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,1998,Maize,24300,1.34,32561,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,1999,Maize,6530,0.4,2587.76,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2000,Maize,6830,0.35,2361.84,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2001,Maize,5846,0.08,456.08,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2002,Maize,4227,0.61,2560.04,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2003,Maize,3741,0.65,2449,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2004,Maize,6530,0.4,2587.76,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2005,Maize,3746,0.7,2611.88,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2006,Maize,4886,0.72,3493.61,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2007,Maize,4886,0.79,3840,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2008,Maize,4757.8,1.08,5138.42,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2009,Maize,9504,1.25,11904.62,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2010,Maize,13240,0.94,12483,65,0
+Eastern,Tharaka Nithi,MoALF,Spreadsheet,,2011,Maize,11191,1.19,13286.7,65,0
+Eastern,Tharaka Nithi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,26779,1.46,39043.78,65,0
+Eastern,Tharaka Nithi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,30026,0.83,24861.53,65,0
+Eastern,Tharaka Nithi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,29916,0.86,25847.42,65,0
+Rift Valley,Nandi,MOA,AgroMOA,,1970,Maize,32391,2.47,80048,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1971,Maize,22180,2.7,59886,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1972,Maize,23372,3.6,84139,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1973,Maize,27390,2.13,58361,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1974,Maize,29400,3.01,88515,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1975,Maize,41100,3.07,126181,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1976,Maize,43010,2.7,116100,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1977,Maize,49475,2.97,146941,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1978,Maize,51974,3.18,165462,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1979,Maize,49475,2.91,144000,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1980,Maize,59500,2.84,168963,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1981,Maize,62977,2.57,162000,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1982,Maize,80523,1.76,141636,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1983,Maize,59496,2.95,175500,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1984,Maize,60500,2.25,136125,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1985,Maize,52278,3.15,164918,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1986,Maize,77409,2.7,209004,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1987,Maize,60289,3.2,192960,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1988,Maize,62635,3.15,197300,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1989,Maize,70828,4.05,286894,80,1
+Rift Valley,Nandi,MOA,AgroMOA,,1990,Maize,68073,2.7,183662,80,1
+Rift Valley,Nandi,MOALP,AgroMOALP,,1997,Maize,59740,2.07,123660,80,1
+Rift Valley,Nandi,MOALP,AgroMOALP,,1998,Maize,60000,3.42,205200,80,1
+Rift Valley,Nandi,MOALP,AgroMOALP,,1999,Maize,64000,2.7,172935,80,1
+Rift Valley,Nandi,MOALP,AgroMOALP,,2000,Maize,61700,2.52,155250,80,1
+Rift Valley,Nandi,MOALP,AgroMOALP,,2001,Maize,66500,2.66,176886,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2002,Maize,61000,2.41,147300,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2003,Maize,56348.68,2.5,140744.62,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2004,Maize,40720,2.34,95208,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2005,Maize,42300,2.7,114221,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2006,Maize,36780,3.36,123420,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2007,Maize,77946,3.42,266454.9,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2008,Maize,50818.94,2.91,148009.7,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2009,Maize,79952,2.35,187582.95,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2010,Maize,83245,2.8,233115.3,80,1
+Rift Valley,Nandi,MoALF,Spreadsheet,,2011,Maize,75075,2.47,185674.86,80,1
+Rift Valley,Nandi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2012,Maize,73552,3.23,237646.51,80,1
+Rift Valley,Nandi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2013,Maize,70519,2.64,185958.6,80,1
+Rift Valley,Nandi,"Ministry of Agriculture, Livestock and Fisheries",ERA2015,,2014,Maize,74045,2.47,182594.97,80,1
