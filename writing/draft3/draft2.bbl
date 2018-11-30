@@ -1,31 +1,29 @@
 \begin{thebibliography}{xx}
 
-\harvarditem[Barasa et~al.]{Barasa, Manyara, Molyneux \harvardand\
-  Tsofa}{}{Barasa2017}
-Barasa, E., Manyara, A., Molyneux, S. \harvardand\ Tsofa, B.  \harvardyearleft
-  \harvardyearright .
+\harvarditem{}{n.d.a}{BOKU}
+ University of Natural Resources and Life Sciences Vienna.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://ivfl-info.boku.ac.at/index.php/homepage?view=featured}
 
-\harvarditem{Bates}{}{bates2010lme4}
-Bates, D.~M.  \harvardyearleft \harvardyearright .
+\harvarditem{}{n.d.b}{Berkeley}
+ Berkeley Earth.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://berkeleyearth.org/data/}
+
+\harvarditem[Barasa et~al.]{Barasa, Manyara, Molyneux \harvardand\
+  Tsofa}{2017}{Barasa2017}
+Barasa, E., Manyara, A., Molyneux, S. \harvardand\ Tsofa, B.  \harvardyearleft
+  2017\harvardyearright .
+
+\harvarditem{Bates}{n.d.}{bates2010lme4}
+Bates, D.~M.  \harvardyearleft n.d.\harvardyearright .
 \newblock lme4: Mixed-effects modeling with {R}.
 
 \harvarditem[Bates et~al.]{Bates, Pinheiro, Pinheiro \harvardand\
-  Bates}{}{bates2000mixed}
+  Bates}{2000}{bates2000mixed}
 Bates, J., Pinheiro, J., Pinheiro, J. \harvardand\ Bates, D.  \harvardyearleft
-  \harvardyearright .
+  2000\harvardyearright .
 \newblock {\em Mixed-Effects Models in S and S-PLUS}, Statistics and Computing,
   Springer New York.
-
-\harvarditem{Berkeley{\ }Earth}{}{Berkeley}
-Berkeley{\ }Earth  \harvardyearleft \harvardyearright .
-\newblock accessed in October 2018.
-\newline\harvardurl{http://berkeleyearth.org/data/}
-
-\harvarditem{University{\ }of{\ }Natural{\ }Resources{\ }and{\ }Life{\
-  }Sciences{\ }Vienna}{}{BOKU}
-University{\ }of{\ }Natural{\ }Resources{\ }and{\ }Life{\ }Sciences{\ }Vienna
-  \harvardyearleft \harvardyearright .
-\newblock {\newline}(accessed in October 2018).
-  http://ivfl-info.boku.ac.at/index.php/homepage?view=featured.
 
 \end{thebibliography}

@@ -1299,6 +1299,10 @@ FUNCTION {reverse.pass}
     { "a" 'extra.label := }
     'skip$
   if$
+  year empty$
+    { "" extra.label * 'list.year := }
+    { year extra.label * 'list.year := }
+  if$
   extra.label 'next.extra :=
 }
 

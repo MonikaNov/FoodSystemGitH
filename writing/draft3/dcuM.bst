@@ -1018,18 +1018,20 @@ FUNCTION {unpublished}
 FUNCTION {data}
 { output.bibitem
   list.label.output
-  "   " * output.nonnull
-  new.block
-  author "author" item.check
-  title.field field.used =
+    title.field field.used =
     { skip$ }
-    { format.title "title" output.check }
+    { format.title output }
   if$
+  institution "institution" output.check
   new.block
   note "note" output.check
   fin.entry
   write.url
 }
+
+
+
+
 
 
 
