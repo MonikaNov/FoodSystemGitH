@@ -1,16 +1,5 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{}{n.d.a}{BOKU}
- \textit{Data Source:} University of Natural Resources and Life Sciences
-  Vienna.
-\newblock Accessed in October 2018.
-\newline\harvardurl{http://ivfl-info.boku.ac.at/index.php/homepage?view=featured}
-
-\harvarditem{}{n.d.b}{Berkeley}
- \textit{Data Source:} Berkeley Earth.
-\newblock Accessed in October 2018.
-\newline\harvardurl{http://berkeleyearth.org/data/}
-
 \harvarditem[Barasa et~al.]{Barasa, Manyara, Molyneux \harvardand\
   Tsofa}{2017}{Barasa2017}
 Barasa, E., Manyara, A., Molyneux, S. \harvardand\ Tsofa, B.  \harvardyearleft
@@ -26,5 +15,16 @@ Bates, J., Pinheiro, J., Pinheiro, J. \harvardand\ Bates, D.  \harvardyearleft
   2000\harvardyearright .
 \newblock {\em Mixed-Effects Models in S and S-PLUS}, Statistics and Computing,
   Springer New York.
+
+\harvarditem{BOKU}{n.d.}{BOKU}
+BOKU \textit{Data Source:} University of Natural Resources and Life Sciences
+  Vienna.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://ivfl-info.boku.ac.at/index.php/homepage?view=featured}
+
+\harvarditem{Earth}{n.d.}{Berkeley}
+Earth, B. \textit{Data Source:} Berkeley Earth.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://berkeleyearth.org/data/}
 
 \end{thebibliography}
