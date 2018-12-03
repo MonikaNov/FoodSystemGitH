@@ -63,8 +63,19 @@ require(gridExtra)
 pdf("writing/draft3/Figure1.pdf")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# now I need to format the images for the journal:
 
+plot1<-plot(AllPrec)+ylab("Yield")+xlab(NULL)+xlab("(a)")+ggtitle("Seasonal precipitation")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))
+plot2<-plot(AllTemp)+ylab(NULL)+xlab(NULL)+xlab("(b)")+ggtitle("Average temperature")
+plot3<-plot(ASALPrec)+ylab("Yield")+xlab(NULL)+xlab("(c)")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+ggtitle(NULL)
+plot4<-plot(ASALTemp)+ylab(NULL)+xlab(NULL)+xlab("(d)")+ggtitle(NULL)
+plot5<-plot(nonASALPrec)+ylab("Yield")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)
+plot6<-plot(nonASALTemp)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)
 
-
-
-plot1+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))
+require(gridExtra)
+pdf("writing/draft3/Figure1a_1f.pdf")
+grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
+dev.off()
