@@ -59,6 +59,12 @@ grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
 
 
+require(gridExtra)
+pdf("writing/draft3/Figure1.pdf")
+grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
+dev.off()
+
+
 
 
 plot1+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))

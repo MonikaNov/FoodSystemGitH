@@ -1,0 +1,30 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Barasa et~al.]{Barasa, Manyara, Molyneux \harvardand\
+  Tsofa}{2017}{Barasa2017}
+Barasa, E., Manyara, A., Molyneux, S. \harvardand\ Tsofa, B.  \harvardyearleft
+  2017\harvardyearright .
+
+\harvarditem{Bates}{2010}{bates2010lme4}
+Bates, D.~M.  \harvardyearleft 2010\harvardyearright .
+\newblock lme4: Mixed-effects modeling with {R}.
+
+\harvarditem[Bates et~al.]{Bates, Pinheiro, Pinheiro \harvardand\
+  Bates}{2000}{bates2000mixed}
+Bates, J., Pinheiro, J., Pinheiro, J. \harvardand\ Bates, D.  \harvardyearleft
+  2000\harvardyearright .
+\newblock {\em Mixed-Effects Models in S and S-PLUS}, Statistics and Computing,
+  Springer New York.
+
+\harvarditem{BOKU}{n.d.}{BOKU}
+BOKU \textit{Data Source:} University of Natural Resources and Life Sciences
+  Vienna.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://ivfl-info.boku.ac.at/index.php/homepage?view=featured}
+
+\harvarditem{Earth}{n.d.}{Berkeley}
+Earth, B. \textit{Data Source:} Berkeley Earth.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://berkeleyearth.org/data/}
+
+\end{thebibliography}

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  3 DEC 2018 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  3 DEC 2018 13:19
 entering extended mode
-**./draft2.tex
-(draft2.tex
+**./draft3.tex
+(draft3.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (iopart.cls
@@ -321,8 +321,8 @@ Package: threeparttable 2003/06/13  v 3.0
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count106
 \cp@tempcnt=\count107
-) (draft2.aux)
-\openout1 = `draft2.aux'.
+) (draft3.aux)
+\openout1 = `draft3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
@@ -385,21 +385,44 @@ r/m/n/12 early warning systems have been
 
 [1
 
-{E:/latex/texmfs/data/pdftex/config/pdftex.map}]
+{E:/latex/texmfs/data/pdftex/config/pdftex.map}] [2] [3]
+<Figure1.pdf, id=22, 505.89pt x 505.89pt>
+File: Figure1.pdf Graphic file (type pdf)
+ <use Figure1.pdf>
+Package pdftex.def Info: Figure1.pdf used on input line 296.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-LaTeX Warning: Citation 'Barasa2017' on page 2 undefined on input line 184.
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 296--297
+[][] 
+ []
 
+[4] [5 <./Figure1.pdf>] (draft3.bbl) [6
 
-LaTeX Warning: Citation 'bates2000mixed' on page 2 undefined on input line 184.
+] (draft3.aux) ) 
+Here is how much of TeX's memory you used:
+ 4685 strings out of 495222
+ 61684 string characters out of 3182071
+ 146135 words of memory out of 3000000
+ 7841 multiletter control sequences out of 15000+200000
+ 16699 words of font info for 64 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 42i,13n,35p,1264b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/late
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/install/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E
+:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pf
+b><E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on draft3.pdf (6 pages, 209207 bytes).
+PDF statistics:
+ 90 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-
-
-LaTeX Warning: Citation 'bates2010lme4' on page 2 undefined on input line 184.
-
-[2] [3]
-
-LaTeX Warning: Reference `KenARe11' on page 4 undefined on input line 224.
-
-
-!pdfTeX error: pdflatex (file ./Figure1.pdf): xpdf: reading PDF image failed
- ==> Fatal error occurred, no output PDF file produced!
