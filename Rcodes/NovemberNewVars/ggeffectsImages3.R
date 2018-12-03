@@ -79,3 +79,8 @@ require(gridExtra)
 pdf("writing/draft3/Figure1a_1f.pdf")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
+
+require(gridExtra)
+cairo_ps("writing/draft3/Figure1a_1f.eps")
+grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
+dev.off()
