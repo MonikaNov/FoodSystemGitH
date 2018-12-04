@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  4 DEC 2018 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  4 DEC 2018 14:22
 entering extended mode
 **./draft3.tex
 (draft3.tex
@@ -321,7 +321,11 @@ Package: threeparttable 2003/06/13  v 3.0
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count106
 \cp@tempcnt=\count107
-) (draft3.aux)
+) (draft3.aux
+
+LaTeX Warning: Label `bar' multiply defined.
+
+)
 \openout1 = `draft3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -336,8 +340,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
-
-(E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
+ (E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
 \scratchdimen=\dimen130
@@ -415,13 +418,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] (draft3.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  4690 strings out of 495222
  61798 string characters out of 3182071
- 148135 words of memory out of 3000000
+ 148174 words of memory out of 3000000
  7845 multiletter control sequences out of 15000+200000
  16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -439,7 +442,7 @@ c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
 /cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 <E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/te
 xmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft3.pdf (8 pages, 219983 bytes).
+Output written on draft3.pdf (8 pages, 219961 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
