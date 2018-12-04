@@ -37,7 +37,7 @@ plot2<-plot(AllTemp)+ylab(NULL)+xlab(NULL)+xlab("(b)")+ggtitle("Average temperat
 plot3<-plot(ASALPrec)+ylab("Yield")+xlab(NULL)+xlab("(c)")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+ggtitle(NULL)
 plot4<-plot(ASALTemp)+ylab(NULL)+xlab(NULL)+xlab("(d)")+ggtitle(NULL)
 plot5<-plot(nonASALPrec)+ylab("Yield")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)
-plot6<-plot(nonASALTemp)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)
+plot6<-plot(nonASALTemp)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)+scale_x_continuous(breaks = c(-2,-1.5,-1,-0.5,0,0.5))
 
 require(gridExtra)
 pdf("writing/draft3/Figure1a_1f.pdf")
@@ -96,12 +96,12 @@ nonASALSpell[,c(2,4,5)]<-nonASALSpell[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTa
 nonASALSpell4<- ggpredict(KEN11a_nonASAL,terms=c("Spell4 [n=20]"),condition=c(SeasPr=0,Spell = 0,  CVPrec = 0,SDTemp=0,AvgTemp =0))
 nonASALSpell4[,c(2,4,5)]<-nonASALSpell4[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTable[,1])[["(Intercept)"]]
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-plot1<-plot(AllSpell)+ylab("All")+xlab(NULL)+xlab("(a)")+ggtitle("Effects of precipitation variability on yields")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+theme(plot.title=element_text(size=11))
-plot2<-plot(AllSpell4)+ylab(NULL)+xlab(NULL)+xlab("(b)")+ggtitle("Effects of temperature variability on yields")+theme(plot.title=element_text(size=11))
+plot1<-plot(AllSpell)+ylab("All")+xlab(NULL)+xlab("(a)")+ggtitle("Effects of length of max dry spell on yields")+theme(plot.title=element_text(size=11))
+plot2<-plot(AllSpell4)+ylab(NULL)+xlab(NULL)+xlab("(b)")+ggtitle("Effects of number of dry spells on yields")+theme(plot.title=element_text(size=11))+scale_x_continuous(breaks = c(-3,-2,-1,0,1,2))
 plot3<-plot(ASALSpell)+ylab("ASAL")+xlab(NULL)+xlab("(c)")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+ggtitle(NULL)
 plot4<-plot(ASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(d)")+ggtitle(NULL)
 plot5<-plot(nonASALSpell)+ylab("non-ASAL")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)
-plot6<-plot(nonASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)
+plot6<-plot(nonASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)+scale_x_continuous(breaks = c(-3,-2,-1,0,1,2))
 
 require(gridExtra)
 pdf("writing/draft3/Figure3a_3f.pdf")
