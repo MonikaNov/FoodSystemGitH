@@ -20,7 +20,7 @@ KEN11a_nonASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
 exp(summary(KEN11a)$tTable[,1])
 
   AllPrec<- ggpredict(KEN11a,terms=c("SeasPr [n=20]"))
-  AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
+  AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
 AllTemp<- ggpredict(KEN11a,terms=c("AvgTemp [n=20]"))
 AllTemp[,c(2,4,5)]<-AllTemp[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
   ASALPrec<- ggpredict(KEN11a_ASAL,terms=c("SeasPr [n=20]"),condition=c(AvgTemp=0,CVPrec = 0, Spell = 0,Spell4=0,SDTemp =0))
@@ -34,9 +34,8 @@ nonASALTemp[,c(2,4,5)]<-nonASALTemp[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTabl
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # the other variables
-
 AllPrec<- ggpredict(KEN11a,terms=c("CVPrec [n=20]"))
-AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
+AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
   AllTemp<- ggpredict(KEN11a,terms=c("SDTemp [n=20]"))
   AllTemp[,c(2,4,5)]<-AllTemp[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
 ASALPrec<- ggpredict(KEN11a_ASAL,terms=c("CVPrec [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, Spell = 0,Spell4=0,SDTemp =0))
@@ -60,12 +59,12 @@ plot5<-plot(nonASALPrec)+ylab("non-ASAL")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)
 plot6<-plot(nonASALTemp)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)
 
 require(gridExtra)
-pdf("writing/draft3/Figure2a_1f.pdf")
+pdf("writing/draft3/Figure2a_2f.pdf")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
 
 require(gridExtra)
-cairo_ps("writing/draft3/Figure1a_2f.eps")
+cairo_ps("writing/draft3/Figure2a_2f.eps")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
 

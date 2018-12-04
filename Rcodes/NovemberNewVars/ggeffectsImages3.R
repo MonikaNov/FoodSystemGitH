@@ -20,7 +20,7 @@ KEN11a_nonASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
 exp(summary(KEN11a)$tTable[,1])
 
 AllPrec<- ggpredict(KEN11a,terms=c("SeasPr [n=20]"))
-AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
+AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
 
 AllTemp<- ggpredict(KEN11a,terms=c("AvgTemp [n=20]"))
 AllTemp[,c(2,4,5)]<-AllTemp[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]

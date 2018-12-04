@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  4 DEC 2018 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  4 DEC 2018 14:08
 entering extended mode
 **./draft3.tex
 (draft3.tex
@@ -395,36 +395,53 @@ Overfull \hbox (59.48878pt too wide) in paragraph at lines 296--297
 [][][] 
  []
 
-[4] [5]
+[4] <Figure2a_2f.pdf, id=26, 505.89pt x 505.89pt>
+File: Figure2a_2f.pdf Graphic file (type pdf)
+ <use Figure2a_2f.pdf>
+Package pdftex.def Info: Figure2a_2f.pdf used on input line 302.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 302--303
+[][][] 
+ []
+
+[5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./Figure1a_1f.pdf>] (draft3.bbl) [7
+ [6 <./Figure1a_1f.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (draft3.aux) ) 
+ [7 <./Figure2a_2f.pdf>] (draft3.bbl) [8
+
+] (draft3.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4685 strings out of 495222
- 61704 string characters out of 3182071
+ 4690 strings out of 495222
+ 61798 string characters out of 3182071
  148135 words of memory out of 3000000
- 7841 multiletter control sequences out of 15000+200000
+ 7845 multiletter control sequences out of 15000+200000
  16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,13n,35p,1264b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.
-pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/late
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/inst
-all/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/install/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E
-:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmti12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pf
-b><E:/latex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft3.pdf (7 pages, 209721 bytes).
+<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/latex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/latex/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/install/fonts/type
+1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/install/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:
+/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/latex/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/te
+xmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on draft3.pdf (8 pages, 219983 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 107 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
