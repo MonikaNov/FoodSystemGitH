@@ -234,6 +234,170 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 {
 \begin{threeparttable}
 \singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} \\ Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11a  KEN11a_ASAL    KEN11a_nonASAL % in the file Models1.R in folder RCodes\NovemberNewVars												
+\label{KenARe11} 
+\begin{footnotesize}
+\lineup
+\begin{tabular}{@{}lllllll} 
+\br \vspace{-0.2cm} \\
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
+    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&\textbf{Estimate}&\textbf{F-value\tnote{a}}% anova(KEN11a, type='marginal')
+    &\textbf{Estimate}&\textbf{F-value\tnote{a}}&\textbf{Estimate}&\textbf{F-value\tnote{a}}\\
+\mr
+\\
+\vspace{-0.2cm}Intercept&$\m0.259^{***}$&$19.916$&$\m0.243^{*}$&$5.230$&$\m0.344^{**}$&$10.061$\\
+  \\ \vspace{-0.2cm}Prec. total&$\m0.078^{*}$&$\05.402$&$\m0.006^{}$&$0.022$&$\m0.246^{***}$&$19.386$\\
+  \\
+  \vspace{-0.2cm}Prec. total sq.&$-0.028^{*}$&$\04.289$&$\m0.004$&$0.051$&$-0.128^{***}$&$23.747$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$-0.079^{\bullet}$&$\03.277$&$-0.031$ &$0.246$&$-0.095$&$\02.231$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$-0.067^{*}$&$\04.810$&$-0.183^{**}$&$6.969$&$-0.012$&$\00.163$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$-0.063^{*}$&$\04.826$&$-0.156^{**}$&$8.065$&$-0.011$&$\00.096$\\
+  \\ \vspace{-0.2cm}Temp. - average&$-0.199^{***}$&$12.127$&$-0.213^{*}$&$5.376$&$-0.130$&$\01.580$\\
+  \\  \vspace{-0.2cm}Temp. std. dev.&$\m0.042^{\bullet}$&$\03.125$&$\m0.038$&$0.558$&$\m0.057$ ${*}$&$\05.640$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+ \\ 
+ \hline
+\vspace{-0.2cm} \\
+\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
+\vspace{-0.2cm}
+\\  
+\br
+\end{tabular} 
+\end{footnotesize}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+        \begin{adjustwidth}{1cm}{} 
+    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+  \begin{figure}
+   \includegraphics{Figure1a_1f.pdf}\label{MarEff1}
+\caption{Predicted multiplicative marginal effects of seasonal precipitation (left column) and average seasonal temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Precipitation and temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\end{figure}
+
+
+  \begin{figure}
+   \includegraphics{Figure2a_2f.pdf}\label{MarEff2}
+\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and standard deviation (SD) of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and SD of temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\end{figure}
+
+  \begin{figure}
+   \includegraphics{Figure3a_3f.pdf}\label{MarEff3}
+\caption{Predicted multiplicative marginal effects of length of maximum dry spell in days (left column) and number of dry spells lasting for four days or more (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Maximum length of dry spell and number of dry spells (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\end{figure}
+
+\color{blue}
+
+\item Verbal description and interpretation of the results. Discussing goodness of fit using various criteria such as AIC or alternatives to $R^2$.
+%\item Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.
+
+	%	\begin{itemize}%
+		%	\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
+	%\end{itemize}
+	
+\item If we get the yield data for the period from $2015$ onwards: Out of sample predictions and comparison with the real data
+\end{itemize}
+
+
+
+
+
+\color{black}
+
+\clearpage
+
+\appendix
+\section*{Appendix}
+\textcolor{blue}{\textit{should be at the end of the main text but before list of references}}
+
+\vspace{1cm}
+\textcolor{blue}{Possibly include a table of all values which I get from the lme or lme4 models summary in R, that is. correlation of the fixed effects etcetera}
+
+\vspace{1cm}
+\textcolor{blue}{Maybe also a table with standard errors here}
+
+
+
+{
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11a  KEN11a_ASAL    KEN11a_nonASAL														
+\label{KenARe11_exponents} 
+\begin{footnotesize}
+\begin{tabular}{@{}llrlllr} 
+\hline \vspace{-0.2cm} \\
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
+    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}% anova(KEN11a, type='marginal')
+    &{$exp(\beta)$}&\textbf{F-value\tnote{a}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}\\
+ \hline 
+\hline
+\\
+\vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
+  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$5.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
+  \\
+  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$4.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$3.277$&$0.969$ &$0.246$&$0.909^{}$&$2.231$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$4.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$0.163$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$4.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$0.096$\\
+  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$1.580$\\
+  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$3.125$&$1.039$&$0.558$&$1.059$ ${*}$&$5.640$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+ \\ 
+ \hline
+\vspace{-0.2cm} \\
+\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
+\vspace{-0.2cm}
+\\  
+  
+  \hline
+  \vspace{-0.2cm} \\
+
+\hline
+\vspace{-0.2cm}
+\end{tabular} 
+\end{footnotesize}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+        \begin{adjustwidth}{1cm}{} 
+    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+{
+\begin{threeparttable}
+\singlespacing
 \caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather, ARMA(1,1) errors}}
 %KEN11a  KEN11a_ASAL    KEN11a_nonASAL														
 \label{KenARe11} 
@@ -291,52 +455,14 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
   \end{threeparttable} 
 \par}
 \linespread{1}
-
-  \begin{figure}
-   \includegraphics{Figure1a_1f.pdf}\label{MarEff1}
-\caption{Predicted multiplicative marginal effects of seasonal precipitation (left column) and average seasonal temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Precipitation and temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
-\end{figure}
-
-
-  \begin{figure}
-   \includegraphics{Figure2a_2f.pdf}\label{MarEff2}
-\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and standard deviation (SD) of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and SD of temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
-\end{figure}
-
-  \begin{figure}
-   \includegraphics{Figure3a_3f.pdf}\label{MarEff3}
-\caption{Predicted multiplicative marginal effects of length of maximum dry spell in days (left column) and number of dry spells lasting for four days or more (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Maximum length of dry spell and number of dry spells (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
-\end{figure}
-
-\color{blue}
-
-\item Verbal description and interpretation of the results. Discussing goodness of fit using various criteria such as AIC or alternatives to $R^2$.
-%\item Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.
-
-	%	\begin{itemize}%
-		%	\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
-	%\end{itemize}
-	
-\item If we get the yield data for the period from $2015$ onwards: Out of sample predictions and comparison with the real data
-\end{itemize}
-
-
-
-
-
-\color{black}
-
 \clearpage
 
-\appendix
-\section*{Appendix}
-should be at the end of the main text but before list of references
-
-
+\section*{References}
 \bibliographystyle{dcuM}
 
  \nocite{BOKU} 
  \nocite{Berkeley} 
+ 
 \bibliography{referencesFS}
 
 \end{document}
