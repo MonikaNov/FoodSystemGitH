@@ -240,7 +240,7 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \begin{footnotesize}
 \lineup
 \begin{tabular}{@{}lllllll} 
-\br \vspace{-0.2cm} \\
+\br 
 \vspace{-0.2cm} \\
   \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
     \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&\textbf{Estimate}&\textbf{F-value\tnote{a}}% anova(KEN11a, type='marginal')
@@ -253,7 +253,7 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
   \vspace{-0.2cm}Prec. total sq.&$-0.028^{*}$&$\04.289$&$\m0.004$&$0.051$&$-0.128^{***}$&$23.747$\\
     \\ \vspace{-0.2cm}Prec. c. of var.&$-0.079^{\bullet}$&$\03.277$&$-0.031$ &$0.246$&$-0.095$&$\02.231$\\
   \\  \vspace{-0.2cm}Dry spell -length&$-0.067^{*}$&$\04.810$&$-0.183^{**}$&$6.969$&$-0.012$&$\00.163$\\
-  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$-0.063^{*}$&$\04.826$&$-0.156^{**}$&$8.065$&$-0.011$&$\00.096$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$-0.063^{*}$&$\04.826$&$-0.157^{**}$&$8.065$&$-0.011$&$\00.096$\\
   \\ \vspace{-0.2cm}Temp. - average&$-0.199^{***}$&$12.127$&$-0.213^{*}$&$5.376$&$-0.130$&$\01.580$\\
   \\  \vspace{-0.2cm}Temp. std. dev.&$\m0.042^{\bullet}$&$\03.125$&$\m0.038$&$0.558$&$\m0.057$ ${*}$&$\05.640$\\
   \\
@@ -335,31 +335,30 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 
 
 
+
 {
 \begin{threeparttable}
 \singlespacing
-\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather, ARMA(1,1) errors}}
-%KEN11a  KEN11a_ASAL    KEN11a_nonASAL														
+\caption{\textit{\textbf{Mixed  effects model:} \\ Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11a  KEN11a_ASAL    KEN11a_nonASAL										
 \label{KenARe11_exponents} 
 \begin{footnotesize}
+\lineup
 \begin{tabular}{@{}llrlllr} 
-\hline \vspace{-0.2cm} \\
-\vspace{-0.2cm} \\
-  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
-    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}% anova(KEN11a, type='marginal')
-    &{$exp(\beta)$}&\textbf{F-value\tnote{a}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}\\
- \hline 
-\hline
+\br   &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
+    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&F-value\tnote{a}% anova(KEN11a, type='marginal')
+    &{$exp(\beta)$}&F-value\tnote{a}&{$exp(\beta)$}&F-value\tnote{a}\\
+\mr
 \\
 \vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
-  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$5.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
+  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$\05.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
   \\
-  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$4.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
-    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$3.277$&$0.969$ &$0.246$&$0.909^{}$&$2.231$\\
-  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$4.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$0.163$\\
-  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$4.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$0.096$\\
-  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$1.580$\\
-  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$3.125$&$1.039$&$0.558$&$1.059$ ${*}$&$5.640$\\
+  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$\04.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$\03.277$&$0.969$ &$0.246$&$0.909^{}$&$\02.231$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$\04.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$\00.163$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$\04.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$\00.096$\\
+  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$\01.580$\\
+  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$\03.125$&$1.039$&$0.558$&$1.059$ ${*}$&$\05.640$\\
   \\
   \hline
 \vspace{-0.2cm} \\
@@ -375,72 +374,7 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
 \vspace{-0.2cm}
 \\  
-  
-  \hline
-  \vspace{-0.2cm} \\
-
-\hline
-\vspace{-0.2cm}
-\end{tabular} 
-\end{footnotesize}
- \begin{tablenotes}
-  \begin{footnotesize}
-    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
-        \begin{adjustwidth}{1cm}{} 
-    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
-     \end{adjustwidth}
-\singlespacing
-  \end{footnotesize}
-\end{tablenotes}
-  \end{threeparttable} 
-\par}
-\linespread{1}
-{
-\begin{threeparttable}
-\singlespacing
-\caption{\textit{\textbf{Mixed  effects model:} Log of maize yield and weather, ARMA(1,1) errors}}
-%KEN11a  KEN11a_ASAL    KEN11a_nonASAL														
-\label{KenARe11} 
-\begin{footnotesize}
-\begin{tabular}{@{}llrlllr} 
-\hline \vspace{-0.2cm} \\
-\vspace{-0.2cm} \\
-  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
-    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}% anova(KEN11a, type='marginal')
-    &{$exp(\beta)$}&\textbf{F-value\tnote{a}}&{$exp(\beta)$}&\textbf{F-value\tnote{a}}\\
- \hline 
-\hline
-\\
-\vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
-  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$5.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
-  \\
-  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$4.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
-    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$3.277$&$0.969$ &$0.246$&$0.909^{}$&$2.231$\\
-  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$4.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$0.163$\\
-  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$4.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$0.096$\\
-  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$1.580$\\
-  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$3.125$&$1.039$&$0.558$&$1.059$ ${*}$&$5.640$\\
-  \\
-  \hline
-\vspace{-0.2cm} \\
-  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
-\vspace{-0.2cm}
-\\
-\hline
-\\
-  \vspace{-0.2cm}Intercept\\
- \\ 
- \hline
-\vspace{-0.2cm} \\
-\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
-\vspace{-0.2cm}
-\\  
-  
-  \hline
-  \vspace{-0.2cm} \\
-
-\hline
-\vspace{-0.2cm}
+\br
 \end{tabular} 
 \end{footnotesize}
  \begin{tablenotes}
@@ -456,6 +390,9 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \par}
 \linespread{1}
 \clearpage
+
+
+
 
 \section*{References}
 \bibliographystyle{dcuM}
