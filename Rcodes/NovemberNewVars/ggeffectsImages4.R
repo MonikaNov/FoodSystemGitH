@@ -80,4 +80,37 @@ cairo_ps("writing/draft3/Figure2a_2f.eps")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
 
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# other variables
+
+AllSpell<- ggpredict(KEN11a,terms=c("Spell [n=20]"))
+AllSpell[,c(2,4,5)]<-AllSpell[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
+AllSpell4<- ggpredict(KEN11a,terms=c("Spell4 [n=20]"))
+AllSpell4[,c(2,4,5)]<-AllSpell4[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
+ASALSpell<- ggpredict(KEN11a_ASAL,terms=c("Spell [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, CVPrec = 0,SDTemp=0,Spell4 =0))
+ASALSpell[,c(2,4,5)]<-ASALSpell[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
+ASALSpell4<- ggpredict(KEN11a_ASAL,terms=c("Spell4 [n=20]"))
+ASALSpell4[,c(2,4,5)]<-ASALSpell4[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
+nonASALSpell<- ggpredict(KEN11a_nonASAL,terms=c("Spell [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, Spell4 = 0, CVPrec = 0,SDTemp=0))
+nonASALSpell[,c(2,4,5)]<-nonASALSpell[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTable[,1])[["(Intercept)"]]
+nonASALSpell4<- ggpredict(KEN11a_nonASAL,terms=c("Spell4 [n=20]"),condition=c(SeasPr=0,Spell = 0,  CVPrec = 0,SDTemp=0,AvgTemp =0))
+nonASALSpell4[,c(2,4,5)]<-nonASALSpell4[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTable[,1])[["(Intercept)"]]
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+plot1<-plot(AllSpell)+ylab("All")+xlab(NULL)+xlab("(a)")+ggtitle("Effects of precipitation variability on yields")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+theme(plot.title=element_text(size=11))
+plot2<-plot(AllSpell4)+ylab(NULL)+xlab(NULL)+xlab("(b)")+ggtitle("Effects of temperature variability on yields")+theme(plot.title=element_text(size=11))
+plot3<-plot(ASALSpell)+ylab("ASAL")+xlab(NULL)+xlab("(c)")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+ggtitle(NULL)
+plot4<-plot(ASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(d)")+ggtitle(NULL)
+plot5<-plot(nonASALSpell)+ylab("non-ASAL")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)
+plot6<-plot(nonASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)
+
+require(gridExtra)
+pdf("writing/draft3/Figure3a_3f.pdf")
+grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
+dev.off()
+require(gridExtra)
+cairo_ps("writing/draft3/Figure3a_3f.eps")
+grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
+dev.off()
+
+
 

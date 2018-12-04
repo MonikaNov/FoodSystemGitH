@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  4 DEC 2018 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  4 DEC 2018 14:48
 entering extended mode
 **./draft3.tex
 (draft3.tex
@@ -325,6 +325,9 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 
 LaTeX Warning: Label `bar' multiply defined.
 
+
+LaTeX Warning: Label `bar' multiply defined.
+
 )
 \openout1 = `draft3.aux'.
 
@@ -408,13 +411,26 @@ Overfull \hbox (59.48878pt too wide) in paragraph at lines 302--303
 [][][] 
  []
 
+<Figure3a_3f.pdf, id=27, 505.89pt x 505.89pt>
+File: Figure3a_3f.pdf Graphic file (type pdf)
+ <use Figure3a_3f.pdf>
+Package pdftex.def Info: Figure3a_3f.pdf used on input line 307.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 307--308
+[][][] 
+ []
+
 [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./Figure1a_1f.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./Figure2a_2f.pdf>] (draft3.bbl) [8
+ [7 <./Figure2a_2f.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./Figure3a_3f.pdf>] (draft3.bbl) [9
 
 ] (draft3.aux)
 
@@ -422,10 +438,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4690 strings out of 495222
- 61798 string characters out of 3182071
+ 4695 strings out of 495222
+ 61892 string characters out of 3182071
  148174 words of memory out of 3000000
- 7845 multiletter control sequences out of 15000+200000
+ 7849 multiletter control sequences out of 15000+200000
  16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,13n,35p,1264b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -442,9 +458,9 @@ c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
 /cmti10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 <E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/te
 xmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft3.pdf (8 pages, 219961 bytes).
+Output written on draft3.pdf (9 pages, 229656 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
