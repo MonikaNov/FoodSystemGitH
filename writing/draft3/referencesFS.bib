@@ -1,3 +1,5 @@
+@preamble { " \providecommand\noopsort[1]{} " } 
+ 
    @BOOK{IPCCtrenberth,
 	author	= {Kevin E. Trenberth and Philip D. Jones and others},
 	title	= {IPCC, 2007: Summary for Policymakers. In: Climate Change 2007: The Physical Science Basis. Contribution of Working Group I to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change [Solomon, S. and D. Qin, M. Manning and Z. Chen and M. Marquis and K.B. Averyt and M.Tignor and H.L. Miller (eds.)]. },
@@ -994,15 +996,17 @@ year="2008",
 
 
 
-@data{ASF,
-institution= "Asal Stakeholders Forum",
-note= "Accessed in December 2018.",
+@misc{ASF,
+author = "{\noopsort{ZZZZ1}}Online{\ }Source:",
+title= "ASAL {Stakeholders} {Forum} ({ASF})",
 URL= "http://www.asalforum.or.ke/",
+year="Accessed in December 2018"
 }
 
 
 
 @data{BOKU,
+author = "{\noopsort{ZZZZ3}}",
 institution= {University of Natural Resources and Life Sciences Vienna (BOKU)},
 note= "Accessed in October 2018.",
 URL= "http://ivfl-info.boku.ac.at/index.php/homepage?view=featured",
@@ -1011,21 +1015,28 @@ URL= "http://ivfl-info.boku.ac.at/index.php/homepage?view=featured",
 
 
 
-@data{FEWSNET,
- institution = "Famine Early Warning Systems Network (FEWS NET)",
- note = "Accessed in October 2018.",
- URL = "http://fews.net/",
-}
 
 
 @data{CHIRPS,
+author = "{\noopsort{ZZZZ4}}",
  institution = "Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS)",
  note = "Accessed in October 2018.",
  URL = "http://chg.geog.ucsb.edu/data/chirps/",
+ key="zzz4",
 }
 
 @data{Berkeley,
+author = "{\noopsort{ZZZZ2}}",
  institution = "Berkeley Earth",
  note = "Accessed in October 2018.",
  URL = "http://berkeleyearth.org/data/",
+ key="zzz2",
+}
+
+
+@data{FEWSNET,
+author = "{\noopsort{ZZZZ5}}",
+ institution = "Famine Early Warning Systems Network (FEWS NET)",
+ note = "Accessed in October 2018.",
+ URL = "http://fews.net/",
 }

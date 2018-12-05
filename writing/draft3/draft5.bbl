@@ -1,25 +1,8 @@
+\harvardpreambledefs{%
+ \providecommand\noopsort[1]{} }
+\harvardpreambletext{%
+ \providecommand\noopsort[1]{} }
 \begin{thebibliography}{xx}
-
-\harvarditem{}{n.d.a}{ASF}
- \textit{Data Source:} Asal Stakeholders Forum.
-\newblock Accessed in December 2018.
-\newline\harvardurl{http://www.asalforum.or.ke/}
-
-\harvarditem{}{n.d.b}{Berkeley}
- \textit{Data Source:} Berkeley Earth.
-\newblock Accessed in October 2018.
-\newline\harvardurl{http://berkeleyearth.org/data/}
-
-\harvarditem{}{n.d.c}{CHIRPS}
- \textit{Data Source:} Climate Hazards Group InfraRed Precipitation with
-  Station data (CHIRPS).
-\newblock Accessed in October 2018.
-\newline\harvardurl{http://chg.geog.ucsb.edu/data/chirps/}
-
-\harvarditem{}{n.d.d}{FEWSNET}
- \textit{Data Source:} Famine Early Warning Systems Network (FEWS NET).
-\newblock Accessed in October 2018.
-\newline\harvardurl{http://fews.net/}
 
 \harvarditem[Barasa et~al.]{Barasa, Manyara, Molyneux \harvardand\
   Tsofa}{2017}{Barasa2017}
@@ -36,5 +19,29 @@ Bates, J., Pinheiro, J., Pinheiro, J. \harvardand\ Bates, D.  \harvardyearleft
   2000\harvardyearright .
 \newblock {\em Mixed-Effects Models in S and S-PLUS}, Statistics and Computing,
   Springer New York.
+
+\harvarditem{{\noopsort{ZZZZ1}}Online{\ }Source:}{Accessed in December
+  2018}{ASF}
+{\noopsort{ZZZZ1}}Online{\ }Source:  \harvardyearleft Accessed in December
+  2018\harvardyearright .
+\newblock Asal {Stakeholders} {Forum} ({ASF}).
+\newline\harvardurl{http://www.asalforum.or.ke/}
+
+\harvarditem{{\noopsort{ZZZZ2}}}{n.d.}{Berkeley}
+{\noopsort{ZZZZ2}} \textit{Data Source:} Berkeley Earth.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://berkeleyearth.org/data/}
+
+\harvarditem{{\noopsort{ZZZZ4}}}{n.d.}{CHIRPS}
+{\noopsort{ZZZZ4}} \textit{Data Source:} Climate Hazards Group InfraRed
+  Precipitation with Station data (CHIRPS).
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://chg.geog.ucsb.edu/data/chirps/}
+
+\harvarditem{{\noopsort{ZZZZ5}}}{n.d.}{FEWSNET}
+{\noopsort{ZZZZ5}} \textit{Data Source:} Famine Early Warning Systems Network
+  (FEWS NET).
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://fews.net/}
 
 \end{thebibliography}
