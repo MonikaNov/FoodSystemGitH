@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  5 DEC 2018 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  5 DEC 2018 18:46
 entering extended mode
-**./draft5.tex
-(draft5.tex
+**./draft6.tex
+(draft6.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (iopart.cls
@@ -321,8 +321,8 @@ Package: threeparttable 2003/06/13  v 3.0
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count106
 \cp@tempcnt=\count107
-) (draft5.aux)
-\openout1 = `draft5.aux'.
+) (draft6.aux)
+\openout1 = `draft6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
@@ -386,37 +386,37 @@ r/m/n/12 early warning systems have been
  []
 
 [2] [3] [4]
-Overfull \hbox (6.3602pt too wide) in paragraph at lines 243--294
+Overfull \hbox (6.3602pt too wide) in paragraph at lines 245--296
 [] 
  []
 
-<Figure1a_1f.pdf, id=26, 505.89pt x 505.89pt>
+<Figure1a_1f.pdf, id=25, 505.89pt x 505.89pt>
 File: Figure1a_1f.pdf Graphic file (type pdf)
  <use Figure1a_1f.pdf>
-Package pdftex.def Info: Figure1a_1f.pdf used on input line 298.
+Package pdftex.def Info: Figure1a_1f.pdf used on input line 300.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 298--299
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 300--301
 [][][] 
  []
 
 [5] <Figure2a_2f.pdf, id=30, 505.89pt x 505.89pt>
 File: Figure2a_2f.pdf Graphic file (type pdf)
  <use Figure2a_2f.pdf>
-Package pdftex.def Info: Figure2a_2f.pdf used on input line 304.
+Package pdftex.def Info: Figure2a_2f.pdf used on input line 306.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 304--305
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 306--307
 [][][] 
  []
 
 <Figure3a_3f.pdf, id=31, 505.89pt x 505.89pt>
 File: Figure3a_3f.pdf Graphic file (type pdf)
  <use Figure3a_3f.pdf>
-Package pdftex.def Info: Figure3a_3f.pdf used on input line 309.
+Package pdftex.def Info: Figure3a_3f.pdf used on input line 311.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 309--310
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 311--312
 [][][] 
  []
 
@@ -430,23 +430,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <./Figure3a_3f.pdf>]
-Underfull \hbox (badness 4416) in paragraph at lines 350--351
+Underfull \hbox (badness 4416) in paragraph at lines 352--353
 []|\OT1/cmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 [10
 
-] [11] (draft5.bbl) [12
+] [11] (draft6.bbl) [12
 
-] (draft5.aux) ) 
+] (draft6.aux) ) 
 Here is how much of TeX's memory you used:
  4709 strings out of 495222
  62061 string characters out of 3182071
- 148339 words of memory out of 3000000
+ 149339 words of memory out of 3000000
  7863 multiletter control sequences out of 15000+200000
  16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,15n,35p,1303b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,15n,35p,1264b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/late
 x/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/inst
@@ -462,7 +462,7 @@ c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
 E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/texmfs/install/
 fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft5.pdf (12 pages, 253190 bytes).
+Output written on draft6.pdf (12 pages, 253548 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
