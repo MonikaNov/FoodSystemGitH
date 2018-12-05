@@ -171,7 +171,7 @@ In this study, we analyzed the relationship between maize yields and climate. Ou
 	We acquired the county level yield data from the Famine Early Warning Systems Network (FEWS NET). As for the weather data, we utilized $0.25^\circ$ resolution precipitation and temperature gridded datasets. The precipitation data come from the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) while the temperature data are available at the website of the Berkeley Earth. 
 	
 	Both precipitation and temperature datasets are daily while the yield data are yearly by its nature. Hence, in order to proceed with the analysis, the daily precipitation and temperature data had to be converted
-into a county-level yearly panel. The first step of this procedure was averaging the gridded weather data over the counties of Kenya resulting in a single daily time series for each county. In the next step, we aggregated the resulting county level time series temporally to obtain yearly time series using the seasonal crop calendar which is available at the website of FEWS~NET. We separated the counties of Kenya into two groups, such that the crop calendar can be considered homogeneous within each group. The groups are: \textit{(i)} Arid and semi arid (ASAL) counties and \textit{(ii)} non-ASAL as defined by the ASAL Stakeholders Forum (ASF). In particular, the ASAL counties include ..see appendix..\footnote{The crop calendar is probably not exactly the same for all counties within each group, however, it is similar enough so that it can be considered homogeneous within the groups. To a certain extent, the crop calendar is likely to differ even within a single county. However, considering the information provided by ASF and FEWS NET and our intermediate results, we opted for the two groups as a compromise between accuracy and complexity.}
+into a county-level yearly panel. The first step of this procedure was averaging the gridded weather data over the counties of Kenya resulting in a single daily time series for each county. In the next step, we aggregated the resulting county level time series temporally to obtain yearly time series using the seasonal crop calendar which is available at the website of FEWS~NET. We separated the counties of Kenya into two groups, such that the crop calendar can be considered homogeneous within each group. The groups are: \textit{(i)} Arid and semi-arid (ASAL) counties and \textit{(ii)} non-ASAL as defined by the ASAL Stakeholders Forum (ASF). In particular, the ASAL counties include ..see appendix..\footnote{The crop calendar is probably not exactly the same for all counties within each group, however, it is similar enough so that it can be considered homogeneous within the groups. To a certain extent, the crop calendar is likely to differ even within a single county. However, considering the information provided by ASF and FEWS NET and our intermediate results, we opted for the two groups as a compromise between accuracy and complexity.}
 
 
 
@@ -335,6 +335,28 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 
 \appendix
 \section*{Appendix}
+
+
+
+
+\begin{table}[H]
+\caption{\label{ASAL}\textbf{List of Arid and semi-arid (ASAL) and non-ASAL counties}}
+
+\begin{indented}
+\item[]\begin{tabular}{@{}lp{10cm}}
+\\[-1em]
+\br
+\\[-1em]
+\textbf{ASAL:}&Baringo, Embu, Garissa, Isiolo, Kajiado, Kilifi Kitui, Kwale, Laikipia, Lamu, Makueni, Mandera, Marsabit, Meru, Mombasa, Narok, Nyeri, Samburu, Taita-Taveta, Tana River, Tharaka Nithi, Turkana, Wajir, West Pokot\\
+\mr
+\textbf{non-ASAL:}&Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay, Kakamega, Kericho         Kiambu, Kirinyaga, Kisii, Kisumu, Machakos, Migori, Murang'a, Nakuru, Nyamira,   Nyandarua, Siaya, Trans Nzoia, Uasin Gishu, Vihiga\\
+\br
+\end{tabular}
+\end{indented}
+\end{table}
+
+
+
 \textcolor{blue}{\textit{should be at the end of the main text but before list of references}}
 
 \vspace{1cm}
@@ -354,7 +376,8 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \label{KenARe11_exponents} 
 \begin{footnotesize}
 \lineup
-\begin{tabular}{@{}llrlllr} 
+\begin{indented}
+\item[]\begin{tabular}{@{}llrlllr} 
 \br   &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
     \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&F-value\tnote{a}% anova(KEN11a, type='marginal')
     &{$exp(\beta)$}&F-value\tnote{a}&{$exp(\beta)$}&F-value\tnote{a}\\
@@ -370,22 +393,18 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
   \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$\01.580$\\
   \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$\03.125$&$1.039$&$0.558$&$1.059$ ${*}$&$\05.640$\\
   \\
-  \hline
-\vspace{-0.2cm} \\
-  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
-\vspace{-0.2cm}
-\\
+  \hline\\[-1em]
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\ 
+  \\[-1em]
 \hline
+\\[-1em]Intercept\\
+ \\[-1em] \hline
+\\[-1em]
+\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}
 \\
-  \vspace{-0.2cm}Intercept\\
- \\ 
- \hline
-\vspace{-0.2cm} \\
-\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
-\vspace{-0.2cm}
-\\  
 \br
 \end{tabular} 
+\end{indented}
 \end{footnotesize}
  \begin{tablenotes}
   \begin{footnotesize}
