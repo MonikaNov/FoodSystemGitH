@@ -1,20 +1,25 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{}{n.d.a}{FEWSNET}
- \textit{Data Source:} Famine Early Warning Systems Network (FEWS NET).
-\newblock Accessed in October 2018.
-\newline\harvardurl{http://fews.net/}
+\harvarditem{}{n.d.a}{ASF}
+ \textit{Data Source:} Asal Stakeholders Forum.
+\newblock Accessed in December 2018.
+\newline\harvardurl{http://www.asalforum.or.ke/}
 
-\harvarditem{}{n.d.b}{CHIRPS}
+\harvarditem{}{n.d.b}{Berkeley}
+ \textit{Data Source:} Berkeley Earth.
+\newblock Accessed in October 2018.
+\newline\harvardurl{http://berkeleyearth.org/data/}
+
+\harvarditem{}{n.d.c}{CHIRPS}
  \textit{Data Source:} Climate Hazards Group InfraRed Precipitation with
   Station data (CHIRPS).
 \newblock Accessed in October 2018.
 \newline\harvardurl{http://chg.geog.ucsb.edu/data/chirps/}
 
-\harvarditem{}{n.d.c}{Berkeley}
- \textit{Data Source:} Berkeley Earth.
+\harvarditem{}{n.d.d}{FEWSNET}
+ \textit{Data Source:} Famine Early Warning Systems Network (FEWS NET).
 \newblock Accessed in October 2018.
-\newline\harvardurl{http://berkeleyearth.org/data/}
+\newline\harvardurl{http://fews.net/}
 
 \harvarditem[Barasa et~al.]{Barasa, Manyara, Molyneux \harvardand\
   Tsofa}{2017}{Barasa2017}

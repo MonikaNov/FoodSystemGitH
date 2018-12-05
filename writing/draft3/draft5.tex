@@ -164,9 +164,14 @@
 \subsection{Data}\label{Data}
 
 In this study, we analyzed the relationship between maize yields and climate. Our dataset consists of an yearly panel of $47$ counties of Kenya describing the period of $1981-2017$. 
-	We acquired the county level yield data from the Famine Early Warning Systems Network (FEWS NET). As for the weather data, we utilized $0.25^\circ$ resolution precipitation and temperature gridded datasets. The precipitation data come the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) while the temperature data are available at the website of the Berkeley Earth. 
+	We acquired the county level yield data from the Famine Early Warning Systems Network (FEWS NET). As for the weather data, we utilized $0.25^\circ$ resolution precipitation and temperature gridded datasets. The precipitation data come from the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) while the temperature data are available at the website of the Berkeley Earth. 
 	
-	In order to proceed with the analysis, the daily weather data had to be converted to an yearly, county-level panel to correspond with the yield data. The first step of this procedure was averaging the gridded weather data over the counties of Kenya resulting in daily time series for each county. In the next step, we aggregated the resulting county level time series temporally to obtain yearly time series. We only considered weather data during the rainy seasons which we defined as follows, using the classification of...
+	Both precipitation and temperature datasets are daily while the yield data are yearly by its nature. Hence, in order to proceed with the analysis, the daily precipitation and temperature data had to be converted
+into a county-level yearly panel. The first step of this procedure was averaging the gridded weather data over the counties of Kenya resulting in a single daily time series for each county. In the next step, we aggregated the resulting county level time series temporally to obtain yearly time series using the seasonal crop calendar which is available at the website of FEWS~NET. We separated the counties of Kenya into two groups, such that the crop calendar can be considered homogeneous within each group. The groups are: \textit{(i)} Arid and semi arid (ASAL) counties and \textit{(ii)} non-ASAL as defined by the ASAL Stakeholders Forum (ASF). In particular, the ASAL counties include ..see appendix..\footnote{The crop calendar is probably not exactly the same for all counties within each group, however, it is similar enough so that it can be considered homogeneous within the groups. To a certain extent, the crop calendar is likely to differ even within a single county. However, considering the information provided by ASF and FEWS NET and our intermediate results, we opted for the two groups as a compromise between accuracy and complexity.}
+
+
+
+ In particular, we   We only considered weather data during the rainy seasons which we defined as follows, using the classification of...
 	
 	
 	
@@ -396,12 +401,16 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 
 
 \section*{References}
-\bibliographystyle{dcuM}
-\nocite{FEWSNET}
-\nocite{CHIRPS} 
-\nocite{Berkeley} 
+
+
 
 \bibliography{referencesFS}
+
+\bibliographystyle{dcuM}
+\nocite{ASF} 
+\nocite{Berkeley} 
+\nocite{CHIRPS} 
+\nocite{FEWSNET}
 
 \end{document}
 
