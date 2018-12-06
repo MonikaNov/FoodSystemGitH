@@ -173,9 +173,7 @@ In this study, we analyzed the relationship between maize yields and climate. Ou
 	There are two predominant rainfall regimes in Kenya. The Arid and semi-arid (ASAL) counties mostly exhibit bi-modal precipitation patterns with long rains lasting from March to May and short rains occurring between October and December. In the non-ASAL counties, the single rainy season usually starts in March and lasts until August. Following the precipitation patterns and closely related planting and harvesting calendar, we computed yearly values of various weather characteristics as follows: For the ASAL counties, we used daily data covering October, November and December of the previous year and March, April, May of the current year and for the non-ASAL counties we used daily data covering March to August of the current year.
 
 
-Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature. Only some of them were found significant predictors of maize yield. These include: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, standard deviation of average seasonal temperature,  maximum length of dry spell in number of days, the number of dry spell lasting for four days or more
-
-We did not include squared values of the average seasonal temperature as it was not significant.
+Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature including indicators of floods. Only some of them were found significant in our models. The significant measures include: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, standard deviation of average seasonal temperature \footnote{In case of temperature, we used standard deviation rather than coefficient of variation because temperature is measured on an interval scale and the coefficient of variation does not have any meaning for this type of data. },  maximum length of dry spell in number of days and the number of dry spell lasting for four days or more (a dry day is defined as day with precipitation less than $1$mm). We did not include squared values of the average seasonal temperature as it was not significant.
 \subsection{Statistical approach}
 
 % No need to write too many details (or a section) about measures of food security
@@ -207,7 +205,7 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 
 \color{blue}
 \begin{itemize}
-\item Add a description of residual and other diagnostic tests (AIC, VIF, autocorrelation)
+\item Add a description of residual and other diagnostic tests (AIC, autocorrelation)
 \item Describe the procedure that I have applied to find the preferred combination of fixed effects and random effects
 \item Describe the procedure that I have applied to find the preferred way of modelling the  correlation structure in errors (ARMA errors)
 \end{itemize}
@@ -315,6 +313,8 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 		%	\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
 	%\end{itemize}
 	
+	
+\item show VIF
 \item If we get the yield data for the period from $2015$ onwards: Out of sample predictions and comparison with the real data
 \end{itemize}
 
