@@ -30,3 +30,5 @@ which(resid(Kendalln3,type="pearson")<(-2))
 which(resid(AmBEST,type="pearson")<(-6))
 # test of AR(1) and MA(1) errors
 pbltest(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4+AvgTemp + SDTemp  + HWDays,data=ScaledTS,alternative='onesided')#ok, significant
+
+pbltest(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4+AvgTemp + SDTemp  ,data=ScaledTS,alternative='onesided')#ok, significant

@@ -1,4 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: draft8.aux
+White space in argument---line 18 of file draft8.aux
+ : \citation{Baltagi91,
+ :                      Baltagi95}
+I'm skipping whatever remains of this command
 The style file: dcuM.bst
 Database file #1: referencesFS.bib
 Unbalanced braces---line 791 of file referencesFS.bib
@@ -11,4 +15,4 @@ I was expecting a `,' or a `}'---line 986 of file referencesFS.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty title in Barasa2017
-(There were 2 error messages)
+(There were 3 error messages)

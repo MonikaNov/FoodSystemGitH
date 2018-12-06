@@ -66,9 +66,16 @@
 \usepackage[hyphens]{url}
 \usepackage[english]{babel}
 \usepackage{harvard}
+
 \usepackage[flushleft]{threeparttable}
 \usepackage{changepage}
 
+
+\makeatletter
+\newif\ifnobrackets
+\renewcommand\@cite[2]{\ifnobrackets\else[\fi{#1\if@tempswa , #2\fi}\ifnobrackets\else]\fi\nobracketsfalse}
+\newcommand\nbcite{\nobracketstrue\cite}
+\makeatother
 
 \begin{document}
 
@@ -206,12 +213,13 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \color{blue}
 \begin{itemize}
 \item Add a description of residual and other diagnostic tests (AIC, autocorrelation)
-\item Describe the procedure that I have applied to find the preferred combination of fixed effects and random effects
 \item Describe the procedure that I have applied to find the preferred way of modelling the  correlation structure in errors (ARMA errors)
 \end{itemize}
 \color{black}
 
-To find the most suitable set of predictors, we adopted a step-down model building approach using the Satterthwaite's method to determine the p-values of the individual t-test \cite{lmerTest}. That is, we started by including of all possible weather measures in both fixed effects and random effects and we consequently removed the insignificant ones until we got model with only significant fixed and random effects. For both fixed and random effects we considered the level of significance $\alpha=0.05$. 
+To find the most suitable set of predictors, we adopted a step-down model building approach using the Satterthwaite's method to determine the p-values of the individual t-tests \cite{lmerTest}. That is, we started with a model with all possible weather measures in both fixed effects and random effects and we consequently removed the insignificant variables until we left with a model with only significant predictors in fixed and random effects. For both fixed and random effects we considered the level of significance $\alpha=0.05$. 
+
+According to the conditional Lagrange multiplier (LM) test for serial correlation in the idiosyncratic component of the errors (developed by Baltagi \& Li 1991 and Baltagi \& Li 1995), the errors do exhibit a within group correlation structure (the p-value of the LM test is $9.48\times10^{-14}$). To investigate the autocorrelation structure of errors, we estimated all variants of the preferred model with autocorrelation structure of a form ARMA($p$,$q$) such that $p\leq2$ and $q\geq2$. Comparing the AIC criteria and using the corresponding likelihood ratio statistics, we found out that the most appropriate correlation structure of the errors is ARMA($1$,$1$). The AIC criterion see table~\ref{ARMA} in the appendix..
 
 
 
@@ -352,6 +360,32 @@ To find the most suitable set of predictors, we adopted a step-down model buildi
 
 
 
+
+\begin{table}[H]
+\caption{\label{ARMA}Comparison of models with different error autcorrelation structure}
+
+\begin{indented}
+\item[]\begin{tabular}{@{}llll}
+\\[-1em]
+\br
+\\[-1em]
+\textbf{Error autocorrelation structure}&\textbf{AIC}&\textbf{Likelihood ratio}&\textbf{p-value}\\
+\mr
+\textit{None}& $2205.1$& & \\
+ARMA($1$,$0$)& $2129.2$& $77.9$&$<0.0001$ \\
+ARMA($0$,$1$)&  $2144.9$& & \\
+\textbf{ARMA($\boldsymbol{1}$,$\boldsymbol{1}$)}& $\boldsymbol{2122.2}$& $\boldsymbol{24.7}$&$\boldsymbol{<0.0001}$ \\
+ARMA($2$,$1$)& $2124.0$& $0.1$&$0.7066$ \\
+ARMA($1$,$2$)&  $2124.2$& & \\
+ARMA($2$,$2$)&$2125.8$& $0.3$&$0.5681$ \\
+ARMA($3$,$2$)& $2128.0$& $0.1$&$0.7312$ \\
+ARMA($2$,$3$)&  $2127.6$& & \\
+ARMA($3$,$3$)&\multicolumn{3}{c}{\textit{Failed to converge}} \\
+\br
+\end{tabular}
+\end{indented}
+\end{table}
+
 \vspace{1cm}
 \textcolor{blue}{Possibly include a table of all values which I get from the lme or lme4 models summary in R, that is. correlation of the fixed effects etcetera}
 
@@ -423,7 +457,8 @@ To find the most suitable set of predictors, we adopted a step-down model buildi
 \bibliography{referencesFS}
 
 \bibliographystyle{dcuM}
-
+\nocite{Baltagi91}
+\nocite{Baltagi95}
 \nocite{ASF} 
 \nocite{Berkeley} 
 \nocite{CHIRPS} 
