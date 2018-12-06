@@ -13,3 +13,9 @@ hist(DaTS$SeasPr[DaTS$ASAL==1],40)
 hist(DaTS$SeasPr[DaTS$ASAL==0],40)
 
 par(mfrow=c(1,1))
+
+
+plot(Yield~AvgTemp, data=DaTS)
+plot(Yield~I(AvgTemp^2), data=DaTS)
+plot(Yield~AvgTemp, data=DaTS)
+lines(Yield~I(AvgTemp^2), data=DaTS,col=2,type='p') 
