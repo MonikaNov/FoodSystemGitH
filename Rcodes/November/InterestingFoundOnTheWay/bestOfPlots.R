@@ -18,4 +18,7 @@ par(mfrow=c(1,1))
 plot(Yield~AvgTemp, data=DaTS)
 plot(Yield~I(AvgTemp^2), data=DaTS)
 plot(Yield~AvgTemp, data=DaTS)
-lines(Yield~I(AvgTemp^2), data=DaTS,col=2,type='p') 
+
+
+plot(Yield~I(AvgTemp^2), data=DaTS,col=4,type='p',xlim=c(0,800)) 
+lines(Yield~AvgTemp, data=DaTS,col=1,type='p') 

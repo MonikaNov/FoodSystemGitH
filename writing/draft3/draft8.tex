@@ -173,7 +173,7 @@ In this study, we analyzed the relationship between maize yields and climate. Ou
 	There are two predominant rainfall regimes in Kenya. The Arid and semi-arid (ASAL) counties mostly exhibit bi-modal precipitation patterns with long rains lasting from March to May and short rains occurring between October and December. In the non-ASAL counties, the single rainy season usually starts in March and lasts until August. Following the precipitation patterns and closely related planting and harvesting calendar, we computed yearly values of various weather characteristics as follows: For the ASAL counties, we used daily data covering October, November and December of the previous year and March, April, May of the current year and for the non-ASAL counties we used daily data covering March to August of the current year.
 
 
-Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature including indicators of floods. Only some of them were found significant in our models. The significant measures include: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, standard deviation of average seasonal temperature \footnote{In case of temperature, we used standard deviation rather than coefficient of variation because temperature is measured on an interval scale and the coefficient of variation does not have any meaning for this type of data. },  maximum length of dry spell in number of days and the number of dry spell lasting for four days or more (a dry day is defined as day with precipitation less than $1$mm). We did not include squared values of the average seasonal temperature as it was not significant.
+Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature including indicators of floods. Only some of them were found significant in our models. The significant measures include: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, standard deviation of average seasonal temperature \footnote{In case of temperature, we used standard deviation rather than coefficient of variation because temperature is measured on an interval scale and the coefficient of variation does not have any meaning for this type of data. },  maximum length of dry spell in number of days and the number of dry spell lasting for four days or more (a dry day has been defined as a day when precipitation didn't exceed $1$mm). We did not include squared values of the average seasonal temperature as it was not significant.
 \subsection{Statistical approach}
 
 % No need to write too many details (or a section) about measures of food security
@@ -211,7 +211,7 @@ where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covari
 \end{itemize}
 \color{black}
 
-
+To find the most suitable set of predictors, we adopted a step-down model building approach using the Satterthwaite's method to determine the p-values of the individual t-test \cite{lmerTest}. That is, we started by including of all possible weather measures in both fixed effects and random effects and we consequently removed the insignificant ones until we got model with only significant fixed and random effects. For both fixed and random effects we considered the level of significance $\alpha=0.05$. 
 
 
 

@@ -20,6 +20,13 @@ Bates, J., Pinheiro, J., Pinheiro, J. \harvardand\ Bates, D.  \harvardyearleft
 \newblock {\em Mixed-Effects Models in S and S-PLUS}, Statistics and Computing,
   Springer New York.
 
+\harvarditem[Kuznetsova et~al.]{Kuznetsova, Brockhoff \harvardand\
+  Christensen}{2017}{lmerTest}
+Kuznetsova, A., Brockhoff, P. \harvardand\ Christensen, R.  \harvardyearleft
+  2017\harvardyearright .
+\newblock lmertest package: Tests in linear mixed effects models, {\em Journal
+  of Statistical Software, Articles} {\bf 82}(13).
+
 \harvarditem{{\noopsort{ZZZZ1}}Online{\ }Source:}{Accessed in December
   2018}{ASF}
 {\noopsort{ZZZZ1}}Online{\ }Source:  \harvardyearleft Accessed in December
