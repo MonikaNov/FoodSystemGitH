@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  6 DEC 2018 13:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  6 DEC 2018 13:19
 entering extended mode
-**./draft7.tex
-(draft7.tex
+**./draft8.tex
+(draft8.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (iopart.cls
@@ -321,8 +321,8 @@ Package: threeparttable 2003/06/13  v 3.0
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count106
 \cp@tempcnt=\count107
-) (draft7.aux)
-\openout1 = `draft7.aux'.
+) (draft8.aux)
+\openout1 = `draft8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
@@ -430,19 +430,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <./Figure3a_3f.pdf>]
-Underfull \hbox (badness 4416) in paragraph at lines 342--343
+Underfull \hbox (badness 4416) in paragraph at lines 344--345
 []|\OT1/cmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 [10
 
-] [11] (draft7.bbl) [12
+] [11] (draft8.bbl) [12
 
-] (draft7.aux) ) 
+] (draft8.aux) ) 
 Here is how much of TeX's memory you used:
  4709 strings out of 495222
  62061 string characters out of 3182071
- 148339 words of memory out of 3000000
+ 149339 words of memory out of 3000000
  7863 multiletter control sequences out of 15000+200000
  16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -462,7 +462,7 @@ c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
 E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/texmfs/install/
 fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft7.pdf (12 pages, 250863 bytes).
+Output written on draft8.pdf (12 pages, 250952 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
