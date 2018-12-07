@@ -6,9 +6,21 @@ load("dataFS/Main/DaTS.RData")
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 Kendalln3<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
-                +AvgTemp + SDTemp  + HWDays+(1|ID1),data=ScaledTS) 
+                +AvgTemp + SDTemp +(1|ID1),data=ScaledTS) 
 summary(Kendalln3); anova(Kendalln3)
 vif(Kendalln3)
+
+      KenUSl3<-lmer(log(Yield)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                      +AvgTemp + SDTemp +(1|ID1),data=DaTS) 
+      summary(KenUSl3); anova(KenUSl3)
+      
+      KenUSl4<-lmer(log(Yield)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                    +AvgTemp + SDTemp +(1|ID1),data=DaTS[DaTS$ASAL==1,]) 
+      summary(KenUSl4); anova(KenUSl4)
+      
+      KenUSl5<-lmer(log(Yield)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                    +AvgTemp + SDTemp +(1|ID1),data=DaTS[DaTS$ASAL==0,]) 
+      summary(KenUSl5); 
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 anova(Kendalln3)

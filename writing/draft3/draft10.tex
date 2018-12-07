@@ -213,33 +213,32 @@ where $\mathbf{X}$ is an $n \times p$ model matrix of fixed effects, $\mathbf{\b
 
 where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix.
 
-To find the most suitable set of predictors, we adapted a step-down model building approach using the Satterthwaite's method to determine the p-values of the individual t-tests \cite{lmerTest}. To be more specific, we started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the following steps, we were sequentially removing the insignificant variables until we were left with a model with only significant predictors in fixed and random effects. For both fixed and random effects we considered the level of significance $\alpha=0.05$. 
+To find the most suitable set of predictors, we adapted a step-down model building approach using the Satterthwaite's method to determine the p-values of the individual t-tests \cite{lmerTest}. To be more specific, we started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the following steps, the insignificant variables were removed one by one until only significant predictors remained. For both fixed and random effects we considered the level of significance $\alpha=0.05$. 
+
+According to a histogram, the shape of our maize yield data was closer to log-normal than normal distribution. Therefore, following the common practice, the  maize yields values were log-transformed before conducting the analysis. Furthermore, we scaled all predictors by subtracting mean and dividing them by standard deviation to avoid convergence problems.
 
 According to the conditional Lagrange multiplier (LM) test developed by Baltagi \& Li (1991) and Baltagi \& Li (1995), the errors exhibited a within group autcorrelation structure in our models (the p-value of the LM test was $9.48\times10^{-14}$). To further investigate the autocorrelation structure of the errors, we estimated a number of models (with the subset of predictors chosen as described above) with ARMA($p$,$q$) error structure. In particular, we estimated all variants of our model with ARMA($p$,$q$) errors such that $p\leq2$ and $q\leq2$. Comparing the AIC criteria and using the corresponding likelihood ratio statistics, we found that the most appropriate error correlation structure was ARMA($1$,$1$). The value of the AIC criterion of the model with ARMA($1$,$1$) error structure was $2122.2$ while the AIC was $2129.2$ for the model with ARMA($1$,$0$) errors.  The p-value of the likelihood ratio test of the comparison of the model with ARMA($1$,$1$) errors and the model with ARMA($1$,$0$) errors was smaller than $1 \times10^{-4}$, hence the ARMA($1$,$1$) error structure turned out to be a better fit. The AIC criteria and the likelihood ratio tests of all the models with ARMA($p$,$q$) errors are summarised in table~\ref{ARMA} in the appendix.
 
 
 
 	\section{Results}\label{Results}
+	
+Besides our main model we estimated the same specification for two additional subsamples of Kenyan counties. In particular, we estimated the model for the subsample of ASAL counties and for the subsample of non-ASAL counties separately to compare the effects of various weather characteristics across the two areas with significantly different climate. The estimates of all three models are summarised in table \ref{MainEst}. The first two columns represent the model for all counties,  the third and fourth columns include estimates based on the ASAL counties and the last two columns describe the estimates based on the subsample of non-ASAL counties. Besides the estimates of coefficients we present measures of relative importance of the predictors. These can be found in the columns denoted F-value in table~\ref{MainEst}.
 
-\color{blue}
-\begin{itemize}
+table \ref{MainEst} includes measures of relative importance of the fixed effects variables.
 
-\item Tables of estimates of the preferred specification which includes the significant weather variables (see the preliminary results in Table \ref{KenARe11}) 
 
-\begin{itemize}
-\item For all counties 
-\item For Arid and semi-araid (ASAL) counties
-\item For non-ASAL counties
-\end{itemize}
+Consistently with our assumptions, 
+Besides seasonal precipitation and average temperature, the length and number of dry spells  
 
-\color{black}
+
 
 {
 \begin{threeparttable}
 \singlespacing
 \caption{\textit{\textbf{Mixed  effects model:} \\ Log of maize yield and weather, ARMA(1,1) errors}}
 %KEN11a  KEN11a_ASAL    KEN11a_nonASAL % in the file Models1.R in folder RCodes\NovemberNewVars												
-\label{KenARe11} 
+\label{MainEst} 
 \begin{footnotesize}
 \lineup
 \begin{tabular}{@{}lllllll} 
@@ -306,8 +305,9 @@ According to the conditional Lagrange multiplier (LM) test developed by Baltagi 
 \caption{Predicted multiplicative marginal effects of length of maximum dry spell in days (left column) and number of dry spells lasting for four days or more (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Maximum length of dry spell and number of dry spells (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
 \end{figure}
 
-\color{blue}
 
+\begin{itemize}
+\color{blue}
 \item Verbal description and interpretation of the results. Discussing goodness of fit using various criteria such as AIC or alternatives to $R^2$.
 
 \item relative importance of the individual variables and its measures
