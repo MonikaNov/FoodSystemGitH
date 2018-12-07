@@ -213,16 +213,9 @@ where $\mathbf{X}$ is an $n \times p$ model matrix of fixed effects, $\mathbf{\b
 
 where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix.
 
-\color{blue}
-\begin{itemize}
-\item Add a description of residual and other diagnostic tests (AIC, autocorrelation)
-\item Describe the procedure that I have applied to find the preferred way of modelling the  correlation structure in errors (ARMA errors)
-\end{itemize}
-\color{black}
-
 To find the most suitable set of predictors, we adapted a step-down model building approach using the Satterthwaite's method to determine the p-values of the individual t-tests \cite{lmerTest}. To be more specific, we started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the following steps, we were sequentially removing the insignificant variables until we were left with a model with only significant predictors in fixed and random effects. For both fixed and random effects we considered the level of significance $\alpha=0.05$. 
 
-According to the conditional Lagrange multiplier (LM) test for serial correlation in the idiosyncratic component of the errors (developed by Baltagi \& Li 1991 and Baltagi \& Li 1995), the errors exhibited a within group autcorrelation structure in our models (the p-value of the LM test was $9.48\times10^{-14}$). To investigate the autocorrelation structure of the errors, we estimated several variants of our preferred specification with the autocorrelation structure of a form ARMA($p$,$q$). In particular, we estimated all varieties of our model with ARMA($p$,$q$) errors such that $p\leq2$ and $q\leq2$. Comparing the AIC criteria and using the corresponding likelihood ratio statistics, we found that the most appropriate correlation structure of the errors was ARMA($1$,$1$). The AIC criterion of the model with ARMA($1$,$1$) error structure was $2122.2$ while the AIC criterion of the model without any correlation structure was $2205.1$ and the AIC criterion of the model with ARMA($1$,$0$) errors was $2129.2$. The likelihood ratio test of comparison of 
+According to the conditional Lagrange multiplier (LM) test for serial correlation in the idiosyncratic component of the errors (developed by Baltagi \& Li 1991 and Baltagi \& Li 1995), the errors exhibited a within group autcorrelation structure in our models (the p-value of the LM test was $9.48\times10^{-14}$). To investigate the autocorrelation structure of the errors, we estimated several variants of our preferred specification with the autocorrelation structure of a form ARMA($p$,$q$). In particular, we estimated all varieties of our model with ARMA($p$,$q$) errors such that $p\leq2$ and $q\leq2$. Comparing the AIC criteria and using the corresponding likelihood ratio statistics, we found that the most appropriate correlation structure of the errors was ARMA($1$,$1$). The AIC criterion of the model with ARMA($1$,$1$) error structure was $2122.2$ while of the model with ARMA($1$,$0$) errors was $2129.2$. The p-value of the likelihood ratio test of comparison of the with ARMA($1$,$1$) errors and the one with ARMA($1$,$0$) errors was smaller than $1 \times10^{-4}$, hence the ARMA($1$,$1$) errors structure is preferable. The AIC criteria and likelihood ratio test statics of all models with ARMA($p$,$q$) errors can be found in table~\ref{ARMA} in the appendix.
 
 
 
@@ -363,41 +356,38 @@ According to the conditional Lagrange multiplier (LM) test for serial correlatio
 
 
 
-{
+{\begin{center}
 \begin{threeparttable}[H]
 \caption{\label{ARMA}Comparison of models with different error autcorrelation structure}
-
-\begin{indented}
 \lineup
+\begin{indented}
+
 \item[]\begin{tabular}{@{}llll}
 \\[-1em]
 \br
-&&\centre{2}{\textbf{Likelihood ratio} vs. ARMA($1$,$1$)}\\
+&&\centre{2}{\textbf{Likelihood ratio} vs. ARMA($1$,$1$)\tnote{a}}\\
 \textbf{Error autocorrelation structure}&\textbf{AIC}&\textbf{Statistic}&\multicolumn{1}{l}{\textbf{p-value}}\\
 \mr
-\textit{None}& $2205.1$&$86.9$&$<1\times10^{-4}$\\
-ARMA($1$,$0$)& $2129.2$&$\09.0$&$0.0027$\\
-ARMA($0$,$1$)&  $2144.9$&${24.7}$&${<1\times10^{-4}}$ \\
+\textit{None}&$2205.1$&$86.94$&$<1\times10^{-4}$\\
+ARMA($1$,$0$)&$2129.2$&$\09.01$&$0.0027$\\
+ARMA($0$,$1$)&$2144.9$&${24.72}$&${<1\times10^{-4}}$ \\
 \rowcolor{Gray}ARMA(${1}$,${1}$)&${2122.2}$&$---$&$---$\\
-ARMA($2$,$1$)& $2124.0$&$\00.1$&$\0\00.7066$ \\
-ARMA($1$,$2$)&  $2124.2$& & \\
-ARMA($2$,$2$)&$2125.8$& $\00.3$&$\0\00.5681$ \\
-ARMA($3$,$2$)& $2128.0$& $\00.1$&$\0\00.7312$ \\
-ARMA($2$,$3$)&  $2127.6$& & \\
-ARMA($3$,$3$)&\multicolumn{3}{c}{\textit{Failed to converge}} \\
+ARMA($2$,$1$)&$2124.0$&$\00.14$&$\0\00.7066$\\
+ARMA($1$,$2$)& $2124.2$&$\00.01$&$\0\00.9143$\\
+ARMA($2$,$2$)&$2125.8$& $\00.31$&$\0\00.8545$\\
 \br
 \end{tabular}
+
 \end{indented}
 \begin{tablenotes}
   \begin{footnotesize}
-    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
-        \begin{adjustwidth}{1cm}{} 
-    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
-     \end{adjustwidth}
+  \item[a] Likelihood ratio test of comparison with the ARMA(${1}$,${1}$) error structure model. ARMA(${1}$,${1}$) error structure seems to be the most suitable as all lower-order correlation structure models are rejected against ARMA(${1}$,${1}$) while ARMA(${1}$,${1}$) is not rejected against the higher order structures.
 \singlespacing
   \end{footnotesize}
 \end{tablenotes}
   \end{threeparttable} 
+\end{center}
+
 
 \vspace{1cm}
 \textcolor{blue}{Possibly include a table of all values which I get from the lme or lme4 models summary in R, that is. correlation of the fixed effects etcetera}

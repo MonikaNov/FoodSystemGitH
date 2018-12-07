@@ -45,6 +45,17 @@ KEN22a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
             +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=2,q=2),
             data=ScaledTS,na.action=na.exclude);
 
+
+KEN31a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=2,q=1),
+            data=ScaledTS,na.action=na.exclude);
+
+
+KEN13a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+            +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=2),
+            data=ScaledTS,na.action=na.exclude);
+
+
 KEN32a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
             +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=3,q=2),
             data=ScaledTS,na.action=na.exclude);
@@ -57,3 +68,8 @@ KEN33a<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
             +AvgTemp + SDTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=3,q=3),
             data=ScaledTS,na.action=na.exclude);
 anova(KEN00a,KEN10a,KEN01a,KEN11a,KEN21a,KEN12a,KEN22a,KEN23a,KEN32a)
+
+anova(KEN00a,KEN11a); anova(KEN10a,KEN11a);anova(KEN01a,KEN11a)
+anova(KEN21a,KEN11a); anova(KEN12a,KEN11a);anova(KEN22a,KEN11a);
+anova(KEN31a,KEN11a); anova(KEN13a,KEN11a);
+anova(KEN23a,KEN23a)
