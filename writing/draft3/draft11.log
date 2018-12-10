@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  10 DEC 2018 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  10 DEC 2018 14:30
 entering extended mode
 **./draft11.tex
 (draft11.tex
@@ -390,34 +390,34 @@ Underfull \hbox (badness 1147) in paragraph at lines 130--131
 r/m/n/12 early warning systems have been
  []
 
-[2] [3] [4] [5] <Figure1a_1f.pdf, id=29, 505.89pt x 505.89pt>
+[2] [3] [4] [5] [6] <Figure1a_1f.pdf, id=32, 505.89pt x 505.89pt>
 File: Figure1a_1f.pdf Graphic file (type pdf)
 
 <use Figure1a_1f.pdf>
-Package pdftex.def Info: Figure1a_1f.pdf used on input line 293.
+Package pdftex.def Info: Figure1a_1f.pdf used on input line 298.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 293--294
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 298--299
 [][][] 
  []
 
-[6] <Figure2a_2f.pdf, id=33, 505.89pt x 505.89pt>
+<Figure2a_2f.pdf, id=33, 505.89pt x 505.89pt>
 File: Figure2a_2f.pdf Graphic file (type pdf)
  <use Figure2a_2f.pdf>
-Package pdftex.def Info: Figure2a_2f.pdf used on input line 299.
+Package pdftex.def Info: Figure2a_2f.pdf used on input line 304.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 299--300
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 304--305
 [][][] 
  []
 
 <Figure3a_3f.pdf, id=34, 505.89pt x 505.89pt>
 File: Figure3a_3f.pdf Graphic file (type pdf)
  <use Figure3a_3f.pdf>
-Package pdftex.def Info: Figure3a_3f.pdf used on input line 304.
+Package pdftex.def Info: Figure3a_3f.pdf used on input line 309.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 304--305
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 309--310
 [][][] 
  []
 
@@ -430,31 +430,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9 <./Figure2a_2f.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./Figure3a_3f.pdf>]
-Underfull \hbox (badness 4416) in paragraph at lines 350--351
+ [10 <./Figure3a_3f.pdf>] [11]
+Underfull \hbox (badness 4416) in paragraph at lines 355--356
 []|\OT1/cmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 379--379
+Underfull \hbox (badness 4634) in paragraph at lines 384--384
 []\OT1/cmr/bx/n/10 Table 2. |[]\OT1/cmr/m/n/10 Comparison of models with differ
 ent error
  []
 
-[11
+[12
 
-] [12] (draft11.bbl) [13
+] [13] (draft11.bbl) [14
 
 ] (draft11.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 359 ({)
+### simple group (level 1) entered at line 364 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4775 strings out of 495222
- 62913 string characters out of 3182071
- 152810 words of memory out of 3000000
- 7925 multiletter control sequences out of 15000+200000
+ 4776 strings out of 495222
+ 62920 string characters out of 3182071
+ 152820 words of memory out of 3000000
+ 7926 multiletter control sequences out of 15000+200000
  16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,16n,35p,1304b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -473,9 +473,9 @@ c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
 E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/texmfs/install/
 fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft11.pdf (13 pages, 260892 bytes).
+Output written on draft11.pdf (14 pages, 262210 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

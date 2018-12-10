@@ -184,7 +184,7 @@ In this study, we analyzed the relationship between maize yields and climate. Ou
 
 
 Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature including indicators of floods. Only some of them were found significant in our models. The significant measures include: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, standard deviation of average seasonal temperature \footnote{In case of temperature, we used standard deviation rather than coefficient of variation because temperature is measured on an interval scale and the coefficient of variation does not have any meaning for this type of data. },  maximum length of dry spell in number of days and the number of dry spells lasting for four days or more (we considered every day when precipitation didn't exceed $1$ mm as a dry day). We did not include squared values of the average seasonal temperature as it was not significant.
-\subsection{Statistical approach}
+\subsection{Statistical approach}\label{stats}
 
 % No need to write too many details (or a section) about measures of food security
 % No need to describe all the weather measures/characteristics that we have calculated and/or tried to use and didn't work
@@ -223,7 +223,12 @@ According to the conditional Lagrange multiplier (LM) test developed by Baltagi 
 
 	\section{Results}\label{Results}
 	
-Besides our main model, we estimated the same specification for two additional subsamples of Kenyan counties. In particular, we estimated the model for the subsample of ASAL counties and for the subsample of non-ASAL counties separately to compare the effects of various weather characteristics across the two areas with significantly different climate. The estimates of all three models are summarised in table \ref{MainEst}. The first two columns represent the model for all counties,  the third and fourth columns include estimates based on the ASAL counties and the last two columns describe the estimates based on the subsample of the non-ASAL counties. Besides the coefficient estimates, we present measures of relative importance of the predictors. These can be found in the columns denoted F-value in table~\ref{MainEst}.
+Besides our main model, we estimated the same specification for two additional subsamples of Kenyan counties. In particular, we estimated the model for the subsample of ASAL counties and for the subsample of non-ASAL counties separately to compare the effects of various weather characteristics across the two areas with significantly different climate. The estimates of all three models are summarised in table \ref{MainEst}. The first two columns represent the model for all counties,  the third and fourth columns include estimates based on the ASAL counties and the last two columns describe the estimates based on the subsample of the non-ASAL counties. 
+
+
+Since all the predictors were standardised, the estimates and the corresponding p-values can be used as measures of relative importance of the predictors.  As an additional measure of relative importance, table~\ref{MainEst} includes F-values of the type \textit{III} analysis of variance. That is, the F-tests are conducted using the marginal sum of squares rather than sequential. For each variable, the F-statistic corresponds to the additional sum of of squares explained by that particular variable in comparison to the variance explained by the model which includes all other predictors but the one being tested.
+
+, we present measures of relative importance of the predictors. These can be found in the columns denoted F-value in table~\ref{MainEst}.
 
 
 
