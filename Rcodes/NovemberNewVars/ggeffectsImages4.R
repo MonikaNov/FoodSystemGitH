@@ -23,9 +23,11 @@ AllPrec<- ggpredict(KEN11a,terms=c("SeasPr [n=20]"))
   AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
 AllTemp<- ggpredict(KEN11a,terms=c("AvgTemp [n=20]"))
   AllTemp[,c(2,4,5)]<-AllTemp[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
-ASALPrec<- ggpredict(KEN11a_ASAL,terms=c("SeasPr [n=20]"),condition=c(AvgTemp=0,CVPrec = 0, Spell = 0,Spell4=0,SDTemp =0))
+
+  ASALPrec<- ggpredict(KEN11a_ASAL,terms=c("SeasPr [n=20]"),condition=c(AvgTemp=0,CVPrec = 0, Spell = 0,Spell4=0,SDTemp =0))
   ASALPrec[,c(2,4,5)]<-ASALPrec[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
-ASALTemp<- ggpredict(KEN11a_ASAL,terms=c("AvgTemp [n=20]"))
+
+ASALTemp<- ggpredict(KEN11a_ASAL,terms=c("AvgTemp [n=20]"),condition=c(SeasP=0,CVPrec = 0, Spell = 0,Spell4=0,SDTemp =0) )
   ASALTemp[,c(2,4,5)]<-ASALTemp[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
 nonASALPrec<- ggpredict(KEN11a_nonASAL,terms=c("SeasPr [n=20]"),condition=c(AvgTemp=0,CVPrec = 0, Spell = 0,Spell4=0,SDTemp =0))
   nonASALPrec[,c(2,4,5)]<-nonASALPrec[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTable[,1])[["(Intercept)"]]
@@ -57,7 +59,7 @@ AllTempSD<- ggpredict(KEN11a,terms=c("SDTemp [n=20]"))
 AllTempSD[,c(2,4,5)]<-AllTempSD[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
 ASALPrecCV<- ggpredict(KEN11a_ASAL,terms=c("CVPrec [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, Spell = 0,Spell4=0,SDTemp =0))
 ASALPrecCV[,c(2,4,5)]<-ASALPrecCV[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
-ASALTempSD<- ggpredict(KEN11a_ASAL,terms=c("SDTemp [n=20]"))
+ASALTempSD<- ggpredict(KEN11a_ASAL,terms=c("SDTemp [n=20]"),condition=c(AvgTemp=0,CVPrec = 0, Spell = 0,Spell4=0,SeasPr =0) )
 ASALTempSD[,c(2,4,5)]<-ASALTempSD[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
 nonASALPrecCV<- ggpredict(KEN11a_nonASAL,terms=c("CVPrec [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, Spell = 0,Spell4=0,SDTemp =0))
 nonASALPrecCV[,c(2,4,5)]<-nonASALPrecCV[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTable[,1])[["(Intercept)"]]
@@ -89,7 +91,7 @@ AllSpell4<- ggpredict(KEN11a,terms=c("Spell4 [n=20]"))
 AllSpell4[,c(2,4,5)]<-AllSpell4[,c(2,4,5)]/exp(summary(KEN11a)$tTable[,1])[["(Intercept)"]]
 ASALSpell<- ggpredict(KEN11a_ASAL,terms=c("Spell [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, CVPrec = 0,SDTemp=0,Spell4 =0))
 ASALSpell[,c(2,4,5)]<-ASALSpell[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
-ASALSpell4<- ggpredict(KEN11a_ASAL,terms=c("Spell4 [n=20]"))
+ASALSpell4<- ggpredict(KEN11a_ASAL,terms=c("Spell4 [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, CVPrec = 0,SDTemp=0,Spell =0))
 ASALSpell4[,c(2,4,5)]<-ASALSpell4[,c(2,4,5)]/exp(summary(KEN11a_ASAL)$tTable[,1])[["(Intercept)"]]
 nonASALSpell<- ggpredict(KEN11a_nonASAL,terms=c("Spell [n=20]"),condition=c(AvgTemp=0,SeasPr = 0, Spell4 = 0, CVPrec = 0,SDTemp=0))
 nonASALSpell[,c(2,4,5)]<-nonASALSpell[,c(2,4,5)]/exp(summary(KEN11a_nonASAL)$tTable[,1])[["(Intercept)"]]
