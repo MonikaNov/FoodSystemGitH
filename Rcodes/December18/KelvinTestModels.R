@@ -39,15 +39,22 @@ KEN11g<-update(KEN11e,.~.,method="ML")
 summary(KEN11g)
 
 anova(KEN11e,KEN11a); anova(KEN11e,KEN11d)
-compareFits(KEN11e,KEN11a)
+anova(KEN11g,KEN11aML) 
+KEN11h<-update(KEN11d,.~.,method="ML");anova(KEN11g,KEN11h) 
+
+# KEN11aML and similar form the file MOdels1 in the same forlder as this script
 # and subsamples
 KEN11e_ASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                  +AvgTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
                  data=ScaledTS[ScaledTS$ASAL==1,],na.action=na.exclude); summary(KEN11e_ASAL); exp(summary(KEN11e_ASAL)$coef[[1]])
 anova(KEN11e_ASAL,KEN11a_ASAL); anova(KEN11e_ASAL,KEN11d_ASAL)
+KEN11g_ASAL<-update(KEN11e_ASAL,.~., method="ML"); anova(KEN11g_ASAL,KEN11a_ASAL_ML)
+KEN11h_ASAL<-update(KEN11d_ASAL,.~., method="ML"); anova(KEN11g_ASAL,KEN11h_ASAL)
 
 KEN11e_nonASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                     +AvgTemp, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
                     data=ScaledTS[ScaledTS$ASAL==0,],na.action=na.exclude); summary(KEN11e_nonASAL); exp(summary(KEN11e_nonASAL)$coef[[1]])
 
 anova(KEN11e_nonASAL,KEN11a_nonASAL); anova(KEN11e_nonASAL,KEN11d_nonASAL)
+KEN11g_nonASAL<-update(KEN11e_nonASAL,.~.,method="ML");anova(KEN11g_nonASAL,KEN11a_nonASAL_ML)
+KEN11h_nonASAL<-update(KEN11d_nonASAL,.~., method="ML"); anova(KEN11g_nonASAL,KEN11h_nonASAL)
