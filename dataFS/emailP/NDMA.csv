@@ -1,0 +1,1376 @@
+"","CountyID","County","Year","Month","T","Phase","MUAC","CSI","PhaseNum"
+"1",6,"Nyeri",2013,6,1,"noreport","noreport","noreport",NA
+"2",6,"Nyeri",2013,7,2,NA,NA,NA,NA
+"3",6,"Nyeri",2013,8,3,NA,NA,NA,NA
+"4",6,"Nyeri",2013,9,4,NA,NA,NA,NA
+"5",6,"Nyeri",2013,10,5,"noreport","noreport","noreport",NA
+"6",6,"Nyeri",2013,11,6,"noreport","noreport","noreport",NA
+"7",6,"Nyeri",2013,12,7,"noreport","noreport","noreport",NA
+"8",6,"Nyeri",2014,1,8,"noreport","noreport","noreport",NA
+"9",6,"Nyeri-North",2014,2,9,NA,NA,NA,NA
+"10",6,"Nyeri",2014,3,10,NA,NA,NA,NA
+"11",6,"Nyeri-North",2014,4,11,NA,NA,NA,NA
+"12",6,"Nyeri",2014,5,12,NA,NA,NA,NA
+"13",6,"Nyeri-North",2014,6,13,NA,NA,NA,NA
+"14",6,"Nyeri",2014,7,14,NA,NA,NA,NA
+"15",6,"Nyeri",2014,8,15,"Late Alert","2.6","1.3",NA
+"16",6,"Nyeri",2014,9,16,"Late Alert","2.7","1.3",NA
+"17",6,"Nyeri",2014,10,17,"Late Alert","2.73","1.4",NA
+"18",6,"Nyeri",2014,11,18,"Alert","1.8","1.5",2
+"19",6,"Nyeri",2014,12,19,"Alert","1.2","1.2",2
+"20",6,"Nyeri-North",2015,1,20,"Alert","0.9","1.15",2
+"21",6,"Nyeri",2015,2,21,"Alert","1.25","1.5",2
+"22",6,"Nyeri",2015,3,22,"noreport","noreport","noreport",NA
+"23",6,"Nyeri",2015,4,23,"noreport","noreport","noreport",NA
+"24",6,"Nyeri-North",2015,5,24,"Alert","0.7","1.3",2
+"25",6,"Nyeri",2015,6,25,"Alert","0.8","1.6",2
+"26",6,"Nyeri",2015,7,26,"Alert","1.1","1.6",2
+"27",6,"Nyeri-North",2015,8,27,"Alert","1.4","1.8",2
+"28",6,"Nyeri-North",2015,9,28,"Alert","2.1","1.5",2
+"29",6,"Nyeri-North",2015,10,29,"Alert","2.1","1.4",2
+"30",6,"Nyeri-Kieni",2015,11,30,"Normal","0.9","1.2",1
+"31",6,"Nyeri-North",2015,12,31,"Normal","1","1.3",1
+"32",6,"Nyeri-North",2016,1,32,"Normal","0.3","1.2",1
+"33",6,"Nyeri-North",2016,2,33,"Normal","0.95","1.1",1
+"34",6,"Nyeri-North",2016,3,34,"Normal","1","1.1",1
+"35",6,"Nyeri-North",2016,4,35,"Normal","0.95","1.1",1
+"36",6,"Nyeri-North",2016,5,36,"Normal","0.75","0.8",1
+"37",6,"Nyeri-North",2016,6,37,"Normal","0.8","0.95",1
+"38",6,"Nyeri-North",2016,7,38,"Normal","1.7","1.1",1
+"39",6,"Nyeri-North",2016,8,39,"Normal","2","1.8",1
+"40",6,"Nyeri-North",2016,9,40,"Normal","1.6","1.6",1
+"41",6,"Nyeri",2016,10,41,"Normal","1.65","1.6",1
+"42",6,"Nyeri-North",2016,11,42,"Normal","1.7","1.4",1
+"43",6,"Nyeri-North",2016,12,43,"Normal","0.8","1.6",1
+"44",6,"Nyeri-Kieni",2017,1,44,"Alert","3.5","1.9",2
+"45",6,"Nyeri-Kieni",2017,2,45,"Alert",NA,"2.5",2
+"46",6,"Nyeri-Kieni",2017,3,46,"Alert","10","5.44",2
+"47",6,"Nyeri-Kieni",2017,4,47,"Alert","7.8","4.99",2
+"48",6,"Nyeri-Kieni",2017,5,48,"Alert","3.1","6.63",2
+"49",6,"Nyeri-North",2017,6,49,"Alert",NA,"1.6",2
+"50",6,"Nyeri",2017,7,50,"noreport","noreport","noreport",NA
+"51",6,"Nyeri-North",2017,8,51,"Alert","0.4","5.31",2
+"52",6,"Nyeri-North",2017,9,52,"Alert","2","5.33",2
+"53",6,"Nyeri-North",2017,10,53,"Alert","1.3","6.57",2
+"54",6,"Nyeri-North",2017,11,54,"Normal","0.8","5.75",1
+"55",6,"Nyeri-North",2017,12,55,"Normal","1.3","5.29",1
+"56",8,"Kwale",2013,6,1,"noreport","noreport","noreport",NA
+"57",8,"Kwale",2013,7,2,"Alert",NA,NA,2
+"58",8,"Kwale",2013,8,3,"Alert",NA,NA,2
+"59",8,"Kwale",2013,9,4,"noreport","noreport","noreport",NA
+"60",8,"Kwale",2013,10,5,"noreport","noreport","noreport",NA
+"61",8,"Kwale",2013,11,6,"noreport","noreport","noreport",NA
+"62",8,"Kwale",2013,12,7,"noreport","noreport","noreport",NA
+"63",8,"Kwale",2014,1,8,"noreport","noreport","noreport",NA
+"64",8,"Kwale",2014,2,9,"Alert",NA,NA,2
+"65",8,"Kwale",2014,3,10,"Alert",NA,NA,2
+"66",8,"Kwale",2014,4,11,"Alert",NA,NA,2
+"67",8,"Kwale",2014,5,12,"Alert",NA,NA,2
+"68",8,"Kwale",2014,6,13,"Normal",NA,NA,1
+"69",8,"Kwale",2014,7,14,"Normal",NA,NA,1
+"70",8,"Kwale",2014,8,15,"Normal",NA,NA,1
+"71",8,"Kwale",2014,9,16,"Normal",NA,NA,1
+"72",8,"Kwale",2014,10,17,"Normal",NA,NA,1
+"73",8,"Kwale",2014,11,18,"Normal","3.9",NA,1
+"74",8,"Kwale",2014,12,19,"Normal","3.4",NA,1
+"75",8,"Kwale",2015,1,20,"Normal","4.7","1.63",1
+"76",8,"Kwale",2015,2,21,"Normal","4.95","1.6",1
+"77",8,"Kwale",2015,3,22,"Alert","5.2","1.85",2
+"78",8,"Kwale",2015,4,23,"Alert","4.3","1.95",2
+"79",8,"Kwale",2015,5,24,"Normal","4.5","1.85",1
+"80",8,"Kwale",2015,6,25,"Normal","6.7","1.95",1
+"81",8,"Kwale",2015,7,26,"Normal","6.4","2.15",1
+"82",8,"Kwale",2015,8,27,"Normal","6.45","1.65",1
+"83",8,"Kwale",2015,9,28,"Normal","5.65","1.35",1
+"84",8,"Kwale",2015,10,29,"Normal","4.6","1.45",1
+"85",8,"Kwale",2015,11,30,"Normal","4.3","1.7",1
+"86",8,"Kwale",2015,12,31,"Normal","5.1","1.8",1
+"87",8,"Kwale",2016,1,32,"Normal","4.6","1.65",1
+"88",8,"Kwale",2016,2,33,"Normal","5.8","1.85",1
+"89",8,"Kwale",2016,3,34,"Alert","5.15","1.9",2
+"90",8,"Kwale",2016,4,35,"Alert","3.95","2",2
+"91",8,"Kwale",2016,5,36,"Normal","3.65","2",1
+"92",8,"Kwale",2016,6,37,"Normal","6.5",NA,1
+"93",8,"Kwale",2016,7,38,"Normal","5.3",NA,1
+"94",8,"Kwale",2016,8,39,"Alert","5.15",NA,2
+"95",8,"Kwale",2016,9,40,"Alert","4.3",NA,2
+"96",8,"Kwale",2016,10,41,"Alarm","5.95",NA,3
+"97",8,"Kwale",2016,11,42,"Alarm","5.7",NA,3
+"98",8,"Kwale",2016,12,43,"Alarm","5.3",NA,3
+"99",8,"Kwale",2017,1,44,"Alarm","5.6",NA,3
+"100",8,"Kwale",2017,2,45,"Alarm","6.3",NA,3
+"101",8,"Kwale",2017,3,46,"Alarm","5.71",NA,3
+"102",8,"Kwale",2017,4,47,"Alarm","6.7",NA,3
+"103",8,"Kwale",2017,5,48,"Alarm","6.5",NA,3
+"104",8,"Kwale",2017,6,49,"Alert","5.7",NA,2
+"105",8,"Kwale",2017,7,50,"Normal","6.2",NA,1
+"106",8,"Kwale",2017,8,51,"Normal","7.1",NA,1
+"107",8,"Kwale",2017,9,52,"Normal","6.8",NA,1
+"108",8,"Kwale",2017,10,53,"Normal","6.8",NA,1
+"109",8,"Kwale",2017,11,54,"Normal","7.6",NA,1
+"110",8,"Kwale",2017,12,55,"Normal","7",NA,1
+"111",9,"Lamu",2013,6,1,"noreport","noreport","noreport",NA
+"112",9,"Lamu",2013,7,2,"Alert",NA,NA,2
+"113",9,"Lamu",2013,8,3,"Alert",NA,NA,2
+"114",9,"Lamu",2013,9,4,"Alert",NA,NA,2
+"115",9,"Lamu",2013,10,5,"noreport","noreport","noreport",NA
+"116",9,"Lamu",2013,11,6,"noreport","noreport","noreport",NA
+"117",9,"Lamu",2013,12,7,"noreport","noreport","noreport",NA
+"118",9,"Lamu",2014,1,8,"noreport","noreport","noreport",NA
+"119",9,"Lamu",2014,2,9,"Alert",NA,NA,2
+"120",9,"Lamu",2014,3,10,"noreport","noreport","noreport",NA
+"121",9,"Lamu",2014,4,11,"Alert",NA,NA,2
+"122",9,"Lamu",2014,5,12,"Alert",NA,NA,2
+"123",9,"Lamu",2014,6,13,"Alert",NA,NA,2
+"124",9,"Lamu",2014,7,14,"Alert",NA,NA,2
+"125",9,"Lamu",2014,8,15,"Alert",NA,NA,2
+"126",9,"Lamu",2014,9,16,"Alert",NA,NA,2
+"127",9,"Lamu",2014,10,17,"Alert",NA,NA,2
+"128",9,"Lamu",2014,11,18,"Alert","3.1","1.32",2
+"129",9,"Lamu",2014,12,19,"Alert","3.25","1.5",2
+"130",9,"Lamu",2015,1,20,"Alert","2.3","1.33",2
+"131",9,"Lamu",2015,2,21,"Alert","1.9","1.5",2
+"132",9,"Lamu",2015,3,22,"Alert","5.6","1.47",2
+"133",9,"Lamu",2015,4,23,"Alert","2.92","1.45",2
+"134",9,"Lamu",2015,5,24,"Normal","3.05","1.58",1
+"135",9,"Lamu",2015,6,25,"noreport","noreport","noreport",NA
+"136",9,"Lamu",2015,7,26,"Alert","1.1","1.6",2
+"137",9,"Lamu",2015,8,27,"Normal","2.88","1.43",1
+"138",9,"Lamu",2015,9,28,"Normal","3.37","1.35",1
+"139",9,"Lamu",2015,10,29,"Alert","4.9","1.43",2
+"140",9,"Lamu",2015,11,30,"Normal","3.77","1.4",1
+"141",9,"Lamu",2015,12,31,"Normal","3.2","1.55",1
+"142",9,"Lamu",2016,1,32,"Normal","3.57","1.5",1
+"143",9,"Lamu",2016,2,33,"Normal","3.73","1.43",1
+"144",9,"Lamu",2016,3,34,"Normal","3.27","1.35",1
+"145",9,"Lamu",2016,4,35,"Normal","4.4","1.38",1
+"146",9,"Lamu",2016,5,36,"Normal","4.9","1.43",1
+"147",9,"Lamu",2016,6,37,"Normal","4.83","0.73",1
+"148",9,"Lamu",2016,7,38,"Normal","4.97","0.9",1
+"149",9,"Lamu",2016,8,39,"Normal","3.4","0.75",1
+"150",9,"Lamu",2016,9,40,"Alert","3.7","1.31",2
+"151",9,"Lamu",2016,10,41,"Alarm","4.28","1.49",3
+"152",9,"Lamu",2016,11,42,"Alarm","4.54","0.7",3
+"153",9,"Lamu",2016,12,43,"Alarm","4.2","0.72",3
+"154",9,"Lamu",2017,1,44,"Alarm","5.6",NA,3
+"155",9,"Lamu",2017,2,45,"Alarm","5.7",NA,3
+"156",9,"Lamu",2017,3,46,"Alarm","5.9","13.83",3
+"157",9,"Lamu",2017,4,47,"Alarm","6","9.4",3
+"158",9,"Lamu",2017,5,48,"Alarm","5.7","12.6",3
+"159",9,"Lamu",2017,6,49,"Alert","5.4","6.46",2
+"160",9,"Lamu",2017,7,50,"Normal","5.1","6.63",1
+"161",9,"Lamu",2017,8,51,"Normal","5","5.33",1
+"162",9,"Lamu",2017,9,52,"Normal","4.9","6.72",1
+"163",9,"Lamu",2017,10,53,"Normal","4.8","6.66",1
+"164",9,"Lamu",2017,11,54,"Normal","4.9","8.54",1
+"165",9,"Lamu",2017,12,55,"Normal","4.8","8.21",1
+"166",11,"Taita Taveta",2013,6,1,"noreport","noreport","noreport",NA
+"167",11,"Taita Taveta",2013,7,2,"Normal",NA,NA,1
+"168",11,"Taita Taveta",2013,8,3,"Normal",NA,NA,1
+"169",11,"Taita Taveta",2013,9,4,"Normal",NA,NA,1
+"170",11,"Taita Taveta",2013,10,5,"noreport","noreport","noreport",NA
+"171",11,"Taita Taveta",2013,11,6,"noreport","noreport","noreport",NA
+"172",11,"Taita Taveta",2013,12,7,"noreport","noreport","noreport",NA
+"173",11,"Taita Taveta",2014,1,8,"noreport","noreport","noreport",NA
+"174",11,"Taita Taveta",2014,2,9,"Alert",NA,NA,2
+"175",11,"Taita Taveta",2014,3,10,"Alert",NA,NA,2
+"176",11,"Taita Taveta",2014,4,11,"Alert",NA,NA,2
+"177",11,"Taita Taveta",2014,5,12,"Alert",NA,NA,2
+"178",11,"Taita Taveta",2014,6,13,"Alert",NA,NA,2
+"179",11,"Taita Taveta",2014,7,14,"Alert",NA,NA,2
+"180",11,"Taita Taveta",2014,8,15,"Alert",NA,NA,2
+"181",11,"Taita Taveta",2014,9,16,"Alert",NA,NA,2
+"182",11,"Taita Taveta",2014,10,17,"Alert",NA,NA,2
+"183",11,"Taita Taveta",2014,11,18,"Alert","2.7","0.6",2
+"184",11,"Taita Taveta",2014,12,19,"Alert","2.7","0.7",2
+"185",11,"Taita Taveta",2015,1,20,"Alert","10.9","1.86",2
+"186",11,"Taita Taveta",2015,2,21,"Alert","2.8","0.7",2
+"187",11,"Taita Taveta",2015,3,22,"Alert","2.8","0.7",2
+"188",11,"Taita Taveta",2015,4,23,"Alert","2.7","0.7",2
+"189",11,"Taita Taveta",2015,5,24,"Alert","2.7","0.7",2
+"190",11,"Taita Taveta",2015,6,25,"Alert","2.7","0.7",2
+"191",11,"Taita Taveta",2015,7,26,"Alert","2.7","0.7",2
+"192",11,"Taita Taveta",2015,8,27,"Alert","2.9","0.7",2
+"193",11,"Taita Taveta",2015,9,28,"Alert","2.9","0.7",2
+"194",11,"Taita Taveta",2015,10,29,"Alert","2.9","0.7",2
+"195",11,"Taita Taveta",2015,11,30,"Normal","2.9",NA,1
+"196",11,"Taita Taveta",2015,12,31,"Normal","2.9",NA,1
+"197",11,"Taita Taveta",2016,1,32,"Normal","2.9",NA,1
+"198",11,"Taita Taveta",2016,2,33,"Normal","2.8",NA,1
+"199",11,"Taita Taveta",2016,3,34,"Normal","2.8",NA,1
+"200",11,"Taita Taveta",2016,4,35,"Normal","2.8",NA,1
+"201",11,"Taita Taveta",2016,5,36,"Normal","2.9",NA,1
+"202",11,"Taita Taveta",2016,6,37,"noreport","noreport","noreport",NA
+"203",11,"Taita Taveta",2016,7,38,"Alert","2.9",NA,2
+"204",11,"Taita Taveta",2016,8,39,"Alert","2.9",NA,2
+"205",11,"Taita Taveta",2016,9,40,"Alert","2.8",NA,2
+"206",11,"Taita Taveta",2016,10,41,"Alert","3",NA,2
+"207",11,"Taita Taveta",2016,11,42,"Alert","3",NA,2
+"208",11,"Taita Taveta",2016,12,43,"Alert","3.1",NA,2
+"209",11,"Taita Taveta",2017,1,44,"Alert","3",NA,2
+"210",11,"Taita Taveta",2017,2,45,"Alert","3.1",NA,2
+"211",11,"Taita Taveta",2017,3,46,"Alert","3.3",NA,2
+"212",11,"Taita Taveta",2017,4,47,"Alert","3.3",NA,2
+"213",11,"Taita Taveta",2017,5,48,"Alert","3.1",NA,2
+"214",11,"Taita Taveta",2017,6,49,"Alert","4.6",NA,2
+"215",11,"Taita Taveta",2017,7,50,"Alert","3.4",NA,2
+"216",11,"Taita Taveta",2017,8,51,"Normal","1.6",NA,1
+"217",11,"Taita Taveta",2017,9,52,"Normal","1.7",NA,1
+"218",11,"Taita Taveta",2017,10,53,"Alert","1.7",NA,2
+"219",11,"Taita Taveta",2017,11,54,"Alert","2.4",NA,2
+"220",11,"Taita Taveta",2017,12,55,"Alert","2.3",NA,2
+"221",12,"Tana River",2013,6,1,"noreport","noreport","noreport",NA
+"222",12,"Tana River",2013,7,2,"noreport","noreport","noreport",NA
+"223",12,"Tana River",2013,8,3,"Alert",NA,NA,2
+"224",12,"Tana River",2013,9,4,"Alert",NA,NA,2
+"225",12,"Tana River",2013,10,5,"noreport","noreport","noreport",NA
+"226",12,"Tana River",2013,11,6,"noreport","noreport","noreport",NA
+"227",12,"Tana River",2013,12,7,"noreport","noreport","noreport",NA
+"228",12,"Tana River",2014,1,8,"noreport","noreport","noreport",NA
+"229",12,"Tana River",2014,2,9,"Alert",NA,NA,2
+"230",12,"Tana River",2014,3,10,"Alert",NA,NA,2
+"231",12,"Tana River",2014,4,11,"Alert",NA,NA,2
+"232",12,"Tana River",2014,5,12,"Alert",NA,NA,2
+"233",12,"Tana River",2014,6,13,"Alert",NA,NA,2
+"234",12,"Tana River",2014,7,14,"Alert",NA,NA,2
+"235",12,"Tana River",2014,8,15,"Alert",NA,NA,2
+"236",12,"Tana River",2014,9,16,"Alert",NA,NA,2
+"237",12,"Tana River",2014,10,17,"Alert",NA,NA,2
+"238",12,"Tana River",2014,11,18,"Alert","10.3","1.73",2
+"239",12,"Tana River",2014,12,19,"Alert","10.4","1.83",2
+"240",12,"Tana River",2015,1,20,"Alert","10.9","1.86",2
+"241",12,"Tana River",2015,2,21,"Alert","11","1.86",2
+"242",12,"Tana River",2015,3,22,"Alert","11","1.86",2
+"243",12,"Tana River",2015,4,23,"Alert","12.5","1.86",2
+"244",12,"Tana River",2015,5,24,"Normal","13","1.86",1
+"245",12,"Tana River",2015,6,25,"Normal","8","1.86",1
+"246",12,"Tana River",2015,7,26,"Normal","9",NA,1
+"247",12,"Tana River",2015,8,27,"Normal","10","2.1",1
+"248",12,"Tana River",2015,9,28,"Normal","9.88","2.1",1
+"249",12,"Tana River",2015,10,29,"Normal","9.1","2.1",1
+"250",12,"Tana River",2015,11,30,"Normal","10.82","2.1",1
+"251",12,"Tana River",2015,12,31,"Normal","6.52","2.1",1
+"252",12,"Tana River",2016,1,32,"Normal","7.58","2.1",1
+"253",12,"Tana River",2016,2,33,"Normal","6","2.1",1
+"254",12,"Tana River",2016,3,34,"Normal","4.85","1.95",1
+"255",12,"Tana River",2016,4,35,"Alert","7.63","1.93",2
+"256",12,"Tana River",2016,5,36,"Alert","7.46","2.12",2
+"257",12,"Tana River",2016,6,37,"Alert","10.25","2.1",2
+"258",12,"Tana River",2016,7,38,"Alert","10.1","1",2
+"259",12,"Tana River",2016,8,39,"Alert","10.7","1",2
+"260",12,"Tana River",2016,9,40,"Alert","12","1",2
+"261",12,"Tana River",2016,10,41,"Alert","12","1.4",2
+"262",12,"Tana River",2016,11,42,"Alarm","13.22","1.23",3
+"263",12,"Tana River",2016,12,43,"Alarm","12.65","1.2",3
+"264",12,"Tana River",2017,1,44,"Alarm","19.96",NA,3
+"265",12,"Tana River",2017,2,45,"Alarm","20.1",NA,3
+"266",12,"Tana River",2017,3,46,"Alarm","22.2",NA,3
+"267",12,"Tana River",2017,4,47,"Alarm","16.07",NA,3
+"268",12,"Tana River",2017,5,48,"Alarm","19.8",NA,3
+"269",12,"Tana River",2017,6,49,"Alarm","26.72",NA,3
+"270",12,"Tana River",2017,7,50,"Alarm","26.45",NA,3
+"271",12,"Tana River",2017,8,51,"Alarm","24.2",NA,3
+"272",12,"Tana River",2017,9,52,"Alarm","26",NA,3
+"273",12,"Tana River",2017,10,53,"Alarm","24.5",NA,3
+"274",12,"Tana River",2017,11,54,"Alarm","15",NA,3
+"275",12,"Tana River",2017,12,55,"Alarm","11",NA,3
+"276",13,"Isiolo",2013,6,1,"noreport","noreport","noreport",NA
+"277",13,"Isiolo",2013,7,2,"noreport","noreport","noreport",NA
+"278",13,"Isiolo",2013,8,3,"Alarm/Alert",NA,NA,2.5
+"279",13,"Isiolo",2013,9,4,"Alarm/Alert",NA,NA,2.5
+"280",13,"Isiolo",2013,10,5,"noreport","noreport","noreport",NA
+"281",13,"Isiolo",2013,11,6,"noreport","noreport","noreport",NA
+"282",13,"Isiolo",2013,12,7,"noreport","noreport","noreport",NA
+"283",13,"Isiolo",2014,1,8,"noreport","noreport","noreport",NA
+"284",13,"Isiolo",2014,2,9,NA,NA,NA,NA
+"285",13,"Isiolo",2014,3,10,"Alarm/Alert",NA,NA,2.5
+"286",13,"Isiolo",2014,4,11,"Alarm/Alert",NA,NA,2.5
+"287",13,"Isiolo",2014,5,12,"Alarm/Alert",NA,NA,2.5
+"288",13,"Isiolo",2014,6,13,"Alarm/Alert",NA,NA,2.5
+"289",13,"Isiolo",2014,7,14,"Alarm/Alert",NA,NA,2.5
+"290",13,"Isiolo",2014,8,15,"Alarm/Alert",NA,NA,2.5
+"291",13,"Isiolo",2014,9,16,"Alarm",NA,NA,3
+"292",13,"Isiolo",2014,10,17,"Alarm",NA,NA,3
+"293",13,"Isiolo",2014,11,18,"noreport","noreport","noreport",NA
+"294",13,"Isiolo",2014,12,19,"noreport","noreport","noreport",NA
+"295",13,"Isiolo",2015,1,20,"Alert","20.1",NA,2
+"296",13,"Isiolo",2015,2,21,"Alert","18.6",NA,2
+"297",13,"Isiolo",2015,3,22,"Alert","18.7",NA,2
+"298",13,"Isiolo",2015,4,23,"Alert","16.9",NA,2
+"299",13,"Isiolo",2015,5,24,"Alert","14.9",NA,2
+"300",13,"Isiolo",2015,6,25,"Alert","19.8",NA,2
+"301",13,"Isiolo",2015,7,26,"Alert","19.1",NA,2
+"302",13,"Isiolo",2015,8,27,"Alarm","17.6",NA,3
+"303",13,"Isiolo",2015,9,28,"Alarm","21",NA,3
+"304",13,"Isiolo",2015,10,29,"Alarm","22",NA,3
+"305",13,"Isiolo",2015,11,30,"Alert","22.9",NA,2
+"306",13,"Isiolo",2015,12,31,"Alert","16.5",NA,2
+"307",13,"Isiolo",2016,1,32,"Alert","13",NA,2
+"308",13,"Isiolo",2016,2,33,"Alert","15",NA,2
+"309",13,"Isiolo",2016,3,34,"Alert","15",NA,2
+"310",13,"Isiolo",2016,4,35,"Alert","10",NA,2
+"311",13,"Isiolo",2016,5,36,"Alert","10",NA,2
+"312",13,"Isiolo",2016,6,37,"Alert","14",NA,2
+"313",13,"Isiolo",2016,7,38,"Normal","14",NA,1
+"314",13,"Isiolo",2016,8,39,"Normal","15",NA,1
+"315",13,"Isiolo",2016,9,40,"Normal","15.6",NA,1
+"316",13,"Isiolo",2016,10,41,"Normal","22",NA,1
+"317",13,"Isiolo",2016,11,42,"Alert","24",NA,2
+"318",13,"Isiolo",2016,12,43,"Alarm","20",NA,3
+"319",13,"Isiolo",2017,1,44,"Alert","24",NA,2
+"320",13,"Isiolo",2017,2,45,"Alarm","32",NA,3
+"321",13,"Isiolo",2017,3,46,"Alarm","23",NA,3
+"322",13,"Isiolo",2017,4,47,"Alarm","25",NA,3
+"323",13,"Isiolo",2017,5,48,"Alarm","28",NA,3
+"324",13,"Isiolo",2017,6,49,"Alarm","29.6","20.2",3
+"325",13,"Isiolo",2017,7,50,"Alarm","28.7","23.8",3
+"326",13,"Isiolo",2017,8,51,"Alarm","29.8","24.1",3
+"327",13,"Isiolo",2017,9,52,"Alarm","30.6","24.6",3
+"328",13,"Isiolo",2017,10,53,"Alarm","31.3","24.6",3
+"329",13,"Isiolo",2017,11,54,"Alarm","30.8","22.3",3
+"330",13,"Isiolo",2017,12,55,"Alarm","28.9","21.8",3
+"331",14,"Kitui",2013,6,1,"noreport","noreport","noreport",NA
+"332",14,"Kitui",2013,7,2,"Alert",NA,NA,2
+"333",14,"Kitui",2013,8,3,"Alert",NA,NA,2
+"334",14,"Kitui",2013,9,4,"Alert",NA,NA,2
+"335",14,"Kitui",2013,10,5,"noreport","noreport","noreport",NA
+"336",14,"Kitui",2013,11,6,"noreport","noreport","noreport",NA
+"337",14,"Kitui",2013,12,7,"noreport","noreport","noreport",NA
+"338",14,"Kitui",2014,1,8,"noreport","noreport","noreport",NA
+"339",14,"Kitui",2014,2,9,"Alert",NA,NA,2
+"340",14,"Kitui",2014,3,10,"Normal",NA,NA,1
+"341",14,"Kitui",2014,4,11,"Normal",NA,NA,1
+"342",14,"Kitui",2014,5,12,"Normal",NA,NA,1
+"343",14,"Kitui",2014,6,13,"noreport","noreport","noreport",NA
+"344",14,"Kitui",2014,7,14,"Alert",NA,NA,2
+"345",14,"Kitui",2014,8,15,"Alert",NA,NA,2
+"346",14,"Kitui",2014,9,16,"Alert",NA,NA,2
+"347",14,"Kitui",2014,10,17,"Alert","8","1.3",2
+"348",14,"Kitui",2014,11,18,"Alert","9","1.3",2
+"349",14,"Kitui",2014,12,19,"Alert","10","1.2",2
+"350",14,"Kitui",2015,1,20,"Alert","9","1.1",2
+"351",14,"Kitui",2015,2,21,"Alert","9","1",2
+"352",14,"Kitui",2015,3,22,"Alert","9","1",2
+"353",14,"Kitui",2015,4,23,"Normal","9","1.2",1
+"354",14,"Kitui",2015,5,24,"Normal","8","1.1",1
+"355",14,"Kitui",2015,6,25,"Normal","6","0.7",1
+"356",14,"Kitui",2015,7,26,"Normal","8","0.7",1
+"357",14,"Kitui",2015,8,27,"Normal","7","1.1",1
+"358",14,"Kitui",2015,9,28,"Normal","6","0.8",1
+"359",14,"Kitui",2015,10,29,"Normal","7","0.9",1
+"360",14,"Kitui",2015,11,30,"Alert","5","0.9",2
+"361",14,"Kitui",2015,12,31,"Normal","5.5","0.9",1
+"362",14,"Kitui",2016,1,32,"Normal","5.1","0.5",1
+"363",14,"Kitui",2016,2,33,"Normal","5.1","0.5",1
+"364",14,"Kitui",2016,3,34,"Normal","4.8","0.5",1
+"365",14,"Kitui",2016,4,35,"Alert","4.9","0.6",2
+"366",14,"Kitui",2016,5,36,"Normal","4.6","0.6",1
+"367",14,"Kitui",2016,6,37,"Normal","6.8","0.6",1
+"368",14,"Kitui",2016,7,38,"Alert","6.7","0.6",2
+"369",14,"Kitui",2016,8,39,"Normal","10.75","0.6",1
+"370",14,"Kitui",2016,9,40,"noreport","noreport","noreport",NA
+"371",14,"Kitui",2016,10,41,"Normal","13.8","0.65",1
+"372",14,"Kitui",2016,11,42,"Alert","13.25","0.75",2
+"373",14,"Kitui",2016,12,43,"Alert","8.6","0.7",2
+"374",14,"Kitui",2017,1,44,"Normal","9.95","0.85",1
+"375",14,"Kitui",2017,2,45,"Alert","9.1","0.9",2
+"376",14,"Kitui",2017,3,46,"Alarm","12.1","0.95",3
+"377",14,"Kitui",2017,4,47,"Alarm","8.6","7.03",3
+"378",14,"Kitui",2017,5,48,"Alert","7.2","8.5",2
+"379",14,"Kitui",2017,6,49,"Alert","8.8","7.6",2
+"380",14,"Kitui",2017,7,50,"Alert","10.3","4.7",2
+"381",14,"Kitui",2017,8,51,"Alert","8","4.3",2
+"382",14,"Kitui",2017,9,52,"Alert","8.3","7.8",2
+"383",14,"Kitui",2017,10,53,"Alert","8.6","9",2
+"384",14,"Kitui",2017,11,54,"Alert","8.2","8.5",2
+"385",14,"Kitui",2017,12,55,"Alert","7.6","8.2",2
+"386",16,"Makueni",2013,6,1,"noreport","noreport","noreport",NA
+"387",16,"Makueni",2013,7,2,"noreport","noreport","noreport",NA
+"388",16,"Makueni",2013,8,3,"Normal",NA,NA,1
+"389",16,"Makueni",2013,9,4,"noreport","noreport","noreport",NA
+"390",16,"Makueni",2013,10,5,"noreport","noreport","noreport",NA
+"391",16,"Makueni",2013,11,6,"noreport","noreport","noreport",NA
+"392",16,"Makueni",2013,12,7,"noreport","noreport","noreport",NA
+"393",16,"Makueni",2014,1,8,"noreport","noreport","noreport",NA
+"394",16,"Makueni",2014,2,9,"noreport","noreport","noreport",NA
+"395",16,"Makueni",2014,3,10,"Alert",NA,NA,2
+"396",16,"Makueni",2014,4,11,"Alert",NA,NA,2
+"397",16,"Makueni",2014,5,12,"Normal",NA,NA,1
+"398",16,"Makueni",2014,6,13,"Normal",NA,NA,1
+"399",16,"Makueni",2014,7,14,"Alert",NA,NA,2
+"400",16,"Makueni",2014,8,15,"Alert",NA,NA,2
+"401",16,"Makueni",2014,9,16,"Alert",NA,NA,2
+"402",16,"Makueni",2014,10,17,"Alert",NA,NA,2
+"403",16,"Makueni",2014,11,18,"Alert","7.22","1.47",2
+"404",16,"Makueni",2014,12,19,"Alert","8","1.3",2
+"405",16,"Makueni",2015,1,20,"Alert","6.71","1.27",2
+"406",16,"Makueni",2015,2,21,"Alert","8.22","1.36",2
+"407",16,"Makueni",2015,3,22,"noreport","noreport","noreport",NA
+"408",16,"Makueni",2015,4,23,"Normal","6.91","1.3",1
+"409",16,"Makueni",2015,5,24,"Normal","6.68","1.37",1
+"410",16,"Makueni",2015,6,25,"Normal","6.98","1.13",1
+"411",16,"Makueni",2015,7,26,"Alert","6.24","1.27",2
+"412",16,"Makueni",2015,8,27,"Alert","6.24","1.27",2
+"413",16,"Makueni",2015,9,28,"Alert","6","1.27",2
+"414",16,"Makueni",2015,10,29,"Alert","7.31","1.32",2
+"415",16,"Makueni",2015,11,30,"Alert","7.31","1.32",2
+"416",16,"Makueni",2015,12,31,"Normal",NA,NA,1
+"417",16,"Makueni",2016,1,32,"Normal","5.99","1.26",1
+"418",16,"Makueni",2016,2,33,"Normal","5.99",NA,1
+"419",16,"Makueni",2016,3,34,"Normal","4.83","0.99",1
+"420",16,"Makueni",2016,4,35,"Normal","6.09","1.2",1
+"421",16,"Makueni",2016,5,36,"Normal","4.27","1.23",1
+"422",16,"Makueni",2016,6,37,"Normal","6.57","0.73",1
+"423",16,"Makueni",2016,7,38,"Alert","7.1","0.78",2
+"424",16,"Makueni",2016,8,39,"Alert","6.4","0.72",2
+"425",16,"Makueni",2016,9,40,"Alert","8.9","0.67",2
+"426",16,"Makueni",2016,10,41,"Alert","6.22","0.75",2
+"427",16,"Makueni",2016,11,42,"Alert","6.3","0.83",2
+"428",16,"Makueni",2016,12,43,"Alert","6.9","0.83",2
+"429",16,"Makueni",2017,1,44,"Alert","5","12",2
+"430",16,"Makueni",2017,2,45,"Alert","6.8","10.5",2
+"431",16,"Makueni",2017,3,46,"Alert","6.8","11",2
+"432",16,"Makueni",2017,4,47,"Alert","7.1","12.1",2
+"433",16,"Makueni",2017,5,48,"Alert","7","14",2
+"434",16,"Makueni",2017,6,49,"Alert","5.8","11.1",2
+"435",16,"Makueni",2017,7,50,"Alert","5.7","12.2",2
+"436",16,"Makueni",2017,8,51,"Alert","7","9.9",2
+"437",16,"Makueni",2017,9,52,"Alert","9.6","10.3",2
+"438",16,"Makueni",2017,10,53,"Alert","10","11.75",2
+"439",16,"Makueni",2017,11,54,"Alert","7.4","12.05",2
+"440",16,"Makueni",2017,12,55,"Normal","8.1","11.9",1
+"441",17,"Mwingi",2013,6,1,"noreport","noreport","noreport",NA
+"442",17,"Mwingi",2013,7,2,"noreport","noreport","noreport",NA
+"443",17,"Mwingi",2013,8,3,NA,NA,NA,NA
+"444",17,"Mwingi",2013,9,4,"noreport","noreport","noreport",NA
+"445",17,"Mwingi",2013,10,5,"noreport","noreport","noreport",NA
+"446",17,"Mwingi",2013,11,6,"noreport","noreport","noreport",NA
+"447",17,"Mwingi",2013,12,7,"noreport","noreport","noreport",NA
+"448",17,"Mwingi",2014,1,8,"noreport","noreport","noreport",NA
+"449",17,"Mwingi",2014,2,9,"Alert",NA,NA,2
+"450",17,"Mwingi",2014,3,10,"Normal",NA,NA,1
+"451",17,"Mwingi",2014,4,11,"Normal",NA,NA,1
+"452",17,"Mwingi",2014,5,12,"Alert",NA,NA,2
+"453",17,"Mwingi",2014,6,13,"Alert",NA,NA,2
+"454",17,"Mwingi",2014,7,14,"noreport","noreport","noreport",NA
+"455",17,"Mwingi",2014,8,15,"noreport","noreport","noreport",NA
+"456",17,"Mwingi",2014,9,16,"Alert",NA,NA,2
+"457",17,"Mwingi",2014,10,17,"noreport","noreport","noreport",NA
+"458",17,"Mwingi",2014,11,18,"noreport","noreport","noreport",NA
+"459",17,"Mwingi",2014,12,19,"noreport","noreport","noreport",NA
+"460",17,"Mwingi",2015,1,20,"noreport","noreport","noreport",NA
+"461",17,"Mwingi",2015,2,21,"noreport","noreport","noreport",NA
+"462",17,"Mwingi",2015,3,22,"noreport","noreport","noreport",NA
+"463",17,"Mwingi",2015,4,23,"noreport","noreport","noreport",NA
+"464",17,"Mwingi",2015,5,24,"noreport","noreport","noreport",NA
+"465",17,"Mwingi",2015,6,25,"noreport","noreport","noreport",NA
+"466",17,"Mwingi",2015,7,26,"noreport","noreport","noreport",NA
+"467",17,"Mwingi",2015,8,27,"noreport","noreport","noreport",NA
+"468",17,"Mwingi",2015,9,28,"noreport","noreport","noreport",NA
+"469",17,"Mwingi",2015,10,29,"noreport","noreport","noreport",NA
+"470",17,"Mwingi",2015,11,30,"noreport","noreport","noreport",NA
+"471",17,"Mwingi",2015,12,31,"noreport","noreport","noreport",NA
+"472",17,"Mwingi",2016,1,32,"noreport","noreport","noreport",NA
+"473",17,"Mwingi",2016,2,33,"noreport","noreport","noreport",NA
+"474",17,"Mwingi",2016,3,34,"noreport","noreport","noreport",NA
+"475",17,"Mwingi",2016,4,35,"noreport","noreport","noreport",NA
+"476",17,"Mwingi",2016,5,36,"noreport","noreport","noreport",NA
+"477",17,"Mwingi",2016,6,37,"noreport","noreport","noreport",NA
+"478",17,"Mwingi",2016,7,38,"noreport","noreport","noreport",NA
+"479",17,"Mwingi",2016,8,39,"noreport","noreport","noreport",NA
+"480",17,"Mwingi",2016,9,40,"noreport","noreport","noreport",NA
+"481",17,"Mwingi",2016,10,41,"noreport","noreport","noreport",NA
+"482",17,"Mwingi",2016,11,42,"noreport","noreport","noreport",NA
+"483",17,"Mwingi",2016,12,43,"noreport","noreport","noreport",NA
+"484",17,"Mwingi",2017,1,44,"noreport","noreport","noreport",NA
+"485",17,"Mwingi",2017,2,45,"noreport","noreport","noreport",NA
+"486",17,"Mwingi",2017,3,46,"noreport","noreport","noreport",NA
+"487",17,"Mwingi",2017,4,47,"noreport","noreport","noreport",NA
+"488",17,"Mwingi",2017,5,48,"noreport","noreport","noreport",NA
+"489",17,"Mwingi",2017,6,49,"noreport","noreport","noreport",NA
+"490",17,"Mwingi",2017,7,50,"noreport","noreport","noreport",NA
+"491",17,"Mwingi",2017,8,51,"noreport","noreport","noreport",NA
+"492",17,"Mwingi",2017,9,52,"noreport","noreport","noreport",NA
+"493",17,"Mwingi",2017,10,53,"noreport","noreport","noreport",NA
+"494",17,"Mwingi",2017,11,54,"noreport","noreport","noreport",NA
+"495",17,"Mwingi",2017,12,55,"noreport","noreport","noreport",NA
+"496",19,"Garissa",2013,6,1,"noreport","noreport","noreport",NA
+"497",19,"Garissa",2013,7,2,"Alert",NA,NA,2
+"498",19,"Garissa",2013,8,3,"Alert",NA,NA,2
+"499",19,"Garissa",2013,9,4,"Alert",NA,NA,2
+"500",19,"Garissa",2013,10,5,"noreport","noreport","noreport",NA
+"501",19,"Garissa",2013,11,6,"noreport","noreport","noreport",NA
+"502",19,"Garissa",2013,12,7,"noreport","noreport","noreport",NA
+"503",19,"Garissa",2014,1,8,"noreport","noreport","noreport",NA
+"504",19,"Garissa",2014,2,9,"Alarm",NA,NA,3
+"505",19,"Garissa",2014,3,10,"noreport","noreport","noreport",NA
+"506",19,"Garissa",2014,4,11,"Alert",NA,NA,2
+"507",19,"Garissa",2014,5,12,"Alert",NA,NA,2
+"508",19,"Garissa",2014,6,13,"Alert",NA,NA,2
+"509",19,"Garissa",2014,7,14,"Alarm",NA,NA,3
+"510",19,"Garissa",2014,8,15,"Alarm",NA,NA,3
+"511",19,"Garissa",2014,9,16,"Alarm",NA,NA,3
+"512",19,"Garissa",2014,10,17,"Alarm",NA,NA,3
+"513",19,"Garissa",2014,11,18,"Alarm","18.6",NA,3
+"514",19,"Garissa",2014,12,19,"Alarm","15.44",NA,3
+"515",19,"Garissa",2015,1,20,"Alarm","16.4",NA,3
+"516",19,"Garissa",2015,2,21,"Alarm","20.39",NA,3
+"517",19,"Garissa",2015,3,22,"Alarm","21.68",NA,3
+"518",19,"Garissa",2015,4,23,"Alert","15.61",NA,2
+"519",19,"Garissa",2015,5,24,"Normal","14.47",NA,1
+"520",19,"Garissa",2015,6,25,"Normal","13.74",NA,1
+"521",19,"Garissa",2015,7,26,"Normal","12.56",NA,1
+"522",19,"Garissa",2015,8,27,"Normal","12.3",NA,1
+"523",19,"Garissa",2015,9,28,"Normal","13.9",NA,1
+"524",19,"Garissa",2015,10,29,"Alert","15.89",NA,2
+"525",19,"Garissa",2015,11,30,"Alert","15.3",NA,2
+"526",19,"Garissa",2015,12,31,"Normal","10.9",NA,1
+"527",19,"Garissa",2016,1,32,"Normal","9.2",NA,1
+"528",19,"Garissa",2016,2,33,"Normal","11.4",NA,1
+"529",19,"Garissa",2016,3,34,"Alert","12.7",NA,2
+"530",19,"Garissa",2016,4,35,"Alert","13.8",NA,2
+"531",19,"Garissa",2016,5,36,"Alert","18.4",NA,2
+"532",19,"Garissa",2016,6,37,"Alert","18.9",NA,2
+"533",19,"Garissa",2016,7,38,"Alert","19.4",NA,2
+"534",19,"Garissa",2016,8,39,"Alert","18.2",NA,2
+"535",19,"Garissa",2016,9,40,"Alert","19.6",NA,2
+"536",19,"Garissa",2016,10,41,"Alarm","26.8",NA,3
+"537",19,"Garissa",2016,11,42,"Alarm","21.03",NA,3
+"538",19,"Garissa",2016,12,43,"Alarm","14.2",NA,3
+"539",19,"Garissa",2017,1,44,"Alarm","21.7",NA,3
+"540",19,"Garissa",2017,2,45,"Alarm","25.7",NA,3
+"541",19,"Garissa",2017,3,46,"Alarm","37",NA,3
+"542",19,"Garissa",2017,4,47,"Alarm","30.5",NA,3
+"543",19,"Garissa",2017,5,48,"Alarm","34.5",NA,3
+"544",19,"Garissa",2017,6,49,"Alarm","20.71",NA,3
+"545",19,"Garissa",2017,7,50,"noreport","noreport","noreport",NA
+"546",19,"Garissa",2017,8,51,"Alarm","23.5",NA,3
+"547",19,"Garissa",2017,9,52,"Alarm","19.9","18",3
+"548",19,"Garissa",2017,10,53,"Alarm","20",NA,3
+"549",19,"Garissa",2017,11,54,"Alarm","16.3",NA,3
+"550",19,"Garissa",2017,12,55,"Alarm","13.8",NA,3
+"551",20,"Ijara",2013,6,1,"noreport","noreport","noreport",NA
+"552",20,"Ijara",2013,7,2,"Alert",NA,NA,2
+"553",20,"Ijara",2013,8,3,"Alert",NA,NA,2
+"554",20,"Ijara",2013,9,4,"Alarm",NA,NA,3
+"555",20,"Ijara",2013,10,5,"noreport","noreport","noreport",NA
+"556",20,"Ijara",2013,11,6,"noreport","noreport","noreport",NA
+"557",20,"Ijara",2013,12,7,"noreport","noreport","noreport",NA
+"558",20,"Ijara",2014,1,8,"noreport","noreport","noreport",NA
+"559",20,"Ijara",2014,2,9,"Alarm",NA,NA,3
+"560",20,"Ijara",2014,3,10,"Alert",NA,NA,2
+"561",20,"Ijara",2014,4,11,"Alert",NA,NA,2
+"562",20,"Ijara",2014,5,12,"Alert",NA,NA,2
+"563",20,"Ijara",2014,6,13,"Alert",NA,NA,2
+"564",20,"Ijara",2014,7,14,"Alert",NA,NA,2
+"565",20,"Ijara",2014,8,15,"Alert",NA,NA,2
+"566",20,"Ijara",2014,9,16,"Alert",NA,NA,2
+"567",20,"Ijara",2014,10,17,"Alert",NA,NA,2
+"568",20,"Ijara",2014,11,18,"Normal","10.35","1.07",1
+"569",20,"Ijara",2014,12,19,"Normal","10.18","1.02",1
+"570",20,"Ijara",2015,1,20,"Alert","10.39","1.14",2
+"571",20,"Ijara",2015,2,21,"Alert",NA,NA,2
+"572",20,"Ijara",2015,3,22,"Alert","15.6","1.24",2
+"573",20,"Ijara",2015,4,23,"Normal","14.7","1.19",1
+"574",20,"Ijara",2015,5,24,"Normal","12.8","1.18",1
+"575",20,"Ijara",2015,6,25,"Normal","11.2","1.2",1
+"576",20,"Ijara",2015,7,26,"Normal","9.7","1.2",1
+"577",20,"Ijara",2015,8,27,"Normal","8.8","1.3",1
+"578",20,"Ijara",2015,9,28,"Alert","9.7","1.3",2
+"579",20,"Ijara",2015,10,29,"Alert","10","1.3",2
+"580",20,"Ijara",2015,11,30,"noreport","noreport","noreport",NA
+"581",20,"Ijara",2015,12,31,"Normal","7.6","1.2",1
+"582",20,"Ijara",2016,1,32,"Alert",NA,NA,2
+"583",20,"Ijara",2016,2,33,"Alert","10","1.2",2
+"584",20,"Ijara",2016,3,34,"Normal","9.41","1.2",1
+"585",20,"Ijara",2016,4,35,"Normal","9.41","1.2",1
+"586",20,"Ijara",2016,5,36,"noreport","noreport","noreport",NA
+"587",20,"Ijara",2016,6,37,"noreport","noreport","noreport",NA
+"588",20,"Ijara",2016,7,38,"noreport","noreport","noreport",NA
+"589",20,"Ijara",2016,8,39,"noreport","noreport","noreport",NA
+"590",20,"Ijara",2016,9,40,"noreport","noreport","noreport",NA
+"591",20,"Ijara",2016,10,41,"noreport","noreport","noreport",NA
+"592",20,"Ijara",2016,11,42,"noreport","noreport","noreport",NA
+"593",20,"Ijara",2016,12,43,"noreport","noreport","noreport",NA
+"594",20,"Ijara",2017,1,44,"noreport","noreport","noreport",NA
+"595",20,"Ijara",2017,2,45,"noreport","noreport","noreport",NA
+"596",20,"Ijara",2017,3,46,"noreport","noreport","noreport",NA
+"597",20,"Ijara",2017,4,47,"noreport","noreport","noreport",NA
+"598",20,"Ijara",2017,5,48,"noreport","noreport","noreport",NA
+"599",20,"Ijara",2017,6,49,"noreport","noreport","noreport",NA
+"600",20,"Ijara",2017,7,50,"noreport","noreport","noreport",NA
+"601",20,"Ijara",2017,8,51,"noreport","noreport","noreport",NA
+"602",20,"Ijara",2017,9,52,"noreport","noreport","noreport",NA
+"603",20,"Ijara",2017,10,53,"noreport","noreport","noreport",NA
+"604",20,"Ijara",2017,11,54,"noreport","noreport","noreport",NA
+"605",20,"Ijara",2017,12,55,"noreport","noreport","noreport",NA
+"606",21,"Mandera",2013,6,1,"noreport","noreport","noreport",NA
+"607",21,"Mandera",2013,7,2,"Alert",NA,NA,2
+"608",21,"Mandera",2013,8,3,"Alert",NA,NA,2
+"609",21,"Mandera",2013,9,4,"Alert",NA,NA,2
+"610",21,"Mandera",2013,10,5,"noreport","noreport","noreport",NA
+"611",21,"Mandera",2013,11,6,"noreport","noreport","noreport",NA
+"612",21,"Mandera",2013,12,7,"noreport","noreport","noreport",NA
+"613",21,"Mandera",2014,1,8,"noreport","noreport","noreport",NA
+"614",21,"Mandera",2014,2,9,"Alert",NA,NA,2
+"615",21,"Mandera",2014,3,10,"Alert",NA,NA,2
+"616",21,"Mandera",2014,4,11,"Alert",NA,NA,2
+"617",21,"Mandera",2014,5,12,"Alarm",NA,NA,3
+"618",21,"Mandera",2014,6,13,"Alarm",NA,NA,3
+"619",21,"Mandera",2014,7,14,"Alarm",NA,NA,3
+"620",21,"Mandera",2014,8,15,"Alarm",NA,NA,3
+"621",21,"Mandera",2014,9,16,"Alarm",NA,NA,3
+"622",21,"Mandera",2014,10,17,"Alarm",NA,NA,3
+"623",21,"Mandera",2014,11,18,"Normal","19.6",NA,1
+"624",21,"Mandera",2014,12,19,"Normal","17.3",NA,1
+"625",21,"Mandera",2015,1,20,"Alert","18.3","1.03",2
+"626",21,"Mandera",2015,2,21,"Alert","20.7","1.18",2
+"627",21,"Mandera",2015,3,22,"Alarm","22.18","1.18",3
+"628",21,"Mandera",2015,4,23,"Alert","22.4",NA,2
+"629",21,"Mandera",2015,5,24,"Normal","18.6",NA,1
+"630",21,"Mandera",2015,6,25,"Normal","20.5",NA,1
+"631",21,"Mandera",2015,7,26,"Normal","21.1",NA,1
+"632",21,"Mandera",2015,8,27,"Alert","23",NA,2
+"633",21,"Mandera",2015,9,28,"Alarm","23.5",NA,3
+"634",21,"Mandera",2015,10,29,"Alarm","20.5",NA,3
+"635",21,"Mandera",2015,11,30,"Normal","17",NA,1
+"636",21,"Mandera",2015,12,31,"Normal","16",NA,1
+"637",21,"Mandera",2016,1,32,"Normal","15.1",NA,1
+"638",21,"Mandera",2016,2,33,"Alert","16.5",NA,2
+"639",21,"Mandera",2016,3,34,"Alert","17",NA,2
+"640",21,"Mandera",2016,4,35,"Normal","19.4",NA,1
+"641",21,"Mandera",2016,5,36,"Normal","21.6","1.2",1
+"642",21,"Mandera",2016,6,37,"Normal","20.7",NA,1
+"643",21,"Mandera",2016,7,38,"Normal","21.3",NA,1
+"644",21,"Mandera",2016,8,39,"Normal","24.9",NA,1
+"645",21,"Mandera",2016,9,40,"Alert","23.94",NA,2
+"646",21,"Mandera",2016,10,41,"Alarm","24.3",NA,3
+"647",21,"Mandera",2016,11,42,"Alarm","25.9",NA,3
+"648",21,"Mandera",2016,12,43,"Alarm","26.3",NA,3
+"649",21,"Mandera",2017,1,44,"noreport","noreport","noreport",NA
+"650",21,"Mandera",2017,2,45,"noreport","noreport","noreport",NA
+"651",21,"Mandera",2017,3,46,"Alarm","28.1",NA,3
+"652",21,"Mandera",2017,4,47,"Alarm","28.3",NA,3
+"653",21,"Mandera",2017,5,48,"Alert","26.3",NA,2
+"654",21,"Mandera",2017,6,49,"Alert","23.1",NA,2
+"655",21,"Mandera",2017,7,50,"Alert","25.1",NA,2
+"656",21,"Mandera",2017,8,51,"Alert","27.1",NA,2
+"657",21,"Mandera",2017,9,52,"Alert","31.3",NA,2
+"658",21,"Mandera",2017,10,53,"Alert","32.4",NA,2
+"659",21,"Mandera",2017,11,54,"Alert","29.5",NA,2
+"660",21,"Mandera",2017,12,55,"Alert","27.4",NA,2
+"661",22,"Wajir",2013,6,1,"noreport","noreport","noreport",NA
+"662",22,"Wajir",2013,7,2,"Alert",NA,NA,2
+"663",22,"Wajir",2013,8,3,"noreport","noreport","noreport",NA
+"664",22,"Wajir",2013,9,4,"Alert",NA,NA,2
+"665",22,"Wajir",2013,10,5,"noreport","noreport","noreport",NA
+"666",22,"Wajir",2013,11,6,"noreport","noreport","noreport",NA
+"667",22,"Wajir",2013,12,7,"noreport","noreport","noreport",NA
+"668",22,"Wajir",2014,1,8,"noreport","noreport","noreport",NA
+"669",22,"Wajir",2014,2,9,"Alert",NA,NA,2
+"670",22,"Wajir",2014,3,10,"Alert",NA,NA,2
+"671",22,"Wajir",2014,4,11,"Alert",NA,NA,2
+"672",22,"Wajir",2014,5,12,"Alert",NA,NA,2
+"673",22,"Wajir",2014,6,13,"Alert",NA,NA,2
+"674",22,"Wajir",2014,7,14,"Alert",NA,NA,2
+"675",22,"Wajir",2014,8,15,"Alarm",NA,NA,3
+"676",22,"Wajir",2014,9,16,"Alarm",NA,NA,3
+"677",22,"Wajir",2014,10,17,"noreport","noreport","noreport",NA
+"678",22,"Wajir",2014,11,18,"Alarm","17","4",3
+"679",22,"Wajir",2014,12,19,"Alarm","18.2","1.16",3
+"680",22,"Wajir",2015,1,20,"Alarm","21.7","3",3
+"681",22,"Wajir",2015,2,21,"Alarm","24.1","3",3
+"682",22,"Wajir",2015,3,22,"Alarm","26.2","3.6",3
+"683",22,"Wajir",2015,4,23,"Alert","24.3","3.6",2
+"684",22,"Wajir",2015,5,24,"Normal","21.4","3.6",1
+"685",22,"Wajir",2015,6,25,"Normal","17.4","3.6",1
+"686",22,"Wajir",2015,7,26,"Normal","17.2","3.6",1
+"687",22,"Wajir",2015,8,27,"Alert","17.5","3.6",2
+"688",22,"Wajir",2015,9,28,"Alert","17.7",NA,2
+"689",22,"Wajir",2015,10,29,"Alert","17.03",NA,2
+"690",22,"Wajir",2015,11,30,"Alert","15.14",NA,2
+"691",22,"Wajir",2015,12,31,"Alert","15","3.6",2
+"692",22,"Wajir",2016,1,32,"Alert","15.8","0.93",2
+"693",22,"Wajir",2016,2,33,"Alert","16.19","1.04",2
+"694",22,"Wajir",2016,3,34,"Alert","16.25","1.06",2
+"695",22,"Wajir",2016,4,35,"Alert","16.21","1",2
+"696",22,"Wajir",2016,5,36,"Alert","16","1.08",2
+"697",22,"Wajir",2016,6,37,"Normal","15.94","1.03",1
+"698",22,"Wajir",2016,7,38,"Alert","16","1.01",2
+"699",22,"Wajir",2016,8,39,"Alert","16.26","1.16",2
+"700",22,"Wajir",2016,9,40,"noreport","noreport","noreport",NA
+"701",22,"Wajir",2016,10,41,"Alert","17.26","1.32",2
+"702",22,"Wajir",2016,11,42,"Alert","17","1.41",2
+"703",22,"Wajir",2016,12,43,"Alert","16.85","1.27",2
+"704",22,"Wajir",2017,1,44,"Alarm","17.5","12.2",3
+"705",22,"Wajir",2017,2,45,"noreport","noreport","noreport",NA
+"706",22,"Wajir",2017,3,46,"Alarm","20.12","11.24",3
+"707",22,"Wajir",2017,4,47,"Alarm","19","12.91",3
+"708",22,"Wajir",2017,5,48,"Alert","18","12.32",2
+"709",22,"Wajir",2017,6,49,"Alert","17.8","14",2
+"710",22,"Wajir",2017,7,50,"Alert","19","15",2
+"711",22,"Wajir",2017,8,51,"Alert","19.6","12",2
+"712",22,"Wajir",2017,9,52,"Alarm","20.2","16.6",3
+"713",22,"Wajir",2017,10,53,"Alarm","21","12.7",3
+"714",22,"Wajir",2017,11,54,"Alert","18","11.7",2
+"715",22,"Wajir",2017,12,55,"Alert","16","6.6",2
+"716",33,"Baringo",2013,6,1,"noreport","noreport","noreport",NA
+"717",33,"Baringo",2013,7,2,"Alert","16",NA,2
+"718",33,"Baringo",2013,8,3,"Alert",NA,NA,2
+"719",33,"Baringo",2013,9,4,"Alert",NA,NA,2
+"720",33,"Baringo",2013,10,5,"noreport","noreport","noreport",NA
+"721",33,"Baringo",2013,11,6,"noreport","noreport","noreport",NA
+"722",33,"Baringo",2013,12,7,"noreport","noreport","noreport",NA
+"723",33,"Baringo",2014,1,8,"noreport","noreport","noreport",NA
+"724",33,"Baringo",2014,2,9,"Alert",NA,NA,2
+"725",33,"Baringo",2014,3,10,"Alert",NA,NA,2
+"726",33,"Baringo",2014,4,11,"Alarm",NA,NA,3
+"727",33,"Baringo",2014,5,12,"Alarm",NA,NA,3
+"728",33,"Baringo",2014,6,13,"Alarm",NA,NA,3
+"729",33,"Baringo",2014,7,14,"Alarm",NA,NA,3
+"730",33,"Baringo",2014,8,15,"Alarm",NA,NA,3
+"731",33,"Baringo",2014,9,16,"Alert",NA,NA,2
+"732",33,"Baringo",2014,10,17,"Alert",NA,NA,2
+"733",33,"Baringo",2014,11,18,"Alert",NA,NA,2
+"734",33,"Baringo",2014,12,19,"Alert","17.1",NA,2
+"735",33,"Baringo",2015,1,20,"noreport","noreport","noreport",NA
+"736",33,"Baringo",2015,2,21,"noreport","noreport","noreport",NA
+"737",33,"Baringo",2015,3,22,"noreport","noreport","noreport",NA
+"738",33,"Baringo",2015,4,23,"Alert","18.7","1.33",2
+"739",33,"Baringo",2015,5,24,"Normal","14.7","1.33",1
+"740",33,"Baringo",2015,6,25,"noreport","noreport","noreport",NA
+"741",33,"Baringo",2015,7,26,"Alert","15.1","1.2",2
+"742",33,"Baringo",2015,8,27,"Normal","14.8","1.2",1
+"743",33,"Baringo",2015,9,28,"Normal","13.6","1.2",1
+"744",33,"Baringo",2015,10,29,"Alert","14.8","1.1",2
+"745",33,"Baringo",2015,11,30,"Normal","13.8","1.2",1
+"746",33,"Baringo",2015,12,31,"Normal","13","1.2",1
+"747",33,"Baringo",2016,1,32,"Normal","12.2","1.2",1
+"748",33,"Baringo",2016,2,33,"Normal","13","1.2",1
+"749",33,"Baringo",2016,3,34,"Normal","13.4","1.2",1
+"750",33,"Baringo",2016,4,35,"Normal","13.3","1.2",1
+"751",33,"Baringo",2016,5,36,"Normal","11.4","1.3",1
+"752",33,"Baringo",2016,6,37,"Normal","11","1.02",1
+"753",33,"Baringo",2016,7,38,"Normal","10.2","0.7",1
+"754",33,"Baringo",2016,8,39,"Normal","10.5","0.7",1
+"755",33,"Baringo",2016,9,40,"Normal","11.5","0.8",1
+"756",33,"Baringo",2016,10,41,"Normal","11.8","0.9",1
+"757",33,"Baringo",2016,11,42,"Normal",NA,NA,1
+"758",33,"Baringo",2016,12,43,"Alert",NA,NA,2
+"759",33,"Baringo",2017,1,44,"Alarm",NA,NA,3
+"760",33,"Baringo",2017,2,45,"Alarm",NA,NA,3
+"761",33,"Baringo",2017,3,46,"Late Alarm",NA,NA,NA
+"762",33,"Baringo",2017,4,47,"Alarm",NA,NA,3
+"763",33,"Baringo",2017,5,48,"Alarm",NA,NA,3
+"764",33,"Baringo",2017,6,49,"Alarm",NA,NA,3
+"765",33,"Baringo",2017,7,50,"Alarm",NA,NA,3
+"766",33,"Baringo",2017,8,51,"Alert",NA,NA,2
+"767",33,"Baringo",2017,9,52,"Normal",NA,NA,1
+"768",33,"Baringo",2017,10,53,"Normal",NA,NA,1
+"769",33,"Baringo",2017,11,54,"Normal",NA,NA,1
+"770",33,"Baringo",2017,12,55,"Normal",NA,NA,1
+"771",36,"Kajiado  ",2013,6,1,"noreport","noreport","noreport",NA
+"772",36,"Kajiado  ",2013,7,2,"Alert",NA,NA,2
+"773",36,"Kajiado  ",2013,8,3,"Alert",NA,NA,2
+"774",36,"Kajiado  ",2013,9,4,"Alert",NA,NA,2
+"775",36,"Kajiado  ",2013,10,5,"noreport","noreport","noreport",NA
+"776",36,"Kajiado  ",2013,11,6,"noreport","noreport","noreport",NA
+"777",36,"Kajiado  ",2013,12,7,"noreport","noreport","noreport",NA
+"778",36,"Kajiado  ",2014,1,8,"noreport","noreport","noreport",NA
+"779",36,"Kajiado  ",2014,2,9,"noreport","noreport","noreport",NA
+"780",36,"Kajiado  ",2014,3,10,"Normal",NA,NA,1
+"781",36,"Kajiado  ",2014,4,11,"Alert",NA,NA,2
+"782",36,"Kajiado  ",2014,5,12,"Alert",NA,NA,2
+"783",36,"Kajiado  ",2014,6,13,"Alert",NA,NA,2
+"784",36,"Kajiado  ",2014,7,14,"Alert","6.5","0.76",2
+"785",36,"Kajiado  ",2014,8,15,"Early Alarm",NA,NA,NA
+"786",36,"Kajiado  ",2014,9,16,"Alarm",NA,NA,3
+"787",36,"Kajiado  ",2014,10,17,"Alert",NA,NA,2
+"788",36,"Kajiado  ",2014,11,18,"Alert",NA,NA,2
+"789",36,"Kajiado  ",2014,12,19,"Normal","7.52",NA,1
+"790",36,"Kajiado  ",2015,1,20,"Alert","7.61",NA,2
+"791",36,"Kajiado  ",2015,2,21,"Alert","9.13",NA,2
+"792",36,"Kajiado  ",2015,3,22,"Alarm","11.33",NA,3
+"793",36,"Kajiado  ",2015,4,23,"Alert","8.24",NA,2
+"794",36,"Kajiado  ",2015,5,24,"Normal","7.44",NA,1
+"795",36,"Kajiado  ",2015,6,25,"Normal","7.39",NA,1
+"796",36,"Kajiado  ",2015,7,26,"Alert","9.77",NA,2
+"797",36,"Kajiado  ",2015,8,27,"Alert","12.6",NA,2
+"798",36,"Kajiado  ",2015,9,28,"Alert","13.22",NA,2
+"799",36,"Kajiado  ",2015,10,29,"Alert","13.47",NA,2
+"800",36,"Kajiado  ",2015,11,30,"Alert","13.49",NA,2
+"801",36,"Kajiado  ",2015,12,31,"Normal","13.49",NA,1
+"802",36,"Kajiado  ",2016,1,32,"Normal","8.45",NA,1
+"803",36,"Kajiado  ",2016,2,33,"Normal","8.39","1.2",1
+"804",36,"Kajiado  ",2016,3,34,"Normal","8.04","0.94",1
+"805",36,"Kajiado  ",2016,4,35,"Normal","8.1",NA,1
+"806",36,"Kajiado  ",2016,5,36,"Normal","8","0.4",1
+"807",36,"Kajiado  ",2016,6,37,"Normal","6.9","0.6",1
+"808",36,"Kajiado  ",2016,7,38,"Alert","7.8","0.5",2
+"809",36,"Kajiado  ",2016,8,39,"Alert","8.4","1.1",2
+"810",36,"Kajiado  ",2016,9,40,"Alert","10.7",NA,2
+"811",36,"Kajiado  ",2016,10,41,"Alert","11.3",NA,2
+"812",36,"Kajiado  ",2016,11,42,"Alert","12.7",NA,2
+"813",36,"Kajiado  ",2016,12,43,"Alert","12.3",NA,2
+"814",36,"Kajiado  ",2017,1,44,"Alert","13.7",NA,2
+"815",36,"Kajiado  ",2017,2,45,"Alert","13.9",NA,2
+"816",36,"Kajiado  ",2017,3,46,"Alert","15.1",NA,2
+"817",36,"Kajiado  ",2017,4,47,"Alert","15.4",NA,2
+"818",36,"Kajiado  ",2017,5,48,"Alert","14.8",NA,2
+"819",36,"Kajiado  ",2017,6,49,"Alert","15.2",NA,2
+"820",36,"Kajiado  ",2017,7,50,"Alert","14.1",NA,2
+"821",36,"Kajiado  ",2017,8,51,"Alarm","15.7",NA,3
+"822",36,"Kajiado  ",2017,9,52,"Alarm","16.3","7.9",3
+"823",36,"Kajiado  ",2017,10,53,"Alarm","17.6","9.1",3
+"824",36,"Kajiado  ",2017,11,54,"Alarm","18.01","11.2",3
+"825",36,"Kajiado  ",2017,12,55,"Alarm","17.8",NA,3
+"826",40,"Laikipia",2013,6,1,"noreport","noreport","noreport",NA
+"827",40,"Laikipia",2013,7,2,"Normal",NA,NA,1
+"828",40,"Laikipia",2013,8,3,"Normal",NA,NA,1
+"829",40,"Laikipia",2013,9,4,"Normal",NA,NA,1
+"830",40,"Laikipia",2013,10,5,"noreport","noreport","noreport",NA
+"831",40,"Laikipia",2013,11,6,"noreport","noreport","noreport",NA
+"832",40,"Laikipia",2013,12,7,"noreport","noreport","noreport",NA
+"833",40,"Laikipia",2014,1,8,"noreport","noreport","noreport",NA
+"834",40,"Laikipia",2014,2,9,"Alert",NA,NA,2
+"835",40,"Laikipia",2014,3,10,"Early Alert",NA,NA,NA
+"836",40,"Laikipia",2014,4,11,"Early Alert",NA,NA,NA
+"837",40,"Laikipia",2014,5,12,"noreport","noreport","noreport",NA
+"838",40,"Laikipia",2014,6,13,"Late Alert",NA,NA,NA
+"839",40,"Laikipia",2014,7,14,"Late Alert",NA,NA,NA
+"840",40,"Laikipia",2014,8,15,"Alert",NA,NA,2
+"841",40,"Laikipia",2014,9,16,"Late Alert",NA,NA,NA
+"842",40,"Laikipia",2014,10,17,"Alert",NA,NA,2
+"843",40,"Laikipia",2014,11,18,"Normal","2.8",NA,1
+"844",40,"Laikipia",2014,12,19,"Normal","2.7","1.18",1
+"845",40,"Laikipia",2015,1,20,"Late Alert","3.54","1.18",NA
+"846",40,"Laikipia",2015,2,21,"Early Alarm","4","1.26",NA
+"847",40,"Laikipia",2015,3,22,"Late Alarm","4.32","1.36",NA
+"848",40,"Laikipia",2015,4,23,"Early Alarm","3.6","1.3",NA
+"849",40,"Laikipia",2015,5,24,"Alert","3.9","1.18",2
+"850",40,"Laikipia",2015,6,25,"Alert","2.7","1.12",2
+"851",40,"Laikipia",2015,7,26,"Alert","1.5","1.18",2
+"852",40,"Laikipia",2015,8,27,"Alert","2.4","1.18",2
+"853",40,"Laikipia",2015,9,28,"Early Alarm","4","1.14",NA
+"854",40,"Laikipia",2015,10,29,"Alarm","1.9","1.1",3
+"855",40,"Laikipia",2015,11,30,"Alert","2.8","1.1",2
+"856",40,"Laikipia",2015,12,31,"Normal","2.6","1.12",1
+"857",40,"Laikipia",2016,1,32,"Normal","3.2","1.12",1
+"858",40,"Laikipia",2016,2,33,"Normal","3.2","1.18",1
+"859",40,"Laikipia",2016,3,34,"Normal","3.6","1.18",1
+"860",40,"Laikipia",2016,4,35,"noreport","noreport","noreport",NA
+"861",40,"Laikipia",2016,5,36,"Normal","2.4","1.18",1
+"862",40,"Laikipia",2016,6,37,"Normal","2.2","1.14",1
+"863",40,"Laikipia",2016,7,38,"Normal","3.3","1.14",1
+"864",40,"Laikipia",2016,8,39,"Normal","3.5","0.88",1
+"865",40,"Laikipia",2016,9,40,"Normal","3.5","0.77",1
+"866",40,"Laikipia",2016,10,41,"Alert","3.5","0.77",2
+"867",40,"Laikipia",2016,11,42,"Alert","3.1","0.7",2
+"868",40,"Laikipia",2016,12,43,"Alert","2.7","0.77",2
+"869",40,"Laikipia",2017,1,44,"Alert","3.5","0.9",2
+"870",40,"Laikipia",2017,2,45,"Alarm","5.5","0.9",3
+"871",40,"Laikipia",2017,3,46,"Alarm","6.3","0.9",3
+"872",40,"Laikipia",2017,4,47,"Alarm","7","0.9",3
+"873",40,"Laikipia",2017,5,48,"Recovery","6.8","0.9",NA
+"874",40,"Laikipia",2017,6,49,"Alert","6.7","0.9",2
+"875",40,"Laikipia",2017,7,50,"Alert","5.2","0.9",2
+"876",40,"Laikipia",2017,8,51,"Alert","5.3","0.9",2
+"877",40,"Laikipia",2017,9,52,"Alert","6",NA,2
+"878",40,"Laikipia",2017,10,53,"Alert","2.7",NA,2
+"879",40,"Laikipia",2017,11,54,"Normal","2.7",NA,1
+"880",40,"Laikipia",2017,12,55,"Normal","2.7",NA,1
+"881",43,"Narok",2013,6,1,"noreport","noreport","noreport",NA
+"882",43,"Narok",2013,7,2,"Normal",NA,NA,1
+"883",43,"Narok",2013,8,3,"Normal",NA,NA,1
+"884",43,"Narok",2013,9,4,"Normal",NA,NA,1
+"885",43,"Narok",2013,10,5,"noreport","noreport","noreport",NA
+"886",43,"Narok",2013,11,6,"noreport","noreport","noreport",NA
+"887",43,"Narok",2013,12,7,"noreport","noreport","noreport",NA
+"888",43,"Narok",2014,1,8,"noreport","noreport","noreport",NA
+"889",43,"Narok",2014,2,9,"Alert",NA,NA,2
+"890",43,"Narok",2014,3,10,"Normal",NA,NA,1
+"891",43,"Narok",2014,4,11,"Normal",NA,NA,1
+"892",43,"Narok",2014,5,12,"Normal",NA,NA,1
+"893",43,"Narok",2014,6,13,"noreport","noreport","noreport",NA
+"894",43,"Narok",2014,7,14,"noreport","noreport","noreport",NA
+"895",43,"Narok",2014,8,15,"Normal",NA,NA,1
+"896",43,"Narok",2014,9,16,"Alert",NA,NA,2
+"897",43,"Narok",2014,10,17,"Alert",NA,NA,2
+"898",43,"Narok",2014,11,18,"Alert",NA,NA,2
+"899",43,"Narok",2014,12,19,"Alert",NA,NA,2
+"900",43,"Narok",2015,1,20,"Alert",NA,NA,2
+"901",43,"Narok",2015,2,21,"noreport","noreport","noreport",NA
+"902",43,"Narok",2015,3,22,"Alert",NA,NA,2
+"903",43,"Narok",2015,4,23,"Recovery","10.6","1.4",NA
+"904",43,"Narok",2015,5,24,"Recovery","8.5","1.9",NA
+"905",43,"Narok",2015,6,25,"Normal","8.5","1.77",1
+"906",43,"Narok",2015,7,26,"Normal","8.7","1.23",1
+"907",43,"Narok",2015,8,27,"Normal","8.5","1.1",1
+"908",43,"Narok",2015,9,28,"Normal","6.09","1.4",1
+"909",43,"Narok",2015,10,29,"Normal","5.95","1.3",1
+"910",43,"Narok",2015,11,30,"Normal","5.33","1.3",1
+"911",43,"Narok",2015,12,31,"Normal","5.3","1.4",1
+"912",43,"Narok",2016,1,32,"Normal","6.37","1.57",1
+"913",43,"Narok",2016,2,33,"Normal","7.9","1.1",1
+"914",43,"Narok",2016,3,34,"Normal","9.35","1.1",1
+"915",43,"Narok",2016,4,35,"Normal","6.57","1.1",1
+"916",43,"Narok",2016,5,36,"Normal","5.77","1.2",1
+"917",43,"Narok",2016,6,37,"Normal","6.1","1.22",1
+"918",43,"Narok",2016,7,38,"Normal","4.9","0.9",1
+"919",43,"Narok",2016,8,39,"Normal","8.65","1.2",1
+"920",43,"Narok",2016,9,40,"Alert","9.75","1.4",2
+"921",43,"Narok",2016,10,41,"Alert","9.85","1.5",2
+"922",43,"Narok",2016,11,42,"Alert","9.46","1.8",2
+"923",43,"Narok",2016,12,43,"Alert","7.57","1.8",2
+"924",43,"Narok",2017,1,44,"Alert","7.7","1.9",2
+"925",43,"Narok",2017,2,45,"Alarm","10.5","2.1",3
+"926",43,"Narok",2017,3,46,"Alarm","13.85","1.8",3
+"927",43,"Narok",2017,4,47,"Alert","18","1.8",2
+"928",43,"Narok",2017,5,48,"Alert","14","1.8",2
+"929",43,"Narok",2017,6,49,"Alert","14.45",NA,2
+"930",43,"Narok",2017,7,50,"Alert","14.5",NA,2
+"931",43,"Narok",2017,8,51,"Alert","10.78",NA,2
+"932",43,"Narok",2017,9,52,"Alert","12.53",NA,2
+"933",43,"Narok",2017,10,53,"Normal","10.94",NA,1
+"934",43,"Narok",2017,11,54,"Normal","7.14",NA,1
+"935",43,"Narok",2017,12,55,"Normal","8.02",NA,1
+"936",44,"Samburu",2013,6,1,"noreport","noreport","noreport",NA
+"937",44,"Samburu",2013,7,2,"Alert",NA,NA,2
+"938",44,"Samburu",2013,8,3,"Alert",NA,NA,2
+"939",44,"Samburu",2013,9,4,"Alert",NA,NA,2
+"940",44,"Samburu",2013,10,5,"noreport","noreport","noreport",NA
+"941",44,"Samburu",2013,11,6,"noreport","noreport","noreport",NA
+"942",44,"Samburu",2013,12,7,"noreport","noreport","noreport",NA
+"943",44,"Samburu",2014,1,8,"noreport","noreport","noreport",NA
+"944",44,"Samburu",2014,2,9,"Late Alert",NA,NA,NA
+"945",44,"Samburu",2014,3,10,"Late Alert",NA,NA,NA
+"946",44,"Samburu",2014,4,11,"Late Alert",NA,NA,NA
+"947",44,"Samburu",2014,5,12,"noreport","noreport","noreport",NA
+"948",44,"Samburu",2014,6,13,"Late Alert",NA,NA,NA
+"949",44,"Samburu",2014,7,14,"Early Alarm",NA,NA,NA
+"950",44,"Samburu",2014,8,15,"Early Alarm",NA,NA,NA
+"951",44,"Samburu",2014,9,16,"Early Alarm",NA,NA,NA
+"952",44,"Samburu",2014,10,17,"Alert","15.96",NA,2
+"953",44,"Samburu",2014,11,18,"Recovery","14.23",NA,NA
+"954",44,"Samburu",2014,12,19,"Normal","16.48",NA,1
+"955",44,"Samburu",2015,1,20,"Late Alert","18.6",NA,NA
+"956",44,"Samburu",2015,2,21,"Late Alert","20.08",NA,NA
+"957",44,"Samburu",2015,3,22,"Early Alarm","19.7",NA,NA
+"958",44,"Samburu",2015,4,23,"Recovery","18.8",NA,NA
+"959",44,"Samburu",2015,5,24,"Normal","16.7","2.9",1
+"960",44,"Samburu",2015,6,25,"Normal","17.2","2.7",1
+"961",44,"Samburu",2015,7,26,"Normal","17","2.7",1
+"962",44,"Samburu",2015,8,27,"Alert","16.6","2.45",2
+"963",44,"Samburu",2015,9,28,"Alarm","17.5","2.65",3
+"964",44,"Samburu",2015,10,29,"Alarm","18.37","2.5",3
+"965",44,"Samburu",2015,11,30,"Alarm","19.33","2.63",3
+"966",44,"Samburu",2015,12,31,"Normal","16.03","2.8",1
+"967",44,"Samburu",2016,1,32,"Normal","18.7","2.6",1
+"968",44,"Samburu",2016,2,33,"Normal","18.27","2.8",1
+"969",44,"Samburu",2016,3,34,"Normal","17.9","2.7",1
+"970",44,"Samburu",2016,4,35,"Alert","20.2","2.4",2
+"971",44,"Samburu",2016,5,36,"Normal","19.23","2.6",1
+"972",44,"Samburu",2016,6,37,"Normal","16.68","1.3",1
+"973",44,"Samburu",2016,7,38,"Normal","23.36","1.36",1
+"974",44,"Samburu",2016,8,39,"Normal","23.08",NA,1
+"975",44,"Samburu",2016,9,40,"Normal","26.3","1.44",1
+"976",44,"Samburu",2016,10,41,"Alert","25.86",NA,2
+"977",44,"Samburu",2016,11,42,"Alarm","26.4",NA,3
+"978",44,"Samburu",2016,12,43,"Alarm","20.78","19.39",3
+"979",44,"Samburu",2017,1,44,"Alarm","24.88","20.17",3
+"980",44,"Samburu",2017,2,45,"Alarm","25.18","24.3",3
+"981",44,"Samburu",2017,3,46,"Alarm","24.24",NA,3
+"982",44,"Samburu",2017,4,47,"Alarm","32.45",NA,3
+"983",44,"Samburu",2017,5,48,"Alarm","24.74","20.57",3
+"984",44,"Samburu",2017,6,49,"Alert","26.48",NA,2
+"985",44,"Samburu",2017,7,50,"Alert","23.9",NA,2
+"986",44,"Samburu",2017,8,51,"Alert","22.3",NA,2
+"987",44,"Samburu",2017,9,52,"Alert","25.9",NA,2
+"988",44,"Samburu",2017,10,53,"Alert","21.6",NA,2
+"989",44,"Samburu",2017,11,54,"Normal","20.2",NA,1
+"990",44,"Samburu",2017,12,55,"Normal","17.2",NA,1
+"991",47,"Turkana",2013,6,1,"noreport","noreport","noreport",NA
+"992",47,"Turkana",2013,7,2,"Alert",NA,NA,2
+"993",47,"Turkana",2013,8,3,"noreport","noreport","noreport",NA
+"994",47,"Turkana",2013,9,4,"Alert",NA,NA,2
+"995",47,"Turkana",2013,10,5,"noreport","noreport","noreport",NA
+"996",47,"Turkana",2013,11,6,"noreport","noreport","noreport",NA
+"997",47,"Turkana",2013,12,7,"noreport","noreport","noreport",NA
+"998",47,"Turkana",2014,1,8,"noreport","noreport","noreport",NA
+"999",47,"Turkana",2014,2,9,"Alarm",NA,NA,3
+"1000",47,"Turkana",2014,3,10,"Alert",NA,NA,2
+"1001",47,"Turkana",2014,4,11,"Alert",NA,NA,2
+"1002",47,"Turkana",2014,5,12,"Alert",NA,NA,2
+"1003",47,"Turkana",2014,6,13,"Alert",NA,NA,2
+"1004",47,"Turkana",2014,7,14,"Alert",NA,NA,2
+"1005",47,"Turkana",2014,8,15,"Alert",NA,NA,2
+"1006",47,"Turkana",2014,9,16,"Alert",NA,NA,2
+"1007",47,"Turkana",2014,10,17,"Normal","25","2.87",1
+"1008",47,"Turkana",2014,11,18,"Normal","27","2.62",1
+"1009",47,"Turkana",2014,12,19,"Normal","20","3.15",1
+"1010",47,"Turkana",2015,1,20,"Alert","22","2.05",2
+"1011",47,"Turkana",2015,2,21,"Alert","32","2.42",2
+"1012",47,"Turkana",2015,3,22,"Alert","32","2.63",2
+"1013",47,"Turkana",2015,4,23,"Normal","28","1.93",1
+"1014",47,"Turkana",2015,5,24,"Normal","19","3.1",1
+"1015",47,"Turkana",2015,6,25,"Normal","17","2.8",1
+"1016",47,"Turkana",2015,7,26,"Normal","20","3.2",1
+"1017",47,"Turkana",2015,8,27,"Alert","19","2.2",2
+"1018",47,"Turkana",2015,9,28,"Alert","14","2.6",2
+"1019",47,"Turkana",2015,10,29,"Alarm","22","2.8",3
+"1020",47,"Turkana",2015,11,30,"Alert","19","3.3",2
+"1021",47,"Turkana",2015,12,31,"Normal","20","2.9",1
+"1022",47,"Turkana",2016,1,32,"Normal","18","2.7",1
+"1023",47,"Turkana",2016,2,33,"Normal",NA,NA,1
+"1024",47,"Turkana",2016,3,34,"Alert",NA,NA,2
+"1025",47,"Turkana",2016,4,35,"Alert","19","2.95",2
+"1026",47,"Turkana",2016,5,36,"Normal","17","3",1
+"1027",47,"Turkana",2016,6,37,"Normal","16","4.6",1
+"1028",47,"Turkana",2016,7,38,"Normal","18","4.6",1
+"1029",47,"Turkana",2016,8,39,"Normal","23","27.72",1
+"1030",47,"Turkana",2016,9,40,"Normal","18","37.9",1
+"1031",47,"Turkana",2016,10,41,"Alert","19","22.5",2
+"1032",47,"Turkana",2016,11,42,"Alert","19","20.87",2
+"1033",47,"Turkana",2016,12,43,"Alarm","19","21.87",3
+"1034",47,"Turkana",2017,1,44,"Alarm","20","21.49",3
+"1035",47,"Turkana",2017,2,45,"Alarm","21","23.3",3
+"1036",47,"Turkana",2017,3,46,"Alarm","17","19.5",3
+"1037",47,"Turkana",2017,4,47,"Alarm","11","20.6",3
+"1038",47,"Turkana",2017,5,48,"Alarm","14","19",3
+"1039",47,"Turkana",2017,6,49,"Alarm","15","21",3
+"1040",47,"Turkana",2017,7,50,"Alert","19","14",2
+"1041",47,"Turkana",2017,8,51,"Alert","18","14",2
+"1042",47,"Turkana",2017,9,52,"Normal","16","14",1
+"1043",47,"Turkana",2017,10,53,"Normal","13","13",1
+"1044",47,"Turkana",2017,11,54,"Normal","13",NA,1
+"1045",47,"Turkana",2017,12,55,"Normal","15","25",1
+"1046",49,"West Pokot",2013,6,1,"noreport","noreport","noreport",NA
+"1047",49,"West Pokot",2013,7,2,"Normal",NA,NA,1
+"1048",49,"West Pokot",2013,8,3,"Normal",NA,NA,1
+"1049",49,"West Pokot",2013,9,4,"Normal",NA,NA,1
+"1050",49,"West Pokot",2013,10,5,"noreport","noreport","noreport",NA
+"1051",49,"West Pokot",2013,11,6,"noreport","noreport","noreport",NA
+"1052",49,"West Pokot",2013,12,7,"noreport","noreport","noreport",NA
+"1053",49,"West Pokot",2014,1,8,"noreport","noreport","noreport",NA
+"1054",49,"West Pokot",2014,2,9,"Alert",NA,NA,2
+"1055",49,"West Pokot",2014,3,10,"Alert",NA,NA,2
+"1056",49,"West Pokot",2014,4,11,"Alert",NA,NA,2
+"1057",49,"West Pokot",2014,5,12,"Alert",NA,NA,2
+"1058",49,"West Pokot",2014,6,13,"noreport","noreport","noreport",NA
+"1059",49,"West Pokot",2014,7,14,"Alert",NA,NA,2
+"1060",49,"West Pokot",2014,8,15,"Early Alarm",NA,NA,NA
+"1061",49,"West Pokot",2014,9,16,"Alert","8.96","1.95",2
+"1062",49,"West Pokot",2014,10,17,"Normal","12.62","1.98",1
+"1063",49,"West Pokot",2014,11,18,"Normal","12.97","1.89",1
+"1064",49,"West Pokot",2014,12,19,"Normal","9.47","2.02",1
+"1065",49,"West Pokot",2015,1,20,"Early Alert","10.88","1.94",NA
+"1066",49,"West Pokot",2015,2,21,"Normal","11.62","2.1",1
+"1067",49,"West Pokot",2015,3,22,"Alert","11.49","2.5",2
+"1068",49,"West Pokot",2015,4,23,"Normal","9.31","2.06",1
+"1069",49,"West Pokot",2015,5,24,"Normal","8.29","1.65",1
+"1070",49,"West Pokot",2015,6,25,"noreport","noreport","noreport",NA
+"1071",49,"West Pokot",2015,7,26,"Normal","10.2","2.05",1
+"1072",49,"West Pokot",2015,8,27,"Normal","11.46","2.14",1
+"1073",49,"West Pokot",2015,9,28,"Alert","12.01","2.15",2
+"1074",49,"West Pokot",2015,10,29,"Alert","9.35","1.75",2
+"1075",49,"West Pokot",2015,11,30,"Alert","8.87","1.67",2
+"1076",49,"West Pokot",2015,12,31,"Normal","7","2",1
+"1077",49,"West Pokot",2016,1,32,"Normal","7.89","1.93",1
+"1078",49,"West Pokot",2016,2,33,"Alert","9.77","2.1",2
+"1079",49,"West Pokot",2016,3,34,"Alert","10.24","2.13",2
+"1080",49,"West Pokot",2016,4,35,"Normal","9.29","2.03",1
+"1081",49,"West Pokot",2016,5,36,"Normal","7.62","1.9",1
+"1082",49,"West Pokot",2016,6,37,"Normal","8.02","1.56",1
+"1083",49,"West Pokot",2016,7,38,NA,"9.7","1.48",NA
+"1084",49,"West Pokot",2016,8,39,NA,"8.57","1.3",NA
+"1085",49,"West Pokot",2016,9,40,"Normal","8.63","1.34",1
+"1086",49,"West Pokot",2016,10,41,"Normal","9.58","1.38",1
+"1087",49,"West Pokot",2016,11,42,"Alert","9.03","11.91",2
+"1088",49,"West Pokot",2016,12,43,"Alarm","12.2","18.19",3
+"1089",49,"West Pokot",2017,1,44,"noreport","noreport","noreport",NA
+"1090",49,"West Pokot",2017,2,45,"noreport","noreport","noreport",NA
+"1091",49,"West Pokot",2017,3,46,"noreport","noreport","noreport",NA
+"1092",49,"West Pokot",2017,4,47,"Alarm","8.8","14.3",3
+"1093",49,"West Pokot",2017,5,48,"Alert","7.6","14.1",2
+"1094",49,"West Pokot",2017,6,49,"Alert","5.6","13.6",2
+"1095",49,"West Pokot",2017,7,50,"Normal","5.1","10.7",1
+"1096",49,"West Pokot",2017,8,51,"Normal","4.2","10.7",1
+"1097",49,"West Pokot",2017,9,52,"Normal","4","11",1
+"1098",49,"West Pokot",2017,10,53,"Normal","4","8.3",1
+"1099",49,"West Pokot",2017,11,54,"Normal","3.9","7.5",1
+"1100",49,"West Pokot",2017,12,55,"Normal","4.1","8.6",1
+"1101",61,"Marsabit",2013,6,1,"noreport","noreport","noreport",NA
+"1102",61,"Marsabit",2013,7,2,"Alert",NA,NA,2
+"1103",61,"Marsabit",2013,8,3,"Alert",NA,NA,2
+"1104",61,"Marsabit",2013,9,4,"Alert",NA,NA,2
+"1105",61,"Marsabit",2013,10,5,"noreport","noreport","noreport",NA
+"1106",61,"Marsabit",2013,11,6,"noreport","noreport","noreport",NA
+"1107",61,"Marsabit",2013,12,7,"noreport","noreport","noreport",NA
+"1108",61,"Marsabit",2014,1,8,"noreport","noreport","noreport",NA
+"1109",61,"Marsabit",2014,2,9,"Early Alarm",NA,NA,NA
+"1110",61,"Marsabit",2014,3,10,"Late Alert",NA,NA,NA
+"1111",61,"Marsabit",2014,4,11,"Early Alert",NA,NA,NA
+"1112",61,"Marsabit",2014,5,12,"Early Alert",NA,NA,NA
+"1113",61,"Marsabit",2014,6,13,"noreport","noreport","noreport",NA
+"1114",61,"Marsabit",2014,7,14,"Late Alarm",NA,NA,NA
+"1115",61,"Marsabit",2014,8,15,"Late Alarm",NA,NA,NA
+"1116",61,"Marsabit",2014,9,16,"Late Alarm",NA,NA,NA
+"1117",61,"Marsabit",2014,10,17,"Alert",NA,NA,2
+"1118",61,"Marsabit",2014,11,18,"Alert","21.3","1.42",2
+"1119",61,"Marsabit",2014,12,19,"Alert","21","1.46",2
+"1120",61,"Marsabit",2015,1,20,"Alert","22.9","1.64",2
+"1121",61,"Marsabit",2015,2,21,"Alarm","23.4","1.74",3
+"1122",61,"Marsabit",2015,3,22,"Alarm","24.08","1.64",3
+"1123",61,"Marsabit",2015,4,23,"Alert","20.3","1.44",2
+"1124",61,"Marsabit",2015,5,24,"Alert","17.9","1.18",2
+"1125",61,"Marsabit",2015,6,25,"Alert","17.46","1.3",2
+"1126",61,"Marsabit",2015,7,26,"Alert","17.12","1.38",2
+"1127",61,"Marsabit",2015,8,27,"Alert","17.9","1.38",2
+"1128",61,"Marsabit",2015,9,28,"Alarm","19.4","1.6",3
+"1129",61,"Marsabit",2015,10,29,"Alarm","22.3","2.26",3
+"1130",61,"Marsabit",2015,11,30,"Alert","19.7","1.6",2
+"1131",61,"Marsabit",2015,12,31,"Normal","16.2","1.3",1
+"1132",61,"Marsabit",2016,1,32,"Normal","17.3","1.3",1
+"1133",61,"Marsabit",2016,2,33,"noreport","noreport","noreport",NA
+"1134",61,"Marsabit",2016,3,34,"Alert","19.4","1.6",2
+"1135",61,"Marsabit",2016,4,35,"Alert","18.4","1.4",2
+"1136",61,"Marsabit",2016,5,36,"Alert","15.5","1.34",2
+"1137",61,"Marsabit",2016,6,37,"Alert","16.7","1.4",2
+"1138",61,"Marsabit",2016,7,38,"Alert","18.5","1.6",2
+"1139",61,"Marsabit",2016,8,39,"Alert","19.1","1.8",2
+"1140",61,"Marsabit",2016,9,40,"noreport","noreport","noreport",NA
+"1141",61,"Marsabit",2016,10,41,"Alarm","21.1","1.9",3
+"1142",61,"Marsabit",2016,11,42,"Alarm","21.2","1.9",3
+"1143",61,"Marsabit",2016,12,43,"Alarm","19.9","1.8",3
+"1144",61,"Marsabit",2017,1,44,"Alarm","21.9","1.8",3
+"1145",61,"Marsabit",2017,2,45,"Alarm","19","25.1",3
+"1146",61,"Marsabit",2017,3,46,"Alarm","20.1","20.1",3
+"1147",61,"Marsabit",2017,4,47,"Alarm","19","20.1",3
+"1148",61,"Marsabit",2017,5,48,"Alert","18.7","19.8",2
+"1149",61,"Marsabit",2017,6,49,"Alert","17.9","23.1",2
+"1150",61,"Marsabit",2017,7,50,"Alert","16.8","17.9",2
+"1151",61,"Marsabit",2017,8,51,"Alarm","18.1","20.3",3
+"1152",61,"Marsabit",2017,9,52,"Alarm","22.3","21.18",3
+"1153",61,"Marsabit",2017,10,53,"Alarm","19.8","19.75",3
+"1154",61,"Marsabit",2017,11,54,"Alert","18.9","17.79",2
+"1155",61,"Marsabit",2017,12,55,"Normal","19.4","17",1
+"1156",62,"Meru-North",2013,6,1,"noreport","noreport","noreport",NA
+"1157",62,"Meru-North",2013,7,2,"Alert",NA,NA,2
+"1158",62,"Meru-North",2013,8,3,"Alert",NA,NA,2
+"1159",62,"Meru-North",2013,9,4,"Alert",NA,NA,2
+"1160",62,"Meru-North",2013,10,5,"noreport","noreport","noreport",NA
+"1161",62,"Meru-North",2013,11,6,"noreport","noreport","noreport",NA
+"1162",62,"Meru-North",2013,12,7,"noreport","noreport","noreport",NA
+"1163",62,"Meru-North",2014,1,8,"noreport","noreport","noreport",NA
+"1164",62,"Meru-North",2014,2,9,"Alert",NA,NA,2
+"1165",62,"Meru-North",2014,3,10,"Alert",NA,NA,2
+"1166",62,"Meru-North",2014,4,11,"Alert",NA,NA,2
+"1167",62,"Meru-North",2014,5,12,"Alert",NA,NA,2
+"1168",62,"Meru-North",2014,6,13,"Alert",NA,NA,2
+"1169",62,"Meru-North",2014,7,14,"Alarm",NA,NA,3
+"1170",62,"Meru-North",2014,8,15,"Alarm",NA,NA,3
+"1171",62,"Meru-North",2014,9,16,"Alarm",NA,NA,3
+"1172",62,"Meru-North",2014,10,17,"Alert","22",NA,2
+"1173",62,"Meru-North",2014,11,18,"Recovery","21",NA,NA
+"1174",62,"Meru-North",2014,12,19,"Recovery","19",NA,NA
+"1175",62,"Meru-North",2015,1,20,"Alert","16",NA,2
+"1176",62,"Meru-North",2015,2,21,"Alert","20",NA,2
+"1177",62,"Meru-North",2015,3,22,"Alarm","23",NA,3
+"1178",62,"Meru-North",2015,4,23,"Recovery","21",NA,NA
+"1179",62,"Meru-North",2015,5,24,"Normal","16",NA,1
+"1180",62,"Meru-North",2015,6,25,"Normal","16",NA,1
+"1181",62,"Meru-North",2015,7,26,"Alert","14",NA,2
+"1182",62,"Meru-North",2015,8,27,"Alert","20",NA,2
+"1183",62,"Meru-North",2015,9,28,"Alert","20",NA,2
+"1184",62,"Meru-North",2015,10,29,"Alert","24",NA,2
+"1185",62,"Meru-North",2015,11,30,"Normal","20",NA,1
+"1186",62,"Meru-North",2015,12,31,"Normal","17",NA,1
+"1187",62,"Meru-North",2016,1,32,"Normal","14",NA,1
+"1188",62,"Meru-North",2016,2,33,"Normal","15",NA,1
+"1189",62,"Meru-North",2016,3,34,"Normal","14",NA,1
+"1190",62,"Meru-North",2016,4,35,"Normal","14",NA,1
+"1191",62,"Meru-North",2016,5,36,"Normal","11",NA,1
+"1192",62,"Meru-North",2016,6,37,"Normal","14",NA,1
+"1193",62,"Meru-North",2016,7,38,"Normal","11","18.32",1
+"1194",62,"Meru-North",2016,8,39,"Normal","11","22",1
+"1195",62,"Meru-North",2016,9,40,"Alert","24","20",2
+"1196",62,"Meru-North",2016,10,41,"Alert","26","20.8",2
+"1197",62,"Meru-North",2016,11,42,"Normal","26","1.07",1
+"1198",62,"Meru-North",2016,12,43,"Alert","28",NA,2
+"1199",62,"Meru-North",2017,1,44,"Alert","24",NA,2
+"1200",62,"Meru-North",2017,2,45,"noreport","noreport","noreport",NA
+"1201",62,"Meru-North",2017,3,46,"Alert","24",NA,2
+"1202",62,"Meru-North",2017,4,47,"Alert","27",NA,2
+"1203",62,"Meru-North",2017,5,48,"noreport","noreport","noreport",NA
+"1204",62,"Meru-North",2017,6,49,"Alert","27",NA,2
+"1205",62,"Meru-North",2017,7,50,"Alert","23",NA,2
+"1206",62,"Meru-North",2017,8,51,"Alert","39",NA,2
+"1207",62,"Meru-North",2017,9,52,"Alert","39",NA,2
+"1208",62,"Meru-North",2017,10,53,"Alert","25.6","20.97",2
+"1209",62,"Meru-North",2017,11,54,"Normal","24.3","28",1
+"1210",62,"Meru-North",2017,12,55,"Normal","20.6",NA,1
+"1211",63,"Embu",2013,6,1,NA,NA,NA,NA
+"1212",63,"Embu",2013,7,2,"noreport","noreport","noreport",NA
+"1213",63,"Embu-Mbeere",2013,8,3,"Alert/Normal",NA,NA,1.5
+"1214",63,"Embu",2013,9,4,"noreport","noreport","noreport",NA
+"1215",63,"Embu",2013,10,5,NA,NA,NA,NA
+"1216",63,"Embu-Mbeere",2013,11,6,"Alert/Normal",NA,NA,1.5
+"1217",63,"Embu-Mbeere",2013,12,7,"Normal",NA,NA,1
+"1218",63,"Embu-Mbeere",2014,1,8,"Alert",NA,NA,2
+"1219",63,"Embu-Mbeere",2014,2,9,"Alert",NA,NA,2
+"1220",63,"Embu-Mbeere",2014,3,10,"Alert/Normal",NA,NA,1.5
+"1221",63,"Embu-Mbeere",2014,4,11,"Alert/Normal",NA,NA,1.5
+"1222",63,"Embu-Mbeere",2014,5,12,"Alert/Normal",NA,NA,1.5
+"1223",63,"Embu",2014,6,13,"noreport","noreport","noreport",NA
+"1224",63,"Embu-Mbeere",2014,7,14,"Alert/Normal",NA,NA,1.5
+"1225",63,"Embu-Mbeere",2014,8,15,"Alert",NA,NA,2
+"1226",63,"Embu-Mbeere",2014,9,16,"Alert",NA,NA,2
+"1227",63,"Embu",2014,10,17,NA,NA,NA,NA
+"1228",63,"Embu-Mbeere",2014,11,18,"Alert/Normal",NA,NA,1.5
+"1229",63,"Embu",2014,12,19,"noreport","noreport","noreport",NA
+"1230",63,"Embu-Mbeere",2015,1,20,"Alert","5.05","1.15",2
+"1231",63,"Embu-Mbeere",2015,2,21,"Alert","4.2","1.2",2
+"1232",63,"Embu",2015,3,22,"Alert","4.2","1.2",2
+"1233",63,"Embu-Mbeere",2015,4,23,"Alert","4.9","1.2",2
+"1234",63,"Embu-Mbeere",2015,5,24,"Alert","4.5","1.25",2
+"1235",63,"Embu-Mbeere",2015,6,25,"Normal","3.7","1.16",1
+"1236",63,"Embu-Mbeere",2015,7,26,"Normal","3.5","1",1
+"1237",63,"Embu-Mbeere",2015,8,27,"Normal","3","0.95",1
+"1238",63,"Embu-Mbeere",2015,9,28,"Normal","3.4","1.05",1
+"1239",63,"Embu-Mbeere",2015,10,29,"Normal","3.2","1.1",1
+"1240",63,"Embu-Mbeere",2015,11,30,"Normal","4.4","1.15",1
+"1241",63,"Embu-Mbeere",2015,12,31,"Normal","4.1",NA,1
+"1242",63,"Embu-Mbeere",2016,1,32,"Normal","3.35","1.15",1
+"1243",63,"Embu-Mbeere",2016,2,33,"Normal","3.35","1.5",1
+"1244",63,"Embu-Mbeere",2016,3,34,"Normal","3.4","1",1
+"1245",63,"Embu-Mbeere",2016,4,35,"Normal","3.05","1",1
+"1246",63,"Embu-Mbeere",2016,5,36,"Normal","2.9","1.05",1
+"1247",63,"Embu-Mbeere",2016,6,37,"Normal","4.4","1.1",1
+"1248",63,"Embu-Mbeere",2016,7,38,"Normal","5.6","0.5",1
+"1249",63,"Embu-Mbeere",2016,8,39,"Normal","4.5","0.66",1
+"1250",63,"Embu-Mbeere",2016,9,40,"Normal","4.75","0.55",1
+"1251",63,"Embu-Mbeere",2016,10,41,"Normal","5.15","1.98",1
+"1252",63,"Embu-Mbeere",2016,11,42,"Normal","26","1.07",1
+"1253",63,"Embu-Mbeere",2016,12,43,"Alert","7.4","1.2",2
+"1254",63,"Embu-Mbeere",2017,1,44,"Normal","5.75","8.25",1
+"1255",63,"Embu-Mbeere",2017,2,45,"Normal","4.85","8",1
+"1256",63,"Embu-Mbeere",2017,3,46,"Alert","3.9","9.6",2
+"1257",63,"Embu-Mbeere",2017,4,47,"Alert","4.03","9.4",2
+"1258",63,"Embu-Mbeere",2017,5,48,"Alert","6.9","6.51",2
+"1259",63,"Embu-Mbeere",2017,6,49,"Alert","5.6","8.42",2
+"1260",63,"Embu-Mbeere",2017,7,50,"Alert","9.6","6.73",2
+"1261",63,"Embu-Mbeere",2017,8,51,"Alert","11.3","9.58",2
+"1262",63,"Embu-Mbeere",2017,9,52,"Alert","8.7","13.3",2
+"1263",63,"Embu-Mbeere",2017,10,53,"Alert","9","17.8",2
+"1264",63,"Embu-Mbeere",2017,11,54,"Normal","7.8","16.6",1
+"1265",63,"Embu-Mbeere",2017,12,55,"Normal","7.6","16.7",1
+"1266",64,"Kilifi",2013,6,1,"noreport","noreport","noreport",NA
+"1267",64,"Kilifi",2013,7,2,NA,NA,NA,NA
+"1268",64,"Kilifi",2013,8,3,NA,NA,NA,NA
+"1269",64,"Kilifi",2013,9,4,"Normal",NA,NA,1
+"1270",64,"Kilifi",2013,10,5,NA,NA,NA,NA
+"1271",64,"Kilifi",2013,11,6,NA,NA,NA,NA
+"1272",64,"Kilifi",2013,12,7,NA,NA,NA,NA
+"1273",64,"Kilifi",2014,1,8,NA,NA,NA,NA
+"1274",64,"Kilifi",2014,2,9,"Alert",NA,NA,2
+"1275",64,"Kilifi",2014,3,10,"Alert",NA,NA,2
+"1276",64,"Kilifi",2014,4,11,"Alert",NA,NA,2
+"1277",64,"Kilifi",2014,5,12,"Alert",NA,NA,2
+"1278",64,"Kilifi",2014,6,13,"Alert",NA,NA,2
+"1279",64,"Kilifi",2014,7,14,"Alert",NA,NA,2
+"1280",64,"Kilifi",2014,8,15,"Alert",NA,NA,2
+"1281",64,"Kilifi",2014,9,16,"Alert",NA,NA,2
+"1282",64,"Kilifi",2014,10,17,"noreport","noreport","noreport",NA
+"1283",64,"Kilifi",2014,11,18,"Alert","2.5","1.5",2
+"1284",64,"Kilifi",2014,12,19,"Alert","2.1","1.4",2
+"1285",64,"Kilifi",2015,1,20,"Alert","4.3","2.1",2
+"1286",64,"Kilifi",2015,2,21,"Alert","3.6","1.5",2
+"1287",64,"Kilifi",2015,3,22,"Alert","4.3","1.4",2
+"1288",64,"Kilifi",2015,4,23,"Alert","4.5","1.4",2
+"1289",64,"Kilifi",2015,5,24,"Alert","4.4","1.4",2
+"1290",64,"Kilifi",2015,6,25,"Alert","4.4","1.4",2
+"1291",64,"Kilifi",2015,7,26,"Alert","3.3","1.2",2
+"1292",64,"Kilifi",2015,8,27,"Alert","3","1.3",2
+"1293",64,"Kilifi",2015,9,28,"Alert","2.8","1.2",2
+"1294",64,"Kilifi",2015,10,29,"Alert","2.8","1.2",2
+"1295",64,"Kilifi",2015,11,30,"Normal","2.3","1.4",1
+"1296",64,"Kilifi",2015,12,31,"Normal","3.3","1.5",1
+"1297",64,"Kilifi",2016,1,32,"Normal","4.8","1.8",1
+"1298",64,"Kilifi",2016,2,33,"Normal","5.8","1.9",1
+"1299",64,"Kilifi",2016,3,34,"Alert","7.6","2",2
+"1300",64,"Kilifi",2016,4,35,"Alert","8.4","2",2
+"1301",64,"Kilifi",2016,5,36,"Alert","4.8","1.5",2
+"1302",64,"Kilifi",2016,6,37,"Alert","5","1.7",2
+"1303",64,"Kilifi",2016,7,38,"Alert","4.6","1.6",2
+"1304",64,"Kilifi",2016,8,39,"Alert","4.5","1.4",2
+"1305",64,"Kilifi",2016,9,40,"Alert","4.5","1.4",2
+"1306",64,"Kilifi",2016,10,41,"Alarm","5.4","1.8",3
+"1307",64,"Kilifi",2016,11,42,"Alarm","6.4","1.8",3
+"1308",64,"Kilifi",2016,12,43,"Alarm","4.9","1.6",3
+"1309",64,"Kilifi",2017,1,44,"Alarm","12.8","9.6",3
+"1310",64,"Kilifi",2017,2,45,"Alarm","10.9","10.6",3
+"1311",64,"Kilifi",2017,3,46,"Alarm","8.5","13.19",3
+"1312",64,"Kilifi",2017,4,47,"Alarm","7","13.67",3
+"1313",64,"Kilifi",2017,5,48,"Alert","59.5","15.06",2
+"1314",64,"Kilifi",2017,6,49,"Alarm","5.9","15.06",3
+"1315",64,"Kilifi",2017,7,50,"Alarm","5.9","15.06",3
+"1316",64,"Kilifi",2017,8,51,"Alarm","4.8","5.35",3
+"1317",64,"Kilifi",2017,9,52,"Alarm","5.9","15.06",3
+"1318",64,"Kilifi",2017,10,53,"Alert","6","10.5",2
+"1319",64,"Kilifi",2017,11,54,"Alert","6.2",NA,2
+"1320",64,"Kilifi",2017,12,55,"Alert","4.6",NA,2
+"1321",65,"Tharaka-Nithi",2013,6,1,"noreport","noreport","noreport",NA
+"1322",65,"Tharaka-Nithi",2013,7,2,"Alert",NA,NA,2
+"1323",65,"Tharaka-Nithi",2013,8,3,"Alert",NA,NA,2
+"1324",65,"Tharaka-Nithi",2013,9,4,"Alert",NA,NA,2
+"1325",65,"Tharaka-Nithi",2013,10,5,"noreport","noreport","noreport",NA
+"1326",65,"Tharaka-Nithi",2013,11,6,"noreport","noreport","noreport",NA
+"1327",65,"Tharaka-Nithi",2013,12,7,"noreport","noreport","noreport",NA
+"1328",65,"Tharaka-Nithi",2014,1,8,"noreport","noreport","noreport",NA
+"1329",65,"Tharaka-Nithi",2014,2,9,"Alert",NA,NA,2
+"1330",65,"Tharaka-Nithi",2014,3,10,"Alert",NA,NA,2
+"1331",65,"Tharaka-Nithi",2014,4,11,"Alert",NA,NA,2
+"1332",65,"Tharaka-Nithi",2014,5,12,"Alert",NA,NA,2
+"1333",65,"Tharaka-Nithi",2014,6,13,"noreport","noreport","noreport",NA
+"1334",65,"Tharaka-Nithi",2014,7,14,"Alert",NA,NA,2
+"1335",65,"Tharaka-Nithi",2014,8,15,"Alert",NA,NA,2
+"1336",65,"Tharaka-Nithi",2014,9,16,"Alert",NA,NA,2
+"1337",65,"Tharaka-Nithi",2014,10,17,"Alert","9","1.17",2
+"1338",65,"Tharaka-Nithi",2014,11,18,"Normal","7.23","1.07",1
+"1339",65,"Tharaka-Nithi",2014,12,19,"Normal","7.77","1.03",1
+"1340",65,"Tharaka-Nithi",2015,1,20,"noreport","noreport","noreport",NA
+"1341",65,"Tharaka-Nithi",2015,2,21,"Alert","7.23","0.53",2
+"1342",65,"Tharaka-Nithi",2015,3,22,"Alert","7.47","0.67",2
+"1343",65,"Tharaka-Nithi",2015,4,23,"Alert","6.43","0.77",2
+"1344",65,"Tharaka-Nithi",2015,5,24,"Normal","5.87","0.77",1
+"1345",65,"Tharaka-Nithi",2015,6,25,"Normal","5.87","0.5",1
+"1346",65,"Tharaka-Nithi",2015,7,26,"Normal","7.1","0.47",1
+"1347",65,"Tharaka-Nithi",2015,8,27,"Normal","6.2","0.47",1
+"1348",65,"Tharaka-Nithi",2015,9,28,"Alert","7.4","0.47",2
+"1349",65,"Tharaka-Nithi",2015,10,29,"Alert","7.8","0.67",2
+"1350",65,"Tharaka-Nithi",2015,11,30,"Alert","7.2","0.67",2
+"1351",65,"Tharaka-Nithi",2015,12,31,"Normal","6.7","0.63",1
+"1352",65,"Tharaka-Nithi",2016,1,32,"Normal","6.7","0.47",1
+"1353",65,"Tharaka-Nithi",2016,2,33,"Normal","6.4","0.37",1
+"1354",65,"Tharaka-Nithi",2016,3,34,"Normal","6.9","0.43",1
+"1355",65,"Tharaka-Nithi",2016,4,35,"Normal","6.7","0.47",1
+"1356",65,"Tharaka-Nithi",2016,5,36,"Normal","6.9","0.47",1
+"1357",65,"Tharaka-Nithi",2016,6,37,"Normal","7","0.67",1
+"1358",65,"Tharaka-Nithi",2016,7,38,"Normal","7.2","0.68",1
+"1359",65,"Tharaka-Nithi",2016,8,39,"Normal","7.4","0.8",1
+"1360",65,"Tharaka-Nithi",2016,9,40,"Normal","7.8","0.93",1
+"1361",65,"Tharaka-Nithi",2016,10,41,"Normal","8.4","1",1
+"1362",65,"Tharaka-Nithi",2016,11,42,"Normal","8.2","1.2",1
+"1363",65,"Tharaka-Nithi",2016,12,43,"Normal","8.2","14",1
+"1364",65,"Tharaka-Nithi",2017,1,44,"Alert","9","19",2
+"1365",65,"Tharaka-Nithi",2017,2,45,"Alert","9.6","21",2
+"1366",65,"Tharaka-Nithi",2017,3,46,"Alert","9.7","22",2
+"1367",65,"Tharaka-Nithi",2017,4,47,"Alert","10","22",2
+"1368",65,"Tharaka-Nithi",2017,5,48,"Alert","9.7","24",2
+"1369",65,"Tharaka-Nithi",2017,6,49,"Alert","9.7","14",2
+"1370",65,"Tharaka-Nithi",2017,7,50,"Normal","9.6","8.9",1
+"1371",65,"Tharaka-Nithi",2017,8,51,"Alert","10","15",2
+"1372",65,"Tharaka-Nithi",2017,9,52,"Alert","10.1","15",2
+"1373",65,"Tharaka-Nithi",2017,10,53,"Alarm","8.2","15",3
+"1374",65,"Tharaka-Nithi",2017,11,54,"Alert","7.4","11.7",2
+"1375",65,"Tharaka-Nithi",2017,12,55,"Alert","6","11.67",2
