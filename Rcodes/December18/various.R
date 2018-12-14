@@ -5,3 +5,5 @@ KEN11j<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4 +AvgTemp+I(AvgTem
 KEN11jML<-update(KEN11j,.~.,method="ML")
 extractAIC(KEN11jML)
 anova(KEN11jML,KEN11h)
+anova(KEN11jML.lme,KEN11h.lme)
+
