@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.4)  16 DEC 2018 20:10
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  16 DEC 2018 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**draft12.tex
-(./draft12.tex
+**draft13.tex
+(./draft13.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 26 language(s) loaded.
 (./iopart.cls
@@ -42,21 +42,13 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count88
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
+JK)
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -91,15 +83,15 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count89
-\calc@Bcount=\count90
+\calc@Acount=\count88
+\calc@Bcount=\count89
 \calc@Adimen=\dimen105
 \calc@Bdimen=\dimen106
 \calc@Askip=\skip47
 \calc@Bskip=\skip48
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count91
+\calc@Ccount=\count90
 \calc@Cskip=\skip49
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -108,6 +100,12 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 ))
@@ -127,7 +125,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 99.
 )
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
@@ -135,18 +133,18 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \AM@pagewidth=\dimen109
 \AM@pageheight=\dimen110
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2017/01/14 v0.5h Pdfpages driver for XeTeX (AM)
 )
 \AM@pagebox=\box26
 \AM@global@opts=\toks18
 \AM@toc@title=\toks19
-\c@AM@survey=\count92
+\c@AM@survey=\count91
 \AM@templatesizebox=\box27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count93
+\c@float@type=\count92
 \float@exts=\toks20
 \float@box=\box28
 \@float@everytoks=\toks21
@@ -155,20 +153,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip50
-\multirow@cntb=\count94
+\multirow@cntb=\count93
 \multirow@dima=\skip51
 \bigstrutjot=\dimen111
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
-\c@tracingmulticols=\count95
+\c@tracingmulticols=\count94
 \mult@box=\box30
 \multicol@leftmargin=\dimen112
-\c@unbalance=\count96
-\c@collectmore=\count97
-\doublecol@number=\count98
-\multicoltolerance=\count99
-\multicolpretolerance=\count100
+\c@unbalance=\count95
+\c@collectmore=\count96
+\doublecol@number=\count97
+\multicoltolerance=\count98
+\multicolpretolerance=\count99
 \full@width=\dimen113
 \page@free=\dimen114
 \premulticols=\dimen115
@@ -199,14 +197,14 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count101
-\c@finalcolumnbadness=\count102
+\c@columnbadness=\count100
+\c@finalcolumnbadness=\count101
 \last@try=\dimen118
 \multicolovershoot=\dimen119
 \multicolundershoot=\dimen120
 \mult@nat@firstbox=\box54
 \colbreak@box=\box55
-\mc@col@check@num=\count103
+\mc@col@check@num=\count102
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -235,7 +233,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@old@col=\dimen126
 \TX@target=\dimen127
 \TX@delta=\dimen128
-\TX@cols=\count104
+\TX@cols=\count103
 \TX@ftn=\toks23
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
@@ -272,22 +270,16 @@ Package etexcmds Info: Could not find \expanded.
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+)) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
@@ -306,26 +298,26 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count105
+\babel@savecnt=\count104
 \U@D=\dimen129
-)
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def))
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )) (./harvard.sty
 Package: harvard 
-)
-(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count106
-\cp@tempcnt=\count107
+\c@cp@cntr=\count105
+\cp@tempcnt=\count106
 )
-(./draft12.aux)
-\openout1 = `draft12.aux'.
+(./draft13.aux)
+\openout1 = `draft13.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
@@ -335,39 +327,26 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen130
-\scratchbox=\box58
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen131
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks25
-)
-\AtBeginShipoutBox=\box59
+\AtBeginShipoutBox=\box58
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
-
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)) [1
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+) [1
+
+]
 LaTeX Font Info:    Try loading font information for U+msa on input line 130.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -383,55 +362,67 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 130.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 1147) in paragraph at lines 130--131
-[]\OT1/cmr/m/n/12 Extreme weather causes disasters $\OMS/cmsy/m/n/12 !$ \OT1/cm
-r/m/n/12 early warning systems have been
+Underfull \hbox (badness 1067) in paragraph at lines 130--131
+[]\TU/lmr/m/n/12 Extreme weather causes disasters $\OMS/cmsy/m/n/12 !$ \TU/lmr/
+m/n/12 early warning systems have been
  []
 
-[2] [3]
+[2] [3] [4] [5] [6] [7]
+File: Figure1a_1f.pdf Graphic file (type QTm)
+ <use  "Figure1a_1f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 306--307
+[][][] 
+ []
 
-LaTeX Warning: Citation 'Barasa2017' on page 4 undefined on input line 193.
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Citation 'bates2000mixed' on page 4 undefined on input line 193.
-
-
-
-LaTeX Warning: Citation 'bates2010lme4' on page 4 undefined on input line 193.
-
-[4]
-
-LaTeX Warning: Citation 'lmerTest' on page 5 undefined on input line 216.
-
-
-LaTeX Warning: Reference `ARMA' on page 5 undefined on input line 220.
-
-[5]
-
-LaTeX Warning: Reference `MainEst' on page 6 undefined on input line 226.
+ [9]
+[10]
+Underfull \hbox (badness 4429) in paragraph at lines 354--355
+[]|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
+ []
 
 
-LaTeX Warning: Reference `MainEst' on page 6 undefined on input line 228.
+Underfull \hbox (badness 4647) in paragraph at lines 383--383
+[]\TU/lmr/bx/n/10 Table 2. |[]\TU/lmr/m/n/10 Comparison of models with differen
+t error
+ []
 
+[11
 
-LaTeX Warning: Reference `MainEst' on page 6 undefined on input line 228.
+] [12]
+File: Figure2a_2f.pdf Graphic file (type QTm)
+ <use  "Figure2a_2f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 459--460
+[][][] 
+ []
 
-[6]
+File: Figure3a_3f.pdf Graphic file (type QTm)
+<use  "Figure3a_3f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 464--465
+[][][] 
+ []
 
-LaTeX Warning: Reference `MainEst' on page 7 undefined on input line 230.
+(./draft13.bbl [13
 
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `KenARe11_exponents' on page 7 undefined on input line
- 230.
+ [14])
+[15] (./draft13.aux) )
+(\end occurred inside a group at level 1)
 
+### simple group (level 1) entered at line 363 ({)
+### bottom level
+(\end occurred when \ifx on line 161 was incomplete) 
+Here is how much of TeX's memory you used:
+ 4340 strings out of 494579
+ 58150 string characters out of 6167474
+ 144801 words of memory out of 5000000
+ 8020 multiletter control sequences out of 15000+600000
+ 15032 words of font info for 72 fonts, out of 8000000 for 9000
+ 286 hyphenation exceptions out of 8191
+ 42i,16n,35p,1301b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-LaTeX Warning: Reference `MainEst' on page 7 undefined on input line 233.
-
-[7]
-
-LaTeX Warning: Reference `MainEst' on page 8 undefined on input line 294.
-
-
-!pdfTeX error: pdflatex (file ./Figure1a_1f.pdf): PDF inclusion: required page 
-does not exist <0>
- ==> Fatal error occurred, no output PDF file produced!
+Output written on draft13.pdf (15 pages).
