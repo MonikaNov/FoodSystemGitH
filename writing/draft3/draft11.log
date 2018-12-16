@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  11 DEC 2018 18:33
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  16 DEC 2018 18:33
 entering extended mode
-**./draft11.tex
-(draft11.tex
-LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
-(iopart.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**draft11.tex
+(./draft11.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 26 language(s) loaded.
+(./iopart.cls
 Document Class: iopart 1996/06/10 v0.0 IOP Journals LaTeX article class
-(iopart12.clo
+(./iopart12.clo
 File: iopart12.clo 1997/01/15 v1.0 LaTeX2e file (size option)
 )
 \c@jnl=\count79
@@ -22,7 +24,8 @@ File: iopart12.clo 1997/01/15 v1.0 LaTeX2e file (size option)
 \indentedwidth=\skip43
 \mathindent=\dimen102
 \c@eqnval=\count87
-) (E:\latex\texmfs\install\tex\latex\amsfonts\amsfonts.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
@@ -30,30 +33,22 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(E:\latex\texmfs\install\tex\latex\amsfonts\amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(E:\latex\texmfs\install\tex\latex\xcolor\xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(E:\latex\texmfs\install\tex\latex\graphics-cfg\color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
-(E:\latex\texmfs\install\tex\latex\graphics-def\pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(E:\latex\texmfs\install\tex\generic\oberdiek\infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(E:\latex\texmfs\install\tex\generic\oberdiek\ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count88
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
+JK)
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -62,10 +57,10 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(E:\latex\texmfs\install\tex\latex\colortbl\colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(E:\latex\texmfs\install\tex\latex\tools\array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen103
 \extrarowheight=\dimen104
@@ -80,51 +75,57 @@ LaTeX Warning: Command \@xhline  has changed.
 )
 \everycr=\toks16
 \minrowclearance=\skip46
-) (E:\latex\texmfs\install\tex\latex\pdfpages\pdfpages.sty
-Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
 
-(E:\latex\texmfs\install\tex\latex\base\ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(E:\latex\texmfs\install\tex\latex\tools\calc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count89
-\calc@Bcount=\count90
+\calc@Acount=\count88
+\calc@Bcount=\count89
 \calc@Adimen=\dimen105
 \calc@Bdimen=\dimen106
 \calc@Askip=\skip47
 \calc@Bskip=\skip48
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count91
+\calc@Ccount=\count90
 \calc@Cskip=\skip49
 )
-(E:\latex\texmfs\install\tex\latex\eso-pic\eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-(E:\latex\texmfs\install\tex\generic\oberdiek\atbegshi.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
-(E:\latex\texmfs\install\tex\generic\oberdiek\ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 ))
-(E:\latex\texmfs\install\tex\latex\graphics\keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ))
-(E:\latex\texmfs\install\tex\latex\graphics\graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(E:\latex\texmfs\install\tex\latex\graphics\graphics.sty
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
-(E:\latex\texmfs\install\tex\latex\graphics\trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(E:\latex\texmfs\install\tex\latex\graphics-cfg\graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 99.
 )
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
@@ -132,40 +133,40 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \AM@pagewidth=\dimen109
 \AM@pageheight=\dimen110
 
-(E:\latex\texmfs\install\tex\latex\pdfpages\pppdftex.def
-File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2017/01/14 v0.5h Pdfpages driver for XeTeX (AM)
 )
 \AM@pagebox=\box26
 \AM@global@opts=\toks18
 \AM@toc@title=\toks19
-\c@AM@survey=\count92
+\c@AM@survey=\count91
 \AM@templatesizebox=\box27
 )
-(E:\latex\texmfs\install\tex\latex\float\float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count93
+\c@float@type=\count92
 \float@exts=\toks20
 \float@box=\box28
 \@float@everytoks=\toks21
 \@floatcapt=\box29
 )
-(E:\latex\texmfs\install\tex\latex\multirow\multirow.sty
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip50
-\multirow@cntb=\count94
+\multirow@cntb=\count93
 \multirow@dima=\skip51
 \bigstrutjot=\dimen111
 )
-(E:\latex\texmfs\install\tex\latex\tools\multicol.sty
-Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
-\c@tracingmulticols=\count95
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count94
 \mult@box=\box30
 \multicol@leftmargin=\dimen112
-\c@unbalance=\count96
-\c@collectmore=\count97
-\doublecol@number=\count98
-\multicoltolerance=\count99
-\multicolpretolerance=\count100
+\c@unbalance=\count95
+\c@collectmore=\count96
+\doublecol@number=\count97
+\multicoltolerance=\count98
+\multicolpretolerance=\count99
 \full@width=\dimen113
 \page@free=\dimen114
 \premulticols=\dimen115
@@ -196,67 +197,67 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count101
-\c@finalcolumnbadness=\count102
+\c@columnbadness=\count100
+\c@finalcolumnbadness=\count101
 \last@try=\dimen118
 \multicolovershoot=\dimen119
 \multicolundershoot=\dimen120
 \mult@nat@firstbox=\box54
 \colbreak@box=\box55
-\mc@col@check@num=\count103
+\mc@col@check@num=\count102
 )
-(E:\latex\texmfs\install\tex\latex\amsmath\amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 
-(E:\latex\texmfs\install\tex\latex\amsmath\amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
 \ex@=\dimen121
 )
 \pmbraise@=\dimen122
 )
-(E:\latex\texmfs\install\tex\latex\hyphenat\hyphenat.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
-\langwohyphens=\language2
+\langwohyphens=\language26
 LaTeX Info: Redefining \_ on input line 43.
 )
-(E:\latex\texmfs\install\tex\latex\mdwtools\footnote.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box56
 \fn@width=\dimen123
 )
-(E:\latex\texmfs\install\tex\latex\tools\tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen124
 \TX@old@table=\dimen125
 \TX@old@col=\dimen126
 \TX@target=\dimen127
 \TX@delta=\dimen128
-\TX@cols=\count104
+\TX@cols=\count103
 \TX@ftn=\toks23
 )
-(E:\latex\texmfs\install\tex\latex\oberdiek\epstopdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-(E:\latex\texmfs\install\tex\latex\oberdiek\epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(E:\latex\texmfs\install\tex\latex\oberdiek\grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(E:\latex\texmfs\install\tex\generic\oberdiek\kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(E:\latex\texmfs\install\tex\latex\oberdiek\kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(E:\latex\texmfs\install\tex\generic\oberdiek\kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(E:\latex\texmfs\install\tex\generic\oberdiek\etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(E:\latex\texmfs\install\tex\generic\oberdiek\ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -265,68 +266,57 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(E:\latex\texmfs\install\tex\generic\oberdiek\pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-))
-(E:\latex\texmfs\install\tex\latex\setspace\setspace.sty
+
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+)) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(E:\latex\texmfs\install\tex\latex\jknappen\mathrsfs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(E:\latex\texmfs\install\tex\latex\url\url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(E:\latex\texmfs\install\tex\generic\babel\babel.sty
-Package: babel 2017/05/19 3.10 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-(E:\latex\texmfs\install\tex\latex\arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(E:\latex\texmfs\install\tex\latex\babel-english\english.ldf
-Language: english 2017/01/24 v3.3q English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-(E:\latex\texmfs\install\tex\generic\babel\babel.def
-File: babel.def 2017/05/19 3.10 Babel common definitions
-\babel@savecnt=\count105
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count104
 \U@D=\dimen129
-)
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
-\l@american = a dialect from \language\l@english 
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def))
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-)) (harvard.sty
+)) (./harvard.sty
 Package: harvard 
-)
-(E:\latex\texmfs\install\tex\latex\threeparttable\threeparttable.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box57
 )
-(E:\latex\texmfs\install\tex\latex\changepage\changepage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count106
-\cp@tempcnt=\count107
-) (draft11.aux)
+\c@cp@cntr=\count105
+\cp@tempcnt=\count106
+)
+(./draft11.aux)
 \openout1 = `draft11.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -337,142 +327,102 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
-
-(E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen130
-\scratchbox=\box58
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen131
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks25
-)
-\AtBeginShipoutBox=\box59
- (E:\latex\texmfs\install\tex\latex\oberdiek\pdflscape.sty
+\AtBeginShipoutBox=\box58
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
-
-(E:\latex\texmfs\install\tex\latex\graphics\lscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-
-(E:\latex\texmfs\install\tex\generic\ifxetex\ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)) [1
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 
-{E:/latex/texmfs/data/pdftex/config/pdftex.map}]
+) [1
+
+]
 LaTeX Font Info:    Try loading font information for U+msa on input line 130.
 
-(E:\latex\texmfs\install\tex\latex\amsfonts\umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 130.
 
-(E:\latex\texmfs\install\tex\latex\amsfonts\umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 130.
 
-(E:\latex\texmfs\install\tex\latex\jknappen\ursfs.fd
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 1147) in paragraph at lines 130--131
-[]\OT1/cmr/m/n/12 Extreme weather causes disasters $\OMS/cmsy/m/n/12 !$ \OT1/cm
-r/m/n/12 early warning systems have been
+Underfull \hbox (badness 1067) in paragraph at lines 130--131
+[]\TU/lmr/m/n/12 Extreme weather causes disasters $\OMS/cmsy/m/n/12 !$ \TU/lmr/
+m/n/12 early warning systems have been
  []
 
-[2] [3] [4] [5] [6] [7] <Figure1a_1f.pdf, id=36, 505.89pt x 505.89pt>
-File: Figure1a_1f.pdf Graphic file (type pdf)
-
-<use Figure1a_1f.pdf>
-Package pdftex.def Info: Figure1a_1f.pdf used on input line 306.
-(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
-
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 306--307
+[2] [3] [4] [5] [6] [7]
+File: Figure1a_1f.pdf Graphic file (type QTm)
+ <use  "Figure1a_1f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 306--307
 [][][] 
  []
 
 [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./Figure1a_1f.pdf>] [10]
-Underfull \hbox (badness 4416) in paragraph at lines 354--355
-[]|\OT1/cmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
+ [9]
+[10]
+Underfull \hbox (badness 4429) in paragraph at lines 354--355
+[]|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 383--383
-[]\OT1/cmr/bx/n/10 Table 2. |[]\OT1/cmr/m/n/10 Comparison of models with differ
-ent error
+Underfull \hbox (badness 4647) in paragraph at lines 383--383
+[]\TU/lmr/bx/n/10 Table 2. |[]\TU/lmr/m/n/10 Comparison of models with differen
+t error
  []
 
 [11
 
-] [12] <Figure2a_2f.pdf, id=65, 505.89pt x 505.89pt>
-File: Figure2a_2f.pdf Graphic file (type pdf)
- <use Figure2a_2f.pdf>
-Package pdftex.def Info: Figure2a_2f.pdf used on input line 459.
-(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
-
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 459--460
+] [12]
+File: Figure2a_2f.pdf Graphic file (type QTm)
+ <use  "Figure2a_2f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 459--460
 [][][] 
  []
 
-<Figure3a_3f.pdf, id=66, 505.89pt x 505.89pt>
-File: Figure3a_3f.pdf Graphic file (type pdf)
- <use Figure3a_3f.pdf>
-Package pdftex.def Info: Figure3a_3f.pdf used on input line 464.
-(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
-
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 464--465
+File: Figure3a_3f.pdf Graphic file (type QTm)
+<use  "Figure3a_3f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 464--465
 [][][] 
  []
 
-(draft11.bbl [13
+(./draft11.bbl [13
 
- <./Figure2a_2f.pdf>]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./Figure3a_3f.pdf>]) [15] (draft11.aux) )
+ [14])
+[15] (./draft11.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 363 ({)
-### bottom level 
+### bottom level
+(\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 4776 strings out of 495222
- 62920 string characters out of 3182071
- 152821 words of memory out of 3000000
- 7926 multiletter control sequences out of 15000+200000
- 16699 words of font info for 64 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 42i,16n,35p,1304b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.
-pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/late
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/inst
-all/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/latex/texmfs/install/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><E:/latex/texmfs/install/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb><E
-:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/latex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/latex/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><E:/latex/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/tex
-mfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/texmfs/install/
-fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft11.pdf (15 pages, 263810 bytes).
-PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4340 strings out of 494579
+ 58150 string characters out of 6167474
+ 143801 words of memory out of 5000000
+ 8020 multiletter control sequences out of 15000+600000
+ 15032 words of font info for 72 fonts, out of 8000000 for 9000
+ 286 hyphenation exceptions out of 8191
+ 42i,16n,35p,1302b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on draft11.pdf (15 pages).
