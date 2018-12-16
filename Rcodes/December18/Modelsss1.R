@@ -42,8 +42,14 @@ summary(KENd_lmer);  exp(summary(KENd_lmer)$coef[[1]])
   
 ranova(KENd_lmer)
 drop1(KENd_lmer)
+      fullishf<-log(Yield0)~SeasPr+I(SeasPr^2)+ CVPrec+Spell+Spell4  +AvgTemp+ CVTempK +MaxP+ Prec2m+DDays +HWDays+MaxT
+add11<-add1(KENd_lmer,scope=fullishf)
+
 
 KENd_lmerRE<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4+AvgTemp + 
                   CVTempK+(SeasPr +I(SeasPr^2)+CVPrec+Spell+Spell4+AvgTemp + 
                              CVTempK| ID1),data=ScaledTS)
 ran1<-ranova(KENd_lmerRE)
+
+#33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+save.image("~/FoodSystemGitH/Rcodes/December18/Modelsss1.RData")

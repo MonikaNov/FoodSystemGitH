@@ -31,6 +31,7 @@ full<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +M
 
 Cary2<-step(full, ddf = c("Satterthwaite"), keep=attr(terms(full), "term.labels")[1:3])
 summary(get_model(Cary2))   ;extractAIC(get_model(Cary2));extractAIC(get_model(Kalinda))
+drop1(get_model(Cary2)) 
 
 Cary3<-step(full, ddf = c("Satterthwaite"), keep=attr(terms(full), "term.labels")[1:2])
 summary(get_model(Cary3))   ;extractAIC(get_model(Cary3));extractAIC(get_model(Kalinda))
