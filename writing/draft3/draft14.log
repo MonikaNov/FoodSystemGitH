@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  17 DEC 2018 22:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  17 DEC 2018 23:19
 entering extended mode
-**./draft13.tex
-(draft13.tex
+**./draft14.tex
+(draft14.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (iopart.cls
@@ -326,8 +326,8 @@ Package: threeparttable 2003/06/13  v 3.0
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count106
 \cp@tempcnt=\count107
-) (draft13.aux)
-\openout1 = `draft13.aux'.
+) (draft14.aux)
+\openout1 = `draft14.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
@@ -390,22 +390,22 @@ Underfull \hbox (badness 1147) in paragraph at lines 130--131
 r/m/n/12 early warning systems have been
  []
 
-[2] [3] [4] [5]
+[2] [3] [4]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [6]
+ [5]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [7] [8] <Figure1a_1f.pdf, id=39, 505.89pt x 505.89pt>
+ [6] [7] [8] <Figure1a_1f.pdf, id=39, 505.89pt x 505.89pt>
 File: Figure1a_1f.pdf Graphic file (type pdf)
 
 <use Figure1a_1f.pdf>
-Package pdftex.def Info: Figure1a_1f.pdf used on input line 314.
+Package pdftex.def Info: Figure1a_1f.pdf used on input line 318.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 314--315
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 318--319
 [][][] 
  []
 
@@ -413,12 +413,12 @@ Overfull \hbox (59.48878pt too wide) in paragraph at lines 314--315
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <./Figure1a_1f.pdf>] [11]
-Underfull \hbox (badness 4416) in paragraph at lines 362--363
+Underfull \hbox (badness 4416) in paragraph at lines 366--367
 []|\OT1/cmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 391--391
+Underfull \hbox (badness 4634) in paragraph at lines 395--395
 []\OT1/cmr/bx/n/10 Table 2. |[]\OT1/cmr/m/n/10 Comparison of models with differ
 ent error
  []
@@ -428,32 +428,32 @@ ent error
 ] [13] <Figure2a_2f.pdf, id=69, 505.89pt x 505.89pt>
 File: Figure2a_2f.pdf Graphic file (type pdf)
  <use Figure2a_2f.pdf>
-Package pdftex.def Info: Figure2a_2f.pdf used on input line 467.
+Package pdftex.def Info: Figure2a_2f.pdf used on input line 471.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 467--468
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 471--472
 [][][] 
  []
 
 <Figure3a_3f.pdf, id=70, 505.89pt x 505.89pt>
 File: Figure3a_3f.pdf Graphic file (type pdf)
  <use Figure3a_3f.pdf>
-Package pdftex.def Info: Figure3a_3f.pdf used on input line 472.
+Package pdftex.def Info: Figure3a_3f.pdf used on input line 476.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 472--473
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 476--477
 [][][] 
  []
 
-(draft13.bbl [14
+(draft14.bbl [14
 
  <./Figure2a_2f.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./Figure3a_3f.pdf>]) [16] (draft13.aux) )
+ [15 <./Figure3a_3f.pdf>]) [16] (draft14.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 371 ({)
+### simple group (level 1) entered at line 375 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  4776 strings out of 495222
@@ -462,7 +462,7 @@ Here is how much of TeX's memory you used:
  7926 multiletter control sequences out of 15000+200000
  16699 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,16n,35p,1546b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,16n,35p,1680b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/late
 x/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb><E:/latex/texmfs/inst
@@ -478,7 +478,7 @@ c/amsfonts/cm/cmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm
 E:/latex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/latex/texmfs/install/
 fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on draft13.pdf (16 pages, 266825 bytes).
+Output written on draft14.pdf (16 pages, 267002 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
