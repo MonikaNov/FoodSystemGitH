@@ -17,7 +17,7 @@ fullishML<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell
                data=ScaledTS,na.action=na.exclude); summary(fullishLM); exp(summary(fullishLM)$coef[[1]])
   CaryML_stepAIC<-stepAIC(fullishML)
   summary(CaryML_stepAIC) #..>> GOOD THE SAME PREDICTORS IN AS I HAD CHOSEN BEFORE...GROOT
-
+                      vif(CaryML_stepAIC)
 # .... . . . .  .... . . . . . . . . . ..    .... . . . .  .... . . . . . . . . . ..    .... . . . .  .... . . . . . . . . . ..   
 # now the step method for lmer
 fullish_lmer<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
@@ -30,6 +30,33 @@ fullish_lmer<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+S
 # now I want to test two things for each of the models above..
     # 1. what happens if I start with the full full set of variables-that means including HWDays and MaxT??
     # 2. what happens if I start with all vars. in random effects?? theis may take a while..
+
+# .... . . . .  .... . . . . . . . . . ..    .... . . . .  .... . . . . . . . . . ..    .... . . . .  .... . . . . . . . . . ..   
+# 1.   
+
+fullML<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
+                 + CVTempK + DDays+HWDays+MaxT, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),method="ML",
+                 data=ScaledTS,na.action=na.exclude); summary(fullML); exp(summary(fullML)$coef[[1]])
+  CaryML_stepAICfull<-stepAIC(fullML)
+  summary(CaryML_stepAICfull); vif(CaryML_stepAICfull)
+
+# . .        . . .              . . . .       . . ..    .                     .... . .     .
+
+full_lmer<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
+                + CVTempK + DDays +HWDays+MaxT+(1|ID1),data=ScaledTS) 
+  Cary_step_full<-step(full_lmer, keep=attr(terms(full_lmer), "term.labels")[1:3])
+  summary(get_model(Cary_step_full))  #   navic je tu MaxT a chybi spells..
+# see file KEN11d_stepNicePlaying.R
+  
+# .... . . . .  .... . . . . . . . . . ..    .... . . . .  .... . . . . . . . . . ..    .... . . . .  .... . . . . . . . . . ........................................   
+#   2. The random effects:
+  
+full_lmer2_re<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
+                 + CVTempK + DDays +HWDays+(1+SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
+                 + CVTempK + DDays +HWDays|ID1),data=ScaledTS) ;summary(full_lmer2_re)
+step_full_lmer2_re<-step(full_lmer2_re, keep=attr(terms(full_lmer2_re), "term.labels")[1:3])
+summary(get_model(step_full_lmer2_re))
+
 
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 save.image("Rcodes/DecemberNew/KEN11d_stepNice.RData")
