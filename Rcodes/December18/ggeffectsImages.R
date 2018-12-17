@@ -4,7 +4,7 @@ load("dataFS/Main/DaTS.RData")
 
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 # these models are the best ones for now:
-ScaledTS$foo=0.25942373
+
 KEN11d<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
             +AvgTemp + CVTempK, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1) ,
             data=ScaledTS,na.action=na.exclude); summary(KEN11d)
@@ -17,7 +17,7 @@ KEN11d_nonASAL<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                     +AvgTemp + CVTempK, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
                     data=ScaledTS[ScaledTS$ASAL==0,],na.action=na.exclude); summary(KEN11d_nonASAL)
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-exp(summary(KEN11d)$tTable[,1])
+exp(summary(KEN11d)$tTable[,1]); exp(summary(KEN11d_ASAL)$tTable[,1]);exp(summary(KEN11d_nonASAL)$tTable[,1])
 
 AllPrec<- ggpredict(KEN11d,terms=c("SeasPr [n=20]"))
   AllPrec[,c(2,4,5)]<-AllPrec[,c(2,4,5)]/exp(summary(KEN11d)$tTable[,1])[["(Intercept)"]]
@@ -98,11 +98,11 @@ nonASALSpell[,c(2,4,5)]<-nonASALSpell[,c(2,4,5)]/exp(summary(KEN11d_nonASAL)$tTa
 nonASALSpell4<- ggpredict(KEN11d_nonASAL,terms=c("Spell4 [n=20]"),condition=c(SeasPr=0,Spell = 0,  CVPrec = 0,CVTempK=0,AvgTemp =0))
 nonASALSpell4[,c(2,4,5)]<-nonASALSpell4[,c(2,4,5)]/exp(summary(KEN11d_nonASAL)$tTable[,1])[["(Intercept)"]]
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-plot1<-plot(AllSpell)+ylab("All")+xlab(NULL)+xlab("(a)")+ggtitle("Effects of length of max dry spell on yields")+theme(plot.title=element_text(size=11))
+plot1<-plot(AllSpell)+ylab("All")+xlab(NULL)+xlab("(a)")+ggtitle("Effects of length of max dry spell on yields")+theme(plot.title=element_text(size=11))+scale_x_continuous(breaks = c(-2,0,2,4,6,8))+scale_y_continuous(breaks = c(0.4,0.6,0.8,1,1.2))
 plot2<-plot(AllSpell4)+ylab(NULL)+xlab(NULL)+xlab("(b)")+ggtitle("Effects of number of dry spells on yields")+theme(plot.title=element_text(size=11))+scale_x_continuous(breaks = c(-3,-2,-1,0,1,2))
-plot3<-plot(ASALSpell)+ylab("ASAL")+xlab(NULL)+xlab("(c)")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+ggtitle(NULL)
-plot4<-plot(ASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(d)")+ggtitle(NULL)
-plot5<-plot(nonASALSpell)+ylab("non-ASAL")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)
+plot3<-plot(ASALSpell)+ylab("ASAL")+xlab(NULL)+xlab("(c)")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+ggtitle(NULL)+ggtitle(NULL)+scale_y_continuous(breaks = c(0.5,1,1.5))
+plot4<-plot(ASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(d)")
+plot5<-plot(nonASALSpell)+ylab("non-ASAL")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)+scale_x_continuous(breaks = c(-2,0,2,4,6,8))
 plot6<-plot(nonASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)+scale_x_continuous(breaks = c(-3,-2,-1,0,1,2))
 
 require(gridExtra)
@@ -114,5 +114,5 @@ cairo_ps("writing/draft3/Figure3a_3f.eps")
 grid.arrange(plot1, plot2, plot3, plot4,plot5, plot6,ncol=2)
 dev.off()
 
-
+# COOL >> NEW PLOTS CHECKED
 
