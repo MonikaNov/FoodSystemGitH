@@ -54,9 +54,35 @@ full_lmer<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spel
 full_lmer2_re<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
                  + CVTempK + DDays +HWDays+(1+SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
                  + CVTempK + DDays +HWDays|ID1),data=ScaledTS) ;summary(full_lmer2_re)
-step_full_lmer2_re<-step(full_lmer2_re, keep=attr(terms(full_lmer2_re), "term.labels")[1:3])
-summary(get_model(step_full_lmer2_re))
+  step_full_lmer2_re<-step(full_lmer2_re, keep=attr(terms(full_lmer2_re), "term.labels")[1:3])
+  summary(get_model(step_full_lmer2_re))
 
 
+fullML_re<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK + DDays+HWDays, random= ~1+SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK + DDays+HWDays | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),method="ML",
+            data=ScaledTS,na.action=na.exclude); summary(fullML_re); exp(summary(fullML_re)$coef[[1]])
+CaryML_stepAIC_re<-stepAIC(fullML_re)
+
+
+# iterration limit withou convergence>>make it a bit smaller:
+
+fullML_re2<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK + DDays, random= ~1+SeasPr+AvgTemp+I(SeasPr^2)+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK + DDays| ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),method="ML",
+            data=ScaledTS,na.action=na.exclude); summary(fullML_re); exp(summary(fullML_re)$coef[[1]])
+CaryML_stepAIC_re2<-stepAIC(fullML_re2)
+
+myoption <- lmeControl(opt='optim')
+
+fullML_re2<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK, random= ~1+SeasPr+AvgTemp+Spell+Spell4 +MaxP| ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),method="ML",
+            data=ScaledTS,na.action=na.exclude,control=lmeControl(maxIter=300,msMaxIter=300,msMaxEval=500)); summary(fullML_re2); exp(summary(fullML_re2)$coef[[1]])
+CaryML_stepAIC_re2<-stepAIC(fullML_re2)
+
+save.image("\\\\smbhome.uscs.susx.ac.uk\\mn301\\FoodSystemGitH\\Rcodes\\DecemberNew\\KEN11d_stepNice3.RData")
+
+
+summary(CaryML_stepAIC_re); vif(CaryML_stepAIC_re)
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-save.image("Rcodes/DecemberNew/KEN11d_stepNice.RData")
+save.image("Rcodes/DecemberNew/KEN11d_stepNice2.RData")
