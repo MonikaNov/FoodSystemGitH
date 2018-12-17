@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  17 DEC 2018 00:52
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  17 DEC 2018 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -370,7 +370,7 @@ m/n/12 early warning systems have been
 [2] [3] [4] [5] [6] [7]
 File: Figure1a_1f.pdf Graphic file (type QTm)
  <use  "Figure1a_1f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 306--307
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 308--309
 [][][] 
  []
 
@@ -379,12 +379,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
 [10]
-Underfull \hbox (badness 4429) in paragraph at lines 354--355
+Underfull \hbox (badness 4429) in paragraph at lines 356--357
 []|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 383--383
+Underfull \hbox (badness 4647) in paragraph at lines 385--385
 []\TU/lmr/bx/n/10 Table 2. |[]\TU/lmr/m/n/10 Comparison of models with differen
 t error
  []
@@ -394,13 +394,13 @@ t error
 ] [12]
 File: Figure2a_2f.pdf Graphic file (type QTm)
  <use  "Figure2a_2f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 459--460
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 461--462
 [][][] 
  []
 
 File: Figure3a_3f.pdf Graphic file (type QTm)
 <use  "Figure3a_3f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 464--465
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 466--467
 [][][] 
  []
 
@@ -413,7 +413,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [15] (./draft13.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 363 ({)
+### simple group (level 1) entered at line 365 ({)
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
