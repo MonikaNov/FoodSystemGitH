@@ -11,10 +11,9 @@ KEN11d<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
 
 fullishML<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
                  + CVTempK + DDays, random= ~1 | ID1,method="ML",
-            data=ScaledTS,na.action=na.exclude); summary(fullishLM); exp(summary(fullishLM)$coef[[1]])
+            data=ScaledTS,na.action=na.exclude); summary(fullishML); exp(summary(fullishML)$coef[[1]])
 
-    CaryML_stepAIC<-stepAIC(fullishML)
-    summary(CaryML_stepAIC)
+    CaryML_stepAIC<-stepAIC(fullishML);   summary(CaryML_stepAIC)
           CaryML_step<-step(fullishML) # step not working for lme??
           
                                       # both step and stepAIC undefined for REML fit
@@ -28,10 +27,11 @@ fullishML<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell
 fullish_lmer<-lmer(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+ Prec2m+CVPrec+Spell+Spell4 +MaxP
               + CVTempK + DDays +(1|ID1),data=ScaledTS) #
 
-Cary_stepAIC<-stepAIC(fullish_lmer)
+          Cary_stepAIC<-stepAIC(fullish_lmer) # stepAIC doesn't work for this..
+Cary_step<-step(fullish_lmer); summary(get_model(Cary_step))
+#  ...>> need to force precip and its square...
+Cary_step2<-step(fullish_lmer, keep=attr(terms(fullish_lmer), "term.labels")[1:3]); summary(get_model(Cary_step2))
 
-
-summary(get_model(Cary))
 
 drop1(fullish)
 summary(get_model(Kalinda))
