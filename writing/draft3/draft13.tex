@@ -225,13 +225,10 @@ To find the most suitable set of fixed effects, we adapted a stepwise selection 
 
 We further applied a series of likelihood ratio tests to test for significance of random slopes, however no subset of random slopes improved the fit, hence, our final model only included intercepts in random effects. 
 
+To verify our results, we adapted an alternative step-down model building
+approach using the Satterthwaite’s method to determine the p-values of the individual
+t-tests \cite{lmerTest}. To be more specific, we started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the first part of this procedure the insignificant random effects were removed one by one until only significant predictors remained. After this, the insignificant fixed effects were removed one by one until only significant predictors remained. For random effects we considered the level of significance $\alpha=0.1$ and for fixed effects we opted for $\alpha=0.05$~\cite{lmerTest}. Using this method we chose the same model as according to the AIC-based stepwise method described above.
 
-
- allowed for both are moving and adding 
-model building approach using  To be more specific, we started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the following steps, the insignificant random effects and subsequently insignificant fixed effects were removed one by one until only significant predictors remained. For random effects we considered the level of significance $\alpha=0.1$ and for fixed effects we opted for $\alpha=0.05$~\cite{lmerTest}.
-
-
-\textcolor{blue}{the Satterthwaite's method to determine the p-values of the individual t-tests} \cite{lmerTest}
 	\section{Results}\label{Results}
 	
 Besides our main model, we estimated the same specification for two additional subsamples of Kenyan counties. In particular, we estimated the model for the subsample of ASAL counties and for the subsample of non-ASAL counties separately to compare the effects of various weather characteristics across the two areas with significantly different climate. The estimates of all three models are summarised in table~\ref{MainEst}. The first two columns represent the model for all counties, the third and fourth columns include estimates for the subsample of ASAL counties and the last two columns describe the estimates based on the subsample of non-ASAL counties. All predictors were standardised, therefore the estimates and the corresponding p-values can be interpreted as measures of relative importance. 
