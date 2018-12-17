@@ -28,7 +28,7 @@ drop1(KENd_lmer)
 anova(KENd_lmer)
 add1(KENd_lmer,scope=scopefullish)
 
-#----  ---  --   ----      -----     -----    ---  ----   ----       ----      ------        ---- -- - - - - -   - -- - - - - -- - - - - -- - - -- - - - -- - - - -- - -- -- - - --- - -- - - - -- - - 
+#- - - - - - - - - - - - - -- - -- -- -- -    ---  ----   ----       ----      ------        ---- -- - - - - -   - -- - - - - -- - - - - -- - - -- - - - -- - - - -- - -- -- - - --- - -- - - - -- - - 
 # now add1 full..
 scopefull=formula(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                      +AvgTemp + CVTempK+I(AvgTemp^2)+ Prec2m +MaxP + DDays+HWDays+MaxT,data=ScaleTS)
