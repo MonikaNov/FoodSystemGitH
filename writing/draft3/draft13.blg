@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: draft13.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: draft13.aux
 The style file: dcuM.bst
 Database file #1: referencesFS.bib
 Unbalanced braces---line 791 of file referencesFS.bib
@@ -13,45 +11,4 @@ I was expecting a `,' or a `}'---line 986 of file referencesFS.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty title in Barasa2017
-You've used 10 entries,
-            2947 wiz_defined-function locations,
-            702 strings with 6039 characters,
-and the built_in function-call counts, 41413 in all, are:
-= -- 6842
-> -- 466
-< -- 0
-+ -- 3259
-- -- 140
-* -- 3519
-:= -- 8383
-add.period$ -- 19
-call.type$ -- 10
-change.case$ -- 135
-chr.to.int$ -- 10
-cite$ -- 11
-duplicate$ -- 114
-empty$ -- 249
-format.name$ -- 171
-if$ -- 7400
-int.to.chr$ -- 5
-int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 50
-num.names$ -- 103
-pop$ -- 56
-preamble$ -- 3
-purify$ -- 150
-quote$ -- 0
-skip$ -- 93
-stack$ -- 0
-substring$ -- 9680
-swap$ -- 7
-text.length$ -- 140
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 38
-warning$ -- 1
-while$ -- 212
-width$ -- 0
-write$ -- 141
 (There were 2 error messages)
