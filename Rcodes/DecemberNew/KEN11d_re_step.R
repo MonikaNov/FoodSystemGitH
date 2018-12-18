@@ -17,5 +17,6 @@ KENd_lmer_reFull<-lmer(log(Yield0)~SeasPr+I(SeasPr^2)+AvgTemp +CVPrec+Spell+Spel
                        ,data=ScaledTS,na.action=na.exclude)
 KENd_lmer_reFull_step<-step(KENd_lmer_reFull,reduce.fixed=FALSE)
 
+summary(get_model(KENd_lmer_reFull_step)) # groot, nothing much left in the RE
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 save.image("Rcodes/DecemberNew/KEN11d_re_step.RData")

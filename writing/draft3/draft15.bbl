@@ -25,6 +25,19 @@ Bates, J., Pinheiro, J., Pinheiro, J. \harvardand\ Bates, D.  \harvardyearleft
 \newblock {\em Mixed-Effects Models in S and S-PLUS}, Statistics and Computing,
   Springer New York.
 
+\harvarditem{Kery}{2010a}{KERYch12}
+Kery, M.  \harvardyearleft 2010a\harvardyearright .
+\newblock Chapter 12 - linear mixed-effects model, {\em in} M.~Kéry (ed.),
+  {\em Introduction to WinBUGS for Ecologists}, Academic Press, Boston, pp.~151
+  -- 166.
+\newline\harvardurl{http://www.sciencedirect.com/science/article/pii/B9780123786050000120}
+
+\harvarditem{Kery}{2010b}{KERYch9}
+Kery, M.  \harvardyearleft 2010b\harvardyearright .
+\newblock Chapter 9 - normal one-way anova, {\em in} M.~Kéry (ed.), {\em
+  Introduction to WinBUGS for Ecologists}, Academic Press, Boston, pp.~115 --
+  127.
+
 \harvarditem[Kuznetsova et~al.]{Kuznetsova, Brockhoff \harvardand\
   Christensen}{2017}{lmerTest}
 Kuznetsova, A., Brockhoff, P. \harvardand\ Christensen, R.  \harvardyearleft
