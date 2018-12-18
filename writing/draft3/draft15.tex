@@ -1,0 +1,496 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    INSTITUTE OF PHYSICS PUBLISHING                                   %
+%                                                                      %
+%   `Preparing an article for publication in an Institute of Physics   %
+%    Publishing journal using LaTeX'                                   %
+%                                                                      %
+%    LaTeX source code `ioplau2e.tex' used to generate `author         %
+%    guidelines', the documentation explaining and demonstrating use   %
+%    of the Institute of Physics Publishing LaTeX preprint files       %
+	%    `iopart.cls, iopart12.clo and iopart10.clo'.                      %
+%                                                                      %
+%    `ioplau2e.tex' itself uses LaTeX with `iopart.cls'                %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% First we have a character check
+%
+% ! exclamation mark    " double quote  
+% # hash                ` opening quote (grave)
+% & ampersand           ' closing quote (acute)
+% $ dollar              % percent       
+% ( open parenthesis    ) close paren.  
+% - hyphen              = equals sign
+% | vertical bar        ~ tilde         
+% @ at sign             _ underscore
+% { open curly brace    } close curly   
+% [ open square         ] close square bracket
+% + plus sign           ; semi-colon    
+% * asterisk            : colon
+% < open angle bracket  > close angle   
+% , comma               . full stop
+% ? question mark       / forward slash 
+% \ backslash           ^ circumflex
+%
+% ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+% abcdefghijklmnopqrstuvwxyz 
+% 1234567890
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+
+
+
+\documentclass[12pt]{iopart}
+\newcommand{\gguide}{{\it Preparing graphics for IOP Publishing journals}}
+
+%Uncomment next line if AMS fonts required
+%\usepackage{iopams}  
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{color, colortbl}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{amsbsy}
+\usepackage[none]{hyphenat}
+\usepackage{footnote}
+\usepackage{tabularx}
+\usepackage{epstopdf}
+\usepackage{setspace} % for double spacing, maybe remove later
+\usepackage{mathrsfs} 
+\usepackage[hyphens]{url}
+\usepackage[english]{babel}
+\usepackage{harvard}
+
+\usepackage[flushleft]{threeparttable}
+\usepackage{changepage}
+
+
+\makeatletter
+\newif\ifnobrackets
+\renewcommand\@cite[2]{\ifnobrackets\else[\fi{#1\if@tempswa , #2\fi}\ifnobrackets\else]\fi\nobracketsfalse}
+\newcommand\nbcite{\nobracketstrue\cite}
+\makeatother
+	
+\definecolor{Gray}{gray}{0.9}
+
+
+\begin{document}
+
+\pdfminorversion=4
+\submitto{\ERL}
+\makesavenoteenv{tabular}
+
+\title{The Effects of weather on maize yields: New evidence from Kenya}
+
+\author{Monika Novackova, Martin Todd, Dominic Kniveton and Pedram Rowhani}
+
+\address{Department of Geography, University of Sussex, Falmer, UK}
+\ead{monika.novac@gmail.com}
+\vspace{10pt}
+\begin{indented}
+\item[]November 2018
+\end{indented}
+
+\doublespacing
+\begin{abstract}
+...Applying the linear mixed effects models, we found that...\\
+\textcolor{blue}{.. to be written later..}
+\end{abstract}
+
+%
+% Uncomment for keywords
+%\vspace{2pc}
+%\noindent{\it Keywords}: XXXXXX, YYYYYYYY, ZZZZZZZZZ
+%
+% Uncomment for Submitted to journal title message
+%\submitto{\JPA}
+%
+% Uncomment if a separate title page is required
+%\maketitle
+% 
+% For two-column output uncomment the next line and choose [10pt] rather than [12pt] in the \documentclass declaration
+%\ioptwocol
+%
+\maketitle
+\section{Introduction}\label{Introduction}
+
+
+\begin{itemize}
+\color{blue}
+\item[] \textbf{Paragraph 1}
+
+\begin{itemize}
+
+\item Extreme weather causes disasters $\rightarrow$	 early warning systems have been developed
+\end{itemize}
+\item[] \textbf{Paragraph 2}
+\begin{itemize}
+\item What weather forecasts (measures) have been used in EWS? \textit{ref. litrature}
+\begin{itemize}
+\item Mostly seasonal precip. totals and temperature averages
+\end{itemize}
+\end{itemize}
+
+\item[] \textbf{Paragraph 3} 
+\begin{itemize}
+
+\item Identify difference between hazard and disaster
+
+\begin{itemize}
+\item Not every hazard turns into disaster
+\item For a hazard to become a disaster it needs to have \textbf{impact}
+\item Here, we identify the key metrics which have impact on yield
+\end{itemize}
+
+\end{itemize}
+
+\item[] \textbf{Paragraph 4}
+\begin{itemize}
+\item Crop yield versus climate forecasting
+\end{itemize}
+
+
+\item[] \textbf{Paragraph 5}
+	\begin{itemize}
+		\item Aim of the paper
+		\end{itemize}
+	 
+	\end{itemize}
+
+
+
+
+
+\section{Methods}\label{Methods}
+\color{blue}
+
+...a case study looking at Kenya...
+\color{black}
+
+
+ 
+\subsection{Data}\label{Data}
+
+In this study, we analyzed the relationship between maize yields and climate. Our dataset consists of an yearly panel of $47$ counties of Kenya describing the period of $1981-2017$. 
+	We acquired the county level yearly yield data from the Famine Early Warning Systems Network (FEWS NET). Regarding the weather data, we exploited $0.25^\circ$ resolution precipitation and temperature gridded datasets. The precipitation data were obtained from the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) while the temperature data are available at the website of the Berkeley Earth. We calculated spatial averages of the gridded data over the counties to get a single value for each county and each point in time. The frequency of precipitation and temperature data was daily, therefore, further aggregation was needed to obtain yearly values corresponding to the yearly frequency of the yield data. Hence, each weather characteristic was further aggregated over years resulting in a county-level panel conformable with the yield data. 
+	
+	There are two predominant rainfall regimes in Kenya. The arid and semi-arid (ASAL) counties exhibit mostly bi-modal precipitation patterns with long rains lasting from March to May and short rains occurring between October and December. In the non-ASAL counties, the single rainy season usually starts in March and lasts until August. Following the precipitation patterns and closely related planting and harvesting calendar, we computed yearly values of various weather characteristics as follows: For the ASAL counties, we used daily data covering October, November and December of the previous year and March, April, May of the current year and for the non-ASAL counties we used daily data covering March to August of the current year.
+
+
+Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature including indicators of floods. The measures which we found significant were: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, coefficient of variation of average seasonal temperature (converted into Kelvin because other scales of temperature such us Celsius are interval and coefficient of variation does not have any meaning for data measured on an interval scale),  maximum length of dry spell in number of days and the number of dry spells lasting for four days or more (we considered every day when precipitation didn't exceed $1$ mm as a dry day). We did not include squared values of the average seasonal temperature as it was not significant in our models and there is not much evidence of non-linear relationship between yield and temperature in the past literature.
+\subsection{Statistical approach}\label{stats}
+
+% No need to write too many details (or a section) about measures of food security
+% No need to describe all the weather measures/characteristics that we have calculated and/or tried to use and didn't work
+
+\sloppy
+Kenya consists of $47$ counties with semi-autonomous county governments. As a result of the high degree of county-level autonomy, the policies and regulations often differ across the counties, hence the effects of weather on crop yield are likely to be different across the counties. Therefore, following the standard methodology, we estimated a battery of linear mixed effects models (also known as mixed models) commonly used to analyse longitudinal data \cite{bates2000mixed}. Mixed models are suitable for analysis of panel data as they account for the panel structure of the dataset. These types of models include both fixed effects parameters and random effects. Fixed effects are analogous to parameters in a classical linear regression model and value of each effect is assumed to be fixed over all counties \cite{bates2010lme4}. On the other hand, random effects are unobserved random variables. There are at least three benefits of treating a set of parameters as a random sample from some distribution. \textit{(i)} Extrapolation of inference to a wider population \textit{(ii)} improved accounting for system uncertainty and \textit{(iii)} efficiency of estimation %(\citealp{KERYch9, KERYch12}).
+
+Formally, a linear mixed model can be described by the distribution of two vectors of random variables: the response $\mathscr{Y}$ and the vector of random effects $\mathscr{B}$. The distribution of $\mathscr{B}$ is multivariate normal and the conditional distribution of $\mathscr{Y}$ given $\mathscr{B}=\mathbf{b}$ is multivariate normal of a form %(\citealp{bates2010lme4, KERYch9}):
+
+
+
+
+\begin{equation}\label{MixedGeneral}
+\begin{array}{lcl}
+
+(\mathscr{Y}|\mathscr{B}=\mathbf{b})& \sim & \mathit{N}(\mathbf{X}\mathbf{\beta}+\mathbf{Z}\mathbf{b},\sigma^2\mathbf{I}),
+
+\end{array}
+\end{equation}
+
+where $\mathbf{X}$ is an $n \times p$ model matrix of fixed effects, $\mathbf{\beta}$ is a $p$-dimensional fixed-effects parameter, $\mathbf{Z}$ is an $n \times q$ model matrix for the $q$-dimensional vector of random-effects variable $\mathscr{B}$ evaluated at $\mathbf{b}$ and $\sigma$ a scale factor. The distribution of $\mathscr{B}$ can be written as: 
+
+\begin{equation}\label{ranefDist}
+\mathscr{B} \sim \mathit{N}(0,\mathbf{\Sigma}),
+\end{equation}
+
+where $\mathbf{\Sigma}$ is a $q \times q$ positive semi-definite variance-covariance matrix.
+
+
+
+
+
+According to a shape of a histogram of the maize yield data we decided to log-transform the yield data before conducting our analysis. Hence, we used a log-linear functional form of our models as is a common practice in agricultural economics. Furthermore, we scaled all predictors by subtracting mean and dividing them by standard deviation to avoid convergence problems.
+
+
+To find the most suitable set of fixed effects, we adapted a stepwise selection procedure to choose a model which minimized the value of the Akaike’s Information Criterion (AIC). We started  with a model which included the complete set of our weather measures in the fixed effects and random intercepts and we performed a search through the subsets off the fixed effects minimizing the AIC and allowing for steps in both `backward' and `forward' directions (that is removing and adding predictors). We decided to not to include the number of heatwave days and average maximum daily temperature although including them in the fixed effects slightly improved the AIC. The reasons for not including them were their strong correlation with average seasonal temperature (the value of the correlation coefficient was $0.981$ for the correlation of the average seasonal temperature with the maximum daily temperature and $0.517$ the correlation of the average seasonal temperature with the number of heatwave days and the p-values of both of them are smaller than $1\times10^{-6}$) and the lack of significance of their individual t-tests (their p-values were $0.121$ for the maximum daily temperature and $0.075$ for the number of heatwave days). Furthermore, including them only improved AIC by $4$ (when estimated by maximum likelihood as required for a meaningful comparison) and the signs of these variables were positive in contrary to our expectation. Hence, we concluded that the decrease in AIC and positive signs are likely to be results of the correlation with average temperature or perhaps other omitted variables and we did not include them in our model.
+
+We further applied a series of likelihood ratio tests of significance of random slopes, however no subset of random slopes improved the fit, hence, our final model only includes random intercepts.\footnote{Although adding the random slope of the coefficient of variation slightly improved the AIC from $2122.226$ to $2122.110$, we decided to not to include the coefficient of variation of temperature in the random effects. The reason for not including the random slope is that the difference in AIC is negligible and the F-test of the comparison of the two models is insignificant favouring the simpler model (p-value$=0.128$).} 
+
+To verify our results, we adapted an alternative step-down model building
+approach using the Satterthwaite’s method to determine the p-values of the individual
+t-tests \cite{lmerTest}. To be more specific, we started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the first part of this procedure the insignificant random effects were removed one by one until only significant predictors remained. After this, the insignificant fixed effects were removed one by one until only significant predictors remained. For random effects we considered the level of significance $\alpha=0.1$ and for fixed effects we opted for $\alpha=0.05$~\cite{lmerTest}. Applying this method we obtained the same model as according to the AIC-based stepwise method described above.
+
+\textcolor{blue}{re-write the tables with estimates  UNITS KELVIN AND CV TIMES THOUSAND; possibly table of all available weather measure in the appendix, maybe a drop1 and add1 tables??}
+
+
+Based on the conditional Lagrange multiplier (LM) test developed by Baltagi \& Li (1991) and Baltagi \& Li (1995), the errors exhibited a within group autcorrelation structure in our models (the p-value of the LM test was $1.1\times10^{-13}$). To further investigate the autocorrelation structure of the errors, we estimated a number of models (with the subset of predictors chosen as described above) with ARMA($p$,$q$) error structure. In particular, we estimated all variants of our model with ARMA($p$,$q$) errors such that $p\leq2$ and $q\leq2$. Comparing the AIC criteria and using the corresponding likelihood ratio statistics, we found that the most appropriate error correlation structure was ARMA($1$,$1$). The value of the AIC criterion of the model with ARMA($1$,$1$) error structure was $2122.2$ while the AIC was $2129.2$ for the model with ARMA($1$,$0$) errors.  The p-value of the likelihood ratio test of the comparison of the model with ARMA($1$,$1$) errors and the model with ARMA($1$,$0$) errors was smaller than $1 \times10^{-4}$, hence the ARMA($1$,$1$) error structure turned out to be a better fit. The AIC criteria and the likelihood ratio tests of all the models with ARMA($p$,$q$) errors are summarised in table~\ref{ARMA} in the appendix.
+
+	\section{Results}\label{Results}
+	
+Besides our main model, we estimated the same specification for two additional subsamples of Kenyan counties. In particular, we estimated the model for the subsample of ASAL counties and for the subsample of non-ASAL counties separately to compare the effects of various weather characteristics across the two areas with significantly different climate. The estimates of all three models are summarised in table~\ref{MainEst}. The first two columns represent the model for all counties, the third and fourth columns include estimates for the subsample of ASAL counties and the last two columns describe the estimates based on the subsample of non-ASAL counties. All predictors were standardised, therefore the estimates and the corresponding p-values can be interpreted as measures of relative importance. 
+
+As an additional measure of relative importance we included F-values of the type \textit{III} analysis of variance (ANOVA) in table~\ref{MainEst}. The F-tests were conducted using the marginal rather than sequential sum of squares. That is, for each variable, the F-test is a test of significance of that part of explained sum of squares which can be contributed to the particular explanatory variable. In other worlds, the F-value is a test statistic of comparison of the preferred model (with all the variables in table~\ref{MainEst}) and the model without the explanatory variable in question but including all other predictors. The type~\textit{III} ANOVA does not depend on the order in which the effects are entered in the model.
+
+The preferred specification has a log-linear functional form, therefore the estimates in table~\ref{MainEst} are not directly interpretable as marginal effects and the effects on yield are multiplicative. The exponents of the estimates (which can be interpreted as additive marginal effects on yield) can be found in table~\ref{KenARe11_exponents} in the appendix.
+
+
+First, we will focus on the estimates based on the sample of all counties, that is the first two columns in table~\ref{MainEst}. Consistently with our assumptions, seasonal precipitation has mostly positive and significant effect on maize yield while average temperature has negative effects on yields.  
+
+
+{
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} \\ Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11a  KEN11a_ASAL    KEN11a_nonASAL % in the file Models1.R in folder RCodes\NovemberNewVars												
+\label{MainEst} 
+\begin{footnotesize}
+\lineup
+\begin{tabular}{@{}lllllll} 
+\br 
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\vspace{0.1cm}\textbf{ }}  &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
+    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&\textbf{Estimate}&\textbf{F-value\tnote{a}}% anova(KEN11a, type='marginal')
+    &\textbf{Estimate}&\textbf{F-value\tnote{a}}&\textbf{Estimate}&\textbf{F-value\tnote{a}}\\
+\mr
+\\
+\vspace{-0.2cm}Intercept&$\m0.259^{***}$&$19.916$&$\m0.243^{*}$&$5.230$&$\m0.344^{**}$&$10.061$\\
+  \\ \vspace{-0.2cm}Prec. total&$\m0.078^{*}$&$\05.402$&$\m0.006^{}$&$0.022$&$\m0.246^{***}$&$19.386$\\
+  \\
+  \vspace{-0.2cm}Prec. total sq.&$-0.028^{*}$&$\04.289$&$\m0.004$&$0.051$&$-0.128^{***}$&$23.747$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$-0.079^{\bullet}$&$\03.277$&$-0.031$ &$0.246$&$-0.095$&$\02.231$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$-0.067^{*}$&$\04.810$&$-0.183^{**}$&$6.969$&$-0.012$&$\00.163$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$-0.063^{*}$&$\04.826$&$-0.157^{**}$&$8.065$&$-0.011$&$\00.096$\\
+  \\ \vspace{-0.2cm}Temp. - average&$-0.199^{***}$&$12.127$&$-0.213^{*}$&$5.376$&$-0.130$&$\01.580$\\
+  \\  \vspace{-0.2cm}Temp. std. dev.&$\m0.042^{\bullet}$&$\03.125$&$\m0.038$&$0.558$&$\m0.057$ ${*}$&$\05.640$\\
+  \\
+  \hline
+\vspace{-0.2cm} \\
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\
+\vspace{-0.2cm}
+\\
+\hline
+\\
+  \vspace{-0.2cm}Intercept\\
+ \\ 
+ \hline
+\vspace{-0.2cm} \\
+\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}\\
+\vspace{-0.2cm}
+\\  
+\br
+\end{tabular} 
+\end{footnotesize}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+        \begin{adjustwidth}{1cm}{} 
+    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+\linespread{1}
+
+
+
+We can see in table~\ref{MainEst} that the squared seasonal precipitation is negative while the linear precipitation is posititve,
+
+
+
+affects the
+
+Besides seasonal precipitation and average temperature, the length and number of dry spells  
+
+
+
+
+  \begin{figure}% new plots checked and good 17.dec.2018
+   \includegraphics{Figure1a_1f.pdf}\label{MarEff1}
+\caption{Predicted multiplicative marginal effects of seasonal precipitation (left column) and average seasonal temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Precipitation and temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\end{figure}
+
+
+
+
+\begin{itemize}
+\color{blue}
+\item Verbal description and interpretation of the results. Discussing goodness of fit using various criteria such as AIC or alternatives to $R^2$.
+
+\item relative importance of the individual variables and its measures
+%\item Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.
+
+	%	\begin{itemize}%
+		%	\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
+	%\end{itemize}
+	
+	
+\item show VIF
+\item If we get the yield data for the period from $2015$ onwards: Out of sample predictions and comparison with the real data
+\end{itemize}
+
+
+
+
+
+\color{black}
+
+\clearpage
+
+\appendix
+\section*{Appendix}
+
+\textcolor{blue}{\textit{should be at the end of the main text but before list of references}}
+
+
+
+\begin{table}[H]
+\caption{\label{ASAL}\textbf{List of arid and semi-arid (ASAL) and non-ASAL counties}}
+
+\begin{indented}
+\item[]\begin{tabular}{@{}lp{10cm}}
+\\[-1em]
+\br
+\\[-1em]
+\textbf{ASAL:}&Baringo, Embu, Garissa, Isiolo, Kajiado, Kilifi Kitui, Kwale, Laikipia, Lamu, Makueni, Mandera, Marsabit, Meru, Mombasa, Narok, Nyeri, Samburu, Taita-Taveta, Tana River, Tharaka Nithi, Turkana, Wajir, West Pokot\\
+\mr
+\textbf{non-ASAL:}&Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay, Kakamega, Kericho         Kiambu, Kirinyaga, Kisii, Kisumu, Machakos, Migori, Murang'a, Nakuru, Nyamira,   Nyandarua, Siaya, Trans Nzoia, Uasin Gishu, Vihiga\\
+\br
+\end{tabular}
+\end{indented}
+\end{table}
+
+
+
+
+{\begin{center}
+\begin{threeparttable}[H]
+\caption{\label{ARMA}Comparison of models with different error autcorrelation structure}
+\lineup
+\begin{indented}
+
+\item[]\begin{tabular}{@{}llll}
+\\[-1em]
+\br
+&&\centre{2}{\textbf{Likelihood ratio} vs. ARMA($1$,$1$)\tnote{a}}\\
+\textbf{Error autocorrelation structure}&\textbf{AIC}&\textbf{Statistic}&\multicolumn{1}{l}{\textbf{p-value}}\\
+\mr
+\textit{None}&$2205.4$&$87.17$&$<1\times10^{-4}$\\
+ARMA($1$,$0$)&$2129.2$&$\08.99$&$0.0027$\\
+ARMA($0$,$1$)&$2145.0$&${24.73}$&${<1\times10^{-4}}$ \\
+\rowcolor{Gray}ARMA(${1}$,${1}$)&${2122.2}$&$---$&$---$\\
+ARMA($2$,$1$)&$2124.1$&$\00.15$&$\0\00.6990$\\
+ARMA($1$,$2$)& $2124.2$&$\00.01$&$\0\00.9181$\\
+ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
+\br
+\end{tabular}
+
+\end{indented}
+\begin{tablenotes}
+  \begin{footnotesize}
+  \item[a] Likelihood ratio test of a comparison of the model in each row against the ARMA(${1}$,${1}$) error structure model. ARMA(${1}$,${1}$) error structure seems to be the most suitable as all lower-order correlation structure models are rejected against ARMA(${1}$,${1}$) while ARMA(${1}$,${1}$) is not rejected against any of the higher order structures.
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\end{center}
+
+
+\vspace{1cm}
+\textcolor{blue}{Possibly include a table of all values which I get from the lme or lme4 models summary in R, that is. correlation of the fixed effects etcetera}
+
+\vspace{1cm}
+\textcolor{blue}{Maybe also a table with standard errors here}
+
+
+
+
+{
+\begin{threeparttable}
+\singlespacing
+\caption{\textit{\textbf{Mixed  effects model:} exponents of the coefficient estimates\\ Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11a  KEN11a_ASAL    KEN11a_nonASAL										
+\label{KenARe11_exponents} 
+\begin{footnotesize}
+\lineup
+\begin{indented}
+\item[]\begin{tabular}{@{}llrlllr} 
+\br   &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
+    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&F-value\tnote{a}% anova(KEN11a, type='marginal')
+    &{$exp(\beta)$}&F-value\tnote{a}&{$exp(\beta)$}&F-value\tnote{a}\\
+\mr
+\\
+\vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
+  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$\05.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
+  \\
+  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$\04.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$\03.277$&$0.969$ &$0.246$&$0.909^{}$&$\02.231$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$\04.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$\00.163$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$\04.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$\00.096$\\
+  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$\01.580$\\
+  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$\03.125$&$1.039$&$0.558$&$1.059$ ${*}$&$\05.640$\\
+  \\
+  \hline\\[-1em]
+  \multicolumn{1}{l}{\textbf{Random effects:}}  & \\ 
+  \\[-1em]
+\hline
+\\[-1em]Intercept\\
+ \\[-1em] \hline
+\\[-1em]
+\textit{Number of observations:}  &\multicolumn{2}{c}{$1300$}&\multicolumn{2}{c}{$698$}&\multicolumn{2}{c}{$602$}
+\\
+\br
+\end{tabular} 
+\end{indented}
+\end{footnotesize}
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+        \begin{adjustwidth}{1cm}{} 
+    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
+     \end{adjustwidth}
+\singlespacing
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable} 
+\par}
+
+\clearpage
+
+
+  \begin{figure}
+   \includegraphics{Figure2a_2f.pdf}\label{MarEff2}
+\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and standard deviation (SD) of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and SD of temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\end{figure}
+
+  \begin{figure}
+   \includegraphics{Figure3a_3f.pdf}\label{MarEff3}
+\caption{Predicted multiplicative marginal effects of length of maximum dry spell in days (left column) and number of dry spells lasting for four days or more (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Maximum length of dry spell and number of dry spells (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\end{figure}
+
+
+\section*{References}
+
+
+
+\bibliography{referencesFS}
+
+\bibliographystyle{dcuM}
+\nocite{Baltagi91}
+\nocite{Baltagi95}
+\nocite{ASF} 
+\nocite{Berkeley} 
+\nocite{CHIRPS} 
+\nocite{FEWSNET}
+
+\end{document}
+

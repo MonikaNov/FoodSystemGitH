@@ -29,6 +29,12 @@ KEN11d_re2<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                 +AvgTemp + CVTempK, random= ~CVTempK-1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
                 control=lmeControl(maxIter=300,msMaxIter=300, msMaxEval=500),
                 data=ScaledTS,na.action=na.exclude);summary(KEN11d_re2)
+
+KEN11d_re3<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                +AvgTemp + CVTempK, random= ~SeasPr+CVTempK | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+                control=lmeControl(maxIter=300,msMaxIter=300, msMaxEval=500),
+                data=ScaledTS,na.action=na.exclude);summary(KEN11d_re3)
+
 anova(KEN11d,KEN11d_re2)
 ranova(KEN11d,KEN11d_re2,reduce.terms=FALSE)
 
