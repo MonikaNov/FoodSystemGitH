@@ -45,6 +45,13 @@ Kuznetsova, A., Brockhoff, P. \harvardand\ Christensen, R.  \harvardyearleft
 \newblock lmertest package: Tests in linear mixed effects models, {\em Journal
   of Statistical Software, Articles} {\bf 82}(13).
 
+\harvarditem[Zuur et~al.]{Zuur, Ieno, Walker, Saveiliev \harvardand\
+  Smith}{2009}{Zuur2009}
+Zuur, A., Ieno, E.~N., Walker, N., Saveiliev, A.~A. \harvardand\ Smith, G.~M.
+  \harvardyearleft 2009\harvardyearright .
+\newblock {\em Mixed Effects Models and Extensions in Ecology with {R}},
+  Springer.
+
 \harvarditem{{\noopsort{ZZZZ1}}Online{\ }Source:}{Accessed in December
   2018}{ASF}
 {\noopsort{ZZZZ1}}Online{\ }Source:  \harvardyearleft Accessed in December
