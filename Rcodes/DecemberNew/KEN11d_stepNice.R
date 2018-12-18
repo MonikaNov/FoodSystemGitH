@@ -82,13 +82,22 @@ CaryML_stepAIC_re2<-stepAIC(fullML_re2)
 
 
 fullML_re3<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+CVPrec+Spell+Spell4 +MaxP
-            + CVTempK + DDays, random= ~1+SeasPr+AvgTemp+I(SeasPr^2)+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK + DDays, random= ~1+SeasPr+AvgTemp+CVPrec+Spell+Spell4 +MaxP
             + CVTempK + DDays| ID1,method="ML",
             data=ScaledTS,na.action=na.exclude,control=lmeControl(maxIter=300,msMaxIter=300,msMaxEval=500)); summary(fullML_re3); exp(summary(fullML_re3)$coef[[1]])
 CaryML_stepAIC_re3<-stepAIC(fullML_re3)
 
 
-save.image("\\\\smbhome.uscs.susx.ac.uk\\mn301\\FoodSystemGitH\\Rcodes\\DecemberNew\\KEN11d_stepNice3.RData")
+save.image("\\\\smbhome.uscs.susx.ac.uk\\mn301\\FoodSystemGitH\\Rcodes\\DecemberNew\\KEN11d_stepNice4.RData")
+
+fullML_re3<-lme(log(Yield0)~SeasPr+AvgTemp+I(SeasPr^2)+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK + DDays, random= ~1+SeasPr+AvgTemp+CVPrec+Spell+Spell4 +MaxP
+            + CVTempK + DDays| ID1,method="ML",
+            data=ScaledTS,na.action=na.exclude,control=lmeControl(maxIter=300,msMaxIter=300,msMaxEval=500)); summary(fullML_re3); exp(summary(fullML_re3)$coef[[1]])
+CaryML_stepAIC_re3<-stepAIC(fullML_re3)
+
+
+save.image("\\\\smbhome.uscs.susx.ac.uk\\mn301\\FoodSystemGitH\\Rcodes\\DecemberNew\\KEN11d_stepNice4.RData")
 
 
 summary(CaryML_stepAIC_re); vif(CaryML_stepAIC_re)
