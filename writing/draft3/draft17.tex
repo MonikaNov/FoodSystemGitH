@@ -408,36 +408,32 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 \vspace{1cm}
 \textcolor{blue}{Possibly include a table of all values which I get from the lme or lme4 models summary in R, that is. correlation of the fixed effects etcetera}
 
-\vspace{1cm}
+
 \textcolor{blue}{Maybe also a table with standard errors here}
 
 
 
 
-{
-\begin{threeparttable}
-\singlespacing
-\caption{\textit{\textbf{Mixed  effects model:} exponents of the coefficient estimates\\ Log of maize yield and weather, ARMA(1,1) errors}}
-%KEN11a  KEN11a_ASAL    KEN11a_nonASAL										
+{\begin{threeparttable}
+\normalsize
+\caption{\normalsize{\textbf{ {Mixed  effects model:}} exponents of the coefficient estimates Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11dK  KEN11dK_ASAL    KEN11dK_nonASAL										
 \label{KenARe11_exponents} 
-\begin{footnotesize}
 \lineup
-\begin{indented}
-\item[]\begin{tabular}{@{}llrlllr} 
-\br   &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
-    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&F-value\tnote{a}% anova(KEN11a, type='marginal')
-    &{$exp(\beta)$}&F-value\tnote{a}&{$exp(\beta)$}&F-value\tnote{a}\\
+\begin{tabular}{@{}lllllll} 
+\br \\
+  \textbf{Fixed effects:}&\textit{\textbf{All counties}}&\textit{\textbf{ASAL}}&\textit{\textbf{non-ASAL}}\\
 \mr
 \\
-\vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
-  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$\05.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
+\vspace{-0.2cm}Intercept&$1.296^{***}$&$1.272^{*}$&$1.408^{**}$\\
+  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$1.007^{}$&$1.277^{***}$\\
   \\
-  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$\04.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
-    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$\03.277$&$0.969$ &$0.246$&$0.909^{}$&$\02.231$\\
-  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$\04.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$\00.163$\\
-  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$\04.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$\00.096$\\
-  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$\01.580$\\
-  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$\03.125$&$1.039$&$0.558$&$1.059$ ${*}$&$\05.640$\\
+  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$1.003$&$0.881^{***}$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$0.970$ &$0.907^{}$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$0.834^{**}$&$ 0.988^{}$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$0.855^{**}$&$0.989^{}$\\
+  \\ \vspace{-0.2cm}Temp. - average&$0.820^{***}$&$0.808^{*}$&$0.880$ $^{}$\\
+  \\  \vspace{-0.2cm}Temp. c. of var.&$1.043^{\bullet}$&$1.032$&$1.060$ ${*}$\\
   \\
   \hline\\[-1em]
   \multicolumn{1}{l}{\textbf{Random effects:}}  & \\ 
@@ -450,14 +446,9 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 \\
 \br
 \end{tabular} 
-\end{indented}
-\end{footnotesize}
  \begin{tablenotes}
   \begin{footnotesize}
     \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
-        \begin{adjustwidth}{1cm}{} 
-    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
-     \end{adjustwidth}
 \singlespacing
   \end{footnotesize}
 \end{tablenotes}
@@ -469,7 +460,7 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 
   \begin{figure}
    \includegraphics{Figure2a_2f.pdf}\label{MarEff2}
-\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and standard deviation (SD) of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and SD of temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and CV of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
 \end{figure}
 
   \begin{figure}

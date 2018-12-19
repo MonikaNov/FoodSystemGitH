@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  19 DEC 2018 23:09
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  19 DEC 2018 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -394,13 +394,13 @@ t error
 ] [13]
 File: Figure2a_2f.pdf Graphic file (type QTm)
  <use  "Figure2a_2f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 471--472
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 462--463
 [][][] 
  []
 
 File: Figure3a_3f.pdf Graphic file (type QTm)
 <use  "Figure3a_3f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 476--477
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 467--468
 [][][] 
  []
 
@@ -417,12 +417,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 4348 strings out of 494579
- 58258 string characters out of 6167474
- 144802 words of memory out of 5000000
- 8028 multiletter control sequences out of 15000+600000
- 15032 words of font info for 72 fonts, out of 8000000 for 9000
+ 4350 strings out of 494579
+ 58313 string characters out of 6167474
+ 141802 words of memory out of 5000000
+ 8029 multiletter control sequences out of 15000+600000
+ 15040 words of font info for 73 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
- 42i,16n,35p,2299b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,16n,35p,2299b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on draft17.pdf (16 pages).
