@@ -222,13 +222,11 @@ It was apparent from the histogram of the maize yield data that the distribution
 
 To find the most suitable set of fixed effects, we adapted a stepwise selection procedure which minimized the Akaike's Information Criterion (AIC). The first step of the procedure was the estimation of the model with the complete set of our weather measures in the fixed effects and with the random intercepts. After this, we performed a search through the subsets of the fixed effects minimizing the AIC and allowing for steps in both `backward' and `forward' directions (that is removing and adding predictors). We decided not to include number of heatwave days and average maximum daily temperature although including them as fixed effects would slightly improve the AIC. The reasons for not including them were their strong correlation with average seasonal temperature (the correlation coefficient was $0.981$ in case of maximum daily temperature and $0.517$ for the number of heatwave days with the p-values smaller than $1\times10^{-6}$ in both cases), high variance inflation factor (VIF) of the maximum temperature ($5.397$) and the lack of significance of their individual t-tests (the p-values were $0.121$ for the maximum daily temperature and $0.075$ for the number of heatwave days). Furthermore, including the heatwave days and maximum daily temperature would only lead to small change in AIC from $2080.877$ to $2076.439$ (these values differ from the AIC presented in table~\ref{ARMA} in the appendix because the final estimates reported in table~\ref{ARMA} were estimated using the restricted maximum likelihood (REML) whereas the models were re-estimated using the ML method for comparison\footnote{In general, REML is the preferred estimation method for the mixed effects models as the ML estimates of the variance component are biased, however, REML criterion is not meaningful for comparison of the models with different fixed effects. Therefore, the models had to be re-estimated by ML for comparison \cite{Zuur2009}.}). In addition, the coefficients of both heatwave days and maximum daily temperature were positive, which is opposite to what we expected. Hence, we concluded that the decrease in AIC and the positive signs are likely to be results of the correlation with average temperature and we did not include them in our preferred model.
 
-We further applied a series of likelihood ratio tests of significance of random slopes, however no subset of random slopes improved the fit. Hence, besides the fixed effects, our final model only included random intercepts.\footnote{Although adding the random slope of the coefficient of variation slightly improved the AIC from $2122.226$ to $2122.110$, we decided to not to include the coefficient of variation of temperature in the random effects. The reason for not including the random slope is that the difference in AIC is negligible and the F-test of the comparison of the two models is insignificant favouring the simpler model (p-value$=0.128$).} 
+We further applied a series of likelihood ratio tests to test for significance of random slopes. No subset of the random slopes improved the fit, therefore besides the fixed effects, our final model only included the random intercepts.\footnote{Although adding the random slope of the coefficient of variation slightly improved the AIC from $2122.226$ to $2122.110$, we decided to not to include the coefficient of variation of temperature in the random effects. The reason for not including the random slope is that the difference in AIC is negligible and the F-test of the comparison of the two models is insignificant favouring the simpler model (p-value$=0.128$).} 
 
 To verify our results, we adapted an alternative step-down model building
 approach using the Satterthwaite’s method to determine the p-values of the individual
-t-tests \cite{lmerTest}. We started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the first part of the procedure, the insignificant random effects were removed one by one. In each iteration, the insignificant variable with the highest p-value was removed and this was repeated until only the significant predictors remained. After this, we applied an analogous procedure to the fixed effects until we were left only with the significant ones. As recommended in literature, we considered the level of significance $\alpha=0.1$ for random effects and $\alpha=0.05$~ for fixed effects \cite{lmerTest}. This method lead to the same model as the one obtained with our primary AIC-based method described above.
-
-\textcolor{blue}{re-write the tables with estimates  UNITS KELVIN AND CV TIMES THOUSAND; possibly table of all available weather measure in the appendix, maybe a drop1 and add1 tables??}
+t-tests \cite{lmerTest}. We started with a model which included the complete set of our weather measures in both fixed effects and random effects. In the first part of the procedure, the insignificant random effects were removed one by one. In each iteration, the insignificant variable with the highest p-value was removed . This was repeated until only the significant predictors remained. After this, we applied an analogous procedure to the fixed effects until we were left only with the significant ones. As recommended in literature, we considered the level of significance $\alpha=0.1$ for random effects and $\alpha=0.05$~ for fixed effects \cite{lmerTest}. This method led to the same model as the one obtained with our primary AIC-based method described above.
 
 
 According to the conditional Lagrange multiplier (LM) test developed by Baltagi \& Li (1991) and Baltagi \& Li (1995), the errors exhibited a within group autcorrelation structure in our models (the p-value of the LM test was $1.1\times10^{-13}$). To further investigate the autocorrelation structure of the errors, we estimated a number of models (with the subset of predictors chosen as described above) with an ARMA($p$,$q$) error structure. In particular, we estimated all variants of our model with ARMA($p$,$q$) errors such that $p\leq2$ and $q\leq2$. Comparing the AIC criteria and using the corresponding likelihood ratio statistics, we found that the most appropriate error correlation structure was ARMA($1$,$1$). The value of the AIC criterion of the model with the ARMA($1$,$1$) error structure was $2122.2$ while the AIC was $2129.2$ for the model with ARMA($1$,$0$) errors.  The p-value of the likelihood ratio test of the comparison of the model with ARMA($1$,$1$) errors and the model with ARMA($1$,$0$) errors was smaller than $0.003$, hence the ARMA($1$,$1$) error structure turned out to be a better fit. The AIC criteria and the likelihood ratio tests of all the models with ARMA($p$,$q$) errors are summarised in table~\ref{ARMA} in the appendix.
@@ -249,7 +247,7 @@ First, we will focus on the estimates based on the sample of all counties, that 
 \begin{threeparttable}
 \singlespacing
 \caption{\textit{\textbf{Mixed  effects model:} \\ Log of maize yield and weather, ARMA(1,1) errors}}
-%KEN11a  KEN11a_ASAL    KEN11a_nonASAL % in the file Models1.R in folder RCodes\NovemberNewVars												
+%KEN11dK  KEN11dK_ASAL    KEN11dK_nonASAL % in the file KEN11d_finals2.R in folder RCodes\DecemberNew												
 \label{MainEst} 
 \begin{footnotesize}
 \lineup
@@ -261,15 +259,15 @@ First, we will focus on the estimates based on the sample of all counties, that 
     &\textbf{Estimate}&\textbf{F-value\tnote{a}}&\textbf{Estimate}&\textbf{F-value\tnote{a}}\\
 \mr
 \\
-\vspace{-0.2cm}Intercept&$\m0.259^{***}$&$19.916$&$\m0.243^{*}$&$5.230$&$\m0.344^{**}$&$10.061$\\
-  \\ \vspace{-0.2cm}Prec. total&$\m0.078^{*}$&$\05.402$&$\m0.006^{}$&$0.022$&$\m0.246^{***}$&$19.386$\\
+\vspace{-0.2cm}Intercept&$\m0.259^{***}$&$19.908$&$\m0.241^{*}$&$5.084$&$\m0.342^{**}$&$9.891$\\
+  \\ \vspace{-0.2cm}Prec. total&$\m0.078^{*}$&$\05.358$&$\m0.007^{}$&$0.028$&$\m0.244^{***}$&$19.140$\\
   \\
-  \vspace{-0.2cm}Prec. total sq.&$-0.028^{*}$&$\04.289$&$\m0.004$&$0.051$&$-0.128^{***}$&$23.747$\\
-    \\ \vspace{-0.2cm}Prec. c. of var.&$-0.079^{\bullet}$&$\03.277$&$-0.031$ &$0.246$&$-0.095$&$\02.231$\\
-  \\  \vspace{-0.2cm}Dry spell -length&$-0.067^{*}$&$\04.810$&$-0.183^{**}$&$6.969$&$-0.012$&$\00.163$\\
-  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$-0.063^{*}$&$\04.826$&$-0.157^{**}$&$8.065$&$-0.011$&$\00.096$\\
-  \\ \vspace{-0.2cm}Temp. - average&$-0.199^{***}$&$12.127$&$-0.213^{*}$&$5.376$&$-0.130$&$\01.580$\\
-  \\  \vspace{-0.2cm}Temp. std. dev.&$\m0.042^{\bullet}$&$\03.125$&$\m0.038$&$0.558$&$\m0.057$ ${*}$&$\05.640$\\
+  \vspace{-0.2cm}Prec. total sq.&$-0.028^{*}$&$\04.263$&$\m0.003$&$0.037$&$-0.127^{***}$&$23.384$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$-0.079^{\bullet}$&$\03.278$&$-0.031$ &$0.237$&$-0.097$&$\02.326$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$-0.067^{*}$&$\04.800$&$-0.181^{**}$&$6.841$&$-0.012$&$\00.164$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$-0.063^{*}$&$\04.848$&$-0.156^{**}$&$8.032$&$-0.011$&$\00.087$\\
+  \\ \vspace{-0.2cm}Temp. - average&$-0.199^{***}$&$12.010$&$-0.214^{*}$&$5.409$&$-0.128$&$\01.525$\\
+  \\  \vspace{-0.2cm}Temp. c. of var.&$\m0.042^{\bullet}$&$\02.961$&$\m0.032$&$0.355$&$\m0.058^{*}$&$\05.372$\\
   \\
   \hline
 \vspace{-0.2cm} \\
@@ -372,6 +370,43 @@ Besides seasonal precipitation and average temperature, the length and number of
 
 
 
+
+\begin{table}[H]
+\caption{Precipitation and temperature measures considered}\label{vars}
+\begin{indented}
+\item[]\begin{tabular}{@{}lp{10cm}}
+\\[-1em]
+\br
+\\[-1em]
+$\bullet$& Total rainfall over the rainy season\\
+$\bullet$& Coefficient of variation of the rainfall during the rainy season\\
+$\bullet$& Maximum length of dry spell during the rainy season (in number of days)\\
+$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $4$ consecutive days without rain or more\\
+$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $10$ consecutive days without rain or more\\
+$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $20$ consecutive days without rain or more\\
+$\bullet$& Average temperature during the rainy season\\
+$\bullet$& Standard deviation of temperature during the rainy season\\
+$\bullet$& Cumulative degree days during the rainy season (excluding the days when maximum temperature above $30^{\circ}$C or below $10^{\circ}$C\\
+$\bullet$& Number of heatwave days during the rainy season when max. temperature $>35^{\circ}$C
+\\
+$\bullet$& Maximum daily rainfall  - to control for possible floods
+\\
+$\bullet$& Sum of precipitation amount on days where precipitation is above $90^{th}$ percentile of precip. of the whole period\\
+$\bullet$& Sum of precipitation amount on days where precipitation is above $95^{th}$ percentile of precip. of the whole period\\
+$\bullet$& Sum of precipitation amount on days where precipitation is above $99^{th}$ percentile of precip. of the whole period\\
+$\bullet$& Number of days where precipitation is above $90^{th}$ percentile of precip. of the whole period\\
+$\bullet$& Number of days where precipitation is above $95^{th}$ percentile of precip. of the whole period\\
+$\bullet$& Number of days where precipitation is above $99^{th}$ percentile of precip. of the whole period\\
+\br
+\end{tabular}
+\end{indented}
+
+\end{table}
+
+
+
+
+
 {\begin{center}
 \begin{threeparttable}[H]
 \caption{\label{ARMA}Comparison of models with different error autcorrelation structure}
@@ -408,36 +443,32 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 \vspace{1cm}
 \textcolor{blue}{Possibly include a table of all values which I get from the lme or lme4 models summary in R, that is. correlation of the fixed effects etcetera}
 
-\vspace{1cm}
+
 \textcolor{blue}{Maybe also a table with standard errors here}
 
 
 
 
-{
-\begin{threeparttable}
-\singlespacing
-\caption{\textit{\textbf{Mixed  effects model:} exponents of the coefficient estimates\\ Log of maize yield and weather, ARMA(1,1) errors}}
-%KEN11a  KEN11a_ASAL    KEN11a_nonASAL										
+{\begin{threeparttable}
+\normalsize
+\caption{\normalsize{\textbf{ {Mixed  effects model:}} exponents of the coefficient estimates Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11dK  KEN11dK_ASAL    KEN11dK_nonASAL										
 \label{KenARe11_exponents} 
-\begin{footnotesize}
 \lineup
-\begin{indented}
-\item[]\begin{tabular}{@{}llrlllr} 
-\br   &\multicolumn{2}{c}{\textit{\textbf{All counties}}} &\multicolumn{2}{c}{\textit{\textbf{ASAL}}} &\multicolumn{2}{c}{\textit{\textbf{non-ASAL}}}\\
-    \multicolumn{1}{l}{\vspace{0.1cm}\textbf{Fixed effects:}}&{$exp(\beta)$}&F-value\tnote{a}% anova(KEN11a, type='marginal')
-    &{$exp(\beta)$}&F-value\tnote{a}&{$exp(\beta)$}&F-value\tnote{a}\\
+\begin{tabular}{@{}lllllll} 
+\br \\
+  \textbf{Fixed effects:}&\textit{\textbf{All counties}}&\textit{\textbf{ASAL}}&\textit{\textbf{non-ASAL}}\\
 \mr
 \\
-\vspace{-0.2cm}Intercept&$1.296^{***}$&$19.916$&$1.276^{*}$&$5.230$&$1.410^{**}$&$10.061$\\
-  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$\05.402$&$1.006^{}$&$0.022$&$1.278^{***}$&$19.386$\\
+\vspace{-0.2cm}Intercept&$1.296^{***}$&$1.272^{*}$&$1.408^{**}$\\
+  \\ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$1.007^{}$&$1.277^{***}$\\
   \\
-  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$\04.289$&$1.004$&$0.051$&$0.880^{***}$&$23.747$\\
-    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$\03.277$&$0.969$ &$0.246$&$0.909^{}$&$\02.231$\\
-  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$\04.810$&$0.833^{**}$&$6.969$&$ 0.988^{}$&$\00.163$\\
-  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$\04.826$&$0.855^{**}$&$8.065$&$0.989^{}$&$\00.096$\\
-  \\ \vspace{-0.2cm}Temp. - average&$0.819^{***}$&$12.127$&$0.808^{*}$&$5.376$&$0.878$ $^{}$&$\01.580$\\
-  \\  \vspace{-0.2cm}Temp. std. dev.&$1.043^{\bullet}$&$\03.125$&$1.039$&$0.558$&$1.059$ ${*}$&$\05.640$\\
+  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$1.003$&$0.881^{***}$\\
+    \\ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$0.970$ &$0.907^{}$\\
+  \\  \vspace{-0.2cm}Dry spell -length&$0.935^{*}$&$0.834^{**}$&$ 0.988^{}$\\
+  \\ \vspace{-0.2cm}Dry spells 	$\geq$ 4 d.&$0.939^{*}$&$0.855^{**}$&$0.989^{}$\\
+  \\ \vspace{-0.2cm}Temp. - average&$0.820^{***}$&$0.808^{*}$&$0.880$ $^{}$\\
+  \\  \vspace{-0.2cm}Temp. c. of var.&$1.043^{\bullet}$&$1.032$&$1.060$ ${*}$\\
   \\
   \hline\\[-1em]
   \multicolumn{1}{l}{\textbf{Random effects:}}  & \\ 
@@ -450,14 +481,9 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 \\
 \br
 \end{tabular} 
-\end{indented}
-\end{footnotesize}
  \begin{tablenotes}
   \begin{footnotesize}
     \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
-        \begin{adjustwidth}{1cm}{} 
-    \item[a] Marginal (type III) sum of squares. The F-statistics correspond to the sum of squares attributable to each fixed effect.
-     \end{adjustwidth}
 \singlespacing
   \end{footnotesize}
 \end{tablenotes}
@@ -469,7 +495,7 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 
   \begin{figure}
    \includegraphics{Figure2a_2f.pdf}\label{MarEff2}
-\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and standard deviation (SD) of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and SD of temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and CV of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
 \end{figure}
 
   \begin{figure}

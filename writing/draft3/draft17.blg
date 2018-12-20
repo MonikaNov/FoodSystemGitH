@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: draft17.aux
+The style file: dcuM.bst
+Database file #1: referencesFS.bib
+Unbalanced braces---line 817 of file referencesFS.bib
+ : title = "Recentralization within decentralization: County hospital autonomy under devolution in Kenya
+ :                                                                                                      },
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1012 of file referencesFS.bib
+ : 
+ : url = "http://www.fao.org/docrep/013/i1500e/Kenya.pdf",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 12 entries,
+            2947 wiz_defined-function locations,
+            719 strings with 6400 characters,
+and the built_in function-call counts, 46212 in all, are:
+= -- 7553
+> -- 543
+< -- 0
++ -- 3553
+- -- 163
+* -- 3879
+:= -- 9382
+add.period$ -- 24
+call.type$ -- 12
+change.case$ -- 163
+chr.to.int$ -- 11
+cite$ -- 12
+duplicate$ -- 170
+empty$ -- 355
+format.name$ -- 198
+if$ -- 8296
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 60
+num.names$ -- 127
+pop$ -- 66
+preamble$ -- 3
+purify$ -- 180
+quote$ -- 0
+skip$ -- 144
+stack$ -- 0
+substring$ -- 10624
+swap$ -- 30
+text.length$ -- 168
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 0
+while$ -- 260
+width$ -- 0
+write$ -- 177
+(There were 2 error messages)

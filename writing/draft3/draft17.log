@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  19 DEC 2018 20:57
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  20 DEC 2018 01:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**draft16.tex
-(./draft16.tex
+**draft17.tex
+(./draft17.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 26 language(s) loaded.
 (./iopart.cls
@@ -316,8 +316,8 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count105
 \cp@tempcnt=\count106
 )
-(./draft16.aux)
-\openout1 = `draft16.aux'.
+(./draft17.aux)
+\openout1 = `draft17.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
@@ -370,7 +370,7 @@ m/n/12 early warning systems have been
 [2] [3] [4] [5] [6] [7] [8]
 File: Figure1a_1f.pdf Graphic file (type QTm)
  <use  "Figure1a_1f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 318--319
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 316--317
 [][][] 
  []
 
@@ -379,50 +379,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
 [11]
-Underfull \hbox (badness 4429) in paragraph at lines 366--367
+Underfull \hbox (badness 4429) in paragraph at lines 364--365
 []|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 395--395
-[]\TU/lmr/bx/n/10 Table 2. |[]\TU/lmr/m/n/10 Comparison of models with differen
+Underfull \hbox (badness 4647) in paragraph at lines 430--430
+[]\TU/lmr/bx/n/10 Table 3. |[]\TU/lmr/m/n/10 Comparison of models with differen
 t error
  []
 
 [12
 
-] [13]
+] [13] [14]
 File: Figure2a_2f.pdf Graphic file (type QTm)
  <use  "Figure2a_2f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 471--472
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 497--498
 [][][] 
  []
 
 File: Figure3a_3f.pdf Graphic file (type QTm)
 <use  "Figure3a_3f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 476--477
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 502--503
 [][][] 
  []
 
-(./draft16.bbl [14
+(./draft17.bbl [15
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15])
-[16] (./draft16.aux) )
+ [16])
+[17] (./draft17.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 375 ({)
+### simple group (level 1) entered at line 410 ({)
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 4348 strings out of 494579
- 58258 string characters out of 6167474
- 144802 words of memory out of 5000000
- 8028 multiletter control sequences out of 15000+600000
- 15032 words of font info for 72 fonts, out of 8000000 for 9000
+ 4351 strings out of 494579
+ 58319 string characters out of 6167474
+ 142811 words of memory out of 5000000
+ 8030 multiletter control sequences out of 15000+600000
+ 15040 words of font info for 73 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
- 42i,16n,35p,2299b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,16n,35p,2299b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on draft16.pdf (16 pages).
+Output written on draft17.pdf (17 pages).
