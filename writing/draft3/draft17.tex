@@ -82,7 +82,7 @@
 
 \begin{document}
 
-%\pdfminorversion=4
+\pdfminorversion=4
 \submitto{\ERL}
 \makesavenoteenv{tabular}
 
@@ -183,7 +183,7 @@ In this study, we analyzed the relationship between maize yields and climate. Ou
 	There are two predominant rainfall regimes in Kenya. The arid and semi-arid (ASAL) counties exhibit mostly bi-modal precipitation patterns with long rains lasting from March to May and short rains occurring between October and December. In the non-ASAL counties, the single rainy season usually starts in March and lasts until August. Following the precipitation patterns and closely related planting and harvesting calendar, we computed yearly values of various weather characteristics as follows: For the ASAL counties, we used daily data covering October, November and December of the previous year and March, April, May of the current year and for the non-ASAL counties we used daily data covering March to August of the current year.
 
 
-Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature including indicators of floods. The measures which we found significant were: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, coefficient of variation of average seasonal temperature (converted into Kelvin because other scales of temperature such us Celsius are interval and coefficient of variation does not have any meaning for data measured on an interval scale),  maximum length of dry spell in number of days and the number of dry spells lasting for four days or more (we considered every day when precipitation didn't exceed $1$ mm as a dry day). We did not include squared values of the average seasonal temperature as it was not significant in our models and there is not much evidence of non-linear relationship between yield and temperature in the past literature.
+Following the procedure described above, we calculated a number of previously used characteristics of precipitation and temperature including indicators of floods (for the list of these measures see table~\ref{vars} in the appendix). The measures which we found significant were: Total seasonal precipitation and its squared values, average seasonal temperature, coefficient of variation of seasonal precipitation, coefficient of variation of average seasonal temperature (converted into Kelvin because other scales of temperature such us Celsius are interval and coefficient of variation does not have any meaning for data measured on an interval scale),  maximum length of dry spell in number of days and the number of dry spells lasting for four days or more (we considered every day when precipitation didn't exceed $1$ mm as a dry day). We did not include squared values of the average seasonal temperature as it was not significant in our models and there is not much evidence of non-linear relationship between yield and temperature in the past literature.
 \subsection{Statistical approach}\label{stats}
 
 % No need to write too many details (or a section) about measures of food security
@@ -371,19 +371,19 @@ Besides seasonal precipitation and average temperature, the length and number of
 
 
 
-\begin{table}[H]
+\begin{threeparttable}[H]
+\singlespacing
 \caption{Precipitation and temperature measures considered}\label{vars}
-\begin{indented}
-\item[]\begin{tabular}{@{}lp{10cm}}
+\begin{tabular}{@{}lp{15cm}}
 \\[-1em]
 \br
 \\[-1em]
 $\bullet$& Total rainfall over the rainy season\\
 $\bullet$& Coefficient of variation of the rainfall during the rainy season\\
 $\bullet$& Maximum length of dry spell during the rainy season (in number of days)\\
-$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $4$ consecutive days without rain or more\\
-$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $10$ consecutive days without rain or more\\
-$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $20$ consecutive days without rain or more\\
+$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $4$ consecutive days without rain or more\tnote{a}\\
+$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $10$ consecutive days without rain or more\tnote{a}\\
+$\bullet$& Number of drought spells during the rainy season: a drought spell defined as $20$ consecutive days without rain or more\tnote{a}\\
 $\bullet$& Average temperature during the rainy season\\
 $\bullet$& Standard deviation of temperature during the rainy season\\
 $\bullet$& Cumulative degree days during the rainy season (excluding the days when maximum temperature above $30^{\circ}$C or below $10^{\circ}$C\\
@@ -391,18 +391,23 @@ $\bullet$& Number of heatwave days during the rainy season when max. temperature
 \\
 $\bullet$& Maximum daily rainfall  - to control for possible floods
 \\
-$\bullet$& Sum of precipitation amount on days where precipitation is above $90^{th}$ percentile of precip. of the whole period\\
-$\bullet$& Sum of precipitation amount on days where precipitation is above $95^{th}$ percentile of precip. of the whole period\\
-$\bullet$& Sum of precipitation amount on days where precipitation is above $99^{th}$ percentile of precip. of the whole period\\
-$\bullet$& Number of days where precipitation is above $90^{th}$ percentile of precip. of the whole period\\
-$\bullet$& Number of days where precipitation is above $95^{th}$ percentile of precip. of the whole period\\
-$\bullet$& Number of days where precipitation is above $99^{th}$ percentile of precip. of the whole period\\
+$\bullet$& Sum of precipitation amount on days where precipitation is above $90^{th}$ percentile of precip. of the whole period\tnote{b}\\
+$\bullet$& Sum of precipitation amount on days where precipitation is above $95^{th}$ percentile of precip. of the whole period\tnote{c}\\
+$\bullet$& Sum of precipitation amount on days where precipitation is above $99^{th}$ percentile of precip. of the whole period\tnote{d}\\
+$\bullet$& Number of days where precipitation is above $90^{th}$ percentile of precip. of the whole period\tnote{b}\\
+$\bullet$& Number of days where precipitation is above $95^{th}$ percentile of precip. of the whole period\tnote{c}\\
+$\bullet$& Number of days where precipitation is above $99^{th}$ percentile of precip. of the whole period\tnote{d}\\
 \br
 \end{tabular}
-\end{indented}
-
-\end{table}
-
+\begin{tablenotes}
+  \begin{footnotesize}
+  \item[a] Threshold for a dry day was considered $1$mm.
+  \item[b] $90^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.
+\item[c] $95^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.
+  \item[d] $99^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.
+  \end{footnotesize}
+\end{tablenotes}
+\end{threeparttable} 
 
 
 
