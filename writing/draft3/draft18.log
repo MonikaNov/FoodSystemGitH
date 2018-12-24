@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  24 DEC 2018 13:13
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  24 DEC 2018 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**draft17.tex
-(./draft17.tex
+**draft18.tex
+(./draft18.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 26 language(s) loaded.
 (./iopart.cls
@@ -307,7 +307,19 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \l@newzealand = a dialect from \language\l@british 
 )) (./harvard.sty
 Package: harvard 
-) (/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks24
+\SOUL@lasttoken=\toks25
+\SOUL@cmds=\toks26
+\SOUL@buffer=\toks27
+\SOUL@token=\toks28
+\SOUL@spaceskip=\skip54
+\SOUL@ttwidth=\dimen130
+\SOUL@uldp=\dimen131
+\SOUL@ulht=\dimen132
+)
+(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box57
 )
@@ -316,8 +328,8 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count105
 \cp@tempcnt=\count106
 )
-(./draft17.aux)
-\openout1 = `draft17.aux'.
+(./draft18.aux)
+\openout1 = `draft18.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
@@ -370,66 +382,63 @@ m/n/12 early warning systems have been
 [2] [3] [4] [5] [6] [7] [8] [9]
 File: Figure1a_1f.pdf Graphic file (type QTm)
  <use  "Figure1a_1f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 313--314
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 317--318
 [][] 
  []
 
-[10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Underfull \hbox (badness 4429) in paragraph at lines 361--362
+[10] [11] [12]
+Underfull \hbox (badness 4429) in paragraph at lines 365--366
 []|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Overfull \hbox (4.39139pt too wide) in paragraph at lines 371--408
+Overfull \hbox (4.39139pt too wide) in paragraph at lines 375--412
 [] 
  []
 
-[12
+[13
 
 ]
-Underfull \hbox (badness 4647) in paragraph at lines 432--432
+Underfull \hbox (badness 4647) in paragraph at lines 436--436
 []\TU/lmr/bx/n/10 Table 3. |[]\TU/lmr/m/n/10 Comparison of models with differen
 t error
  []
 
-[13] [14] [15]
+[14] [15] [16]
 File: Figure2a_2f.pdf Graphic file (type QTm)
  <use  "Figure2a_2f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 499--500
-[][] 
- []
-
-
-LaTeX Warning: Text page 16 contains only floats.
-
-[16
-
-]
-File: Figure3a_3f.pdf Graphic file (type QTm)
- <use  "Figure3a_3f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 504--505
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 503--504
 [][] 
  []
 
 
 LaTeX Warning: Text page 17 contains only floats.
 
-[17] (./draft17.bbl) [18] (./draft17.aux) )
+[17
+
+]
+File: Figure3a_3f.pdf Graphic file (type QTm)
+ <use  "Figure3a_3f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 508--509
+[][] 
+ []
+
+
+LaTeX Warning: Text page 18 contains only floats.
+
+[18] (./draft18.bbl) [19] (./draft18.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 412 ({)
+### simple group (level 1) entered at line 416 ({)
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 4354 strings out of 494579
- 58403 string characters out of 6167474
- 142829 words of memory out of 5000000
- 8031 multiletter control sequences out of 15000+600000
- 15048 words of font info for 74 fonts, out of 8000000 for 9000
+ 4523 strings out of 494579
+ 60494 string characters out of 6167474
+ 146395 words of memory out of 5000000
+ 8195 multiletter control sequences out of 15000+600000
+ 15361 words of font info for 75 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
  42i,16n,35p,2336b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on draft17.pdf (18 pages).
+Output written on draft18.pdf (19 pages).

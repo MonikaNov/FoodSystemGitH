@@ -101,7 +101,7 @@ nonASALSpell4[,c(2,4,5)]<-nonASALSpell4[,c(2,4,5)]/exp(summary(KEN11d_nonASAL)$t
 plot1<-plot(AllSpell)+ylab("All")+xlab(NULL)+xlab("(a)")+ggtitle("Effects of length of max dry spell on yields")+theme(plot.title=element_text(size=11))+scale_x_continuous(breaks = c(-2,0,2,4,6,8))+scale_y_continuous(breaks = c(0.4,0.6,0.8,1,1.2))
 plot2<-plot(AllSpell4)+ylab(NULL)+xlab(NULL)+xlab("(b)")+ggtitle("Effects of number of dry spells on yields")+theme(plot.title=element_text(size=11))+scale_x_continuous(breaks = c(-3,-2,-1,0,1,2))
 plot3<-plot(ASALSpell)+ylab("ASAL")+xlab(NULL)+xlab("(c)")+scale_x_continuous(breaks = c(-2,-1,0,1,2,3,4,5))+ggtitle(NULL)+ggtitle(NULL)+scale_y_continuous(breaks = c(0.5,1,1.5))
-plot4<-plot(ASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(d)")
+plot4<-plot(ASALSpell4)+ylab(NULL)+xlab(NULL)+ggtitle(NULL)+xlab("(d)")
 plot5<-plot(nonASALSpell)+ylab("non-ASAL")+xlab(NULL)+xlab("(e)")+ggtitle(NULL)+scale_x_continuous(breaks = c(-2,0,2,4,6,8))
 plot6<-plot(nonASALSpell4)+ylab(NULL)+xlab(NULL)+xlab("(f)")+ggtitle(NULL)+scale_x_continuous(breaks = c(-3,-2,-1,0,1,2))
 
