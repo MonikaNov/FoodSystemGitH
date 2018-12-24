@@ -234,14 +234,12 @@ According to the conditional Lagrange multiplier (LM) test developed by Baltagi 
 
 	\section{Results}\label{Results}
 	
-Besides our main model, we estimated the same specification for two additional subsamples of Kenyan counties. In particular, we estimated the model for the subsample of ASAL counties and for the subsample of non-ASAL counties separately to compare the effects of various weather characteristics across the two areas with significantly different climate. The estimates of all three models are summarised in table~\ref{MainEst}. The first two columns represent the model for all counties, the third and fourth columns include estimates for the subsample of ASAL counties and the last two columns describe the estimates based on the subsample of non-ASAL counties. All predictors were standardised, therefore the estimates and the corresponding p-values can be interpreted as measures of relative importance. 
+Besides our main model, we estimated the same specification for two additional subsamples of the Kenyan counties. In particular, we estimated the model for the subsample of the ASAL counties and for the subsample of the non-ASAL counties separately to compare the effects of various weather characteristics across the two areas with the significantly different climate. The estimates of all three models are summarised in table~\ref{MainEst}. The first two columns represent the model for all counties, the third and fourth columns include estimates for the subsample of the ASAL counties and the last two columns describe the estimates based on the subsample of the non-ASAL counties. All predictors were standardised, therefore the estimates and the corresponding p-values can be interpreted as measures of relative importance. As an additional measure of relative importance we included F-values of the type \textit{III} analysis of variance (ANOVA) in table~\ref{MainEst}. The F-tests were conducted using the marginal rather than the sequential sum of squares. That is, for each variable, the F-test is a test of significance of that part of explained sum of squares which can be contributed to the particular explanatory variable. In other worlds, the F-value is a test statistic of comparison of the preferred model (with all the variables in table~\ref{MainEst}) and the model without the explanatory variable in question but including all other predictors. The main advantage of the type~\textit{III} ANOVA is that the test statistics do not depend on the order in which the effects are entered in the model.
 
-As an additional measure of relative importance we included F-values of the type \textit{III} analysis of variance (ANOVA) in table~\ref{MainEst}. The F-tests were conducted using the marginal rather than sequential sum of squares. That is, for each variable, the F-test is a test of significance of that part of explained sum of squares which can be contributed to the particular explanatory variable. In other worlds, the F-value is a test statistic of comparison of the preferred model (with all the variables in table~\ref{MainEst}) and the model without the explanatory variable in question but including all other predictors. The type~\textit{III} ANOVA does not depend on the order in which the effects are entered in the model.
-
-The preferred specification has a log-linear functional form, therefore the estimates in table~\ref{MainEst} are not directly interpretable as marginal effects and the effects on yield are multiplicative. The exponents of the estimates (which can be interpreted as additive marginal effects on yield) can be found in table~\ref{KenARe11_exponents} in the appendix.
+The preferred specification has a log-linear functional form, therefore the estimates in table~\ref{MainEst} are not directly interpretable as marginal effects and their effects on yield are multiplicative. The predicted marginal effects of all coefficients are depicted in figures~\ref{MarEff1} in this section and in figures~\ref{MarEff2} and~\ref{MarEff3} in the appendix. The units of all predictors in all three figures are multiples of their standard deviations since the predictors were standardised. The exponents of the estimates (which can be interpreted as the additive marginal effects on yield) can be found in table~\ref{KenARe11_exponents} in the appendix.
 
 
-First, we will focus on the estimates based on the sample of all counties, that is the first two columns in table~\ref{MainEst}. Consistently with our assumptions, seasonal precipitation has mostly positive and significant effect on maize yield while average temperature has negative effects on yields.  
+In the following, we will discuss the estimates based on the sample of all counties and after that we will focus on the estimates based on the two subsamples.
 
 
 {
@@ -301,12 +299,9 @@ First, we will focus on the estimates based on the sample of all counties, that 
 \linespread{1}
 
 
-
-We can see in table~\ref{MainEst} that the squared seasonal precipitation is negative while the linear precipitation is posititve,
-
+The estimates of the model based on all the Kenyan counties are summarised in the first two columns of table~\ref{MainEst}. Consistently with our assumptions, seasonal precipitation and average temperature have significant effect on yields. As we expected, the effect of temperature is negative. The linear term of precipitation is positive while the squared term is negative and as we can see in figure~\ref{MarEff1}(a), the marginal effect of precipitation is hill-shaped 
 
 
-affects the
 
 Besides seasonal precipitation and average temperature, the length and number of dry spells  
 
@@ -314,8 +309,8 @@ Besides seasonal precipitation and average temperature, the length and number of
 
 
   \begin{figure}% new plots checked and good 17.dec.2018
-   \includegraphics{Figure1a_1f.pdf}\label{MarEff1}
-\caption{Predicted multiplicative marginal effects of seasonal precipitation (left column) and average seasonal temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Precipitation and temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+   \includegraphics{Figure1a_1f.pdf}
+\caption{Predicted multiplicative marginal effects of seasonal precipitation (left column) and average seasonal temperature (right column) on maize yields assuming that all other variables are fixed at their means (which is zero, as the predictors were standardised). The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Precipitation and temperature (x-axis) are in multiples of their standard deviations as the models were standardised. The effects are multiplicative as the models are in the log-linear form.}\label{MarEff1}
 \end{figure}
 
 
@@ -500,13 +495,13 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 
 
   \begin{figure}
-   \includegraphics{Figure2a_2f.pdf}\label{MarEff2}
-\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and CV of temperature (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and temperature (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+   \includegraphics{Figure2a_2f.pdf}
+\caption{Predicted multiplicative marginal effects of coefficient of variation (CV) of precipitation (left column) and CV of temperature (right column) on maize yields assuming that all other variables are fixed at their means (which is zero, as the predictors were standardised). The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. CV of precipitation and temperature (x-axis) are in multiples of their standard deviations as the models were standardised. The effects are multiplicative because the models are in the log-linear form.}\label{MarEff2}
 \end{figure}
 
   \begin{figure}
-   \includegraphics{Figure3a_3f.pdf}\label{MarEff3}
-\caption{Predicted multiplicative marginal effects of length of maximum dry spell in days (left column) and number of dry spells lasting for four days or more (right column) on maize yields. The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Maximum length of dry spell and number of dry spells (x-axis) are in multiples of their standard deviations. The effects are multiplicative as the models are in log-linear form.}
+   \includegraphics{Figure3a_3f.pdf}
+\caption{Predicted multiplicative marginal effects of length of maximum dry spell in days (left column) and number of dry spells lasting for four days or more (right column) on maize yields assuming that all other variables are fixed at their means (which is zero, as the predictors were standardised). The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Maximum length of dry spell and number of dry spells (x-axis) are in multiples of their standard deviations as the models were standardised. The effects are multiplicative because the models are in the log-linear form.}\label{MarEff3}
 \end{figure}
 
 
