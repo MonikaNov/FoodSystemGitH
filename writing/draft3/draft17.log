@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  24 DEC 2018 04:56
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  24 DEC 2018 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,18 +367,17 @@ Underfull \hbox (badness 1067) in paragraph at lines 131--132
 m/n/12 early warning systems have been
  []
 
-[2] [3] [4] [5] [6] [7] [8]
+[2] [3] [4] [5] [6] [7] [8] [9]
 File: Figure1a_1f.pdf Graphic file (type QTm)
  <use  "Figure1a_1f.pdf" >
 Overfull \hbox (59.4888pt too wide) in paragraph at lines 312--313
 [][] 
  []
 
-[9]
+[10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-[11]
+ [11]
 Underfull \hbox (badness 4429) in paragraph at lines 360--361
 []|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
