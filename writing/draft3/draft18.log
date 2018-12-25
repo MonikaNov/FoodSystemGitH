@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  25 DEC 2018 16:33
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  25 DEC 2018 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -382,7 +382,7 @@ m/n/12 early warning systems have been
 [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
 File: Figure1a_1f.pdf Graphic file (type QTm)
  <use  "Figure1a_1f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 323--324
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 325--326
 [][] 
  []
 
@@ -390,58 +390,59 @@ Overfull \hbox (59.4888pt too wide) in paragraph at lines 323--324
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-Underfull \hbox (badness 4429) in paragraph at lines 371--372
+[15]
+Underfull \hbox (badness 4429) in paragraph at lines 399--400
 []|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Overfull \hbox (4.39139pt too wide) in paragraph at lines 381--418
+Overfull \hbox (4.39139pt too wide) in paragraph at lines 409--446
 [] 
  []
 
-[15
+[16
 
 ]
-Underfull \hbox (badness 4647) in paragraph at lines 442--442
+Underfull \hbox (badness 4647) in paragraph at lines 470--470
 []\TU/lmr/bx/n/10 Table 3. |[]\TU/lmr/m/n/10 Comparison of models with differen
 t error
  []
 
-[16] [17] [18]
+[17] [18] [19]
 File: Figure2a_2f.pdf Graphic file (type QTm)
  <use  "Figure2a_2f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 509--510
-[][] 
- []
-
-
-LaTeX Warning: Text page 19 contains only floats.
-
-[19
-
-]
-File: Figure3a_3f.pdf Graphic file (type QTm)
- <use  "Figure3a_3f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 514--515
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 537--538
 [][] 
  []
 
 
 LaTeX Warning: Text page 20 contains only floats.
 
-[20] (./draft18.bbl) [21] (./draft18.aux) )
+[20
+
+]
+File: Figure3a_3f.pdf Graphic file (type QTm)
+ <use  "Figure3a_3f.pdf" >
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 542--543
+[][] 
+ []
+
+
+LaTeX Warning: Text page 21 contains only floats.
+
+[21] (./draft18.bbl) [22] (./draft18.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 422 ({)
+### simple group (level 1) entered at line 450 ({)
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 4523 strings out of 494579
- 60494 string characters out of 6167474
- 147396 words of memory out of 5000000
- 8195 multiletter control sequences out of 15000+600000
+ 4524 strings out of 494579
+ 60498 string characters out of 6167474
+ 147405 words of memory out of 5000000
+ 8196 multiletter control sequences out of 15000+600000
  15361 words of font info for 75 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
  42i,16n,35p,2441b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on draft18.pdf (21 pages).
+Output written on draft18.pdf (22 pages).
