@@ -331,24 +331,35 @@ Adjusted $R^2$ is not available for the linear mixed models. To get an approxima
 
 
 \begin{center}
-\begin{table}
-\caption{\label{R2}Adjusted $R^2$: ordinary least squares}
+\begin{threeparttable}
+\caption{\label{R2}Coefficient of determination $R^2$ for mixed models}
 \begin{indented}
 \item[]
 \begin{tabular}{@{}lcc}
 \\[-1em]
 \br
 \\[-1em]
-&\centre{2}{\textbf{County level dummy variables:}}\\
-\textbf{Sample:}&Yes&No\\
+\textbf{Sample:}&Marginal\tnote{a}&Conditional\tnote{b}\\
 \hline
-{All counties}& $0.507$&$0.307$\\
-{ASAL}& $0.379$&$0.170$\\
-{non-ASAL}&  $0.501$&$0.307$\\
+{All counties}& $0.300$&$0.526$\\
+{ASAL}& $0.134$&$0.353$\\
+{non-ASAL}&  $0.153$&$0.436$\\
 \br
 \end{tabular}
+\begin{tablenotes}
+\begin{footnotesize}
+    \item \textit{Notes:} The coefficient of determination from generalised linear mixed-effects models. The statistic is based on \cite{Nakagawa2013}.  \\
+        \begin{adjustwidth}{1cm}{}
+    \item[a] The marginal coefficient is interpreted as the variance explained by the fixed effects
+  \item[b] while the conditional one is explained by both fixed affects and random effects (in our case by fixed effects and random intercepts
+     \end{adjustwidth}
+     \end{footnotesize}
+\end{tablenotes}     
+
+
+
 \end{indented}
-\end{table} 
+\end{threeparttable} 
 \end{center}
 \vspace{1cm}
 
