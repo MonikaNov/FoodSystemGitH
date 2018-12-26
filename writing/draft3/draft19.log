@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  26 DEC 2018 02:29
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.9.4)  26 DEC 2018 03:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,59 +386,58 @@ Overfull \hbox (59.4888pt too wide) in paragraph at lines 325--326
 [][] 
  []
 
-
-Underfull \hbox (badness 1648) in paragraph at lines 351--352
-\TU/lmr/m/n/10 from generalised linear mixed-effects
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 351--352
-\TU/lmr/m/n/10 models. The statistic is based on
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
-[]\TU/lmr/m/n/10 The marginal coefficient is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
-\TU/lmr/m/n/10 interpreted as the variance
- []
-
-
-Underfull \hbox (badness 4416) in paragraph at lines 354--355
-[]\TU/lmr/m/n/10 while the conditional one is
- []
-
-
-Underfull \hbox (badness 3803) in paragraph at lines 354--355
-\TU/lmr/m/n/10 by fixed effects and random
- []
-
 [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
+Underfull \hbox (badness 1648) in paragraph at lines 352--353
+\TU/lmr/m/n/10 from generalised linear mixed-effects
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 352--353
+\TU/lmr/m/n/10 models. The statistic is based on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+[]\TU/lmr/m/n/10 The marginal coefficient is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+\TU/lmr/m/n/10 interpreted as the variance
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 355--356
+[]\TU/lmr/m/n/10 while the conditional one is
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 355--356
+\TU/lmr/m/n/10 by fixed effects and random
+ []
+
 [15] [16]
-Underfull \hbox (badness 4429) in paragraph at lines 412--413
+Underfull \hbox (badness 4429) in paragraph at lines 413--414
 []|\TU/lmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Overfull \hbox (4.39139pt too wide) in paragraph at lines 422--459
+Overfull \hbox (4.39139pt too wide) in paragraph at lines 423--460
 [] 
  []
 
 [17
 
 ]
-Underfull \hbox (badness 4647) in paragraph at lines 483--483
+Underfull \hbox (badness 4647) in paragraph at lines 484--484
 []\TU/lmr/bx/n/10 Table 3. |[]\TU/lmr/m/n/10 Comparison of models with differen
 t error
  []
@@ -446,7 +445,7 @@ t error
 [18] [19] [20]
 File: Figure2a_2f.pdf Graphic file (type QTm)
  <use  "Figure2a_2f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 550--551
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 551--552
 [][] 
  []
 
@@ -458,7 +457,7 @@ LaTeX Warning: Text page 21 contains only floats.
 ]
 File: Figure3a_3f.pdf Graphic file (type QTm)
  <use  "Figure3a_3f.pdf" >
-Overfull \hbox (59.4888pt too wide) in paragraph at lines 555--556
+Overfull \hbox (59.4888pt too wide) in paragraph at lines 556--557
 [][] 
  []
 
@@ -468,7 +467,7 @@ LaTeX Warning: Text page 22 contains only floats.
 [22] (./draft19.bbl) [23] (./draft19.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 463 ({)
+### simple group (level 1) entered at line 464 ({)
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:

@@ -14,7 +14,7 @@ I was expecting a `,' or a `}'---line 1030 of file referencesFS.bib
 I'm skipping whatever remains of this entry
 You've used 13 entries,
             2947 wiz_defined-function locations,
-            725 strings with 6589 characters,
+            726 strings with 6593 characters,
 and the built_in function-call counts, 50393 in all, are:
 = -- 8246
 > -- 590
