@@ -42,3 +42,13 @@ summary(CVfit3)
 
 # -- -- -- -- -
 # ok, I will try to obtain the same prediction as the function predict...
+
+summary(KEN11dK)
+summary(KEN11dK)$coeff$random
+i<-1
+fixedfit<-summary(KEN11dK)$coeff$fixed[1]+summary(KEN11dK)$coeff$fixed[2]*ScaledTS$SeasPr[i]+
+  summary(KEN11dK)$coeff$fixed[3]*ScaledTS$SeasPr[i]^2+summary(KEN11dK)$coeff$fixed[4]*ScaledTS$CVPrec[i]+
+  summary(KEN11dK)$coeff$fixed[5]*ScaledTS$Spell[i]+summary(KEN11dK)$coeff$fixed[6]*ScaledTS$Spell4[i]+ 
+  summary(KEN11dK)$coeff$fixed[7]*ScaledTS$AvgTempK[i]+ summary(KEN11dK)$coeff$fixed[8]*ScaledTS$CVTempK[i]
+fixedfit+unlist(summary(KEN11dK)$coeff$random)[[1]]
+predict(KEN11dK)[1] #GROOT
