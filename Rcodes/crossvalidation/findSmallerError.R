@@ -2,6 +2,7 @@ rm(list=ls())
 library(cvTools);library(MASS);library(dplyr);library(tseries); library(plm); library(nlme); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
 load("dataFS/Main/DaTS.RData")
 # load("Rcodes/DecemberNew/KEN11d_stepNice.RData")
+# load("Rcodes/crossvalidation/KEN11d_stepNice.RData")
 
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
@@ -31,4 +32,15 @@ CVfit8<-cvFit(KEN11dK,data=framik,y=log(framik$Yield0),K=1300,cost=tmspe);CVfit8
 summary(log(framik$Yield0))
 hist(log(framik$Yield0))
 
-save.image("\\\\smbhome.uscs.susx.ac.uk\\mn301\\FoodSystemGitH\\Rcodes\\crossvalidation\\KEN11d_stepNice.RData")
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+# now I want to see if I can find a model with smaller prediction error...
+# so remove the least significant variables??
+
+KEN11dK<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+             +AvgTempK + CVTempK, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+             data=ScaledTS,na.action=na.omit); summary(KEN11dK)
+
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+save.image("\\\\smbhome.uscs.susx.ac.uk\\mn301\\FoodSystemGitH\\Rcodes\\crossvalidation\\KEN11d_stepNice2.RData")
