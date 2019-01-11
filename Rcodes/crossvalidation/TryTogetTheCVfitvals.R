@@ -26,8 +26,24 @@ KEN11dK<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
                      data=framik,na.action=na.omit);summary(KEN11dK_fr)
         
         
-CVfit3<-cvFit(KEN11dK,data=framik,y=log(framik$Yield0));CVfit3
-CVfit4<-cvFit(KEN11dK,data=framik,y=log(framik$Yield0),K=1300);CVfit4
+CVfit9<-cvFit(KEN11dK_fr,data=framik,y=log(framik$Yield0),K=2,cost=mape,foldType="consecutive");CVfit9;summary(CVfit9)
+
+myFolds<-cvFolds(1300, K=2,R=1)
+myFolds2<-cvFolds(1300, K=2,R=1,type="consecutive")
+
+framik2<-merge(framik,myFolds,by.y=V)
+
+CVfit9<-cvFit(KEN11dK_fr,data=framik,y=log(framik$Yield0),K=2,cost=mape,folds=myFolds);CVfit9;summary(CVfit9)
+
+
+MyFolds1<-lme(log(Yield0)~SeasPr+I(SeasPr^2)+CVPrec+Spell+Spell4
+                +AvgTempK + CVTempK, random= ~1 | ID1,correlation=corARMA(form = ~ as.numeric(Year)|ID1, p=1,q=1),
+                data=framik[myFolds$which==1,],na.action=na.omit);summary(MyFolds1)
+
+MyPredicts2<-predict(MyFolds1,newdata=framik[myFolds$which==2,])
+log(framik$Yield0[myFolds$which==2])
+mean(abs(log(framik$Yield0[myFolds$which==2])-MyPredicts2))
+# PERFECT, the same as CVfit9
 #--  ---   --   --- -- - - -
 predict(KEN11dK); summary(predict(KEN11dK)); length(predict(KEN11dK))
 predict(KEN11dK,asList=TRUE); summary(unlist(predict(KEN11dK,asList=TRUE)))
