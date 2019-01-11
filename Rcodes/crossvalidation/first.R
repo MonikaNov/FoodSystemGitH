@@ -51,4 +51,4 @@ fixedfit<-summary(KEN11dK)$coeff$fixed[1]+summary(KEN11dK)$coeff$fixed[2]*Scaled
   summary(KEN11dK)$coeff$fixed[5]*ScaledTS$Spell[i]+summary(KEN11dK)$coeff$fixed[6]*ScaledTS$Spell4[i]+ 
   summary(KEN11dK)$coeff$fixed[7]*ScaledTS$AvgTempK[i]+ summary(KEN11dK)$coeff$fixed[8]*ScaledTS$CVTempK[i]
 fixedfit+unlist(summary(KEN11dK)$coeff$random)[[1]]
-predict(KEN11dK)[1] #GROOT
+predict(KEN11dK)[1] # GROOT
