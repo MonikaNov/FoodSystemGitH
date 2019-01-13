@@ -52,17 +52,22 @@ KEN11dK_base2<-lme(log(Yield0)~SeasPr+AvgTempK+I(SeasPr^2), random= ~1 | ID1,cor
                   data=ScaledTS,na.action=na.omit); summary(KEN11dK_base2)
 
 CVbase21<-cvFit(KEN11dK_base2,data=framik,y=log(framik$Yield0),K=1300);CVbase21;summary(CVbase21)
+CVfit4
 CVbase22<-cvFit(KEN11dK_base2,data=framik,y=log(framik$Yield0),K=1300,cost=rtmspe);CVbase22;summary(CVbase22)
+CVfit5
 CVbase23<-cvFit(KEN11dK_base2,data=framik,y=log(framik$Yield0),K=1300,cost=mape);CVbase23;summary(CVbase23)
-
+CVfit6
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals2.RData")
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 KEN11dK_base3<-lme(log(Yield0)~SeasPr+AvgTempK, random= ~1 | ID1,
                   data=ScaledTS,na.action=na.omit); summary(KEN11dK_base3)
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CVbase31<-cvFit(KEN11dK_base3,data=framik,y=log(framik$Yield0),K=1300);CVbase31;summary(CVbase31)
+CVfit4
 CVbase32<-cvFit(KEN11dK_base3,data=framik,y=log(framik$Yield0),K=1300,cost=rtmspe);CVbase32;summary(CVbase32)
+CVfit5
 CVbase33<-cvFit(KEN11dK_base3,data=framik,y=log(framik$Yield0),K=1300,cost=mape);CVbase33;summary(CVbase33)
+CVfit6
 
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals2.RData")
 
@@ -71,10 +76,30 @@ KEN11dK_base4<-lme(log(Yield0)~SeasPr+AvgTempK+I(SeasPr^2), random= ~1 | ID1,
                    data=ScaledTS,na.action=na.omit); summary(KEN11dK_base4)
 
 CVbase41<-cvFit(KEN11dK_base4,data=framik,y=log(framik$Yield0),K=1300);CVbase41;summary(CVbase41)
+CVfit4
 CVbase42<-cvFit(KEN11dK_base4,data=framik,y=log(framik$Yield0),K=1300,cost=rtmspe);CVbase42;summary(CVbase42)
+CVfit5
 CVbase43<-cvFit(KEN11dK_base4,data=framik,y=log(framik$Yield0),K=1300,cost=mape);CVbase43;summary(CVbase43)
-
+CVfit6
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals3.RData")
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#ok, so maybe the best would be to use MAPE and base1 (maby base3 gives bigger difference in some of the models, but base1 makes more sense->probaby more defendable..
+CVfit6$cv/(max(framik$Yield0)-min(framik$Yield0));CVbase3$cv/(max(framik$Yield0)-min(framik$Yield0))
+CVfit6$cv/IQR(framik$Yield0);CVbase3$cv/IQR(framik$Yield0);
+CVfit6$cv/mean(framik$Yield0);CVbase3$cv/mean(framik$Yield0)
+
+# well, it will be better to get the MAPE of really naive forecast, which would be using value of previous period as the new forecast..
+
+framik<-pdata.frame(framik,index=c("ID1","Year"))
+Yield0lag<-lag(framik$Yield0)
+framik<-cbind.data.frame(framik,Yield0lag)
+framik$Yield0lag[framik$Year==1981]<-NA
+#ehm..malformed factor..:
+framik$Year<-as.numeric(framik$Year);framik$Year<-as.factor(framik$Year)
+framik$ID1<-as.numeric(framik$ID1);framik$ID1<-as.factor(framik$ID1)
+# maybe better check as csv:
+write.csv(framik, "framik.csv")
+
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals.RData")
