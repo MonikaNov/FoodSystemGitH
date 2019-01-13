@@ -99,7 +99,10 @@ framik$Year<-as.numeric(framik$Year);framik$Year<-as.factor(framik$Year)
 framik$ID1<-as.numeric(framik$ID1);framik$ID1<-as.factor(framik$ID1)
 # maybe better check as csv:
 write.csv(framik, "framik.csv")
-
+#ok, looks good. now calculate MAPE and compare..
+mean(abs(log(framik$Yield0)-log(framik$Yield0lag)),na.rm=TRUE) # compare with:
+CVbase3 # and with:
+CVfit6 #P.E.R.F.E.C.T
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals.RData")
