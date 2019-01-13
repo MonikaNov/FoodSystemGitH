@@ -6,6 +6,8 @@ load("Rcodes/crossvalidation/compareJustTotals3.RData")
 # load("Rcodes/DecemberNew/KEN11d_stepNice.RData")
 # load("Rcodes/crossvalidation/KEN11d_stepNice.RData")
 
+load("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals.RData")
+
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 # from the file 'Rcodes/DecemberNew/'.. the so far final version (7.1.2019):
@@ -103,6 +105,12 @@ write.csv(framik, "framik.csv")
 mean(abs(log(framik$Yield0)-log(framik$Yield0lag)),na.rm=TRUE) # compare with:
 CVbase3 # and with:
 CVfit6 #P.E.R.F.E.C.T
+
+
+mean(abs(log(framik$Yield0)-log(framik$Yield0lag)),na.rm=TRUE)/IQR(log(framik$Yield0)) # compare with:
+CVbase3$cv/IQR(log(framik$Yield0)) # and with:
+CVfit6$cv/IQR(log(framik$Yield0)) #P.E.R.F.E.C.T
+
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals.RData")
