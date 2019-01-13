@@ -69,7 +69,7 @@ KEN11dK_base4<-lme(log(Yield0)~SeasPr+AvgTempK+I(SeasPr^2), random= ~1 | ID1,
                    data=ScaledTS,na.action=na.omit); summary(KEN11dK_base4)
 
 CVbase41<-cvFit(KEN11dK_base4,data=framik,y=log(framik$Yield0),K=1300);CVbase41;summary(CVbase41)
-CVbase42<-cvFit(KEN11dK_base4,data=framik,y=log(framik$Yield0),K=1300,cost=rtmspe);CVbase42;summary(CVbase422)
+CVbase42<-cvFit(KEN11dK_base4,data=framik,y=log(framik$Yield0),K=1300,cost=rtmspe);CVbase42;summary(CVbase42)
 CVbase43<-cvFit(KEN11dK_base4,data=framik,y=log(framik$Yield0),K=1300,cost=mape);CVbase43;summary(CVbase43)
 
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/compareJustTotals3.RData")
