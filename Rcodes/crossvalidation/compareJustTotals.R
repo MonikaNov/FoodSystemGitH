@@ -1,6 +1,8 @@
 rm(list=ls())
 library(cvTools);library(MASS);library(dplyr);library(tseries); library(plm); library(nlme); library(lme4); library(lattice); library(car); library(lmerTest); library(optimx)
 load("dataFS/Main/DaTS.RData")
+load("Rcodes/crossvalidation/compareJustTotals3.RData")
+
 # load("Rcodes/DecemberNew/KEN11d_stepNice.RData")
 # load("Rcodes/crossvalidation/KEN11d_stepNice.RData")
 
