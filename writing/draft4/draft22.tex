@@ -382,11 +382,13 @@ of log of maize yield of the left-out observation. Then we calculated the absolu
 
 Besides obtaining the MAPE of our preferred specifications, we calculated MAPE of baseline models specified as mixed effects models with the set of fixed effects including two measures, in particular cumulative seasonal precipitation and seasonal average temperature. The only random effects of the baseline models are random intercepts as in our preferred specification and the baseline models have the same error structure ARMA($1$,$1$) as our main models. For the sake of comparison, we further calculated MAPE of naive forecasts defined as the last period's actual values of each county.
 
+The scaled MAPE of our preferred specification and the two baseline predictions can be found in table~\ref{CVdiv}. All three predictions were obtained for the sample of all counties and also for the models based on the subsamples of ASAL and non-ASAL counties. The values of MAPE not divided by IQR can be found in table~\ref{CV} in the appendix.
+
 
 
 \begin{center}
 \begin{threeparttable}
-\caption{\label{CV}	Leave-one-out cross validation: Mean absolute prediction error divided by IQR}
+\caption{\label{CVdiv}	Leave-one-out cross validation: Mean absolute prediction error divided by IQR}
 \linespread{1.3}
 % files Rcodes/crossvalidation/compareJustTotals.R; Rcodes/crossvalidation/MAPE_ASAL.R;  Rcodes/crossvalidation/MAPE_nonASAL.R  
 \begin{indented}
@@ -395,7 +397,7 @@ Besides obtaining the MAPE of our preferred specifications, we calculated MAPE o
 \\[-1em]
 \br
 \\[-1em]
-\textbf{Sample:}&\textbf{All covariates\tnote{a}}&\textbf{Only seasonal\tnote{b}}&\textbf{Naive forecast\tnote{c}}\\
+\textbf{Sample}&\textbf{Preferred specification\tnote{a}}&\textbf{Baseline specification\tnote{b}}&\textbf{Naive forecast\tnote{c}}\\
 \hline
 {All counties}&$0.3811$&$0.3889$&$0.4277$\\
 {ASAL}&$0.5300$&$0.5342$&$0.5835$\\
@@ -405,7 +407,7 @@ Besides obtaining the MAPE of our preferred specifications, we calculated MAPE o
 \end{indented}
  \begin{tablenotes}
   \begin{footnotesize}
-  \item[a] Mixed effects models: the preferred specification with all fixed effects presented in table~\ref{MainEst}.
+  \item[a] Mixed effects models: the preferred specification with all fixed effects listed in table~\ref{MainEst}.
   \item[b] Mixed effects models: the baseline specification, only seasonal precipitation and average seasonal temperature in the fixed effects.
   \item[c] Last period's actual values used as this period's forecast.
   \end{footnotesize}
@@ -414,15 +416,14 @@ Besides obtaining the MAPE of our preferred specifications, we calculated MAPE o
 \end{center}
 \vspace{1cm}	
 
+According to MAPE, our preferred specifications perform better than the baseline mixed effects models and considerably better than the naive forecasts for all three samples (table~\ref{CVdiv}). For all three prediction methods, the smallest values of MAPE were achieved for the sample of all counties while the least precise forecasts with regard to MAPE were obtained for the subsample of ASAL counties (table~\ref{CVdiv}).
 
-
-	
-	
 
 
 
 \clearpage
-
+\section{Conclusions}\label{Conclusions}
+\clearpage
 \appendix
 \section*{Appendix}
 
@@ -603,7 +604,7 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 \\[-1em]
 \br
 \\[-1em]
-\textbf{Sample:}&\textbf{All covariates\tnote{a}}&\textbf{Only seasonal\tnote{b}}&\textbf{Naive forecast\tnote{c}}\\
+\textbf{Sample}&\textbf{Preferred specification\tnote{a}}&\textbf{Baseline specification\tnote{b}}&\textbf{Naive forecast\tnote{c}}\\
 \hline
 {All counties}&$0.3599$&$0.3673$&$0.4040$\\
 {ASAL}&$0.4352$&$0.4385$&$0.4790$\\
@@ -614,7 +615,7 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 
  \begin{tablenotes}
   \begin{footnotesize}
-  \item[a] Mixed effects models: the preferred specification with all fixed effects presented in table~\ref{MainEst}.
+  \item[a] Mixed effects models: the preferred specification with all fixed effects listed in table~\ref{MainEst}.
   \item[b] Mixed effects models: the baseline specification, only seasonal precipitation and average seasonal temperature in the fixed effects.
   \item[c] Last period's actual values used as this period's forecast.
   \end{footnotesize}
