@@ -42,7 +42,7 @@ MAPE_nonASAL_base$cv/IQR(log(frnonASAL$Yield0))
 mean(abs(log(frnonASAL$Yield0)-log(frnonASAL$Yield0lag)),na.rm=TRUE) /IQR(log(frnonASAL$Yield0))
 
 MAPE_nonASAL
-KEN11dK_nonASALb
-mean(abs(log(frnonASAL$Yield0)-log(frnonASAL$Yield0lag)),na.rm=TRUE)
+MAPE_nonASAL_base
+mean(abs(log(frnonASAL$Yield0)-log(frnonASAL$Yield0lag)),na.rm=TRUE) 
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/MAPE_nonASAL.RData")

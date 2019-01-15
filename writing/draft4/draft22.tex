@@ -362,27 +362,28 @@ The AIC is an important criterion for comparison of competing models, however it
      \end{adjustwidth}
      \end{footnotesize}
 \end{tablenotes}     
-
-
-
 \end{indented}
 \end{threeparttable} 
 \end{center}
 \vspace{1cm}
 
 
-
-Following a standard practise, we calculated the variance inflation factors (VIF) of the explanatory variables to test for presence of multicollinearity. With only two exceptions, the VIF was below $2$ for all predictors in our final models. For CV of precipitation, the value of VIF was $2.172$ in the model of all counties, $2.147$ in the model for the subsample of the ASAL counties and it was equal to $2.182$ in the model based on the subsample of the non-ASAL counties. These values are well below the threshold of problematic multicollinearity. The other exception was the linear term of seasonal precipitation as its VIF was equal to $2.407$ in the model for the non-ASAL counties, probably due to presence of its squared term in the model. However, $2.407$ is below the threshold of the problematic multicollinearity and the VIF of precipitation was below $2$ in the other two models. Therefore, we can conclude that the models do not suffer from presence of multicollinearity.
-
-
-%\item Possibly estimate simple regressions with the same explanatory variables as the preferred mixed effects specification. This would give us an approximation of $R^2$ which could be used to compare our models.
-
 	%	\begin{itemize}%
 		%	\item \textcolor{red}{Annemie has advised me that for a more precise approximation of $R^2$ we can estimate a simple regression of yields on the random intercepts (county level dummy variables) and then subtract the $R^2$ of this model from the $R^2$ of the simple regression with the explanatory variables of the preferred mixed models (the model described in the bullet point above). This would give us a percentage of yield variability explained by the weather measures not including the variability explained by the random intercepts.}
 	%\end{itemize}
 	
-	
-	
+
+
+Following a standard practise, we calculated the variance inflation factors (VIF) of the explanatory variables to test for presence of multicollinearity. With only two exceptions, the VIF was below $2$ for all predictors in our final models. For CV of precipitation, the value of VIF was $2.172$ in the model of all counties, $2.147$ in the model for the subsample of the ASAL counties and it was equal to $2.182$ in the model based on the subsample of the non-ASAL counties. These values are well below the threshold of problematic multicollinearity. The other exception was the linear term of seasonal precipitation as its VIF was equal to $2.407$ in the model for the non-ASAL counties, probably due to presence of its squared term in the model. However, $2.407$ is below the threshold of the problematic multicollinearity and the VIF of precipitation was below $2$ in the other two models. Therefore, we can conclude that the models do not suffer from presence of multicollinearity.
+
+To evaluate out of sample prediction accuracy of our models we implemented a procedure which is sometimes called the \textit{jackknife}. We re-estimated the preferred mixed effects models $n$-times, where $n$ is the number of observations (in our case $1300$ for the sample of all counties and $698$ and $602$ for the subsamples of ASAL and non-ASAL counties, respectively), each time we left out one observation. We subsequently used each of these $n$ estimated models to generate a predicted value 
+of log of maize yield of the left-out observation. Then we calculated the absolute value of the difference between the predicted and real value of the left-out observation for each of the $n$ models. In the next step, we averaged the $n$ absolute values of the differences between predicted and real values to obtain the mean absolute prediction error (MAPE). Finally, we scaled the MAPE values by dividing them by the interquartile range (IQR) of the sample obtained as a difference between the third and first quartiles.
+
+
+Besides obtaining the MAPE of our preferred specifications, we calculated MAPE of baseline models specified as mixed effects models with the set of fixed effects including two measures, in particular cumulative seasonal precipitation and seasonal average temperature. The only random effects of the baseline models are random intercepts as in our preferred specification and the baseline models have the same error structure ARMA($1$,$1$) as our main models. For the sake of comparison, we further calculated MAPE of naive forecasts defined as the last period's actual values of each county.
+
+
+
 \begin{center}
 \begin{threeparttable}
 \caption{\label{CV}	Leave-one-out cross validation: Mean absolute prediction error divided by IQR}
