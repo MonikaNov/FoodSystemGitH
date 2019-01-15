@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  15 JAN 2019 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  15 JAN 2019 17:04
 entering extended mode
 **./draft21.tex
 (draft21.tex
@@ -430,73 +430,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
-
- []
-
-[16] [17]
-Underfull \hbox (badness 4416) in paragraph at lines 486--487
+[15] [16]
+Underfull \hbox (badness 4416) in paragraph at lines 434--435
 []|\OT1/cmr/m/n/10 Bomet, Bungoma, Busia, Elgeyo Marakwet, Homa Bay,
  []
 
 
-Overfull \hbox (4.39139pt too wide) in paragraph at lines 496--533
+Overfull \hbox (4.39139pt too wide) in paragraph at lines 444--481
 [] 
  []
 
-[18
+[17
 
 ]
-Underfull \hbox (badness 4634) in paragraph at lines 557--557
+Underfull \hbox (badness 4634) in paragraph at lines 505--505
 []\OT1/cmr/bx/n/10 Table 3. |[]\OT1/cmr/m/n/10 Comparison of models with differ
 ent error
  []
 
-[19] [20] [21] <Figure2a_2f.pdf, id=96, 505.89pt x 505.89pt>
+[18] [19] [20] <Figure2a_2f.pdf, id=93, 505.89pt x 505.89pt>
 File: Figure2a_2f.pdf Graphic file (type pdf)
 
 <use Figure2a_2f.pdf>
-Package pdftex.def Info: Figure2a_2f.pdf used on input line 628.
+Package pdftex.def Info: Figure2a_2f.pdf used on input line 576.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 628--629
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 576--577
+[][] 
+ []
+
+
+LaTeX Warning: Text page 21 contains only floats.
+
+[21
+
+ <./Figure2a_2f.pdf>] <Figure3a_3f.pdf, id=105, 505.89pt x 505.89pt>
+File: Figure3a_3f.pdf Graphic file (type pdf)
+
+<use Figure3a_3f.pdf>
+Package pdftex.def Info: Figure3a_3f.pdf used on input line 581.
+(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
+
+Overfull \hbox (59.48878pt too wide) in paragraph at lines 581--582
 [][] 
  []
 
 
 LaTeX Warning: Text page 22 contains only floats.
 
-[22
-
- <./Figure2a_2f.pdf>] <Figure3a_3f.pdf, id=108, 505.89pt x 505.89pt>
-File: Figure3a_3f.pdf Graphic file (type pdf)
-
-<use Figure3a_3f.pdf>
-Package pdftex.def Info: Figure3a_3f.pdf used on input line 633.
-(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
-
-Overfull \hbox (59.48878pt too wide) in paragraph at lines 633--634
-[][] 
- []
-
-
-LaTeX Warning: Text page 23 contains only floats.
-
-[23 <./Figure3a_3f.pdf>] (draft21.bbl
+[22 <./Figure3a_3f.pdf>] [23] (draft21.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
-) [24] (draft21.aux) )
+) [24
+
+] (draft21.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 537 ({)
+### simple group (level 1) entered at line 485 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  4962 strings out of 495222
@@ -523,7 +515,7 @@ s/install/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/latex/texmfs/install/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb><E:/latex/texmfs/install/fonts/type1/pu
 blic/amsfonts/cm/cmtt10.pfb><E:/latex/texmfs/install/fonts/type1/public/rsfs/rs
 fs10.pfb>
-Output written on draft21.pdf (24 pages, 306966 bytes).
+Output written on draft21.pdf (24 pages, 306836 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

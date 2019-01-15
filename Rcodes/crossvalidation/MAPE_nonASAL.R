@@ -37,8 +37,12 @@ KEN11dK_nonASALb<-lme(log(Yield0)~SeasPr+AvgTempK , random= ~1 | ID1,correlation
                   data=ScaledTS[ScaledTS$ASAL==0,],na.action=na.exclude); summary(KEN11dK_nonASALb)
 MAPE_nonASAL_base<-cvFit(KEN11dK_nonASALb,data=frnonASAL,y=log(frnonASAL$Yield0),K=602,cost=mape);MAPE_nonASAL_base;summary(MAPE_nonASAL_base)
   
-  MAPE_nonASAL$cv/IQR(log(frnonASAL$Yield0))
-  KEN11dK_nonASALb$cv/IQR(log(frnonASAL$Yield0))
-  mean(abs(log(frnonASAL$Yield0)-log(frnonASAL$Yield0lag)),na.rm=TRUE) /IQR(log(frnonASAL$Yield0))
-  #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+MAPE_nonASAL$cv/IQR(log(frnonASAL$Yield0))
+MAPE_nonASAL_base$cv/IQR(log(frnonASAL$Yield0))
+mean(abs(log(frnonASAL$Yield0)-log(frnonASAL$Yield0lag)),na.rm=TRUE) /IQR(log(frnonASAL$Yield0))
+
+MAPE_nonASAL
+KEN11dK_nonASALb
+mean(abs(log(frnonASAL$Yield0)-log(frnonASAL$Yield0lag)),na.rm=TRUE)
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/MAPE_nonASAL.RData")

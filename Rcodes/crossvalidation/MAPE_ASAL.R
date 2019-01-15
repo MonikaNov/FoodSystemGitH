@@ -43,5 +43,9 @@ mean(abs(log(frASAL$Yield0)-log(frASAL$Yield0lag)),na.rm=TRUE)
 MAPE_ASAL$cv/IQR(log(frASAL$Yield0))
 MAPE_ASAL_base$cv/IQR(log(frASAL$Yield0))
 mean(abs(log(frASAL$Yield0)-log(frASAL$Yield0lag)),na.rm=TRUE)/IQR(log(frASAL$Yield0))
+
+MAPE_ASAL
+MAPE_ASAL_base
+mean(abs(log(frASAL$Yield0)-log(frASAL$Yield0lag)),na.rm=TRUE)
 #oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 save.image("~/FoodSystemGitH/Rcodes/crossvalidation/MAPE_ASAL.RData")

@@ -385,7 +385,7 @@ Following a standard practise, we calculated the variance inflation factors (VIF
 	
 \begin{center}
 \begin{threeparttable}
-\caption{\label{CVsc}Cross validation: Mean absolute prediction error scaled by IQR}
+\caption{\label{CVsc}Cross validation: Mean absolute prediction error divided by IQR}
 % files Rcodes/crossvalidation/compareJustTotals.R; Rcodes/crossvalidation/MAPE_ASAL.R;  Rcodes/crossvalidation/MAPE_nonASAL.R  
 \begin{indented}
 \item[]
@@ -395,74 +395,22 @@ Following a standard practise, we calculated the variance inflation factors (VIF
 \\[-1em]
 \textbf{Sample:}&\textbf{All covariates}&\textbf{Only seasonal}&\textbf{Naive forecast}\\
 \hline
-{All counties}& $0.3811$&$0.3889$&$0.4277$\\
-{ASAL}& $0.5300$&$0.5342$&$0.5835$\\
-{non-ASAL}&  $0.2845$&$0.3858$&$0.4510$\\
+{All counties}&$0.3811$&$0.3889$&$0.4277$\\
+{ASAL}&$0.5300$&$0.5342$&$0.5835$\\
+{non-ASAL}&$0.3858$&$0.4043$&$0.4510$\\
 \br
 \end{tabular}
-\begin{tablenotes}
-\begin{footnotesize}
-    \item \textit{Notes:} The coefficient of determination from generalised linear mixed-effects models. The statistic is based on \cite{Nakagawa2013}.  \\
-        \begin{adjustwidth}{1cm}{}
-    \item[a] The marginal $R^2$ is interpreted as the variance explained by the fixed effects
-  \item[b] The conditional $R^2$ is explained by both fixed affects and random effects (in our case by fixed effects and random intercepts)
-     \end{adjustwidth}
-     \end{footnotesize}
-\end{tablenotes}     
-
-
-
 \end{indented}
 \end{threeparttable} 
 \end{center}
 \vspace{1cm}	
 
 
-\begin{center}
-\begin{threeparttable}
-\caption{\label{CV}Cross validation: Mean absolute prediction error}
-% files Rcodes/crossvalidation/compareJustTotals.R; Rcodes/crossvalidation/MAPE_ASAL.R;  Rcodes/crossvalidation/MAPE_nonASAL.R  
-\begin{indented}
-\item[]
-\begin{tabular}{@{}lccc}
-\\[-1em]
-\br
-\\[-1em]
-\textbf{Sample:}&\textbf{All covariates}&\textbf{Only seasonal}&\textbf{Naive forecast}\\
-\hline
-{All counties}& $0.3599$&$0.3673$&$0.4040$\\
-{ASAL}& $0.134$&$0.353$\\
-{non-ASAL}&  $0.153$&$0.436$\\
-\br
-\end{tabular}
-\begin{tablenotes}
-\begin{footnotesize}
-    \item \textit{Notes:} The coefficient of determination from generalised linear mixed-effects models. The statistic is based on \cite{Nakagawa2013}.  \\
-        \begin{adjustwidth}{1cm}{}
-    \item[a] The marginal $R^2$ is interpreted as the variance explained by the fixed effects
-  \item[b] The conditional $R^2$ is explained by both fixed affects and random effects (in our case by fixed effects and random intercepts)
-     \end{adjustwidth}
-     \end{footnotesize}
-\end{tablenotes}     
 
-
-
-\end{indented}
-\end{threeparttable} 
-\end{center}
-\vspace{1cm}	
 	
 	
-\begin{itemize}
-\color{blue}
-\item If we get the yield data for the period from $2015$ onwards: Out of sample predictions and comparison with the real data
-\end{itemize}
 
 
-
-
-
-\color{black}
 
 \clearpage
 
@@ -634,11 +582,33 @@ ARMA($2$,$2$)&$2125.9$& $\00.31$&$\0\00.8549$\\
 \caption{Predicted multiplicative marginal effects of length of maximum dry spell in days (left column) and number of dry spells lasting for four days or more (right column) on maize yield assuming that all other variables are fixed at their means (which is zero, as the predictors were standardised). The first row (a, b) represents the model for all counties, the second row (c, d) is based on the subsample of arid and semi-arid counties (ASAL) and the third row (e, f) represents the model for the non-ASAL counties. Maximum length of dry spell and number of dry spells (x-axis) are in multiples of their standard deviations as the models were standardised. The effects are multiplicative because the models are in the log-linear form.}\label{MarEff3}
 \end{figure}
 
+\begin{center}
+\begin{threeparttable}
+\caption{\label{CV}Cross validation: Mean absolute prediction error}
+% files Rcodes/crossvalidation/compareJustTotals.R; Rcodes/crossvalidation/MAPE_ASAL.R;  Rcodes/crossvalidation/MAPE_nonASAL.R  
+\begin{indented}
+\item[]
+\begin{tabular}{@{}lccc}
+\\[-1em]
+\br
+\\[-1em]
+\textbf{Sample:}&\textbf{All covariates}&\textbf{Only seasonal}&\textbf{Naive forecast}\\
+\hline
+{All counties}&$0.3599$&$0.3673$&$0.4040$\\
+{ASAL}&$0.4352$&$0.4385$&$0.4790$\\
+{non-ASAL}&$0.2715$&$0.2845$&$0.3173$\\
+\br
+\end{tabular}
+\end{indented}
+\end{threeparttable} 
+\end{center}
+\vspace{1cm}	
+
+\clearpage
+
+
 
 \section*{References}
-
-
-
 \bibliography{referencesFS}
 
 \bibliographystyle{dcuM}
