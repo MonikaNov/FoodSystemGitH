@@ -1,3 +1,4 @@
 \select@language {english}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{My Suggestion}{10}{0}{2}
+\beamer@sectionintoc {2}{Data}{7}{0}{2}
+\beamer@sectionintoc {3}{My Suggestion}{10}{0}{3}

@@ -20,8 +20,7 @@
 \usepackage{fixltx2e}
 \usepackage{rotating}
 \usepackage{amssymb}
-
-
+ 
 
 \usetheme{Singapore}
 \useoutertheme{miniframes}
@@ -115,10 +114,10 @@
 \item Two predominant rainfall regimes in Kenya:
 
 \begin{enumerate}
-\item Arid and semi-Arid (ASAL): bi-modal
+\item Arid and semi-arid (ASAL): bi-modal
 	\begin{itemize}
-	\item MAM and OND
-	\item \textcolor{red}{Short and Long rains}
+	\item Short rains: March to May
+	\item Long rains: October to December
 	\end{itemize}
 \item non-ASAL: uni-modal
 	\begin{itemize}
@@ -138,8 +137,8 @@ b}
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
-\begin{frame}\label{Intro-Approaches}
-\frametitle{Intro-Approaches} 
+\begin{frame}\label{Approaches00}
+\frametitle{Approach} 
 
 
 \begin{itemize}
@@ -161,7 +160,7 @@ b}
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
-\begin{frame}
+\begin{frame}\label{Approaches01}
        \hspace{-0.8cm}  \textbf{NDMA Early Warning Phase\\ \hspace{-0.8cm} Classification}
         
 \vspace{-0.9cm}
@@ -192,10 +191,8 @@ b}
     \begin{figure}
       \begin{columns}
         \column{.5\linewidth }
-
   \vspace{-1.8cm}        
         \column{.5\linewidth}
-         
   \hspace{-2.6cm}  \includegraphics[width = 1.2\textwidth]{PrecNA.png}  %565*238
       \end{columns}
     \end{figure}
@@ -211,7 +208,6 @@ b}
 
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-
 
 \begin{frame}\label{Approach}
 \frametitle{Approach} 
@@ -239,7 +235,7 @@ Sample:
 
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-
+\section{Data}
 \begin{frame}\label{Data}
 \frametitle{Data} 
 
@@ -254,16 +250,35 @@ Sample:
 \item Daily, $0.25^{\circ}$ resolution gridded data
 \item Precipitation
 	\begin{itemize}
-	\item Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS)
+	\item source: Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS)
 	\end{itemize}
 \item Temperature
 	\begin{itemize}
-	\item Berkeley Earth
+	\item source: Berkeley Earth
 	\end{itemize}
-	\item[$\blacksquare$] Aggregation needed to conform with the yield data
-\end{itemize}
+	\item[$\blacksquare$] \textcolor{darkblue}{Aggregation needed to conform with the yield data}
+	\end{itemize}
 
 \end{itemize}
+
+\begin{columns}
+\footnotesize
+	\begin{column}{0.4\textwidth}
+
+	\end{column}
+	\begin{column}{0.15\textwidth}
+  		$0.25^{\circ}$ grid \\ daily
+	\end{column}
+	\begin{column}{0.05\textwidth}
+  			$\rightarrow$ \\ $\rightarrow$
+	\end{column}
+	\begin{column}{0.25\textwidth} 
+   		county level \\  yearly
+   	\end{column}
+   		\begin{column}{0.4\textwidth} 
+   		\end{column}
+\end{columns}
+
 
 \end{frame}
 
@@ -487,7 +502,6 @@ $\epsilon_{i,t}$ &$=$& Error term \\
 
 
 \section*{}
-
 \frame[allowframebreaks]{ 
 \centering
 \huge{Thank you for attention}
@@ -495,12 +509,79 @@ $\epsilon_{i,t}$ &$=$& Error term \\
 
 \note{hello}
 
-\frame[allowframebreaks]{ 
-\small
-\frametitle{References}
-\bibliographystyle{apa}
-\bibliography{referencesFS}
-}
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
+% 		---                	THE END       ---           ---
+
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+\newgeometry{top=10mm, left=10mm, right=10mm, bottom=10mm} 
+
+\frame[allowframebreaks, plain]{ 
+\small
+\frametitle{Precipitation and temperature measures considered}
+
+\begin{itemize}
+
+\item Total precipitation over the rainy season\\
+\item Coefficient of variation of the precipitation during the rainy season\\
+\item Maximum length of dry spell during the rainy season (in number of days)\\
+\item Number of dry spells during the rainy season: a dry spell defined as $4$ consecutive days without rain or more\footnotemark[1]\\
+\item Number of dry spells during the rainy season: a dry spell defined as $10$ consecutive days without rain or more\footnotemark[1]\\
+\item Number of dry spells during the rainy season: a dry spell defined as $20$ consecutive days without rain or more\footnotemark[1]\\
+
+
+\end{itemize}
+
+\footnotetext[1]{Threshold for a dry day was considered $1$mm.}
+\end{frame}
+
+
+
+
+\frame[allowframebreaks,plain]{ 
+\small
+\frametitle{Precipitation and temperature measures considered}
+
+\begin{itemize}
+
+\item Average temperature during the rainy season\\
+\item Standard deviation of temperature during the rainy season\\
+\item Cumulative degree days during the rainy season (excluding the days when maximum temperature above $30^{\circ}$C or below $10^{\circ}$C\\
+\item Number of heatwave days during the rainy season when max. temperature $>35^{\circ}$C
+\\
+\item Maximum daily precipitation  - to control for possible floods
+\\
+\item Sum of precipitation amount on days where precipitation is above $90^{th}$ percentile of precip. of the whole period\footnotemark[2]\\
+\item Sum of precipitation amount on days where precipitation is above $95^{th}$ percentile of precip. of the whole period\footnotemark[3]\\
+\end{itemize}
+\footnotetext[2]{$90^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.}
+\footnotetext[3]{$95^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.}
+\end{frame}
+
+
+\frame[allowframebreaks,plain]{ 
+\small
+\frametitle{Precipitation and temperature measures considered}
+
+\begin{itemize}
+\item Sum of precipitation amount on days where precipitation is above $99^{th}$ percentile of precip. of the whole period\footnotemark[4]\\
+\item Number of days where precipitation is above $90^{th}$ percentile of precip. of the whole period\footnotemark[2]\\
+\item Number of days where precipitation is above $95^{th}$ percentile of precip. of the whole period\footnotemark[3]\\
+
+\item Number of days where precipitation is above $99^{th}$ percentile of precip. of the whole period\footnotemark[4]\\
+
+\end{itemize}
+
+
+
+\footnotetext[2]{$90^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.}
+\footnotetext[3]{$95^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.}
+\footnotetext[4]{ $99^{th}$ percentile was calculated for the subsample of wet days, that is the days where precipitation is above or equal to $1$mm.}
+\end{frame}
 \end{document}
 
