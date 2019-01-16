@@ -20,7 +20,7 @@
 \usepackage{fixltx2e}
 \usepackage{rotating}
 \usepackage{amssymb}
- 
+ \usepackage{setspace}
 
 \usetheme{Singapore}
 \useoutertheme{miniframes}
@@ -325,11 +325,10 @@ Sample:
 \section{Methods}
 
 \begin{frame}
-\frametitle{Linear mixed effects models}\label{Methods} 
+\frametitle{\small Linear mixed effects models}\label{Methods} 
 
 \begin{itemize}
-\item Panel: County $\times$ Year
-\item Slopes allowed to vary over counties
+\item \small Slopes allowed to vary across counties
 \end{itemize}
 
 
@@ -351,16 +350,19 @@ Sample:
 
 
 \begin{table}
-\begin{small}
+\begin{footnotesize}
+\setstretch{1.23}
 \begin{tabular}{lll}
 
-
-$y_{it}$ &$=$& Maize yield t/hectares, county $i$ in year $t$\\
-$\boldsymbol{\beta}$ &$=$& Vector of effects of other covariates\\
-$X_{i,t}$ &$=$& Matrix of values of other covariates in county $i$ in year $t$\\
-$\epsilon_{i,t}$ &$=$& Error term \\
+$t$&$=$&index for year ($1981-2017$) \\
+$y_{\scriptscriptstyle it}$ &$=$&maize yield tones/hectares, county $i$, year $t$\\
+${\beta}^{m}$, \footnotesize{\textit{m=1,...p}}&$=$&\textit{p} fixed effects parameters\\
+$x^{m}_{it}$, \footnotesize{\textit{m=1,...,p}}, \footnotesize{\textit{i=1,...,47}} &$=$&fixed effects regressors, county \textit{i}, year \textit{t}\\
+$b^{n}_i$, \footnotesize{\textit{n=1,...q}}, \footnotesize{\textit{i=1,...,47}}&$=$&\textit{q} random effects parameters -\textbf{vary over county \textit{i}}\\
+$z^{n}_{it}$, \footnotesize{\textit{n=1,...,q}}, \footnotesize{\textit{i=1,...,47}} &$=$&random effects regressors, county \textit{i}, year \textit{t}\\
+$\epsilon_{it}$ &$=$&error term \\
 \end{tabular}
-\end{small}
+\end{footnotesize}
 \end{table}
 
 \end{frame}
@@ -384,7 +386,7 @@ $\epsilon_{i,t}$ &$=$& Error term \\
 
 \begin{columns}
 
-\begin{column}{0.5\textwidth} 
+\begin{column}{0.6\textwidth} 
 \begingroup
 \everymath{\Large}
 \begin{align*}
@@ -395,7 +397,7 @@ $\epsilon_{i,t}$ &$=$& Error term \\
 \endgroup
 \end{column}
 
-\begin{column}{0.5\textwidth} 
+\begin{column}{0.4\textwidth} 
 \begingroup
 \everymath{\footnotesize}
 \begin{align*}
@@ -407,18 +409,21 @@ i=1,...,47 & \text{counties}
 \end{column}
 \end{columns}
 
+
 \begin{table}
-\begin{small}
+\begin{footnotesize}
+\setstretch{1.23}
 \begin{tabular}{lll}
 
-$y_{it}$ &$=$& Maize yield t/hectares, county $i$ in year $t$\\
-$\alpha_i$ &$=$& Fixed effects), county $i$\\
-{\color{darkblue}$\delta$ }&{\color{darkblue}$=$}&{\color{darkblue}{Effect of drought on economy}}\\
-
-$X_{i,t}$ &$=$& Matrix of values of other covariates in county $i$ in year $t$\\
-$\epsilon_{i,t}$ &$=$& Error term \\
+$t$&$=$&index for year ($1981-2017$) \\
+$y_{\scriptscriptstyle it}$ &$=$&maize yield tones/hectares, county $i$, year $t$\\
+${\beta}^{m}$, \footnotesize{\textit{m=1,...p}}&$=$&\textit{p} fixed effects parameters\\
+$x^{m}_{it}$, \footnotesize{\textit{m=1,...,p}}, \footnotesize{\textit{i=1,...,47}} &$=$&fixed effects regressors, county \textit{i}, year \textit{t}\\
+$b^{n}_i$, \footnotesize{\textit{n=1,...q}}, \footnotesize{\textit{i=1,...,47}}&$=$&\textit{q} random effects parameters -\textbf{vary over county \textit{i}}\\
+$z^{n}_{it}$, \footnotesize{\textit{n=1,...,q}}, \footnotesize{\textit{i=1,...,47}} &$=$&random effects regressors, county \textit{i}, year \textit{t}\\
+$\epsilon_{it}$ &$=$&error term \\
 \end{tabular}
-\end{small}
+\end{footnotesize}
 \end{table}
 
 \end{frame}
