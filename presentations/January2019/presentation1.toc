@@ -2,4 +2,4 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Data}{7}{0}{2}
 \beamer@sectionintoc {3}{Methods}{9}{0}{3}
-\beamer@sectionintoc {4}{My Suggestion}{13}{0}{4}
+\beamer@sectionintoc {4}{My Suggestion}{14}{0}{4}

@@ -323,6 +323,7 @@ Sample:
 
 
 \section{Methods}
+
 \begin{frame}
 \frametitle{Linear mixed effects models}\label{Methods} 
 
@@ -330,34 +331,34 @@ Sample:
 \item Panel: County $\times$ Year
 \item Slopes allowed to vary over counties
 \end{itemize}
+
+
 \begingroup
-\everymath{\large}
+\everymath{\small}
 
 \begin{align*}
-\begin{array}{lcl}
- log(y_{\scriptscriptstyle it} )&=& \beta^{\scriptscriptstyle k}x^{\scriptscriptstyle k}_{\scriptscriptstyle it}+ b^{\scriptscriptstyle l}_{\scriptscriptstyle i}z^{\scriptscriptstyle l}_{\scriptscriptstyle it}+\epsilon_{\scriptscriptstyle it}
+\hspace{-0.5cm} \begin{array}{lclll}
+ log(y_{\scriptscriptstyle 1t} )&=&\sum_{\scriptscriptstyle m=1}^{\scriptscriptstyle p} \beta^{\scriptscriptstyle m}x^{\scriptscriptstyle m}_{\scriptscriptstyle 1t}+ \sum_{\scriptscriptstyle n=1}^{\scriptscriptstyle q}b^{\scriptscriptstyle n}_{\scriptscriptstyle 1}z^{\scriptscriptstyle n}_{\scriptscriptstyle 1t}+\epsilon_{\scriptscriptstyle 1t} \\[2mm]
+ log(y_{\scriptscriptstyle 2t} )&=&\sum_{\scriptscriptstyle m=1}^{\scriptscriptstyle p} \beta^{\scriptscriptstyle m}x^{\scriptscriptstyle m}_{\scriptscriptstyle 2t}+ &\sum_{\scriptscriptstyle n=1}^{\scriptscriptstyle q}b^{\scriptscriptstyle n}_{\scriptscriptstyle 2}z^{\scriptscriptstyle n}_{\scriptscriptstyle 2t}+\epsilon_{\scriptscriptstyle 2t}\\[1mm]
+  &\huge{\vdots}\\[-2mm]
+  & \huge{\vdots} \\[1mm]
+  log(y_{\scriptscriptstyle 47t} )&=&\sum_{\scriptscriptstyle m=1}^{\scriptscriptstyle p} \beta^{\scriptscriptstyle m}x^{\scriptscriptstyle m}_{\scriptscriptstyle 47t}+ &&\sum_{\scriptscriptstyle n=1}^{\scriptscriptstyle q}b^{\scriptscriptstyle n}_{\scriptscriptstyle 47}z^{\scriptscriptstyle n}_{\scriptscriptstyle 47t}+\epsilon_{\scriptscriptstyle 47t}
 \end{array}
 \end{align*}
 \endgroup
 
 
 
+
 \begin{table}
 \begin{small}
-
-
 \begin{tabular}{lll}
 
 
-$y_{i,t}$ &$=$& Maize yield t/hectares, county $i$ in year $t$\\
-$\alpha_i$ &$=$& Fixed effects), county $i$\\
-{\color{darkblue}$\delta$ }&{\color{darkblue}$=$}&{\color{darkblue}{Effect of drought on economy}}\\
-$D_{i,t}$ &$=$& Indicator variable\\
-& &  $D=1$ if drought in county $i$ in year $t$, $D=0$ otherwise\\
+$y_{it}$ &$=$& Maize yield t/hectares, county $i$ in year $t$\\
 $\boldsymbol{\beta}$ &$=$& Vector of effects of other covariates\\
 $X_{i,t}$ &$=$& Matrix of values of other covariates in county $i$ in year $t$\\
 $\epsilon_{i,t}$ &$=$& Error term \\
-{\color{DarkGreen}$\gamma_t$} & {\color{DarkGreen}$=$}& {\color{DarkGreen}Year specific indicator?}
 \end{tabular}
 \end{small}
 \end{table}
@@ -372,6 +373,63 @@ $\epsilon_{i,t}$ &$=$& Error term \\
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
+\begin{frame}
+\frametitle{Linear mixed effects models}\label{Methods} 
+
+\begin{itemize}
+\item Panel: County $\times$ Year
+\item Slopes allowed to vary over counties
+\end{itemize}
+
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth} 
+\begingroup
+\everymath{\Large}
+\begin{align*}
+\begin{array}{lcl}
+ log(y_{\scriptscriptstyle it} )&=&\sum_{\scriptscriptstyle m=1}^{\scriptscriptstyle p} \beta^{\scriptscriptstyle m}x^{\scriptscriptstyle m}_{\scriptscriptstyle it}+ \sum_{\scriptscriptstyle n=1}^{\scriptscriptstyle q}b^{\scriptscriptstyle n}_{\scriptscriptstyle i}z^{\scriptscriptstyle n}_{\scriptscriptstyle it}+\epsilon_{\scriptscriptstyle it}
+\end{array}
+\end{align*}
+\endgroup
+\end{column}
+
+\begin{column}{0.5\textwidth} 
+\begingroup
+\everymath{\footnotesize}
+\begin{align*}
+\begin{array}{ll}
+i=1,...,47 & \text{counties}
+\end{array}
+\end{align*}
+\endgroup
+\end{column}
+\end{columns}
+
+\begin{table}
+\begin{small}
+\begin{tabular}{lll}
+
+$y_{it}$ &$=$& Maize yield t/hectares, county $i$ in year $t$\\
+$\alpha_i$ &$=$& Fixed effects), county $i$\\
+{\color{darkblue}$\delta$ }&{\color{darkblue}$=$}&{\color{darkblue}{Effect of drought on economy}}\\
+
+$X_{i,t}$ &$=$& Matrix of values of other covariates in county $i$ in year $t$\\
+$\epsilon_{i,t}$ &$=$& Error term \\
+\end{tabular}
+\end{small}
+\end{table}
+
+\end{frame}
+
+
+\note{Maybe talk about ambigous methodology: the same words used for different terms//a}
+
+
+
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 
 
