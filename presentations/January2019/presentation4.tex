@@ -1,0 +1,408 @@
+%\documentclass[notes]{beamer}       % print frame + notes
+%\documentclass[notes=only]{beamer}   % only notes
+\documentclass{beamer}              % only frames
+  \usepackage[english]{babel}
+\usepackage[round]{natbib}
+%\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\usepackage{lmodern}
+\usepackage{marvosym} % \MVRIGHTarrow
+
+\usepackage{amsmath}  
+\usepackage{multirow,graphicx,array}
+\usepackage{multicol}
+\usepackage{hhline}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{threeparttable,booktabs}
+\usepackage{chngcntr}
+\usepackage{dcolumn}
+\usepackage{caption}
+\usepackage{fixltx2e}
+\usepackage{rotating}
+\usepackage{amssymb}
+
+
+
+\usetheme{Singapore}
+\useoutertheme{miniframes}
+\AtBeginSection[]{\subsection{}}
+
+
+\newcommand{\RowColor}{\rowcolor{gray} \cellcolor{white}}
+\newcommand{\RowColorY}{\rowcolor{yellow} \cellcolor{white}}
+
+
+
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
+
+
+
+\title{Drought and its Effects on Economy}  
+\author{Monika Novackova} 
+\date{December 2017} 
+\institute{University of Sussex}
+
+\setbeamercolor{block title}{bg=purple!30,fg=black}
+
+
+
+
+
+\begin{document}
+
+
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{DarkGreen}{rgb}{0.1803922,0.545098,0.3411765}
+\definecolor{BeigeNadine}{rgb}{1,0.94,0.86}
+\definecolor{PaleGreen}{rgb}{ 0.5960784,0.9843137, 0.5960784}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{bored}{rgb}{0.8, 0.0, 0.0}
+\definecolor{babypink}{rgb}{0.96, 0.76, 0.76}
+
+ \newcolumntype{d}{D{.}{.}{-1}}
+ \newcolumntype{e}{D{+}{\,\pm\,}{6,2}}
+
+
+
+
+\maketitle
+
+
+\normalsize
+
+\begin{frame}\label{My Interest}
+ 
+\large{My research interest:} \\
+\vspace{0.7cm}
+
+\large{\hspace{1cm}\textbf{Effects of droughts on economy in Kenya}}
+\end{frame}
+\note{A}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame} 
+
+\note{A}
+
+
+\section{Definition of Drought}
+
+
+
+\begin{frame}\label{Definition of Drought}
+\frametitle{Definition of Drought} 
+ \begin{itemize}
+\item Hi
+\end{itemize} 
+
+\end{frame}
+
+\note{a\\
+b}
+
+
+
+
+
+\begin{frame}
+
+\frametitle{Effects of droughts on economy}\label{Effects} 
+\begin{block}{\textbf{Computable General Equilibrium (CGE)}}
+
+\begin{itemize}
+
+\item \underline{\textbf{\cite{robinson2010}}}
+\begin{itemize}
+\item 5 agro-ecological zones,46 production activities (incl. 35 zone specific agricultural production sectors), 22 commodity groups,  15 primary factors of production
+\end{itemize}
+
+
+\begin{table}
+\begin{footnotesize}
+\begin{tabular}{lll} 
+
+
+\hline
+\rowcolor{PaleGreen} \textbf{Fixed (inputs)} & \textbf{Determined by model (outputs)}  \\
+ \hline
+Capital stock& Domestic price of each commodity \\
+Land (by region) & Land allocated across crops \\
+Supply of labor per skill type& Real wages\\
+Foreign capital inflow	& Real exchange rate\\
+Trade balance	& \\
+ \hline
+\end{tabular}
+\end{footnotesize}
+\end{table}
+
+\begin{footnotesize}
+
+\item The simulation use a 'balanced' macro closure in which aggregate \textbf{investment, government demand, and consumption are fixed shares of total absorption}
+\item Intermediate inputs into production are determined as fixed shares
+of the quantity of output
+
+\end{footnotesize}
+\end{itemize}
+\end{block}
+\end{frame}
+\note{
+
+\vspace{0.3cm}
+\vspace{0.3cm}a
+\\
+\vspace{0.3cm}a
+\\
+\vspace{0.3cm}a
+}
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{Effects of droughts on economy}\label{Effects} 
+\begin{block}{\textbf{Computable General Equilibrium (CGE)} Models }
+\begin{itemize}
+
+
+
+
+\item \underline{\textbf{\cite{OxfamIDS}}}
+\begin{itemize}
+\item Exploring range of scenarios for food price increase in 2030
+\begin{itemize}
+\item 1. Baseline 2. Climate change 3. Climate change with adaptation 4. Adaptation only in sub-Saharan Africa
+\end{itemize}
+\item Global coverage, set of individual country models, linked through international trade
+\item Climate change (incl. drought) modelled as changes in factor productivity (usually negative)
+
+\end{itemize}
+
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+\note{A}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{My Suggestion}
+
+
+\begin{frame}
+
+\frametitle{My suggestion - panel estimation}\label{MySuggestion1} 
+
+My interest: \textbf{Effects of drought on economy in Kenya}
+\begin{itemize}
+
+\item \textbf{Response variable}
+
+\begin{itemize}
+\item Volumes of production (crop specific, total)
+\item Profit per acre \normalsize{\citep{Deschenes2007Ric}}
+
+\begin{itemize}
+\item \footnotesize{(Value of agricultural products - prod. expanses)/acres (crops, pasture, grazing)}\\ 
+\end{itemize}
+\end{itemize}
+\item \textbf{Units of analysis}
+\begin{itemize}
+\item Counties in Kenya $\times$ year
+\
+\end{itemize}
+
+
+\item \textbf{Explanatory variable of interest}
+
+\begin{itemize}
+\item Dummy variable (0/1) drought occurred in a particular county and year or not
+\item Several varieties - various specifications of drought:
+
+\end{itemize}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+\note{also I can try some t-tests, f-test for various grouping - WHAT WOULD BE THE BEST DEFFINITION OF DROUGHT year x county\\
+\vspace{0.3cm}a\\
+\vspace{0.3cm}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{My suggestion - panel estimation}\label{MySuggestion3} 
+
+My interest: \textbf{Effects of drought on economy in Kenya}
+\begin{itemize}
+
+
+\item \textbf{Explanatory variable of interest}
+
+\begin{itemize}
+\item Dummy variable (0/1) drought occurred in a particular county and year or not
+
+\end{itemize}
+
+
+\item \textbf{Units of analysis:} Counties in Kenya $\times$ year
+
+\item \textbf{Control variables ? - subject to availability}
+
+\begin{itemize}
+\item GDP, soil quality data, population,average land area, average value assets,  climate, degree days?
+\end{itemize}
+
+\item \textbf{Estimation methods}
+
+\begin{itemize}
+\item Fixed effects, SURE, Kalman filter, Box-Jenkins
+\end{itemize}
+
+
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\note{also I can try some t-tests, f-test for various grouping - WHAT WOULD BE THE BEST DEFFINITION OF DROUGHT year x county\\
+\vspace{0.3cm}a\\
+\vspace{0.3cm}}
+
+
+
+
+
+
+
+
+\begin{frame}
+
+\frametitle{My idea - panel estimation}\label{MySuggestion4} 
+
+
+\begin{align*}
+\begin{array}{lcl}
+ Y_{i,t} &=& \alpha_i +\gamma_t + \delta D'_{i,t} +  \boldsymbol{\beta X_{i,t}}+ \epsilon_{i,t}
+\end{array}
+\end{align*}
+
+\begin{table}
+\begin{small}
+\begin{tabular}{lll}
+
+$Y_{i,t}$ &$=$& Response variable (food production/price), county $i$ in year $t$\\
+$\alpha_i$ &$=$& Fixed effects, county $i$\\
+{\color{darkblue}$\delta$ }&{\color{darkblue}$=$}&{\color{darkblue}{Effect of drought on economy}}\\
+$D_{i,t}$ &$=$& Indicator variable\\
+& &  $D=1$ if drought in county $i$ in year $t$, $D=0$ otherwise\\
+$\boldsymbol{\beta}$ &$=$& Vector of effects of other covariates\\
+$X_{i,t}$ &$=$& Matrix of values of other covariates in county $i$ in year $t$\\
+$\epsilon_{i,t}$ &$=$& Error term \\
+{\color{DarkGreen}$\gamma_t$} & {\color{DarkGreen}$=$}& {\color{DarkGreen}Year specific indicator?}
+\end{tabular}
+\end{small}
+\end{table}
+
+\end{frame}
+
+
+\note{Also waldtest, jako ekvivalent pro celkovy f-test byl signifikantni>> overall fit je moc o}
+
+
+
+\note{hello}
+
+
+\section*{}
+
+\frame[allowframebreaks]{ 
+\centering
+\huge{Thank you for attention}
+}
+
+\note{hello}
+
+\frame[allowframebreaks]{ 
+\small
+\frametitle{References}
+\bibliographystyle{apa}
+\bibliography{referencesFS}
+}
+
+\end{document}
+
