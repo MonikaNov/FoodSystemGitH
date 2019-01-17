@@ -480,12 +480,15 @@ using the Satterthwaites method to determine the p-values of the individual t-te
 \frametitle{Mixed effects estimates:}\label{Results} 
 {\begin{threeparttable}
 \begin{footnotesize}
-\caption*{Yield as dependent variable\hfill exponents of the coefficients: $\exp{\beta}$}
+\caption*{\small Dependent variable: yield, coefficients in the exponents: $\mathit{e}^{\beta}$}
 %KEN11dK  KEN11dK_ASAL    KEN11dK_nonASAL										
 \label{KenARe11_exponents} 
 \setstretch{1.33}
-\begin{tabular}{llll} 
+\begin{tabular}{llll}\hline
+&\multicolumn{3}{c}{\textit{Sample:}}\\
+&\multicolumn{1}{c}{\textit{(I)}}&\multicolumn{1}{c}{\textit{(II)}}&\multicolumn{1}{c}{\textit{(III)}}\\
   \textbf{Fixed effects:}&\textit{\textbf{All counties}}&\textit{\textbf{ASAL}}&\textit{\textbf{non-ASAL}}\\
+  \hline
 \vspace{-0.2cm}Intercept&$1.296^{***}$&$1.272^{*}$&$1.408^{**}$\\
  \vspace{-0.2cm}Prec. total&$1.081^{*}$&$1.007^{}$&$1.277^{***}$\\
   \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$1.003$&$0.881^{***}$\\
@@ -495,16 +498,18 @@ using the Satterthwaites method to determine the p-values of the individual t-te
  \vspace{-0.2cm}Temp. - average&$0.820^{***}$&$0.808^{*}$&$0.880$ $^{}$\\
  \vspace{-0.2cm}Temp. c. of var.&$1.043^{\bullet}$&$1.032$&$1.060$ ${*}$\\[2mm]
   \hline
-\textit{Number of observations:}  &\multicolumn{1}{c}{$1300$}&\multicolumn{1}{c}{$698$}&\multicolumn{1}{c}{$602$}
+\textit{Number of observations:}  &$1300$&$698$&$602$
 \\
 \end{tabular} 
  \begin{tablenotes}
   \begin{footnotesize}
-    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+  \item Standard errors in brackets \\
+    $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
   \end{footnotesize}
 \end{tablenotes}
 \end{footnotesize}
   \end{threeparttable}\par }
+  \setstretch{1}
 \end{frame}
 
 \note{
@@ -526,6 +531,35 @@ using the Satterthwaites method to determine the p-values of the individual t-te
 
 \begin{itemize}
 \color{red}
+\item Perhaps as a backup slide-> put a slide with the estimated coefficients, NOT exponents
+\item depending if time>I can copy it as image from the draft paper or copy the tables, separately each subsample
+\end{itemize}
+\color{black}
+\end{frame}
+
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+\begin{frame}\label{MarginalEffects}
+
+\frametitle{Marginal Effects}
+\begin{figure}
+    \includegraphics[width = 0.6\textwidth]{Figure1a_1f.pdf}
+\end{figure}
+
+\end{frame}
+
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+\begin{frame}
+
+\frametitle{ideas}
+
+\begin{itemize}
+\color{red}
 \item Plot of dependency of precip or some measure and yields..
 \item Maybe also general description of the mixed effects models as I have in the draft
 \item Look at the document on google docs 'Yield and climate' to see if I can use something
@@ -535,7 +569,6 @@ using the Satterthwaites method to determine the p-values of the individual t-te
 
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-
 
 
 
