@@ -440,14 +440,27 @@ $\epsilon_{it}$ &$=$&error term \\
 
 \frametitle{Model specification}\label{spec} 
 
-Error structure, ARMA, AIC
+\begin{itemize}
+\item AIC
+\item None of the random slopes significant
+\item Group autocorrelation structure present
+
+\begin{itemize}
+\item Tested by the Lagrange multipliear test developed by Baltagi \& Li ($1991$; $1995$)
+\item[$\boldsymbol{\rightarrow}$] The error structure modelled as ARMA($1$,$1$) 
+\begin{itemize}
+\item The preferred error structure found using AIC
+\end{itemize}
+\end{itemize}
+ 
+\end{itemize}
 
 \end{frame}
 
 \note{
-
-\vspace{0.3cm}
-\vspace{0.3cm}a
+First set of fixed effects found- stepwise like procedure. Then test of significant of random slopes
+\vspace{0.3cm}to verify: alternative step-down model building approach
+using the Satterthwaites method to determine the p-values of the individual t-tests
 
 }
 
