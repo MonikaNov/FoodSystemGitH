@@ -447,10 +447,14 @@ $\epsilon_{it}$ &$=$&error term \\
 
 \begin{itemize}
 \item Tested by the Lagrange multipliear test developed by Baltagi \& Li ($1991$; $1995$)
-\item[$\boldsymbol{\rightarrow}$] The error structure modelled as ARMA($1$,$1$) 
-\begin{itemize}
-\item The preferred error structure found using AIC
 \end{itemize}
+\color{darkblue}
+\rotatebox[origin=c]{270}{\Huge{$\boldsymbol{	\rightsquigarrow}$}}
+\color{black}
+\\[2mm]The error structure modelled as ARMA($1$,$1$) 
+\begin{itemize}
+\item The preferred error structure found using the Likelihood Ratio statistics
+
 \end{itemize}
  
 \end{itemize}
@@ -461,7 +465,7 @@ $\epsilon_{it}$ &$=$&error term \\
 First set of fixed effects found- stepwise like procedure. Then test of significant of random slopes
 \vspace{0.3cm}to verify: alternative step-down model building approach
 using the Satterthwaites method to determine the p-values of the individual t-tests
-
+\vspace{0.3cm} the error structure found as.. Likelihood ratio statistic. Comparison of AIC, BIC, loglik
 }
 
 
@@ -473,36 +477,33 @@ using the Satterthwaites method to determine the p-values of the individual t-te
 
 \begin{frame}
 
-\frametitle{Results}\label{Results} 
+\frametitle{Mixed effects estimates:}\label{Results} 
 {\begin{threeparttable}
-\caption{\normalsize{\textbf{ {Mixed  effects model:}} exponents of the coefficient estimates Log of maize yield and weather, ARMA(1,1) errors}}
+\begin{footnotesize}
+\caption*{Yield as dependent variable\hfill exponents of the coefficients: $\exp{\beta}$}
 %KEN11dK  KEN11dK_ASAL    KEN11dK_nonASAL										
 \label{KenARe11_exponents} 
 \setstretch{1.33}
-\begin{tabular}{@{}lllllll} 
- \\
+\begin{tabular}{llll} 
   \textbf{Fixed effects:}&\textit{\textbf{All counties}}&\textit{\textbf{ASAL}}&\textit{\textbf{non-ASAL}}\\
 \vspace{-0.2cm}Intercept&$1.296^{***}$&$1.272^{*}$&$1.408^{**}$\\
  \vspace{-0.2cm}Prec. total&$1.081^{*}$&$1.007^{}$&$1.277^{***}$\\
   \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$1.003$&$0.881^{***}$\\
  \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$0.970$ &$0.907^{}$\\
- \vspace{-0.2cm}Dry spell -length\tnote{a}&$0.935^{*}$&$0.834^{**}$&$ 0.988^{}$\\
- \vspace{-0.2cm}Dry spells $\geq~4$ d.\tnote{b}&$0.939^{*}$&$0.855^{**}$&$0.989^{}$\\
+ \vspace{-0.2cm}Dry spell -length in days&$0.935^{*}$&$0.834^{**}$&$ 0.988^{}$\\
+ \vspace{-0.2cm}Dry spells $\geq~4$ days\tnote{b}&$0.939^{*}$&$0.855^{**}$&$0.989^{}$\\
  \vspace{-0.2cm}Temp. - average&$0.820^{***}$&$0.808^{*}$&$0.880$ $^{}$\\
- \vspace{-0.2cm}Temp. c. of var.&$1.043^{\bullet}$&$1.032$&$1.060$ ${*}$\\
+ \vspace{-0.2cm}Temp. c. of var.&$1.043^{\bullet}$&$1.032$&$1.060$ ${*}$\\[2mm]
   \hline
-\textit{Number of observations:}  &\multicolumn{2}{l}{$1300$}&\multicolumn{2}{l}{$698$}&\multicolumn{2}{l}{$602$}
+\textit{Number of observations:}  &\multicolumn{1}{c}{$1300$}&\multicolumn{1}{c}{$698$}&\multicolumn{1}{c}{$602$}
 \\
 \end{tabular} 
  \begin{tablenotes}
   \begin{footnotesize}
     \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
-            \begin{adjustwidth}{1cm}{} 
-  \item[a] Length of the longest dry spell in number of days.
-    \item[b] Number of dry spells lasting for four days or longer. 
-     \end{adjustwidth}
   \end{footnotesize}
 \end{tablenotes}
+\end{footnotesize}
   \end{threeparttable}\par }
 \end{frame}
 
