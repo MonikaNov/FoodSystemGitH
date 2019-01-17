@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  16 JAN 2019 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.11.27)  17 JAN 2019 12:33
 entering extended mode
 **./presentation1.tex
 (presentation1.tex
@@ -850,6 +850,11 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (E:\latex\texmfs\install\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(E:\latex\texmfs\install\tex\latex\changepage\changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count173
+\cp@tempcnt=\count174
+)
 (E:\latex\texmfs\install\tex\latex\beamer\themes\theme\beamerthemeSingapore.sty
 
 (E:\latex\texmfs\install\tex\latex\beamer\themes\outer\beamerouterthememinifram
@@ -861,9 +866,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (presentation1.aux
 
 LaTeX Warning: Label `Methods' multiply defined.
-
-
-LaTeX Warning: Label `Effects' multiply defined.
 
 )
 \openout1 = `presentation1.aux'.
@@ -923,16 +925,16 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (E:\latex\texmfs\install\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
+\scratchcounter=\count175
 \scratchdimen=\dimen279
 \scratchbox=\box81
-\nofMPsegments=\count174
-\nofMParguments=\count175
+\nofMPsegments=\count176
+\nofMParguments=\count177
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count176
+\MPscratchCnt=\count178
 \MPscratchDim=\dimen280
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
+\MPnumerator=\count179
+\makeMPintoPDFobject=\count180
 \everyMPtoPDFconversion=\toks47
 ) (E:\latex\texmfs\install\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -957,7 +959,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (E:\latex\texmfs\install\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count179
+\c@section@level=\count181
 )
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
@@ -1117,13 +1119,13 @@ LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10> not available
 (Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 200
 .
 
-<PhaseNA.png, id=283, 364.36125pt x 326.72063pt>
+<PhaseNA.png, id=277, 364.36125pt x 326.72063pt>
 File: PhaseNA.png Graphic file (type png)
  <use PhaseNA.png>
 Package pdftex.def Info: PhaseNA.png used on input line 200.
 (pdftex.def)             Requested size: 165.93709pt x 148.79271pt.
 
-<PrecNA.png, id=285, 414.04688pt x 326.72063pt>
+<PrecNA.png, id=279, 414.04688pt x 326.72063pt>
 File: PrecNA.png Graphic file (type png)
  <use PrecNA.png>
 Package pdftex.def Info: PrecNA.png used on input line 200.
@@ -1384,59 +1386,29 @@ Overfull \hbox (23.55074pt too wide) in paragraph at lines 429--429
 ] [11
 
 ]
+LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 494
+.
 
-Package natbib Warning: Citation `robinson2010' on page 12 undefined on input l
-ine 504.
-
-
-Overfull \vbox (2.16428pt too high) detected at line 504
+Overfull \vbox (54.41106pt too high) detected at line 494
  []
 
 [12
 
-]pdfTeX warning (ext4): destination with the same identifier (name{Effects}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.542 \end{frame}
-                 
-
-Package natbib Warning: Citation `OxfamIDS' on page 13 undefined on input line 
-542.
-
-[13
+] [13
 
 ]
 
-Package natbib Warning: Citation `Deschenes2007Ric' on page 14 undefined on inp
-ut line 611.
+Package natbib Warning: Citation `robinson2010' on page 14 undefined on input l
+ine 572.
+
+
+Overfull \vbox (2.16428pt too high) detected at line 572
+ []
 
 [14
 
-]
-LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 666
-.
-LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 666
-.
-LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 666
-.
-LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 666
-.
-LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 666
-.
-
-Overfull \hbox (7.36977pt too wide) in paragraph at lines 666--666
- [] 
- []
-
-[15
-
-] [16
+] [15
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1471,12 +1443,12 @@ Overfull \hbox (7.36977pt too wide) in paragraph at lines 666--666
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [17
+ [16
 
+
+] [17
 
 ] [18
-
-] [19
 
 ]
 \tf@nav=\write6
@@ -1492,50 +1464,48 @@ Overfull \hbox (7.36977pt too wide) in paragraph at lines 666--666
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 674.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 674.
 (presentation1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 674.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 674.
 Package rerunfilecheck Info: File `presentation1.out' has not changed.
-(rerunfilecheck)             Checksum: 5BAF8E2321F0900EE2D639BF77FF4E41;417.
+(rerunfilecheck)             Checksum: 2244D22ABB44028FCA5C48C4F4114889;411.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19947 strings out of 495222
- 366199 string characters out of 3182071
- 463843 words of memory out of 3000000
- 22691 multiletter control sequences out of 15000+200000
- 109986 words of font info for 95 fonts, out of 3000000 for 9000
+ 19974 strings out of 495222
+ 366779 string characters out of 3182071
+ 463793 words of memory out of 3000000
+ 22721 multiletter control sequences out of 15000+200000
+ 84180 words of font info for 75 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,21n,56p,811b,765s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/latex/texmfs/install/fonts/enc/dvips/lm/lm-mathit.enc}{E:/latex/texmfs/in
-stall/fonts/enc/dvips/lm/lm-mathsy.enc}{E:/latex/texmfs/install/fonts/enc/dvips
+{E:/latex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}{E:/latex/texmfs/in
+stall/fonts/enc/dvips/lm/lm-mathit.enc}{E:/latex/texmfs/install/fonts/enc/dvips
 /lm/lm-rm.enc}{E:/latex/texmfs/install/fonts/enc/dvips/lm/lm-mathex.enc}<E:/lat
 ex/texmfs/install/fonts/type1/public/lm/lmex10.pfb><E:/latex/texmfs/install/fon
 ts/type1/public/lm/lmmi10.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lm
-mi12.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmmi7.pfb><E:/latex/tex
-mfs/install/fonts/type1/public/lm/lmmi8.pfb><E:/latex/texmfs/install/fonts/type
-1/public/lm/lmmi9.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmmib10.pf
-b><E:/latex/texmfs/install/fonts/type1/public/lm/lmss10.pfb><E:/latex/texmfs/in
-stall/fonts/type1/public/lm/lmss12.pfb><E:/latex/texmfs/install/fonts/type1/pub
-lic/lm/lmss17.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmss8.pfb><E:/
-latex/texmfs/install/fonts/type1/public/lm/lmss9.pfb><E:/latex/texmfs/install/f
-onts/type1/public/lm/lmssbo10.pfb><E:/latex/texmfs/install/fonts/type1/public/l
-m/lmssbx10.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmsso10.pfb><E:/l
-atex/texmfs/install/fonts/type1/public/lm/lmsso12.pfb><E:/latex/texmfs/install/
-fonts/type1/public/lm/lmsso8.pfb><E:/latex/texmfs/install/fonts/type1/public/lm
-/lmsso9.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb><E:/latex
-/texmfs/install/fonts/type1/public/lm/lmsy6.pfb><E:/latex/texmfs/install/fonts/
-type1/public/lm/lmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmsy8.
-pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmsy9.pfb><E:/latex/texmfs/i
-nstall/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on presentation1.pdf (19 pages, 490687 bytes).
+mi12.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmmi9.pfb><E:/latex/tex
+mfs/install/fonts/type1/public/lm/lmss10.pfb><E:/latex/texmfs/install/fonts/typ
+e1/public/lm/lmss12.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmss17.p
+fb><E:/latex/texmfs/install/fonts/type1/public/lm/lmss8.pfb><E:/latex/texmfs/in
+stall/fonts/type1/public/lm/lmss9.pfb><E:/latex/texmfs/install/fonts/type1/publ
+ic/lm/lmssbo10.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
+<E:/latex/texmfs/install/fonts/type1/public/lm/lmsso10.pfb><E:/latex/texmfs/ins
+tall/fonts/type1/public/lm/lmsso12.pfb><E:/latex/texmfs/install/fonts/type1/pub
+lic/lm/lmsso8.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmsso9.pfb><E:
+/latex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb><E:/latex/texmfs/install
+/fonts/type1/public/lm/lmsy6.pfb><E:/latex/texmfs/install/fonts/type1/public/lm
+/lmsy7.pfb><E:/latex/texmfs/install/fonts/type1/public/lm/lmsy8.pfb><E:/latex/t
+exmfs/install/fonts/type1/public/lm/lmsy9.pfb><E:/latex/texmfs/install/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb>
+Output written on presentation1.pdf (18 pages, 470758 bytes).
 PDF statistics:
- 1022 PDF objects out of 1200 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
+ 948 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

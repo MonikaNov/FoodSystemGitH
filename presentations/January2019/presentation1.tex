@@ -21,7 +21,7 @@
 \usepackage{rotating}
 \usepackage{amssymb}
  \usepackage{setspace}
-
+\usepackage{changepage}
 \usetheme{Singapore}
 \useoutertheme{miniframes}
 \AtBeginSection[]{\subsection{}}
@@ -432,6 +432,74 @@ $\epsilon_{it}$ &$=$&error term \\
 \note{Maybe talk about ambigous methodology: the same words used for different terms//a}
 
 
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+\begin{frame}
+
+\frametitle{Model specification}\label{spec} 
+
+Error structure, ARMA, AIC
+
+\end{frame}
+
+\note{
+
+\vspace{0.3cm}
+\vspace{0.3cm}a
+
+}
+
+
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+%oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+\section{Results}
+
+\begin{frame}
+
+\frametitle{Results}\label{Results} 
+{\begin{threeparttable}
+\caption{\normalsize{\textbf{ {Mixed  effects model:}} exponents of the coefficient estimates Log of maize yield and weather, ARMA(1,1) errors}}
+%KEN11dK  KEN11dK_ASAL    KEN11dK_nonASAL										
+\label{KenARe11_exponents} 
+\setstretch{1.33}
+\begin{tabular}{@{}lllllll} 
+ \\
+  \textbf{Fixed effects:}&\textit{\textbf{All counties}}&\textit{\textbf{ASAL}}&\textit{\textbf{non-ASAL}}\\
+\vspace{-0.2cm}Intercept&$1.296^{***}$&$1.272^{*}$&$1.408^{**}$\\
+ \vspace{-0.2cm}Prec. total&$1.081^{*}$&$1.007^{}$&$1.277^{***}$\\
+  \vspace{-0.2cm}Prec. total sq.&$0.973^{*}$&$1.003$&$0.881^{***}$\\
+ \vspace{-0.2cm}Prec. c. of var.&$0.924^{\bullet}$&$0.970$ &$0.907^{}$\\
+ \vspace{-0.2cm}Dry spell -length\tnote{a}&$0.935^{*}$&$0.834^{**}$&$ 0.988^{}$\\
+ \vspace{-0.2cm}Dry spells $\geq~4$ d.\tnote{b}&$0.939^{*}$&$0.855^{**}$&$0.989^{}$\\
+ \vspace{-0.2cm}Temp. - average&$0.820^{***}$&$0.808^{*}$&$0.880$ $^{}$\\
+ \vspace{-0.2cm}Temp. c. of var.&$1.043^{\bullet}$&$1.032$&$1.060$ ${*}$\\
+  \hline
+\textit{Number of observations:}  &\multicolumn{2}{l}{$1300$}&\multicolumn{2}{l}{$698$}&\multicolumn{2}{l}{$602$}
+\\
+\end{tabular} 
+ \begin{tablenotes}
+  \begin{footnotesize}
+    \item \textit{Notes:} Standard errors in brackets; \hfill $^{\bullet}~p<0.1$; $^{*}~p<0.05$; $^{**}~p<0.01$; $^{***}~p<0.001$
+            \begin{adjustwidth}{1cm}{} 
+  \item[a] Length of the longest dry spell in number of days.
+    \item[b] Number of dry spells lasting for four days or longer. 
+     \end{adjustwidth}
+  \end{footnotesize}
+\end{tablenotes}
+  \end{threeparttable}\par }
+\end{frame}
+
+\note{
+
+\vspace{0.3cm}
+\vspace{0.3cm}a
+
+}
+
 
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 %oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
@@ -506,10 +574,7 @@ of the quantity of output
 
 \vspace{0.3cm}
 \vspace{0.3cm}a
-\\
-\vspace{0.3cm}a
-\\
-\vspace{0.3cm}a
+
 }
 
 
@@ -517,160 +582,11 @@ of the quantity of output
 
 
 
-\begin{frame}
 
-\frametitle{Effects of droughts on economy}\label{Effects} 
-\begin{block}{\textbf{Computable General Equilibrium (CGE)} Models }
-\begin{itemize}
 
 
 
 
-\item \underline{\textbf{\cite{OxfamIDS}}}
-\begin{itemize}
-\item Exploring range of scenarios for food price increase in 2030
-\begin{itemize}
-\item 1. Baseline 2. Climate change 3. Climate change with adaptation 4. Adaptation only in sub-Saharan Africa
-\end{itemize}
-\item Global coverage, set of individual country models, linked through international trade
-\item Climate change (incl. drought) modelled as changes in factor productivity (usually negative)
-
-\end{itemize}
-
-\end{itemize}
-\end{block}
-\end{frame}
-
-
-
-\note{A}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{My Suggestion}
-
-
-\begin{frame}
-
-\frametitle{My suggestion - panel estimation}\label{MySuggestion1} 
-
-My interest: \textbf{Effects of drought on economy in Kenya}
-\begin{itemize}
-
-\item \textbf{Response variable}
-
-\begin{itemize}
-\item Volumes of production (crop specific, total)
-\item Profit per acre \normalsize{\citep{Deschenes2007Ric}}
-
-\begin{itemize}
-\item \footnotesize{(Value of agricultural products - prod. expanses)/acres (crops, pasture, grazing)}\\ 
-\end{itemize}
-\end{itemize}
-\item \textbf{Units of analysis}
-\begin{itemize}
-\item Counties in Kenya $\times$ year
-\
-\end{itemize}
-
-
-\item \textbf{Explanatory variable of interest}
-
-\begin{itemize}
-\item Dummy variable (0/1) drought occurred in a particular county and year or not
-\item Several varieties - various specifications of drought:
-
-\end{itemize}
-
-
-\end{itemize}
-
-\end{frame}
-
-
-
-
-
-
-\note{also I can try some t-tests, f-test for various grouping - WHAT WOULD BE THE BEST DEFFINITION OF DROUGHT year x county\\
-\vspace{0.3cm}a\\
-\vspace{0.3cm}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{frame}
-
-\frametitle{My idea - panel estimation}\label{MySuggestion4} 
-
-
-\begin{align*}
-\begin{array}{lcl}
- Y_{i,t} &=& \alpha_i +\gamma_t + \delta D'_{i,t} +  \boldsymbol{\beta X_{i,t}}+ \epsilon_{i,t}
-\end{array}
-\end{align*}
-
-\begin{table}
-\begin{small}
-\begin{tabular}{lll}
-
-$Y_{i,t}$ &$=$& Response variable (food production/price), county $i$ in year $t$\\
-$\alpha_i$ &$=$& Fixed effects, county $i$\\
-{\color{darkblue}$\delta$ }&{\color{darkblue}$=$}&{\color{darkblue}{Effect of drought on economy}}\\
-$D_{i,t}$ &$=$& Indicator variable\\
-& &  $D=1$ if drought in county $i$ in year $t$, $D=0$ otherwise\\
-$\boldsymbol{\beta}$ &$=$& Vector of effects of other covariates\\
-$X_{i,t}$ &$=$& Matrix of values of other covariates in county $i$ in year $t$\\
-$\epsilon_{i,t}$ &$=$& Error term \\
-{\color{DarkGreen}$\gamma_t$} & {\color{DarkGreen}$=$}& {\color{DarkGreen}Year specific indicator?}
-\end{tabular}
-\end{small}
-\end{table}
-
-\end{frame}
-
-
-\note{Also waldtest, jako ekvivalent pro celkovy f-test byl signifikantni>> overall fit je moc o}
-
-
-
-\note{hello}
 
 
 \section*{}
